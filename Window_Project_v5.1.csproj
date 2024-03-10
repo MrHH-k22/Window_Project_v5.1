@@ -186,6 +186,9 @@
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUpdateOrder.resx">
+      <DependentUpon>FUpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FSell.resx">
       <DependentUpon>FSell.cs</DependentUpon>
     </EmbeddedResource>
