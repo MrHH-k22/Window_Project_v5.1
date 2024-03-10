@@ -186,6 +186,9 @@
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUpdateOrder.resx">
+      <DependentUpon>FUpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
