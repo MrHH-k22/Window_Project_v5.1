@@ -117,8 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="beach_14953675_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\beach_14953675_v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelLeft.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
 </root>
