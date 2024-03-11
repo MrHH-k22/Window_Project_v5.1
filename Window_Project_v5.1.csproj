@@ -259,5 +259,32 @@
   <ItemGroup>
     <None Include="Images\beach_14953675_v2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\writing_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\real-time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\web-analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
