@@ -148,23 +148,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FBuy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FBuy.Designer.cs">
       <DependentUpon>FBuy.cs</DependentUpon>
     </Compile>
+    <Compile Include="FForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FForgetPassword.Designer.cs">
+      <DependentUpon>FForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHomepage.Designer.cs">
+      <DependentUpon>FHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FInformation.Designer.cs">
+      <DependentUpon>FInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FOrderAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FOrderAnalysis.Designer.cs">
+      <DependentUpon>FOrderAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FSell.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FSell.Designer.cs">
       <DependentUpon>FSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FTrackOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTrackOrder.Designer.cs">
+      <DependentUpon>FTrackOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSignin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSignin.Designer.cs">
+      <DependentUpon>FSignin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSignup.Designer.cs">
+      <DependentUpon>FSignup.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FUpdateOrder.cs">
       <SubType>Form</SubType>
@@ -180,9 +216,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
     </EmbeddedResource>
