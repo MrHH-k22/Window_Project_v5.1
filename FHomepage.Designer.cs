@@ -42,7 +42,7 @@
             this.panelLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnLogOut = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnInformation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panelBuyerSubmenu = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnTrackOrder = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnBuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnBuyer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -54,7 +54,7 @@
             this.panelLogo = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panelLeft.SuspendLayout();
-            this.bunifuPanel1.SuspendLayout();
+            this.panelBuyerSubmenu.SuspendLayout();
             this.panelSellerSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -79,7 +79,7 @@
             this.panelLeft.BorderThickness = 1;
             this.panelLeft.Controls.Add(this.btnLogOut);
             this.panelLeft.Controls.Add(this.btnInformation);
-            this.panelLeft.Controls.Add(this.bunifuPanel1);
+            this.panelLeft.Controls.Add(this.panelBuyerSubmenu);
             this.panelLeft.Controls.Add(this.btnBuyer);
             this.panelLeft.Controls.Add(this.panelSellerSubmenu);
             this.panelLeft.Controls.Add(this.btnSeller);
@@ -272,22 +272,22 @@
             this.btnInformation.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnInformation.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuPanel1
+            // panelBuyerSubmenu
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(110)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.btnTrackOrder);
-            this.bunifuPanel1.Controls.Add(this.btnBuy);
-            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel1.Location = new System.Drawing.Point(0, 350);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(220, 104);
-            this.bunifuPanel1.TabIndex = 6;
+            this.panelBuyerSubmenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(110)))));
+            this.panelBuyerSubmenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBuyerSubmenu.BackgroundImage")));
+            this.panelBuyerSubmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelBuyerSubmenu.BorderColor = System.Drawing.Color.Transparent;
+            this.panelBuyerSubmenu.BorderRadius = 3;
+            this.panelBuyerSubmenu.BorderThickness = 1;
+            this.panelBuyerSubmenu.Controls.Add(this.btnTrackOrder);
+            this.panelBuyerSubmenu.Controls.Add(this.btnBuy);
+            this.panelBuyerSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBuyerSubmenu.Location = new System.Drawing.Point(0, 350);
+            this.panelBuyerSubmenu.Name = "panelBuyerSubmenu";
+            this.panelBuyerSubmenu.ShowBorders = true;
+            this.panelBuyerSubmenu.Size = new System.Drawing.Size(220, 104);
+            this.panelBuyerSubmenu.TabIndex = 6;
             // 
             // btnTrackOrder
             // 
@@ -558,6 +558,7 @@
             this.btnBuyer.TextMarginLeft = 0;
             this.btnBuyer.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnBuyer.UseDefaultRadiusAndThickness = true;
+            this.btnBuyer.Click += new System.EventHandler(this.btnBuyer_Click);
             // 
             // panelSellerSubmenu
             // 
@@ -936,6 +937,7 @@
             this.btnSeller.TextMarginLeft = 0;
             this.btnSeller.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnSeller.UseDefaultRadiusAndThickness = true;
+            this.btnSeller.Click += new System.EventHandler(this.btnSeller_Click);
             // 
             // panelLogo
             // 
@@ -984,7 +986,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHomepage";
             this.panelLeft.ResumeLayout(false);
-            this.bunifuPanel1.ResumeLayout(false);
+            this.panelBuyerSubmenu.ResumeLayout(false);
             this.panelSellerSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -1002,7 +1004,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSell;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogOut;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnInformation;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel panelBuyerSubmenu;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnTrackOrder;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuy;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuyer;
