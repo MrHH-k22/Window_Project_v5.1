@@ -16,5 +16,11 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            FHomepage fHomepage = new FHomepage();
+            fHomepage.Show();
+        }
     }
 }

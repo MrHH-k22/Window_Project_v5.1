@@ -12,6 +12,8 @@ namespace Window_Project_v5._1.Forms
 {
     public partial class FHomepage : Form
     {
+        private Form activeForm;
+
         public FHomepage()
         {
             InitializeComponent();
@@ -74,6 +76,58 @@ namespace Window_Project_v5._1.Forms
             {
                 showSubmenu(panelBuyerSubmenu);
             }
+        }
+
+        public void OpenChildForm(Form childform, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childform;
+            childform.TopLevel = false;
+            childform.FormBorderStyle = FormBorderStyle.None;
+            childform.Dock = DockStyle.Fill;
+            this.panelBody.Controls.Add(childform);
+            this.panelBody.Tag = childform;
+            childform.BringToFront();
+            childform.Show();
+        }
+
+        private void btnSell_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FSell(), sender);
+
+        }
+
+        private void btnUpdateOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FUpdateOrder(), sender);
+
+        }
+
+        private void btnOrderAnalysis_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FOrderAnalysis(), sender);
+
+        }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FBuy(), sender);
+
+        }
+
+        private void btnTrackOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FTrackOrder(), sender);
+
+        }
+
+        private void btnInformation_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FInformation(), sender);
+
         }
     }
 }

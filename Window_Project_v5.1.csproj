@@ -222,6 +222,15 @@
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FInformation.resx">
+      <DependentUpon>FInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
+      <DependentUpon>FOrderAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTrackOrder.resx">
+      <DependentUpon>FTrackOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FUpdateOrder.resx">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
     </EmbeddedResource>
