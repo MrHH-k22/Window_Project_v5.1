@@ -17,15 +17,15 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
         }
 
-        private void btnSignin_Click(object sender, EventArgs e)
-        {
-            FHomepage fHomepage = new FHomepage();
-            fHomepage.Show();
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSiginin_Click(object sender, EventArgs e)
+        {
+            FHomepage fHomepage = new FHomepage();
+            fHomepage.Show();
         }
     }
 }
