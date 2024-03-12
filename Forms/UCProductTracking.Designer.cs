@@ -42,10 +42,13 @@
             // lblPrice
             // 
             this.lblPrice.AllowParentOverrides = false;
+            this.lblPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPrice.AutoEllipsis = false;
+            this.lblPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPrice.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblPrice.Location = new System.Drawing.Point(736, 12);
+            this.lblPrice.Location = new System.Drawing.Point(523, 12);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPrice.Size = new System.Drawing.Size(130, 23);
@@ -59,6 +62,8 @@
             this.btnDetail.AllowAnimations = true;
             this.btnDetail.AllowMouseEffects = true;
             this.btnDetail.AllowToggling = false;
+            this.btnDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDetail.AnimationSpeed = 200;
             this.btnDetail.AutoGenerateColors = false;
             this.btnDetail.AutoRoundBorders = false;
@@ -101,7 +106,7 @@
             this.btnDetail.IdleIconLeftImage = null;
             this.btnDetail.IdleIconRightImage = null;
             this.btnDetail.IndicateFocus = false;
-            this.btnDetail.Location = new System.Drawing.Point(784, 49);
+            this.btnDetail.Location = new System.Drawing.Point(571, 49);
             this.btnDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -147,11 +152,14 @@
             // lblProductCondition
             // 
             this.lblProductCondition.AllowParentOverrides = false;
+            this.lblProductCondition.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProductCondition.AutoEllipsis = false;
             this.lblProductCondition.BackColor = System.Drawing.Color.DarkGray;
+            this.lblProductCondition.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblProductCondition.Location = new System.Drawing.Point(661, 52);
+            this.lblProductCondition.Location = new System.Drawing.Point(448, 52);
             this.lblProductCondition.Name = "lblProductCondition";
             this.lblProductCondition.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblProductCondition.Size = new System.Drawing.Size(84, 23);
@@ -163,6 +171,8 @@
             // lblProductName
             // 
             this.lblProductName.AllowParentOverrides = false;
+            this.lblProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lblProductName.AutoEllipsis = false;
             this.lblProductName.CursorType = null;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
@@ -179,6 +189,8 @@
             // lblSellerName
             // 
             this.lblSellerName.AllowParentOverrides = false;
+            this.lblSellerName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSellerName.AutoEllipsis = false;
             this.lblSellerName.CursorType = null;
             this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
@@ -195,7 +207,8 @@
             // bunifuPictureBox2
             // 
             this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuPictureBox2.AutoSizeHeight = true;
             this.bunifuPictureBox2.BorderRadius = 0;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
@@ -220,7 +233,7 @@
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.lblPrice);
             this.Name = "UCProductTracking";
-            this.Size = new System.Drawing.Size(898, 93);
+            this.Size = new System.Drawing.Size(685, 93);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
