@@ -16,5 +16,11 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FDetail fdetail = new FDetail();
+            fdetail.Show();
+        }
     }
 }
