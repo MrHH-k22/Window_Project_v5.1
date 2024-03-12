@@ -69,11 +69,9 @@
             this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.txtName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panelTop = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -846,7 +844,6 @@
             this.panelTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTop.BackgroundImage")));
             this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelTop.BorderRadius = 1;
-            this.panelTop.Controls.Add(this.bunifuPictureBox1);
             this.panelTop.Controls.Add(this.lblUser);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
@@ -859,23 +856,6 @@
             this.panelTop.Quality = 10;
             this.panelTop.Size = new System.Drawing.Size(676, 90);
             this.panelTop.TabIndex = 1;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.user;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(35, 20);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 11;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // lblUser
             // 
@@ -911,22 +891,19 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.panelTop);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FInformation";
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label lblUser;
         private Bunifu.UI.WinForms.BunifuGradientPanel panelTop;
         private System.Windows.Forms.Label lblName;
