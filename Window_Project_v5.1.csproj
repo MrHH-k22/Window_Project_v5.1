@@ -166,11 +166,23 @@
     <Compile Include="FHomepage.Designer.cs">
       <DependentUpon>FHomepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FDetail.Designer.cs">
+      <DependentUpon>FDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FInformation.Designer.cs">
       <DependentUpon>FInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FListSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListSell.Designer.cs">
+      <DependentUpon>FListSell.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FOrderAnalysis.cs">
       <SubType>Form</SubType>
@@ -190,6 +202,18 @@
     <Compile Include="Forms\FTrackOrder.Designer.cs">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProduct.Designer.cs">
+      <DependentUpon>UCProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCProductTracking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductTracking.Designer.cs">
+      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,12 +231,6 @@
     </Compile>
     <Compile Include="Forms\FUpdateOrder.Designer.cs">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\USProduct.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\USProduct.Designer.cs">
-      <DependentUpon>USProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

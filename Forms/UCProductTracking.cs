@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class USProduct : UserControl
+    public partial class UCProductTracking : UserControl
     {
-        public USProduct()
+        public UCProductTracking()
         {
             InitializeComponent();
         }
