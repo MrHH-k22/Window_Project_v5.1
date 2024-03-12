@@ -96,7 +96,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSell_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FSell(), sender);
+            OpenChildForm(new Forms.FListSell(), sender);
 
         }
 
