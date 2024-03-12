@@ -17,7 +17,7 @@ namespace Window_Project_v5._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FHomepage());
+            Application.Run(new FSignin());
         }
     }
 }
