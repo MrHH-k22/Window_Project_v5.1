@@ -300,7 +300,7 @@
             this.btnSignup.IdleIconLeftImage = null;
             this.btnSignup.IdleIconRightImage = null;
             this.btnSignup.IndicateFocus = false;
-            this.btnSignup.Location = new System.Drawing.Point(173, 325);
+            this.btnSignup.Location = new System.Drawing.Point(173, 295);
             this.btnSignup.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -371,7 +371,7 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(25, 242);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(25, 212);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -446,7 +446,7 @@
             this.txtEmail.IconRight = null;
             this.txtEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(25, 181);
+            this.txtEmail.Location = new System.Drawing.Point(25, 151);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmail.Modified = false;
@@ -502,7 +502,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(64, 105);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(64, 75);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -515,7 +515,7 @@
             this.lblSignup.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblSignup.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSignup.Location = new System.Drawing.Point(131, 63);
+            this.lblSignup.Location = new System.Drawing.Point(131, 30);
             this.lblSignup.Name = "lblSignup";
             this.lblSignup.Size = new System.Drawing.Size(110, 37);
             this.lblSignup.TabIndex = 14;
@@ -549,7 +549,7 @@
             this.txtUsername.IconRight = null;
             this.txtUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Lines = new string[0];
-            this.txtUsername.Location = new System.Drawing.Point(25, 126);
+            this.txtUsername.Location = new System.Drawing.Point(25, 96);
             this.txtUsername.MaxLength = 32767;
             this.txtUsername.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsername.Modified = false;
