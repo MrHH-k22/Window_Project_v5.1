@@ -243,6 +243,9 @@
     <EmbeddedResource Include="Forms\FInformation.resx">
       <DependentUpon>FInformation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FListSell.resx">
+      <DependentUpon>FListSell.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </EmbeddedResource>
