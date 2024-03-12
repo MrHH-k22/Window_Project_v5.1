@@ -126,8 +126,8 @@ namespace Window_Project_v5._1.Forms
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FInformation(), sender);
-
+            FInformation fInformation = new FInformation();
+            fInformation.Show();
         }
     }
 }
