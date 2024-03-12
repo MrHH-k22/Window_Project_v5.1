@@ -22,5 +22,10 @@ namespace Window_Project_v5._1.Forms
             FHomepage fHomepage = new FHomepage();
             fHomepage.Show();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
