@@ -196,12 +196,6 @@
     <Compile Include="Forms\FOrderAnalysis.Designer.cs">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FSell.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FSell.Designer.cs">
-      <DependentUpon>FSell.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,9 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FUpdateOrder.resx">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FSell.resx">
-      <DependentUpon>FSell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSignin.resx">
       <DependentUpon>FSignin.cs</DependentUpon>
