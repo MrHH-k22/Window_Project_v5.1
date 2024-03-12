@@ -258,6 +258,9 @@
     <EmbeddedResource Include="Forms\FUpdateOrder.resx">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCProductTracking.resx">
+      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FSignin.resx">
       <DependentUpon>FSignin.cs</DependentUpon>
     </EmbeddedResource>
