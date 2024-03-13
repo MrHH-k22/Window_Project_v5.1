@@ -57,11 +57,11 @@
             this.panelTop.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.panelTop.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.panelTop.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.panelTop.Location = new System.Drawing.Point(2, 2);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTop.Location = new System.Drawing.Point(3, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Quality = 10;
-            this.panelTop.Size = new System.Drawing.Size(558, 90);
+            this.panelTop.Size = new System.Drawing.Size(743, 111);
             this.panelTop.TabIndex = 0;
             // 
             // bunifuPictureBox1
@@ -72,10 +72,10 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(36, 15);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(47, 18);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(69, 69);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 11;
             this.bunifuPictureBox1.TabStop = false;
@@ -87,9 +87,10 @@
             this.lblSingin.BackColor = System.Drawing.Color.Transparent;
             this.lblSingin.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSingin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSingin.Location = new System.Drawing.Point(92, 24);
+            this.lblSingin.Location = new System.Drawing.Point(123, 30);
+            this.lblSingin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSingin.Name = "lblSingin";
-            this.lblSingin.Size = new System.Drawing.Size(204, 37);
+            this.lblSingin.Size = new System.Drawing.Size(250, 45);
             this.lblSingin.TabIndex = 10;
             this.lblSingin.Text = "Product Details";
             // 
@@ -140,8 +141,8 @@
             this.btnBrowse.IdleIconLeftImage = null;
             this.btnBrowse.IdleIconRightImage = null;
             this.btnBrowse.IndicateFocus = false;
-            this.btnBrowse.Location = new System.Drawing.Point(426, 311);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowse.Location = new System.Drawing.Point(568, 383);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBrowse.OnDisabledState.BorderRadius = 30;
@@ -175,7 +176,7 @@
             this.btnBrowse.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnBrowse.OnPressedState.IconLeftImage = null;
             this.btnBrowse.OnPressedState.IconRightImage = null;
-            this.btnBrowse.Size = new System.Drawing.Size(80, 32);
+            this.btnBrowse.Size = new System.Drawing.Size(107, 39);
             this.btnBrowse.TabIndex = 23;
             this.btnBrowse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBrowse.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -230,8 +231,8 @@
             this.btnSave.IdleIconLeftImage = null;
             this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(22, 354);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(29, 436);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.OnDisabledState.BorderRadius = 30;
@@ -265,7 +266,7 @@
             this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnSave.OnPressedState.IconLeftImage = null;
             this.btnSave.OnPressedState.IconRightImage = null;
-            this.btnSave.Size = new System.Drawing.Size(80, 32);
+            this.btnSave.Size = new System.Drawing.Size(107, 39);
             this.btnSave.TabIndex = 24;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -320,8 +321,8 @@
             this.btnClose.IdleIconLeftImage = null;
             this.btnClose.IdleIconRightImage = null;
             this.btnClose.IndicateFocus = false;
-            this.btnClose.Location = new System.Drawing.Point(136, 354);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Location = new System.Drawing.Point(181, 436);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.OnDisabledState.BorderRadius = 30;
@@ -355,7 +356,7 @@
             this.btnClose.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnClose.OnPressedState.IconLeftImage = null;
             this.btnClose.OnPressedState.IconRightImage = null;
-            this.btnClose.Size = new System.Drawing.Size(80, 32);
+            this.btnClose.Size = new System.Drawing.Size(107, 39);
             this.btnClose.TabIndex = 25;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -406,27 +407,28 @@
             // 
             // ucDetail1
             // 
-            this.ucDetail1.Location = new System.Drawing.Point(13, 99);
+            this.ucDetail1.Location = new System.Drawing.Point(17, 122);
+            this.ucDetail1.Margin = new System.Windows.Forms.Padding(5);
             this.ucDetail1.Name = "ucDetail1";
-            this.ucDetail1.Size = new System.Drawing.Size(527, 256);
+            this.ucDetail1.Size = new System.Drawing.Size(703, 315);
             this.ucDetail1.TabIndex = 26;
             // 
             // FDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 406);
+            this.ClientSize = new System.Drawing.Size(749, 500);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.ucDetail1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(562, 406);
-            this.MinimumSize = new System.Drawing.Size(562, 406);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(749, 500);
+            this.MinimumSize = new System.Drawing.Size(749, 500);
             this.Name = "FDetail";
-            this.Padding = new System.Windows.Forms.Padding(2);
+            this.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDetail";
             this.panelTop.ResumeLayout(false);
