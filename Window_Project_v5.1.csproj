@@ -270,6 +270,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FForgetPassword.resx">
+      <DependentUpon>FForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FHomepage.resx">
       <DependentUpon>FHomepage.cs</DependentUpon>
     </EmbeddedResource>
