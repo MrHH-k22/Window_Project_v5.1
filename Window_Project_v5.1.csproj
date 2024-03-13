@@ -288,11 +288,17 @@
     <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FProductDetail.resx">
+      <DependentUpon>FProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FUpdateOrder.resx">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCDetail.resx">
+      <DependentUpon>UCDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductTracking.resx">
       <DependentUpon>UCProductTracking.cs</DependentUpon>

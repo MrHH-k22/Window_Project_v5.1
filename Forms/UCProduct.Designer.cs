@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProduct));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblItemPrice = new System.Windows.Forms.Label();
             this.ratingProduct = new Bunifu.UI.WinForms.BunifuRating();
@@ -43,10 +43,9 @@
             this.lblProductName.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblProductName.Location = new System.Drawing.Point(4, 155);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProductName.Location = new System.Drawing.Point(3, 124);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(237, 48);
+            this.lblProductName.Size = new System.Drawing.Size(190, 38);
             this.lblProductName.TabIndex = 10;
             this.lblProductName.Text = "Product name";
             this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,10 +55,9 @@
             this.lblItemPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblItemPrice.Font = new System.Drawing.Font("Segoe UI", 14.2F, System.Drawing.FontStyle.Bold);
             this.lblItemPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblItemPrice.Location = new System.Drawing.Point(4, 234);
-            this.lblItemPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItemPrice.Location = new System.Drawing.Point(3, 187);
             this.lblItemPrice.Name = "lblItemPrice";
-            this.lblItemPrice.Size = new System.Drawing.Size(237, 47);
+            this.lblItemPrice.Size = new System.Drawing.Size(190, 38);
             this.lblItemPrice.TabIndex = 11;
             this.lblItemPrice.Text = "100.000 VND";
             this.lblItemPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,7 +73,8 @@
             this.ratingProduct.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
             this.ratingProduct.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
             this.ratingProduct.InnerRadius = 2F;
-            this.ratingProduct.Location = new System.Drawing.Point(58, 206);
+            this.ratingProduct.Location = new System.Drawing.Point(46, 165);
+            this.ratingProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ratingProduct.Name = "ratingProduct";
             this.ratingProduct.OuterRadius = 10F;
             this.ratingProduct.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
@@ -91,9 +90,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.laptop;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 134);
+            this.pictureBox1.Size = new System.Drawing.Size(116, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -118,11 +118,11 @@
             this.btnDetail.ColorContrastOnClick = 45;
             this.btnDetail.ColorContrastOnHover = 45;
             this.btnDetail.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnDetail.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnDetail.CustomizableEdges = borderEdges1;
             this.btnDetail.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDetail.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDetail.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -146,8 +146,8 @@
             this.btnDetail.IdleIconLeftImage = null;
             this.btnDetail.IdleIconRightImage = null;
             this.btnDetail.IndicateFocus = false;
-            this.btnDetail.Location = new System.Drawing.Point(76, 278);
-            this.btnDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDetail.Location = new System.Drawing.Point(61, 222);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDetail.OnDisabledState.BorderRadius = 30;
@@ -181,17 +181,18 @@
             this.btnDetail.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnDetail.OnPressedState.IconLeftImage = null;
             this.btnDetail.OnPressedState.IconRightImage = null;
-            this.btnDetail.Size = new System.Drawing.Size(88, 39);
+            this.btnDetail.Size = new System.Drawing.Size(70, 31);
             this.btnDetail.TabIndex = 34;
             this.btnDetail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDetail.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDetail.TextMarginLeft = 0;
             this.btnDetail.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDetail.UseDefaultRadiusAndThickness = true;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // UCProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.Controls.Add(this.btnDetail);
@@ -199,8 +200,9 @@
             this.Controls.Add(this.ratingProduct);
             this.Controls.Add(this.lblItemPrice);
             this.Controls.Add(this.lblProductName);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCProduct";
-            this.Size = new System.Drawing.Size(245, 330);
+            this.Size = new System.Drawing.Size(196, 264);
             this.MouseEnter += new System.EventHandler(this.UCProduct_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UCProduct_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
