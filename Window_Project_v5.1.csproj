@@ -148,12 +148,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FMessageBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FMessageBox.Designer.cs">
-      <DependentUpon>FMessageBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FBuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +237,36 @@
     </Compile>
     <Compile Include="Forms\FUpdateOrder.Designer.cs">
       <DependentUpon>FUpdateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForms\FMessageError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForms\FMessageError.Designer.cs">
+      <DependentUpon>FMessageError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForms\FMessageInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForms\FMessageInfo.Designer.cs">
+      <DependentUpon>FMessageInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForms\FMessageSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForms\FMessageSuccess.Designer.cs">
+      <DependentUpon>FMessageSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForms\FMessageWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForms\FMessageWarning.Designer.cs">
+      <DependentUpon>FMessageWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForms\UCMessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageForms\UCMessageBox.Designer.cs">
+      <DependentUpon>UCMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
