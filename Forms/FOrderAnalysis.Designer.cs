@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrderAnalysis));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblOrder = new System.Windows.Forms.Label();
-            this.lblAmountOrder = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblAmountOrder = new System.Windows.Forms.Label();
+            this.lblOrder = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,16 +54,16 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panelDetailProgress = new System.Windows.Forms.Panel();
-            this.pbWaiting = new Bunifu.UI.WinForms.BunifuProgressBar();
-            this.lblWaiting = new System.Windows.Forms.Label();
-            this.lblConfirmed = new System.Windows.Forms.Label();
-            this.pbConfirmed = new Bunifu.UI.WinForms.BunifuProgressBar();
-            this.lblPacking = new System.Windows.Forms.Label();
-            this.pbPacking = new Bunifu.UI.WinForms.BunifuProgressBar();
-            this.lblTransport = new System.Windows.Forms.Label();
-            this.pbTransport = new Bunifu.UI.WinForms.BunifuProgressBar();
             this.lblCompleted = new System.Windows.Forms.Label();
             this.pbCompleted = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.lblTransport = new System.Windows.Forms.Label();
+            this.pbTransport = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.lblPacking = new System.Windows.Forms.Label();
+            this.pbPacking = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.lblConfirmed = new System.Windows.Forms.Label();
+            this.pbConfirmed = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.lblWaiting = new System.Windows.Forms.Label();
+            this.pbWaiting = new Bunifu.UI.WinForms.BunifuProgressBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -89,16 +89,15 @@
             this.panel1.Size = new System.Drawing.Size(161, 94);
             this.panel1.TabIndex = 0;
             // 
-            // lblOrder
+            // pictureBox1
             // 
-            this.lblOrder.AutoSize = true;
-            this.lblOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblOrder.ForeColor = System.Drawing.Color.White;
-            this.lblOrder.Location = new System.Drawing.Point(8, 12);
-            this.lblOrder.Name = "lblOrder";
-            this.lblOrder.Size = new System.Drawing.Size(41, 13);
-            this.lblOrder.TabIndex = 0;
-            this.lblOrder.Text = "Orders";
+            this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
+            this.pictureBox1.Location = new System.Drawing.Point(82, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // lblAmountOrder
             // 
@@ -111,15 +110,16 @@
             this.lblAmountOrder.TabIndex = 2;
             this.lblAmountOrder.Text = "1,576";
             // 
-            // pictureBox1
+            // lblOrder
             // 
-            this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.pictureBox1.Location = new System.Drawing.Point(82, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.lblOrder.AutoSize = true;
+            this.lblOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblOrder.ForeColor = System.Drawing.Color.White;
+            this.lblOrder.Location = new System.Drawing.Point(8, 12);
+            this.lblOrder.Name = "lblOrder";
+            this.lblOrder.Size = new System.Drawing.Size(41, 13);
+            this.lblOrder.TabIndex = 0;
+            this.lblOrder.Text = "Orders";
             // 
             // panel2
             // 
@@ -335,7 +335,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -367,12 +367,12 @@
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(11, 13);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(7, 8);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(656, 150);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(664, 167);
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -394,162 +394,14 @@
             this.panelDetailProgress.Size = new System.Drawing.Size(494, 148);
             this.panelDetailProgress.TabIndex = 20;
             // 
-            // pbWaiting
-            // 
-            this.pbWaiting.AllowAnimations = false;
-            this.pbWaiting.Animation = 0;
-            this.pbWaiting.AnimationSpeed = 220;
-            this.pbWaiting.AnimationStep = 10;
-            this.pbWaiting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbWaiting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWaiting.BackgroundImage")));
-            this.pbWaiting.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbWaiting.BorderRadius = 9;
-            this.pbWaiting.BorderThickness = 1;
-            this.pbWaiting.Location = new System.Drawing.Point(14, 24);
-            this.pbWaiting.Maximum = 100;
-            this.pbWaiting.MaximumValue = 100;
-            this.pbWaiting.Minimum = 0;
-            this.pbWaiting.MinimumValue = 0;
-            this.pbWaiting.Name = "pbWaiting";
-            this.pbWaiting.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.pbWaiting.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbWaiting.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.pbWaiting.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.pbWaiting.Size = new System.Drawing.Size(285, 13);
-            this.pbWaiting.TabIndex = 0;
-            this.pbWaiting.Value = 50;
-            this.pbWaiting.ValueByTransition = 50;
-            // 
-            // lblWaiting
-            // 
-            this.lblWaiting.AutoSize = true;
-            this.lblWaiting.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblWaiting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.lblWaiting.Location = new System.Drawing.Point(364, 24);
-            this.lblWaiting.Name = "lblWaiting";
-            this.lblWaiting.Size = new System.Drawing.Size(117, 13);
-            this.lblWaiting.TabIndex = 1;
-            this.lblWaiting.Text = "Wait for confirmation";
-            // 
-            // lblConfirmed
-            // 
-            this.lblConfirmed.AutoSize = true;
-            this.lblConfirmed.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblConfirmed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.lblConfirmed.Location = new System.Drawing.Point(364, 46);
-            this.lblConfirmed.Name = "lblConfirmed";
-            this.lblConfirmed.Size = new System.Drawing.Size(61, 13);
-            this.lblConfirmed.TabIndex = 3;
-            this.lblConfirmed.Text = "Confirmed";
-            // 
-            // pbConfirmed
-            // 
-            this.pbConfirmed.AllowAnimations = false;
-            this.pbConfirmed.Animation = 0;
-            this.pbConfirmed.AnimationSpeed = 220;
-            this.pbConfirmed.AnimationStep = 10;
-            this.pbConfirmed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbConfirmed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbConfirmed.BackgroundImage")));
-            this.pbConfirmed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbConfirmed.BorderRadius = 9;
-            this.pbConfirmed.BorderThickness = 1;
-            this.pbConfirmed.Location = new System.Drawing.Point(14, 46);
-            this.pbConfirmed.Maximum = 100;
-            this.pbConfirmed.MaximumValue = 100;
-            this.pbConfirmed.Minimum = 0;
-            this.pbConfirmed.MinimumValue = 0;
-            this.pbConfirmed.Name = "pbConfirmed";
-            this.pbConfirmed.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.pbConfirmed.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbConfirmed.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.pbConfirmed.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.pbConfirmed.Size = new System.Drawing.Size(285, 13);
-            this.pbConfirmed.TabIndex = 2;
-            this.pbConfirmed.Value = 26;
-            this.pbConfirmed.ValueByTransition = 26;
-            // 
-            // lblPacking
-            // 
-            this.lblPacking.AutoSize = true;
-            this.lblPacking.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblPacking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.lblPacking.Location = new System.Drawing.Point(364, 67);
-            this.lblPacking.Name = "lblPacking";
-            this.lblPacking.Size = new System.Drawing.Size(46, 13);
-            this.lblPacking.TabIndex = 5;
-            this.lblPacking.Text = "Packing";
-            // 
-            // pbPacking
-            // 
-            this.pbPacking.AllowAnimations = false;
-            this.pbPacking.Animation = 0;
-            this.pbPacking.AnimationSpeed = 220;
-            this.pbPacking.AnimationStep = 10;
-            this.pbPacking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbPacking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPacking.BackgroundImage")));
-            this.pbPacking.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbPacking.BorderRadius = 9;
-            this.pbPacking.BorderThickness = 1;
-            this.pbPacking.Location = new System.Drawing.Point(14, 67);
-            this.pbPacking.Maximum = 100;
-            this.pbPacking.MaximumValue = 100;
-            this.pbPacking.Minimum = 0;
-            this.pbPacking.MinimumValue = 0;
-            this.pbPacking.Name = "pbPacking";
-            this.pbPacking.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.pbPacking.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbPacking.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.pbPacking.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.pbPacking.Size = new System.Drawing.Size(285, 13);
-            this.pbPacking.TabIndex = 4;
-            this.pbPacking.Value = 67;
-            this.pbPacking.ValueByTransition = 67;
-            // 
-            // lblTransport
-            // 
-            this.lblTransport.AutoSize = true;
-            this.lblTransport.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTransport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.lblTransport.Location = new System.Drawing.Point(364, 88);
-            this.lblTransport.Name = "lblTransport";
-            this.lblTransport.Size = new System.Drawing.Size(55, 13);
-            this.lblTransport.TabIndex = 7;
-            this.lblTransport.Text = "Transport";
-            // 
-            // pbTransport
-            // 
-            this.pbTransport.AllowAnimations = false;
-            this.pbTransport.Animation = 0;
-            this.pbTransport.AnimationSpeed = 220;
-            this.pbTransport.AnimationStep = 10;
-            this.pbTransport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbTransport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbTransport.BackgroundImage")));
-            this.pbTransport.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbTransport.BorderRadius = 9;
-            this.pbTransport.BorderThickness = 1;
-            this.pbTransport.Location = new System.Drawing.Point(14, 88);
-            this.pbTransport.Maximum = 100;
-            this.pbTransport.MaximumValue = 100;
-            this.pbTransport.Minimum = 0;
-            this.pbTransport.MinimumValue = 0;
-            this.pbTransport.Name = "pbTransport";
-            this.pbTransport.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.pbTransport.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.pbTransport.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.pbTransport.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.pbTransport.Size = new System.Drawing.Size(285, 13);
-            this.pbTransport.TabIndex = 6;
-            this.pbTransport.Value = 82;
-            this.pbTransport.ValueByTransition = 82;
-            // 
             // lblCompleted
             // 
             this.lblCompleted.AutoSize = true;
-            this.lblCompleted.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCompleted.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCompleted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.lblCompleted.Location = new System.Drawing.Point(364, 109);
+            this.lblCompleted.Location = new System.Drawing.Point(342, 108);
             this.lblCompleted.Name = "lblCompleted";
-            this.lblCompleted.Size = new System.Drawing.Size(64, 13);
+            this.lblCompleted.Size = new System.Drawing.Size(65, 15);
             this.lblCompleted.TabIndex = 9;
             this.lblCompleted.Text = "Completed";
             // 
@@ -579,6 +431,154 @@
             this.pbCompleted.Value = 15;
             this.pbCompleted.ValueByTransition = 15;
             // 
+            // lblTransport
+            // 
+            this.lblTransport.AutoSize = true;
+            this.lblTransport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTransport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            this.lblTransport.Location = new System.Drawing.Point(342, 87);
+            this.lblTransport.Name = "lblTransport";
+            this.lblTransport.Size = new System.Drawing.Size(57, 15);
+            this.lblTransport.TabIndex = 7;
+            this.lblTransport.Text = "Transport";
+            // 
+            // pbTransport
+            // 
+            this.pbTransport.AllowAnimations = false;
+            this.pbTransport.Animation = 0;
+            this.pbTransport.AnimationSpeed = 220;
+            this.pbTransport.AnimationStep = 10;
+            this.pbTransport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbTransport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbTransport.BackgroundImage")));
+            this.pbTransport.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbTransport.BorderRadius = 9;
+            this.pbTransport.BorderThickness = 1;
+            this.pbTransport.Location = new System.Drawing.Point(14, 88);
+            this.pbTransport.Maximum = 100;
+            this.pbTransport.MaximumValue = 100;
+            this.pbTransport.Minimum = 0;
+            this.pbTransport.MinimumValue = 0;
+            this.pbTransport.Name = "pbTransport";
+            this.pbTransport.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.pbTransport.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbTransport.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            this.pbTransport.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            this.pbTransport.Size = new System.Drawing.Size(285, 13);
+            this.pbTransport.TabIndex = 6;
+            this.pbTransport.Value = 82;
+            this.pbTransport.ValueByTransition = 82;
+            // 
+            // lblPacking
+            // 
+            this.lblPacking.AutoSize = true;
+            this.lblPacking.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblPacking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblPacking.Location = new System.Drawing.Point(342, 66);
+            this.lblPacking.Name = "lblPacking";
+            this.lblPacking.Size = new System.Drawing.Size(49, 15);
+            this.lblPacking.TabIndex = 5;
+            this.lblPacking.Text = "Packing";
+            // 
+            // pbPacking
+            // 
+            this.pbPacking.AllowAnimations = false;
+            this.pbPacking.Animation = 0;
+            this.pbPacking.AnimationSpeed = 220;
+            this.pbPacking.AnimationStep = 10;
+            this.pbPacking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbPacking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPacking.BackgroundImage")));
+            this.pbPacking.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbPacking.BorderRadius = 9;
+            this.pbPacking.BorderThickness = 1;
+            this.pbPacking.Location = new System.Drawing.Point(14, 67);
+            this.pbPacking.Maximum = 100;
+            this.pbPacking.MaximumValue = 100;
+            this.pbPacking.Minimum = 0;
+            this.pbPacking.MinimumValue = 0;
+            this.pbPacking.Name = "pbPacking";
+            this.pbPacking.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.pbPacking.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbPacking.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.pbPacking.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.pbPacking.Size = new System.Drawing.Size(285, 13);
+            this.pbPacking.TabIndex = 4;
+            this.pbPacking.Value = 67;
+            this.pbPacking.ValueByTransition = 67;
+            // 
+            // lblConfirmed
+            // 
+            this.lblConfirmed.AutoSize = true;
+            this.lblConfirmed.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblConfirmed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.lblConfirmed.Location = new System.Drawing.Point(342, 45);
+            this.lblConfirmed.Name = "lblConfirmed";
+            this.lblConfirmed.Size = new System.Drawing.Size(63, 15);
+            this.lblConfirmed.TabIndex = 3;
+            this.lblConfirmed.Text = "Confirmed";
+            // 
+            // pbConfirmed
+            // 
+            this.pbConfirmed.AllowAnimations = false;
+            this.pbConfirmed.Animation = 0;
+            this.pbConfirmed.AnimationSpeed = 220;
+            this.pbConfirmed.AnimationStep = 10;
+            this.pbConfirmed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbConfirmed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbConfirmed.BackgroundImage")));
+            this.pbConfirmed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbConfirmed.BorderRadius = 9;
+            this.pbConfirmed.BorderThickness = 1;
+            this.pbConfirmed.Location = new System.Drawing.Point(14, 46);
+            this.pbConfirmed.Maximum = 100;
+            this.pbConfirmed.MaximumValue = 100;
+            this.pbConfirmed.Minimum = 0;
+            this.pbConfirmed.MinimumValue = 0;
+            this.pbConfirmed.Name = "pbConfirmed";
+            this.pbConfirmed.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.pbConfirmed.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbConfirmed.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.pbConfirmed.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.pbConfirmed.Size = new System.Drawing.Size(285, 13);
+            this.pbConfirmed.TabIndex = 2;
+            this.pbConfirmed.Value = 26;
+            this.pbConfirmed.ValueByTransition = 26;
+            // 
+            // lblWaiting
+            // 
+            this.lblWaiting.AutoSize = true;
+            this.lblWaiting.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblWaiting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.lblWaiting.Location = new System.Drawing.Point(342, 23);
+            this.lblWaiting.Name = "lblWaiting";
+            this.lblWaiting.Size = new System.Drawing.Size(122, 15);
+            this.lblWaiting.TabIndex = 1;
+            this.lblWaiting.Text = "Wait for confirmation";
+            // 
+            // pbWaiting
+            // 
+            this.pbWaiting.AllowAnimations = false;
+            this.pbWaiting.Animation = 0;
+            this.pbWaiting.AnimationSpeed = 220;
+            this.pbWaiting.AnimationStep = 10;
+            this.pbWaiting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbWaiting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWaiting.BackgroundImage")));
+            this.pbWaiting.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbWaiting.BorderRadius = 9;
+            this.pbWaiting.BorderThickness = 1;
+            this.pbWaiting.Location = new System.Drawing.Point(14, 24);
+            this.pbWaiting.Maximum = 100;
+            this.pbWaiting.MaximumValue = 100;
+            this.pbWaiting.Minimum = 0;
+            this.pbWaiting.MinimumValue = 0;
+            this.pbWaiting.Name = "pbWaiting";
+            this.pbWaiting.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.pbWaiting.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.pbWaiting.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.pbWaiting.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.pbWaiting.Size = new System.Drawing.Size(285, 13);
+            this.pbWaiting.TabIndex = 0;
+            this.pbWaiting.Value = 50;
+            this.pbWaiting.ValueByTransition = 50;
+            // 
             // FOrderAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -591,7 +591,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FOrderAnalysis";
             this.Text = "FOrderAnalysis";
             this.Load += new System.EventHandler(this.FOrderAnalysis_Load);
