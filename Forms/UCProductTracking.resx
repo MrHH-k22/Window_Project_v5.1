@@ -123,17 +123,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDetail.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFIAAAAfCAYAAAB06popAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH5SURBVGhD7Zq9SgNBEMe3tLS09A3u9rJ7ly4+gaT0EcTO
-        UhACtxu0s0sRsLCyEOwEK8HK0sJCsPAFosQPNJAUOrPZCDkn8S65yps//AjcfoT9s7M3t7sij+Ja2kyk
-        PUsic4vEkf36z0zG6cYs061Go7XirSiuIGitqtAcamlHsTQv1B9WARj/K/wOlEy7WrfWvD35BI02dWT7
-        0Mkg23FV0aEdoakqsjvepvmKZXsXGjxTnTEAeKMjc+ztooUmYkWyA+YHjFSI2FNv27RcOLOJuVFu7Uz3
-        vH1j4SKK8U81YOYgzZMObOhtdLOxi4spWZmZC0zAK2ci5kjwgN/OCwJr5XsSHKwLTDg5rJdioKXZF+Do
-        RRwZqgKTE/wKEuDmPVXIFEDaHuSOtkcWMoUQ1EOmOGxkSbCRJcFGlgQbWRKQ/nAyXgaYkD9SBUx+cDJi
-        Qn5DFTL5wcmIob0NSfkHVYH5G+WOIMyR24tkI5eiD9TdVhruqWUKmZy4sJ4Id3mrfOS6MOhZLW16G8eC
-        go4O7duvygwJeDWMZfvc2zetOLTXOjRDqiGTxdzNvIHhjh3ATHj5fNKNGZxosC4+4E0Ub9ts4QE4NMK3
-        EdlZZYE1Ucn2ZaG7QEnNbPgLU2woXt/BL8Dsi6WIoJO6krZTyZ10GDNE5wlOKm/HDAnxDRCkCcq6jm8O
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAG0AAAAmCAYAAADOZxX5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIZSURBVHhe7Zu7SgNBFIa3tLS09A12Z7OzSRefQFL6CGJn
+        KQiBnQna2aUIWFhZCHaClWBlaWEhWPgCUeIFDSSFnjOZFIkTSSCXGfgPfAR2LoH5mDN7mYmmibxU1MpC
+        X5RTdc/kqf4B82E4pmZ8RbFTrdbX7LDPHnFcX88SdSyF7udCvbn+EMwXGut3+u1momhJWd+wKqYLarQt
+        U92hTrrjHYPFIxPdZ4FZqveskv8jF419avDq6gwsGfIgU3Vq1biDhXFFZwdgJXC2o6x3bhWNhkmJEOYl
+        mVnrigOrahC86HEOdTUAniDUi4x1YpWZWdbixc9ZGXgDTawbI4yfC+gC7hIDgNa2z3J8tBnxAx1SYzB0
+        pVCHEdm7ylPlqgA8hN+eRGTu0VUIPEXoNj2b6bazEHhL5LoI/AbSAgTSAgTSAgTSAgTSAgTSAgTSAgTS
+        AgTSAgTSAgTSAiTCt7Tw4O9pz64C4Cc8yfh72p2rEPgJTzJOj7u50F+uCsAvMrPzWJ2Y7XOQFgwdomJ2
+        ZPHWrLFC4CEmNQ6DN0HiZIznsJ9SUbPKBkEFTZnojz+VwcohL71cNC6tqtHIE30rE9VzNQSrRD1MPGxo
+        dhuTOLox+XY3BsuEJxCtY098wNMqmhx8Jooa8Z2KszOwBGgNy0TjeqbjvOWS2rLnqyFvuXTMW6rxm45Z
+        gjqpZEI3sal1wdD4UoY748lih35CRNEvH+AHPlFTRcAAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="lblProductCondition.BaseStylesheet" xml:space="preserve">
