@@ -229,6 +229,7 @@
             this.btnSignin.TextMarginLeft = 0;
             this.btnSignin.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSignin.UseDefaultRadiusAndThickness = true;
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // label2
             // 

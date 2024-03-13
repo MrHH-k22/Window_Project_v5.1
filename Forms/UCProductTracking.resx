@@ -120,22 +120,6 @@
   <data name="lblPrice.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 13pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDetail.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAG0AAAAmCAYAAADOZxX5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIZSURBVHhe7Zu7SgNBFIa3tLS09A12Z7OzSRefQFL6CGJn
-        KQiBnQna2aUIWFhZCHaClWBlaWEhWPgCUeIFDSSFnjOZFIkTSSCXGfgPfAR2LoH5mDN7mYmmibxU1MpC
-        X5RTdc/kqf4B82E4pmZ8RbFTrdbX7LDPHnFcX88SdSyF7udCvbn+EMwXGut3+u1momhJWd+wKqYLarQt
-        U92hTrrjHYPFIxPdZ4FZqveskv8jF419avDq6gwsGfIgU3Vq1biDhXFFZwdgJXC2o6x3bhWNhkmJEOYl
-        mVnrigOrahC86HEOdTUAniDUi4x1YpWZWdbixc9ZGXgDTawbI4yfC+gC7hIDgNa2z3J8tBnxAx1SYzB0
-        pVCHEdm7ylPlqgA8hN+eRGTu0VUIPEXoNj2b6bazEHhL5LoI/AbSAgTSAgTSAgTSAgTSAgTSAgTSAgTS
-        AgTSAgTSAgTSAiTCt7Tw4O9pz64C4Cc8yfh72p2rEPgJTzJOj7u50F+uCsAvMrPzWJ2Y7XOQFgwdomJ2
-        ZPHWrLFC4CEmNQ6DN0HiZIznsJ9SUbPKBkEFTZnojz+VwcohL71cNC6tqtHIE30rE9VzNQSrRD1MPGxo
-        dhuTOLox+XY3BsuEJxCtY098wNMqmhx8Jooa8Z2KszOwBGgNy0TjeqbjvOWS2rLnqyFvuXTMW6rxm45Z
-        gjqpZEI3sal1wdD4UoY748lih35CRNEvH+AHPlFTRcAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="lblProductCondition.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 13pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
@@ -145,6 +129,7 @@
   <data name="lblSellerName.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 13.8pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(54, 50, 132); text-align: left; }</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuPictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGPC/xhBQAAAjpQTFRFxtr8

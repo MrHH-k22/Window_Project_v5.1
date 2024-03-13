@@ -27,5 +27,11 @@ namespace Window_Project_v5._1.Forms
             FHomepage fHomepage = new FHomepage();
             fHomepage.Show();
         }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            FSignup fSignup = new FSignup();
+            fSignup.Show();
+        }
     }
 }
