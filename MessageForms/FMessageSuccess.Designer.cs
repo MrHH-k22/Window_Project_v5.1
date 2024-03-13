@@ -71,7 +71,7 @@
 
         #endregion
 
-        public Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private UCMessageBox ucMessageBox1;
     }
