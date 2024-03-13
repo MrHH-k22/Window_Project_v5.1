@@ -312,6 +312,9 @@
     <EmbeddedResource Include="FSignup.resx">
       <DependentUpon>FSignup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageForms\UCMessageBox.resx">
+      <DependentUpon>UCMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
