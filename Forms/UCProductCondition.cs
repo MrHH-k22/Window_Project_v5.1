@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class FOrderAnalysis : Form
+    public partial class UCProductCondition : UserControl
     {
-        public FOrderAnalysis()
+        public UCProductCondition()
         {
             InitializeComponent();
-        }
-
-        private void FOrderAnalysis_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

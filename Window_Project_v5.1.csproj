@@ -137,6 +137,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -220,6 +221,12 @@
     <Compile Include="Forms\UCProduct.Designer.cs">
       <DependentUpon>UCProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCProductCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductCondition.Designer.cs">
+      <DependentUpon>UCProductCondition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UCProductTracking.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -302,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCDetail.resx">
       <DependentUpon>UCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCProductCondition.resx">
+      <DependentUpon>UCProductCondition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductTracking.resx">
       <DependentUpon>UCProductTracking.cs</DependentUpon>
@@ -417,6 +427,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\write_v2_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\right_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\heart_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageSuccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageWarning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
