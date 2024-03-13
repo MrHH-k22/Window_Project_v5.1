@@ -28,147 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMessageBox));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            this.pbIcon = new Bunifu.UI.WinForms.BunifuPictureBox();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnYes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lblCaption = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
-            this.btnYes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnNo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.pbIcon = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbIcon
+            // bunifuElipse1
             // 
-            this.pbIcon.AllowFocused = false;
-            this.pbIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbIcon.AutoSizeHeight = true;
-            this.pbIcon.BorderRadius = 0;
-            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
-            this.pbIcon.IsCircle = true;
-            this.pbIcon.Location = new System.Drawing.Point(157, 3);
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(128, 128);
-            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIcon.TabIndex = 0;
-            this.pbIcon.TabStop = false;
-            this.pbIcon.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this;
             // 
-            // lblCaption
+            // panel1
             // 
-            this.lblCaption.AutoSize = true;
-            this.lblCaption.BackColor = System.Drawing.Color.Transparent;
-            this.lblCaption.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblCaption.Location = new System.Drawing.Point(152, 134);
-            this.lblCaption.Name = "lblCaption";
-            this.lblCaption.Size = new System.Drawing.Size(133, 37);
-            this.lblCaption.TabIndex = 6;
-            this.lblCaption.Text = "Caption";
-            this.lblCaption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblContent
-            // 
-            this.lblContent.BackColor = System.Drawing.Color.Transparent;
-            this.lblContent.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblContent.Location = new System.Drawing.Point(37, 171);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(359, 55);
-            this.lblContent.TabIndex = 5;
-            this.lblContent.Text = "Content";
-            this.lblContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnYes
-            // 
-            this.btnYes.AllowAnimations = true;
-            this.btnYes.AllowMouseEffects = true;
-            this.btnYes.AllowToggling = false;
-            this.btnYes.AnimationSpeed = 200;
-            this.btnYes.AutoGenerateColors = false;
-            this.btnYes.AutoRoundBorders = false;
-            this.btnYes.AutoSizeLeftIcon = true;
-            this.btnYes.AutoSizeRightIcon = true;
-            this.btnYes.BackColor = System.Drawing.Color.Transparent;
-            this.btnYes.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnYes.BackgroundImage")));
-            this.btnYes.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnYes.ButtonText = "Yes";
-            this.btnYes.ButtonTextMarginLeft = 0;
-            this.btnYes.ColorContrastOnClick = 45;
-            this.btnYes.ColorContrastOnHover = 45;
-            this.btnYes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnYes.CustomizableEdges = borderEdges1;
-            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnYes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnYes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnYes.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnYes.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnYes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYes.ForeColor = System.Drawing.Color.White;
-            this.btnYes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYes.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnYes.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnYes.IconMarginLeft = 11;
-            this.btnYes.IconPadding = 10;
-            this.btnYes.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnYes.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnYes.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnYes.IconSize = 25;
-            this.btnYes.IdleBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnYes.IdleBorderRadius = 35;
-            this.btnYes.IdleBorderThickness = 2;
-            this.btnYes.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.IdleIconLeftImage = null;
-            this.btnYes.IdleIconRightImage = null;
-            this.btnYes.IndicateFocus = false;
-            this.btnYes.Location = new System.Drawing.Point(41, 228);
-            this.btnYes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnYes.Name = "btnYes";
-            this.btnYes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnYes.OnDisabledState.BorderRadius = 35;
-            this.btnYes.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnYes.OnDisabledState.BorderThickness = 2;
-            this.btnYes.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnYes.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnYes.OnDisabledState.IconLeftImage = null;
-            this.btnYes.OnDisabledState.IconRightImage = null;
-            this.btnYes.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.onHoverState.BorderRadius = 35;
-            this.btnYes.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnYes.onHoverState.BorderThickness = 2;
-            this.btnYes.onHoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnYes.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.onHoverState.IconLeftImage = null;
-            this.btnYes.onHoverState.IconRightImage = null;
-            this.btnYes.OnIdleState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnYes.OnIdleState.BorderRadius = 35;
-            this.btnYes.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnYes.OnIdleState.BorderThickness = 2;
-            this.btnYes.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnYes.OnIdleState.IconLeftImage = null;
-            this.btnYes.OnIdleState.IconRightImage = null;
-            this.btnYes.OnPressedState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnYes.OnPressedState.BorderRadius = 35;
-            this.btnYes.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnYes.OnPressedState.BorderThickness = 2;
-            this.btnYes.OnPressedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnYes.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnYes.OnPressedState.IconLeftImage = null;
-            this.btnYes.OnPressedState.IconRightImage = null;
-            this.btnYes.Size = new System.Drawing.Size(136, 53);
-            this.btnYes.TabIndex = 7;
-            this.btnYes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnYes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnYes.TextMarginLeft = 0;
-            this.btnYes.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnYes.UseDefaultRadiusAndThickness = true;
+            this.panel1.Controls.Add(this.btnNo);
+            this.panel1.Controls.Add(this.btnYes);
+            this.panel1.Controls.Add(this.lblCaption);
+            this.panel1.Controls.Add(this.lblContent);
+            this.panel1.Controls.Add(this.pbIcon);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(430, 280);
+            this.panel1.TabIndex = 0;
             // 
             // btnNo
             // 
@@ -184,16 +74,16 @@
             this.btnNo.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnNo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNo.BackgroundImage")));
             this.btnNo.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnNo.ButtonText = "No";
+            this.btnNo.ButtonText = "SIGN IN";
             this.btnNo.ButtonTextMarginLeft = 0;
             this.btnNo.ColorContrastOnClick = 45;
             this.btnNo.ColorContrastOnHover = 45;
             this.btnNo.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnNo.CustomizableEdges = borderEdges2;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnNo.CustomizableEdges = borderEdges5;
             this.btnNo.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -217,7 +107,7 @@
             this.btnNo.IdleIconLeftImage = null;
             this.btnNo.IdleIconRightImage = null;
             this.btnNo.IndicateFocus = false;
-            this.btnNo.Location = new System.Drawing.Point(269, 228);
+            this.btnNo.Location = new System.Drawing.Point(243, 219);
             this.btnNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNo.Name = "btnNo";
             this.btnNo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -252,37 +142,163 @@
             this.btnNo.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnNo.OnPressedState.IconLeftImage = null;
             this.btnNo.OnPressedState.IconRightImage = null;
-            this.btnNo.Size = new System.Drawing.Size(137, 53);
-            this.btnNo.TabIndex = 8;
+            this.btnNo.Size = new System.Drawing.Size(134, 53);
+            this.btnNo.TabIndex = 6;
             this.btnNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnNo.TextMarginLeft = 0;
             this.btnNo.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNo.UseDefaultRadiusAndThickness = true;
             // 
+            // btnYes
+            // 
+            this.btnYes.AllowAnimations = true;
+            this.btnYes.AllowMouseEffects = true;
+            this.btnYes.AllowToggling = false;
+            this.btnYes.AnimationSpeed = 200;
+            this.btnYes.AutoGenerateColors = false;
+            this.btnYes.AutoRoundBorders = false;
+            this.btnYes.AutoSizeLeftIcon = true;
+            this.btnYes.AutoSizeRightIcon = true;
+            this.btnYes.BackColor = System.Drawing.Color.Transparent;
+            this.btnYes.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnYes.BackgroundImage")));
+            this.btnYes.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnYes.ButtonText = "SIGN IN";
+            this.btnYes.ButtonTextMarginLeft = 0;
+            this.btnYes.ColorContrastOnClick = 45;
+            this.btnYes.ColorContrastOnHover = 45;
+            this.btnYes.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnYes.CustomizableEdges = borderEdges6;
+            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnYes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnYes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnYes.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnYes.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnYes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYes.ForeColor = System.Drawing.Color.White;
+            this.btnYes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYes.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnYes.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnYes.IconMarginLeft = 11;
+            this.btnYes.IconPadding = 10;
+            this.btnYes.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnYes.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnYes.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnYes.IconSize = 25;
+            this.btnYes.IdleBorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYes.IdleBorderRadius = 35;
+            this.btnYes.IdleBorderThickness = 2;
+            this.btnYes.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.IdleIconLeftImage = null;
+            this.btnYes.IdleIconRightImage = null;
+            this.btnYes.IndicateFocus = false;
+            this.btnYes.Location = new System.Drawing.Point(42, 219);
+            this.btnYes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnYes.OnDisabledState.BorderRadius = 35;
+            this.btnYes.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnYes.OnDisabledState.BorderThickness = 2;
+            this.btnYes.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnYes.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnYes.OnDisabledState.IconLeftImage = null;
+            this.btnYes.OnDisabledState.IconRightImage = null;
+            this.btnYes.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.onHoverState.BorderRadius = 35;
+            this.btnYes.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnYes.onHoverState.BorderThickness = 2;
+            this.btnYes.onHoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYes.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.onHoverState.IconLeftImage = null;
+            this.btnYes.onHoverState.IconRightImage = null;
+            this.btnYes.OnIdleState.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYes.OnIdleState.BorderRadius = 35;
+            this.btnYes.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnYes.OnIdleState.BorderThickness = 2;
+            this.btnYes.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnYes.OnIdleState.IconLeftImage = null;
+            this.btnYes.OnIdleState.IconRightImage = null;
+            this.btnYes.OnPressedState.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYes.OnPressedState.BorderRadius = 35;
+            this.btnYes.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnYes.OnPressedState.BorderThickness = 2;
+            this.btnYes.OnPressedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYes.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnYes.OnPressedState.IconLeftImage = null;
+            this.btnYes.OnPressedState.IconRightImage = null;
+            this.btnYes.Size = new System.Drawing.Size(134, 53);
+            this.btnYes.TabIndex = 6;
+            this.btnYes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnYes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnYes.TextMarginLeft = 0;
+            this.btnYes.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnYes.UseDefaultRadiusAndThickness = true;
+            // 
+            // lblCaption
+            // 
+            this.lblCaption.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblCaption.Location = new System.Drawing.Point(46, 114);
+            this.lblCaption.Name = "lblCaption";
+            this.lblCaption.Size = new System.Drawing.Size(323, 45);
+            this.lblCaption.TabIndex = 5;
+            this.lblCaption.Text = "Content";
+            this.lblCaption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblContent
+            // 
+            this.lblContent.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblContent.Location = new System.Drawing.Point(54, 175);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(323, 42);
+            this.lblContent.TabIndex = 5;
+            this.lblContent.Text = "Content";
+            this.lblContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.AllowFocused = false;
+            this.pbIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbIcon.AutoSizeHeight = true;
+            this.pbIcon.BorderRadius = 0;
+            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
+            this.pbIcon.IsCircle = true;
+            this.pbIcon.Location = new System.Drawing.Point(165, 18);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(85, 85);
+            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIcon.TabIndex = 0;
+            this.pbIcon.TabStop = false;
+            this.pbIcon.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
             // UCMessageBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnNo);
-            this.Controls.Add(this.btnYes);
-            this.Controls.Add(this.lblCaption);
-            this.Controls.Add(this.lblContent);
-            this.Controls.Add(this.pbIcon);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCMessageBox";
             this.Size = new System.Drawing.Size(450, 300);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        public Bunifu.UI.WinForms.BunifuPictureBox pbIcon;
+        public Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        public System.Windows.Forms.Panel panel1;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnNo;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnYes;
         public System.Windows.Forms.Label lblCaption;
         public System.Windows.Forms.Label lblContent;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnYes;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnNo;
+        public Bunifu.UI.WinForms.BunifuPictureBox pbIcon;
     }
 }

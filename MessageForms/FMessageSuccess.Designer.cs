@@ -29,11 +29,50 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.ucMessageBox1 = new Window_Project_v5._1.MessageForms.UCMessageBox();
+            this.SuspendLayout();
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // ucMessageBox1
+            // 
+            this.ucMessageBox1.Location = new System.Drawing.Point(0, 0);
+            this.ucMessageBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucMessageBox1.Name = "ucMessageBox1";
+            this.ucMessageBox1.Size = new System.Drawing.Size(450, 300);
+            this.ucMessageBox1.TabIndex = 0;
+            // 
+            // FMessageSuccess
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(450, 300);
+            this.Controls.Add(this.ucMessageBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FMessageSuccess";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMessageSuccess";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        public Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private UCMessageBox ucMessageBox1;
     }
 }

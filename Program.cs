@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Window_Project_v5._1.Forms;
+using Window_Project_v5._1.MessageForms;
 
 namespace Window_Project_v5._1
 {
@@ -17,7 +18,7 @@ namespace Window_Project_v5._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FSignin());
+            Application.Run(new FMessageSuccess());
         }
     }
 }

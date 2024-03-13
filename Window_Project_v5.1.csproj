@@ -315,6 +315,9 @@
     <EmbeddedResource Include="FSignup.resx">
       <DependentUpon>FSignup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageForms\FMessageSuccess.resx">
+      <DependentUpon>FMessageSuccess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageForms\UCMessageBox.resx">
       <DependentUpon>UCMessageBox.cs</DependentUpon>
     </EmbeddedResource>
