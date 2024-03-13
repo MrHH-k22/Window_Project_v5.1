@@ -22,10 +22,16 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-        private void btnSiginin_Click(object sender, EventArgs e)
+        private void btnSignin_Click(object sender, EventArgs e)
         {
             FHomepage fHomepage = new FHomepage();
             fHomepage.Show();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            FSignup fSignup = new FSignup();
+            fSignup.Show();
         }
     }
 }

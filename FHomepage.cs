@@ -124,5 +124,110 @@ namespace Window_Project_v5._1.Forms
         {
             OpenChildForm(new Forms.FProductManagement(), sender);
         }
+
+        private void btnSeller_MouseEnter(object sender, EventArgs e)
+        {
+            btnSeller.BackColor = Color.FromArgb(255, 193, 0);
+        }
+
+        private void btnSeller_MouseLeave(object sender, EventArgs e)
+        {
+            btnSeller.BackColor = Color.FromArgb(54, 50, 132);
+        }
+
+        private void btnSell_MouseEnter(object sender, EventArgs e)
+        {
+            btnSell.BackColor = Color.FromArgb(255, 193, 0);
+        }
+
+        private void btnSell_MouseLeave(object sender, EventArgs e)
+        {
+            btnSell.BackColor = Color.FromArgb(40, 37, 110);
+
+        }
+
+        private void btnOrderAnalysis_MouseEnter(object sender, EventArgs e)
+        {
+            btnOrderAnalysis.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnOrderAnalysis_MouseLeave(object sender, EventArgs e)
+        {
+            btnOrderAnalysis.BackColor = Color.FromArgb(40, 37, 110);
+
+        }
+
+        private void btnManagement_MouseEnter(object sender, EventArgs e)
+        {
+            btnManagement.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnManagement_MouseLeave(object sender, EventArgs e)
+        {
+            btnManagement.BackColor = Color.FromArgb(40, 37, 110);
+
+        }
+
+        private void btnBuyer_MouseEnter(object sender, EventArgs e)
+        {
+            btnBuyer.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnBuyer_MouseLeave(object sender, EventArgs e)
+        {
+            btnBuyer.BackColor = Color.FromArgb(54, 50, 132);
+
+        }
+
+        private void btnBuy_MouseEnter(object sender, EventArgs e)
+        {
+            btnBuy.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnBuy_MouseLeave(object sender, EventArgs e)
+        {
+            btnBuy.BackColor = Color.FromArgb(40, 37, 110);
+
+        }
+
+        private void btnTrackOrder_MouseEnter(object sender, EventArgs e)
+        {
+            btnTrackOrder.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnTrackOrder_MouseLeave(object sender, EventArgs e)
+        {
+            btnTrackOrder.BackColor = Color.FromArgb(40, 37, 110);
+
+        }
+
+        private void btnInformation_MouseEnter(object sender, EventArgs e)
+        {
+            btnInformation.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnInformation_MouseLeave(object sender, EventArgs e)
+        {
+            btnInformation.BackColor = Color.FromArgb(54, 50, 132);
+
+        }
+
+        private void btnLogout_MouseEnter(object sender, EventArgs e)
+        {
+            btnLogout.BackColor = Color.FromArgb(255, 193, 0);
+
+        }
+
+        private void btnLogout_MouseLeave(object sender, EventArgs e)
+        {
+            btnLogout.BackColor = Color.FromArgb(54, 50, 132);
+
+        }
     }
 }

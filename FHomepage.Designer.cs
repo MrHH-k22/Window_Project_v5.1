@@ -104,6 +104,8 @@
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.MouseEnter += new System.EventHandler(this.btnLogout_MouseEnter);
+            this.btnLogout.MouseLeave += new System.EventHandler(this.btnLogout_MouseLeave);
             // 
             // btnInformation
             // 
@@ -124,6 +126,8 @@
             this.btnInformation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInformation.UseVisualStyleBackColor = true;
             this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
+            this.btnInformation.MouseEnter += new System.EventHandler(this.btnInformation_MouseEnter);
+            this.btnInformation.MouseLeave += new System.EventHandler(this.btnInformation_MouseLeave);
             // 
             // panelBuyerSubmenu
             // 
@@ -156,6 +160,8 @@
             this.btnTrackOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrackOrder.UseVisualStyleBackColor = false;
             this.btnTrackOrder.Click += new System.EventHandler(this.btnTrackOrder_Click);
+            this.btnTrackOrder.MouseEnter += new System.EventHandler(this.btnTrackOrder_MouseEnter);
+            this.btnTrackOrder.MouseLeave += new System.EventHandler(this.btnTrackOrder_MouseLeave);
             // 
             // btnBuy
             // 
@@ -177,6 +183,8 @@
             this.btnBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuy.UseVisualStyleBackColor = false;
             this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
+            this.btnBuy.MouseEnter += new System.EventHandler(this.btnBuy_MouseEnter);
+            this.btnBuy.MouseLeave += new System.EventHandler(this.btnBuy_MouseLeave);
             // 
             // btnBuyer
             // 
@@ -197,6 +205,8 @@
             this.btnBuyer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuyer.UseVisualStyleBackColor = true;
             this.btnBuyer.Click += new System.EventHandler(this.btnBuyer_Click);
+            this.btnBuyer.MouseEnter += new System.EventHandler(this.btnBuyer_MouseEnter);
+            this.btnBuyer.MouseLeave += new System.EventHandler(this.btnBuyer_MouseLeave);
             // 
             // panelSellerSubmenu
             // 
@@ -230,6 +240,8 @@
             this.btnManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnManagement.UseVisualStyleBackColor = false;
             this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
+            this.btnManagement.MouseEnter += new System.EventHandler(this.btnManagement_MouseEnter);
+            this.btnManagement.MouseLeave += new System.EventHandler(this.btnManagement_MouseLeave);
             // 
             // btnOrderAnalysis
             // 
@@ -251,6 +263,8 @@
             this.btnOrderAnalysis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOrderAnalysis.UseVisualStyleBackColor = false;
             this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
+            this.btnOrderAnalysis.MouseEnter += new System.EventHandler(this.btnOrderAnalysis_MouseEnter);
+            this.btnOrderAnalysis.MouseLeave += new System.EventHandler(this.btnOrderAnalysis_MouseLeave);
             // 
             // btnSell
             // 
@@ -272,6 +286,8 @@
             this.btnSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSell.UseVisualStyleBackColor = false;
             this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
+            this.btnSell.MouseEnter += new System.EventHandler(this.btnSell_MouseEnter);
+            this.btnSell.MouseLeave += new System.EventHandler(this.btnSell_MouseLeave);
             // 
             // btnSeller
             // 
@@ -292,6 +308,8 @@
             this.btnSeller.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSeller.UseVisualStyleBackColor = true;
             this.btnSeller.Click += new System.EventHandler(this.btnSeller_Click);
+            this.btnSeller.MouseEnter += new System.EventHandler(this.btnSeller_MouseEnter);
+            this.btnSeller.MouseLeave += new System.EventHandler(this.btnSeller_MouseLeave);
             // 
             // panelLogo
             // 

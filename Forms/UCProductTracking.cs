@@ -16,5 +16,15 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
+
+        private void UCProductTracking_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
