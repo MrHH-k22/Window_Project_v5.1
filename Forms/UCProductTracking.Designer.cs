@@ -42,14 +42,12 @@
             // lblPrice
             // 
             this.lblPrice.AllowParentOverrides = false;
-            this.lblPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPrice.AutoEllipsis = false;
             this.lblPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPrice.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblPrice.Location = new System.Drawing.Point(697, 15);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPrice.Size = new System.Drawing.Size(169, 30);
@@ -61,15 +59,13 @@
             // lblProductCondition
             // 
             this.lblProductCondition.AllowParentOverrides = false;
-            this.lblProductCondition.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProductCondition.AutoEllipsis = false;
             this.lblProductCondition.BackColor = System.Drawing.Color.DarkGray;
             this.lblProductCondition.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblProductCondition.Location = new System.Drawing.Point(553, 60);
-            this.lblProductCondition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblProductCondition.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductCondition.Name = "lblProductCondition";
             this.lblProductCondition.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblProductCondition.Size = new System.Drawing.Size(108, 30);
@@ -88,7 +84,7 @@
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblProductName.Location = new System.Drawing.Point(155, 17);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblProductName.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblProductName.Size = new System.Drawing.Size(150, 31);
@@ -107,7 +103,7 @@
             this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblSellerName.Location = new System.Drawing.Point(155, 63);
-            this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblSellerName.Margin = new System.Windows.Forms.Padding(4);
             this.lblSellerName.Name = "lblSellerName";
             this.lblSellerName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblSellerName.Size = new System.Drawing.Size(126, 31);
@@ -186,7 +182,7 @@
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.lblProductCondition);
             this.Controls.Add(this.lblPrice);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCProductTracking";
             this.Size = new System.Drawing.Size(913, 114);
             this.Load += new System.EventHandler(this.UCProductTracking_Load);
