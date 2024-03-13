@@ -196,11 +196,23 @@
     <Compile Include="Forms\FOrderAnalysis.Designer.cs">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FProductDetail.Designer.cs">
+      <DependentUpon>FProductDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FTrackOrder.Designer.cs">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCDetail.Designer.cs">
+      <DependentUpon>UCDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCProduct.cs">
       <SubType>UserControl</SubType>
