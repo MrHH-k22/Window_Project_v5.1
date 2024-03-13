@@ -22,19 +22,19 @@ namespace Window_Project_v5._1.Forms
 
         public void customizeDesign()
         {
-            panelBuyerSubmenu.Visible = false;
             panelSellerSubmenu.Visible = false;
+            panelBuyerSubmenu.Visible = false;
         }
 
         public void hideSubmenu()
         {
-            if (panelBuyerSubmenu.Visible == true)
-            {
-                panelBuyerSubmenu.Visible = false;
-            }
             if (panelSellerSubmenu.Visible == true)
             {
                 panelSellerSubmenu.Visible = false;
+            }
+            if (panelBuyerSubmenu.Visible == true)
+            {
+                panelBuyerSubmenu.Visible = false;
             }
         }
 
@@ -47,35 +47,6 @@ namespace Window_Project_v5._1.Forms
             }
             else
                 subMenu.Visible = false;
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSeller_Click(object sender, EventArgs e)
-        {
-            if (panelSellerSubmenu.Visible == true)
-            {
-                hideSubmenu();
-            }
-            else
-            {
-                showSubmenu(panelSellerSubmenu);
-            }
-        }
-
-        private void btnBuyer_Click(object sender, EventArgs e)
-        {
-            if (panelBuyerSubmenu.Visible == true)
-            {
-                hideSubmenu();
-            }
-            else
-            {
-                showSubmenu(panelBuyerSubmenu);
-            }
         }
 
         public void OpenChildForm(Form childform, object btnSender)
@@ -94,40 +65,64 @@ namespace Window_Project_v5._1.Forms
             childform.Show();
         }
 
-        private void btnSell_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FListSell(), sender);
-
-        }
-
-        private void btnUpdateOrder_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FUpdateOrder(), sender);
-
-        }
-
-        private void btnOrderAnalysis_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FOrderAnalysis(), sender);
-
-        }
-
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FBuy(), sender);
-
-        }
-
-        private void btnTrackOrder_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FTrackOrder(), sender);
-
+            this.Close();
         }
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
             FInformation fInformation = new FInformation();
             fInformation.Show();
+        }
+
+        private void btnSeller_Click(object sender, EventArgs e)
+        {
+            if (panelSellerSubmenu.Visible == true)
+            {
+                hideSubmenu();
+            }
+            else
+            {
+                showSubmenu(panelSellerSubmenu);
+            }
+        }
+
+        private void btnSell_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FListSell(), sender);
+        }
+
+        private void btnUpdateOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FUpdateOrder(), sender);
+        }
+
+        private void btnOrderAnalysis_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FOrderAnalysis(), sender);
+        }
+
+        private void btnBuyer_Click(object sender, EventArgs e)
+        {
+            if (panelBuyerSubmenu.Visible == true)
+            {
+                hideSubmenu();
+            }
+            else
+            {
+                showSubmenu(panelBuyerSubmenu);
+            }
+        }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FBuy(), sender);
+        }
+
+        private void btnTrackOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FTrackOrder(), sender);
         }
     }
 }

@@ -334,5 +334,32 @@
   <ItemGroup>
     <None Include="Images\laptop.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\writing_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hand_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\real-time_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\web-analytics_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cart_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\shopping-bag_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tracking_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\info_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exit_30px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
