@@ -428,5 +428,17 @@
   <ItemGroup>
     <None Include="Images\heart_white.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageSuccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MessageWarning.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
