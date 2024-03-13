@@ -243,6 +243,16 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap real_time_30px1 {
+            get {
+                object obj = ResourceManager.GetObject("real-time_30px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shopping_bag {
             get {
                 object obj = ResourceManager.GetObject("shopping-bag", resourceCulture);
@@ -296,6 +306,26 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap web_analytics_30px {
             get {
                 object obj = ResourceManager.GetObject("web-analytics_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap write_30px {
+            get {
+                object obj = ResourceManager.GetObject("write_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap write_v2_30px {
+            get {
+                object obj = ResourceManager.GetObject("write_v2_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

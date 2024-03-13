@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Window_Project_v5._1.Forms
+namespace Window_Project_v5._1.MessageForms
 {
-    public partial class FProductDetail : Form
+    public partial class FMessageError : Form
     {
-        public FProductDetail()
+        public FMessageError()
         {
             InitializeComponent();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

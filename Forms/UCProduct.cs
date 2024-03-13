@@ -39,5 +39,11 @@ namespace Window_Project_v5._1.Forms
         {
             onSelect?.Invoke(this, e);
         }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            FProductDetail fProductDetail = new FProductDetail();
+            fProductDetail.Show();
+        }
     }
 }

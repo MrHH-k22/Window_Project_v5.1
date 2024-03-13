@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Window_Project_v5._1
+namespace Window_Project_v5._1.Forms
 {
-    public partial class FMessageBox : Form
+    public partial class FProductManagement : Form
     {
-        public FMessageBox()
+        public FProductManagement()
         {
             InitializeComponent();
         }
