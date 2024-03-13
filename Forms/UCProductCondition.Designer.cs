@@ -69,7 +69,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPrice.Location = new System.Drawing.Point(736, 20);
+            this.lblPrice.Location = new System.Drawing.Point(713, 20);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(141, 30);
@@ -82,7 +82,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.DarkGray;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblStatus.Location = new System.Drawing.Point(567, 61);
+            this.lblStatus.Location = new System.Drawing.Point(543, 59);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(121, 30);
@@ -96,12 +96,11 @@
             this.btnNextState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNextState.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnNextState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnNextState.Image = global::Window_Project_v5._1.Properties.Resources.right_30px;
-            this.btnNextState.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNextState.Location = new System.Drawing.Point(729, 56);
+            this.btnNextState.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnNextState.Location = new System.Drawing.Point(718, 54);
             this.btnNextState.Name = "btnNextState";
             this.btnNextState.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnNextState.Size = new System.Drawing.Size(141, 37);
+            this.btnNextState.Size = new System.Drawing.Size(118, 37);
             this.btnNextState.TabIndex = 15;
             this.btnNextState.Text = "Next state";
             this.btnNextState.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,8 +120,8 @@
             // 
             // UCProductCondition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnNextState);
@@ -131,7 +130,7 @@
             this.Controls.Add(this.lblBuyerName);
             this.Controls.Add(this.lblProductName);
             this.Name = "UCProductCondition";
-            this.Size = new System.Drawing.Size(913, 114);
+            this.Size = new System.Drawing.Size(885, 114);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
