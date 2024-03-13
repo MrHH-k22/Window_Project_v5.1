@@ -42,9 +42,11 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.tpManagement.SuspendLayout();
             this.gpManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpManagement
@@ -56,78 +58,87 @@
             this.tpManagement.Controls.Add(this.tpTransport);
             this.tpManagement.Controls.Add(this.tpCompleted);
             this.tpManagement.Controls.Add(this.tpCancelled);
-            this.tpManagement.Location = new System.Drawing.Point(0, 135);
+            this.tpManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tpManagement.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.tpManagement.Location = new System.Drawing.Point(0, 129);
             this.tpManagement.Name = "tpManagement";
             this.tpManagement.SelectedIndex = 0;
-            this.tpManagement.Size = new System.Drawing.Size(942, 431);
+            this.tpManagement.Size = new System.Drawing.Size(945, 431);
             this.tpManagement.TabIndex = 0;
             // 
             // tpAll
             // 
-            this.tpAll.Location = new System.Drawing.Point(4, 25);
+            this.tpAll.AutoScroll = true;
+            this.tpAll.Location = new System.Drawing.Point(4, 34);
             this.tpAll.Name = "tpAll";
             this.tpAll.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAll.Size = new System.Drawing.Size(934, 434);
+            this.tpAll.Size = new System.Drawing.Size(934, 393);
             this.tpAll.TabIndex = 0;
             this.tpAll.Text = "All";
             this.tpAll.UseVisualStyleBackColor = true;
             // 
             // tpWaitConfirm
             // 
-            this.tpWaitConfirm.Location = new System.Drawing.Point(4, 25);
+            this.tpWaitConfirm.AutoScroll = true;
+            this.tpWaitConfirm.Location = new System.Drawing.Point(4, 34);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
             this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(934, 434);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(937, 393);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
             // 
             // tpConfirmed
             // 
-            this.tpConfirmed.Location = new System.Drawing.Point(4, 25);
+            this.tpConfirmed.AutoScroll = true;
+            this.tpConfirmed.Location = new System.Drawing.Point(4, 40);
             this.tpConfirmed.Name = "tpConfirmed";
             this.tpConfirmed.Padding = new System.Windows.Forms.Padding(3);
-            this.tpConfirmed.Size = new System.Drawing.Size(934, 402);
+            this.tpConfirmed.Size = new System.Drawing.Size(934, 387);
             this.tpConfirmed.TabIndex = 2;
             this.tpConfirmed.Text = "Confirmed";
             this.tpConfirmed.UseVisualStyleBackColor = true;
             // 
             // tpPack
             // 
-            this.tpPack.Location = new System.Drawing.Point(4, 25);
+            this.tpPack.AutoScroll = true;
+            this.tpPack.Location = new System.Drawing.Point(4, 40);
             this.tpPack.Name = "tpPack";
             this.tpPack.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPack.Size = new System.Drawing.Size(934, 434);
+            this.tpPack.Size = new System.Drawing.Size(934, 387);
             this.tpPack.TabIndex = 3;
             this.tpPack.Text = "Pack";
             this.tpPack.UseVisualStyleBackColor = true;
             // 
             // tpTransport
             // 
+            this.tpTransport.AutoScroll = true;
             this.tpTransport.Location = new System.Drawing.Point(4, 25);
             this.tpTransport.Name = "tpTransport";
             this.tpTransport.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTransport.Size = new System.Drawing.Size(934, 434);
+            this.tpTransport.Size = new System.Drawing.Size(934, 402);
             this.tpTransport.TabIndex = 4;
             this.tpTransport.Text = "Transport";
             this.tpTransport.UseVisualStyleBackColor = true;
             // 
             // tpCompleted
             // 
+            this.tpCompleted.AutoScroll = true;
             this.tpCompleted.Location = new System.Drawing.Point(4, 25);
             this.tpCompleted.Name = "tpCompleted";
             this.tpCompleted.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCompleted.Size = new System.Drawing.Size(934, 434);
+            this.tpCompleted.Size = new System.Drawing.Size(934, 402);
             this.tpCompleted.TabIndex = 5;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
             // 
             // tpCancelled
             // 
+            this.tpCancelled.AutoScroll = true;
             this.tpCancelled.Location = new System.Drawing.Point(4, 25);
             this.tpCancelled.Name = "tpCancelled";
             this.tpCancelled.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCancelled.Size = new System.Drawing.Size(934, 434);
+            this.tpCancelled.Size = new System.Drawing.Size(934, 402);
             this.tpCancelled.TabIndex = 6;
             this.tpCancelled.Text = "Cancelled";
             this.tpCancelled.UseVisualStyleBackColor = true;
@@ -145,7 +156,8 @@
             this.gpManagement.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gpManagement.LabelIndent = 10;
             this.gpManagement.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.gpManagement.Location = new System.Drawing.Point(12, 13);
+            this.gpManagement.Location = new System.Drawing.Point(11, 7);
+            this.gpManagement.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.gpManagement.Name = "gpManagement";
             this.gpManagement.Size = new System.Drawing.Size(921, 116);
             this.gpManagement.TabIndex = 1;
@@ -206,20 +218,30 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Revenue:";
             // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.gpManagement);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(945, 129);
+            this.panelTop.TabIndex = 1;
+            // 
             // FProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(945, 566);
-            this.Controls.Add(this.gpManagement);
             this.Controls.Add(this.tpManagement);
+            this.Controls.Add(this.panelTop);
             this.Name = "FProductManagement";
             this.Text = "FProductManagement";
             this.tpManagement.ResumeLayout(false);
             this.gpManagement.ResumeLayout(false);
             this.gpManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -239,5 +261,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTop;
     }
 }
