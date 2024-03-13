@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductDetail));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.panelTop = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSingin = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.btnBuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.ucDetail1 = new Window_Project_v5._1.Forms.UCDetail();
+            this.btnFavorite = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -319,11 +321,102 @@
             this.ucDetail1.Size = new System.Drawing.Size(527, 256);
             this.ucDetail1.TabIndex = 2;
             // 
+            // btnFavorite
+            // 
+            this.btnFavorite.AllowAnimations = true;
+            this.btnFavorite.AllowMouseEffects = true;
+            this.btnFavorite.AllowToggling = false;
+            this.btnFavorite.AnimationSpeed = 200;
+            this.btnFavorite.AutoGenerateColors = false;
+            this.btnFavorite.AutoRoundBorders = false;
+            this.btnFavorite.AutoSizeLeftIcon = true;
+            this.btnFavorite.AutoSizeRightIcon = true;
+            this.btnFavorite.BackColor = System.Drawing.Color.Transparent;
+            this.btnFavorite.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFavorite.BackgroundImage")));
+            this.btnFavorite.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnFavorite.ButtonText = "";
+            this.btnFavorite.ButtonTextMarginLeft = 0;
+            this.btnFavorite.ColorContrastOnClick = 45;
+            this.btnFavorite.ColorContrastOnHover = 45;
+            this.btnFavorite.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnFavorite.CustomizableEdges = borderEdges3;
+            this.btnFavorite.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnFavorite.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnFavorite.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnFavorite.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnFavorite.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnFavorite.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFavorite.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFavorite.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFavorite.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnFavorite.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnFavorite.IconMarginLeft = 11;
+            this.btnFavorite.IconPadding = 10;
+            this.btnFavorite.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFavorite.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnFavorite.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnFavorite.IconSize = 25;
+            this.btnFavorite.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.IdleBorderRadius = 45;
+            this.btnFavorite.IdleBorderThickness = 1;
+            this.btnFavorite.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.IdleIconLeftImage = global::Window_Project_v5._1.Properties.Resources.heart_white;
+            this.btnFavorite.IdleIconRightImage = null;
+            this.btnFavorite.IndicateFocus = false;
+            this.btnFavorite.Location = new System.Drawing.Point(231, 348);
+            this.btnFavorite.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFavorite.Name = "btnFavorite";
+            this.btnFavorite.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnFavorite.OnDisabledState.BorderRadius = 45;
+            this.btnFavorite.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnFavorite.OnDisabledState.BorderThickness = 1;
+            this.btnFavorite.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnFavorite.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnFavorite.OnDisabledState.IconLeftImage = null;
+            this.btnFavorite.OnDisabledState.IconRightImage = null;
+            this.btnFavorite.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.onHoverState.BorderRadius = 45;
+            this.btnFavorite.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnFavorite.onHoverState.BorderThickness = 1;
+            this.btnFavorite.onHoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFavorite.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.onHoverState.IconLeftImage = null;
+            this.btnFavorite.onHoverState.IconRightImage = null;
+            this.btnFavorite.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.OnIdleState.BorderRadius = 45;
+            this.btnFavorite.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnFavorite.OnIdleState.BorderThickness = 1;
+            this.btnFavorite.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.OnIdleState.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFavorite.OnIdleState.IconLeftImage = global::Window_Project_v5._1.Properties.Resources.heart_white;
+            this.btnFavorite.OnIdleState.IconRightImage = null;
+            this.btnFavorite.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.OnPressedState.BorderRadius = 45;
+            this.btnFavorite.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnFavorite.OnPressedState.BorderThickness = 1;
+            this.btnFavorite.OnPressedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFavorite.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFavorite.OnPressedState.IconLeftImage = null;
+            this.btnFavorite.OnPressedState.IconRightImage = null;
+            this.btnFavorite.Size = new System.Drawing.Size(44, 41);
+            this.btnFavorite.TabIndex = 28;
+            this.btnFavorite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnFavorite.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnFavorite.TextMarginLeft = 0;
+            this.btnFavorite.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnFavorite.UseDefaultRadiusAndThickness = true;
+            // 
             // FProductDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 397);
+            this.Controls.Add(this.btnFavorite);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.ucDetail1);
@@ -348,5 +441,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnClose;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuy;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnFavorite;
     }
 }
