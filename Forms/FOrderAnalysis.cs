@@ -16,5 +16,15 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
+
+        private void FOrderAnalysis_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
