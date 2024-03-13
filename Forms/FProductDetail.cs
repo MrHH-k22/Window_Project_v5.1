@@ -39,5 +39,10 @@ namespace Window_Project_v5._1.Forms
             btnFavorite.BackgroundImage = Resources.heart_v2;
             btnFavorite.BackColor = Color.WhiteSmoke;
         }
+
+        private void btnFavorite_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

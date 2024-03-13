@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductDetail));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.btnFavorite = new System.Windows.Forms.Button();
-            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnBuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.panelTop = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSingin = new System.Windows.Forms.Label();
+            this.btnFavorite = new System.Windows.Forms.Button();
+            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnBuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.ucDetail1 = new Window_Project_v5._1.Forms.UCDetail();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -83,6 +83,56 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.panelTop;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.Transparent;
+            this.panelTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTop.BackgroundImage")));
+            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTop.BorderRadius = 1;
+            this.panelTop.Controls.Add(this.bunifuPictureBox1);
+            this.panelTop.Controls.Add(this.lblSingin);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.panelTop.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.panelTop.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.panelTop.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Quality = 10;
+            this.panelTop.Size = new System.Drawing.Size(728, 111);
+            this.panelTop.TabIndex = 1;
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 0;
+            this.bunifuPictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(40, 18);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(69, 69);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 11;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // lblSingin
+            // 
+            this.lblSingin.AutoSize = true;
+            this.lblSingin.BackColor = System.Drawing.Color.Transparent;
+            this.lblSingin.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblSingin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSingin.Location = new System.Drawing.Point(123, 30);
+            this.lblSingin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSingin.Name = "lblSingin";
+            this.lblSingin.Size = new System.Drawing.Size(250, 45);
+            this.lblSingin.TabIndex = 10;
+            this.lblSingin.Text = "Product Details";
+            // 
             // btnFavorite
             // 
             this.btnFavorite.BackColor = System.Drawing.Color.Transparent;
@@ -90,11 +140,13 @@
             this.btnFavorite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFavorite.FlatAppearance.BorderSize = 0;
             this.btnFavorite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFavorite.Location = new System.Drawing.Point(292, 349);
+            this.btnFavorite.Location = new System.Drawing.Point(389, 430);
+            this.btnFavorite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFavorite.Name = "btnFavorite";
-            this.btnFavorite.Size = new System.Drawing.Size(40, 40);
+            this.btnFavorite.Size = new System.Drawing.Size(53, 49);
             this.btnFavorite.TabIndex = 28;
             this.btnFavorite.UseVisualStyleBackColor = false;
+            this.btnFavorite.Click += new System.EventHandler(this.btnFavorite_Click);
             this.btnFavorite.MouseEnter += new System.EventHandler(this.btnFavorite_MouseEnter);
             this.btnFavorite.MouseLeave += new System.EventHandler(this.btnFavorite_MouseLeave);
             this.btnFavorite.MouseHover += new System.EventHandler(this.btnFavorite_MouseHover);
@@ -118,11 +170,11 @@
             this.btnClose.ColorContrastOnClick = 45;
             this.btnClose.ColorContrastOnHover = 45;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnClose.CustomizableEdges = borderEdges3;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnClose.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -146,8 +198,8 @@
             this.btnClose.IdleIconLeftImage = null;
             this.btnClose.IdleIconRightImage = null;
             this.btnClose.IndicateFocus = false;
-            this.btnClose.Location = new System.Drawing.Point(131, 354);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Location = new System.Drawing.Point(175, 436);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.OnDisabledState.BorderRadius = 30;
@@ -181,7 +233,7 @@
             this.btnClose.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnClose.OnPressedState.IconLeftImage = null;
             this.btnClose.OnPressedState.IconRightImage = null;
-            this.btnClose.Size = new System.Drawing.Size(80, 32);
+            this.btnClose.Size = new System.Drawing.Size(107, 39);
             this.btnClose.TabIndex = 27;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -209,11 +261,11 @@
             this.btnBuy.ColorContrastOnClick = 45;
             this.btnBuy.ColorContrastOnHover = 45;
             this.btnBuy.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnBuy.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnBuy.CustomizableEdges = borderEdges4;
             this.btnBuy.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBuy.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -237,8 +289,8 @@
             this.btnBuy.IdleIconLeftImage = null;
             this.btnBuy.IdleIconRightImage = null;
             this.btnBuy.IndicateFocus = false;
-            this.btnBuy.Location = new System.Drawing.Point(17, 354);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuy.Location = new System.Drawing.Point(23, 436);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuy.OnDisabledState.BorderRadius = 30;
@@ -272,7 +324,7 @@
             this.btnBuy.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnBuy.OnPressedState.IconLeftImage = null;
             this.btnBuy.OnPressedState.IconRightImage = null;
-            this.btnBuy.Size = new System.Drawing.Size(80, 32);
+            this.btnBuy.Size = new System.Drawing.Size(107, 39);
             this.btnBuy.TabIndex = 26;
             this.btnBuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -280,73 +332,26 @@
             this.btnBuy.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBuy.UseDefaultRadiusAndThickness = true;
             // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.Transparent;
-            this.panelTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTop.BackgroundImage")));
-            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTop.BorderRadius = 1;
-            this.panelTop.Controls.Add(this.bunifuPictureBox1);
-            this.panelTop.Controls.Add(this.lblSingin);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.panelTop.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.panelTop.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.panelTop.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Quality = 10;
-            this.panelTop.Size = new System.Drawing.Size(546, 90);
-            this.panelTop.TabIndex = 1;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(30, 15);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 11;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // lblSingin
-            // 
-            this.lblSingin.AutoSize = true;
-            this.lblSingin.BackColor = System.Drawing.Color.Transparent;
-            this.lblSingin.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblSingin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSingin.Location = new System.Drawing.Point(92, 24);
-            this.lblSingin.Name = "lblSingin";
-            this.lblSingin.Size = new System.Drawing.Size(204, 37);
-            this.lblSingin.TabIndex = 10;
-            this.lblSingin.Text = "Product Details";
-            // 
             // ucDetail1
             // 
-            this.ucDetail1.Location = new System.Drawing.Point(7, 95);
+            this.ucDetail1.Location = new System.Drawing.Point(9, 117);
+            this.ucDetail1.Margin = new System.Windows.Forms.Padding(5);
             this.ucDetail1.Name = "ucDetail1";
-            this.ucDetail1.Size = new System.Drawing.Size(527, 256);
+            this.ucDetail1.Size = new System.Drawing.Size(703, 315);
             this.ucDetail1.TabIndex = 2;
             // 
             // FProductDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 397);
+            this.ClientSize = new System.Drawing.Size(728, 489);
             this.Controls.Add(this.btnFavorite);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.ucDetail1);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FProductDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FProductDetail";
