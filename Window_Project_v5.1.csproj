@@ -196,6 +196,12 @@
     <Compile Include="Forms\FProductDetail.Designer.cs">
       <DependentUpon>FProductDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FProductManagement.Designer.cs">
+      <DependentUpon>FProductManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,12 +237,6 @@
     </Compile>
     <Compile Include="FSignup.Designer.cs">
       <DependentUpon>FSignup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FUpdateOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FUpdateOrder.Designer.cs">
-      <DependentUpon>FUpdateOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageForms\FMessageError.cs">
       <SubType>Form</SubType>
@@ -291,11 +291,11 @@
     <EmbeddedResource Include="Forms\FProductDetail.resx">
       <DependentUpon>FProductDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FProductManagement.resx">
+      <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FUpdateOrder.resx">
-      <DependentUpon>FUpdateOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCDetail.resx">
       <DependentUpon>UCDetail.cs</DependentUpon>
@@ -402,6 +402,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\exit_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\write_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\write_v2_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,8 +38,8 @@
             this.btnBuy = new System.Windows.Forms.Button();
             this.btnBuyer = new System.Windows.Forms.Button();
             this.panelSellerSubmenu = new System.Windows.Forms.Panel();
+            this.btnManagement = new System.Windows.Forms.Button();
             this.btnOrderAnalysis = new System.Windows.Forms.Button();
-            this.btnUpdateOrder = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.btnSeller = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -201,14 +201,35 @@
             // panelSellerSubmenu
             // 
             this.panelSellerSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(110)))));
+            this.panelSellerSubmenu.Controls.Add(this.btnManagement);
             this.panelSellerSubmenu.Controls.Add(this.btnOrderAnalysis);
-            this.panelSellerSubmenu.Controls.Add(this.btnUpdateOrder);
             this.panelSellerSubmenu.Controls.Add(this.btnSell);
             this.panelSellerSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSellerSubmenu.Location = new System.Drawing.Point(0, 151);
             this.panelSellerSubmenu.Name = "panelSellerSubmenu";
             this.panelSellerSubmenu.Size = new System.Drawing.Size(220, 148);
             this.panelSellerSubmenu.TabIndex = 10;
+            // 
+            // btnManagement
+            // 
+            this.btnManagement.BackColor = System.Drawing.Color.Transparent;
+            this.btnManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManagement.FlatAppearance.BorderSize = 0;
+            this.btnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManagement.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
+            this.btnManagement.Image = global::Window_Project_v5._1.Properties.Resources.real_time_30px1;
+            this.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManagement.Location = new System.Drawing.Point(0, 90);
+            this.btnManagement.Name = "btnManagement";
+            this.btnManagement.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnManagement.Size = new System.Drawing.Size(220, 45);
+            this.btnManagement.TabIndex = 3;
+            this.btnManagement.Text = "  Manage";
+            this.btnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnManagement.UseVisualStyleBackColor = false;
+            this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -220,7 +241,7 @@
             this.btnOrderAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnOrderAnalysis.Image = global::Window_Project_v5._1.Properties.Resources.web_analytics_30px;
             this.btnOrderAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrderAnalysis.Location = new System.Drawing.Point(0, 90);
+            this.btnOrderAnalysis.Location = new System.Drawing.Point(0, 45);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
             this.btnOrderAnalysis.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnOrderAnalysis.Size = new System.Drawing.Size(220, 45);
@@ -231,27 +252,6 @@
             this.btnOrderAnalysis.UseVisualStyleBackColor = false;
             this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
-            // btnUpdateOrder
-            // 
-            this.btnUpdateOrder.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdateOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUpdateOrder.FlatAppearance.BorderSize = 0;
-            this.btnUpdateOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateOrder.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnUpdateOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnUpdateOrder.Image = global::Window_Project_v5._1.Properties.Resources.real_time_30px;
-            this.btnUpdateOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateOrder.Location = new System.Drawing.Point(0, 45);
-            this.btnUpdateOrder.Name = "btnUpdateOrder";
-            this.btnUpdateOrder.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUpdateOrder.Size = new System.Drawing.Size(220, 45);
-            this.btnUpdateOrder.TabIndex = 1;
-            this.btnUpdateOrder.Text = "  Update Order";
-            this.btnUpdateOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdateOrder.UseVisualStyleBackColor = false;
-            this.btnUpdateOrder.Click += new System.EventHandler(this.btnUpdateOrder_Click);
-            // 
             // btnSell
             // 
             this.btnSell.BackColor = System.Drawing.Color.Transparent;
@@ -260,14 +260,14 @@
             this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSell.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnSell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnSell.Image = global::Window_Project_v5._1.Properties.Resources.hand_30px;
+            this.btnSell.Image = global::Window_Project_v5._1.Properties.Resources.write_v2_30px;
             this.btnSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSell.Location = new System.Drawing.Point(0, 0);
             this.btnSell.Name = "btnSell";
             this.btnSell.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSell.Size = new System.Drawing.Size(220, 45);
             this.btnSell.TabIndex = 0;
-            this.btnSell.Text = "  Sell";
+            this.btnSell.Text = "  Post product";
             this.btnSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSell.UseVisualStyleBackColor = false;
@@ -336,7 +336,7 @@
         private System.Windows.Forms.Button btnTrackOrder;
         private System.Windows.Forms.Button btnBuy;
         private System.Windows.Forms.Button btnBuyer;
-        private System.Windows.Forms.Button btnUpdateOrder;
         private System.Windows.Forms.Button btnOrderAnalysis;
+        private System.Windows.Forms.Button btnManagement;
     }
 }

@@ -93,11 +93,6 @@ namespace Window_Project_v5._1.Forms
             OpenChildForm(new Forms.FListSell(), sender);
         }
 
-        private void btnUpdateOrder_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FUpdateOrder(), sender);
-        }
-
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FOrderAnalysis(), sender);
@@ -123,6 +118,11 @@ namespace Window_Project_v5._1.Forms
         private void btnTrackOrder_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FTrackOrder(), sender);
+        }
+
+        private void btnManagement_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FProductManagement(), sender);
         }
     }
 }

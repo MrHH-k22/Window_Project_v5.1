@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class FUpdateOrder : Form
+    public partial class FProductManagement : Form
     {
-        public FUpdateOrder()
+        public FProductManagement()
         {
             InitializeComponent();
         }
