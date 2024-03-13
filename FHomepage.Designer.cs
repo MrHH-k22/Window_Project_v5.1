@@ -63,7 +63,7 @@
             this.panelBody.Location = new System.Drawing.Point(226, 6);
             this.panelBody.Name = "panelBody";
             this.panelBody.ShowBorders = true;
-            this.panelBody.Size = new System.Drawing.Size(963, 613);
+            this.panelBody.Size = new System.Drawing.Size(1045, 613);
             this.panelBody.TabIndex = 1;
             // 
             // panelLeft
@@ -339,11 +339,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.ClientSize = new System.Drawing.Size(1195, 625);
+            this.ClientSize = new System.Drawing.Size(1277, 625);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(950, 600);
+            this.MinimumSize = new System.Drawing.Size(1277, 625);
             this.Name = "FHomepage";
             this.Padding = new System.Windows.Forms.Padding(6);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
