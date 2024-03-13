@@ -43,9 +43,12 @@
             this.btnSell = new System.Windows.Forms.Button();
             this.btnSeller = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             this.panelBuyerSubmenu.SuspendLayout();
             this.panelSellerSubmenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBody
@@ -313,11 +316,23 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 100);
             this.panelLogo.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FHomepage
             // 
@@ -336,6 +351,8 @@
             this.panelLeft.ResumeLayout(false);
             this.panelBuyerSubmenu.ResumeLayout(false);
             this.panelSellerSubmenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,5 +373,6 @@
         private System.Windows.Forms.Button btnBuyer;
         private System.Windows.Forms.Button btnOrderAnalysis;
         private System.Windows.Forms.Button btnManagement;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
