@@ -42,8 +42,12 @@ namespace Window_Project_v5._1.Forms
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            FProductDetail fProductDetail = new FProductDetail();
-            fProductDetail.Show();
+            FBuyDetail fBuyDetail = new FBuyDetail();
+            fBuyDetail.Show();
+        }
+
+        private void ratingProduct_ValueChanged(object sender, Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs e)
+        {
         }
     }
 }

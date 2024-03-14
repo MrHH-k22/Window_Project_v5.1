@@ -167,6 +167,12 @@
     <Compile Include="FHomepage.Designer.cs">
       <DependentUpon>FHomepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FBuyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FBuyDetail.Designer.cs">
+      <DependentUpon>FBuyDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,12 @@
     </Compile>
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSellDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSellDetail.Designer.cs">
+      <DependentUpon>FSellDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FTrackDetail.cs">
       <SubType>Form</SubType>
@@ -289,6 +301,9 @@
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FBuyDetail.resx">
+      <DependentUpon>FBuyDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FDetail.resx">
       <DependentUpon>FDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSellDetail.resx">
+      <DependentUpon>FSellDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackDetail.resx">
       <DependentUpon>FTrackDetail.cs</DependentUpon>
@@ -457,6 +475,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HAN00112-Lớn-1024x682.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HAN00152-Lớn-1024x682.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

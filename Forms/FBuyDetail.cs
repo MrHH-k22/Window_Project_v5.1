@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class FListSell : Form
+    public partial class FBuyDetail : Form
     {
-        public FListSell()
+        public FBuyDetail()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            FSellDetail fSellDetail = new FSellDetail();
-            fSellDetail.Show();
+            this.Close();
         }
     }
 }
