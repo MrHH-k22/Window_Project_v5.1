@@ -19,12 +19,12 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProductTracking_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-
+            FTrackDetail trackDetail = new FTrackDetail();
+            trackDetail.Show();
         }
 
         private void btnDetail_MouseEnter(object sender, EventArgs e)

@@ -203,6 +203,12 @@
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FTrackDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTrackDetail.Designer.cs">
+      <DependentUpon>FTrackDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTrackDetail.resx">
+      <DependentUpon>FTrackDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
