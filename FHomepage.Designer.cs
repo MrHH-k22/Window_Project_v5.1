@@ -43,9 +43,13 @@
             this.btnSell = new System.Windows.Forms.Button();
             this.btnSeller = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.panelLeft.SuspendLayout();
             this.panelBuyerSubmenu.SuspendLayout();
             this.panelSellerSubmenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBody
@@ -60,7 +64,7 @@
             this.panelBody.Location = new System.Drawing.Point(226, 6);
             this.panelBody.Name = "panelBody";
             this.panelBody.ShowBorders = true;
-            this.panelBody.Size = new System.Drawing.Size(963, 613);
+            this.panelBody.Size = new System.Drawing.Size(1045, 613);
             this.panelBody.TabIndex = 1;
             // 
             // panelLeft
@@ -313,22 +317,74 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.pbLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 100);
             this.panelLogo.TabIndex = 8;
             // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(220, 100);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.pbLogo;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
             // FHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.ClientSize = new System.Drawing.Size(1195, 625);
+            this.ClientSize = new System.Drawing.Size(1277, 625);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(950, 600);
+            this.MinimumSize = new System.Drawing.Size(1277, 625);
             this.Name = "FHomepage";
             this.Padding = new System.Windows.Forms.Padding(6);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -336,6 +392,8 @@
             this.panelLeft.ResumeLayout(false);
             this.panelBuyerSubmenu.ResumeLayout(false);
             this.panelSellerSubmenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,5 +414,7 @@
         private System.Windows.Forms.Button btnBuyer;
         private System.Windows.Forms.Button btnOrderAnalysis;
         private System.Windows.Forms.Button btnManagement;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
 }
