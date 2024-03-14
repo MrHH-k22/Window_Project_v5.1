@@ -54,12 +54,12 @@
             // 
             this.lblBuyerName.AutoSize = true;
             this.lblBuyerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lblBuyerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblBuyerName.Location = new System.Drawing.Point(135, 59);
             this.lblBuyerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuyerName.Name = "lblBuyerName";
-            this.lblBuyerName.Size = new System.Drawing.Size(142, 31);
+            this.lblBuyerName.Size = new System.Drawing.Size(118, 28);
             this.lblBuyerName.TabIndex = 12;
             this.lblBuyerName.Text = "Buyer Name";
             // 

@@ -50,10 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(28, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(37, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 30);
+            this.label1.Size = new System.Drawing.Size(163, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Product List";
             // 
@@ -85,8 +84,8 @@
             this.btnSearch.IconRight = null;
             this.btnSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.btnSearch.Lines = new string[0];
-            this.btnSearch.Location = new System.Drawing.Point(23, 19);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Location = new System.Drawing.Point(31, 23);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.MaxLength = 32767;
             this.btnSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnSearch.Modified = false;
@@ -112,7 +111,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.btnSearch.OnIdleState = stateProperties4;
-            this.btnSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.PasswordChar = '\0';
             this.btnSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.btnSearch.PlaceholderText = "Search here";
@@ -122,7 +121,7 @@
             this.btnSearch.SelectionLength = 0;
             this.btnSearch.SelectionStart = 0;
             this.btnSearch.ShortcutsEnabled = true;
-            this.btnSearch.Size = new System.Drawing.Size(257, 35);
+            this.btnSearch.Size = new System.Drawing.Size(343, 43);
             this.btnSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.btnSearch.TabIndex = 1;
             this.btnSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -142,10 +141,11 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 99);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(14, 122);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(660, 14);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(999, 17);
             this.bunifuSeparator1.TabIndex = 3;
             // 
             // bunifuDataGridView1
@@ -198,14 +198,14 @@
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(23, 119);
-            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(12, 146);
+            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowHeadersWidth = 51;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(660, 332);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(1003, 409);
             this.bunifuDataGridView1.TabIndex = 4;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -256,8 +256,8 @@
             this.btnAdd.IdleIconLeftImage = null;
             this.btnAdd.IdleIconRightImage = null;
             this.btnAdd.IndicateFocus = false;
-            this.btnAdd.Location = new System.Drawing.Point(570, 63);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(854, 78);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAdd.OnDisabledState.BorderRadius = 30;
@@ -291,7 +291,7 @@
             this.btnAdd.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnAdd.OnPressedState.IconLeftImage = null;
             this.btnAdd.OnPressedState.IconRightImage = null;
-            this.btnAdd.Size = new System.Drawing.Size(113, 30);
+            this.btnAdd.Size = new System.Drawing.Size(159, 37);
             this.btnAdd.TabIndex = 29;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -302,15 +302,15 @@
             // 
             // FListSell
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 460);
+            this.ClientSize = new System.Drawing.Size(1027, 566);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.bunifuDataGridView1);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FListSell";
             this.Text = "FListSell";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();

@@ -142,11 +142,9 @@
             this.btnDetail.Location = new System.Drawing.Point(777, 57);
             this.btnDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnDetail.Size = new System.Drawing.Size(84, 37);
+            this.btnDetail.Size = new System.Drawing.Size(89, 37);
             this.btnDetail.TabIndex = 30;
             this.btnDetail.Text = "Detail";
-            this.btnDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDetail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDetail.UseVisualStyleBackColor = false;
             this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
