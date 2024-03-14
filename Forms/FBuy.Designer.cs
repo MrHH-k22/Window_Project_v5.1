@@ -54,6 +54,7 @@
             this.txtBrand = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtProductName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.ucProduct6 = new Window_Project_v5._1.Forms.UCProduct();
             this.ucProduct1 = new Window_Project_v5._1.Forms.UCProduct();
             this.ucProduct2 = new Window_Project_v5._1.Forms.UCProduct();
@@ -110,7 +111,6 @@
             this.ucProduct54 = new Window_Project_v5._1.Forms.UCProduct();
             this.ucProduct55 = new Window_Project_v5._1.Forms.UCProduct();
             this.ucProduct56 = new Window_Project_v5._1.Forms.UCProduct();
-            this.panelTop = new System.Windows.Forms.Panel();
             this.gbFilter.SuspendLayout();
             this.flpProduct.SuspendLayout();
             this.panelTop.SuspendLayout();
@@ -592,12 +592,21 @@
             this.flpProduct.Controls.Add(this.ucProduct54);
             this.flpProduct.Controls.Add(this.ucProduct55);
             this.flpProduct.Controls.Add(this.ucProduct56);
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpProduct.Location = new System.Drawing.Point(0, 100);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1025, 460);
+            this.flpProduct.Size = new System.Drawing.Size(1025, 466);
             this.flpProduct.TabIndex = 1;
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.gbFilter);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1025, 100);
+            this.panelTop.TabIndex = 2;
             // 
             // ucProduct6
             // 
@@ -1103,15 +1112,6 @@
             this.ucProduct56.Name = "ucProduct56";
             this.ucProduct56.Size = new System.Drawing.Size(245, 330);
             this.ucProduct56.TabIndex = 60;
-            // 
-            // panelTop
-            // 
-            this.panelTop.Controls.Add(this.gbFilter);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1025, 100);
-            this.panelTop.TabIndex = 2;
             // 
             // FBuy
             // 

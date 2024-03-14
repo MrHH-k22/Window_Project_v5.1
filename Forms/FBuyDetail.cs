@@ -21,5 +21,10 @@ namespace Window_Project_v5._1.Forms
         {
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
