@@ -197,6 +197,12 @@
     <Compile Include="Forms\FListSell.Designer.cs">
       <DependentUpon>FListSell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FMoney.Designer.cs">
+      <DependentUpon>FMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FOrderAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
