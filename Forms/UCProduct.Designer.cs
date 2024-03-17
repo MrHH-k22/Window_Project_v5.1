@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProduct));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblItemPrice = new System.Windows.Forms.Label();
             this.ratingProduct = new Bunifu.UI.WinForms.BunifuRating();
@@ -109,11 +109,11 @@
             this.btnDetail.ColorContrastOnClick = 45;
             this.btnDetail.ColorContrastOnHover = 45;
             this.btnDetail.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnDetail.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnDetail.CustomizableEdges = borderEdges1;
             this.btnDetail.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDetail.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDetail.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -137,7 +137,7 @@
             this.btnDetail.IdleIconLeftImage = null;
             this.btnDetail.IdleIconRightImage = null;
             this.btnDetail.IndicateFocus = false;
-            this.btnDetail.Location = new System.Drawing.Point(76, 278);
+            this.btnDetail.Location = new System.Drawing.Point(77, 275);
             this.btnDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
