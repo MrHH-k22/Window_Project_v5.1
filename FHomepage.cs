@@ -229,5 +229,10 @@ namespace Window_Project_v5._1.Forms
             btnLogout.BackColor = Color.FromArgb(54, 50, 132);
 
         }
+
+        private void btnMoney_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FMoney(), sender);
+        }
     }
 }

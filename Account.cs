@@ -15,13 +15,14 @@ namespace Window_Project_v5._1
         private string phone;
         private DateTime birthday;
         private string address;
+        private double money;
         private byte[] avatar;
 
         public Account()
         {
         }
 
-        public Account(int id, string email, string password, string name, string phone, DateTime birthday, string address, byte[] avatar)
+        public Account(int id, string email, string password, string name, string phone, DateTime birthday, string address, double money, byte[] avatar)
         {
             this.id = id;
             this.email = email;
@@ -30,6 +31,7 @@ namespace Window_Project_v5._1
             this.phone = phone;
             this.birthday = birthday;
             this.address = address;
+            this.money = money; 
             this.avatar = avatar;
         }
 
@@ -41,5 +43,6 @@ namespace Window_Project_v5._1
         public DateTime Birthday { get => birthday; set => birthday = value; }
         public string Address { get => address; set => address = value; }
         public byte[] Avatar { get => avatar; set => avatar = value; }
+        public double Money { get => money; set => money = value; }
     }
 }
