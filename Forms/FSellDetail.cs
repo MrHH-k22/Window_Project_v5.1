@@ -7,20 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Window_Project_v5._1.Properties;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class FListSell : Form
+    public partial class FSellDetail : Form
     {
-        public FListSell()
+        public FSellDetail()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            FSellDetail fSellDetail = new FSellDetail();
-            fSellDetail.Show();
+
+        }
+
+        private void btnImage1_Click(object sender, EventArgs e)
+        {
+            btnImage1.Image = Resources.MessageSuccess;
         }
     }
 }
