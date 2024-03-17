@@ -54,5 +54,16 @@ namespace Window_Project_v5._1
             }
             return new DataTable();
         }
+        public object ExecuteScalar(string query)
+        {
+            using (var connection = conn)
+            {
+                connection.Open();
+                using (var command = new SqlCommand(query, connection))
+                {
+                    return command.ExecuteScalar();
+                }
+            }
+        }
     }
 }
