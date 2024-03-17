@@ -14,7 +14,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FInformation : Form
     {
         private AccountDAO accountDAO = new AccountDAO();
-        private string imagePath;
+        private string imagePath = "";
         private byte[] avatarByteArray = null;
 
         public FInformation()
@@ -30,16 +30,17 @@ namespace Window_Project_v5._1.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             Account account = new Account(txtEmail.Text,txtPassword.Text,txtName.Text,txtPhone.Text,dtpBirthday.Value,txtAddress.Text, avatarByteArray);
+            accountDAO.update(account);
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.gif)|*.jpg; *.jpeg; *.png; *.gif";
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.gif)|*.jpg; *.jpeg; *.png; *.gif";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                imagePath = openFileDialog.FileName;
+                imagePath = dialog.FileName.ToString();
 
                 // Đọc hình ảnh từ tệp
                 System.Drawing.Image originalImage = System.Drawing.Image.FromFile(imagePath);
@@ -51,7 +52,7 @@ namespace Window_Project_v5._1.Forms
                 pbAvatar.Image = resizedImage;
 
                 // Đọc dữ liệu hình ảnh thành mảng byte
-                using (FileStream fs = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                using (FileStream fs = new FileStream(dialog.FileName, FileMode.Open, FileAccess.Read))
                 {
                     BinaryReader br = new BinaryReader(fs);
                     avatarByteArray = br.ReadBytes((int)fs.Length);
@@ -72,5 +73,8 @@ namespace Window_Project_v5._1.Forms
 
             return result;
         }
+    
+        
+    
     }
 }

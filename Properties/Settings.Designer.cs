@@ -26,8 +26,7 @@ namespace Window_Project_v5._1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MRHH\\MRHH39;Initial Catalog=WindowProject;Integrated Security=True;Tr" +
-            "ust Server Certificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MRHH\\MRHH39;Initial Catalog=WindowProject;Integrated Security=True;")]
         public string connStr {
             get {
                 return ((string)(this["connStr"]));
