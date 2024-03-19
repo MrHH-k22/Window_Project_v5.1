@@ -11,7 +11,6 @@ namespace Window_Project_v5._1
     {
         protected SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
        
-
         public void update(Account account)
         {
             string sqlStr = "UPDATE Account SET Email = @Email, Password = @Password, Name = @Name, Phone = @Phone, Birthday = @Birthday, Address = @Address, Avatar = @Avatar WHERE ID = @ID";
