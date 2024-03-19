@@ -35,6 +35,17 @@ namespace Window_Project_v5._1
             this.avatar = avatar;
         }
 
+        public Account( string email, string password, string name, string phone, DateTime birthday, string address, byte[] avatar)
+        {
+            this.email = email;
+            this.password = password;
+            this.name = name;
+            this.phone = phone;
+            this.birthday = birthday;
+            this.address = address;
+            this.avatar = avatar;
+        }
+
         public int Id { get => id; set => id = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
