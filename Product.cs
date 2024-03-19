@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Window_Project_v5._1
 {
-    internal class Product
+    public class Product
     {
         private int id;
         private string name;

@@ -40,5 +40,11 @@ namespace Window_Project_v5._1
 
             return null;
         }
+
+        public DataTable GetImageProduct(int productID)
+        {
+            string sqlStr = string.Format("SELECT Image FROM ProductImages WHERE ProductID = '{0}'", productID);
+            return dbc.Load(sqlStr);
+        }
     }
 }
