@@ -14,29 +14,18 @@ namespace Window_Project_v5._1
     internal class ImageDAO
     {
         DBConnection dbc = new DBConnection();
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         public void Add(int productID, string imgLocation)
         {
             byte[] images = File.ReadAllBytes(imgLocation);
+            string sqlStr = "INSERT INTO ProductImages (ProductID, Image) VALUES (@ProductID, @Images)";
 
-            string sqlStr = string.Format("INSERT INTO ProductImages (ProductID, Image) VALUES ('{0}', @Images)", productID);
-            SqlCommand command = new SqlCommand(sqlStr, conn);
-            // Add parameter for image data
-            command.Parameters.AddWithValue("@Images", images);
-            try
-            {
-                conn.Open();
-                int rowsAffected = command.ExecuteNonQuery();
-                MessageBox.Show("Image saved to database successfully!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error saving image to database: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
+            parameters[0].Value = productID;
+            parameters[1] = new SqlParameter("@Images", SqlDbType.VarBinary);
+            parameters[1].Value = images;
+
+            dbc.Execute(sqlStr, parameters);
         }
 
         public byte[] GetImageProductData(int productID)
