@@ -290,6 +290,7 @@
     <Compile Include="FSignup.Designer.cs">
       <DependentUpon>FSignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageDAO.cs" />
     <Compile Include="MessageForms\FMessageError.cs">
       <SubType>Form</SubType>
     </Compile>

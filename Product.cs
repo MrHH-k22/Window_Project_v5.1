@@ -51,14 +51,8 @@ namespace Window_Project_v5._1
         public string Condition { get => condition; set => condition = value; }
         public string Status { get => status; set => status = value; }
         public string Description { get => description; set => description = value; }
-        public List<byte[]> Images { get => images; set => images = value; }
         public int SellerID { get => sellerID; set => sellerID = value; }
         public int BuyerID { get => buyerID; set => buyerID = value; }
-
-        public void AddImage(byte[] imageData)
-        {
-            images.Add(imageData);
-        }
     }
 
 

@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FSellDetail : Form
     {
         ProductDAO productDAO = new ProductDAO();
+        ImageDAO imageDAO = new ImageDAO();
 
         private string[] imgLocations = new string[4];
 
@@ -67,17 +68,18 @@ namespace Window_Project_v5._1.Forms
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text);
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text);       
+            productDAO.Add(product);
+            //Add images to Productimages
+            product = productDAO.GetLastProduct(); 
             foreach (string imgLocation in imgLocations)
             {
                 if (string.IsNullOrEmpty(imgLocation))
                 {
                     break;
                 }
-                byte[] imageData = File.ReadAllBytes(imgLocation);
-                product.AddImage(imageData);
+                imageDAO.Add(product.Id, imgLocation);
             }
-            productDAO.Add(product);
             this.Close();
         }
 

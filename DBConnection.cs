@@ -54,15 +54,34 @@ namespace Window_Project_v5._1
             }
             return new DataTable();
         }
-        public object ExecuteScalar(string query)
+        public object ExecuteScalar(string sqlStr)
         {
-            using (var connection = conn)
+            object result = null;
+            conn.Open();
+            using (SqlCommand command = new SqlCommand(sqlStr, conn))
             {
-                connection.Open();
-                using (var command = new SqlCommand(query, connection))
-                {
-                    return command.ExecuteScalar();
-                }
+                result = command.ExecuteScalar();
+            }
+            conn.Close();
+            return result;
+        }
+
+        public SqlDataReader ExecuteReader(string sqlStr)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                return cmd.ExecuteReader();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                return null;
+            }
+            finally
+            {
+                conn.Close();
             }
         }
     }
