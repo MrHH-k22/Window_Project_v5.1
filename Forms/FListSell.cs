@@ -15,7 +15,6 @@ namespace Window_Project_v5._1.Forms
     public partial class FListSell : Form
     {
         ProductDAO productDAO = new ProductDAO();
-        ImageDAO imageDAO = new ImageDAO();
 
         public FListSell()
         {
@@ -33,31 +32,18 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
             {
-                UCProductTracking uc = new UCProductTracking();
-                uc.lblPrice.Text = pd.SalePrice.ToString();
-                uc.lblProductCondition.Visible = false;
-                uc.lblProductName.Text = pd.Name;
-                uc.lblSellerName.Visible = false;
+                UCProductTracking uc = new UCProductTracking(pd);
+                flpProduct.Controls.Add(uc);
+            }
+        }
 
-                byte[] imageData = imageDAO.GetImageProductData(pd.Id);
-
-                if (imageData != null && imageData.Length > 0)
-                {
-                    using (MemoryStream ms = new MemoryStream(imageData))
-                    {
-                        // Attempt to create Image object
-                        try
-                        {
-                            uc.pbProduct.Image = Image.FromStream(ms);
-                        }
-                        catch (ArgumentException ex)
-                        {
-                            // Handle ArgumentException
-                            Console.WriteLine("Failed to create Image object: " + ex.Message);
-                        }
-                    }
-                }
-
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            flpProduct.Controls.Clear();
+            List<Product> products = productDAO.LoadListWithCondition(txtSearch.Text);
+            foreach (var pd in products)
+            {
+                UCProductTracking uc = new UCProductTracking(pd);
                 flpProduct.Controls.Add(uc);
             }
         }

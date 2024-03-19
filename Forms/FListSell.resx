@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQEAAAAjCAYAAACU/790AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN3SURBVHhe7d29T1NRGAbwjo6MjIyMjIz+BYbFnZE4OTg4
@@ -148,6 +148,22 @@
 </value>
   </data>
   <data name="btnAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAeCAYAAAAWwoEYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIxSURBVGhD7ZsrTwNBEMdPIpFIJK63d7c9HEgUwZAgkYRP
+        gCvpDoEEh0Dg0HwBFJagkCQIEgSB8EgphGcFzGyHQMtQ3nDbzD/5pe3t45r7d2Zvd3vRZ1ROYNAaN4ts
+        5onbLhs4wWMPyi+B15euM8HXfYSt+BmVSpXezFRXrIE6nrD26gsof0kNfWjkBtby0nw/W/Q1ZbFbsNRh
+        DA3hRMq/4moUdENDlR6262OiaMXGW/gruZE7VooABR0G3661lT62rrMo3LHhDhp7196ZUlTcoS1BzBbK
+        akYs7LxurBQfd9xxHOZUrBEbKOjdHgUo2/ksLFzSMTZsbOzuMzO3zpY2RQMyGktTHbGREhDGnbeMv34e
+        q9OdrgEDdcMbS/Mk/HAhVVICxcCVnx7RkhYe0JWnboLMNTCFKRmWxQpK0PjUTJsAUqESOu4gsgkcy4VK
+        0Bi4psi9FguVoMG03Ij8vqxQqASOgRNMy25VLFSChu6laMydRC6lCkqYZH5BysHTTtBtewUlYF4uQdKc
+        SKykBAlm4j1vLIlcJrelikpgkI9pdYytbUqjtztoidon8bbfvtRACQOc+Ryl6dwAW9oqTs+nUkOl2GBg
+        npVTGGcrZWWmOqoGhwUZmyUwzRZ2lo/gxB1KHSnFglLxuxHbLhqDeWlS93oLCEZrnW6e3hxjP6I8dcPU
+        iTWujh3qX3H+E+Nfa7RunJvqBFv0fdEvxMZupvlQkpr81/gHwlJYxPeDbMk7iqJHi+ZKnrkKvhIAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="btnLoad.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHcAAAAeCAYAAAAWwoEYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIxSURBVGhD7ZsrTwNBEMdPIpFIJK63d7c9HEgUwZAgkYRP
