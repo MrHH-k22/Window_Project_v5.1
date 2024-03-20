@@ -12,6 +12,8 @@ namespace Window_Project_v5._1.Forms
 {
     public partial class FBuy : Form
     {
+        ProductDAO productDAO = new ProductDAO();
+
         public FBuy()
         {
             InitializeComponent();
@@ -21,5 +23,16 @@ namespace Window_Project_v5._1.Forms
         {
 
         }
+
+        private void FBuy_Load(object sender, EventArgs e)
+        {
+            List<Product> products = productDAO.LoadList();
+            foreach (var pd in products)
+            {
+                UCProduct uc = new UCProduct(pd);
+                flpProduct.Controls.Add(uc);
+            }
+        }
+
     }
 }
