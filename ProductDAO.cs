@@ -42,16 +42,7 @@ namespace Window_Project_v5._1
             List<Product> list = new List<Product>();
             DataTable dt = dbc.Load("SELECT * FROM Product;");
             foreach (DataRow dr in dt.Rows) {
-                Product pd = new Product();
-                pd.Id = Convert.ToInt32(dr["id"]);
-                pd.Name = dr["name"].ToString();
-                pd.OriginalPrice = Convert.ToDouble(dr["originalPrice"]);
-                pd.SalePrice = Convert.ToDouble(dr["salePrice"]);
-                pd.Condition = dr["condition"].ToString();
-                pd.Status = dr["status"].ToString();
-                pd.Description = dr["description"].ToString();
-                //pd.SellerID = Convert.ToInt32(dr["sellerID"]);
-
+                Product pd = new Product(dr);
                 list.Add(pd);
             }
             return list;
@@ -66,20 +57,11 @@ namespace Window_Project_v5._1
                 dt = dbc.Load("SELECT * FROM Product;");
             } else
             {
-                dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name = '{0}'", name));
+                dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name LIKE '%{0}%'", name));
             }
             foreach (DataRow dr in dt.Rows)
             {
-                Product pd = new Product();
-                pd.Id = Convert.ToInt32(dr["id"]);
-                pd.Name = dr["name"].ToString();
-                pd.OriginalPrice = Convert.ToDouble(dr["originalPrice"]);
-                pd.SalePrice = Convert.ToDouble(dr["salePrice"]);
-                pd.Condition = dr["condition"].ToString();
-                pd.Status = dr["status"].ToString();
-                pd.Description = dr["description"].ToString();
-                //pd.SellerID = Convert.ToInt32(dr["sellerID"]);
-
+                Product pd = new Product(dr);
                 list.Add(pd);
             }
             return list;

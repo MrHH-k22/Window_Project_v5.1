@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Window_Project_v5._1
 {
@@ -17,13 +18,25 @@ namespace Window_Project_v5._1
         private string description;
         private int sellerID;
         private int buyerID;
-        private List<byte[]> images = new List<byte[]>();
 
         public Product()
         {
         }
 
-        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, List<byte[]> images)
+        public Product(DataRow dr)
+        {
+            id = Convert.ToInt32(dr["id"]);
+            name = dr["name"].ToString();
+            originalPrice = Convert.ToDouble(dr["originalPrice"]);
+            salePrice = Convert.ToDouble(dr["salePrice"]);
+            condition = dr["condition"].ToString();
+            status = dr["status"].ToString();
+            description = dr["description"].ToString();
+            //sellerID = Convert.ToInt32(dr["sellerid"]);
+            //buyerID = Convert.ToInt32(dr["buyerid"]);
+        }
+
+        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status)
         {
             this.id = id;
             this.name = name;
@@ -31,7 +44,6 @@ namespace Window_Project_v5._1
             this.salePrice = salePrice;
             this.condition = condition;
             this.status = status;
-            this.images = images;
         }
 
         public Product(string condition, string status, double originalPrice, double salePrice, string name, string description)
