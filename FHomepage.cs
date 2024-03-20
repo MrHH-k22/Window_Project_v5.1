@@ -13,12 +13,19 @@ namespace Window_Project_v5._1.Forms
     public partial class FHomepage : Form
     {
         private Form activeForm;
-
+        protected Account acc;
         public FHomepage()
         {
             InitializeComponent();
             customizeDesign();
         }
+        public FHomepage(Account acc)
+        {
+            InitializeComponent();
+            customizeDesign();
+            this.acc = acc;
+        }
+        
 
         public void customizeDesign()
         {
