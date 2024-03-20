@@ -73,6 +73,7 @@
             this.pbProductImage.Location = new System.Drawing.Point(0, 0);
             this.pbProductImage.Margin = new System.Windows.Forms.Padding(2);
             this.pbProductImage.Name = "pbProductImage";
+            this.pbProductImage.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.pbProductImage.Size = new System.Drawing.Size(220, 164);
             this.pbProductImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbProductImage.TabIndex = 13;

@@ -27,6 +27,8 @@ namespace Window_Project_v5._1.Forms
             lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
             lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
+            lblBrand.Text = "Brand: " + pd.Brand.ToString();
+            lblCategory.Text = "Category: " + pd.Category.ToString();
             txtStatus.Text = pd.Status.ToString();
             txtDescription.Text = pd.Description.ToString();
             DataTable ImageTable = imageDAO.GetImageProduct(pd.Id);

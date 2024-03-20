@@ -16,6 +16,7 @@ namespace Window_Project_v5._1.Forms
     {
         ProductDAO productDAO = new ProductDAO();
         ImageDAO imageDAO = new ImageDAO();
+        private string selectedValue = null;
 
         private string[] imgLocations = new string[4];
 
@@ -68,7 +69,8 @@ namespace Window_Project_v5._1.Forms
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text,ddCategories.Text);       
+            //string category = ddCategories.SelectedValue.ToString();
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text,selectedValue);       
             productDAO.Add(product);
             //Add images to Productimages
             product = productDAO.GetLastProduct(); 
@@ -95,6 +97,14 @@ namespace Window_Project_v5._1.Forms
             }
             MessageBox.Show("The value of price is invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return -1;
+        }
+
+        private void ddCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ddCategory.SelectedItem != null)
+            {
+                selectedValue = ddCategory.SelectedItem.ToString();
+            }
         }
     }
 }
