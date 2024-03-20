@@ -194,12 +194,6 @@
     <Compile Include="Forms\FBuyDetail.Designer.cs">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FDetail.Designer.cs">
-      <DependentUpon>FDetail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,12 +218,6 @@
     <Compile Include="Forms\FOrderAnalysis.Designer.cs">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FProductDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FProductDetail.Designer.cs">
-      <DependentUpon>FProductDetail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FProductManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,12 +241,6 @@
     </Compile>
     <Compile Include="Forms\FTrackOrder.Designer.cs">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\UCDetail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\UCDetail.Designer.cs">
-      <DependentUpon>UCDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCProduct.cs">
       <SubType>UserControl</SubType>
@@ -334,9 +316,6 @@
     <EmbeddedResource Include="Forms\FBuyDetail.resx">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FDetail.resx">
-      <DependentUpon>FDetail.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FInformation.resx">
       <DependentUpon>FInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,9 +324,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FProductDetail.resx">
-      <DependentUpon>FProductDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
@@ -360,9 +336,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCDetail.resx">
-      <DependentUpon>UCDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductCondition.resx">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
