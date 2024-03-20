@@ -23,12 +23,22 @@ namespace Window_Project_v5._1.Forms
         public FTrackDetail(Product pd)
         {
             InitializeComponent();
+            
             btnSave.Visible = false;
 
             lblProductName.Text = pd.Name;
             lblPrice.Text = pd.SalePrice.ToString() + " VND";
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
             lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
+            if (pd != null && pd.Brand != null)
+            {
+                lblBrand.Text = "Brand: " + pd.Brand.ToString();
+            }
+            else
+            {
+                // Handle the case when pd or pd.Brand is null
+                lblBrand.Text = "Brand: [Not Available]";
+            }
             txtStatus.Text = pd.Status.ToString();
             txtDescription.Text = pd.Description.ToString();
 

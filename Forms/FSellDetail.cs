@@ -68,7 +68,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text);       
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text,ddCategories.Text);       
             productDAO.Add(product);
             //Add images to Productimages
             product = productDAO.GetLastProduct(); 

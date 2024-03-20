@@ -10,6 +10,7 @@ namespace Window_Project_v5._1
     {
         private int id;
         private string name;
+        private string brand;
         private double originalPrice;
         private double salePrice;
         private string condition;
@@ -18,12 +19,13 @@ namespace Window_Project_v5._1
         private int sellerID;
         private int buyerID;
         private List<byte[]> images = new List<byte[]>();
+        private string category;
 
         public Product()
         {
         }
 
-        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, List<byte[]> images)
+        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, List<byte[]> images, string brand, string description, int sellerID, int buyerID, string category)
         {
             this.id = id;
             this.name = name;
@@ -32,9 +34,14 @@ namespace Window_Project_v5._1
             this.condition = condition;
             this.status = status;
             this.images = images;
+            this.brand = brand;
+            this.description = description;
+            this.sellerID = sellerID;
+            this.buyerID = buyerID;
+            this.category = category;
         }
 
-        public Product(string condition, string status, double originalPrice, double salePrice, string name, string description)
+        public Product(string condition, string status, double originalPrice, double salePrice, string name, string description,string brand, string category)
         {
             this.condition = condition;
             this.status = status;
@@ -42,6 +49,9 @@ namespace Window_Project_v5._1
             this.salePrice = salePrice;
             this.name = name;
             this.description = description;
+            this.brand = brand;
+            this.category = category;
+
         }
 
         public int Id { get => id; set => id = value; }
@@ -53,6 +63,8 @@ namespace Window_Project_v5._1
         public string Description { get => description; set => description = value; }
         public int SellerID { get => sellerID; set => sellerID = value; }
         public int BuyerID { get => buyerID; set => buyerID = value; }
+        public string Brand { get => brand; set => brand = value; }
+        public string Category { get => category; set => category = value; }
     }
 
 
