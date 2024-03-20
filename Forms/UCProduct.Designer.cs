@@ -39,25 +39,24 @@
             // 
             this.lblProductName.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblProductName.Location = new System.Drawing.Point(0, 164);
             this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lblProductName.Size = new System.Drawing.Size(220, 50);
+            this.lblProductName.Size = new System.Drawing.Size(220, 72);
             this.lblProductName.TabIndex = 10;
             this.lblProductName.Text = "Product name";
-            this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
             // 
             // lblSellPrice
             // 
             this.lblSellPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblSellPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblSellPrice.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSellPrice.Font = new System.Drawing.Font("Segoe UI", 14.2F, System.Drawing.FontStyle.Bold);
             this.lblSellPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSellPrice.Location = new System.Drawing.Point(0, 253);
+            this.lblSellPrice.Location = new System.Drawing.Point(0, 236);
             this.lblSellPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSellPrice.Name = "lblSellPrice";
             this.lblSellPrice.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -83,10 +82,10 @@
             // lblBuyPrice
             // 
             this.lblBuyPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuyPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblBuyPrice.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblBuyPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuyPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblBuyPrice.Location = new System.Drawing.Point(0, 283);
+            this.lblBuyPrice.Location = new System.Drawing.Point(0, 266);
             this.lblBuyPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuyPrice.Name = "lblBuyPrice";
             this.lblBuyPrice.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
@@ -100,13 +99,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.Controls.Add(this.lblSellPrice);
             this.Controls.Add(this.lblBuyPrice);
+            this.Controls.Add(this.lblSellPrice);
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.pbProductImage);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCProduct";
-            this.Size = new System.Drawing.Size(220, 317);
+            this.Size = new System.Drawing.Size(220, 306);
             this.Click += new System.EventHandler(this.UCProduct_Click);
             this.DoubleClick += new System.EventHandler(this.UCProduct_DoubleClick);
             this.MouseEnter += new System.EventHandler(this.UCProduct_MouseEnter);
