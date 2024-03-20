@@ -16,10 +16,47 @@ namespace Window_Project_v5._1.Forms
         private AccountDAO accountDAO = new AccountDAO();
         private string imagePath = "";
         private byte[] avatarByteArray = null;
-
+        Account account = new Account();
         public FInformation()
         {
             InitializeComponent();
+
+        }
+
+        public FInformation(Account acc)
+        {
+            InitializeComponent();
+            account = acc;
+            txtEmail.Text = account.Email;
+            txtPassword.Text = account.Password;
+            txtName.Text = account.Name;
+            txtAddress.Text = account.Address;
+            txtPhone.Text = account.Phone;
+            dtpBirthday.Value = account.Birthday.Date;
+            convertByte(pbAvatar, account.Avatar);
+
+            
+        }
+
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -29,7 +66,14 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Account account = new Account(txtEmail.Text,txtPassword.Text,txtName.Text,txtPhone.Text,dtpBirthday.Value,txtAddress.Text, avatarByteArray);
+            account.Name = txtName.Text;
+            account.Email = txtEmail.Text;
+            account.Password = txtPassword.Text;
+            account.Phone = txtPhone.Text;
+            account.Birthday = dtpBirthday.Value;
+            account.Address = txtAddress.Text;
+            account.Avatar = avatarByteArray;
+            
             accountDAO.update(account);
         }
 

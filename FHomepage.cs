@@ -79,7 +79,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            FInformation fInformation = new FInformation();
+            FInformation fInformation = new FInformation(acc);
             fInformation.Show();
         }
 

@@ -842,7 +842,7 @@
             this.txtName.ShortcutsEnabled = true;
             this.txtName.Size = new System.Drawing.Size(289, 43);
             this.txtName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtName.TabIndex = 13;
+            this.txtName.TabIndex = 50;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtName.TextMarginBottom = 0;
             this.txtName.TextMarginLeft = 3;
