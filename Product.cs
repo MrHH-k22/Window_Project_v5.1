@@ -35,12 +35,13 @@ namespace Window_Project_v5._1
             condition = dr["condition"].ToString();
             status = dr["status"].ToString();
             description = dr["description"].ToString();
+            brand = dr["Brand"].ToString();
+            Category = dr["categories"].ToString();
             //sellerID = Convert.ToInt32(dr["sellerid"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
         }
 
-        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status)
-        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, List<byte[]> images, string brand, string description, int sellerID, int buyerID, string category)
+        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string category)
         {
             this.id = id;
             this.name = name;
@@ -48,7 +49,18 @@ namespace Window_Project_v5._1
             this.salePrice = salePrice;
             this.condition = condition;
             this.status = status;
-            this.images = images;
+            this.brand = brand;
+            this.category = category;
+
+        }
+        public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string description, int sellerID, int buyerID, string category)
+        {
+            this.id = id;
+            this.name = name;
+            this.originalPrice = originalPrice;
+            this.salePrice = salePrice;
+            this.condition = condition;
+            this.status = status;
             this.brand = brand;
             this.description = description;
             this.sellerID = sellerID;
