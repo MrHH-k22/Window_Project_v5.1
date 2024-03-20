@@ -12,6 +12,7 @@ namespace Window_Project_v5._1.Forms
 {
     public partial class FSignup : Form
     {
+        AccountDAO accountDAO = new AccountDAO();
         public FSignup()
         {
             InitializeComponent();
@@ -21,6 +22,12 @@ namespace Window_Project_v5._1.Forms
         {
             FSignin fSignin = new FSignin();
             fSignin.Show();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            Account acc = new Account(txtUsername.Text, txtEmail.Text ,txtPassword.Text);
+            accountDAO.CreateNewAccount(acc);
         }
     }
 }
