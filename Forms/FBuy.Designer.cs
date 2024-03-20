@@ -245,6 +245,7 @@
             this.txtProductName.TextPlaceholder = "Product Name";
             this.txtProductName.UseSystemPasswordChar = false;
             this.txtProductName.WordWrap = true;
+            this.txtProductName.TextChange += new System.EventHandler(this.txtProductName_TextChange);
             // 
             // txtBrand
             // 
@@ -321,6 +322,7 @@
             this.txtBrand.TextPlaceholder = "Brand";
             this.txtBrand.UseSystemPasswordChar = false;
             this.txtBrand.WordWrap = true;
+            this.txtBrand.TextChange += new System.EventHandler(this.txtBrand_TextChange);
             // 
             // txtMinPrice
             // 
@@ -397,6 +399,8 @@
             this.txtMinPrice.TextPlaceholder = "Min";
             this.txtMinPrice.UseSystemPasswordChar = false;
             this.txtMinPrice.WordWrap = true;
+            this.txtMinPrice.TextChange += new System.EventHandler(this.txtMinPrice_TextChange);
+            this.txtMinPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinPrice_KeyPress);
             // 
             // txtMaxPrice
             // 
@@ -473,6 +477,8 @@
             this.txtMaxPrice.TextPlaceholder = "Max";
             this.txtMaxPrice.UseSystemPasswordChar = false;
             this.txtMaxPrice.WordWrap = true;
+            this.txtMaxPrice.TextChange += new System.EventHandler(this.txtMaxPrice_TextChange);
+            this.txtMaxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxPrice_KeyPress);
             // 
             // FBuy
             // 
