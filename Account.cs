@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Window_Project_v5._1
 {
-    internal class Account
+    public class Account
     {
         private int id;
         private string email;
@@ -44,6 +44,17 @@ namespace Window_Project_v5._1
             this.birthday = birthday;
             this.address = address;
             this.avatar = avatar;
+        }
+        public Account(string username, string email, string password)
+        {
+            this.name = username;
+            this.email = email;
+            this.password = password;
+        }
+        public Account(string email, string password)
+        {
+            this.email = email;
+            this.password = password;
         }
 
         public int Id { get => id; set => id = value; }
