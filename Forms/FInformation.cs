@@ -32,7 +32,14 @@ namespace Window_Project_v5._1.Forms
             txtName.Text = account.Name;
             txtAddress.Text = account.Address;
             txtPhone.Text = account.Phone;
-            dtpBirthday.Value = account.Birthday.Date;
+            if (account.Birthday != DateTime.MinValue)
+            {
+                dtpBirthday.Value = account.Birthday.Date;
+            }
+            else
+            {
+                dtpBirthday.Value = DateTime.Today; 
+            }
             convertByte(pbAvatar, account.Avatar);
 
             

@@ -55,7 +55,13 @@ namespace Window_Project_v5._1
                 account.Name = Convert.ToString(row["name"]);
                 account.Address = Convert.ToString(row["address"]);
                 account.Phone = Convert.ToString(row["phone"]);
-                account.Birthday = Convert.ToDateTime(row["birthday"]);
+                //account.Birthday = Convert.ToDateTime(row["birthday"]);
+                object birthdayValue = row["birthday"];
+                DateTime birthday;
+                if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))
+                {
+                    account.Birthday = birthday;
+                }
                 // Assuming the Avatar column is stored as byte[] in the database
                 if (row["Avatar"] != DBNull.Value)
                 {
