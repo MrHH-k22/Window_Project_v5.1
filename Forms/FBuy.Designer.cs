@@ -142,7 +142,8 @@
             "Jewelry",
             "Sport",
             "Vehicle",
-            "Book"});
+            "Book",
+            "(ALL)"});
             this.ddCategories.ItemTopMargin = 3;
             this.ddCategories.Location = new System.Drawing.Point(665, 18);
             this.ddCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

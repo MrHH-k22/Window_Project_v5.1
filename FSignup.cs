@@ -29,5 +29,10 @@ namespace Window_Project_v5._1.Forms
             Account acc = new Account(txtUsername.Text, txtEmail.Text ,txtPassword.Text);
             accountDAO.CreateNewAccount(acc);
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

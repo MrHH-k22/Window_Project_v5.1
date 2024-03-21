@@ -13,7 +13,6 @@ namespace Window_Project_v5._1.Forms
     public partial class FBuy : Form
     {
         private ProductDAO productDAO = new ProductDAO();
-        private string selectedValue = null;
 
 
         public FBuy()
@@ -124,9 +123,9 @@ namespace Window_Project_v5._1.Forms
             flpProduct.Controls.Clear();
             foreach (var pd in products)
             {
-                if (minPrice <= pd.SalePrice && pd.SalePrice <= maxPrice 
-                    && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower())
-                    && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
+                if (minPrice <= pd.SalePrice && pd.SalePrice <= maxPrice
+                && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower())
+                && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
                 {
                     UCProduct uc = new UCProduct(pd);
                     flpProduct.Controls.Add(uc);
@@ -136,10 +135,13 @@ namespace Window_Project_v5._1.Forms
 
         private void ddCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
             if (ddCategories.SelectedItem != null)
             {
                 selectedValue = ddCategories.SelectedItem.ToString();
             }
+            getFilter();
+            */
         }
     }
 }
