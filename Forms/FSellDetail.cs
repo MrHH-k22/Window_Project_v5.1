@@ -81,13 +81,13 @@ namespace Window_Project_v5._1.Forms
             productDAO.Add(product);
             //Add images to Productimages
             product = productDAO.GetLastProduct(); 
-            foreach (string imgLocation in imgLocations)
-            {
-                if (string.IsNullOrEmpty(imgLocation))
+            foreach (string imgLocation in imgLocations) 
+            { 
+                if (string.IsNullOrEmpty(imgLocation)) 
                 {
-                    break;
-                }
-                imageDAO.Add(product.Id, imgLocation);
+                    break; 
+                } 
+                imageDAO.Add(product.Id, imgLocation); 
             }
             this.Close();
         }
