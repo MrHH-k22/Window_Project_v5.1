@@ -14,8 +14,9 @@ namespace Window_Project_v5._1.Forms
 {
     public partial class FSellDetail : Form
     {
-        ProductDAO productDAO = new ProductDAO();
-        ImageDAO imageDAO = new ImageDAO();
+        private ProductDAO productDAO = new ProductDAO();
+        private ImageDAO imageDAO = new ImageDAO();
+        private Account acc = new Account();
         private string selectedValue = null;
 
         private string[] imgLocations = new string[4];
@@ -23,6 +24,12 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail()
         {
             InitializeComponent();
+        }
+
+        public FSellDetail(Account acc)
+        {
+            InitializeComponent();
+            this.acc = acc;
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
@@ -70,7 +77,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPost_Click(object sender, EventArgs e)
         {
             //string category = ddCategories.SelectedValue.ToString();
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text,selectedValue);       
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text, selectedValue, acc.Id);       
             productDAO.Add(product);
             //Add images to Productimages
             product = productDAO.GetLastProduct(); 

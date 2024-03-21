@@ -36,8 +36,8 @@ namespace Window_Project_v5._1
             status = dr["status"].ToString();
             description = dr["description"].ToString();
             brand = dr["Brand"].ToString();
-            Category = dr["categories"].ToString();
-            //sellerID = Convert.ToInt32(dr["sellerid"]);
+            Category = dr["category"].ToString();
+            sellerID = Convert.ToInt32(dr["sellerid"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
         }
 
@@ -68,7 +68,7 @@ namespace Window_Project_v5._1
             this.category = category;
         }
 
-        public Product(string condition, string status, double originalPrice, double salePrice, string name, string description,string brand, string category)
+        public Product(string condition, string status, double originalPrice, double salePrice, string name, string description,string brand, string category, int sellerID)
         {
             this.condition = condition;
             this.status = status;
@@ -78,7 +78,7 @@ namespace Window_Project_v5._1
             this.description = description;
             this.brand = brand;
             this.category = category;
-
+            this.sellerID = sellerID;
         }
 
         public int Id { get => id; set => id = value; }
