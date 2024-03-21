@@ -152,6 +152,7 @@
             this.ddCategories.Text = "Categories";
             this.ddCategories.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.ddCategories.TextLeftMargin = 5;
+            this.ddCategories.SelectedIndexChanged += new System.EventHandler(this.ddCategories_SelectedIndexChanged);
             // 
             // btnFilter
             // 

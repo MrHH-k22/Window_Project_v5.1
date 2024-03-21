@@ -132,5 +132,10 @@ namespace Window_Project_v5._1.Forms
                 }
             }
         }
+
+        private void ddCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
