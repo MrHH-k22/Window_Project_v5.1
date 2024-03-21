@@ -119,7 +119,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FBuy(), sender);
+            OpenChildForm(new Forms.FBuy(acc), sender);
         }
 
         private void btnTrackOrder_Click(object sender, EventArgs e)

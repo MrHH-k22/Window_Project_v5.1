@@ -21,6 +21,12 @@ namespace Window_Project_v5._1
             string sqlStr = string.Format("INSERT INTO Product (Condition, Status, OriginalPrice, SalePrice, Name, Description, Brand, Category, SellerID) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description,product.Brand, product.Category, product.SellerID);
             dbc.Excute(sqlStr);
         }
+
+        public void update(Product product)
+        {
+            string sqlStr = string.Format("Update Product Set BuyerID = '{0}' where id = '{1}'", product.BuyerID,product.Id);
+            dbc.Excute(sqlStr);
+        }
         
         public Product GetLastProduct()
         {

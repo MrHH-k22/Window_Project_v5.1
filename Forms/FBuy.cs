@@ -13,11 +13,18 @@ namespace Window_Project_v5._1.Forms
     public partial class FBuy : Form
     {
         private ProductDAO productDAO = new ProductDAO();
+        private Account account = new Account();
 
 
         public FBuy()
         {
             InitializeComponent();
+        }
+
+        public FBuy(Account acc)
+        {
+            InitializeComponent();
+            account = acc;
         }
 
         private void ucProduct2_Load(object sender, EventArgs e)
@@ -30,7 +37,7 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
             {
-                UCProduct uc = new UCProduct(pd);
+                UCProduct uc = new UCProduct(pd,account);
                 flpProduct.Controls.Add(uc);
             }
         }
@@ -91,7 +98,7 @@ namespace Window_Project_v5._1.Forms
                 flpProduct.Controls.Clear();
                 foreach (var pd in products)
                 {
-                    UCProduct uc = new UCProduct(pd);
+                    UCProduct uc = new UCProduct(pd,account);
                     flpProduct.Controls.Add(uc);
                 }
             }
@@ -103,7 +110,7 @@ namespace Window_Project_v5._1.Forms
                 && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower())
                 && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
                 {
-                    UCProduct uc = new UCProduct(pd);
+                    UCProduct uc = new UCProduct(pd, account);
                     flpProduct.Controls.Add(uc);
                 }
             }
