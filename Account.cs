@@ -8,6 +8,7 @@ namespace Window_Project_v5._1
 {
     public class Account
     {
+        private AccountDAO accountDAO = new AccountDAO();
         private int id;
         private string email;
         private string password;
@@ -20,6 +21,20 @@ namespace Window_Project_v5._1
 
         public Account()
         {
+        }
+
+        public Account(int id)
+        {
+            Account acc = accountDAO.Retrieve(id);
+            this.id = acc.id;
+            this.email = acc.email;
+            this.password = acc.password;
+            this.name = acc.name;
+            this.phone = acc.phone;
+            this.birthday = acc.birthday;
+            this.address = acc.address;
+            this.money = acc.money;
+            this.avatar = acc.avatar;
         }
 
         public Account(int id, string email, string password, string name, string phone, DateTime birthday, string address, double money, byte[] avatar)

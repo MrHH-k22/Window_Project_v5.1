@@ -78,6 +78,41 @@ namespace Window_Project_v5._1
                 return null;
             }
         }
+
+        public Account Retrieve(int id)
+        {
+            string SQL = string.Format("select * from Account where ID = '{0}'", id);
+            DataTable dt = dbconnection.Load(SQL);
+            if (dt.Rows.Count > 0)
+            {
+                Account account = new Account();
+                DataRow row = dt.Rows[0];
+                account.Id = Convert.ToInt32(row["id"]);
+                account.Name = Convert.ToString(row["name"]);
+                account.Address = Convert.ToString(row["address"]);
+                account.Phone = Convert.ToString(row["phone"]);
+                object birthdayValue = row["birthday"];
+                DateTime birthday;
+                if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))
+                {
+                    account.Birthday = birthday;
+                }
+                // Assuming the Avatar column is stored as byte[] in the database
+                if (row["Avatar"] != DBNull.Value)
+                {
+                    account.Avatar = (byte[])row["Avatar"];
+                }
+                else
+                {
+                    account.Avatar = null; // Or any other default value you want to assign
+                }
+                return account;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 
 }

@@ -15,15 +15,22 @@ namespace Window_Project_v5._1.Forms
     public partial class FListSell : Form
     {
         ProductDAO productDAO = new ProductDAO();
+        Account acc = new Account();
 
         public FListSell()
         {
             InitializeComponent();
         }
 
+        public FListSell(Account acc)
+        {
+            InitializeComponent();
+            this.acc = acc;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FSellDetail fSellDetail = new FSellDetail();
+            FSellDetail fSellDetail = new FSellDetail(acc);
             fSellDetail.Show();
         }
 

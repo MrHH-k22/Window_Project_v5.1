@@ -18,7 +18,7 @@ namespace Window_Project_v5._1
         DBConnection dbc = new DBConnection();
         public void Add(Product product)
         {
-            string sqlStr = string.Format("INSERT INTO Product (Condition, Status, OriginalPrice, SalePrice, Name, Description, Brand, Categories) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description,product.Brand, product.Category);
+            string sqlStr = string.Format("INSERT INTO Product (Condition, Status, OriginalPrice, SalePrice, Name, Description, Brand, Category, SellerID) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description,product.Brand, product.Category, product.SellerID);
             dbc.Excute(sqlStr);
         }
         
