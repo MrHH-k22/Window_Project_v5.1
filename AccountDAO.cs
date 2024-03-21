@@ -23,7 +23,6 @@ namespace Window_Project_v5._1
             dbconnection.Excute(sqlStr);
         }
 
-        
         public void AddImage(Account account,byte[] imgLocation)
         {
             //byte[] images = File.ReadAllBytes(imgLocation);
@@ -48,41 +47,18 @@ namespace Window_Project_v5._1
         {
             string SQL = string.Format("select * from Account where Email = '{0}' and Password = '{1}'", account.Email, account.Password);
             DataTable dt = dbconnection.Load(SQL);
-            if (dt.Rows.Count > 0)
-            {
-                DataRow row = dt.Rows[0];
-                account.Id = Convert.ToInt32(row["id"]);
-                account.Name = Convert.ToString(row["name"]);
-                account.Address = Convert.ToString(row["address"]);
-                account.Phone = Convert.ToString(row["phone"]);
-                //account.Birthday = Convert.ToDateTime(row["birthday"]);
-                object birthdayValue = row["birthday"];
-                DateTime birthday;
-                if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))
-                {
-                    account.Birthday = birthday;
-                }
-                // Assuming the Avatar column is stored as byte[] in the database
-                if (row["Avatar"] != DBNull.Value)
-                {
-                    account.Avatar = (byte[])row["Avatar"];
-                }
-                else
-                {
-                    account.Avatar = null; // Or any other default value you want to assign
-                }
-                return account;
-            }
-            else
-            { 
-                return null;
-            }
+            return GetAccountFromDataTable(dt);
         }
 
         public Account Retrieve(int id)
         {
             string SQL = string.Format("select * from Account where ID = '{0}'", id);
             DataTable dt = dbconnection.Load(SQL);
+            return GetAccountFromDataTable(dt);
+        }
+
+        public Account GetAccountFromDataTable(DataTable dt)
+        {
             if (dt.Rows.Count > 0)
             {
                 Account account = new Account();

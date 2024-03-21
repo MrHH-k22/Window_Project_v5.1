@@ -14,7 +14,6 @@ namespace Window_Project_v5._1.Forms
     public partial class FTrackDetail : Form
     {
         private ImageDAO imageDAO = new ImageDAO();
-        private AccountDAO accountDAO = new AccountDAO();  
 
         public FTrackDetail()
         {
