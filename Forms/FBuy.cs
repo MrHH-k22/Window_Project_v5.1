@@ -37,6 +37,7 @@ namespace Window_Project_v5._1.Forms
 
         private void txtProductName_TextChange(object sender, EventArgs e)
         {
+            /*
             flpProduct.Controls.Clear();
             List<Product> products = productDAO.LoadList();
             foreach(var pd in products)
@@ -47,10 +48,14 @@ namespace Window_Project_v5._1.Forms
                     flpProduct.Controls.Add(uc);
                 }
             }
+            */
+            getFilter();
+
         }
 
         private void txtBrand_TextChange(object sender, EventArgs e)
         {
+            /*
             flpProduct.Controls.Clear();
             List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
@@ -61,6 +66,9 @@ namespace Window_Project_v5._1.Forms
                     flpProduct.Controls.Add(uc);
                 }
             }
+            */
+            getFilter();
+
         }
 
         private void txtMaxPrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -85,38 +93,24 @@ namespace Window_Project_v5._1.Forms
 
         private void txtMaxPrice_TextChange(object sender, EventArgs e)
         {
-            getPrice();
+            getFilter();
         }
 
         private void txtMinPrice_TextChange(object sender, EventArgs e)
         {
-            getPrice();
+            getFilter();
         }
 
-        private void getPrice()
+        private void getFilter()
         {
             List<Product> products = productDAO.LoadList();
             double maxPrice, minPrice;
             flpProduct.Controls.Clear();
-            if (txtMinPrice.Text == "") 
-            { 
-                minPrice = 0; 
-            }
-            else
-            {
-                minPrice = double.Parse(txtMinPrice.Text);
+            minPrice = (txtMinPrice.Text == "") ? 0 : double.Parse(txtMinPrice.Text);
+            maxPrice = (txtMaxPrice.Text == "") ? double.MaxValue : double.Parse(txtMaxPrice.Text);
 
-            }
-            if (txtMaxPrice.Text == "") 
-            { 
-                maxPrice = double.MaxValue; 
-            }
-            else
-            {
-                maxPrice = double.Parse(txtMaxPrice.Text);
-            }
 
-            if (txtMinPrice.Text == "" && txtMaxPrice.Text == "")
+            if (txtMinPrice.Text == "" && txtMaxPrice.Text == "" && txtProductName.Text == "" && txtBrand.Text == "")
             {
                 flpProduct.Controls.Clear();
                 foreach (var pd in products)
@@ -129,7 +123,9 @@ namespace Window_Project_v5._1.Forms
             flpProduct.Controls.Clear();
             foreach (var pd in products)
             {
-                if (minPrice <= pd.SalePrice && pd.SalePrice <= maxPrice)
+                if (minPrice <= pd.SalePrice && pd.SalePrice <= maxPrice 
+                    && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower())
+                    && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
                 {
                     UCProduct uc = new UCProduct(pd);
                     flpProduct.Controls.Add(uc);
