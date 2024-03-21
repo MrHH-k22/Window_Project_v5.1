@@ -71,16 +71,16 @@ namespace Window_Project_v5._1.Forms
         {
             //string category = ddCategories.SelectedValue.ToString();
             Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text,selectedValue);       
-            productDAO.Add(product);
-            //Add images to Productimages
+            productDAO.Add(product); 
+            //Add images to Productimages 
             product = productDAO.GetLastProduct(); 
-            foreach (string imgLocation in imgLocations)
-            {
-                if (string.IsNullOrEmpty(imgLocation))
+            foreach (string imgLocation in imgLocations) 
+            { 
+                if (string.IsNullOrEmpty(imgLocation)) 
                 {
-                    break;
-                }
-                imageDAO.Add(product.Id, imgLocation);
+                    break; 
+                } 
+                imageDAO.Add(product.Id, imgLocation); 
             }
             this.Close();
         }

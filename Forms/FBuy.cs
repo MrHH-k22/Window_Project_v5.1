@@ -37,36 +37,12 @@ namespace Window_Project_v5._1.Forms
 
         private void txtProductName_TextChange(object sender, EventArgs e)
         {
-            /*
-            flpProduct.Controls.Clear();
-            List<Product> products = productDAO.LoadList();
-            foreach(var pd in products)
-            {
-                if(txtProductName.TextLength>=3 && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
-                {
-                    UCProduct uc = new UCProduct(pd);
-                    flpProduct.Controls.Add(uc);
-                }
-            }
-            */
             getFilter();
 
         }
 
         private void txtBrand_TextChange(object sender, EventArgs e)
         {
-            /*
-            flpProduct.Controls.Clear();
-            List<Product> products = productDAO.LoadList();
-            foreach (var pd in products)
-            {
-                if (txtBrand.TextLength >= 3 && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower()))
-                {
-                    UCProduct uc = new UCProduct(pd);
-                    flpProduct.Controls.Add(uc);
-                }
-            }
-            */
             getFilter();
 
         }

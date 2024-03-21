@@ -14,6 +14,8 @@ namespace Window_Project_v5._1.Forms
     public partial class FBuyDetail : Form
     {
         private ImageDAO imageDAO = new ImageDAO();
+        private ProductDAO productDAO = new ProductDAO();
+
 
         public FBuyDetail()
         {
@@ -95,6 +97,16 @@ namespace Window_Project_v5._1.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            List<Product> products = productDAO.LoadList();
+            foreach (var pd in products)
+            {
+                UCProduct uc = new UCProduct(pd);
+                flpProduct.Controls.Add(uc);
+            }
         }
     }
 }
