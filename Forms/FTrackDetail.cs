@@ -33,8 +33,9 @@ namespace Window_Project_v5._1.Forms
             lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
             txtStatus.Text = pd.Status.ToString();
             txtDescription.Text = pd.Description.ToString();
-            lblShop.Text = (new Account(pd.SellerID)).Name;
-
+            Account seller = new Account(pd.SellerID);
+            lblShop.Text = seller.Name;
+            lblPhone.Text = "Contact Phone: " + seller.Phone;
 
             txtStatus.ReadOnly = true;
             txtDescription.ReadOnly = true;

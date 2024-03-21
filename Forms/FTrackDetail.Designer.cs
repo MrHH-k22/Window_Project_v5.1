@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FTrackDetail));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panelTop = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSingin = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.gbSeller = new System.Windows.Forms.GroupBox();
             this.lblShop = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.txtDescription = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lblCondition = new System.Windows.Forms.Label();
             this.pbImage1 = new System.Windows.Forms.PictureBox();
@@ -88,10 +88,10 @@
             this.panelTop.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.panelTop.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Quality = 10;
-            this.panelTop.Size = new System.Drawing.Size(1048, 111);
+            this.panelTop.Size = new System.Drawing.Size(786, 90);
             this.panelTop.TabIndex = 27;
             // 
             // bunifuPictureBox1
@@ -102,10 +102,10 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(47, 30);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(35, 24);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(69, 69);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(52, 52);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 11;
             this.bunifuPictureBox1.TabStop = false;
@@ -117,10 +117,9 @@
             this.lblSingin.BackColor = System.Drawing.Color.Transparent;
             this.lblSingin.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSingin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSingin.Location = new System.Drawing.Point(123, 30);
-            this.lblSingin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSingin.Location = new System.Drawing.Point(92, 24);
             this.lblSingin.Name = "lblSingin";
-            this.lblSingin.Size = new System.Drawing.Size(250, 45);
+            this.lblSingin.Size = new System.Drawing.Size(204, 37);
             this.lblSingin.TabIndex = 10;
             this.lblSingin.Text = "Product Details";
             // 
@@ -138,17 +137,17 @@
             this.panelBody.Controls.Add(this.btnClose);
             this.panelBody.Controls.Add(this.lblBuyPrice);
             this.panelBody.Controls.Add(this.gbSeller);
-            this.panelBody.Controls.Add(this.label1);
+            this.panelBody.Controls.Add(this.lblPhone);
             this.panelBody.Controls.Add(this.txtDescription);
             this.panelBody.Controls.Add(this.lblCondition);
             this.panelBody.Controls.Add(this.pbImage1);
             this.panelBody.Controls.Add(this.lblProductName);
             this.panelBody.Controls.Add(this.lblPrice);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody.Location = new System.Drawing.Point(0, 111);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelBody.Location = new System.Drawing.Point(0, 90);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1048, 478);
+            this.panelBody.Size = new System.Drawing.Size(786, 388);
             this.panelBody.TabIndex = 33;
             // 
             // lblBrand
@@ -156,10 +155,9 @@
             this.lblBrand.BackColor = System.Drawing.Color.Transparent;
             this.lblBrand.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblBrand.ForeColor = System.Drawing.Color.DimGray;
-            this.lblBrand.Location = new System.Drawing.Point(535, 150);
-            this.lblBrand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBrand.Location = new System.Drawing.Point(401, 122);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(439, 25);
+            this.lblBrand.Size = new System.Drawing.Size(329, 20);
             this.lblBrand.TabIndex = 46;
             this.lblBrand.Text = "Brand: ";
             // 
@@ -182,11 +180,11 @@
             this.btnSave.ColorContrastOnClick = 45;
             this.btnSave.ColorContrastOnHover = 45;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnSave.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnSave.CustomizableEdges = borderEdges1;
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -210,8 +208,8 @@
             this.btnSave.IdleIconLeftImage = null;
             this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(521, 402);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(391, 327);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.OnDisabledState.BorderRadius = 45;
@@ -245,7 +243,7 @@
             this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnSave.OnPressedState.IconLeftImage = null;
             this.btnSave.OnPressedState.IconRightImage = null;
-            this.btnSave.Size = new System.Drawing.Size(125, 55);
+            this.btnSave.Size = new System.Drawing.Size(94, 45);
             this.btnSave.TabIndex = 45;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -273,11 +271,11 @@
             this.btnEdit.ColorContrastOnClick = 45;
             this.btnEdit.ColorContrastOnHover = 45;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnEdit.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnEdit.CustomizableEdges = borderEdges2;
             this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEdit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEdit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -301,8 +299,8 @@
             this.btnEdit.IdleIconLeftImage = null;
             this.btnEdit.IdleIconRightImage = null;
             this.btnEdit.IndicateFocus = false;
-            this.btnEdit.Location = new System.Drawing.Point(700, 402);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Location = new System.Drawing.Point(525, 327);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEdit.OnDisabledState.BorderRadius = 45;
@@ -336,7 +334,7 @@
             this.btnEdit.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnEdit.OnPressedState.IconLeftImage = null;
             this.btnEdit.OnPressedState.IconRightImage = null;
-            this.btnEdit.Size = new System.Drawing.Size(125, 55);
+            this.btnEdit.Size = new System.Drawing.Size(94, 45);
             this.btnEdit.TabIndex = 44;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -383,34 +381,34 @@
         "Đã có ốp xọn mua 700k",
         "Giá tiết kiệm hơn bóc seal rất nhiều",
         "Có quẹt thẻ + trả góp + shipcode toàn quốc"};
-            this.txtStatus.Location = new System.Drawing.Point(535, 239);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStatus.Location = new System.Drawing.Point(401, 194);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStatus.MaxLength = 32767;
             this.txtStatus.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtStatus.Modified = false;
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
-            stateProperties17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtStatus.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtStatus.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtStatus.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtStatus.OnIdleState = stateProperties20;
-            this.txtStatus.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtStatus.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtStatus.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtStatus.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtStatus.OnIdleState = stateProperties4;
+            this.txtStatus.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStatus.PasswordChar = '\0';
             this.txtStatus.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtStatus.PlaceholderText = "Enter text";
@@ -420,7 +418,7 @@
             this.txtStatus.SelectionLength = 0;
             this.txtStatus.SelectionStart = 0;
             this.txtStatus.ShortcutsEnabled = true;
-            this.txtStatus.Size = new System.Drawing.Size(453, 146);
+            this.txtStatus.Size = new System.Drawing.Size(340, 119);
             this.txtStatus.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtStatus.TabIndex = 43;
             this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -435,10 +433,10 @@
             // 
             this.pbImage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImage4.Image = global::Window_Project_v5._1.Properties.Resources.images;
-            this.pbImage4.Location = new System.Drawing.Point(335, 382);
-            this.pbImage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbImage4.Location = new System.Drawing.Point(251, 310);
+            this.pbImage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImage4.Name = "pbImage4";
-            this.pbImage4.Size = new System.Drawing.Size(101, 81);
+            this.pbImage4.Size = new System.Drawing.Size(76, 66);
             this.pbImage4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage4.TabIndex = 42;
             this.pbImage4.TabStop = false;
@@ -448,10 +446,10 @@
             // 
             this.pbImage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImage3.Image = global::Window_Project_v5._1.Properties.Resources.HAN00152_Lớn_1024x682;
-            this.pbImage3.Location = new System.Drawing.Point(205, 382);
-            this.pbImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbImage3.Location = new System.Drawing.Point(154, 310);
+            this.pbImage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImage3.Name = "pbImage3";
-            this.pbImage3.Size = new System.Drawing.Size(101, 81);
+            this.pbImage3.Size = new System.Drawing.Size(76, 66);
             this.pbImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage3.TabIndex = 41;
             this.pbImage3.TabStop = false;
@@ -461,10 +459,10 @@
             // 
             this.pbImage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImage2.Image = global::Window_Project_v5._1.Properties.Resources._9;
-            this.pbImage2.Location = new System.Drawing.Point(75, 382);
-            this.pbImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbImage2.Location = new System.Drawing.Point(56, 310);
+            this.pbImage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImage2.Name = "pbImage2";
-            this.pbImage2.Size = new System.Drawing.Size(101, 81);
+            this.pbImage2.Size = new System.Drawing.Size(76, 66);
             this.pbImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage2.TabIndex = 40;
             this.pbImage2.TabStop = false;
@@ -489,11 +487,11 @@
             this.btnClose.ColorContrastOnClick = 45;
             this.btnClose.ColorContrastOnHover = 45;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges9;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnClose.CustomizableEdges = borderEdges3;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnClose.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -517,8 +515,8 @@
             this.btnClose.IdleIconLeftImage = null;
             this.btnClose.IdleIconRightImage = null;
             this.btnClose.IndicateFocus = false;
-            this.btnClose.Location = new System.Drawing.Point(871, 402);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Location = new System.Drawing.Point(653, 327);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.OnDisabledState.BorderRadius = 45;
@@ -552,7 +550,7 @@
             this.btnClose.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnClose.OnPressedState.IconLeftImage = null;
             this.btnClose.OnPressedState.IconRightImage = null;
-            this.btnClose.Size = new System.Drawing.Size(117, 55);
+            this.btnClose.Size = new System.Drawing.Size(88, 45);
             this.btnClose.TabIndex = 36;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -566,10 +564,9 @@
             this.lblBuyPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblBuyPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblBuyPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblBuyPrice.Location = new System.Drawing.Point(532, 117);
-            this.lblBuyPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBuyPrice.Location = new System.Drawing.Point(399, 95);
             this.lblBuyPrice.Name = "lblBuyPrice";
-            this.lblBuyPrice.Size = new System.Drawing.Size(168, 31);
+            this.lblBuyPrice.Size = new System.Drawing.Size(126, 25);
             this.lblBuyPrice.TabIndex = 39;
             this.lblBuyPrice.Text = "20.400.000 VND";
             // 
@@ -577,11 +574,11 @@
             // 
             this.gbSeller.Controls.Add(this.lblShop);
             this.gbSeller.Controls.Add(this.pictureBox2);
-            this.gbSeller.Location = new System.Drawing.Point(12, 9);
-            this.gbSeller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbSeller.Location = new System.Drawing.Point(9, 7);
+            this.gbSeller.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbSeller.Name = "gbSeller";
-            this.gbSeller.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbSeller.Size = new System.Drawing.Size(467, 73);
+            this.gbSeller.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbSeller.Size = new System.Drawing.Size(350, 59);
             this.gbSeller.TabIndex = 35;
             this.gbSeller.TabStop = false;
             // 
@@ -590,9 +587,10 @@
             this.lblShop.AutoSize = true;
             this.lblShop.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblShop.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblShop.Location = new System.Drawing.Point(91, 25);
+            this.lblShop.Location = new System.Drawing.Point(68, 20);
+            this.lblShop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblShop.Name = "lblShop";
-            this.lblShop.Size = new System.Drawing.Size(172, 31);
+            this.lblShop.Size = new System.Drawing.Size(140, 25);
             this.lblShop.TabIndex = 34;
             this.lblShop.TabStop = true;
             this.lblShop.Text = "MacBook Shop";
@@ -600,25 +598,24 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v21;
-            this.pictureBox2.Location = new System.Drawing.Point(5, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 13);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(38, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
+            // lblPhone
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(529, 208);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 37);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "Contact Phone: 0908758889";
+            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblPhone.Location = new System.Drawing.Point(397, 169);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(334, 30);
+            this.lblPhone.TabIndex = 37;
+            this.lblPhone.Text = "Contact Phone: 0908758889";
             // 
             // txtDescription
             // 
@@ -671,34 +668,34 @@
         "#asus #laptopasus #AsusZenbook #Asuszenbookux434fac #asusxX1503za #asus15xoled #a" +
             "susx509ja #asusx415ea #asusx515ea",
         ""};
-            this.txtDescription.Location = new System.Drawing.Point(12, 473);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescription.Location = new System.Drawing.Point(9, 384);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescription.MaxLength = 32767;
             this.txtDescription.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDescription.Modified = false;
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtDescription.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnIdleState = stateProperties24;
-            this.txtDescription.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtDescription.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnIdleState = stateProperties8;
+            this.txtDescription.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescription.PasswordChar = '\0';
             this.txtDescription.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtDescription.PlaceholderText = "Enter text";
@@ -708,7 +705,7 @@
             this.txtDescription.SelectionLength = 0;
             this.txtDescription.SelectionStart = 0;
             this.txtDescription.ShortcutsEnabled = true;
-            this.txtDescription.Size = new System.Drawing.Size(976, 390);
+            this.txtDescription.Size = new System.Drawing.Size(732, 317);
             this.txtDescription.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDescription.TabIndex = 36;
             this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -724,20 +721,19 @@
             this.lblCondition.BackColor = System.Drawing.Color.Transparent;
             this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblCondition.Location = new System.Drawing.Point(529, 175);
-            this.lblCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCondition.Location = new System.Drawing.Point(397, 142);
             this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(296, 35);
+            this.lblCondition.Size = new System.Drawing.Size(222, 28);
             this.lblCondition.TabIndex = 32;
             this.lblCondition.Text = "Condition: 90%";
             // 
             // pbImage1
             // 
             this.pbImage1.Image = global::Window_Project_v5._1.Properties.Resources.HAN00112_Lớn_1024x682;
-            this.pbImage1.Location = new System.Drawing.Point(12, 90);
-            this.pbImage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbImage1.Location = new System.Drawing.Point(9, 73);
+            this.pbImage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImage1.Name = "pbImage1";
-            this.pbImage1.Size = new System.Drawing.Size(495, 283);
+            this.pbImage1.Size = new System.Drawing.Size(371, 230);
             this.pbImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage1.TabIndex = 0;
             this.pbImage1.TabStop = false;
@@ -747,10 +743,9 @@
             this.lblProductName.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblProductName.Location = new System.Drawing.Point(529, 9);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProductName.Location = new System.Drawing.Point(397, 7);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(475, 65);
+            this.lblProductName.Size = new System.Drawing.Size(356, 53);
             this.lblProductName.TabIndex = 26;
             this.lblProductName.Text = "MacBook Air 2020 13 inch Apple M1 8GB RAM 256GB SSD – Like New";
             // 
@@ -759,10 +754,9 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(531, 77);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrice.Location = new System.Drawing.Point(398, 63);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(357, 31);
+            this.lblPrice.Size = new System.Drawing.Size(268, 25);
             this.lblPrice.TabIndex = 31;
             this.lblPrice.Text = "16.300.000 VND";
             // 
@@ -808,13 +802,13 @@
             // 
             // FTrackDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 614);
+            this.ClientSize = new System.Drawing.Size(786, 499);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FTrackDetail";
             this.Text = "FTrackDetail";
             this.panelTop.ResumeLayout(false);
@@ -846,7 +840,7 @@
         private System.Windows.Forms.GroupBox gbSeller;
         private System.Windows.Forms.LinkLabel lblShop;
         private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lblPhone;
         private Bunifu.UI.WinForms.BunifuTextBox txtDescription;
         public System.Windows.Forms.Label lblCondition;
         private System.Windows.Forms.PictureBox pbImage1;
