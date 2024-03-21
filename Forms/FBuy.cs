@@ -13,6 +13,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FBuy : Form
     {
         private ProductDAO productDAO = new ProductDAO();
+        private string selectedValue = null;
 
 
         public FBuy()
@@ -135,7 +136,10 @@ namespace Window_Project_v5._1.Forms
 
         private void ddCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (ddCategories.SelectedItem != null)
+            {
+                selectedValue = ddCategories.SelectedItem.ToString();
+            }
         }
     }
 }
