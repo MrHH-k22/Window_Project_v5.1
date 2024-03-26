@@ -93,20 +93,13 @@ namespace Window_Project_v5._1.Forms
 
         }
 
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-            //product buyerid = acount id  
 
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            
-        }
+
     }
 }

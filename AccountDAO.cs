@@ -66,6 +66,7 @@ namespace Window_Project_v5._1
                 account.Id = Convert.ToInt32(row["id"]);
                 account.Name = Convert.ToString(row["name"]);
                 account.Address = Convert.ToString(row["address"]);
+                account.Email = Convert.ToString(row["email"]);
                 account.Phone = Convert.ToString(row["phone"]);
                 object birthdayValue = row["birthday"];
                 DateTime birthday;

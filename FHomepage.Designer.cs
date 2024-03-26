@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHomepage));
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelBody = new Bunifu.UI.WinForms.BunifuPanel();
             this.panelLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnMoney = new System.Windows.Forms.Button();
@@ -45,12 +46,11 @@
             this.btnSell = new System.Windows.Forms.Button();
             this.btnSeller = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelLeft.SuspendLayout();
             this.panelBuyerSubmenu.SuspendLayout();
             this.panelSellerSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -93,6 +93,17 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.pbLogo;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(220, 100);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            // 
             // panelBody
             // 
             this.panelBody.BackgroundColor = System.Drawing.Color.WhiteSmoke;
@@ -105,7 +116,7 @@
             this.panelBody.Location = new System.Drawing.Point(226, 6);
             this.panelBody.Name = "panelBody";
             this.panelBody.ShowBorders = true;
-            this.panelBody.Size = new System.Drawing.Size(1045, 613);
+            this.panelBody.Size = new System.Drawing.Size(1468, 1068);
             this.panelBody.TabIndex = 1;
             // 
             // panelLeft
@@ -128,7 +139,7 @@
             this.panelLeft.Location = new System.Drawing.Point(6, 6);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.ShowBorders = true;
-            this.panelLeft.Size = new System.Drawing.Size(220, 613);
+            this.panelLeft.Size = new System.Drawing.Size(220, 1068);
             this.panelLeft.TabIndex = 0;
             // 
             // btnMoney
@@ -160,7 +171,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnLogout.Image = global::Window_Project_v5._1.Properties.Resources.exit_30px;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 562);
+            this.btnLogout.Location = new System.Drawing.Point(0, 1017);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(220, 51);
@@ -386,23 +397,12 @@
             this.panelLogo.Size = new System.Drawing.Size(220, 100);
             this.panelLogo.TabIndex = 8;
             // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(220, 100);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            // 
             // FHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.ClientSize = new System.Drawing.Size(1277, 625);
+            this.ClientSize = new System.Drawing.Size(1700, 1080);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -411,11 +411,11 @@
             this.Padding = new System.Windows.Forms.Padding(6);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHomepage";
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelLeft.ResumeLayout(false);
             this.panelBuyerSubmenu.ResumeLayout(false);
             this.panelSellerSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
