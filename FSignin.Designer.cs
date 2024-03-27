@@ -55,6 +55,7 @@
             this.btnSignup = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.linkForgotPw = new System.Windows.Forms.LinkLabel();
             this.panelRight.SuspendLayout();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -113,6 +114,7 @@
             this.panelRight.BorderColor = System.Drawing.Color.Transparent;
             this.panelRight.BorderRadius = 3;
             this.panelRight.BorderThickness = 1;
+            this.panelRight.Controls.Add(this.linkForgotPw);
             this.panelRight.Controls.Add(this.btnSignin);
             this.panelRight.Controls.Add(this.btnClose);
             this.panelRight.Controls.Add(this.txtPassword);
@@ -174,7 +176,7 @@
             this.btnSignin.IdleIconLeftImage = null;
             this.btnSignin.IdleIconRightImage = null;
             this.btnSignin.IndicateFocus = false;
-            this.btnSignin.Location = new System.Drawing.Point(293, 353);
+            this.btnSignin.Location = new System.Drawing.Point(286, 353);
             this.btnSignin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -209,7 +211,7 @@
             this.btnSignin.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnSignin.OnPressedState.IconLeftImage = null;
             this.btnSignin.OnPressedState.IconRightImage = null;
-            this.btnSignin.Size = new System.Drawing.Size(151, 49);
+            this.btnSignin.Size = new System.Drawing.Size(158, 49);
             this.btnSignin.TabIndex = 28;
             this.btnSignin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -280,7 +282,7 @@
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
             this.txtPassword.Location = new System.Drawing.Point(39, 257);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
@@ -306,7 +308,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnIdleState = stateProperties4;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(4);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Password";
@@ -356,7 +358,7 @@
             this.txtEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Lines = new string[0];
             this.txtEmail.Location = new System.Drawing.Point(39, 154);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmail.Modified = false;
@@ -382,7 +384,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEmail.OnIdleState = stateProperties8;
-            this.txtEmail.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(4);
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEmail.PlaceholderText = "Email";
@@ -413,7 +415,7 @@
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(91, 89);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(300, 17);
@@ -578,6 +580,20 @@
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
             // 
+            // linkForgotPw
+            // 
+            this.linkForgotPw.AutoSize = true;
+            this.linkForgotPw.BackColor = System.Drawing.Color.Transparent;
+            this.linkForgotPw.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkForgotPw.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.linkForgotPw.Location = new System.Drawing.Point(290, 319);
+            this.linkForgotPw.Name = "linkForgotPw";
+            this.linkForgotPw.Size = new System.Drawing.Size(145, 20);
+            this.linkForgotPw.TabIndex = 29;
+            this.linkForgotPw.TabStop = true;
+            this.linkForgotPw.Text = "Forgot Password?";
+            this.linkForgotPw.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkForgotPw_LinkClicked);
+            // 
             // FSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -616,5 +632,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnClose;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSignin;
+        private System.Windows.Forms.LinkLabel linkForgotPw;
     }
 }

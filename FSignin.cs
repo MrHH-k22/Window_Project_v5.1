@@ -58,5 +58,11 @@ namespace Window_Project_v5._1.Forms
             FSignup fSignup = new FSignup();
             fSignup.Show();
         }
+
+        private void linkForgotPw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FForgetPassword fForgetPassword = new FForgetPassword();
+            fForgetPassword.Show();
+        }
     }
 }
