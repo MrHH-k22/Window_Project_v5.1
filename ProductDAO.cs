@@ -22,12 +22,12 @@ namespace Window_Project_v5._1
             dbc.Excute(sqlStr);
         }
 
-        public void update(Product product)
+        public void Update(Product product)
         {
-            string sqlStr = string.Format("Update Product Set BuyerID = '{0}' where id = '{1}'", product.BuyerID,product.Id);
+            string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}',BuyerID = '{8}' WHERE id = '{9}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category,product.BuyerID, product.Id);
             dbc.Excute(sqlStr);
         }
-        
+
         public Product GetLastProduct()
         {
             Product pd = new Product();
@@ -61,10 +61,24 @@ namespace Window_Project_v5._1
             if (name.Length == 0)
             {
                 dt = dbc.Load("SELECT * FROM Product;");
-            } else
+            }
+            else
             {
                 dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name LIKE '%{0}%'", name));
             }
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
+
+        public List<Product> LoadListWithBuyerID(int id)
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt = new DataTable();
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID = '{0}'", id));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);
