@@ -105,6 +105,9 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
