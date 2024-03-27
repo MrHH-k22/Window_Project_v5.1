@@ -118,7 +118,7 @@
             this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
             this.pbProduct.IsCircle = true;
             this.pbProduct.Location = new System.Drawing.Point(13, 7);
-            this.pbProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProduct.Margin = new System.Windows.Forms.Padding(2);
             this.pbProduct.Name = "pbProduct";
             this.pbProduct.Size = new System.Drawing.Size(79, 79);
             this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,7 +136,7 @@
             this.btnDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnDetail.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDetail.Location = new System.Drawing.Point(583, 46);
-            this.btnDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.Size = new System.Drawing.Size(67, 30);
             this.btnDetail.TabIndex = 30;
@@ -157,13 +157,14 @@
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnCancel.Location = new System.Drawing.Point(506, 46);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(67, 30);
             this.btnCancel.TabIndex = 31;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // UCProductTracking
             // 

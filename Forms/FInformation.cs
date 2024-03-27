@@ -28,7 +28,7 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             account = acc;
             txtEmail.Text = account.Email;
-            txtPassword.Text = account.Password;
+            txtPassword.Text = "";
             txtName.Text = account.Name;
             txtAddress.Text = account.Address;
             txtPhone.Text = account.Phone;
@@ -75,7 +75,10 @@ namespace Window_Project_v5._1.Forms
         {
             account.Name = txtName.Text;
             account.Email = txtEmail.Text;
-            account.Password = txtPassword.Text;
+            if (txtPassword.Text.Length > 0)
+            {
+                account.Password = txtPassword.Text;
+            }
             account.Phone = txtPhone.Text;
             account.Birthday = dtpBirthday.Value;
             account.Address = txtAddress.Text;

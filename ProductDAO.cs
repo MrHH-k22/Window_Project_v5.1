@@ -54,17 +54,16 @@ namespace Window_Project_v5._1
             return list;
         }
 
-        public List<Product> LoadListWithCondition(string name)
+        public List<Product> LoadListWithCondition(string name, int id)
         {
             List<Product> list = new List<Product>();
             DataTable dt = new DataTable();
             if (name.Length == 0)
             {
-                dt = dbc.Load("SELECT * FROM Product;");
-            }
-            else
+                dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}'", id));
+            } else
             {
-                dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name LIKE '%{0}%'", name));
+                dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name LIKE '%{0}%' AND SellerID = '{1}'", name, id));
             }
             foreach (DataRow dr in dt.Rows)
             {

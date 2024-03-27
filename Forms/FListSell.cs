@@ -36,7 +36,7 @@ namespace Window_Project_v5._1.Forms
 
         private void FListSell_Load(object sender, EventArgs e)
         {
-            List<Product> products = productDAO.LoadList();
+            List<Product> products = productDAO.LoadListWithCondition("", acc.Id);
             foreach (var pd in products)
             {
                 UCProductTracking uc = new UCProductTracking(pd);
@@ -47,7 +47,7 @@ namespace Window_Project_v5._1.Forms
         private void btnLoad_Click(object sender, EventArgs e)
         {
             flpProduct.Controls.Clear();
-            List<Product> products = productDAO.LoadListWithCondition(txtSearch.Text);
+            List<Product> products = productDAO.LoadListWithCondition(txtSearch.Text, acc.Id);
             foreach (var pd in products)
             {
                 UCProductTracking uc = new UCProductTracking(pd);
