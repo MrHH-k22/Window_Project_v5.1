@@ -207,7 +207,7 @@
             this.btnBuy.IdleIconLeftImage = null;
             this.btnBuy.IdleIconRightImage = null;
             this.btnBuy.IndicateFocus = false;
-            this.btnBuy.Location = new System.Drawing.Point(814, 408);
+            this.btnBuy.Location = new System.Drawing.Point(763, 408);
             this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -242,7 +242,7 @@
             this.btnBuy.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnBuy.OnPressedState.IconLeftImage = null;
             this.btnBuy.OnPressedState.IconRightImage = null;
-            this.btnBuy.Size = new System.Drawing.Size(174, 55);
+            this.btnBuy.Size = new System.Drawing.Size(204, 55);
             this.btnBuy.TabIndex = 46;
             this.btnBuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -297,9 +297,9 @@
             this.btnSave.IdleBorderThickness = 1;
             this.btnSave.IdleFillColor = System.Drawing.Color.Red;
             this.btnSave.IdleIconLeftImage = null;
-            this.btnSave.IdleIconRightImage = global::Window_Project_v5._1.Properties.Resources.heart_v22;
+            this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(618, 408);
+            this.btnSave.Location = new System.Drawing.Point(555, 408);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -325,7 +325,7 @@
             this.btnSave.OnIdleState.FillColor = System.Drawing.Color.Red;
             this.btnSave.OnIdleState.ForeColor = System.Drawing.Color.Transparent;
             this.btnSave.OnIdleState.IconLeftImage = null;
-            this.btnSave.OnIdleState.IconRightImage = global::Window_Project_v5._1.Properties.Resources.heart_v22;
+            this.btnSave.OnIdleState.IconRightImage = null;
             this.btnSave.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnSave.OnPressedState.BorderRadius = 45;
             this.btnSave.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
@@ -334,12 +334,12 @@
             this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnSave.OnPressedState.IconLeftImage = null;
             this.btnSave.OnPressedState.IconRightImage = null;
-            this.btnSave.Size = new System.Drawing.Size(128, 55);
+            this.btnSave.Size = new System.Drawing.Size(158, 55);
             this.btnSave.TabIndex = 45;
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSave.TextMarginLeft = 0;
-            this.btnSave.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnSave.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSave.UseDefaultRadiusAndThickness = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

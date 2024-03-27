@@ -16,7 +16,7 @@ namespace Window_Project_v5._1.Forms
         private ImageDAO imageDAO = new ImageDAO();
         private ProductDAO productDAO = new ProductDAO();
         private Account account = new Account();
-        private int productid;
+        private Product product = new Product();
 
 
         public FBuyDetail()
@@ -28,7 +28,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             account = acc;
-            productid = pd.Id;
+            product = pd;
             lblProductName.Text = pd.Name;
             lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
@@ -96,7 +96,8 @@ namespace Window_Project_v5._1.Forms
         private void btnBuy_Click(object sender, EventArgs e)
         {
             //product buyerid = acount id  
-
+            product.BuyerID = account.Id;
+            productDAO.Update(product);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

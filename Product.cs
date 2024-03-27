@@ -36,7 +36,7 @@ namespace Window_Project_v5._1
             status = dr["status"].ToString();
             description = dr["description"].ToString();
             brand = dr["Brand"].ToString();
-            Category = dr["categories"].ToString();
+            Category = dr["Category"].ToString();
             //sellerID = Convert.ToInt32(dr["sellerid"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
         }
@@ -78,7 +78,20 @@ namespace Window_Project_v5._1
             this.description = description;
             this.brand = brand;
             this.category = category;
+        }
 
+        //add buyerid
+        public Product(string condition, string status, double originalPrice, double salePrice, string name, string description, string brand, string category, string buyerID)
+        {
+            this.condition = condition;
+            this.status = status;
+            this.originalPrice = originalPrice;
+            this.salePrice = salePrice;
+            this.name = name;
+            this.description = description;
+            this.brand = brand;
+            this.category = category;
+            this.BuyerID = BuyerID;
         }
 
         public int Id { get => id; set => id = value; }
