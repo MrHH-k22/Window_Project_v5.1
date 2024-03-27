@@ -68,6 +68,7 @@ namespace Window_Project_v5._1
                 account.Address = Convert.ToString(row["address"]);
                 account.Email = Convert.ToString(row["email"]);
                 account.Phone = Convert.ToString(row["phone"]);
+                account.Password = Convert.ToString(row["password"]);
                 object birthdayValue = row["birthday"];
                 DateTime birthday;
                 if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))
