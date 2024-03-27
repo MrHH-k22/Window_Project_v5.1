@@ -61,10 +61,24 @@ namespace Window_Project_v5._1
             if (name.Length == 0)
             {
                 dt = dbc.Load("SELECT * FROM Product;");
-            } else
+            }
+            else
             {
                 dt = dbc.Load(string.Format("SELECT * FROM Product WHERE Name LIKE '%{0}%'", name));
             }
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
+
+        public List<Product> LoadListWithBuyerID(int id)
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt = new DataTable();
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID = '{0}'", id));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);

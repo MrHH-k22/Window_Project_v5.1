@@ -124,7 +124,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnTrackOrder_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FTrackOrder(), sender);
+            OpenChildForm(new Forms.FTrackOrder(acc), sender);
         }
 
         private void btnManagement_Click(object sender, EventArgs e)
