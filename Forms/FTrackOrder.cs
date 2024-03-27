@@ -31,7 +31,7 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadListWithBuyerID(account.Id);
             foreach (var pd in products)
             {
-                UCProductTracking uc = new UCProductTracking(pd, account);
+                UCProductBuy uc = new UCProductBuy(pd, account);
                 flpProduct.Controls.Add(uc);
             }
         }

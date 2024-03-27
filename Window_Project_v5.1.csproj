@@ -255,17 +255,23 @@
     <Compile Include="Forms\UCProduct.Designer.cs">
       <DependentUpon>UCProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCProductBuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductBuy.Designer.cs">
+      <DependentUpon>UCProductBuy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UCProductCondition.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\UCProductCondition.Designer.cs">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCProductTracking.cs">
+    <Compile Include="Forms\UCProductSell.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UCProductTracking.Designer.cs">
-      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    <Compile Include="Forms\UCProductSell.Designer.cs">
+      <DependentUpon>UCProductSell.cs</DependentUpon>
     </Compile>
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
@@ -353,11 +359,14 @@
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCProductBuy.resx">
+      <DependentUpon>UCProductBuy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductCondition.resx">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCProductTracking.resx">
-      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UCProductSell.resx">
+      <DependentUpon>UCProductSell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProduct.resx">
       <DependentUpon>UCProduct.cs</DependentUpon>

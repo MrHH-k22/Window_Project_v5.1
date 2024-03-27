@@ -39,7 +39,7 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadListWithCondition("", acc.Id);
             foreach (var pd in products)
             {
-                UCProductTracking uc = new UCProductTracking(pd);
+                UCProductSell uc = new UCProductSell(pd, acc);
                 flpProduct.Controls.Add(uc);
             }
         }
@@ -50,7 +50,7 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadListWithCondition(txtSearch.Text, acc.Id);
             foreach (var pd in products)
             {
-                UCProductTracking uc = new UCProductTracking(pd);
+                UCProductSell uc = new UCProductSell(pd, acc);
                 flpProduct.Controls.Add(uc);
             }
         }
