@@ -19,6 +19,7 @@ namespace Window_Project_v5._1
         private string description;
         private int sellerID;
         private int buyerID;
+        private int billStatus;
 
         private string category;
 
@@ -38,6 +39,7 @@ namespace Window_Project_v5._1
             brand = dr["Brand"].ToString();
             Category = dr["category"].ToString();
             sellerID = Convert.ToInt32(dr["sellerid"]);
+            //billStatus = Convert.ToInt32(dr["billstatus"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
         }
 
@@ -79,6 +81,7 @@ namespace Window_Project_v5._1
             this.brand = brand;
             this.category = category;
             this.sellerID = sellerID;
+            billStatus = 0;
         }
 
         public int Id { get => id; set => id = value; }
@@ -92,6 +95,28 @@ namespace Window_Project_v5._1
         public int BuyerID { get => buyerID; set => buyerID = value; }
         public string Brand { get => brand; set => brand = value; }
         public string Category { get => category; set => category = value; }
+        public int BillStatus { get => billStatus; set => billStatus = value; }
+
+        public string GetBillStatus()
+        {
+            switch (billStatus)
+            {
+                case 0:
+                    return "";
+                case 1:
+                    return "Wait for confirmation";
+                case 2:
+                    return "Confirmed";
+                case 3:
+                    return "Pack";
+                case 4:
+                    return "Transport";
+                case 5:
+                    return "Completed";
+                default:
+                    return "";
+            }
+        }
     }
 
 
