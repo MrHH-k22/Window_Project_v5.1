@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Window_Project_v5._1.Properties;
 
 namespace Window_Project_v5._1.Forms
 {
@@ -14,17 +15,20 @@ namespace Window_Project_v5._1.Forms
     {
         private ProductDAO productDAO = new ProductDAO();
         private Account account = new Account();
+        private bool save;
 
 
         public FBuy()
         {
             InitializeComponent();
+            save = false;
         }
 
         public FBuy(Account acc)
         {
             InitializeComponent();
             account = acc;
+            save = false;
         }
 
         private void ucProduct2_Load(object sender, EventArgs e)
@@ -42,17 +46,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void txtProductName_TextChange(object sender, EventArgs e)
-        {
-            getFilter();
-
-        }
-
-        private void txtBrand_TextChange(object sender, EventArgs e)
-        {
-            getFilter();
-
-        }
 
         private void txtMaxPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -74,47 +67,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void txtMaxPrice_TextChange(object sender, EventArgs e)
-        {
-            getFilter();
-        }
-
-        private void txtMinPrice_TextChange(object sender, EventArgs e)
-        {
-            getFilter();
-        }
-
-        private void getFilter()
-        {
-            List<Product> products = productDAO.LoadList();
-            double maxPrice, minPrice;
-            flpProduct.Controls.Clear();
-            minPrice = (txtMinPrice.Text == "") ? 0 : double.Parse(txtMinPrice.Text);
-            maxPrice = (txtMaxPrice.Text == "") ? double.MaxValue : double.Parse(txtMaxPrice.Text);
-
-
-            if (txtMinPrice.Text == "" && txtMaxPrice.Text == "" && txtProductName.Text == "" && txtBrand.Text == "")
-            {
-                flpProduct.Controls.Clear();
-                foreach (var pd in products)
-                {
-                    UCProduct uc = new UCProduct(pd,account);
-                    flpProduct.Controls.Add(uc);
-                }
-            }
-
-            flpProduct.Controls.Clear();
-            foreach (var pd in products)
-            {
-                if (minPrice <= pd.SalePrice && pd.SalePrice <= maxPrice
-                && pd.Brand.ToLower().Contains(txtBrand.Text.ToLower())
-                && pd.Name.ToLower().Contains(txtProductName.Text.ToLower()))
-                {
-                    UCProduct uc = new UCProduct(pd, account);
-                    flpProduct.Controls.Add(uc);
-                }
-            }
-        }
 
         private void ddCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -125,6 +77,34 @@ namespace Window_Project_v5._1.Forms
             }
             getFilter();
             */
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            List<Product> products = productDAO.LoadList();
+            string productName = txtProductName.Text;
+            string brand = txtBrand.Text;
+            double maxPrice = double.TryParse(txtMaxPrice.Text, out double parsedMaxPrice) ? parsedMaxPrice : double.MaxValue;
+            double minPrice = double.TryParse(txtMinPrice.Text, out double parsedMinPrice) ? parsedMinPrice : double.MinValue;
+            string selectedCategory = ddCategories.SelectedItem?.ToString();
+
+            // Filter products based on the specified conditions
+            List<Product> filteredProducts = products.Where(pd =>
+                (string.IsNullOrEmpty(productName) || pd.Name.ToLower().Contains(productName.ToLower())) &&
+                (string.IsNullOrEmpty(brand) || pd.Brand.ToLower().Contains(brand.ToLower())) &&
+                (pd.SalePrice >= minPrice && pd.SalePrice <= maxPrice) &&
+                (string.IsNullOrEmpty(selectedCategory) || pd.Category == selectedCategory)
+            ).ToList();
+
+            // Clear existing products in the flow layout panel
+            flpProduct.Controls.Clear();
+
+            // Add filtered products to the flow layout panel
+            foreach (var pd in filteredProducts)
+            {
+                UCProduct uc = new UCProduct(pd, account);
+                flpProduct.Controls.Add(uc);
+            }
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ImageDAO imageDAO = new ImageDAO();
         private ProductDAO productDAO = new ProductDAO();
+        private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private Account account = new Account();
         private Product product = new Product();
 
@@ -78,6 +79,20 @@ namespace Window_Project_v5._1.Forms
                     pictureBox.Image = Image.FromStream(ms);
                     pictureBox.Visible = true;
                 }
+
+                //check button save
+                if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+                {
+                    btnSave.Text = "Saved";
+                    btnSave.BackColor = Color.WhiteSmoke;
+                    btnSave.ForeColor = Color.Red;
+                }
+                else
+                {
+                    btnSave.Text = "Save";
+                    btnSave.BackColor = Color.Red;
+                    btnSave.ForeColor = Color.WhiteSmoke;
+                }
             }
 
 
@@ -107,7 +122,23 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                favoriteDAO.delete(account.Id, product.Id);
+                btnSave.Text = "Save";
 
+                btnSave.BackColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                favoriteDAO.add(account.Id, product.Id);
+                btnSave.Text = "Saved";
+
+                btnSave.BackColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
         }
+
     }
 }

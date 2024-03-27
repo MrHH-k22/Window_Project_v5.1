@@ -54,7 +54,7 @@
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(880, 17);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(1182, 17);
             this.bunifuSeparator1.TabIndex = 6;
             // 
             // btnSearch
@@ -85,7 +85,7 @@
             this.btnSearch.IconRight = null;
             this.btnSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.btnSearch.Lines = new string[0];
-            this.btnSearch.Location = new System.Drawing.Point(586, 11);
+            this.btnSearch.Location = new System.Drawing.Point(871, 17);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.MaxLength = 32767;
             this.btnSearch.MinimumSize = new System.Drawing.Size(1, 1);
@@ -151,7 +151,7 @@
             this.flpProduct.Location = new System.Drawing.Point(0, 96);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(945, 470);
+            this.flpProduct.Size = new System.Drawing.Size(1241, 625);
             this.flpProduct.TabIndex = 7;
             // 
             // panelTop
@@ -162,7 +162,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(945, 96);
+            this.panelTop.Size = new System.Drawing.Size(1241, 96);
             this.panelTop.TabIndex = 8;
             // 
             // FTrackOrder
@@ -170,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(945, 566);
+            this.ClientSize = new System.Drawing.Size(1241, 721);
             this.Controls.Add(this.flpProduct);
             this.Controls.Add(this.panelTop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

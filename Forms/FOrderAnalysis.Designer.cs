@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrderAnalysis));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -85,7 +85,7 @@
             this.panel1.Controls.Add(this.lblAmountOrder);
             this.panel1.Controls.Add(this.lblOrder);
             this.panel1.Location = new System.Drawing.Point(24, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 116);
             this.panel1.TabIndex = 0;
@@ -94,7 +94,7 @@
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox1.Location = new System.Drawing.Point(109, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,7 +132,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(255, 15);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(215, 116);
             this.panel2.TabIndex = 4;
@@ -141,7 +141,7 @@
             // 
             this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.cart1;
             this.pictureBox2.Location = new System.Drawing.Point(109, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(89, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,7 +179,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(484, 15);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(215, 116);
             this.panel3.TabIndex = 4;
@@ -188,7 +188,7 @@
             // 
             this.pictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.real_time;
             this.pictureBox3.Location = new System.Drawing.Point(109, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(89, 78);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,7 +226,7 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(715, 15);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(215, 116);
             this.panel4.TabIndex = 4;
@@ -235,7 +235,7 @@
             // 
             this.pictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.hand;
             this.pictureBox4.Location = new System.Drawing.Point(109, 15);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(89, 78);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,7 +280,7 @@
             this.cpProgress.LineProgressThickness = 10;
             this.cpProgress.LineThickness = 10;
             this.cpProgress.Location = new System.Drawing.Point(81, 43);
-            this.cpProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cpProgress.Margin = new System.Windows.Forms.Padding(4);
             this.cpProgress.Name = "cpProgress";
             this.cpProgress.ProgressAnimationSpeed = 200;
             this.cpProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -310,7 +310,7 @@
             this.panelProgress.Controls.Add(this.lblProgress);
             this.panelProgress.Controls.Add(this.cpProgress);
             this.panelProgress.Location = new System.Drawing.Point(772, 369);
-            this.panelProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProgress.Margin = new System.Windows.Forms.Padding(4);
             this.panelProgress.Name = "panelProgress";
             this.panelProgress.Size = new System.Drawing.Size(237, 182);
             this.panelProgress.TabIndex = 17;
@@ -332,7 +332,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.bunifuDataGridView1);
             this.panel7.Location = new System.Drawing.Point(24, 138);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(985, 224);
             this.panel7.TabIndex = 19;
@@ -340,21 +340,21 @@
             // bunifuDataGridView1
             // 
             this.bunifuDataGridView1.AllowCustomTheming = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -374,21 +374,21 @@
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.Location = new System.Drawing.Point(9, 10);
-            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowHeadersWidth = 51;
@@ -412,7 +412,7 @@
             this.panelDetailProgress.Controls.Add(this.lblWaiting);
             this.panelDetailProgress.Controls.Add(this.pbWaiting);
             this.panelDetailProgress.Location = new System.Drawing.Point(24, 369);
-            this.panelDetailProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDetailProgress.Margin = new System.Windows.Forms.Padding(4);
             this.panelDetailProgress.Name = "panelDetailProgress";
             this.panelDetailProgress.Size = new System.Drawing.Size(740, 182);
             this.panelDetailProgress.TabIndex = 20;
@@ -441,7 +441,7 @@
             this.pbCompleted.BorderRadius = 9;
             this.pbCompleted.BorderThickness = 1;
             this.pbCompleted.Location = new System.Drawing.Point(19, 134);
-            this.pbCompleted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbCompleted.Margin = new System.Windows.Forms.Padding(4);
             this.pbCompleted.Maximum = 100;
             this.pbCompleted.MaximumValue = 100;
             this.pbCompleted.Minimum = 0;
@@ -480,7 +480,7 @@
             this.pbTransport.BorderRadius = 9;
             this.pbTransport.BorderThickness = 1;
             this.pbTransport.Location = new System.Drawing.Point(19, 108);
-            this.pbTransport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbTransport.Margin = new System.Windows.Forms.Padding(4);
             this.pbTransport.Maximum = 100;
             this.pbTransport.MaximumValue = 100;
             this.pbTransport.Minimum = 0;
@@ -519,7 +519,7 @@
             this.pbPacking.BorderRadius = 9;
             this.pbPacking.BorderThickness = 1;
             this.pbPacking.Location = new System.Drawing.Point(19, 82);
-            this.pbPacking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbPacking.Margin = new System.Windows.Forms.Padding(4);
             this.pbPacking.Maximum = 100;
             this.pbPacking.MaximumValue = 100;
             this.pbPacking.Minimum = 0;
@@ -558,7 +558,7 @@
             this.pbConfirmed.BorderRadius = 9;
             this.pbConfirmed.BorderThickness = 1;
             this.pbConfirmed.Location = new System.Drawing.Point(19, 57);
-            this.pbConfirmed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbConfirmed.Margin = new System.Windows.Forms.Padding(4);
             this.pbConfirmed.Maximum = 100;
             this.pbConfirmed.MaximumValue = 100;
             this.pbConfirmed.Minimum = 0;
@@ -597,7 +597,7 @@
             this.pbWaiting.BorderRadius = 9;
             this.pbWaiting.BorderThickness = 1;
             this.pbWaiting.Location = new System.Drawing.Point(19, 30);
-            this.pbWaiting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbWaiting.Margin = new System.Windows.Forms.Padding(4);
             this.pbWaiting.Maximum = 100;
             this.pbWaiting.MaximumValue = 100;
             this.pbWaiting.Minimum = 0;
@@ -616,7 +616,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 566);
+            this.ClientSize = new System.Drawing.Size(1241, 721);
             this.Controls.Add(this.panelDetailProgress);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panelProgress);

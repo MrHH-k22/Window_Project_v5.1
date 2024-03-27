@@ -241,5 +241,11 @@ namespace Window_Project_v5._1.Forms
         {
             OpenChildForm(new Forms.FMoney(), sender);
         }
+
+        private void btnSaveList_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FSaveList(), sender);
+
+        }
     }
 }

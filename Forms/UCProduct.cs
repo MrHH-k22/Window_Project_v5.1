@@ -58,6 +58,8 @@ namespace Window_Project_v5._1.Forms
 
 
 
+
+
         private void lblItemPrice_Click(object sender, EventArgs e)
         {
 

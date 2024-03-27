@@ -47,7 +47,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.btnFavorite = new System.Windows.Forms.Button();
             this.ddCategories = new Bunifu.UI.WinForms.BunifuDropdown();
             this.btnFilter = new System.Windows.Forms.Button();
             this.txtProductName = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -65,12 +64,11 @@
             this.flpProduct.Location = new System.Drawing.Point(0, 68);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1025, 498);
+            this.flpProduct.Size = new System.Drawing.Size(1241, 653);
             this.flpProduct.TabIndex = 1;
             // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.btnFavorite);
             this.panelTop.Controls.Add(this.ddCategories);
             this.panelTop.Controls.Add(this.btnFilter);
             this.panelTop.Controls.Add(this.txtProductName);
@@ -80,22 +78,8 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1025, 68);
+            this.panelTop.Size = new System.Drawing.Size(1241, 68);
             this.panelTop.TabIndex = 2;
-            // 
-            // btnFavorite
-            // 
-            this.btnFavorite.BackColor = System.Drawing.Color.Transparent;
-            this.btnFavorite.BackgroundImage = global::Window_Project_v5._1.Properties.Resources.heart_v2;
-            this.btnFavorite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFavorite.FlatAppearance.BorderSize = 0;
-            this.btnFavorite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFavorite.Location = new System.Drawing.Point(831, 18);
-            this.btnFavorite.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFavorite.Name = "btnFavorite";
-            this.btnFavorite.Size = new System.Drawing.Size(43, 30);
-            this.btnFavorite.TabIndex = 29;
-            this.btnFavorite.UseVisualStyleBackColor = false;
             // 
             // ddCategories
             // 
@@ -163,14 +147,15 @@
             this.btnFilter.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilter.Location = new System.Drawing.Point(900, 15);
+            this.btnFilter.Location = new System.Drawing.Point(1117, 17);
             this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(84, 33);
+            this.btnFilter.Size = new System.Drawing.Size(102, 33);
             this.btnFilter.TabIndex = 10;
             this.btnFilter.Text = "Filter";
             this.btnFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFilter.UseVisualStyleBackColor = false;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // txtProductName
             // 
@@ -247,7 +232,6 @@
             this.txtProductName.TextPlaceholder = "Product Name";
             this.txtProductName.UseSystemPasswordChar = false;
             this.txtProductName.WordWrap = true;
-            this.txtProductName.TextChange += new System.EventHandler(this.txtProductName_TextChange);
             // 
             // txtBrand
             // 
@@ -324,7 +308,6 @@
             this.txtBrand.TextPlaceholder = "Brand";
             this.txtBrand.UseSystemPasswordChar = false;
             this.txtBrand.WordWrap = true;
-            this.txtBrand.TextChange += new System.EventHandler(this.txtBrand_TextChange);
             // 
             // txtMinPrice
             // 
@@ -401,7 +384,6 @@
             this.txtMinPrice.TextPlaceholder = "Min";
             this.txtMinPrice.UseSystemPasswordChar = false;
             this.txtMinPrice.WordWrap = true;
-            this.txtMinPrice.TextChange += new System.EventHandler(this.txtMinPrice_TextChange);
             this.txtMinPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinPrice_KeyPress);
             // 
             // txtMaxPrice
@@ -479,7 +461,6 @@
             this.txtMaxPrice.TextPlaceholder = "Max";
             this.txtMaxPrice.UseSystemPasswordChar = false;
             this.txtMaxPrice.WordWrap = true;
-            this.txtMaxPrice.TextChange += new System.EventHandler(this.txtMaxPrice_TextChange);
             this.txtMaxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxPrice_KeyPress);
             // 
             // FBuy
@@ -487,7 +468,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1025, 566);
+            this.ClientSize = new System.Drawing.Size(1241, 721);
             this.Controls.Add(this.flpProduct);
             this.Controls.Add(this.panelTop);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -502,7 +483,6 @@
         #endregion
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Button btnFavorite;
         private Bunifu.UI.WinForms.BunifuDropdown ddCategories;
         private System.Windows.Forms.Button btnFilter;
         private Bunifu.UI.WinForms.BunifuTextBox txtProductName;

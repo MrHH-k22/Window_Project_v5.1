@@ -170,6 +170,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="FavoriteDAO.cs" />
     <Compile Include="Forms\FBuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +224,12 @@
     </Compile>
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSaveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSaveList.Designer.cs">
+      <DependentUpon>FSaveList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FSellDetail.cs">
       <SubType>Form</SubType>
@@ -325,11 +332,17 @@
     <EmbeddedResource Include="Forms\FListSell.resx">
       <DependentUpon>FListSell.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FMoney.resx">
+      <DependentUpon>FMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSaveList.resx">
+      <DependentUpon>FSaveList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FSellDetail.resx">
       <DependentUpon>FSellDetail.cs</DependentUpon>
@@ -517,6 +530,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\saveinstagram_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\saveinstagram_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\saveinstagram_white_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

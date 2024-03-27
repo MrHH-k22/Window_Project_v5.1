@@ -46,10 +46,11 @@
             this.lblPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPrice.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblPrice.Location = new System.Drawing.Point(523, 12);
+            this.lblPrice.Location = new System.Drawing.Point(1049, 15);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPrice.Size = new System.Drawing.Size(130, 23);
+            this.lblPrice.Size = new System.Drawing.Size(169, 30);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "100.000.000 VND";
             this.lblPrice.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -63,10 +64,11 @@
             this.lblProductCondition.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblProductCondition.Location = new System.Drawing.Point(415, 49);
+            this.lblProductCondition.Location = new System.Drawing.Point(905, 60);
+            this.lblProductCondition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProductCondition.Name = "lblProductCondition";
             this.lblProductCondition.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProductCondition.Size = new System.Drawing.Size(84, 23);
+            this.lblProductCondition.Size = new System.Drawing.Size(108, 30);
             this.lblProductCondition.TabIndex = 26;
             this.lblProductCondition.Text = "Completed";
             this.lblProductCondition.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -81,10 +83,11 @@
             this.lblProductName.CursorType = null;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblProductName.Location = new System.Drawing.Point(116, 14);
+            this.lblProductName.Location = new System.Drawing.Point(155, 17);
+            this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProductName.Size = new System.Drawing.Size(120, 25);
+            this.lblProductName.Size = new System.Drawing.Size(150, 31);
             this.lblProductName.TabIndex = 27;
             this.lblProductName.Text = "Product Name";
             this.lblProductName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -99,10 +102,11 @@
             this.lblSellerName.CursorType = null;
             this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSellerName.Location = new System.Drawing.Point(116, 51);
+            this.lblSellerName.Location = new System.Drawing.Point(155, 63);
+            this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblSellerName.Name = "lblSellerName";
             this.lblSellerName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblSellerName.Size = new System.Drawing.Size(101, 25);
+            this.lblSellerName.Size = new System.Drawing.Size(126, 31);
             this.lblSellerName.TabIndex = 28;
             this.lblSellerName.Text = "Seller Name";
             this.lblSellerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -117,10 +121,10 @@
             this.pbProduct.BorderRadius = 0;
             this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
             this.pbProduct.IsCircle = true;
-            this.pbProduct.Location = new System.Drawing.Point(13, 7);
-            this.pbProduct.Margin = new System.Windows.Forms.Padding(2);
+            this.pbProduct.Location = new System.Drawing.Point(17, 9);
+            this.pbProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(79, 79);
+            this.pbProduct.Size = new System.Drawing.Size(105, 105);
             this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProduct.TabIndex = 29;
             this.pbProduct.TabStop = false;
@@ -135,10 +139,10 @@
             this.btnDetail.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnDetail.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDetail.Location = new System.Drawing.Point(583, 46);
-            this.btnDetail.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDetail.Location = new System.Drawing.Point(1129, 57);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(67, 30);
+            this.btnDetail.Size = new System.Drawing.Size(89, 37);
             this.btnDetail.TabIndex = 30;
             this.btnDetail.Text = "Detail";
             this.btnDetail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -156,10 +160,10 @@
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCancel.Location = new System.Drawing.Point(506, 46);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Location = new System.Drawing.Point(1027, 57);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(67, 30);
+            this.btnCancel.Size = new System.Drawing.Size(89, 37);
             this.btnCancel.TabIndex = 31;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -168,7 +172,7 @@
             // 
             // UCProductTracking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDetail);
@@ -177,8 +181,9 @@
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.lblProductCondition);
             this.Controls.Add(this.lblPrice);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCProductTracking";
-            this.Size = new System.Drawing.Size(685, 93);
+            this.Size = new System.Drawing.Size(1230, 114);
             this.Load += new System.EventHandler(this.UCProductTracking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.ResumeLayout(false);
