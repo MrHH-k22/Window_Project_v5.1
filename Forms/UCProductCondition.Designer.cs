@@ -135,7 +135,7 @@
             this.Controls.Add(this.lblProductName);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCProductCondition";
-            this.Size = new System.Drawing.Size(1259, 114);
+            this.Size = new System.Drawing.Size(1230, 114);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
