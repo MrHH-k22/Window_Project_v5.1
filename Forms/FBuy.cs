@@ -81,7 +81,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            List<Product> products = productDAO.LoadList();
+            List<Product> products = productDAO.LoadListWithoutBuyerID();
             string productName = txtProductName.Text;
             string brand = txtBrand.Text;
             double maxPrice = double.TryParse(txtMaxPrice.Text, out double parsedMaxPrice) ? parsedMaxPrice : double.MaxValue;

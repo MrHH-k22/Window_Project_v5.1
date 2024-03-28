@@ -29,6 +29,13 @@ namespace Window_Project_v5._1
             dbc.Excute(sqlStr);
         }
 
+        public void DeleteBuyerID(Product product)
+        {
+            string sqlStr = string.Format("Update Product Set BuyerID = 0 where id = '{0}'", product.Id);
+            //string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}', BuyerID = NULL, BillStatus = '{8}', ViewCount = '{9}' WHERE id = '{10}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category, product.BillStatus, product.ViewCount, product.Id);
+            dbc.Excute(sqlStr);
+        }
+
         public Product GetLastProduct()
         {
             Product pd = new Product();
@@ -43,6 +50,8 @@ namespace Window_Project_v5._1
             }
             return pd;
         }
+
+        
 
         public List<Product> LoadList()
         {
@@ -124,7 +133,7 @@ namespace Window_Project_v5._1
         {
             List<Product> list = new List<Product>();
             DataTable dt = new DataTable();
-            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID IS NULL"));
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID IS NULL or BuyerID = 0"));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);

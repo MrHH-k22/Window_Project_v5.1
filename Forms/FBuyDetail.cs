@@ -107,9 +107,21 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            //product buyerid = acount id  
-            product.BuyerID = account.Id;
-            productDAO.Update(product);
+            // Prompt the user with a message box
+            DialogResult result = MessageBox.Show("Are you sure you want to buy this product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Check if the user clicked "Yes"
+            if (result == DialogResult.Yes)
+            {
+                // Proceed with the purchase
+                if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+                {
+                    favoriteDAO.delete(account.Id, product.Id);
+                }
+                product.BuyerID = account.Id;
+                productDAO.Update(product);
+                this.Close();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
