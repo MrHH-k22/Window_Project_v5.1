@@ -38,7 +38,7 @@ namespace Window_Project_v5._1.Forms
 
         private void FBuy_Load(object sender, EventArgs e)
         {
-            List<Product> products = productDAO.LoadList();
+            List<Product> products = productDAO.LoadListWithoutBuyerID();
             foreach (var pd in products)
             {
                 UCProduct uc = new UCProduct(pd,account);
