@@ -9,6 +9,7 @@ namespace Window_Project_v5._1
 {
     public class Product
     {
+        private ProductDAO productDAO = new ProductDAO();
         private int id;
         private string name;
         private string brand;
@@ -41,6 +42,22 @@ namespace Window_Project_v5._1
             sellerID = Convert.ToInt32(dr["sellerid"]);
             //billStatus = Convert.ToInt32(dr["billstatus"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
+        }
+
+        public Product(int id)
+        {
+            Product product = productDAO.Retrieve(id);
+            this.id = product.id;
+            this.name = product.name;
+            this.brand = product.brand;
+            this.originalPrice = product.originalPrice;
+            this.salePrice = product.salePrice;
+            this.condition = product.condition;
+            this.status = product.status;
+            this.description = product.description;
+            this.SellerID = product.sellerID;
+            this.BuyerID = product.buyerID;
+            this.category = product.category;
         }
 
         public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string category)

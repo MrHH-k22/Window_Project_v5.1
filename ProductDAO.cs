@@ -10,6 +10,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using System.Data.Common;
 
 namespace Window_Project_v5._1
 {
@@ -73,11 +74,57 @@ namespace Window_Project_v5._1
             return list;
         }
 
+        public Product Retrieve(int id)
+        {
+            string SQL = string.Format("select * from product where ID = '{0}'", id);
+            DataTable dt = dbc.Load(SQL);
+            return GetProductFromDataTable(dt);
+        }
+
+        public Product GetProductFromDataTable(DataTable dt)
+        {
+            if (dt.Rows.Count > 0)
+            {
+                Product product = new Product();
+                DataRow row = dt.Rows[0];
+                product.Id = Convert.ToInt32(row["id"]);
+                product.Name = Convert.ToString(row["name"]);
+                product.Brand = Convert.ToString(row["Brand"]);
+                product.OriginalPrice = Convert.ToDouble(row["OriginalPrice"]);
+                product.SalePrice = Convert.ToDouble(row["SalePrice"]);
+                product.Condition = Convert.ToString(row["Condition"]);
+                product.Status = Convert.ToString(row["Status"]);
+                product.Description = Convert.ToString(row["Description"]);
+                product.SellerID = Convert.ToInt32(row["SellerID"]);
+                product.BuyerID = Convert.ToInt32(row["BuyerID"]);
+                product.Category = Convert.ToString(row["Category"]);
+
+                return product;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public List<Product> LoadListWithBuyerID(int id)
         {
             List<Product> list = new List<Product>();
             DataTable dt = new DataTable();
             dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID = '{0}'", id));
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
+
+        public List<Product> LoadListWithoutBuyerID()
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt = new DataTable();
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID IS NULL"));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);

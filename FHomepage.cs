@@ -244,7 +244,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSaveList_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FSaveList(), sender);
+            OpenChildForm(new Forms.FSaveList(acc), sender);
 
         }
     }
