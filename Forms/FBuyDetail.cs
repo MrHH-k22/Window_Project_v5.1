@@ -43,6 +43,43 @@ namespace Window_Project_v5._1.Forms
             txtDescription.Text = pd.Description.ToString();
             DataTable ImageTable = imageDAO.GetImageProduct(pd.Id);
 
+            int pictureBoxIndex = 0;
+
+            foreach (DataRow row in ImageTable.Rows)
+            {
+                if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
+                    break;
+
+                byte[] imageData = (byte[])row["Image"]; // Access the "Image" column
+
+                // Load image into PictureBox
+                MemoryStream ms = new MemoryStream(imageData);
+
+                // Assign pictureBox variable based on index
+                PictureBox pictureBox = null;
+                switch (pictureBoxIndex)
+                {
+                    case 0:
+                        pictureBox = pbImage1;
+                        break;
+                    case 1:
+                        pictureBox = pbImage2;
+                        break;
+                    case 2:
+                        pictureBox = pbImage3;
+                        break;
+                    case 3:
+                        pictureBox = pbImage4;
+                        break;
+                }
+
+                // Assign image to PictureBox and make it visible
+                pictureBox.Image = Image.FromStream(ms);
+                pictureBox.Visible = true;
+
+                pictureBoxIndex++;
+            }
+            /*
             foreach (DataRow row in ImageTable.Rows)
             {
                 int columnCount = row.ItemArray.Length;
@@ -82,22 +119,21 @@ namespace Window_Project_v5._1.Forms
                     pictureBox.Image = Image.FromStream(ms);
                     pictureBox.Visible = true;
                 }
-
-                //check button save
-                if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-                {
-                    btnSave.Text = "Saved";
-                    btnSave.BackColor = Color.WhiteSmoke;
-                    btnSave.ForeColor = Color.Red;
-                }
-                else
-                {
-                    btnSave.Text = "Save";
-                    btnSave.BackColor = Color.Red;
-                    btnSave.ForeColor = Color.WhiteSmoke;
-                }
             }
-
+            */
+            //check button save
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                btnSave.Text = "Saved";
+                btnSave.BackColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
+            else
+            {
+                btnSave.Text = "Save";
+                btnSave.BackColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
 
         }
 
