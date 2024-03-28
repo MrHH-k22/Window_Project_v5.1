@@ -17,6 +17,7 @@ namespace Window_Project_v5._1.Forms
         private ImageDAO imageDAO = new ImageDAO();
         private Account account = new Account();
         private Product product;
+        private ProductDAO productDAO = new ProductDAO();
 
         public UCProductBuy()
         {
@@ -57,6 +58,11 @@ namespace Window_Project_v5._1.Forms
         {
             FBuyDetail trackDetail = new FBuyDetail(product, account);
             trackDetail.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            productDAO.DeleteBuyerID(product);
         }
     }
 }

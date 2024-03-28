@@ -92,6 +92,7 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_DoubleClick(object sender, EventArgs e)
         {
+            
             FBuyDetail fBuyDetail = new FBuyDetail(product,account);
             fBuyDetail.Show();
         }
