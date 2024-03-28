@@ -79,48 +79,6 @@ namespace Window_Project_v5._1.Forms
 
                 pictureBoxIndex++;
             }
-            /*
-            foreach (DataRow row in ImageTable.Rows)
-            {
-                int columnCount = row.ItemArray.Length;
-
-                // Iterate over PictureBox controls
-                for (int i = 0; i < 4; i++)
-                {
-                    PictureBox pictureBox = null;
-
-                    // Assign pictureBox variable based on index
-                    switch (i)
-                    {
-                        case 0:
-                            pictureBox = pbImage1;
-                            break;
-                        case 1:
-                            pictureBox = pbImage2;
-                            break;
-                        case 2:
-                            pictureBox = pbImage3;
-                            break;
-                        case 3:
-                            pictureBox = pbImage4;
-                            break;
-                    }
-
-                    // If index exceeds column count, hide PictureBox
-                    if (i >= columnCount)
-                    {
-                        pictureBox.Visible = false;
-                        continue;
-                    }
-
-                    // Load image into PictureBox
-                    byte[] imageData = (byte[])row[i];
-                    MemoryStream ms = new MemoryStream(imageData);
-                    pictureBox.Image = Image.FromStream(ms);
-                    pictureBox.Visible = true;
-                }
-            }
-            */
             //check button save
             if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
             {
@@ -178,6 +136,5 @@ namespace Window_Project_v5._1.Forms
                 btnSave.ForeColor = Color.Red;
             }
         }
-
     }
 }
