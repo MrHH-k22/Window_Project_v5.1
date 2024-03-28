@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bunifu.UI.WinForms;
 using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
@@ -55,8 +56,7 @@ namespace Window_Project_v5._1.Forms
                 MemoryStream ms = new MemoryStream(imageData);
 
                 // Assign pictureBox variable based on index
-                PictureBox pictureBox = null;
-
+                BunifuImageButton pictureBox = null;
                 switch (pictureBoxIndex)
                 {
                     case 0:
@@ -106,27 +106,6 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-        private void pbImage2_Click(object sender, EventArgs e)
-        {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage2;
-            pbImage2 = temp;
-        }
-
-        private void pbImage3_Click(object sender, EventArgs e)
-        {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage3;
-            pbImage3 = temp;
-        }
-
-        private void pbImage4_Click(object sender, EventArgs e)
-        {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage4;
-            pbImage4 = temp;
-        }
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
             btnSave.Visible = true;
@@ -135,6 +114,35 @@ namespace Window_Project_v5._1.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             btnSave.Visible = false;
+        }
+
+        private void panelBody_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbImage2_Click(object sender, EventArgs e)
+        {
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage2.Image;
+            pbImage2.Image = temp.Image;
+        }
+
+        private void pbImage3_Click(object sender, EventArgs e)
+        {
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage3.Image;
+            pbImage3.Image = temp.Image;
+        }
+
+        private void pbImage4_Click(object sender, EventArgs e)
+        {
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage4.Image;
+            pbImage4.Image = temp.Image;
         }
     }
 }
