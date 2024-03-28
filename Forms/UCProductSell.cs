@@ -29,6 +29,7 @@ namespace Window_Project_v5._1.Forms
             this.product = pd;
             account = acc;
             lblPrice.Text = pd.SalePrice.ToString();
+            lblProductCondition.Text = pd.GetBillStatus();
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
             lblSellerName.Visible = false;

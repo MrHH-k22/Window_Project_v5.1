@@ -29,7 +29,10 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             account = acc;
+ 
             product = pd;
+            pd.ViewCount++;
+            productDAO.Update(pd);
             lblProductName.Text = pd.Name;
             lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";

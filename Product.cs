@@ -20,7 +20,7 @@ namespace Window_Project_v5._1
         private int sellerID;
         private int buyerID;
         private int billStatus;
-
+        private int viewCount;
         private string category;
 
         public Product()
@@ -39,7 +39,8 @@ namespace Window_Project_v5._1
             brand = dr["Brand"].ToString();
             Category = dr["category"].ToString();
             sellerID = Convert.ToInt32(dr["sellerid"]);
-            //billStatus = Convert.ToInt32(dr["billstatus"]);
+            viewCount = Convert.ToInt32(dr["viewcount"]);
+            billStatus = Convert.ToInt32(dr["billstatus"]);
             //buyerID = Convert.ToInt32(dr["buyerid"]);
         }
 
@@ -81,6 +82,8 @@ namespace Window_Project_v5._1
             this.brand = brand;
             this.category = category;
             this.sellerID = sellerID;
+            billStatus = 0;
+            viewCount = 0;
         }
 
         //add buyerid
@@ -110,6 +113,7 @@ namespace Window_Project_v5._1
         public string Brand { get => brand; set => brand = value; }
         public string Category { get => category; set => category = value; }
         public int BillStatus { get => billStatus; set => billStatus = value; }
+        public int ViewCount { get => viewCount; set => viewCount = value; }
 
         public string GetBillStatus()
         {
