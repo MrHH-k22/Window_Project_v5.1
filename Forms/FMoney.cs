@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -86,6 +87,22 @@ namespace Window_Project_v5._1.Forms
         {
             lblTotalMoney.Text = acc.Money.ToString("N0") + " VND";
             lblName.Text = acc.Name;
+            if (acc.Avatar != null && acc.Avatar.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(acc.Avatar))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pbAvatar.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void btn50_Click(object sender, EventArgs e)

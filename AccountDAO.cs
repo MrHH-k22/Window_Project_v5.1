@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Window_Project_v5._1
 {
@@ -11,22 +12,21 @@ namespace Window_Project_v5._1
        
         public void update(Account account)
         {
-            string sqlStr = string.Format("UPDATE Account SET email = '{0}', password = '{1}', name = '{2}', Phone = '{3}', Birthday = '{4}', address = '{5}', money = '{6}' WHERE id = {7}", 
+            string sqlStr = string.Format("UPDATE Account SET email = '{0}', password = '{1}', name = '{2}', Phone = '{3}', Birthday = '{4}', address = '{5}', money = '{6}', WHERE id = {7}", 
                 account.Email, account.Password,account.Name, account.Phone, account.Birthday,account.Address, account.Money, account.Id);
             AddImage(account, account.Avatar);
             dbconnection.Excute(sqlStr);
         }
 
-        public void AddImage(Account account,byte[] imgLocation)
+        public void AddImage(Account account,byte[] imgData)
         {
-            //byte[] images = File.ReadAllBytes(imgLocation);
-            string sqlStr = "UPDATE Account SET Image = @Image WHERE ID = @AccountID";
+            string sqlStr = "UPDATE Account SET Avatar = @Avatar WHERE ID = @AccountID";
 
             SqlParameter[] parameters = new SqlParameter[2];
-            parameters[0] = new SqlParameter("@AccountID", SqlDbType.Int);
-            parameters[0].Value = account.Id;
-            parameters[1] = new SqlParameter("@Images", SqlDbType.VarBinary);
-            parameters[1].Value = imgLocation;
+            parameters[0] = new SqlParameter("@Avatar", SqlDbType.VarBinary);
+            parameters[0].Value = imgData;
+            parameters[1] = new SqlParameter("@AccountID", SqlDbType.Int);
+            parameters[1].Value = account.Id;
 
             dbconnection.Execute(sqlStr, parameters);
         }
