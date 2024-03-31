@@ -549,5 +549,20 @@
   <ItemGroup>
     <None Include="Images\saveinstagram_white_30px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\money2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\recharge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\withdraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\password.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

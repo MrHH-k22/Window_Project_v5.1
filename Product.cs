@@ -42,7 +42,14 @@ namespace Window_Project_v5._1
             sellerID = Convert.ToInt32(dr["sellerid"]);
             viewCount = Convert.ToInt32(dr["viewcount"]);
             billStatus = Convert.ToInt32(dr["billstatus"]);
-            buyerID = Convert.ToInt32(dr["buyerid"]);
+            if (dr["buyerid"] == DBNull.Value)
+            {
+                buyerID = 0;
+            }
+            else
+            {
+                buyerID = Convert.ToInt32(dr["buyerid"]);
+            }
         }
 
         public Product(int id)
