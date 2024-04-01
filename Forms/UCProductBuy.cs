@@ -62,7 +62,20 @@ namespace Window_Project_v5._1.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            product.OrderCondition = (int)ordercondition.Cancelled;
+            productDAO.Update(product);
             productDAO.DeleteBuyerID(product);
+        }
+
+        private void UCProductBuy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFunction_Click(object sender, EventArgs e)
+        {
+            product.OrderCondition = (int)ordercondition.Delivered;
+            productDAO.Update(product);
         }
     }
 }

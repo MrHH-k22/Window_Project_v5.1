@@ -35,16 +35,18 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.tpManagement = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tcManagement = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpDisplay = new System.Windows.Forms.TabPage();
             this.tpWaitConfirm = new System.Windows.Forms.TabPage();
             this.tpWaitforPayment = new System.Windows.Forms.TabPage();
-            this.tpDelivered = new System.Windows.Forms.TabPage();
+            this.tpCompleted = new System.Windows.Forms.TabPage();
             this.tpCancelled = new System.Windows.Forms.TabPage();
+            this.tpHidden = new System.Windows.Forms.TabPage();
+            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.gpManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
-            this.tpManagement.SuspendLayout();
+            this.tcManagement.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpManagement
@@ -52,6 +54,7 @@
             this.gpManagement.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.gpManagement.BorderRadius = 20;
             this.gpManagement.BorderThickness = 1;
+            this.gpManagement.Controls.Add(this.btnLoad);
             this.gpManagement.Controls.Add(this.label2);
             this.gpManagement.Controls.Add(this.label1);
             this.gpManagement.Controls.Add(this.bunifuPictureBox1);
@@ -131,38 +134,39 @@
             this.panelTop.Size = new System.Drawing.Size(1241, 129);
             this.panelTop.TabIndex = 1;
             // 
-            // tpManagement
+            // tcManagement
             // 
-            this.tpManagement.Controls.Add(this.tpDisplay);
-            this.tpManagement.Controls.Add(this.tpWaitConfirm);
-            this.tpManagement.Controls.Add(this.tpWaitforPayment);
-            this.tpManagement.Controls.Add(this.tpDelivered);
-            this.tpManagement.Controls.Add(this.tpCancelled);
-            this.tpManagement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tpManagement.ItemSize = new System.Drawing.Size(180, 40);
-            this.tpManagement.Location = new System.Drawing.Point(0, 129);
-            this.tpManagement.Name = "tpManagement";
-            this.tpManagement.SelectedIndex = 0;
-            this.tpManagement.Size = new System.Drawing.Size(1241, 592);
-            this.tpManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.tpManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tpManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tpManagement.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.tpManagement.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tpManagement.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tpManagement.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tpManagement.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tpManagement.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.tpManagement.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tpManagement.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.tpManagement.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.tpManagement.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tpManagement.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.tpManagement.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tpManagement.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.tpManagement.TabIndex = 2;
-            this.tpManagement.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tpManagement.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            this.tcManagement.Controls.Add(this.tpDisplay);
+            this.tcManagement.Controls.Add(this.tpWaitConfirm);
+            this.tcManagement.Controls.Add(this.tpWaitforPayment);
+            this.tcManagement.Controls.Add(this.tpCompleted);
+            this.tcManagement.Controls.Add(this.tpCancelled);
+            this.tcManagement.Controls.Add(this.tpHidden);
+            this.tcManagement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcManagement.ItemSize = new System.Drawing.Size(140, 40);
+            this.tcManagement.Location = new System.Drawing.Point(0, 129);
+            this.tcManagement.Name = "tcManagement";
+            this.tcManagement.SelectedIndex = 0;
+            this.tcManagement.Size = new System.Drawing.Size(1241, 592);
+            this.tcManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.tcManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcManagement.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.tcManagement.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcManagement.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.tcManagement.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcManagement.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.tcManagement.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.tcManagement.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.tcManagement.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcManagement.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.tcManagement.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.tcManagement.TabButtonSize = new System.Drawing.Size(140, 40);
+            this.tcManagement.TabIndex = 2;
+            this.tcManagement.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
             // tpDisplay
             // 
@@ -190,17 +194,17 @@
             this.tpWaitforPayment.Name = "tpWaitforPayment";
             this.tpWaitforPayment.Size = new System.Drawing.Size(1233, 544);
             this.tpWaitforPayment.TabIndex = 2;
-            this.tpWaitforPayment.Text = "Wair for payment";
+            this.tpWaitforPayment.Text = "Wait for payment";
             this.tpWaitforPayment.UseVisualStyleBackColor = true;
             // 
-            // tpDelivered
+            // tpCompleted
             // 
-            this.tpDelivered.Location = new System.Drawing.Point(4, 44);
-            this.tpDelivered.Name = "tpDelivered";
-            this.tpDelivered.Size = new System.Drawing.Size(1233, 544);
-            this.tpDelivered.TabIndex = 3;
-            this.tpDelivered.Text = "Delivered";
-            this.tpDelivered.UseVisualStyleBackColor = true;
+            this.tpCompleted.Location = new System.Drawing.Point(4, 44);
+            this.tpCompleted.Name = "tpCompleted";
+            this.tpCompleted.Size = new System.Drawing.Size(1233, 544);
+            this.tpCompleted.TabIndex = 3;
+            this.tpCompleted.Text = "Delivered";
+            this.tpCompleted.UseVisualStyleBackColor = true;
             // 
             // tpCancelled
             // 
@@ -211,13 +215,40 @@
             this.tpCancelled.Text = "Cancelled";
             this.tpCancelled.UseVisualStyleBackColor = true;
             // 
+            // tpHidden
+            // 
+            this.tpHidden.Location = new System.Drawing.Point(4, 44);
+            this.tpHidden.Name = "tpHidden";
+            this.tpHidden.Size = new System.Drawing.Size(1233, 544);
+            this.tpHidden.TabIndex = 5;
+            this.tpHidden.Text = "Hidden";
+            this.tpHidden.UseVisualStyleBackColor = true;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.AutoRoundedCorners = true;
+            this.btnLoad.BorderRadius = 18;
+            this.btnLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.Location = new System.Drawing.Point(756, 26);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(122, 45);
+            this.btnLoad.TabIndex = 14;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // FProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1241, 721);
-            this.Controls.Add(this.tpManagement);
+            this.Controls.Add(this.tcManagement);
             this.Controls.Add(this.panelTop);
             this.Name = "FProductManagement";
             this.Text = "FProductManagement";
@@ -226,7 +257,7 @@
             this.gpManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panelTop.ResumeLayout(false);
-            this.tpManagement.ResumeLayout(false);
+            this.tcManagement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -238,11 +269,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTop;
-        private Guna.UI2.WinForms.Guna2TabControl tpManagement;
+        private Guna.UI2.WinForms.Guna2TabControl tcManagement;
         private System.Windows.Forms.TabPage tpDisplay;
         private System.Windows.Forms.TabPage tpWaitConfirm;
         private System.Windows.Forms.TabPage tpWaitforPayment;
-        private System.Windows.Forms.TabPage tpDelivered;
+        private System.Windows.Forms.TabPage tpCompleted;
         private System.Windows.Forms.TabPage tpCancelled;
+        private System.Windows.Forms.TabPage tpHidden;
+        private Guna.UI2.WinForms.Guna2Button btnLoad;
     }
 }

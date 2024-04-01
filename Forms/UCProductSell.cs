@@ -16,6 +16,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ImageDAO imageDAO = new ImageDAO();
         private Account account = new Account();
+        private ProductDAO productDAO = new ProductDAO();   
         private Product product;
 
         public UCProductSell()
@@ -88,6 +89,43 @@ namespace Window_Project_v5._1.Forms
         private void lblPrice_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFunction_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFunction_Click(object sender, EventArgs e)
+        {
+            if (product.OrderCondition == (int)ordercondition.Displaying)
+            {
+                product.OrderCondition = (int)ordercondition.hidden;
+                productDAO.Update(product);
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
+            {
+                product.OrderCondition = (int)ordercondition.WaitforPayment;
+                productDAO.Update(product);
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            {
+
+            }
+            else if (product.OrderCondition == (int)ordercondition.Delivered)
+            {
+
+            }
+            else if (product.OrderCondition == (int)ordercondition.Cancelled)
+            {
+                product.OrderCondition = (int)ordercondition.Displaying;
+                productDAO.Update(product);
+            }
+            else if (product.OrderCondition == (int)ordercondition.hidden)
+            {
+                product.OrderCondition = (int)ordercondition.Displaying;
+                productDAO.Update(product);
+            }
         }
     }
 }

@@ -38,27 +38,51 @@ namespace Window_Project_v5._1.Forms
                     //uc.Width = this.Width - 230;
                     if (pd.OrderCondition == (int)ordercondition.Displaying)
                     {
+                        uc.btnFunction.Text = "Hide product";
+                        uc.btnFunction.Enabled = true;
                         tpDisplay.Controls.Add(uc);
                     }
-                    if(pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
+                    else if(pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
                     {
+                        uc.btnFunction.Text = "Confirm";
                         tpWaitConfirm.Controls.Add(uc); 
                     }
-                    if(pd.OrderCondition == (int)ordercondition.WaitforPayment)
+                    else if(pd.OrderCondition == (int)ordercondition.WaitforPayment)
                     {
+                        uc.btnFunction.Text = "Waiting for payment";
+                        uc.btnFunction.Enabled = false;
                         tpWaitforPayment.Controls.Add(uc);
                     }
-                    if(pd.OrderCondition == (int)ordercondition.Delivered)
+                    else if(pd.OrderCondition == (int)ordercondition.Delivered)
                     {
-                        tpDelivered.Controls.Add(uc);
+                        uc.btnFunction.Text = "Completed";
+                        uc.btnFunction.Enabled = false;
+                        tpCompleted.Controls.Add(uc);
                     }
-                    if(pd.OrderCondition == (int)ordercondition.Cancelled)
+                    else if(pd.OrderCondition == (int)ordercondition.Cancelled)
                     {
+                        uc.btnFunction.Text = "Post again";
+                        uc.btnFunction.Enabled = true;
                         tpCancelled.Controls.Add(uc);
+                    }
+                    else if(pd.OrderCondition == (int)ordercondition.hidden)
+                    {
+                        uc.btnFunction.Text = "Display product";
+                        uc.btnFunction.Enabled = true;
+                        tpHidden.Controls.Add(uc);
                     }
                 }
 
             }
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            foreach (TabPage tabPage in tcManagement.TabPages)
+            {
+                tabPage.Controls.Clear();
+            }
+            FProductManagement_Load(sender, e);
         }
     }
 }

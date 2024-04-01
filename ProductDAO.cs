@@ -133,7 +133,7 @@ namespace Window_Project_v5._1
         {
             List<Product> list = new List<Product>();
             DataTable dt = new DataTable();
-            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID IS NULL or BuyerID = 0"));
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE BuyerID IS NULL or BuyerID <= 0"));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);

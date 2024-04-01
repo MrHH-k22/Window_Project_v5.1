@@ -15,6 +15,7 @@ namespace Window_Project_v5._1
         WaitforPayment,
         Delivered,
         Cancelled,
+        hidden
     }
     internal static class Program
     {

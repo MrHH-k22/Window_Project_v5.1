@@ -92,6 +92,13 @@ namespace Window_Project_v5._1.Forms
                 btnSave.BackColor = Color.Red;
                 btnSave.ForeColor = Color.WhiteSmoke;
             }
+            //check seller
+            if(account.Id == product.SellerID)
+            {
+                btnSave.Visible = false;
+                btnBuy.Visible = false;
+            }
+
 
         }
 

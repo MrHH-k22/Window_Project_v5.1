@@ -38,11 +38,14 @@ namespace Window_Project_v5._1.Forms
 
         private void FBuy_Load(object sender, EventArgs e)
         {
-            List<Product> products = productDAO.LoadListWithoutBuyerID();
+            List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
             {
-                UCProduct uc = new UCProduct(pd,account);
-                flpProduct.Controls.Add(uc);
+                if((pd.BuyerID == null || pd.BuyerID <=0) && pd.OrderCondition == (int)ordercondition.Displaying)
+                {
+                    UCProduct uc = new UCProduct(pd, account);
+                    flpProduct.Controls.Add(uc);
+                }
             }
         }
 
