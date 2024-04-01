@@ -4,6 +4,7 @@ using System.Linq;
 using System;
 using System.Threading.Tasks;
 using System.Data;
+using System.Runtime.CompilerServices;
 
 namespace Window_Project_v5._1
 {
@@ -23,6 +24,7 @@ namespace Window_Project_v5._1
         private int billStatus;
         private int viewCount;
         private string category;
+        private int orderCondition;
 
         public Product()
         {
@@ -42,7 +44,16 @@ namespace Window_Project_v5._1
             sellerID = Convert.ToInt32(dr["sellerid"]);
             viewCount = Convert.ToInt32(dr["viewcount"]);
             billStatus = Convert.ToInt32(dr["billstatus"]);
-            buyerID = Convert.ToInt32(dr["buyerid"]);
+            OrderCondition = dr["OrderCondition"] == DBNull.Value ? -1 : Convert.ToInt32(dr["OrderCondition"]);
+            if (dr["buyerid"] == DBNull.Value)
+            {
+                buyerID = -1;
+            }
+            else
+            {
+                buyerID = Convert.ToInt32(dr["buyerid"]);
+            }
+                
         }
 
         public Product(int id)
@@ -99,6 +110,7 @@ namespace Window_Project_v5._1
             this.brand = brand;
             this.category = category;
             this.sellerID = sellerID;
+            OrderCondition = (int)ordercondition.Displaying;
             billStatus = 0;
             viewCount = 0;
         }
@@ -131,6 +143,7 @@ namespace Window_Project_v5._1
         public string Category { get => category; set => category = value; }
         public int BillStatus { get => billStatus; set => billStatus = value; }
         public int ViewCount { get => viewCount; set => viewCount = value; }
+        public int OrderCondition { get => orderCondition; set => orderCondition = value; }
 
         public string GetBillStatus()
         {

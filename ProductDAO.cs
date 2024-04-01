@@ -19,13 +19,13 @@ namespace Window_Project_v5._1
         DBConnection dbc = new DBConnection();
         public void Add(Product product)
         {
-            string sqlStr = string.Format("INSERT INTO Product (Condition, Status, OriginalPrice, SalePrice, Name, Description, Brand, Category, SellerID, BillStatus, ViewCount) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description,product.Brand, product.Category, product.SellerID, product.BillStatus, product.ViewCount);
+            string sqlStr = string.Format("INSERT INTO Product (Condition, Status, OriginalPrice, SalePrice, Name, Description, Brand, Category, SellerID, BillStatus, ViewCount, OrderCondition) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}')", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description,product.Brand, product.Category, product.SellerID, product.BillStatus, product.ViewCount, product.OrderCondition);
             dbc.Excute(sqlStr);
         }
 
         public void Update(Product product)
         {
-            string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}',BuyerID = '{8}', BillStatus = '{9}', ViewCount = '{10}' WHERE id = '{11}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category,product.BuyerID, product.BillStatus, product.ViewCount, product.Id);
+            string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}',BuyerID = '{8}', BillStatus = '{9}', ViewCount = '{10}',OrderCondition = '{11}' WHERE id = '{12}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category,product.BuyerID, product.BillStatus, product.ViewCount,product.OrderCondition, product.Id);
             dbc.Excute(sqlStr);
         }
 

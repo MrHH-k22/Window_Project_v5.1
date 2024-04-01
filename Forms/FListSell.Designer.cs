@@ -37,11 +37,11 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.btnLoad = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,20 +65,10 @@
             this.panelTop.Controls.Add(this.bunifuSeparator1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1241, 89);
             this.panelTop.TabIndex = 30;
-            // 
-            // flpProduct
-            // 
-            this.flpProduct.AutoScroll = true;
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProduct.Location = new System.Drawing.Point(0, 89);
-            this.flpProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1241, 632);
-            this.flpProduct.TabIndex = 31;
             // 
             // btnLoad
             // 
@@ -353,6 +343,16 @@
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(1196, 17);
             this.bunifuSeparator1.TabIndex = 3;
+            // 
+            // flpProduct
+            // 
+            this.flpProduct.AutoScroll = true;
+            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpProduct.Location = new System.Drawing.Point(0, 89);
+            this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.flpProduct.Name = "flpProduct";
+            this.flpProduct.Size = new System.Drawing.Size(1241, 632);
+            this.flpProduct.TabIndex = 31;
             // 
             // FListSell
             // 

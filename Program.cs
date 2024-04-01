@@ -8,6 +8,14 @@ using Window_Project_v5._1.MessageForms;
 
 namespace Window_Project_v5._1
 {
+    public enum ordercondition
+    {
+        Displaying,
+        WaitforConfirmation,
+        WaitforPayment,
+        Delivered,
+        Cancelled,
+    }
     internal static class Program
     {
         /// <summary>

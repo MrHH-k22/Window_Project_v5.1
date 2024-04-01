@@ -129,7 +129,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnManagement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FProductManagement(), sender);
+            OpenChildForm(new Forms.FProductManagement(acc), sender);
         }
 
         private void btnSeller_MouseEnter(object sender, EventArgs e)

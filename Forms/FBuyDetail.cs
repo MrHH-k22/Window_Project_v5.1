@@ -119,6 +119,7 @@ namespace Window_Project_v5._1.Forms
                     favoriteDAO.delete(account.Id, product.Id);
                 }
                 product.BuyerID = account.Id;
+                product.OrderCondition = (int)ordercondition.WaitforConfirmation;
                 productDAO.Update(product);
                 this.Close();
             }

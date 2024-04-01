@@ -29,149 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductManagement));
-            this.tpManagement = new System.Windows.Forms.TabControl();
-            this.tpAll = new System.Windows.Forms.TabPage();
-            this.tpWaitConfirm = new System.Windows.Forms.TabPage();
-            this.tpConfirmed = new System.Windows.Forms.TabPage();
-            this.tpPack = new System.Windows.Forms.TabPage();
-            this.tpTransport = new System.Windows.Forms.TabPage();
-            this.tpCompleted = new System.Windows.Forms.TabPage();
-            this.tpCancelled = new System.Windows.Forms.TabPage();
             this.gpManagement = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.ucProductCondition8 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition7 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition6 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition5 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition4 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition3 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition2 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition1 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition14 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition13 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition12 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition11 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition10 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.ucProductCondition9 = new Window_Project_v5._1.Forms.UCProductCondition();
-            this.tpManagement.SuspendLayout();
-            this.tpAll.SuspendLayout();
-            this.tpWaitConfirm.SuspendLayout();
+            this.tpManagement = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tpDisplay = new System.Windows.Forms.TabPage();
+            this.tpWaitConfirm = new System.Windows.Forms.TabPage();
+            this.tpWaitforPayment = new System.Windows.Forms.TabPage();
+            this.tpDelivered = new System.Windows.Forms.TabPage();
+            this.tpCancelled = new System.Windows.Forms.TabPage();
             this.gpManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
+            this.tpManagement.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tpManagement
-            // 
-            this.tpManagement.Controls.Add(this.tpAll);
-            this.tpManagement.Controls.Add(this.tpWaitConfirm);
-            this.tpManagement.Controls.Add(this.tpConfirmed);
-            this.tpManagement.Controls.Add(this.tpPack);
-            this.tpManagement.Controls.Add(this.tpTransport);
-            this.tpManagement.Controls.Add(this.tpCompleted);
-            this.tpManagement.Controls.Add(this.tpCancelled);
-            this.tpManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tpManagement.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.tpManagement.Location = new System.Drawing.Point(0, 129);
-            this.tpManagement.Name = "tpManagement";
-            this.tpManagement.SelectedIndex = 0;
-            this.tpManagement.Size = new System.Drawing.Size(1241, 431);
-            this.tpManagement.TabIndex = 0;
-            // 
-            // tpAll
-            // 
-            this.tpAll.AutoScroll = true;
-            this.tpAll.Controls.Add(this.ucProductCondition8);
-            this.tpAll.Controls.Add(this.ucProductCondition7);
-            this.tpAll.Controls.Add(this.ucProductCondition6);
-            this.tpAll.Controls.Add(this.ucProductCondition5);
-            this.tpAll.Controls.Add(this.ucProductCondition4);
-            this.tpAll.Controls.Add(this.ucProductCondition3);
-            this.tpAll.Controls.Add(this.ucProductCondition2);
-            this.tpAll.Controls.Add(this.ucProductCondition1);
-            this.tpAll.Location = new System.Drawing.Point(4, 34);
-            this.tpAll.Name = "tpAll";
-            this.tpAll.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAll.Size = new System.Drawing.Size(1233, 393);
-            this.tpAll.TabIndex = 0;
-            this.tpAll.Text = "All";
-            this.tpAll.UseVisualStyleBackColor = true;
-            // 
-            // tpWaitConfirm
-            // 
-            this.tpWaitConfirm.AutoScroll = true;
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition14);
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition13);
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition12);
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition11);
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition10);
-            this.tpWaitConfirm.Controls.Add(this.ucProductCondition9);
-            this.tpWaitConfirm.Location = new System.Drawing.Point(4, 34);
-            this.tpWaitConfirm.Name = "tpWaitConfirm";
-            this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1233, 393);
-            this.tpWaitConfirm.TabIndex = 1;
-            this.tpWaitConfirm.Text = "Wait for confirmation";
-            this.tpWaitConfirm.UseVisualStyleBackColor = true;
-            // 
-            // tpConfirmed
-            // 
-            this.tpConfirmed.AutoScroll = true;
-            this.tpConfirmed.Location = new System.Drawing.Point(4, 34);
-            this.tpConfirmed.Name = "tpConfirmed";
-            this.tpConfirmed.Padding = new System.Windows.Forms.Padding(3);
-            this.tpConfirmed.Size = new System.Drawing.Size(1233, 393);
-            this.tpConfirmed.TabIndex = 2;
-            this.tpConfirmed.Text = "Confirmed";
-            this.tpConfirmed.UseVisualStyleBackColor = true;
-            // 
-            // tpPack
-            // 
-            this.tpPack.AutoScroll = true;
-            this.tpPack.Location = new System.Drawing.Point(4, 34);
-            this.tpPack.Name = "tpPack";
-            this.tpPack.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPack.Size = new System.Drawing.Size(1233, 393);
-            this.tpPack.TabIndex = 3;
-            this.tpPack.Text = "Pack";
-            this.tpPack.UseVisualStyleBackColor = true;
-            // 
-            // tpTransport
-            // 
-            this.tpTransport.AutoScroll = true;
-            this.tpTransport.Location = new System.Drawing.Point(4, 34);
-            this.tpTransport.Name = "tpTransport";
-            this.tpTransport.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTransport.Size = new System.Drawing.Size(1233, 393);
-            this.tpTransport.TabIndex = 4;
-            this.tpTransport.Text = "Transport";
-            this.tpTransport.UseVisualStyleBackColor = true;
-            // 
-            // tpCompleted
-            // 
-            this.tpCompleted.AutoScroll = true;
-            this.tpCompleted.Location = new System.Drawing.Point(4, 34);
-            this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCompleted.Size = new System.Drawing.Size(1233, 393);
-            this.tpCompleted.TabIndex = 5;
-            this.tpCompleted.Text = "Completed";
-            this.tpCompleted.UseVisualStyleBackColor = true;
-            // 
-            // tpCancelled
-            // 
-            this.tpCancelled.AutoScroll = true;
-            this.tpCancelled.Location = new System.Drawing.Point(4, 34);
-            this.tpCancelled.Name = "tpCancelled";
-            this.tpCancelled.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCancelled.Size = new System.Drawing.Size(1233, 393);
-            this.tpCancelled.TabIndex = 6;
-            this.tpCancelled.Text = "Cancelled";
-            this.tpCancelled.UseVisualStyleBackColor = true;
             // 
             // gpManagement
             // 
@@ -227,7 +101,7 @@
             this.bunifuPictureBox1.BorderRadius = 43;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(25, 14);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(20, 15);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(86, 86);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,145 +131,85 @@
             this.panelTop.Size = new System.Drawing.Size(1241, 129);
             this.panelTop.TabIndex = 1;
             // 
-            // ucProductCondition8
+            // tpManagement
             // 
-            this.ucProductCondition8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition8.Location = new System.Drawing.Point(3, 801);
-            this.ucProductCondition8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition8.Name = "ucProductCondition8";
-            this.ucProductCondition8.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition8.TabIndex = 7;
+            this.tpManagement.Controls.Add(this.tpDisplay);
+            this.tpManagement.Controls.Add(this.tpWaitConfirm);
+            this.tpManagement.Controls.Add(this.tpWaitforPayment);
+            this.tpManagement.Controls.Add(this.tpDelivered);
+            this.tpManagement.Controls.Add(this.tpCancelled);
+            this.tpManagement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tpManagement.ItemSize = new System.Drawing.Size(180, 40);
+            this.tpManagement.Location = new System.Drawing.Point(0, 129);
+            this.tpManagement.Name = "tpManagement";
+            this.tpManagement.SelectedIndex = 0;
+            this.tpManagement.Size = new System.Drawing.Size(1241, 592);
+            this.tpManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.tpManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tpManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tpManagement.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.tpManagement.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tpManagement.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.tpManagement.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tpManagement.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tpManagement.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.tpManagement.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tpManagement.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.tpManagement.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.tpManagement.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tpManagement.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.tpManagement.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.tpManagement.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.tpManagement.TabIndex = 2;
+            this.tpManagement.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tpManagement.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
-            // ucProductCondition7
+            // tpDisplay
             // 
-            this.ucProductCondition7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition7.Location = new System.Drawing.Point(3, 687);
-            this.ucProductCondition7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition7.Name = "ucProductCondition7";
-            this.ucProductCondition7.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition7.TabIndex = 6;
+            this.tpDisplay.Location = new System.Drawing.Point(4, 44);
+            this.tpDisplay.Name = "tpDisplay";
+            this.tpDisplay.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDisplay.Size = new System.Drawing.Size(1233, 544);
+            this.tpDisplay.TabIndex = 0;
+            this.tpDisplay.Text = "Displaying";
+            this.tpDisplay.UseVisualStyleBackColor = true;
             // 
-            // ucProductCondition6
+            // tpWaitConfirm
             // 
-            this.ucProductCondition6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition6.Location = new System.Drawing.Point(3, 573);
-            this.ucProductCondition6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition6.Name = "ucProductCondition6";
-            this.ucProductCondition6.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition6.TabIndex = 5;
+            this.tpWaitConfirm.Location = new System.Drawing.Point(4, 44);
+            this.tpWaitConfirm.Name = "tpWaitConfirm";
+            this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1233, 544);
+            this.tpWaitConfirm.TabIndex = 1;
+            this.tpWaitConfirm.Text = "Not Confirm";
+            this.tpWaitConfirm.UseVisualStyleBackColor = true;
             // 
-            // ucProductCondition5
+            // tpWaitforPayment
             // 
-            this.ucProductCondition5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition5.Location = new System.Drawing.Point(3, 459);
-            this.ucProductCondition5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition5.Name = "ucProductCondition5";
-            this.ucProductCondition5.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition5.TabIndex = 4;
+            this.tpWaitforPayment.Location = new System.Drawing.Point(4, 44);
+            this.tpWaitforPayment.Name = "tpWaitforPayment";
+            this.tpWaitforPayment.Size = new System.Drawing.Size(1233, 544);
+            this.tpWaitforPayment.TabIndex = 2;
+            this.tpWaitforPayment.Text = "Wair for payment";
+            this.tpWaitforPayment.UseVisualStyleBackColor = true;
             // 
-            // ucProductCondition4
+            // tpDelivered
             // 
-            this.ucProductCondition4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition4.Location = new System.Drawing.Point(3, 345);
-            this.ucProductCondition4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition4.Name = "ucProductCondition4";
-            this.ucProductCondition4.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition4.TabIndex = 3;
+            this.tpDelivered.Location = new System.Drawing.Point(4, 44);
+            this.tpDelivered.Name = "tpDelivered";
+            this.tpDelivered.Size = new System.Drawing.Size(1233, 544);
+            this.tpDelivered.TabIndex = 3;
+            this.tpDelivered.Text = "Delivered";
+            this.tpDelivered.UseVisualStyleBackColor = true;
             // 
-            // ucProductCondition3
+            // tpCancelled
             // 
-            this.ucProductCondition3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition3.Location = new System.Drawing.Point(3, 231);
-            this.ucProductCondition3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition3.Name = "ucProductCondition3";
-            this.ucProductCondition3.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition3.TabIndex = 2;
-            // 
-            // ucProductCondition2
-            // 
-            this.ucProductCondition2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition2.Location = new System.Drawing.Point(3, 117);
-            this.ucProductCondition2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition2.Name = "ucProductCondition2";
-            this.ucProductCondition2.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition2.TabIndex = 1;
-            // 
-            // ucProductCondition1
-            // 
-            this.ucProductCondition1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition1.Location = new System.Drawing.Point(3, 3);
-            this.ucProductCondition1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucProductCondition1.Name = "ucProductCondition1";
-            this.ucProductCondition1.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition1.TabIndex = 0;
-            // 
-            // ucProductCondition14
-            // 
-            this.ucProductCondition14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition14.Location = new System.Drawing.Point(3, 573);
-            this.ucProductCondition14.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition14.Name = "ucProductCondition14";
-            this.ucProductCondition14.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition14.TabIndex = 5;
-            // 
-            // ucProductCondition13
-            // 
-            this.ucProductCondition13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition13.Location = new System.Drawing.Point(3, 459);
-            this.ucProductCondition13.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition13.Name = "ucProductCondition13";
-            this.ucProductCondition13.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition13.TabIndex = 4;
-            // 
-            // ucProductCondition12
-            // 
-            this.ucProductCondition12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition12.Location = new System.Drawing.Point(3, 345);
-            this.ucProductCondition12.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition12.Name = "ucProductCondition12";
-            this.ucProductCondition12.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition12.TabIndex = 3;
-            // 
-            // ucProductCondition11
-            // 
-            this.ucProductCondition11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition11.Location = new System.Drawing.Point(3, 231);
-            this.ucProductCondition11.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition11.Name = "ucProductCondition11";
-            this.ucProductCondition11.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition11.TabIndex = 2;
-            // 
-            // ucProductCondition10
-            // 
-            this.ucProductCondition10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition10.Location = new System.Drawing.Point(3, 117);
-            this.ucProductCondition10.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition10.Name = "ucProductCondition10";
-            this.ucProductCondition10.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition10.TabIndex = 1;
-            // 
-            // ucProductCondition9
-            // 
-            this.ucProductCondition9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucProductCondition9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucProductCondition9.Location = new System.Drawing.Point(3, 3);
-            this.ucProductCondition9.Margin = new System.Windows.Forms.Padding(2);
-            this.ucProductCondition9.Name = "ucProductCondition9";
-            this.ucProductCondition9.Size = new System.Drawing.Size(1206, 114);
-            this.ucProductCondition9.TabIndex = 0;
+            this.tpCancelled.Location = new System.Drawing.Point(4, 44);
+            this.tpCancelled.Name = "tpCancelled";
+            this.tpCancelled.Size = new System.Drawing.Size(1233, 544);
+            this.tpCancelled.TabIndex = 4;
+            this.tpCancelled.Text = "Cancelled";
+            this.tpCancelled.UseVisualStyleBackColor = true;
             // 
             // FProductManagement
             // 
@@ -407,46 +221,28 @@
             this.Controls.Add(this.panelTop);
             this.Name = "FProductManagement";
             this.Text = "FProductManagement";
-            this.tpManagement.ResumeLayout(false);
-            this.tpAll.ResumeLayout(false);
-            this.tpWaitConfirm.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FProductManagement_Load);
             this.gpManagement.ResumeLayout(false);
             this.gpManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panelTop.ResumeLayout(false);
+            this.tpManagement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tpManagement;
-        private System.Windows.Forms.TabPage tpAll;
-        private System.Windows.Forms.TabPage tpWaitConfirm;
-        private System.Windows.Forms.TabPage tpConfirmed;
-        private System.Windows.Forms.TabPage tpPack;
-        private System.Windows.Forms.TabPage tpTransport;
-        private System.Windows.Forms.TabPage tpCompleted;
-        private System.Windows.Forms.TabPage tpCancelled;
         private Bunifu.UI.WinForms.BunifuGroupBox gpManagement;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTop;
-        private UCProductCondition ucProductCondition1;
-        private UCProductCondition ucProductCondition8;
-        private UCProductCondition ucProductCondition7;
-        private UCProductCondition ucProductCondition6;
-        private UCProductCondition ucProductCondition5;
-        private UCProductCondition ucProductCondition4;
-        private UCProductCondition ucProductCondition3;
-        private UCProductCondition ucProductCondition2;
-        private UCProductCondition ucProductCondition14;
-        private UCProductCondition ucProductCondition13;
-        private UCProductCondition ucProductCondition12;
-        private UCProductCondition ucProductCondition11;
-        private UCProductCondition ucProductCondition10;
-        private UCProductCondition ucProductCondition9;
+        private Guna.UI2.WinForms.Guna2TabControl tpManagement;
+        private System.Windows.Forms.TabPage tpDisplay;
+        private System.Windows.Forms.TabPage tpWaitConfirm;
+        private System.Windows.Forms.TabPage tpWaitforPayment;
+        private System.Windows.Forms.TabPage tpDelivered;
+        private System.Windows.Forms.TabPage tpCancelled;
     }
 }
