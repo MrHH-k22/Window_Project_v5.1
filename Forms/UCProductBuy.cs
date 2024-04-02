@@ -16,6 +16,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ImageDAO imageDAO = new ImageDAO();
         private Account account = new Account();
+        private AccountDAO accountDAO = new AccountDAO();
         private Product product;
         private ProductDAO productDAO = new ProductDAO();
 
@@ -32,7 +33,6 @@ namespace Window_Project_v5._1.Forms
             lblPrice.Text = pd.SalePrice.ToString();
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
-            lblSellerName.Visible = false;
 
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);
 
@@ -69,12 +69,29 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
-
+            Account seller = accountDAO.Retrieve(product.SellerID);
+            lblSellerName.Text = seller.Name;
+            if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
+            {
+                btnFunction.Text = "Wait for confirmation";
+                btnFunction.Enabled = false;
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            {
+                btnFunction.Text = "Pay";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Delivered)
+            {
+                btnFunction.Text = "Completed";
+                btnFunction.Enabled = false;
+            }
         }
 
         private void btnFunction_Click(object sender, EventArgs e)
         {
             product.OrderCondition = (int)ordercondition.Delivered;
+            
             productDAO.Update(product);
         }
     }

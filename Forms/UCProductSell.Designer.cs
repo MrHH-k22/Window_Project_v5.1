@@ -32,7 +32,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDetail = new System.Windows.Forms.Button();
             this.pbProduct = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lblSellerName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblBuyerName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
@@ -99,25 +99,25 @@
             this.pbProduct.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             this.pbProduct.Click += new System.EventHandler(this.pbProduct_Click);
             // 
-            // lblSellerName
+            // lblBuyerName
             // 
-            this.lblSellerName.AllowParentOverrides = false;
-            this.lblSellerName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblBuyerName.AllowParentOverrides = false;
+            this.lblBuyerName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblSellerName.AutoEllipsis = false;
-            this.lblSellerName.CursorType = null;
-            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSellerName.Location = new System.Drawing.Point(149, 63);
-            this.lblSellerName.Margin = new System.Windows.Forms.Padding(4);
-            this.lblSellerName.Name = "lblSellerName";
-            this.lblSellerName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblSellerName.Size = new System.Drawing.Size(126, 31);
-            this.lblSellerName.TabIndex = 35;
-            this.lblSellerName.Text = "Seller Name";
-            this.lblSellerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblSellerName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lblSellerName.Click += new System.EventHandler(this.lblSellerName_Click);
+            this.lblBuyerName.AutoEllipsis = false;
+            this.lblBuyerName.CursorType = null;
+            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblBuyerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblBuyerName.Location = new System.Drawing.Point(149, 63);
+            this.lblBuyerName.Margin = new System.Windows.Forms.Padding(4);
+            this.lblBuyerName.Name = "lblBuyerName";
+            this.lblBuyerName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBuyerName.Size = new System.Drawing.Size(149, 31);
+            this.lblBuyerName.TabIndex = 35;
+            this.lblBuyerName.Text = "BuyerId Name";
+            this.lblBuyerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblBuyerName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblBuyerName.Click += new System.EventHandler(this.lblSellerName_Click);
             // 
             // lblProductName
             // 
@@ -204,13 +204,14 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.pbProduct);
-            this.Controls.Add(this.lblSellerName);
+            this.Controls.Add(this.lblBuyerName);
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.lblProductCondition);
             this.Controls.Add(this.lblPrice);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCProductSell";
             this.Size = new System.Drawing.Size(1241, 118);
+            this.Load += new System.EventHandler(this.UCProductSell_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -222,7 +223,7 @@
         public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnDetail;
         public Bunifu.UI.WinForms.BunifuPictureBox pbProduct;
-        public Bunifu.UI.WinForms.BunifuLabel lblSellerName;
+        public Bunifu.UI.WinForms.BunifuLabel lblBuyerName;
         public Bunifu.UI.WinForms.BunifuLabel lblProductName;
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
         public Guna.UI2.WinForms.Guna2Button btnFunction;

@@ -34,41 +34,28 @@ namespace Window_Project_v5._1.Forms
                 if(pd.SellerID == account.Id)
                 {
                     UCProductSell uc = new UCProductSell(pd, account);
-                    uc.Dock = DockStyle.Top;
-                    //uc.Width = this.Width - 230;
                     if (pd.OrderCondition == (int)ordercondition.Displaying)
                     {
-                        uc.btnFunction.Text = "Hide product";
-                        uc.btnFunction.Enabled = true;
                         tpDisplay.Controls.Add(uc);
                     }
                     else if(pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
                     {
-                        uc.btnFunction.Text = "Confirm";
                         tpWaitConfirm.Controls.Add(uc); 
                     }
                     else if(pd.OrderCondition == (int)ordercondition.WaitforPayment)
                     {
-                        uc.btnFunction.Text = "Waiting for payment";
-                        uc.btnFunction.Enabled = false;
                         tpWaitforPayment.Controls.Add(uc);
                     }
                     else if(pd.OrderCondition == (int)ordercondition.Delivered)
                     {
-                        uc.btnFunction.Text = "Completed";
-                        uc.btnFunction.Enabled = false;
                         tpCompleted.Controls.Add(uc);
                     }
                     else if(pd.OrderCondition == (int)ordercondition.Cancelled)
                     {
-                        uc.btnFunction.Text = "Post again";
-                        uc.btnFunction.Enabled = true;
                         tpCancelled.Controls.Add(uc);
                     }
                     else if(pd.OrderCondition == (int)ordercondition.hidden)
                     {
-                        uc.btnFunction.Text = "Display product";
-                        uc.btnFunction.Enabled = true;
                         tpHidden.Controls.Add(uc);
                     }
                 }

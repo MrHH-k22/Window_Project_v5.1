@@ -16,6 +16,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ImageDAO imageDAO = new ImageDAO();
         private Account account = new Account();
+        private AccountDAO accountDAO = new AccountDAO();
         private ProductDAO productDAO = new ProductDAO();   
         private Product product;
 
@@ -33,7 +34,6 @@ namespace Window_Project_v5._1.Forms
             lblProductCondition.Text = pd.GetBillStatus();
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
-            lblSellerName.Visible = false;
 
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);
 
@@ -125,6 +125,47 @@ namespace Window_Project_v5._1.Forms
             {
                 product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
+            }
+        }
+
+        private void UCProductSell_Load(object sender, EventArgs e)
+        {
+            Dock = DockStyle.Top;
+            if(!(product.BuyerID <=0 || product.BuyerID == null))
+            {
+                Account Buyer = accountDAO.Retrieve(product.BuyerID);
+                lblBuyerName.Text = Buyer.Name;
+
+            }
+            if (product.OrderCondition == (int)ordercondition.Displaying)
+            {
+                btnFunction.Text = "Hide product";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
+            {
+                btnFunction.Text = "Confirm";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            {
+                btnFunction.Text = "Waiting for payment";
+                btnFunction.Enabled = false;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Delivered)
+            {
+                btnFunction.Text = "Completed";
+                btnFunction.Enabled = false;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Cancelled)
+            {
+                btnFunction.Text = "Post again";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.hidden)
+            {
+                btnFunction.Text = "Display product";
+                btnFunction.Enabled = true;
             }
         }
     }
