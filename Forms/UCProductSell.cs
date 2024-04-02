@@ -35,6 +35,7 @@ namespace Window_Project_v5._1.Forms
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
 
+
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);
 
             if (imageData != null && imageData.Length > 0)
@@ -105,16 +106,15 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                product.OrderCondition = (int)ordercondition.WaitforPayment;
+                product.OrderCondition = (int)ordercondition.Delivering;
                 productDAO.Update(product);
+                account.Money += product.SalePrice;
+                accountDAO.update(account);
             }
-            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            else if (product.OrderCondition == (int)ordercondition.Delivering)
             {
-
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivered)
-            {
-
+                product.OrderCondition = (int)ordercondition.Completed;
+                productDAO.Update(product);
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {
@@ -134,38 +134,41 @@ namespace Window_Project_v5._1.Forms
             if(!(product.BuyerID <=0 || product.BuyerID == null))
             {
                 Account Buyer = accountDAO.Retrieve(product.BuyerID);
-                lblBuyerName.Text = Buyer.Name;
-
+                lblBuyerName.Text = "Buyer name: " + Buyer.Name;
+            }
+            else
+            {
+                lblBuyerName.Text = "No one buy yet";
             }
             if (product.OrderCondition == (int)ordercondition.Displaying)
             {
-                btnFunction.Text = "Hide product";
-                btnFunction.Enabled = true;
+                btnNextState.Text = "Hide product";
+                btnNextState.Enabled = true;
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                btnFunction.Text = "Confirm";
-                btnFunction.Enabled = true;
+                btnNextState.Text = "Next state";
+                btnNextState.Enabled = true;
             }
-            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            else if (product.OrderCondition == (int)ordercondition.Delivering)
             {
-                btnFunction.Text = "Waiting for payment";
-                btnFunction.Enabled = false;
+                btnNextState.Text = "Next state";
+                btnNextState.Enabled = true;
             }
-            else if (product.OrderCondition == (int)ordercondition.Delivered)
+            else if (product.OrderCondition == (int)ordercondition.Completed)
             {
-                btnFunction.Text = "Completed";
-                btnFunction.Enabled = false;
+                btnNextState.Text = "Completed";
+                btnNextState.Enabled = false;
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {
-                btnFunction.Text = "Post again";
-                btnFunction.Enabled = true;
+                btnNextState.Text = "Post again";
+                btnNextState.Enabled = true;
             }
             else if (product.OrderCondition == (int)ordercondition.hidden)
             {
-                btnFunction.Text = "Display product";
-                btnFunction.Enabled = true;
+                btnNextState.Text = "Display product";
+                btnNextState.Enabled = true;
             }
         }
     }

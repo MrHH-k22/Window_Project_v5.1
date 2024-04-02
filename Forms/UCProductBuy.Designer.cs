@@ -114,6 +114,7 @@
             this.lblSellerName.Text = "Seller Name";
             this.lblSellerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblSellerName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblSellerName.Click += new System.EventHandler(this.lblSellerName_Click);
             // 
             // lblProductName
             // 

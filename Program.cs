@@ -12,8 +12,8 @@ namespace Window_Project_v5._1
     {
         Displaying,
         WaitforConfirmation,
-        WaitforPayment,
-        Delivered,
+        Delivering,
+        Completed,
         Cancelled,
         hidden
     }

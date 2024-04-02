@@ -29,6 +29,8 @@ namespace Window_Project_v5._1.Forms
         private void FProductManagement_Load(object sender, EventArgs e)
         {
             List<Product> products = productDAO.LoadList();
+            lblSellerName.Text = account.Name;
+            lblBalance.Text = account.Money.ToString("N0") + " VND";
             foreach (var pd in products)
             {
                 if(pd.SellerID == account.Id)
@@ -42,11 +44,11 @@ namespace Window_Project_v5._1.Forms
                     {
                         tpWaitConfirm.Controls.Add(uc); 
                     }
-                    else if(pd.OrderCondition == (int)ordercondition.WaitforPayment)
+                    else if(pd.OrderCondition == (int)ordercondition.Delivering)
                     {
-                        tpWaitforPayment.Controls.Add(uc);
+                        tpDelivering.Controls.Add(uc);
                     }
-                    else if(pd.OrderCondition == (int)ordercondition.Delivered)
+                    else if(pd.OrderCondition == (int)ordercondition.Completed)
                     {
                         tpCompleted.Controls.Add(uc);
                     }

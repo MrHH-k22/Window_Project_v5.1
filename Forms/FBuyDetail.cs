@@ -17,6 +17,7 @@ namespace Window_Project_v5._1.Forms
         private ProductDAO productDAO = new ProductDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private Account account = new Account();
+        private AccountDAO accountDAO = new AccountDAO();
         private Product product = new Product();
 
 
@@ -99,7 +100,31 @@ namespace Window_Project_v5._1.Forms
                 btnBuy.Visible = false;
             }
 
+            Account seller = accountDAO.Retrieve(product.SellerID);
+            lblSeller.Text = seller.Name;
+            convertByte(pbAvatarSeller, seller.Avatar);
 
+        }
+
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
@@ -156,5 +181,6 @@ namespace Window_Project_v5._1.Forms
                 btnSave.ForeColor = Color.Red;
             }
         }
+
     }
 }

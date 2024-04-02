@@ -70,29 +70,31 @@ namespace Window_Project_v5._1.Forms
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
             Account seller = accountDAO.Retrieve(product.SellerID);
-            lblSellerName.Text = seller.Name;
+
+            lblSellerName.Text = "Seller name: " + seller.Name;
+            btnFunction.Enabled = false;
             if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
                 btnFunction.Text = "Wait for confirmation";
-                btnFunction.Enabled = false;
             }
-            else if (product.OrderCondition == (int)ordercondition.WaitforPayment)
+            else if (product.OrderCondition == (int)ordercondition.Delivering)
             {
-                btnFunction.Text = "Pay";
-                btnFunction.Enabled = true;
+                btnFunction.Text = "Delivering";
             }
-            else if (product.OrderCondition == (int)ordercondition.Delivered)
+            else if (product.OrderCondition == (int)ordercondition.Completed)
             {
                 btnFunction.Text = "Completed";
-                btnFunction.Enabled = false;
             }
         }
 
         private void btnFunction_Click(object sender, EventArgs e)
         {
-            product.OrderCondition = (int)ordercondition.Delivered;
-            
-            productDAO.Update(product);
+
+        }
+
+        private void lblSellerName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

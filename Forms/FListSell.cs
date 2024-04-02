@@ -40,7 +40,7 @@ namespace Window_Project_v5._1.Forms
             foreach (var pd in products)
             {
                 UCProductSell uc = new UCProductSell(pd, acc);
-                uc.btnFunction.Visible = false;
+                uc.btnNextState.Visible = false;
                 flpProduct.Controls.Add(uc);
             }
         }
@@ -52,7 +52,7 @@ namespace Window_Project_v5._1.Forms
             foreach (var pd in products)
             {
                 UCProductSell uc = new UCProductSell(pd, acc);
-                uc.btnFunction.Visible = false;
+                uc.btnNextState.Visible = false;
                 flpProduct.Controls.Add(uc);
             }
         }

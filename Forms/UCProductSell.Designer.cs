@@ -35,7 +35,7 @@
             this.lblBuyerName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNextState = new Guna.UI2.WinForms.Guna2Button();
             this.lblProductCondition = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
@@ -106,15 +106,15 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblBuyerName.AutoEllipsis = false;
             this.lblBuyerName.CursorType = null;
-            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuyerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblBuyerName.Location = new System.Drawing.Point(149, 63);
             this.lblBuyerName.Margin = new System.Windows.Forms.Padding(4);
             this.lblBuyerName.Name = "lblBuyerName";
             this.lblBuyerName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblBuyerName.Size = new System.Drawing.Size(149, 31);
+            this.lblBuyerName.Size = new System.Drawing.Size(124, 31);
             this.lblBuyerName.TabIndex = 35;
-            this.lblBuyerName.Text = "BuyerId Name";
+            this.lblBuyerName.Text = "Buyer Name";
             this.lblBuyerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblBuyerName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.lblBuyerName.Click += new System.EventHandler(this.lblSellerName_Click);
@@ -158,22 +158,22 @@
             this.lblPrice.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
             // 
-            // btnFunction
+            // btnNextState
             // 
-            this.btnFunction.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFunction.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFunction.FillColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnFunction.ForeColor = System.Drawing.Color.White;
-            this.btnFunction.Location = new System.Drawing.Point(767, 57);
-            this.btnFunction.Name = "btnFunction";
-            this.btnFunction.Size = new System.Drawing.Size(230, 37);
-            this.btnFunction.TabIndex = 39;
-            this.btnFunction.Text = "Next state";
-            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click);
-            this.btnFunction.DoubleClick += new System.EventHandler(this.btnFunction_DoubleClick);
+            this.btnNextState.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNextState.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNextState.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNextState.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNextState.FillColor = System.Drawing.Color.BlueViolet;
+            this.btnNextState.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnNextState.ForeColor = System.Drawing.Color.White;
+            this.btnNextState.Location = new System.Drawing.Point(767, 57);
+            this.btnNextState.Name = "btnNextState";
+            this.btnNextState.Size = new System.Drawing.Size(230, 37);
+            this.btnNextState.TabIndex = 39;
+            this.btnNextState.Text = "Next state";
+            this.btnNextState.Click += new System.EventHandler(this.btnFunction_Click);
+            this.btnNextState.DoubleClick += new System.EventHandler(this.btnFunction_DoubleClick);
             // 
             // lblProductCondition
             // 
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.btnFunction);
+            this.Controls.Add(this.btnNextState);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.pbProduct);
@@ -226,7 +226,7 @@
         public Bunifu.UI.WinForms.BunifuLabel lblBuyerName;
         public Bunifu.UI.WinForms.BunifuLabel lblProductName;
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
-        public Guna.UI2.WinForms.Guna2Button btnFunction;
+        public Guna.UI2.WinForms.Guna2Button btnNextState;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
     }
 }
