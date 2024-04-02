@@ -29,6 +29,12 @@ namespace Window_Project_v5._1
             dbc.Excute(sqlStr);
         }
 
+        public void Delete(Product product)
+        {
+            string sqlStr = string.Format("DELETE FROM Product WHERE id = '{0}'", product.Id);
+            dbc.Excute(sqlStr);
+        }
+
         public void DeleteBuyerID(Product product)
         {
             string sqlStr = string.Format("Update Product Set BuyerID = 0 where id = '{0}'", product.Id);
