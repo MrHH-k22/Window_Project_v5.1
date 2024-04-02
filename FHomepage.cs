@@ -239,7 +239,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnMoney_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FMoney(), sender);
+            OpenChildForm(new Forms.FMoney(acc), sender);
         }
 
         private void btnSaveList_Click(object sender, EventArgs e)

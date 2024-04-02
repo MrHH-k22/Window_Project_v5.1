@@ -65,6 +65,7 @@ namespace Window_Project_v5._1
             this.name = username;
             this.email = email;
             this.password = password;
+            money = 0;
         }
         public Account(string email, string password)
         {
