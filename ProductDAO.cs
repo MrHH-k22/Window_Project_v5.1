@@ -89,6 +89,18 @@ namespace Window_Project_v5._1
             return list;
         }
 
+        public List<int> LoadCustomers(int sellerid)
+        {
+            List<int> list = new List<int>();
+            DataTable dt = new DataTable();
+            dt = dbc.Load(string.Format("SELECT DISTINCT BuyerID FROM Product WHERE BuyerID IS NOT NULL AND SellerID = '{0}'", sellerid));
+            foreach (DataRow dr in dt.Rows)
+            {
+                list.Add((int)dr["BuyerID"]);
+            }
+            return list;
+        }
+
         public Product Retrieve(int id)
         {
             string SQL = string.Format("select * from product where ID = '{0}'", id);

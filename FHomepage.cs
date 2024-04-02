@@ -102,7 +102,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FOrderAnalysis(), sender);
+            OpenChildForm(new Forms.FOrderAnalysis(acc), sender);
         }
 
         private void btnBuyer_Click(object sender, EventArgs e)
