@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,7 @@ namespace Window_Project_v5._1.Forms
         private ImageDAO imageDAO = new ImageDAO();
         private Account account = new Account();
         private AccountDAO accountDAO = new AccountDAO();
-        private ProductDAO productDAO = new ProductDAO();   
+        private ProductDAO productDAO = new ProductDAO();
         private Product product;
 
         public UCProductSell()
@@ -64,7 +65,14 @@ namespace Window_Project_v5._1.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("The product will be deleted in the system. Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
+            if (result == DialogResult.Yes)
+            {
+                productDAO.Delete(product);
+                imageDAO.Delete(product.Id);
+                MessageBox.Show("The product has been successfully deleted from the system.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void pbProduct_Click(object sender, EventArgs e)
