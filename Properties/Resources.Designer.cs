@@ -203,6 +203,16 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap forgotpw {
+            get {
+                object obj = ResourceManager.GetObject("forgotpw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HAN00112_Lớn_1024x682 {
             get {
                 object obj = ResourceManager.GetObject("HAN00112-Lớn-1024x682", resourceCulture);
@@ -426,6 +436,16 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap password {
             get {
                 object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_refresh_text_monochrome_black_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -570,5 +570,11 @@
   <ItemGroup>
     <None Include="Images\password.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
