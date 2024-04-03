@@ -16,6 +16,7 @@ namespace Window_Project_v5._1.Forms
     {
         public EventHandler onSelect = null;
         private ImageDAO imageDAO = new ImageDAO();
+        Account account = new Account();
 
         private Product product;
         public UCProduct()
@@ -24,10 +25,11 @@ namespace Window_Project_v5._1.Forms
             SetClickEventForAllControls(this);
         }
 
-        public UCProduct(Product pd)
+        public UCProduct(Product pd, Account acc)
         {
             InitializeComponent();
             SetClickEventForAllControls(this);
+            account = acc;
             this.product = pd;
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
             lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
@@ -53,6 +55,8 @@ namespace Window_Project_v5._1.Forms
             }
 
         }
+
+
 
 
 
@@ -88,7 +92,8 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_DoubleClick(object sender, EventArgs e)
         {
-            FBuyDetail fBuyDetail = new FBuyDetail(product);
+            
+            FBuyDetail fBuyDetail = new FBuyDetail(product,account);
             fBuyDetail.Show();
         }
 

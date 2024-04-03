@@ -46,11 +46,17 @@ namespace Window_Project_v5._1
                 // Ket noi
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
+
                 if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Successful");
+                {
+                    //MessageBox.Show("Successful");
+
+                }
                 else
+                {
                     MessageBox.Show("Unsuccessful");
 
+                }
             }
             catch (Exception ex)
             {

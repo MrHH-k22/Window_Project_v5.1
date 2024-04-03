@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bunifu.UI.WinForms;
 using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
@@ -23,14 +24,19 @@ namespace Window_Project_v5._1.Forms
         public FTrackDetail(Product pd)
         {
             InitializeComponent();
+            
             btnSave.Visible = false;
 
             lblProductName.Text = pd.Name;
             lblPrice.Text = pd.SalePrice.ToString() + " VND";
+            lblBrand.Text = "Brand: " + pd.Brand.ToString();
             lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
             lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
             txtStatus.Text = pd.Status.ToString();
             txtDescription.Text = pd.Description.ToString();
+            Account seller = new Account(pd.SellerID);
+            lblShop.Text = seller.Name;
+            lblPhone.Text = "Contact Phone: " + seller.Phone;
 
             txtStatus.ReadOnly = true;
             txtDescription.ReadOnly = true;
@@ -50,8 +56,7 @@ namespace Window_Project_v5._1.Forms
                 MemoryStream ms = new MemoryStream(imageData);
 
                 // Assign pictureBox variable based on index
-                PictureBox pictureBox = null;
-
+                BunifuImageButton pictureBox = null;
                 switch (pictureBoxIndex)
                 {
                     case 0:
@@ -96,30 +101,48 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+
+
+
+
+
+        private void panelBody_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+
         }
 
         private void pbImage2_Click(object sender, EventArgs e)
         {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage2;
-            pbImage2 = temp;
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage2.Image;
+            pbImage2.Image = temp.Image;
         }
 
         private void pbImage3_Click(object sender, EventArgs e)
         {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage3;
-            pbImage3 = temp;
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage3.Image;
+            pbImage3.Image = temp.Image;
         }
 
         private void pbImage4_Click(object sender, EventArgs e)
         {
-            PictureBox temp = pbImage1;
-            pbImage1 = pbImage4;
-            pbImage4 = temp;
+            BunifuImageButton temp = new BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage4.Image;
+            pbImage4.Image = temp.Image;
+        }
+
+        private void pbImage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            btnSave.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -127,9 +150,9 @@ namespace Window_Project_v5._1.Forms
             btnSave.Visible = true;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            btnSave.Visible = false;
+            this.Close();
         }
     }
 }

@@ -14,14 +14,22 @@ namespace Window_Project_v5._1.Forms
 {
     public partial class FSellDetail : Form
     {
-        ProductDAO productDAO = new ProductDAO();
-        ImageDAO imageDAO = new ImageDAO();
+        private ProductDAO productDAO = new ProductDAO();
+        private ImageDAO imageDAO = new ImageDAO();
+        private Account acc = new Account();
+        private string selectedValue = null;
 
         private string[] imgLocations = new string[4];
 
         public FSellDetail()
         {
             InitializeComponent();
+        }
+
+        public FSellDetail(Account acc)
+        {
+            InitializeComponent();
+            this.acc = acc;
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
@@ -66,22 +74,7 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-        private void btnPost_Click(object sender, EventArgs e)
-        {
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text);       
-            productDAO.Add(product);
-            //Add images to Productimages
-            product = productDAO.GetLastProduct(); 
-            foreach (string imgLocation in imgLocations)
-            {
-                if (string.IsNullOrEmpty(imgLocation))
-                {
-                    break;
-                }
-                imageDAO.Add(product.Id, imgLocation);
-            }
-            this.Close();
-        }
+
 
         private double StringToDouble(string str)
         {
@@ -95,6 +88,37 @@ namespace Window_Project_v5._1.Forms
             }
             MessageBox.Show("The value of price is invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return -1;
+        }
+
+        private void ddCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ddCategory.SelectedItem != null)
+            {
+                selectedValue = ddCategory.SelectedItem.ToString();
+            }
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            //string category = ddCategories.SelectedValue.ToString();
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text, selectedValue, acc.Id);
+            productDAO.Add(product);
+            //Add images to Productimages
+            product = productDAO.GetLastProduct();
+            foreach (string imgLocation in imgLocations)
+            {
+                if (string.IsNullOrEmpty(imgLocation))
+                {
+                    break;
+                }
+                imageDAO.Add(product.Id, imgLocation);
+            }
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

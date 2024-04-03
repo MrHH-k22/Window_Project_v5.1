@@ -79,7 +79,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            FInformation fInformation = new FInformation();
+            FInformation fInformation = new FInformation(acc);
             fInformation.Show();
         }
 
@@ -97,12 +97,12 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSell_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FListSell(), sender);
+            OpenChildForm(new Forms.FListSell(acc), sender);
         }
 
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FOrderAnalysis(), sender);
+            OpenChildForm(new Forms.FOrderAnalysis(acc), sender);
         }
 
         private void btnBuyer_Click(object sender, EventArgs e)
@@ -119,17 +119,17 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FBuy(), sender);
+            OpenChildForm(new Forms.FBuy(acc), sender);
         }
 
         private void btnTrackOrder_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FTrackOrder(), sender);
+            OpenChildForm(new Forms.FTrackOrder(acc), sender);
         }
 
         private void btnManagement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FProductManagement(), sender);
+            OpenChildForm(new Forms.FProductManagement(acc), sender);
         }
 
         private void btnSeller_MouseEnter(object sender, EventArgs e)
@@ -239,7 +239,13 @@ namespace Window_Project_v5._1.Forms
 
         private void btnMoney_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FMoney(), sender);
+            OpenChildForm(new Forms.FMoney(acc), sender);
+        }
+
+        private void btnSaveList_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FSaveList(acc), sender);
+
         }
     }
 }

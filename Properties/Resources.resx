@@ -121,8 +121,14 @@
   <data name="forgotpw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forgotpw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="heart_v22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\heart_v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\info_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="real-time_30px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\real-time_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,6 +145,9 @@
   <data name="hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="saveinstagram_white_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\saveinstagram_white_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="info1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,6 +163,9 @@
   <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HAN00152-Lớn-1024x682" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HAN00152-Lớn-1024x682.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="heart_v2_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\heart_v2_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,18 +177,32 @@
   </data>
   <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="right_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\right_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="recharge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\recharge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="withdraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\withdraw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\heart_v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\right_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MessageError" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\MessageError.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveinstagram_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\saveinstagram_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +252,8 @@
   <data name="box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\info_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\money2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MessageInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\MessageInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +264,8 @@
   <data name="write_v2_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\write_v2_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="web-analytics_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\web-analytics_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="saveinstagram_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\saveinstagram_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HAN00112-Lớn-1024x682" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\HAN00112-Lớn-1024x682.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,11 +282,11 @@
   <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="web-analytics_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\web-analytics_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="heart_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\heart_v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forgotpw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forgotpw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

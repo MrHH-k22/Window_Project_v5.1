@@ -200,15 +200,7 @@ namespace Window_Project_v5._1.Properties {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap forgotpw {
-            get {
-                object obj = ResourceManager.GetObject("forgotpw", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+    
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -216,6 +208,16 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap forgotpw1 {
             get {
                 object obj = ResourceManager.GetObject("forgotpw1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forgotpw {
+            get {
+                object obj = ResourceManager.GetObject("forgotpw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,6 +435,46 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap money {
+            get {
+                object obj = ResourceManager.GetObject("money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money2 {
+            get {
+                object obj = ResourceManager.GetObject("money2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password {
+            get {
+                object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_refresh_text_monochrome_black_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap real_time {
             get {
                 object obj = ResourceManager.GetObject("real-time", resourceCulture);
@@ -463,9 +505,49 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap recharge {
+            get {
+                object obj = ResourceManager.GetObject("recharge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap right_30px {
             get {
                 object obj = ResourceManager.GetObject("right_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveinstagram_Red {
+            get {
+                object obj = ResourceManager.GetObject("saveinstagram_Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveinstagram_white {
+            get {
+                object obj = ResourceManager.GetObject("saveinstagram_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveinstagram_white_30px {
+            get {
+                object obj = ResourceManager.GetObject("saveinstagram_white_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +608,16 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap web_analytics_30px {
             get {
                 object obj = ResourceManager.GetObject("web-analytics_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap withdraw {
+            get {
+                object obj = ResourceManager.GetObject("withdraw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -150,11 +150,17 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -170,6 +176,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="FavoriteDAO.cs" />
     <Compile Include="Forms\FBuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,12 +200,6 @@
     </Compile>
     <Compile Include="Forms\FBuyDetail.Designer.cs">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FDetail.Designer.cs">
-      <DependentUpon>FDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FInformation.cs">
       <SubType>Form</SubType>
@@ -224,17 +225,17 @@
     <Compile Include="Forms\FOrderAnalysis.Designer.cs">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FProductDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FProductDetail.Designer.cs">
-      <DependentUpon>FProductDetail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FProductManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSaveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSaveList.Designer.cs">
+      <DependentUpon>FSaveList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FSellDetail.cs">
       <SubType>Form</SubType>
@@ -254,17 +255,17 @@
     <Compile Include="Forms\FTrackOrder.Designer.cs">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCDetail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\UCDetail.Designer.cs">
-      <DependentUpon>UCDetail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\UCProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\UCProduct.Designer.cs">
       <DependentUpon>UCProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCProductBuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductBuy.Designer.cs">
+      <DependentUpon>UCProductBuy.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCProductCondition.cs">
       <SubType>UserControl</SubType>
@@ -272,11 +273,11 @@
     <Compile Include="Forms\UCProductCondition.Designer.cs">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCProductTracking.cs">
+    <Compile Include="Forms\UCProductSell.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UCProductTracking.Designer.cs">
-      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    <Compile Include="Forms\UCProductSell.Designer.cs">
+      <DependentUpon>UCProductSell.cs</DependentUpon>
     </Compile>
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
@@ -337,23 +338,23 @@
     <EmbeddedResource Include="Forms\FBuyDetail.resx">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FDetail.resx">
-      <DependentUpon>FDetail.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FInformation.resx">
       <DependentUpon>FInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListSell.resx">
       <DependentUpon>FListSell.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FMoney.resx">
+      <DependentUpon>FMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FOrderAnalysis.resx">
       <DependentUpon>FOrderAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FProductDetail.resx">
-      <DependentUpon>FProductDetail.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSaveList.resx">
+      <DependentUpon>FSaveList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FSellDetail.resx">
       <DependentUpon>FSellDetail.cs</DependentUpon>
@@ -364,14 +365,14 @@
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCDetail.resx">
-      <DependentUpon>UCDetail.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UCProductBuy.resx">
+      <DependentUpon>UCProductBuy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductCondition.resx">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCProductTracking.resx">
-      <DependentUpon>UCProductTracking.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UCProductSell.resx">
+      <DependentUpon>UCProductSell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProduct.resx">
       <DependentUpon>UCProduct.cs</DependentUpon>
@@ -545,9 +546,32 @@
   <ItemGroup>
     <None Include="Images\cross.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\forgotpw1.png" />
+    <None Include="Images\saveinstagram_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\saveinstagram_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\saveinstagram_white_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\money2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\recharge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\withdraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpw.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail.png" />

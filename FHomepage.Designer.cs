@@ -36,6 +36,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnInformation = new System.Windows.Forms.Button();
             this.panelBuyerSubmenu = new System.Windows.Forms.Panel();
+            this.btnSaveList = new System.Windows.Forms.Button();
             this.btnTrackOrder = new System.Windows.Forms.Button();
             this.btnBuy = new System.Windows.Forms.Button();
             this.btnBuyer = new System.Windows.Forms.Button();
@@ -102,10 +103,10 @@
             this.panelBody.BorderRadius = 3;
             this.panelBody.BorderThickness = 1;
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(226, 6);
+            this.panelBody.Location = new System.Drawing.Point(235, 6);
             this.panelBody.Name = "panelBody";
             this.panelBody.ShowBorders = true;
-            this.panelBody.Size = new System.Drawing.Size(1045, 613);
+            this.panelBody.Size = new System.Drawing.Size(1259, 768);
             this.panelBody.TabIndex = 1;
             // 
             // panelLeft
@@ -128,7 +129,7 @@
             this.panelLeft.Location = new System.Drawing.Point(6, 6);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.ShowBorders = true;
-            this.panelLeft.Size = new System.Drawing.Size(220, 613);
+            this.panelLeft.Size = new System.Drawing.Size(229, 768);
             this.panelLeft.TabIndex = 0;
             // 
             // btnMoney
@@ -140,10 +141,10 @@
             this.btnMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnMoney.Image = global::Window_Project_v5._1.Properties.Resources.dollar_symbol;
             this.btnMoney.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMoney.Location = new System.Drawing.Point(0, 500);
+            this.btnMoney.Location = new System.Drawing.Point(0, 545);
             this.btnMoney.Name = "btnMoney";
             this.btnMoney.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMoney.Size = new System.Drawing.Size(220, 51);
+            this.btnMoney.Size = new System.Drawing.Size(229, 51);
             this.btnMoney.TabIndex = 14;
             this.btnMoney.Text = "  Money";
             this.btnMoney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,10 +161,10 @@
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnLogout.Image = global::Window_Project_v5._1.Properties.Resources.exit_30px;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 562);
+            this.btnLogout.Location = new System.Drawing.Point(0, 717);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(220, 51);
+            this.btnLogout.Size = new System.Drawing.Size(229, 51);
             this.btnLogout.TabIndex = 13;
             this.btnLogout.Text = "  log out";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -182,10 +183,10 @@
             this.btnInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.btnInformation.Image = global::Window_Project_v5._1.Properties.Resources.info_30px;
             this.btnInformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformation.Location = new System.Drawing.Point(0, 449);
+            this.btnInformation.Location = new System.Drawing.Point(0, 494);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInformation.Size = new System.Drawing.Size(220, 51);
+            this.btnInformation.Size = new System.Drawing.Size(229, 51);
             this.btnInformation.TabIndex = 12;
             this.btnInformation.Text = "  Information";
             this.btnInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -198,13 +199,35 @@
             // panelBuyerSubmenu
             // 
             this.panelBuyerSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(110)))));
+            this.panelBuyerSubmenu.Controls.Add(this.btnSaveList);
             this.panelBuyerSubmenu.Controls.Add(this.btnTrackOrder);
             this.panelBuyerSubmenu.Controls.Add(this.btnBuy);
             this.panelBuyerSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBuyerSubmenu.Location = new System.Drawing.Point(0, 350);
             this.panelBuyerSubmenu.Name = "panelBuyerSubmenu";
-            this.panelBuyerSubmenu.Size = new System.Drawing.Size(220, 99);
+            this.panelBuyerSubmenu.Size = new System.Drawing.Size(229, 144);
             this.panelBuyerSubmenu.TabIndex = 11;
+            // 
+            // btnSaveList
+            // 
+            this.btnSaveList.BackColor = System.Drawing.Color.Transparent;
+            this.btnSaveList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSaveList.FlatAppearance.BorderSize = 0;
+            this.btnSaveList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveList.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnSaveList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
+            this.btnSaveList.Image = global::Window_Project_v5._1.Properties.Resources.saveinstagram_white_30px;
+            this.btnSaveList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveList.Location = new System.Drawing.Point(0, 90);
+            this.btnSaveList.Name = "btnSaveList";
+            this.btnSaveList.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSaveList.Size = new System.Drawing.Size(229, 45);
+            this.btnSaveList.TabIndex = 2;
+            this.btnSaveList.Text = "  Saved Products";
+            this.btnSaveList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSaveList.UseVisualStyleBackColor = false;
+            this.btnSaveList.Click += new System.EventHandler(this.btnSaveList_Click);
             // 
             // btnTrackOrder
             // 
@@ -219,7 +242,7 @@
             this.btnTrackOrder.Location = new System.Drawing.Point(0, 45);
             this.btnTrackOrder.Name = "btnTrackOrder";
             this.btnTrackOrder.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTrackOrder.Size = new System.Drawing.Size(220, 45);
+            this.btnTrackOrder.Size = new System.Drawing.Size(229, 45);
             this.btnTrackOrder.TabIndex = 1;
             this.btnTrackOrder.Text = "  Track Order";
             this.btnTrackOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,7 +265,7 @@
             this.btnBuy.Location = new System.Drawing.Point(0, 0);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnBuy.Size = new System.Drawing.Size(220, 45);
+            this.btnBuy.Size = new System.Drawing.Size(229, 45);
             this.btnBuy.TabIndex = 0;
             this.btnBuy.Text = "  Buy";
             this.btnBuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,7 +287,7 @@
             this.btnBuyer.Location = new System.Drawing.Point(0, 299);
             this.btnBuyer.Name = "btnBuyer";
             this.btnBuyer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnBuyer.Size = new System.Drawing.Size(220, 51);
+            this.btnBuyer.Size = new System.Drawing.Size(229, 51);
             this.btnBuyer.TabIndex = 11;
             this.btnBuyer.Text = "  Buyer";
             this.btnBuyer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,7 +306,7 @@
             this.panelSellerSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSellerSubmenu.Location = new System.Drawing.Point(0, 151);
             this.panelSellerSubmenu.Name = "panelSellerSubmenu";
-            this.panelSellerSubmenu.Size = new System.Drawing.Size(220, 148);
+            this.panelSellerSubmenu.Size = new System.Drawing.Size(229, 148);
             this.panelSellerSubmenu.TabIndex = 10;
             // 
             // btnManagement
@@ -299,7 +322,7 @@
             this.btnManagement.Location = new System.Drawing.Point(0, 90);
             this.btnManagement.Name = "btnManagement";
             this.btnManagement.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnManagement.Size = new System.Drawing.Size(220, 45);
+            this.btnManagement.Size = new System.Drawing.Size(229, 45);
             this.btnManagement.TabIndex = 3;
             this.btnManagement.Text = "  Manage";
             this.btnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,7 +345,7 @@
             this.btnOrderAnalysis.Location = new System.Drawing.Point(0, 45);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
             this.btnOrderAnalysis.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnOrderAnalysis.Size = new System.Drawing.Size(220, 45);
+            this.btnOrderAnalysis.Size = new System.Drawing.Size(229, 45);
             this.btnOrderAnalysis.TabIndex = 2;
             this.btnOrderAnalysis.Text = "  Order analysis";
             this.btnOrderAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -345,7 +368,7 @@
             this.btnSell.Location = new System.Drawing.Point(0, 0);
             this.btnSell.Name = "btnSell";
             this.btnSell.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSell.Size = new System.Drawing.Size(220, 45);
+            this.btnSell.Size = new System.Drawing.Size(229, 45);
             this.btnSell.TabIndex = 0;
             this.btnSell.Text = "  Post product";
             this.btnSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -367,7 +390,7 @@
             this.btnSeller.Location = new System.Drawing.Point(0, 100);
             this.btnSeller.Name = "btnSeller";
             this.btnSeller.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSeller.Size = new System.Drawing.Size(220, 51);
+            this.btnSeller.Size = new System.Drawing.Size(229, 51);
             this.btnSeller.TabIndex = 9;
             this.btnSeller.Text = "  Seller";
             this.btnSeller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -383,7 +406,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 100);
+            this.panelLogo.Size = new System.Drawing.Size(229, 100);
             this.panelLogo.TabIndex = 8;
             // 
             // pbLogo
@@ -392,7 +415,7 @@
             this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(220, 100);
+            this.pbLogo.Size = new System.Drawing.Size(229, 100);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
@@ -402,10 +425,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.ClientSize = new System.Drawing.Size(1277, 625);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1500, 780);
             this.MinimumSize = new System.Drawing.Size(1277, 625);
             this.Name = "FHomepage";
             this.Padding = new System.Windows.Forms.Padding(6);
@@ -439,5 +463,6 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private System.Windows.Forms.Button btnMoney;
+        private System.Windows.Forms.Button btnSaveList;
     }
 }
