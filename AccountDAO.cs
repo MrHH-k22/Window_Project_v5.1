@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Window_Project_v5._1
 {
@@ -74,7 +75,8 @@ namespace Window_Project_v5._1
                 account.Email = Convert.ToString(row["email"]);
                 account.Phone = Convert.ToString(row["phone"]);
                 account.Password = Convert.ToString(row["password"]);
-                account.Money = Convert.ToDouble(row["money"]);
+                account.Money = row["money"] != DBNull.Value ? Convert.ToDouble(row["money"]) : 0;
+
                 object birthdayValue = row["birthday"];
                 DateTime birthday;
                 if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))

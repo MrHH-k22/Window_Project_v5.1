@@ -24,15 +24,15 @@ namespace Window_Project_v5._1.Forms
             fSignin.Show();
         }
 
-        private void btnSignup_Click(object sender, EventArgs e)
-        {
-            Account acc = new Account(txtUsername.Text, txtEmail.Text ,txtPassword.Text);
-            accountDAO.CreateNewAccount(acc);
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            Account acc = new Account(txtUsername.Text, txtEmail.Text, txtPassword.Text);
+            accountDAO.CreateNewAccount(acc);
         }
     }
 }

@@ -200,14 +200,12 @@ namespace Window_Project_v5._1.Properties {
             }
         }
         
-    
-        
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap forgotpw1 {
+        internal static System.Drawing.Bitmap forgotpw {
             get {
-                object obj = ResourceManager.GetObject("forgotpw1", resourceCulture);
+                object obj = ResourceManager.GetObject("forgotpw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,9 +213,9 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap forgotpw {
+        internal static System.Drawing.Bitmap forgotpw1 {
             get {
-                object obj = ResourceManager.GetObject("forgotpw", resourceCulture);
+                object obj = ResourceManager.GetObject("forgotpw1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -418,16 +416,6 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap MessageWarning {
             get {
                 object obj = ResourceManager.GetObject("MessageWarning", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_computer_icons_refresh_text_monochrome_black_thumbnail {
-            get {
-                object obj = ResourceManager.GetObject("png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

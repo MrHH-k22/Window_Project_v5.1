@@ -46,6 +46,7 @@
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelLeft = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.lblSignup = new System.Windows.Forms.Label();
             this.txtUsername = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignup = new Guna.UI2.WinForms.Guna2Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -128,6 +128,31 @@
             this.panelLeft.Quality = 10;
             this.panelLeft.Size = new System.Drawing.Size(492, 494);
             this.panelLeft.TabIndex = 1;
+            // 
+            // btnSignin
+            // 
+            this.btnSignin.AutoRoundedCorners = true;
+            this.btnSignin.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignin.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.BorderRadius = 23;
+            this.btnSignin.BorderThickness = 2;
+            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignin.FillColor = System.Drawing.Color.Transparent;
+            this.btnSignin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSignin.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnSignin.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignin.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignin.Location = new System.Drawing.Point(148, 308);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.Size = new System.Drawing.Size(208, 49);
+            this.btnSignin.TabIndex = 55;
+            this.btnSignin.Text = "SIGN IN";
             // 
             // btnClose
             // 
@@ -452,31 +477,6 @@
             this.txtUsername.UseSystemPasswordChar = false;
             this.txtUsername.WordWrap = true;
             // 
-            // btnSignin
-            // 
-            this.btnSignin.AutoRoundedCorners = true;
-            this.btnSignin.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignin.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.BorderRadius = 23;
-            this.btnSignin.BorderThickness = 2;
-            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignin.FillColor = System.Drawing.Color.Transparent;
-            this.btnSignin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSignin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSignin.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnSignin.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSignin.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignin.Location = new System.Drawing.Point(148, 308);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(208, 49);
-            this.btnSignin.TabIndex = 55;
-            this.btnSignin.Text = "SIGN IN";
-            // 
             // btnSignup
             // 
             this.btnSignup.AutoRoundedCorners = true;
@@ -501,6 +501,7 @@
             this.btnSignup.Size = new System.Drawing.Size(243, 49);
             this.btnSignup.TabIndex = 54;
             this.btnSignup.Text = "SIGN UP";
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // FSignup
             // 
