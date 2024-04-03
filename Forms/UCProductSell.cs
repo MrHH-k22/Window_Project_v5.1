@@ -164,6 +164,9 @@ namespace Window_Project_v5._1.Forms
             {
                 product.OrderCondition = (int)ordercondition.Delivering;
                 productDAO.Update(product);
+                Account buyer = accountDAO.Retrieve(product.BuyerID);
+                buyer.Money -= product.SalePrice;
+                accountDAO.update(buyer);
                 account.Money += product.SalePrice;
                 accountDAO.update(account);
             }

@@ -29,6 +29,8 @@ namespace Window_Project_v5._1.Forms
 
         private void FOrderAnalysis_Load(object sender, EventArgs e)
         {
+            lblName.Text = acc.Name;
+            
             List<Product> allProducts = productDAO.LoadListWithCondition("",acc.Id);
             List<int> allCustomers = productDAO.LoadCustomers(acc.Id);
             int completed = 0;
@@ -47,6 +49,7 @@ namespace Window_Project_v5._1.Forms
             lblCustomers.Text = allCustomers.Count.ToString();
             lblIncompleted.Text = (allProducts.Count - completed).ToString();
             lblComplete.Text = completed.ToString();
+            /*
             if (allProducts.Count == 0)
             {
                 cpProgress.ValueByTransition = 100;
@@ -55,7 +58,9 @@ namespace Window_Project_v5._1.Forms
             {
                 cpProgress.ValueByTransition = (int)((float)completed / allProducts.Count);
             }
+            */
         }
+
 
         private void convertByte(PictureBox pic, byte[] imageData)
         {
@@ -79,6 +84,11 @@ namespace Window_Project_v5._1.Forms
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbAvatar_Click(object sender, EventArgs e)
         {
 
         }

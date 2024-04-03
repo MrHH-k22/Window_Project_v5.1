@@ -126,40 +126,4 @@
         Nk5IoC8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txtProductName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQAAAAAgCAYAAAD9qabkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACdSURBVHhe7dQxDQQxEARB80dlyzAexgG4kyUnj6GrpEk2
-        3x5A3N77N+d8zayx8/P3/cc4B6Dj/Px9fwGAGgGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGA
-        MAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAMAGAsL8ArLWeczCzxs7P3/cH
-        msb4ADSh/xGw0HyaAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="txtBrand.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKQAAAAgCAYAAACclNOPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACRSURBVHhe7dIxDQMxAARB80fll2EERgDkZclNEHiLGema
-        q3dAzlrrM+f8md3abvDkOMY+4Kbd4MlRkNwnSFIESYogSREkKYIkRZCkCJIUQZIiSFIESYogSREkKYIk
-        RZCkCJIUQZIiSFIESYogSREkKYIkRZCkCJIUQZIiSFIEScpfkM/zfPdhdmu7wZMjVIzxAj8Zj5Pz2qEX
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="txtMinPrice.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIgAAAAgCAYAAADJ9TDRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACISURBVHhe7dLBCcMwAARB9V+VhcpIGSkgQWBDQsi6gRm4
-        z713wK211uM4jpfZtd3EmccY+4BPu4kzD4HwSyAkgZAEQhIISSAkgZAEQhIISSAkgZAEQhIISSAkgZAE
-        QhIISSAkgZAEQhIISSAkgZAEQhIISSAkgZC+AplzPvdhdm03ceYB/4zxBoHupUhED/PpAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="txtMaxPrice.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIgAAAAgCAYAAADJ9TDRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACISURBVHhe7dLBCcMwAARB9V+VhcpIGSkgQWBDQsi6gRm4
-        z713wK211uM4jpfZtd3EmccY+4BPu4kzD4HwSyAkgZAEQhIISSAkgZAEQhIISSAkgZAEQhIISSAkgZAE
-        QhIISSAkgZAEQhIISSAkgZAEQhIISSAkgZC+AplzPvdhdm03ceYB/4zxBoHupUhED/PpAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
 </root>

@@ -92,7 +92,16 @@ namespace Window_Project_v5._1.Forms
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            List<Product> products = productDAO.LoadListWithoutBuyerID();
+            List<Product> products = productDAO.LoadList();
+            List<Product> productWithoutBuyerAndDisplaying = new List<Product>();
+            //get product without buyid and having condition displaying
+            foreach (var pd in products)
+            {
+                if ((pd.BuyerID == null || pd.BuyerID <= 0) && pd.OrderCondition == (int)ordercondition.Displaying)
+                {
+                    productWithoutBuyerAndDisplaying.Add(pd);
+                }
+            }
             string productName = txtProductName.Text;
             string brand = txtBrand.Text;
             double maxPrice = double.TryParse(txtMaxPrice.Text, out double parsedMaxPrice) ? parsedMaxPrice : double.MaxValue;
@@ -100,7 +109,7 @@ namespace Window_Project_v5._1.Forms
             string selectedCategory = ddCategories.SelectedItem?.ToString();
 
             // Filter products based on the specified conditions
-            List<Product> filteredProducts = products.Where(pd =>
+            List<Product> filteredProducts = productWithoutBuyerAndDisplaying.Where(pd =>
                 (string.IsNullOrEmpty(productName) || pd.Name.ToLower().Contains(productName.ToLower())) &&
                 (string.IsNullOrEmpty(brand) || pd.Brand.ToLower().Contains(brand.ToLower())) &&
                 (pd.SalePrice >= minPrice && pd.SalePrice <= maxPrice) &&

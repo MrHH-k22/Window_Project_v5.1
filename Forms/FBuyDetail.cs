@@ -154,16 +154,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void bunifuButton21_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         private void btnClose_Click(object sender, EventArgs e)

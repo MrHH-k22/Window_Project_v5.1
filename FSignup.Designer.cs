@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -44,21 +43,20 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelLeft = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSignin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.btnSignup = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtEmail = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.lblSignup = new System.Windows.Forms.Label();
             this.txtUsername = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSignup = new Guna.UI2.WinForms.Guna2Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -115,9 +113,9 @@
             this.panelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLeft.BackgroundImage")));
             this.panelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLeft.BorderRadius = 1;
+            this.panelLeft.Controls.Add(this.btnSignin);
             this.panelLeft.Controls.Add(this.btnClose);
             this.panelLeft.Controls.Add(this.label1);
-            this.panelLeft.Controls.Add(this.btnSignin);
             this.panelLeft.Controls.Add(this.label2);
             this.panelLeft.Controls.Add(this.pbLogo);
             this.panelLeft.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(159)))), ((int)(((byte)(186)))));
@@ -131,6 +129,39 @@
             this.panelLeft.Size = new System.Drawing.Size(492, 494);
             this.panelLeft.TabIndex = 1;
             // 
+            // btnClose
+            // 
+            this.btnClose.AllowAnimations = true;
+            this.btnClose.AllowBorderColorChanges = true;
+            this.btnClose.AllowMouseEffects = true;
+            this.btnClose.AnimationSpeed = 200;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderRadius = 1;
+            this.btnClose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnClose.BorderThickness = 1;
+            this.btnClose.ColorContrastOnClick = 30;
+            this.btnClose.ColorContrastOnHover = 30;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnClose.CustomizableEdges = borderEdges1;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.cross;
+            this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnClose.Location = new System.Drawing.Point(445, 3);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.RoundBorders = false;
+            this.btnClose.ShowBorders = true;
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnClose.TabIndex = 46;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -141,97 +172,6 @@
             this.label1.Size = new System.Drawing.Size(266, 50);
             this.label1.TabIndex = 4;
             this.label1.Text = "Welcome Back";
-            // 
-            // btnSignin
-            // 
-            this.btnSignin.AllowAnimations = true;
-            this.btnSignin.AllowMouseEffects = true;
-            this.btnSignin.AllowToggling = false;
-            this.btnSignin.AnimationSpeed = 200;
-            this.btnSignin.AutoGenerateColors = false;
-            this.btnSignin.AutoRoundBorders = false;
-            this.btnSignin.AutoSizeLeftIcon = true;
-            this.btnSignin.AutoSizeRightIcon = true;
-            this.btnSignin.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignin.BackColor1 = System.Drawing.Color.Transparent;
-            this.btnSignin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignin.BackgroundImage")));
-            this.btnSignin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignin.ButtonText = "SIGN IN";
-            this.btnSignin.ButtonTextMarginLeft = 0;
-            this.btnSignin.ColorContrastOnClick = 45;
-            this.btnSignin.ColorContrastOnHover = 45;
-            this.btnSignin.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnSignin.CustomizableEdges = borderEdges3;
-            this.btnSignin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSignin.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSignin.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSignin.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSignin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnSignin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignin.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSignin.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnSignin.IconMarginLeft = 11;
-            this.btnSignin.IconPadding = 10;
-            this.btnSignin.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSignin.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSignin.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnSignin.IconSize = 25;
-            this.btnSignin.IdleBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.IdleBorderRadius = 35;
-            this.btnSignin.IdleBorderThickness = 2;
-            this.btnSignin.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnSignin.IdleIconLeftImage = null;
-            this.btnSignin.IdleIconRightImage = null;
-            this.btnSignin.IndicateFocus = false;
-            this.btnSignin.Location = new System.Drawing.Point(145, 318);
-            this.btnSignin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSignin.OnDisabledState.BorderRadius = 35;
-            this.btnSignin.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignin.OnDisabledState.BorderThickness = 2;
-            this.btnSignin.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSignin.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSignin.OnDisabledState.IconLeftImage = null;
-            this.btnSignin.OnDisabledState.IconRightImage = null;
-            this.btnSignin.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignin.onHoverState.BorderRadius = 35;
-            this.btnSignin.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignin.onHoverState.BorderThickness = 2;
-            this.btnSignin.onHoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignin.onHoverState.IconLeftImage = null;
-            this.btnSignin.onHoverState.IconRightImage = null;
-            this.btnSignin.OnIdleState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.OnIdleState.BorderRadius = 35;
-            this.btnSignin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignin.OnIdleState.BorderThickness = 2;
-            this.btnSignin.OnIdleState.FillColor = System.Drawing.Color.Transparent;
-            this.btnSignin.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.OnIdleState.IconLeftImage = null;
-            this.btnSignin.OnIdleState.IconRightImage = null;
-            this.btnSignin.OnPressedState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.OnPressedState.BorderRadius = 35;
-            this.btnSignin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignin.OnPressedState.BorderThickness = 2;
-            this.btnSignin.OnPressedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignin.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignin.OnPressedState.IconLeftImage = null;
-            this.btnSignin.OnPressedState.IconRightImage = null;
-            this.btnSignin.Size = new System.Drawing.Size(208, 53);
-            this.btnSignin.TabIndex = 3;
-            this.btnSignin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSignin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSignin.TextMarginLeft = 0;
-            this.btnSignin.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnSignin.UseDefaultRadiusAndThickness = true;
-            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // label2
             // 
@@ -254,97 +194,6 @@
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
-            // 
-            // btnSignup
-            // 
-            this.btnSignup.AllowAnimations = true;
-            this.btnSignup.AllowMouseEffects = true;
-            this.btnSignup.AllowToggling = false;
-            this.btnSignup.AnimationSpeed = 200;
-            this.btnSignup.AutoGenerateColors = false;
-            this.btnSignup.AutoRoundBorders = false;
-            this.btnSignup.AutoSizeLeftIcon = true;
-            this.btnSignup.AutoSizeRightIcon = true;
-            this.btnSignup.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignup.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignup.BackgroundImage")));
-            this.btnSignup.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignup.ButtonText = "SIGN UP";
-            this.btnSignup.ButtonTextMarginLeft = 0;
-            this.btnSignup.ColorContrastOnClick = 45;
-            this.btnSignup.ColorContrastOnHover = 45;
-            this.btnSignup.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnSignup.CustomizableEdges = borderEdges1;
-            this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSignup.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSignup.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSignup.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSignup.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnSignup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignup.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSignup.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignup.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSignup.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnSignup.IconMarginLeft = 11;
-            this.btnSignup.IconPadding = 10;
-            this.btnSignup.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSignup.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSignup.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnSignup.IconSize = 25;
-            this.btnSignup.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.IdleBorderRadius = 35;
-            this.btnSignup.IdleBorderThickness = 2;
-            this.btnSignup.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.IdleIconLeftImage = null;
-            this.btnSignup.IdleIconRightImage = null;
-            this.btnSignup.IndicateFocus = false;
-            this.btnSignup.Location = new System.Drawing.Point(231, 363);
-            this.btnSignup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSignup.Name = "btnSignup";
-            this.btnSignup.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSignup.OnDisabledState.BorderRadius = 35;
-            this.btnSignup.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignup.OnDisabledState.BorderThickness = 2;
-            this.btnSignup.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSignup.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSignup.OnDisabledState.IconLeftImage = null;
-            this.btnSignup.OnDisabledState.IconRightImage = null;
-            this.btnSignup.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.onHoverState.BorderRadius = 35;
-            this.btnSignup.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignup.onHoverState.BorderThickness = 2;
-            this.btnSignup.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.onHoverState.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSignup.onHoverState.IconLeftImage = null;
-            this.btnSignup.onHoverState.IconRightImage = null;
-            this.btnSignup.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.OnIdleState.BorderRadius = 35;
-            this.btnSignup.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignup.OnIdleState.BorderThickness = 2;
-            this.btnSignup.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.OnIdleState.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSignup.OnIdleState.IconLeftImage = null;
-            this.btnSignup.OnIdleState.IconRightImage = null;
-            this.btnSignup.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.OnPressedState.BorderRadius = 35;
-            this.btnSignup.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSignup.OnPressedState.BorderThickness = 2;
-            this.btnSignup.OnPressedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignup.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSignup.OnPressedState.IconLeftImage = null;
-            this.btnSignup.OnPressedState.IconRightImage = null;
-            this.btnSignup.Size = new System.Drawing.Size(208, 53);
-            this.btnSignup.TabIndex = 13;
-            this.btnSignup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSignup.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSignup.TextMarginLeft = 0;
-            this.btnSignup.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnSignup.UseDefaultRadiusAndThickness = true;
-            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // txtPassword
             // 
@@ -603,38 +452,55 @@
             this.txtUsername.UseSystemPasswordChar = false;
             this.txtUsername.WordWrap = true;
             // 
-            // btnClose
+            // btnSignin
             // 
-            this.btnClose.AllowAnimations = true;
-            this.btnClose.AllowBorderColorChanges = true;
-            this.btnClose.AllowMouseEffects = true;
-            this.btnClose.AnimationSpeed = 200;
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderRadius = 1;
-            this.btnClose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnClose.BorderThickness = 1;
-            this.btnClose.ColorContrastOnClick = 30;
-            this.btnClose.ColorContrastOnHover = 30;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges2;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.cross;
-            this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Location = new System.Drawing.Point(445, 3);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.RoundBorders = false;
-            this.btnClose.ShowBorders = true;
-            this.btnClose.Size = new System.Drawing.Size(40, 40);
-            this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnClose.TabIndex = 46;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnSignin.AutoRoundedCorners = true;
+            this.btnSignin.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignin.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.BorderRadius = 23;
+            this.btnSignin.BorderThickness = 2;
+            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignin.FillColor = System.Drawing.Color.Transparent;
+            this.btnSignin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSignin.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnSignin.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignin.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignin.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignin.Location = new System.Drawing.Point(148, 308);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.Size = new System.Drawing.Size(208, 49);
+            this.btnSignin.TabIndex = 55;
+            this.btnSignin.Text = "SIGN IN";
+            // 
+            // btnSignup
+            // 
+            this.btnSignup.AutoRoundedCorners = true;
+            this.btnSignup.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignup.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignup.BorderRadius = 23;
+            this.btnSignup.BorderThickness = 1;
+            this.btnSignup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignup.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignup.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignup.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignup.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSignup.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignup.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnSignup.Location = new System.Drawing.Point(132, 331);
+            this.btnSignup.Name = "btnSignup";
+            this.btnSignup.Size = new System.Drawing.Size(243, 49);
+            this.btnSignup.TabIndex = 54;
+            this.btnSignup.Text = "SIGN UP";
             // 
             // FSignup
             // 
@@ -642,8 +508,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(977, 494);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnSignup);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblSignup);
@@ -667,15 +533,15 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuGradientPanel panelLeft;
         private System.Windows.Forms.Label label1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSignin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pbLogo;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSignup;
         private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         private System.Windows.Forms.Label lblSignup;
         private Bunifu.UI.WinForms.BunifuTextBox txtEmail;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.UI.WinForms.BunifuTextBox txtUsername;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnClose;
+        private Guna.UI2.WinForms.Guna2Button btnSignin;
+        private Guna.UI2.WinForms.Guna2Button btnSignup;
     }
 }
