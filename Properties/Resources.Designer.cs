@@ -213,36 +213,6 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap forgotpw1 {
-            get {
-                object obj = ResourceManager.GetObject("forgotpw1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap forgotpw2 {
-            get {
-                object obj = ResourceManager.GetObject("forgotpw2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap forgotpw3 {
-            get {
-                object obj = ResourceManager.GetObject("forgotpw3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap HAN00112_Lớn_1024x682 {
             get {
                 object obj = ResourceManager.GetObject("HAN00112-Lớn-1024x682", resourceCulture);
@@ -436,16 +406,6 @@ namespace Window_Project_v5._1.Properties {
         internal static System.Drawing.Bitmap MessageWarning {
             get {
                 object obj = ResourceManager.GetObject("MessageWarning", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_computer_icons_refresh_text_monochrome_black_thumbnail {
-            get {
-                object obj = ResourceManager.GetObject("png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
