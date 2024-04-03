@@ -41,8 +41,16 @@ namespace Window_Project_v5._1
 
         public void CreateNewAccount(Account account)
         {
-            string SQL = string.Format("INSERT INTO Account (Email, Password, Name) VALUES ('{0}', '{1}', '{2}')", account.Email, account.Password, account.Name);
-            dbconnection.Excute(SQL);
+            if (CheckEmailExisted(account.Email) == true)
+            {
+                MessageBox.Show("Email has been existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string sql = string.Format("INSERT INTO Account (Email, Password, Name) VALUES ('{0}', '{1}', '{2}')", account.Email, account.Password, account.Name);
+                dbconnection.Excute(sql);
+            }
+
         }
         public Account CheckAccount(Account account)
         {
@@ -57,6 +65,32 @@ namespace Window_Project_v5._1
             else
             { 
                 return null;
+            }
+        }
+        public void  ResetPassword(string emailsubmitted, string pwsubmitted)
+        {
+            if (CheckEmailExisted(emailsubmitted) == true)
+            {
+                string sql = string.Format("UPDATE Account SET Password = '{0}' WHERE Email = '{1}'", pwsubmitted, emailsubmitted);
+                dbconnection.Excute(sql);
+            }
+            else
+            {
+                MessageBox.Show("Email has not been found in the database.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public bool CheckEmailExisted(string email)
+        {
+            string SQL = string.Format("SELECT * FROM Account WHERE Email = '{0}'", email);
+            DataTable dt = dbconnection.Load(SQL);
+
+            if (dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

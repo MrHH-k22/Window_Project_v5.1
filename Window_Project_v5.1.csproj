@@ -545,5 +545,17 @@
   <ItemGroup>
     <None Include="Images\cross.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpw3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
