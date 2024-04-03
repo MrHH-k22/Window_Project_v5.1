@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuy));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -45,32 +44,28 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuy));
             this.panelTop = new System.Windows.Forms.Panel();
             this.ddCategories = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.btnFilter = new System.Windows.Forms.Button();
             this.txtProductName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtBrand = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtMinPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtMaxPrice = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFilter = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
+            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flpProduct
-            // 
-            this.flpProduct.AutoScroll = true;
-            this.flpProduct.BackColor = System.Drawing.Color.White;
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProduct.Location = new System.Drawing.Point(0, 68);
-            this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
-            this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1241, 653);
-            this.flpProduct.TabIndex = 1;
-            // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.ddCategories);
+            this.panelTop.Controls.Add(this.bunifuSeparator1);
+            this.panelTop.Controls.Add(this.guna2Separator1);
             this.panelTop.Controls.Add(this.btnFilter);
+            this.panelTop.Controls.Add(this.btnLoad);
+            this.panelTop.Controls.Add(this.ddCategories);
             this.panelTop.Controls.Add(this.txtProductName);
             this.panelTop.Controls.Add(this.txtBrand);
             this.panelTop.Controls.Add(this.txtMinPrice);
@@ -129,33 +124,15 @@
             "Book",
             "(ALL)"});
             this.ddCategories.ItemTopMargin = 3;
-            this.ddCategories.Location = new System.Drawing.Point(665, 18);
+            this.ddCategories.Location = new System.Drawing.Point(760, 12);
             this.ddCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ddCategories.Name = "ddCategories";
-            this.ddCategories.Size = new System.Drawing.Size(159, 32);
+            this.ddCategories.Size = new System.Drawing.Size(189, 32);
             this.ddCategories.TabIndex = 6;
             this.ddCategories.Text = "Categories";
             this.ddCategories.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.ddCategories.TextLeftMargin = 5;
             this.ddCategories.SelectedIndexChanged += new System.EventHandler(this.ddCategories_SelectedIndexChanged);
-            // 
-            // btnFilter
-            // 
-            this.btnFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnFilter.FlatAppearance.BorderSize = 0;
-            this.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilter.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilter.Location = new System.Drawing.Point(1117, 17);
-            this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(102, 33);
-            this.btnFilter.TabIndex = 10;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFilter.UseVisualStyleBackColor = false;
-            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // txtProductName
             // 
@@ -222,7 +199,7 @@
             this.txtProductName.SelectionLength = 0;
             this.txtProductName.SelectionStart = 0;
             this.txtProductName.ShortcutsEnabled = true;
-            this.txtProductName.Size = new System.Drawing.Size(188, 32);
+            this.txtProductName.Size = new System.Drawing.Size(256, 32);
             this.txtProductName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtProductName.TabIndex = 0;
             this.txtProductName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -261,7 +238,7 @@
             this.txtBrand.IconRight = null;
             this.txtBrand.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBrand.Lines = new string[0];
-            this.txtBrand.Location = new System.Drawing.Point(206, 18);
+            this.txtBrand.Location = new System.Drawing.Point(280, 18);
             this.txtBrand.Margin = new System.Windows.Forms.Padding(4);
             this.txtBrand.MaxLength = 32767;
             this.txtBrand.MinimumSize = new System.Drawing.Size(1, 1);
@@ -337,7 +314,7 @@
             this.txtMinPrice.IconRight = null;
             this.txtMinPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMinPrice.Lines = new string[0];
-            this.txtMinPrice.Location = new System.Drawing.Point(522, 18);
+            this.txtMinPrice.Location = new System.Drawing.Point(617, 18);
             this.txtMinPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtMinPrice.MaxLength = 32767;
             this.txtMinPrice.MinimumSize = new System.Drawing.Size(1, 1);
@@ -414,7 +391,7 @@
             this.txtMaxPrice.IconRight = null;
             this.txtMaxPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaxPrice.Lines = new string[0];
-            this.txtMaxPrice.Location = new System.Drawing.Point(378, 18);
+            this.txtMaxPrice.Location = new System.Drawing.Point(455, 19);
             this.txtMaxPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaxPrice.MaxLength = 32767;
             this.txtMaxPrice.MinimumSize = new System.Drawing.Size(1, 1);
@@ -463,6 +440,84 @@
             this.txtMaxPrice.WordWrap = true;
             this.txtMaxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxPrice_KeyPress);
             // 
+            // btnLoad
+            // 
+            this.btnLoad.AutoRoundedCorners = true;
+            this.btnLoad.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnLoad.BorderRadius = 15;
+            this.btnLoad.BorderThickness = 1;
+            this.btnLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLoad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLoad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnLoad.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLoad.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnLoad.Location = new System.Drawing.Point(961, 12);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(126, 43);
+            this.btnLoad.TabIndex = 51;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.AutoRoundedCorners = true;
+            this.btnFilter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFilter.BorderRadius = 15;
+            this.btnFilter.BorderThickness = 1;
+            this.btnFilter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFilter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFilter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFilter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFilter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnFilter.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFilter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFilter.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFilter.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnFilter.Location = new System.Drawing.Point(1103, 12);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(126, 43);
+            this.btnFilter.TabIndex = 52;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
+            this.guna2Separator1.Location = new System.Drawing.Point(600, 19);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(10, 31);
+            this.guna2Separator1.TabIndex = 3;
+            // 
+            // flpProduct
+            // 
+            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpProduct.Location = new System.Drawing.Point(0, 68);
+            this.flpProduct.Name = "flpProduct";
+            this.flpProduct.Size = new System.Drawing.Size(1241, 653);
+            this.flpProduct.TabIndex = 3;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(10, 57);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(1196, 11);
+            this.bunifuSeparator1.TabIndex = 53;
+            // 
             // FBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -481,13 +536,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flpProduct;
         private System.Windows.Forms.Panel panelTop;
         private Bunifu.UI.WinForms.BunifuDropdown ddCategories;
-        private System.Windows.Forms.Button btnFilter;
         private Bunifu.UI.WinForms.BunifuTextBox txtProductName;
         private Bunifu.UI.WinForms.BunifuTextBox txtBrand;
         private Bunifu.UI.WinForms.BunifuTextBox txtMinPrice;
         private Bunifu.UI.WinForms.BunifuTextBox txtMaxPrice;
+        private Guna.UI2.WinForms.Guna2Button btnLoad;
+        private Guna.UI2.WinForms.Guna2Button btnFilter;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private System.Windows.Forms.FlowLayoutPanel flpProduct;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
     }
 }

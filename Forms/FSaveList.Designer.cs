@@ -32,17 +32,13 @@
             this.pbLogo = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSingin = new System.Windows.Forms.Label();
             this.flpSavedList = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(63)))), ((int)(((byte)(150)))));
-            this.panelTop.Controls.Add(this.label2);
-            this.panelTop.Controls.Add(this.label1);
+            this.panelTop.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelTop.Controls.Add(this.pbLogo);
             this.panelTop.Controls.Add(this.lblSingin);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,7 +70,7 @@
             this.lblSingin.AutoSize = true;
             this.lblSingin.BackColor = System.Drawing.Color.Transparent;
             this.lblSingin.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.lblSingin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSingin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblSingin.Location = new System.Drawing.Point(77, 18);
             this.lblSingin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSingin.Name = "lblSingin";
@@ -89,32 +85,6 @@
             this.flpSavedList.Name = "flpSavedList";
             this.flpSavedList.Size = new System.Drawing.Size(1241, 659);
             this.flpSavedList.TabIndex = 35;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(1268, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 32);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Saved Prouct List";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(1027, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 32);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Saved Prouct List";
             // 
             // FSaveList
             // 
@@ -139,7 +109,5 @@
         private Bunifu.UI.WinForms.BunifuPictureBox pbLogo;
         private System.Windows.Forms.Label lblSingin;
         private System.Windows.Forms.FlowLayoutPanel flpSavedList;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }

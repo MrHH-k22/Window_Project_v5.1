@@ -57,23 +57,7 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnDetail_Click(object sender, EventArgs e)
-        {
-            FTrackDetail trackDetail = new FTrackDetail(product);
-            trackDetail.Show();
-        }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("The product will be deleted in the system. Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-            if (result == DialogResult.Yes)
-            {
-                productDAO.Delete(product);
-                imageDAO.Delete(product.Id);
-                MessageBox.Show("The product has been successfully deleted from the system.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
 
         private void pbProduct_Click(object sender, EventArgs e)
         {
@@ -105,6 +89,70 @@ namespace Window_Project_v5._1.Forms
 
         }
 
+
+        private void UCProductSell_Load(object sender, EventArgs e)
+        {
+            Dock = DockStyle.Top;
+            if(!(product.BuyerID <=0 || product.BuyerID == null))
+            {
+                Account Buyer = accountDAO.Retrieve(product.BuyerID);
+                lblBuyerName.Text = "Buyer name: " + Buyer.Name;
+            }
+            else
+            {
+                lblBuyerName.Text = "No one buy yet";
+            }
+            if (product.OrderCondition == (int)ordercondition.Displaying)
+            {
+                btnFunction.Text = "Hide product";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
+            {
+                btnFunction.Text = "Next state";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Delivering)
+            {
+                btnFunction.Text = "Next state";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Completed)
+            {
+                btnFunction.Text = "Completed";
+                btnFunction.Enabled = false;
+            }
+            else if (product.OrderCondition == (int)ordercondition.Cancelled)
+            {
+                btnFunction.Text = "Post again";
+                btnFunction.Enabled = true;
+            }
+            else if (product.OrderCondition == (int)ordercondition.hidden)
+            {
+                btnFunction.Text = "Display product";
+                btnFunction.Enabled = true;
+            }
+        }
+
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("The product will be deleted in the system. Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                productDAO.Delete(product);
+                imageDAO.Delete(product.Id);
+                MessageBox.Show("The product has been successfully deleted from the system.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            FTrackDetail trackDetail = new FTrackDetail(product);
+            trackDetail.Show();
+        }
+
         private void btnFunction_Click(object sender, EventArgs e)
         {
             if (product.OrderCondition == (int)ordercondition.Displaying)
@@ -133,50 +181,6 @@ namespace Window_Project_v5._1.Forms
             {
                 product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
-            }
-        }
-
-        private void UCProductSell_Load(object sender, EventArgs e)
-        {
-            Dock = DockStyle.Top;
-            if(!(product.BuyerID <=0 || product.BuyerID == null))
-            {
-                Account Buyer = accountDAO.Retrieve(product.BuyerID);
-                lblBuyerName.Text = "Buyer name: " + Buyer.Name;
-            }
-            else
-            {
-                lblBuyerName.Text = "No one buy yet";
-            }
-            if (product.OrderCondition == (int)ordercondition.Displaying)
-            {
-                btnNextState.Text = "Hide product";
-                btnNextState.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
-            {
-                btnNextState.Text = "Next state";
-                btnNextState.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
-                btnNextState.Text = "Next state";
-                btnNextState.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.Completed)
-            {
-                btnNextState.Text = "Completed";
-                btnNextState.Enabled = false;
-            }
-            else if (product.OrderCondition == (int)ordercondition.Cancelled)
-            {
-                btnNextState.Text = "Post again";
-                btnNextState.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.hidden)
-            {
-                btnNextState.Text = "Display product";
-                btnNextState.Enabled = true;
             }
         }
     }

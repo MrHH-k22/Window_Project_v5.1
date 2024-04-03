@@ -29,54 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProductBuy));
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnDetail = new System.Windows.Forms.Button();
             this.pbProduct = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSellerName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductCondition = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCancel.Location = new System.Drawing.Point(1021, 57);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(89, 37);
-            this.btnCancel.TabIndex = 38;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnDetail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnDetail.FlatAppearance.BorderSize = 0;
-            this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetail.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
-            this.btnDetail.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDetail.Location = new System.Drawing.Point(1124, 57);
-            this.btnDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(89, 37);
-            this.btnDetail.TabIndex = 37;
-            this.btnDetail.Text = "Detail";
-            this.btnDetail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDetail.UseVisualStyleBackColor = false;
-            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // pbProduct
             // 
@@ -160,7 +122,7 @@
             this.lblProductCondition.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblProductCondition.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblProductCondition.Location = new System.Drawing.Point(572, 64);
+            this.lblProductCondition.Location = new System.Drawing.Point(536, 64);
             this.lblProductCondition.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductCondition.Name = "lblProductCondition";
             this.lblProductCondition.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -172,27 +134,74 @@
             // 
             // btnFunction
             // 
+            this.btnFunction.BorderColor = System.Drawing.Color.BlueViolet;
+            this.btnFunction.BorderThickness = 1;
             this.btnFunction.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnFunction.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFunction.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnFunction.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnFunction.FillColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnFunction.ForeColor = System.Drawing.Color.White;
-            this.btnFunction.Location = new System.Drawing.Point(767, 57);
+            this.btnFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnFunction.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFunction.HoverState.BorderColor = System.Drawing.Color.BlueViolet;
+            this.btnFunction.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFunction.HoverState.ForeColor = System.Drawing.Color.BlueViolet;
+            this.btnFunction.Location = new System.Drawing.Point(694, 57);
             this.btnFunction.Name = "btnFunction";
             this.btnFunction.Size = new System.Drawing.Size(230, 37);
-            this.btnFunction.TabIndex = 40;
+            this.btnFunction.TabIndex = 56;
             this.btnFunction.Text = "Next state";
-            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click);
+            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click_1);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnCancel.BorderThickness = 1;
+            this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCancel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnCancel.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(945, 57);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(121, 37);
+            this.btnCancel.TabIndex = 57;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnDetail.BorderThickness = 1;
+            this.btnDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnDetail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDetail.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDetail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnDetail.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDetail.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnDetail.Location = new System.Drawing.Point(1085, 57);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(114, 37);
+            this.btnDetail.TabIndex = 58;
+            this.btnDetail.Text = "Detail";
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // UCProductBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnFunction);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDetail);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnFunction);
             this.Controls.Add(this.pbProduct);
             this.Controls.Add(this.lblSellerName);
             this.Controls.Add(this.lblProductName);
@@ -209,14 +218,13 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.Button btnCancel;
-        public System.Windows.Forms.Button btnDetail;
         public Bunifu.UI.WinForms.BunifuPictureBox pbProduct;
         public Bunifu.UI.WinForms.BunifuLabel lblSellerName;
         public Bunifu.UI.WinForms.BunifuLabel lblProductName;
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
         public Guna.UI2.WinForms.Guna2Button btnFunction;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
+        private Guna.UI2.WinForms.Guna2Button btnDetail;
     }
 }

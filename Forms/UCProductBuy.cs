@@ -54,18 +54,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnDetail_Click(object sender, EventArgs e)
-        {
-            FBuyDetail trackDetail = new FBuyDetail(product, account);
-            trackDetail.Show();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            product.OrderCondition = (int)ordercondition.Cancelled;
-            productDAO.Update(product);
-            productDAO.DeleteBuyerID(product);
-        }
 
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
@@ -95,6 +83,24 @@ namespace Window_Project_v5._1.Forms
         private void lblSellerName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFunction_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            product.OrderCondition = (int)ordercondition.Cancelled;
+            productDAO.Update(product);
+            productDAO.DeleteBuyerID(product);
+        }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            FBuyDetail trackDetail = new FBuyDetail(product, account);
+            trackDetail.Show();
         }
     }
 }

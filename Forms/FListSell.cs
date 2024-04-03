@@ -28,19 +28,13 @@ namespace Window_Project_v5._1.Forms
             this.acc = acc;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FSellDetail fSellDetail = new FSellDetail(acc);
-            fSellDetail.Show();
-        }
-
         private void FListSell_Load(object sender, EventArgs e)
         {
             List<Product> products = productDAO.LoadListWithCondition("", acc.Id);
             foreach (var pd in products)
             {
                 UCProductSell uc = new UCProductSell(pd, acc);
-                uc.btnNextState.Visible = false;
+                uc.btnFunction.Visible = false;
                 flpProduct.Controls.Add(uc);
             }
         }
@@ -52,9 +46,15 @@ namespace Window_Project_v5._1.Forms
             foreach (var pd in products)
             {
                 UCProductSell uc = new UCProductSell(pd, acc);
-                uc.btnNextState.Visible = false;
+                uc.btnFunction.Visible = false;
                 flpProduct.Controls.Add(uc);
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FSellDetail fSellDetail = new FSellDetail(acc);
+            fSellDetail.Show();
         }
     }
 }

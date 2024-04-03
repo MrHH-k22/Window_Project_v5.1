@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Bunifu.Framework.UI;
+using Bunifu.UI.WinForms;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,9 +60,11 @@ namespace Window_Project_v5._1.Forms
                 MemoryStream ms = new MemoryStream(imageData);
 
                 // Assign pictureBox variable based on index
-                PictureBox pictureBox = null;
+                Bunifu.UI.WinForms.BunifuImageButton pictureBox = null;
+
                 switch (pictureBoxIndex)
                 {
+                    
                     case 0:
                         pictureBox = pbImage1;
                         break;
@@ -72,6 +77,7 @@ namespace Window_Project_v5._1.Forms
                     case 3:
                         pictureBox = pbImage4;
                         break;
+                    
                 }
 
                 // Assign image to PictureBox and make it visible
@@ -80,17 +86,38 @@ namespace Window_Project_v5._1.Forms
 
                 pictureBoxIndex++;
             }
+
+            // Hide any remaining PictureBoxes
+            for (int i = pictureBoxIndex; i < 4; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        pbImage1.Visible = false;
+                        break;
+                    case 1:
+                        pbImage2.Visible = false;
+                        break;
+                    case 2:
+                        pbImage3.Visible = false;
+                        break;
+                    case 3:
+                        pbImage3.Visible = false;
+                        break;
+                }
+            }
+
             //check button save
             if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
             {
                 btnSave.Text = "Saved";
-                btnSave.BackColor = Color.WhiteSmoke;
+                btnSave.FillColor = Color.WhiteSmoke;
                 btnSave.ForeColor = Color.Red;
             }
             else
             {
                 btnSave.Text = "Save";
-                btnSave.BackColor = Color.Red;
+                btnSave.FillColor = Color.Red;
                 btnSave.ForeColor = Color.WhiteSmoke;
             }
             //check seller
@@ -137,6 +164,34 @@ namespace Window_Project_v5._1.Forms
 
         }
 
+
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                favoriteDAO.delete(account.Id, product.Id);
+                btnSave.Text = "Save";
+
+                btnSave.FillColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                favoriteDAO.add(account.Id, product.Id);
+                btnSave.Text = "Saved";
+
+                btnSave.FillColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
+        }
+
+
         private void btnBuy_Click(object sender, EventArgs e)
         {
             // Prompt the user with a message box
@@ -157,30 +212,28 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void pbImage2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage2.Image;
+            pbImage2.Image = temp.Image;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void pbImage3_Click(object sender, EventArgs e)
         {
-            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-            {
-                favoriteDAO.delete(account.Id, product.Id);
-                btnSave.Text = "Save";
-
-                btnSave.BackColor = Color.Red;
-                btnSave.ForeColor = Color.WhiteSmoke;
-            }
-            else
-            {
-                favoriteDAO.add(account.Id, product.Id);
-                btnSave.Text = "Saved";
-
-                btnSave.BackColor = Color.WhiteSmoke;
-                btnSave.ForeColor = Color.Red;
-            }
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage3.Image;
+            pbImage3.Image = temp.Image;
         }
 
+        private void pbImage4_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = pbImage1.Image;
+            pbImage1.Image = pbImage4.Image;
+            pbImage4.Image = temp.Image;
+        }
     }
 }

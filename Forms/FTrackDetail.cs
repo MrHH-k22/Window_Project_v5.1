@@ -101,20 +101,10 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            btnSave.Visible = true;
-        }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            btnSave.Visible = false;
-        }
+
+
 
         private void panelBody_Paint(object sender, PaintEventArgs e)
         {
@@ -143,6 +133,26 @@ namespace Window_Project_v5._1.Forms
             temp.Image = pbImage1.Image;
             pbImage1.Image = pbImage4.Image;
             pbImage4.Image = temp.Image;
+        }
+
+        private void pbImage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            btnSave.Visible = false;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            btnSave.Visible = true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

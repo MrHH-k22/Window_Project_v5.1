@@ -66,9 +66,22 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+
+
+
+
+        private System.Drawing.Image ResizeImage(System.Drawing.Image image, int width, int height)
         {
-            this.Close();
+            // Tạo một Bitmap mới với kích thước đã cho
+            Bitmap result = new Bitmap(width, height);
+
+            // Tạo Graphics để vẽ hình ảnh vào Bitmap mới
+            using (Graphics g = Graphics.FromImage(result))
+            {
+                g.DrawImage(image, 0, 0, width, height);
+            }
+
+            return result;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -83,7 +96,7 @@ namespace Window_Project_v5._1.Forms
             account.Birthday = dtpBirthday.Value;
             account.Address = txtAddress.Text;
             account.Avatar = avatarByteArray;
-            
+
             accountDAO.update(account);
         }
 
@@ -113,22 +126,5 @@ namespace Window_Project_v5._1.Forms
                 }
             }
         }
-
-        private System.Drawing.Image ResizeImage(System.Drawing.Image image, int width, int height)
-        {
-            // Tạo một Bitmap mới với kích thước đã cho
-            Bitmap result = new Bitmap(width, height);
-
-            // Tạo Graphics để vẽ hình ảnh vào Bitmap mới
-            using (Graphics g = Graphics.FromImage(result))
-            {
-                g.DrawImage(image, 0, 0, width, height);
-            }
-
-            return result;
-        }
-    
-        
-    
     }
 }

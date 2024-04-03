@@ -74,23 +74,7 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-        private void btnPost_Click(object sender, EventArgs e)
-        {
-            //string category = ddCategories.SelectedValue.ToString();
-            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text, selectedValue, acc.Id);       
-            productDAO.Add(product);
-            //Add images to Productimages
-            product = productDAO.GetLastProduct(); 
-            foreach (string imgLocation in imgLocations) 
-            { 
-                if (string.IsNullOrEmpty(imgLocation)) 
-                {
-                    break; 
-                } 
-                imageDAO.Add(product.Id, imgLocation); 
-            }
-            this.Close();
-        }
+
 
         private double StringToDouble(string str)
         {
@@ -112,6 +96,29 @@ namespace Window_Project_v5._1.Forms
             {
                 selectedValue = ddCategory.SelectedItem.ToString();
             }
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            //string category = ddCategories.SelectedValue.ToString();
+            Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text, selectedValue, acc.Id);
+            productDAO.Add(product);
+            //Add images to Productimages
+            product = productDAO.GetLastProduct();
+            foreach (string imgLocation in imgLocations)
+            {
+                if (string.IsNullOrEmpty(imgLocation))
+                {
+                    break;
+                }
+                imageDAO.Add(product.Id, imgLocation);
+            }
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
