@@ -274,7 +274,7 @@
             // 
             // ptImage
             // 
-            this.ptImage.Image = global::Window_Project_v5._1.Properties.Resources.forgotpw3;
+            this.ptImage.Image = ((System.Drawing.Image)(resources.GetObject("ptImage.Image")));
             this.ptImage.Location = new System.Drawing.Point(132, 11);
             this.ptImage.Name = "ptImage";
             this.ptImage.Size = new System.Drawing.Size(248, 239);
@@ -349,7 +349,7 @@
             // 
             // ptRefresh
             // 
-            this.ptRefresh.Image = global::Window_Project_v5._1.Properties.Resources.png_transparent_computer_icons_refresh_text_monochrome_black_thumbnail;
+            this.ptRefresh.Image = ((System.Drawing.Image)(resources.GetObject("ptRefresh.Image")));
             this.ptRefresh.Location = new System.Drawing.Point(360, 302);
             this.ptRefresh.Name = "ptRefresh";
             this.ptRefresh.Size = new System.Drawing.Size(44, 50);
