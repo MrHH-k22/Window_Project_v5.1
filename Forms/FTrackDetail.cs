@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FTrackDetail : Form
     {
         private ImageDAO imageDAO = new ImageDAO();
+        private Product pd;
 
         public FTrackDetail()
         {
@@ -24,8 +25,7 @@ namespace Window_Project_v5._1.Forms
         public FTrackDetail(Product pd)
         {
             InitializeComponent();
-            
-            btnSave.Visible = false;
+            this.pd = pd;
 
             lblProductName.Text = pd.Name;
             lblPrice.Text = pd.SalePrice.ToString() + " VND";
@@ -139,15 +139,12 @@ namespace Window_Project_v5._1.Forms
         {
 
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            btnSave.Visible = false;
-        }
-
+            
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            btnSave.Visible = true;
+            FSellDetail fSellDetail = new FSellDetail(pd);
+            fSellDetail.Show();
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

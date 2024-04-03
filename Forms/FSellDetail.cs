@@ -17,13 +17,33 @@ namespace Window_Project_v5._1.Forms
         private ProductDAO productDAO = new ProductDAO();
         private ImageDAO imageDAO = new ImageDAO();
         private Account acc = new Account();
+        private AccountDAO accountDAO = new AccountDAO();
         private string selectedValue = null;
-
+        private bool edit = false;
+        private Product pd;
         private string[] imgLocations = new string[4];
 
         public FSellDetail()
         {
             InitializeComponent();
+        }
+
+        public FSellDetail(Product pd)
+        {
+            InitializeComponent();
+            this.pd = pd;
+            txtCondition.Text = pd.Condition.ToString();
+            txtStatus.Text = pd.Status.ToString();
+            txtBuyPrice.Text = pd.OriginalPrice.ToString();
+            txtSellPrice.Text = pd.SalePrice.ToString();
+            txtProductTitle.Text = pd.Name.ToString();
+            txtDescription.Text = pd.Description.ToString();
+            txtBrand.Text = pd.Brand.ToString();
+            ddCategory.SelectedItem = pd.Category.ToString();
+            selectedValue = pd.Category.ToString();
+            acc = accountDAO.Retrieve(pd.SellerID);
+            edit = true;
+            btnPost.Text = "Update product";
         }
 
         public FSellDetail(Account acc)
@@ -102,16 +122,41 @@ namespace Window_Project_v5._1.Forms
         {
             //string category = ddCategories.SelectedValue.ToString();
             Product product = new Product(txtCondition.Text, txtStatus.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), txtProductTitle.Text, txtDescription.Text, txtBrand.Text, selectedValue, acc.Id);
-            productDAO.Add(product);
-            //Add images to Productimages
-            product = productDAO.GetLastProduct();
-            foreach (string imgLocation in imgLocations)
+            if (!edit)
             {
-                if (string.IsNullOrEmpty(imgLocation))
+                productDAO.Add(product);
+                //Add images to Productimages
+                product = productDAO.GetLastProduct();
+                foreach (string imgLocation in imgLocations)
                 {
-                    break;
+                    if (string.IsNullOrEmpty(imgLocation))
+                    {
+                        break;
+                    }
+                    imageDAO.Add(product.Id, imgLocation);
                 }
-                imageDAO.Add(product.Id, imgLocation);
+            } else
+            {
+                //Update product
+                pd.Condition = txtCondition.Text;
+                pd.Status = txtStatus.Text;
+                pd.Brand = txtBrand.Text;
+                pd.OriginalPrice = StringToDouble(txtBuyPrice.Text);
+                pd.SalePrice = StringToDouble(txtSellPrice.Text);
+                pd.Description = txtDescription.Text;
+                pd.Category = selectedValue;
+                pd.Name = txtProductTitle.Text;
+                productDAO.Update(pd);
+                //Update Images
+                imageDAO.Delete(pd.Id);
+                foreach (string imgLocation in imgLocations)
+                {
+                    if (string.IsNullOrEmpty(imgLocation))
+                    {
+                        break;
+                    }
+                    imageDAO.Add(pd.Id, imgLocation);
+                }
             }
             this.Close();
         }
