@@ -190,14 +190,28 @@ namespace Window_Project_v5._1.Forms
             // Check if the user clicked "Yes"
             if (result == DialogResult.Yes)
             {
-                // Proceed with the purchase
-                if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+  
+                if(account.Money < product.SalePrice)
                 {
-                    favoriteDAO.delete(account.Id, product.Id);
+                    MessageBox.Show("You dont have enough money to buy!");
                 }
-                product.BuyerID = account.Id;
-                product.OrderCondition = (int)ordercondition.WaitforConfirmation;
-                productDAO.Update(product);
+                else
+                {
+                    // Proceed with the purchase
+                    account.Money -= product.SalePrice;
+                    accountDAO.update(account);
+                    //get seller
+                    Account Seller = accountDAO.Retrieve(product.SellerID);
+                    Seller.Money += product.SalePrice;
+                    accountDAO.update(Seller);
+                    if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+                    {
+                        favoriteDAO.delete(account.Id, product.Id);
+                    }
+                    product.BuyerID = account.Id;
+                    product.OrderCondition = (int)ordercondition.WaitforConfirmation;
+                    productDAO.Update(product);
+                }
                 this.Close();
             }
         }

@@ -71,6 +71,7 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.Completed)
             {
+                btnCancel.Enabled = false;
                 btnFunction.Text = "Completed";
             }
         }
@@ -92,6 +93,13 @@ namespace Window_Project_v5._1.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            account.Money += product.SalePrice;
+            accountDAO.update(account);
+            //get seller
+            Account Seller = accountDAO.Retrieve(product.SellerID);
+            Seller.Money -= product.SalePrice;
+            accountDAO.update(Seller);
+
             product.OrderCondition = (int)ordercondition.Cancelled;
             productDAO.Update(product);
             productDAO.DeleteBuyerID(product);

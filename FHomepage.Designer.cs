@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHomepage));
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelBody = new Bunifu.UI.WinForms.BunifuPanel();
             this.panelLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnMoney = new System.Windows.Forms.Button();
@@ -46,12 +47,11 @@
             this.btnSell = new System.Windows.Forms.Button();
             this.btnSeller = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelLeft.SuspendLayout();
             this.panelBuyerSubmenu.SuspendLayout();
             this.panelSellerSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -93,6 +93,17 @@
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.pbLogo;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(229, 100);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
             // panelBody
             // 
@@ -228,6 +239,8 @@
             this.btnSaveList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSaveList.UseVisualStyleBackColor = false;
             this.btnSaveList.Click += new System.EventHandler(this.btnSaveList_Click);
+            this.btnSaveList.MouseEnter += new System.EventHandler(this.btnSaveList_MouseEnter);
+            this.btnSaveList.MouseLeave += new System.EventHandler(this.btnSaveList_MouseLeave);
             // 
             // btnTrackOrder
             // 
@@ -409,17 +422,6 @@
             this.panelLogo.Size = new System.Drawing.Size(229, 100);
             this.panelLogo.TabIndex = 8;
             // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v2;
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(229, 100);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            // 
             // FHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -435,11 +437,11 @@
             this.Padding = new System.Windows.Forms.Padding(6);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHomepage";
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelLeft.ResumeLayout(false);
             this.panelBuyerSubmenu.ResumeLayout(false);
             this.panelSellerSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
