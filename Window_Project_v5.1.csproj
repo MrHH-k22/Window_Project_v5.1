@@ -279,6 +279,12 @@
     <Compile Include="Forms\UCProductSell.Designer.cs">
       <DependentUpon>UCProductSell.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRating.Designer.cs">
+      <DependentUpon>FRating.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProduct.resx">
       <DependentUpon>UCProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRating.resx">
+      <DependentUpon>FRating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSignin.resx">
       <DependentUpon>FSignin.cs</DependentUpon>

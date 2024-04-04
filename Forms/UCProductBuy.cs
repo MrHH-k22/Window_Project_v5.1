@@ -28,6 +28,7 @@ namespace Window_Project_v5._1.Forms
         public UCProductBuy(Product pd, Account acc)
         {
             InitializeComponent();
+            this.Controls.Remove(btnRate);
             this.product = pd;
             account = acc;
             lblPrice.Text = pd.SalePrice.ToString();
@@ -73,23 +74,12 @@ namespace Window_Project_v5._1.Forms
             {
                 btnFunction.Text = "Completed";
             }
+            if(btnFunction.Text == "Completed")
+            {
+                this.Controls.Remove(btnCancel);
+                this.Controls.Add(btnRate);
+            }
         }
-
-        private void btnFunction_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSellerName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnFunction_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             product.OrderCondition = (int)ordercondition.Cancelled;
@@ -101,6 +91,12 @@ namespace Window_Project_v5._1.Forms
         {
             FBuyDetail trackDetail = new FBuyDetail(product, account);
             trackDetail.Show();
+        }
+
+        private void btnRate_Click(object sender, EventArgs e)
+        {
+            FRating f = new FRating();
+            f.Show();
         }
     }
 }

@@ -37,6 +37,7 @@
             this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRate = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,6 @@
             this.lblSellerName.Text = "Seller Name";
             this.lblSellerName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblSellerName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lblSellerName.Click += new System.EventHandler(this.lblSellerName_Click);
             // 
             // lblProductName
             // 
@@ -151,7 +151,6 @@
             this.btnFunction.Size = new System.Drawing.Size(230, 37);
             this.btnFunction.TabIndex = 56;
             this.btnFunction.Text = "Next state";
-            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click_1);
             // 
             // btnCancel
             // 
@@ -195,11 +194,33 @@
             this.btnDetail.Text = "Detail";
             this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
+            // btnRate
+            // 
+            this.btnRate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnRate.BorderThickness = 1;
+            this.btnRate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnRate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnRate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
+            this.btnRate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRate.Location = new System.Drawing.Point(945, 57);
+            this.btnRate.Name = "btnRate";
+            this.btnRate.Size = new System.Drawing.Size(121, 37);
+            this.btnRate.TabIndex = 57;
+            this.btnRate.Text = "Rate";
+            this.btnRate.Click += new System.EventHandler(this.btnRate_Click);
+            // 
             // UCProductBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnDetail);
+            this.Controls.Add(this.btnRate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnFunction);
             this.Controls.Add(this.pbProduct);
@@ -226,5 +247,6 @@
         public Guna.UI2.WinForms.Guna2Button btnFunction;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnDetail;
+        private Guna.UI2.WinForms.Guna2Button btnRate;
     }
 }
