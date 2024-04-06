@@ -11,25 +11,27 @@ using System.Windows.Forms;
 
 namespace Window_Project_v5._1.Forms
 {
-    public partial class FSaveList : Form
+    public partial class FCart : Form
     {
-        private ProductDAO productDAO = new ProductDAO();
+        private AccountDAO accountDAO = new AccountDAO();
         private CartDAO cartDAO = new CartDAO();
         private Account account = new Account();
-        public FSaveList()
+        private List<Product> products = new List<Product>();
+
+        public FCart()
         {
             InitializeComponent();
         }
 
-        public FSaveList(Account acc)
+        public FCart(Account acc)
         {
             InitializeComponent();
-            account = acc;
+            account = accountDAO.Retrieve(acc.Id);
         }
 
-        private void FSaveList_Load(object sender, EventArgs e)
+        private void FCart_Load(object sender, EventArgs e)
         {
-            List<Product> products = cartDAO.loadListWithAccountID(account.Id);
+            products = cartDAO.loadListWithAccountID(account.Id);
             double total = 0;
             foreach (var pd in products)
             {
@@ -37,11 +39,20 @@ namespace Window_Project_v5._1.Forms
                 {
                     UCProductBuy uc = new UCProductBuy(pd, account);
                     total += pd.SalePrice;
-                    uc.btnFunction.Visible = false;
                     flpSavedList.Controls.Add(uc);
+                } else
+                {
+                    cartDAO.delete(account.Id, pd.Id);
                 }
             }
             lblTotalMoney.Text = total.ToString("N0") + " VND";
+        }
+
+        private void btnPurchase_Click(object sender, EventArgs e)
+        {
+            FDelivery delivery = new FDelivery(account, products);
+            delivery.Show();
+            FCart_Load(sender, e);
         }
     }
 }

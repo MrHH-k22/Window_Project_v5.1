@@ -19,6 +19,7 @@ namespace Window_Project_v5._1.Forms
         private AccountDAO accountDAO = new AccountDAO();
         private Product product;
         private ProductDAO productDAO = new ProductDAO();
+        private CartDAO cartDAO = new CartDAO();
 
         public UCProductBuy()
         {
@@ -92,9 +93,15 @@ namespace Window_Project_v5._1.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            product.OrderCondition = (int)ordercondition.Cancelled;
-            productDAO.Update(product);
-            productDAO.DeleteBuyerID(product);
+            if (product.BuyerID != 0)
+            {
+                product.OrderCondition = (int)ordercondition.Cancelled;
+                productDAO.Update(product);
+                productDAO.DeleteBuyerID(product);
+            } else
+            {
+                cartDAO.delete(account.Id, product.Id);
+            }
         }
 
         private void btnDetail_Click(object sender, EventArgs e)
