@@ -20,7 +20,7 @@ namespace Window_Project_v5._1.Forms
         private ProductDAO productDAO = new ProductDAO();
         private Account acc = new Account();
         private double total = 0;
-        private bool payOnline = false;
+        private int payMethod = -1;
 
         public FDelivery()
         {
@@ -36,7 +36,6 @@ namespace Window_Project_v5._1.Forms
 
         private void FDelivery_Load(object sender, EventArgs e)
         {
-            acc.Money = -1;
             txtAddress.Text = acc.Address;
             txtPhone.Text = acc.Phone;
             foreach (Product p in products)
@@ -59,13 +58,17 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtAddress.Text))
+            if (string.IsNullOrEmpty(txtPhone.Text))
+            {
+                MessageBox.Show("Phone has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if(string.IsNullOrEmpty(txtAddress.Text))
             {
                 MessageBox.Show("Address has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (string.IsNullOrEmpty(txtPhone.Text))
+            else if (payMethod == -1)
             {
-                MessageBox.Show("Phone has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Payment Method has not been chosen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -94,12 +97,12 @@ namespace Window_Project_v5._1.Forms
 
         private void rbtnCash_CheckedChanged(object sender, EventArgs e)
         {
-            payOnline = false;
+            payMethod = 0;
         }
 
         private void rbtnOnline_CheckedChanged(object sender, EventArgs e)
         {
-            payOnline = true;
+            payMethod = 1;
         }
     }
 }
