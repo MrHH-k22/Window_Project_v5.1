@@ -46,10 +46,6 @@ namespace Window_Project_v5._1.Forms
                     {
                         tpWaitConfirm.Controls.Add(uc); 
                     }
-                    else if(pd.OrderCondition == (int)ordercondition.Delivering)
-                    {
-                        tpDelivering.Controls.Add(uc);
-                    }
                     else if(pd.OrderCondition == (int)ordercondition.Completed)
                     {
                         tpCompleted.Controls.Add(uc);

@@ -47,22 +47,28 @@ namespace Window_Project_v5._1.Forms
                 }
                 else
                 {
-                    FHomepage fHomepage = new FHomepage(acc);
-                    fHomepage.Show();
+                    this.Hide();
+                    FHomepage f = new FHomepage();
+                    f.Closed += (s, args) => this.Close();
+                    f.Show();
                 }
             }
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            FSignup fSignup = new FSignup();
-            fSignup.Show();
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void linkForgotPw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FForgetPassword fForgetPassword = new FForgetPassword();
-            fForgetPassword.Show();
+            this.Hide();
+            FForgetPassword f = new FForgetPassword();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

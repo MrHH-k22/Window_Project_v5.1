@@ -26,6 +26,7 @@ namespace Window_Project_v5._1
         private string category;
         private int orderCondition;
 
+
         public Product()
         {
         }
@@ -144,6 +145,7 @@ namespace Window_Project_v5._1
         public int BillStatus { get => billStatus; set => billStatus = value; }
         public int ViewCount { get => viewCount; set => viewCount = value; }
         public int OrderCondition { get => orderCondition; set => orderCondition = value; }
+
 
         public string GetBillStatus()
         {

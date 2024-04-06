@@ -37,7 +37,6 @@ namespace Window_Project_v5._1.Forms
             List<int> allCustomers = productDAO.LoadCustomers(acc.Id);
             int Displaying = 0;
             int waitForConfirmation = 0;
-            int Delivering = 0;
             int completed = 0;
             int cancelled = 0;
             int hidden = 0;
@@ -51,10 +50,6 @@ namespace Window_Project_v5._1.Forms
                 else if (pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
                 {
                     waitForConfirmation++;
-                }
-                else if (pd.OrderCondition == (int)ordercondition.Delivering)
-                {
-                    Delivering++;
                 }
                 else if (pd.OrderCondition == (int)ordercondition.Completed)
                 {
@@ -78,7 +73,6 @@ namespace Window_Project_v5._1.Forms
             lblCustomersNo.Text = allCustomers.Count.ToString();
             lblDisplayingNo.Text = Displaying.ToString();
             lblWaitForConfirmationNo.Text = waitForConfirmation.ToString();
-            lblDeliveringNo.Text = Delivering.ToString();
             lblCompletedNo.Text = completed.ToString();
             lblCancelledNo.Text = cancelled.ToString();
             lblHiddenNo.Text = hidden.ToString();

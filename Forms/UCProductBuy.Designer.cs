@@ -34,7 +34,6 @@
             this.lblProductName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductCondition = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
@@ -132,27 +131,6 @@
             this.lblProductCondition.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblProductCondition.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // btnFunction
-            // 
-            this.btnFunction.BorderColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.BorderThickness = 1;
-            this.btnFunction.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFunction.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFunction.FillColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnFunction.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFunction.HoverState.BorderColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFunction.HoverState.ForeColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Location = new System.Drawing.Point(694, 57);
-            this.btnFunction.Name = "btnFunction";
-            this.btnFunction.Size = new System.Drawing.Size(230, 37);
-            this.btnFunction.TabIndex = 56;
-            this.btnFunction.Text = "Next state";
-            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click_1);
-            // 
             // btnCancel
             // 
             this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
@@ -201,7 +179,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnFunction);
             this.Controls.Add(this.pbProduct);
             this.Controls.Add(this.lblSellerName);
             this.Controls.Add(this.lblProductName);
@@ -223,7 +200,6 @@
         public Bunifu.UI.WinForms.BunifuLabel lblProductName;
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
-        public Guna.UI2.WinForms.Guna2Button btnFunction;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnDetail;
     }

@@ -20,8 +20,10 @@ namespace Window_Project_v5._1.Forms
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            FSignin fSignin = new FSignin();
-            fSignin.Show();
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

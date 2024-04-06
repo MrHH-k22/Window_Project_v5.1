@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,15 @@ namespace Window_Project_v5._1.Forms
         public FHomepage()
         {
             InitializeComponent();
-            customizeDesign();
         }
         public FHomepage(Account acc)
         {
             InitializeComponent();
-            customizeDesign();
+
             this.acc = acc;
         }
         
-
+        /*
         public void customizeDesign()
         {
             panelSellerSubmenu.Visible = false;
@@ -44,6 +44,7 @@ namespace Window_Project_v5._1.Forms
                 panelBuyerSubmenu.Visible = false;
             }
         }
+        
 
         public void showSubmenu(Panel subMenu)
         {
@@ -55,6 +56,7 @@ namespace Window_Project_v5._1.Forms
             else
                 subMenu.Visible = false;
         }
+        */
 
         public void OpenChildForm(Form childform, object btnSender)
         {
@@ -66,38 +68,98 @@ namespace Window_Project_v5._1.Forms
             childform.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;
             childform.Dock = DockStyle.Fill;
-            this.panelBody.Controls.Add(childform);
-            this.panelBody.Tag = childform;
+            this.containerBody.Controls.Add(childform);
+            this.containerBody.Tag = childform;
             childform.BringToFront();
             childform.Show();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        /*
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FProductManagement(acc), sender);
+        }
+
+        private void btnSavedProducts_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FSaveList(acc), sender);
+        }
+
+        private void btnOrderAnalysis_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FOrderAnalysis(acc), sender);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FInformation(acc), sender);
+        }
+
+        private void btnMoney_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FInformation(acc), sender);
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
+        */
 
-        private void btnInformation_Click(object sender, EventArgs e)
+        private void FHomepage_Load(object sender, EventArgs e)
         {
-            FInformation fInformation = new FInformation(acc);
-            fInformation.Show();
+            containerMenu.SendToBack();
+            OpenChildForm(new Forms.FBuy(acc), sender);
         }
 
-        private void btnSeller_Click(object sender, EventArgs e)
+        private bool IsControlAtFront(Control control)
         {
-            if (panelSellerSubmenu.Visible == true)
+            while (control.Parent != null)
             {
-                hideSubmenu();
+                if (control.Parent.Controls.GetChildIndex(control) == 0)
+                {
+                    control = control.Parent;
+                    if (control.Parent == null)
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if(IsControlAtFront(containerMenu))
+            {
+                containerMenu.SendToBack();
             }
             else
             {
-                showSubmenu(panelSellerSubmenu);
+                containerMenu.BringToFront();
             }
         }
 
-        private void btnSell_Click(object sender, EventArgs e)
+
+
+        private void btnPurchasesOrder_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FListSell(acc), sender);
+            OpenChildForm(new Forms.FTrackOrder(acc), sender);
+        }
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FProductManagement(acc), sender);
+        }
+
+        private void btnSavedProducts_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FSaveList(acc), sender);
         }
 
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
@@ -105,159 +167,27 @@ namespace Window_Project_v5._1.Forms
             OpenChildForm(new Forms.FOrderAnalysis(acc), sender);
         }
 
-        private void btnBuyer_Click(object sender, EventArgs e)
+        private void btnInformation_Click(object sender, EventArgs e)
         {
-            if (panelBuyerSubmenu.Visible == true)
-            {
-                hideSubmenu();
-            }
-            else
-            {
-                showSubmenu(panelBuyerSubmenu);
-            }
-        }
-
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FBuy(acc), sender);
-        }
-
-        private void btnTrackOrder_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FTrackOrder(acc), sender);
-        }
-
-        private void btnManagement_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FProductManagement(acc), sender);
-        }
-
-        private void btnSeller_MouseEnter(object sender, EventArgs e)
-        {
-            btnSeller.BackColor = Color.FromArgb(255, 193, 0);
-        }
-
-        private void btnSeller_MouseLeave(object sender, EventArgs e)
-        {
-            btnSeller.BackColor = Color.FromArgb(54, 50, 132);
-        }
-
-        private void btnSell_MouseEnter(object sender, EventArgs e)
-        {
-            btnSell.BackColor = Color.FromArgb(255, 193, 0);
-        }
-
-        private void btnSell_MouseLeave(object sender, EventArgs e)
-        {
-            btnSell.BackColor = Color.FromArgb(40, 37, 110);
-
-        }
-
-        private void btnOrderAnalysis_MouseEnter(object sender, EventArgs e)
-        {
-            btnOrderAnalysis.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnOrderAnalysis_MouseLeave(object sender, EventArgs e)
-        {
-            btnOrderAnalysis.BackColor = Color.FromArgb(40, 37, 110);
-
-        }
-
-        private void btnManagement_MouseEnter(object sender, EventArgs e)
-        {
-            btnManagement.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnManagement_MouseLeave(object sender, EventArgs e)
-        {
-            btnManagement.BackColor = Color.FromArgb(40, 37, 110);
-
-        }
-
-        private void btnBuyer_MouseEnter(object sender, EventArgs e)
-        {
-            btnBuyer.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnBuyer_MouseLeave(object sender, EventArgs e)
-        {
-            btnBuyer.BackColor = Color.FromArgb(54, 50, 132);
-
-        }
-
-        private void btnBuy_MouseEnter(object sender, EventArgs e)
-        {
-            btnBuy.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnBuy_MouseLeave(object sender, EventArgs e)
-        {
-            btnBuy.BackColor = Color.FromArgb(40, 37, 110);
-
-        }
-
-        private void btnTrackOrder_MouseEnter(object sender, EventArgs e)
-        {
-            btnTrackOrder.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnTrackOrder_MouseLeave(object sender, EventArgs e)
-        {
-            btnTrackOrder.BackColor = Color.FromArgb(40, 37, 110);
-
-        }
-
-        private void btnInformation_MouseEnter(object sender, EventArgs e)
-        {
-            btnInformation.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnInformation_MouseLeave(object sender, EventArgs e)
-        {
-            btnInformation.BackColor = Color.FromArgb(54, 50, 132);
-
-        }
-
-        private void btnLogout_MouseEnter(object sender, EventArgs e)
-        {
-            btnLogout.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnLogout_MouseLeave(object sender, EventArgs e)
-        {
-            btnLogout.BackColor = Color.FromArgb(54, 50, 132);
-
+            OpenChildForm(new Forms.FInformation(acc), sender);
         }
 
         private void btnMoney_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FMoney(acc), sender);
+            OpenChildForm(new Forms.FInformation(acc), sender);
         }
 
-        private void btnSaveList_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FSaveList(acc), sender);
-
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
-        private void btnSaveList_MouseEnter(object sender, EventArgs e)
+        private void btnPostProduct_Click(object sender, EventArgs e)
         {
-            btnSaveList.BackColor = Color.FromArgb(255, 193, 0);
-
-        }
-
-        private void btnSaveList_MouseLeave(object sender, EventArgs e)
-        {
-            btnSaveList.BackColor = Color.FromArgb(54, 50, 132);
-
+            OpenChildForm(new Forms.FSellDetail(acc), sender);
         }
     }
 }

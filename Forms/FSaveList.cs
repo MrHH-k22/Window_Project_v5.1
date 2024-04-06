@@ -34,7 +34,6 @@ namespace Window_Project_v5._1.Forms
             foreach (var pd in products)
             {
                 UCProductBuy uc = new UCProductBuy(pd, account);
-                uc.btnFunction.Visible = false;
                 flpSavedList.Controls.Add(uc);
             }
 

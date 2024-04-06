@@ -109,13 +109,7 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                btnFunction.Text = "Next state";
-                btnFunction.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
-                btnFunction.Text = "Next state";
-                btnCancel.Enabled = false;
+                btnFunction.Text = "Confirm";
                 btnFunction.Enabled = true;
             }
             else if (product.OrderCondition == (int)ordercondition.Completed)
@@ -170,14 +164,9 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                product.OrderCondition = (int)ordercondition.Delivering;
-                productDAO.Update(product);
-
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
                 product.OrderCondition = (int)ordercondition.Completed;
                 productDAO.Update(product);
+
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {
