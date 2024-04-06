@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellDetail));
             this.panelBody = new System.Windows.Forms.Panel();
+            this.txtDescription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBrand = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtProductTitle = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSellPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBuyPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCondition = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnPost = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -46,13 +53,6 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSingin = new System.Windows.Forms.Label();
-            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCondition = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBuyPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSellPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtProductTitle = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBrand = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelBody.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -87,6 +87,177 @@
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1027, 546);
             this.panelBody.TabIndex = 0;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.AutoScroll = true;
+            this.txtDescription.BackColor = System.Drawing.Color.Transparent;
+            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescription.DefaultText = "";
+            this.txtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDescription.ForeColor = System.Drawing.Color.Black;
+            this.txtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtDescription.Location = new System.Drawing.Point(401, 577);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.PasswordChar = '\0';
+            this.txtDescription.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtDescription.PlaceholderText = "Description";
+            this.txtDescription.SelectedText = "";
+            this.txtDescription.Size = new System.Drawing.Size(579, 107);
+            this.txtDescription.TabIndex = 84;
+            // 
+            // txtBrand
+            // 
+            this.txtBrand.AutoScroll = true;
+            this.txtBrand.BackColor = System.Drawing.Color.Transparent;
+            this.txtBrand.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrand.DefaultText = "";
+            this.txtBrand.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrand.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrand.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrand.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrand.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtBrand.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBrand.ForeColor = System.Drawing.Color.Black;
+            this.txtBrand.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtBrand.Location = new System.Drawing.Point(401, 517);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.PasswordChar = '\0';
+            this.txtBrand.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtBrand.PlaceholderText = "Brand";
+            this.txtBrand.SelectedText = "";
+            this.txtBrand.Size = new System.Drawing.Size(577, 43);
+            this.txtBrand.TabIndex = 83;
+            // 
+            // txtProductTitle
+            // 
+            this.txtProductTitle.AutoScroll = true;
+            this.txtProductTitle.BackColor = System.Drawing.Color.Transparent;
+            this.txtProductTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductTitle.DefaultText = "";
+            this.txtProductTitle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProductTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProductTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductTitle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtProductTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtProductTitle.ForeColor = System.Drawing.Color.Black;
+            this.txtProductTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtProductTitle.Location = new System.Drawing.Point(401, 459);
+            this.txtProductTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtProductTitle.Name = "txtProductTitle";
+            this.txtProductTitle.PasswordChar = '\0';
+            this.txtProductTitle.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtProductTitle.PlaceholderText = "Title";
+            this.txtProductTitle.SelectedText = "";
+            this.txtProductTitle.Size = new System.Drawing.Size(577, 43);
+            this.txtProductTitle.TabIndex = 82;
+            // 
+            // txtSellPrice
+            // 
+            this.txtSellPrice.AutoScroll = true;
+            this.txtSellPrice.BackColor = System.Drawing.Color.Transparent;
+            this.txtSellPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSellPrice.DefaultText = "";
+            this.txtSellPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSellPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSellPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSellPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSellPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtSellPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSellPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtSellPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtSellPrice.Location = new System.Drawing.Point(398, 374);
+            this.txtSellPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSellPrice.Name = "txtSellPrice";
+            this.txtSellPrice.PasswordChar = '\0';
+            this.txtSellPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtSellPrice.PlaceholderText = "Sell Price (VND)";
+            this.txtSellPrice.SelectedText = "";
+            this.txtSellPrice.Size = new System.Drawing.Size(577, 43);
+            this.txtSellPrice.TabIndex = 81;
+            // 
+            // txtBuyPrice
+            // 
+            this.txtBuyPrice.AutoScroll = true;
+            this.txtBuyPrice.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuyPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuyPrice.DefaultText = "";
+            this.txtBuyPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBuyPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBuyPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuyPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuyPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtBuyPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBuyPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtBuyPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtBuyPrice.Location = new System.Drawing.Point(397, 319);
+            this.txtBuyPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBuyPrice.Name = "txtBuyPrice";
+            this.txtBuyPrice.PasswordChar = '\0';
+            this.txtBuyPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtBuyPrice.PlaceholderText = "Buy Price (VND)";
+            this.txtBuyPrice.SelectedText = "";
+            this.txtBuyPrice.Size = new System.Drawing.Size(577, 43);
+            this.txtBuyPrice.TabIndex = 80;
+            // 
+            // txtCondition
+            // 
+            this.txtCondition.AutoScroll = true;
+            this.txtCondition.BackColor = System.Drawing.Color.Transparent;
+            this.txtCondition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCondition.DefaultText = "";
+            this.txtCondition.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCondition.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCondition.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCondition.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCondition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtCondition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCondition.ForeColor = System.Drawing.Color.Black;
+            this.txtCondition.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtCondition.Location = new System.Drawing.Point(491, 114);
+            this.txtCondition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCondition.Name = "txtCondition";
+            this.txtCondition.PasswordChar = '\0';
+            this.txtCondition.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtCondition.PlaceholderText = "%";
+            this.txtCondition.SelectedText = "";
+            this.txtCondition.Size = new System.Drawing.Size(102, 30);
+            this.txtCondition.TabIndex = 79;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.AutoScroll = true;
+            this.txtStatus.BackColor = System.Drawing.Color.Transparent;
+            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStatus.DefaultText = "";
+            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStatus.ForeColor = System.Drawing.Color.Black;
+            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtStatus.Location = new System.Drawing.Point(397, 198);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStatus.Multiline = true;
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.PasswordChar = '\0';
+            this.txtStatus.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtStatus.PlaceholderText = "Status";
+            this.txtStatus.SelectedText = "";
+            this.txtStatus.Size = new System.Drawing.Size(579, 107);
+            this.txtStatus.TabIndex = 78;
+            
             // 
             // btnClose
             // 
@@ -499,176 +670,6 @@
             this.lblSingin.TabIndex = 45;
             this.lblSingin.Text = "Post Product";
             // 
-            // txtStatus
-            // 
-            this.txtStatus.AutoScroll = true;
-            this.txtStatus.BackColor = System.Drawing.Color.Transparent;
-            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStatus.DefaultText = "";
-            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtStatus.ForeColor = System.Drawing.Color.Black;
-            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtStatus.Location = new System.Drawing.Point(397, 198);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStatus.Multiline = true;
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.PasswordChar = '\0';
-            this.txtStatus.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtStatus.PlaceholderText = "Status";
-            this.txtStatus.SelectedText = "";
-            this.txtStatus.Size = new System.Drawing.Size(579, 107);
-            this.txtStatus.TabIndex = 78;
-            // 
-            // txtCondition
-            // 
-            this.txtCondition.AutoScroll = true;
-            this.txtCondition.BackColor = System.Drawing.Color.Transparent;
-            this.txtCondition.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCondition.DefaultText = "";
-            this.txtCondition.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCondition.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCondition.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCondition.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCondition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtCondition.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCondition.ForeColor = System.Drawing.Color.Black;
-            this.txtCondition.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtCondition.Location = new System.Drawing.Point(491, 114);
-            this.txtCondition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCondition.Name = "txtCondition";
-            this.txtCondition.PasswordChar = '\0';
-            this.txtCondition.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtCondition.PlaceholderText = "%";
-            this.txtCondition.SelectedText = "";
-            this.txtCondition.Size = new System.Drawing.Size(102, 30);
-            this.txtCondition.TabIndex = 79;
-            // 
-            // txtBuyPrice
-            // 
-            this.txtBuyPrice.AutoScroll = true;
-            this.txtBuyPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txtBuyPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuyPrice.DefaultText = "";
-            this.txtBuyPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBuyPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBuyPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBuyPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBuyPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtBuyPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBuyPrice.ForeColor = System.Drawing.Color.Black;
-            this.txtBuyPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtBuyPrice.Location = new System.Drawing.Point(397, 319);
-            this.txtBuyPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBuyPrice.Name = "txtBuyPrice";
-            this.txtBuyPrice.PasswordChar = '\0';
-            this.txtBuyPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtBuyPrice.PlaceholderText = "Buy Price (VND)";
-            this.txtBuyPrice.SelectedText = "";
-            this.txtBuyPrice.Size = new System.Drawing.Size(577, 43);
-            this.txtBuyPrice.TabIndex = 80;
-            // 
-            // txtSellPrice
-            // 
-            this.txtSellPrice.AutoScroll = true;
-            this.txtSellPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txtSellPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSellPrice.DefaultText = "";
-            this.txtSellPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSellPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSellPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSellPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSellPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtSellPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSellPrice.ForeColor = System.Drawing.Color.Black;
-            this.txtSellPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtSellPrice.Location = new System.Drawing.Point(398, 374);
-            this.txtSellPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSellPrice.Name = "txtSellPrice";
-            this.txtSellPrice.PasswordChar = '\0';
-            this.txtSellPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtSellPrice.PlaceholderText = "Sell Price (VND)";
-            this.txtSellPrice.SelectedText = "";
-            this.txtSellPrice.Size = new System.Drawing.Size(577, 43);
-            this.txtSellPrice.TabIndex = 81;
-            // 
-            // txtProductTitle
-            // 
-            this.txtProductTitle.AutoScroll = true;
-            this.txtProductTitle.BackColor = System.Drawing.Color.Transparent;
-            this.txtProductTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProductTitle.DefaultText = "";
-            this.txtProductTitle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProductTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProductTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductTitle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtProductTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProductTitle.ForeColor = System.Drawing.Color.Black;
-            this.txtProductTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtProductTitle.Location = new System.Drawing.Point(401, 459);
-            this.txtProductTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtProductTitle.Name = "txtProductTitle";
-            this.txtProductTitle.PasswordChar = '\0';
-            this.txtProductTitle.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtProductTitle.PlaceholderText = "Title";
-            this.txtProductTitle.SelectedText = "";
-            this.txtProductTitle.Size = new System.Drawing.Size(577, 43);
-            this.txtProductTitle.TabIndex = 82;
-            // 
-            // txtBrand
-            // 
-            this.txtBrand.AutoScroll = true;
-            this.txtBrand.BackColor = System.Drawing.Color.Transparent;
-            this.txtBrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBrand.DefaultText = "";
-            this.txtBrand.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBrand.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBrand.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrand.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrand.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtBrand.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBrand.ForeColor = System.Drawing.Color.Black;
-            this.txtBrand.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtBrand.Location = new System.Drawing.Point(401, 517);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.PasswordChar = '\0';
-            this.txtBrand.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtBrand.PlaceholderText = "Brand";
-            this.txtBrand.SelectedText = "";
-            this.txtBrand.Size = new System.Drawing.Size(577, 43);
-            this.txtBrand.TabIndex = 83;
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.AutoScroll = true;
-            this.txtDescription.BackColor = System.Drawing.Color.Transparent;
-            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescription.DefaultText = "";
-            this.txtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDescription.ForeColor = System.Drawing.Color.Black;
-            this.txtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtDescription.Location = new System.Drawing.Point(401, 577);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.PasswordChar = '\0';
-            this.txtDescription.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtDescription.PlaceholderText = "Description";
-            this.txtDescription.SelectedText = "";
-            this.txtDescription.Size = new System.Drawing.Size(579, 107);
-            this.txtDescription.TabIndex = 84;
-            // 
             // FSellDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -708,12 +709,12 @@
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Guna.UI2.WinForms.Guna2Button btnPost;
         private Guna.UI2.WinForms.Guna2Button btnClose;
-        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
         private Guna.UI2.WinForms.Guna2TextBox txtCondition;
         private Guna.UI2.WinForms.Guna2TextBox txtDescription;
         private Guna.UI2.WinForms.Guna2TextBox txtBrand;
         private Guna.UI2.WinForms.Guna2TextBox txtProductTitle;
         private Guna.UI2.WinForms.Guna2TextBox txtSellPrice;
         private Guna.UI2.WinForms.Guna2TextBox txtBuyPrice;
+        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
     }
 }

@@ -95,7 +95,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnRate_Click(object sender, EventArgs e)
         {
-            FRating f = new FRating();
+            FRating f = new FRating(account, product);
             f.Show();
         }
     }
