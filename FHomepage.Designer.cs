@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHomepage));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
@@ -55,9 +50,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblAccountName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pbAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.txtDescription = new Bunifu.UI.WinForms.BunifuTextBox();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.containerBody.SuspendLayout();
@@ -65,7 +59,7 @@
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -105,7 +99,7 @@
             this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
             this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.containerTop;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
             // containerTop
@@ -118,7 +112,7 @@
             this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(2);
             this.containerTop.Name = "containerTop";
             this.containerTop.Size = new System.Drawing.Size(1040, 57);
             this.containerTop.TabIndex = 1;
@@ -137,8 +131,8 @@
             this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCart.Location = new System.Drawing.Point(844, 10);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCart.Location = new System.Drawing.Point(751, 10);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnCart.Name = "btnCart";
             this.btnCart.Size = new System.Drawing.Size(122, 37);
             this.btnCart.TabIndex = 3;
@@ -160,12 +154,12 @@
             this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMenu.Location = new System.Drawing.Point(638, 2);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenu.Location = new System.Drawing.Point(545, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(190, 52);
             this.btnMenu.TabIndex = 2;
-            this.btnMenu.Text = "Name";
+            this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -183,10 +177,10 @@
             this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnPostProduct.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnPostProduct.Location = new System.Drawing.Point(970, 10);
-            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPostProduct.Location = new System.Drawing.Point(877, 10);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnPostProduct.Name = "btnPostProduct";
-            this.btnPostProduct.Size = new System.Drawing.Size(150, 37);
+            this.btnPostProduct.Size = new System.Drawing.Size(152, 37);
             this.btnPostProduct.TabIndex = 1;
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,7 +194,7 @@
             this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
             this.pbLogo.ImageRotate = 0F;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(72, 57);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,12 +203,11 @@
             // 
             // containerBody
             // 
-            this.containerBody.Controls.Add(this.txtDescription);
             this.containerBody.Controls.Add(this.containerMenu);
-            this.containerBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.containerBody.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.containerBody.FillColor = System.Drawing.Color.WhiteSmoke;
             this.containerBody.Location = new System.Drawing.Point(0, 57);
-            this.containerBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerBody.Margin = new System.Windows.Forms.Padding(2);
             this.containerBody.Name = "containerBody";
             this.containerBody.Size = new System.Drawing.Size(1040, 577);
             this.containerBody.TabIndex = 3;
@@ -236,8 +229,8 @@
             this.containerMenu.Controls.Add(this.guna2Panel8);
             this.containerMenu.CustomBorderColor = System.Drawing.Color.Black;
             this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.containerMenu.Location = new System.Drawing.Point(619, 2);
-            this.containerMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerMenu.Location = new System.Drawing.Point(536, 2);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
             this.containerMenu.Size = new System.Drawing.Size(210, 430);
@@ -255,7 +248,7 @@
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLogout.ForeColor = System.Drawing.Color.Black;
             this.btnLogout.Location = new System.Drawing.Point(1, 388);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(208, 37);
             this.btnLogout.TabIndex = 23;
@@ -269,7 +262,7 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel5.Location = new System.Drawing.Point(1, 375);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(208, 13);
             this.guna2Panel5.TabIndex = 24;
@@ -285,7 +278,7 @@
             this.btnMoney.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMoney.ForeColor = System.Drawing.Color.Black;
             this.btnMoney.Location = new System.Drawing.Point(1, 338);
-            this.btnMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(2);
             this.btnMoney.Name = "btnMoney";
             this.btnMoney.Size = new System.Drawing.Size(208, 37);
             this.btnMoney.TabIndex = 22;
@@ -305,7 +298,7 @@
             this.btnInformation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnInformation.ForeColor = System.Drawing.Color.Black;
             this.btnInformation.Location = new System.Drawing.Point(1, 301);
-            this.btnInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(2);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.Size = new System.Drawing.Size(208, 37);
             this.btnInformation.TabIndex = 21;
@@ -325,7 +318,7 @@
             this.btnOrderAnalysis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnOrderAnalysis.ForeColor = System.Drawing.Color.Black;
             this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 264);
-            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
             this.btnOrderAnalysis.Size = new System.Drawing.Size(208, 37);
             this.btnOrderAnalysis.TabIndex = 20;
@@ -348,7 +341,7 @@
             this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
             this.btnSavedProducts.Location = new System.Drawing.Point(1, 227);
-            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2);
             this.btnSavedProducts.Name = "btnSavedProducts";
             this.btnSavedProducts.Size = new System.Drawing.Size(208, 37);
             this.btnSavedProducts.TabIndex = 19;
@@ -363,7 +356,7 @@
             this.guna2Panel6.Controls.Add(this.label3);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel6.Location = new System.Drawing.Point(1, 189);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(208, 38);
             this.guna2Panel6.TabIndex = 18;
@@ -393,7 +386,7 @@
             this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
             this.btnSalesOrder.Location = new System.Drawing.Point(1, 152);
-            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalesOrder.Name = "btnSalesOrder";
             this.btnSalesOrder.Size = new System.Drawing.Size(208, 37);
             this.btnSalesOrder.TabIndex = 17;
@@ -416,7 +409,7 @@
             this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
             this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 111);
-            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnPurchasesOrder.Name = "btnPurchasesOrder";
             this.btnPurchasesOrder.Size = new System.Drawing.Size(208, 41);
             this.btnPurchasesOrder.TabIndex = 16;
@@ -431,7 +424,7 @@
             this.guna2Panel7.Controls.Add(this.label4);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel7.Location = new System.Drawing.Point(1, 74);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(208, 37);
             this.guna2Panel7.TabIndex = 15;
@@ -450,11 +443,11 @@
             // guna2Panel8
             // 
             this.guna2Panel8.Controls.Add(this.lblAccountName);
-            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2Panel8.Controls.Add(this.pbAvatar);
             this.guna2Panel8.Controls.Add(this.guna2RatingStar1);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(208, 73);
             this.guna2Panel8.TabIndex = 14;
@@ -470,126 +463,27 @@
             this.lblAccountName.TabIndex = 3;
             this.lblAccountName.Text = "Account name";
             // 
-            // guna2CirclePictureBox1
+            // pbAvatar
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(68, 73);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.pbAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbAvatar.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.pbAvatar.ImageRotate = 0F;
+            this.pbAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbAvatar.Size = new System.Drawing.Size(68, 73);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatar.TabIndex = 0;
+            this.pbAvatar.TabStop = false;
             // 
             // guna2RatingStar1
             // 
             this.guna2RatingStar1.Location = new System.Drawing.Point(77, 36);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.Size = new System.Drawing.Size(112, 29);
             this.guna2RatingStar1.TabIndex = 2;
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.AcceptsReturn = false;
-            this.txtDescription.AcceptsTab = false;
-            this.txtDescription.AnimationSpeed = 200;
-            this.txtDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtDescription.AutoSizeHeight = true;
-            this.txtDescription.BackColor = System.Drawing.Color.Transparent;
-            this.txtDescription.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtDescription.BackgroundImage")));
-            this.txtDescription.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtDescription.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtDescription.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtDescription.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtDescription.BorderRadius = 10;
-            this.txtDescription.BorderThickness = 1;
-            this.txtDescription.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescription.DefaultFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtDescription.DefaultText = resources.GetString("txtDescription.DefaultText");
-            this.txtDescription.FillColor = System.Drawing.Color.White;
-            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtDescription.HideSelection = true;
-            this.txtDescription.IconLeft = null;
-            this.txtDescription.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescription.IconPadding = 10;
-            this.txtDescription.IconRight = null;
-            this.txtDescription.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescription.Lines = new string[] {
-        "💥💥Cấu Hình :",
-        "🔸 CPU: Core i5-1135G7",
-        "🔸 Ram 8 GB",
-        "🔸 SSD NVMe 512 GB",
-        "🔸 Màn Hình 14 inch FHD",
-        "🔸 Card Màn Hình:",
-        "✅ Intel Iris Xe Graphics",
-        "🔸 Bảo Mật Vân Tay",
-        "🔸 Pin 2-3H",
-        "🔸 Led Phím",
-        "",
-        "",
-        "===================================",
-        "👉🏻👉🏻Sạc Zin Theo Máy - Bảo Hành 1️⃣ Tháng Tặng kèm Chuột, Túi Chống Sốc.",
-        "🏦 🏦118/17A Huỳnh Thiện Lộc, P Hoà Thạnh, Q Tân Phú",
-        "📲📲Zalo 24/7)",
-        "—————————————————————————",
-        "💥💥 💥 Hỗ Trợ Thanh Toán Quẹt Thẻ Hoặc Trả Góp Qua Thẻ Tín Dụng.",
-        "♻️♻️♻️Ship COD Toàn Quốc.",
-        "#asus #laptopasus #AsusZenbook #Asuszenbookux434fac #asusxX1503za #asus15xoled #a" +
-            "susx509ja #asusx415ea #asusx515ea",
-        ""};
-            this.txtDescription.Location = new System.Drawing.Point(26, 470);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDescription.MaxLength = 32767;
-            this.txtDescription.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtDescription.Modified = false;
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtDescription.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDescription.OnIdleState = stateProperties4;
-            this.txtDescription.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDescription.PasswordChar = '\0';
-            this.txtDescription.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDescription.PlaceholderText = "Enter text";
-            this.txtDescription.ReadOnly = true;
-            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDescription.SelectedText = "";
-            this.txtDescription.SelectionLength = 0;
-            this.txtDescription.SelectionStart = 0;
-            this.txtDescription.ShortcutsEnabled = true;
-            this.txtDescription.Size = new System.Drawing.Size(976, 551);
-            this.txtDescription.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtDescription.TabIndex = 61;
-            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDescription.TextMarginBottom = 0;
-            this.txtDescription.TextMarginLeft = 3;
-            this.txtDescription.TextMarginTop = 1;
-            this.txtDescription.TextPlaceholder = "Enter text";
-            this.txtDescription.UseSystemPasswordChar = false;
-            this.txtDescription.WordWrap = true;
             // 
             // FHomepage
             // 
@@ -600,7 +494,7 @@
             this.Controls.Add(this.containerBody);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1151, 666);
             this.MinimumSize = new System.Drawing.Size(958, 508);
             this.Name = "FHomepage";
@@ -617,7 +511,7 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -644,9 +538,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
         private System.Windows.Forms.Label lblAccountName;
-        private Bunifu.UI.WinForms.BunifuTextBox txtDescription;
     }
 }

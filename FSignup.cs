@@ -18,14 +18,6 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
         }
 
-        private void btnSignin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FSignin f = new FSignin();
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -34,7 +26,18 @@ namespace Window_Project_v5._1.Forms
         private void btnSignup_Click(object sender, EventArgs e)
         {
             Account acc = new Account(txtUsername.Text, txtEmail.Text, txtPassword.Text);
-            accountDAO.CreateNewAccount(acc);
+            if (accountDAO.CreateNewAccount(acc))
+            {
+                MessageBox.Show("Account's created successfully", "Signup", MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnSignin_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

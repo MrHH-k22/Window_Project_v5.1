@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FHomepage : Form
     {
         private Form activeForm;
+        private AccountDAO accountDAO = new AccountDAO();
         protected Account acc;
         public FHomepage()
         {
@@ -22,8 +24,7 @@ namespace Window_Project_v5._1.Forms
         public FHomepage(Account acc)
         {
             InitializeComponent();
-
-            this.acc = acc;
+            this.acc = accountDAO.Retrieve(acc.Id);
         }
         
         /*
@@ -110,6 +111,8 @@ namespace Window_Project_v5._1.Forms
         private void FHomepage_Load(object sender, EventArgs e)
         {
             containerMenu.SendToBack();
+            lblAccountName.Text = acc.Name;
+            convertByte(pbAvatar, acc.Avatar);
             OpenChildForm(new Forms.FBuy(acc), sender);
         }
 
@@ -193,6 +196,27 @@ namespace Window_Project_v5._1.Forms
         private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FCart(acc), sender);
+        }
+
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
         }
     }
 }

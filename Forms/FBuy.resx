@@ -120,10 +120,9 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuSeparator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAABKwAAAALCAYAAABS8RUMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABaSURBVHhe7dhBDQAwDAOx8EcVZt1nIFrJlo7EBQAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAADgtLYjSZIkSZIkbelvKwAAAAAAAAAAAAAAAAAAAAAAAAAAAACAi5IHZWcr
-        Nk5IoC8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAA4EAAAAJCAYAAACMoSnkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABGSURBVHhe7ddBDQAwDAOx8EcVZttnIDrVlg7EBQAAAAAA
+        AAAAAAAAAAD4Q9sjSZIkSdrRW0EAAAAAAAAAAAAAAAAAYLTkAiwvYGXtxJ4SAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

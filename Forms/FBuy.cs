@@ -82,8 +82,6 @@ namespace Window_Project_v5._1.Forms
             */
         }
 
-
-
         private void btnLoad_Click(object sender, EventArgs e)
         {
             flpProduct.Controls.Clear();
