@@ -74,7 +74,7 @@ namespace Window_Project_v5._1.Forms
             {
                 btnFunction.Text = "Completed";
             }
-            if(btnFunction.Text == "Completed")
+            if(product.OrderCondition == (int)ordercondition.Completed)
             {
                 this.Controls.Remove(btnCancel);
                 this.Controls.Add(btnRate);
@@ -95,7 +95,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnRate_Click(object sender, EventArgs e)
         {
-            FRating f = new FRating(account, product);
+            FRating f = new FRating(product);
             f.Show();
         }
     }

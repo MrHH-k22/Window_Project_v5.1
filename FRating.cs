@@ -15,18 +15,17 @@ namespace Window_Project_v5._1
     public partial class FRating : Form
     {
         private ImageDAO imageDAO = new ImageDAO();
-        private Account account = new Account();
-        private AccountDAO accountDAO = new AccountDAO();
         private Product product;
         private ProductDAO productDAO = new ProductDAO();
+        private Rating rt = new Rating();
+        private RatingDAO ratingDAO = new RatingDAO();
         public FRating()
         {
             InitializeComponent();
         }
-        public FRating(Account acc, Product pd)
+        public FRating(Product pd)
         {
             InitializeComponent();
-            this.account = acc;
             this.product = pd;
             lblNameProduct.Text = product.Name;
 
@@ -35,14 +34,12 @@ namespace Window_Project_v5._1
             {
                 using (MemoryStream ms = new MemoryStream(imageData))
                 {
-                    // Attempt to create Image object
                     try
                     {
                         pbProduct.Image = Image.FromStream(ms);
                     }
                     catch (ArgumentException ex)
                     {
-                        // Handle ArgumentException
                         Console.WriteLine("Failed to create Image object: " + ex.Message);
                     }
                 }
@@ -52,7 +49,49 @@ namespace Window_Project_v5._1
         {
             this.Close();
         }
+        private float GetStarValue()
+        {
+            return rtStar.Value;
+        }
+        private void SetLabelStatus()
+        {
+            float star = GetStarValue();
+            if(star >= 0 && star <= 1)
+            {
+                lblStatus.ForeColor = Color.WhiteSmoke;
+                lblStatus.Text = "Bad";
+            }
+            else if(star > 1 && star <= 2)
+            {
+                lblStatus.ForeColor = Color.WhiteSmoke;
+                lblStatus.Text = "Unsatisfied";
+            }
+            else if( star > 2 && star <= 3)
+            {
+                lblStatus.ForeColor = Color.WhiteSmoke;
+                lblStatus.Text = "Normal";
+            }
+            else if (star > 3 && star <= 4)
+            {
+                lblStatus.ForeColor = Color.Yellow;
+                lblStatus.Text = "Satisfied";
+            }
+            else
+            {
+                lblStatus.ForeColor = Color.Yellow;
+                lblStatus.Text = "Great";
+            }
+        }
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            rt.Comment = txtComment.Text;
+            rt.Star = GetStarValue();
+            ratingDAO.Add(rt, product);
+        }
 
-        
+        private void rtStar_ValueChanged(object sender, EventArgs e)
+        {
+            SetLabelStatus();
+        }
     }
 }

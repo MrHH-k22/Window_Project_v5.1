@@ -37,9 +37,9 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNameProduct = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.lblQuality = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.rtStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.btnSend = new Guna.UI2.WinForms.Guna2Button();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
@@ -133,22 +133,23 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.guna2Panel2.BorderRadius = 10;
-            this.guna2Panel2.Controls.Add(this.label1);
+            this.guna2Panel2.Controls.Add(this.lblStatus);
             this.guna2Panel2.Controls.Add(this.lblQuality);
-            this.guna2Panel2.Controls.Add(this.guna2RatingStar1);
+            this.guna2Panel2.Controls.Add(this.rtStar);
             this.guna2Panel2.Location = new System.Drawing.Point(12, 200);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(612, 70);
             this.guna2Panel2.TabIndex = 18;
             // 
-            // guna2RatingStar1
+            // lblStatus
             // 
-            this.guna2RatingStar1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(193, 12);
-            this.guna2RatingStar1.Name = "guna2RatingStar1";
-            this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
-            this.guna2RatingStar1.Size = new System.Drawing.Size(188, 45);
-            this.guna2RatingStar1.TabIndex = 1;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblStatus.Location = new System.Drawing.Point(433, 24);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(100, 23);
+            this.lblStatus.TabIndex = 4;
+            this.lblStatus.Text = "Tuyệt vời";
             // 
             // lblQuality
             // 
@@ -161,15 +162,15 @@
             this.lblQuality.TabIndex = 3;
             this.lblQuality.Text = "Product Quality";
             // 
-            // label1
+            // rtStar
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(429, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Tuyệt vời";
+            this.rtStar.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.rtStar.Location = new System.Drawing.Point(193, 12);
+            this.rtStar.Name = "rtStar";
+            this.rtStar.RatingColor = System.Drawing.Color.Yellow;
+            this.rtStar.Size = new System.Drawing.Size(188, 45);
+            this.rtStar.TabIndex = 1;
+            this.rtStar.ValueChanged += new System.EventHandler(this.rtStar_ValueChanged);
             // 
             // btnSend
             // 
@@ -195,6 +196,7 @@
             this.btnSend.Size = new System.Drawing.Size(113, 49);
             this.btnSend.TabIndex = 54;
             this.btnSend.Text = "Send";
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtComment
             // 
@@ -253,9 +255,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNameProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
+        private Guna.UI2.WinForms.Guna2RatingStar rtStar;
         private System.Windows.Forms.Label lblQuality;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStatus;
         private Guna.UI2.WinForms.Guna2Button btnSend;
         private Guna.UI2.WinForms.Guna2TextBox txtComment;
     }

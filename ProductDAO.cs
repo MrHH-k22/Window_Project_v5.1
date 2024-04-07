@@ -108,6 +108,7 @@ namespace Window_Project_v5._1
             return GetProductFromDataTable(dt);
         }
 
+
         public Product GetProductFromDataTable(DataTable dt)
         {
             if (dt.Rows.Count > 0)
