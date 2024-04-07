@@ -14,7 +14,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FSaveList : Form
     {
         private ProductDAO productDAO = new ProductDAO();
-        private FavoriteDAO favoriteDAO = new FavoriteDAO();
+        private CartDAO cartDAO = new CartDAO();
         private Account account = new Account();
         public FSaveList()
         {
@@ -29,12 +29,11 @@ namespace Window_Project_v5._1.Forms
 
         private void FSaveList_Load(object sender, EventArgs e)
         {
-            List<Product> products = favoriteDAO.loadListWithAccountID(account.Id);
-
+            List<Product> products = cartDAO.loadListWithAccountID(account.Id);
+            double total = 0;
             foreach (var pd in products)
             {
                 UCProductBuy uc = new UCProductBuy(pd, account);
-                uc.btnFunction.Visible = false;
                 flpSavedList.Controls.Add(uc);
             }
 

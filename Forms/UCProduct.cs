@@ -31,8 +31,8 @@ namespace Window_Project_v5._1.Forms
             SetClickEventForAllControls(this);
             account = acc;
             this.product = pd;
-            lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
-            lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
+            lblBuyPrice.Text = pd.OriginalPrice.ToString("N0") + " VND";
+            lblSellPrice.Text = pd.SalePrice.ToString("N0") + " VND";
             lblProductName.Text = pd.Name.ToString();
 
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);

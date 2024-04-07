@@ -5,6 +5,7 @@ using System;
 using System.Threading.Tasks;
 using System.Data;
 using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace Window_Project_v5._1
 {
@@ -25,6 +26,21 @@ namespace Window_Project_v5._1
         private int viewCount;
         private string category;
         private int orderCondition;
+        private string contactPhone;
+        private string deliveryAddress;
+        private string origin;
+        private string type;
+        private string material;
+        private string supportPolicy;
+        private string area;
+        private string size;
+        private DateTime postedTime;
+        private DateTime completeTime;
+        private string color;
+        private string functionality;
+
+
+
 
         public Product()
         {
@@ -32,44 +48,55 @@ namespace Window_Project_v5._1
 
         public Product(DataRow dr)
         {
-            id = Convert.ToInt32(dr["id"]);
-            name = dr["name"].ToString();
-            originalPrice = Convert.ToDouble(dr["originalPrice"]);
-            salePrice = Convert.ToDouble(dr["salePrice"]);
-            condition = dr["condition"].ToString();
-            status = dr["status"].ToString();
-            description = dr["description"].ToString();
-            brand = dr["Brand"].ToString();
-            Category = dr["category"].ToString();
-            sellerID = Convert.ToInt32(dr["sellerid"]);
-            viewCount = Convert.ToInt32(dr["viewcount"]);
-            billStatus = Convert.ToInt32(dr["billstatus"]);
-            OrderCondition = dr["OrderCondition"] == DBNull.Value ? -1 : Convert.ToInt32(dr["OrderCondition"]);
-            if (dr["buyerid"] == DBNull.Value)
+            Product product = productDAO.GetProductFromDataRow(dr);
+            if (product != null)
             {
-                buyerID = -1;
+                PropertyInfo[] properties = typeof(Product).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    PropertyInfo thisProperty = typeof(Product).GetProperty(property.Name);
+                    object value = property.GetValue(product);
+                    thisProperty.SetValue(this, value);
+                }
             }
-            else
-            {
-                buyerID = Convert.ToInt32(dr["buyerid"]);
-            }
-                
         }
 
         public Product(int id)
         {
             Product product = productDAO.Retrieve(id);
-            this.id = product.id;
-            this.name = product.name;
-            this.brand = product.brand;
-            this.originalPrice = product.originalPrice;
-            this.salePrice = product.salePrice;
-            this.condition = product.condition;
-            this.status = product.status;
-            this.description = product.description;
-            this.SellerID = product.sellerID;
-            this.BuyerID = product.buyerID;
-            this.category = product.category;
+            if (product != null)
+            {
+                PropertyInfo[] properties = typeof(Product).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    PropertyInfo thisProperty = typeof(Product).GetProperty(property.Name);
+                    object value = property.GetValue(product);
+                    thisProperty.SetValue(this, value);
+                }
+            }
+        }
+
+        //Post Product
+        public Product(string category, string name, string type, double originalPrice, double salePrice, string area, string condition, string status, string supportPolicy, string brand, string origin, string material, string size, string functionality, string description, int sellerID)
+        {
+            this.category = category;
+            this.name = name;
+            this.type = type;
+            this.originalPrice = originalPrice;
+            this.salePrice = salePrice;
+            this.area = area;
+            this.condition = condition;
+            this.status = status;
+            this.supportPolicy = supportPolicy;
+            this.brand = brand;
+            this.origin = origin;
+            this.material = material;
+            this.size = size;
+            this.functionality = functionality;
+            this.description = description;
+            this.sellerID = sellerID;
+            orderCondition = 0;
+            billStatus = 0;
         }
 
         public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string category)
@@ -144,6 +171,18 @@ namespace Window_Project_v5._1
         public int BillStatus { get => billStatus; set => billStatus = value; }
         public int ViewCount { get => viewCount; set => viewCount = value; }
         public int OrderCondition { get => orderCondition; set => orderCondition = value; }
+        public string ContactPhone { get => contactPhone; set => contactPhone = value; }
+        public string DeliveryAddress { get => deliveryAddress; set => deliveryAddress = value; }
+        public string Origin { get => origin; set => origin = value; }
+        public string Type { get => type; set => type = value; }
+        public string Material { get => material; set => material = value; }
+        public string SupportPolicy { get => supportPolicy; set => supportPolicy = value; }
+        public string Area { get => area; set => area = value; }
+        public string Size { get => size; set => size = value; }
+        public DateTime PostedTime { get => postedTime; set => postedTime = value; }
+        public DateTime CompleteTime { get => completeTime; set => completeTime = value; }
+        public string Color { get => color; set => color = value; }
+        public string Functionality { get => functionality; set => functionality = value; }
 
         public string GetBillStatus()
         {

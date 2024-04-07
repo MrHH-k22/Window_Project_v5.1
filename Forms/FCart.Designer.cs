@@ -1,6 +1,6 @@
 ﻿namespace Window_Project_v5._1.Forms
 {
-    partial class FSaveList
+    partial class FCart
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.pbLogo = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lblSingin = new System.Windows.Forms.Label();
-            this.flpSavedList = new System.Windows.Forms.FlowLayoutPanel();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.btnPurchase = new Guna.UI2.WinForms.Guna2Button();
             this.lblTotalMoney = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.pbLogo = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblSingin = new System.Windows.Forms.Label();
+            this.flpSavedList = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelBottom.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panelBottom.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelBottom
+            // 
+            this.panelBottom.Controls.Add(this.btnPurchase);
+            this.panelBottom.Controls.Add(this.lblTotalMoney);
+            this.panelBottom.Controls.Add(this.label1);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 499);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(931, 87);
+            this.panelBottom.TabIndex = 37;
+            // 
+            // btnPurchase
+            // 
+            this.btnPurchase.AutoRoundedCorners = true;
+            this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnPurchase.BorderRadius = 18;
+            this.btnPurchase.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchase.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchase.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPurchase.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPurchase.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnPurchase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPurchase.ForeColor = System.Drawing.Color.White;
+            this.btnPurchase.Location = new System.Drawing.Point(298, 37);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(310, 39);
+            this.btnPurchase.TabIndex = 7;
+            this.btnPurchase.Text = "Purchase";
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
+            // 
+            // lblTotalMoney
+            // 
+            this.lblTotalMoney.AutoSize = true;
+            this.lblTotalMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMoney.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalMoney.Location = new System.Drawing.Point(488, 10);
+            this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalMoney.Name = "lblTotalMoney";
+            this.lblTotalMoney.Size = new System.Drawing.Size(116, 25);
+            this.lblTotalMoney.TabIndex = 6;
+            this.lblTotalMoney.Text = "999000 VND";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(293, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Total Money:";
             // 
             // panelTop
             // 
@@ -51,7 +106,7 @@
             this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(931, 50);
-            this.panelTop.TabIndex = 34;
+            this.panelTop.TabIndex = 38;
             // 
             // pbLogo
             // 
@@ -78,9 +133,9 @@
             this.lblSingin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblSingin.Location = new System.Drawing.Point(26, 9);
             this.lblSingin.Name = "lblSingin";
-            this.lblSingin.Size = new System.Drawing.Size(86, 25);
+            this.lblSingin.Size = new System.Drawing.Size(49, 25);
             this.lblSingin.TabIndex = 43;
-            this.lblSingin.Text = "Save List";
+            this.lblSingin.Text = "Cart";
             // 
             // flpSavedList
             // 
@@ -88,93 +143,38 @@
             this.flpSavedList.Location = new System.Drawing.Point(0, 50);
             this.flpSavedList.Margin = new System.Windows.Forms.Padding(2);
             this.flpSavedList.Name = "flpSavedList";
-            this.flpSavedList.Size = new System.Drawing.Size(931, 536);
-            this.flpSavedList.TabIndex = 35;
+            this.flpSavedList.Size = new System.Drawing.Size(931, 449);
+            this.flpSavedList.TabIndex = 39;
             // 
-            // panelBottom
-            // 
-            this.panelBottom.Controls.Add(this.btnPurchase);
-            this.panelBottom.Controls.Add(this.lblTotalMoney);
-            this.panelBottom.Controls.Add(this.label1);
-            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 499);
-            this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(931, 87);
-            this.panelBottom.TabIndex = 36;
-            // 
-            // btnPurchase
-            // 
-            this.btnPurchase.AutoRoundedCorners = true;
-            this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
-            this.btnPurchase.BorderRadius = 18;
-            this.btnPurchase.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPurchase.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPurchase.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPurchase.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPurchase.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
-            this.btnPurchase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Location = new System.Drawing.Point(298, 37);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(310, 39);
-            this.btnPurchase.TabIndex = 7;
-            this.btnPurchase.Text = "Purchase";
-            // 
-            // lblTotalMoney
-            // 
-            this.lblTotalMoney.AutoSize = true;
-            this.lblTotalMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMoney.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalMoney.Location = new System.Drawing.Point(488, 10);
-            this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(116, 25);
-            this.lblTotalMoney.TabIndex = 6;
-            this.lblTotalMoney.Text = "999000 VND";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(293, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Total Money:";
-            // 
-            // FSaveList
+            // FCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 586);
-            this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.flpSavedList);
             this.Controls.Add(this.panelTop);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FSaveList";
-            this.Text = "FSaveList";
-            this.Load += new System.EventHandler(this.FSaveList_Load);
+            this.Controls.Add(this.panelBottom);
+            this.Name = "FCart";
+            this.Text = "FCart";
+            this.Load += new System.EventHandler(this.FCart_Load);
+            this.panelBottom.ResumeLayout(false);
+            this.panelBottom.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panelBottom.ResumeLayout(false);
-            this.panelBottom.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTop;
-        private Bunifu.UI.WinForms.BunifuPictureBox pbLogo;
-        private System.Windows.Forms.Label lblSingin;
-        private System.Windows.Forms.FlowLayoutPanel flpSavedList;
         private System.Windows.Forms.Panel panelBottom;
         private Guna.UI2.WinForms.Guna2Button btnPurchase;
         private System.Windows.Forms.Label lblTotalMoney;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTop;
+        private Bunifu.UI.WinForms.BunifuPictureBox pbLogo;
+        private System.Windows.Forms.Label lblSingin;
+        private System.Windows.Forms.FlowLayoutPanel flpSavedList;
     }
 }

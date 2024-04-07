@@ -36,16 +36,18 @@ namespace Window_Project_v5._1
         }
         
 
-        public void CreateNewAccount(Account account)
+        public bool CreateNewAccount(Account account)
         {
             if (CheckEmailExisted(account.Email) == true)
             {
                 MessageBox.Show("Email has been existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
             else
             {
                 string sql = string.Format("INSERT INTO Account (Email, Password, Name) VALUES ('{0}', '{1}', '{2}')", account.Email, account.Password, account.Name);
                 dbconnection.Excute(sql);
+                return true;
             }
 
         }

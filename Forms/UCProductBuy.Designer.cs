@@ -34,7 +34,6 @@
             this.lblProductName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProductCondition = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnFunction = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnRate = new Guna.UI2.WinForms.Guna2Button();
@@ -222,7 +221,6 @@
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.btnRate);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnFunction);
             this.Controls.Add(this.pbProduct);
             this.Controls.Add(this.lblSellerName);
             this.Controls.Add(this.lblProductName);
@@ -244,7 +242,6 @@
         public Bunifu.UI.WinForms.BunifuLabel lblProductName;
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
-        public Guna.UI2.WinForms.Guna2Button btnFunction;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnDetail;
         private Guna.UI2.WinForms.Guna2Button btnRate;

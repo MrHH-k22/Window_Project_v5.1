@@ -175,6 +175,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AccountDAO.cs" />
+    <Compile Include="CartDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="FavoriteDAO.cs" />
     <Compile Include="Forms\FBuy.cs">
@@ -200,6 +201,18 @@
     </Compile>
     <Compile Include="Forms\FBuyDetail.Designer.cs">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FCart.Designer.cs">
+      <DependentUpon>FCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FDelivery.Designer.cs">
+      <DependentUpon>FDelivery.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FInformation.cs">
       <SubType>Form</SubType>
@@ -357,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FBuyDetail.resx">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FCart.resx">
+      <DependentUpon>FCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FDelivery.resx">
+      <DependentUpon>FDelivery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FInformation.resx">
       <DependentUpon>FInformation.cs</DependentUpon>
@@ -601,6 +620,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach_14953675_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_Cart_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

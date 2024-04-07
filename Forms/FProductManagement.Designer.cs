@@ -39,7 +39,6 @@
             this.tcManagement = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpDisplay = new System.Windows.Forms.TabPage();
             this.tpWaitConfirm = new System.Windows.Forms.TabPage();
-            this.tpDelivering = new System.Windows.Forms.TabPage();
             this.tpCompleted = new System.Windows.Forms.TabPage();
             this.tpCancelled = new System.Windows.Forms.TabPage();
             this.tpHidden = new System.Windows.Forms.TabPage();
@@ -156,7 +155,6 @@
             // 
             this.tcManagement.Controls.Add(this.tpDisplay);
             this.tcManagement.Controls.Add(this.tpWaitConfirm);
-            this.tcManagement.Controls.Add(this.tpDelivering);
             this.tcManagement.Controls.Add(this.tpCompleted);
             this.tcManagement.Controls.Add(this.tpCancelled);
             this.tcManagement.Controls.Add(this.tpHidden);
@@ -205,15 +203,6 @@
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
-            // 
-            // tpDelivering
-            // 
-            this.tpDelivering.Location = new System.Drawing.Point(4, 44);
-            this.tpDelivering.Name = "tpDelivering";
-            this.tpDelivering.Size = new System.Drawing.Size(1233, 544);
-            this.tpDelivering.TabIndex = 2;
-            this.tpDelivering.Text = "Delivering";
-            this.tpDelivering.UseVisualStyleBackColor = true;
             // 
             // tpCompleted
             // 
@@ -272,7 +261,6 @@
         private Guna.UI2.WinForms.Guna2TabControl tcManagement;
         private System.Windows.Forms.TabPage tpDisplay;
         private System.Windows.Forms.TabPage tpWaitConfirm;
-        private System.Windows.Forms.TabPage tpDelivering;
         private System.Windows.Forms.TabPage tpCompleted;
         private System.Windows.Forms.TabPage tpCancelled;
         private System.Windows.Forms.TabPage tpHidden;

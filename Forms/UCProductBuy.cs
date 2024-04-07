@@ -19,6 +19,7 @@ namespace Window_Project_v5._1.Forms
         private AccountDAO accountDAO = new AccountDAO();
         private Product product;
         private ProductDAO productDAO = new ProductDAO();
+        private CartDAO cartDAO = new CartDAO();
 
         public UCProductBuy()
         {
@@ -28,6 +29,7 @@ namespace Window_Project_v5._1.Forms
         public UCProductBuy(Product pd, Account acc)
         {
             InitializeComponent();
+            this.Dock = DockStyle.Top;
             this.Controls.Remove(btnRate);
             this.product = pd;
             account = acc;
@@ -59,7 +61,6 @@ namespace Window_Project_v5._1.Forms
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
             Account seller = accountDAO.Retrieve(product.SellerID);
-
             lblSellerName.Text = "Seller name: " + seller.Name;
             btnFunction.Enabled = false;
             if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
@@ -82,9 +83,27 @@ namespace Window_Project_v5._1.Forms
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            product.OrderCondition = (int)ordercondition.Cancelled;
-            productDAO.Update(product);
-            productDAO.DeleteBuyerID(product);
+            if (product.BuyerID != 0)
+            {
+                account.Money += product.SalePrice;
+                accountDAO.update(account);
+                //get seller
+                Account Seller = accountDAO.Retrieve(product.SellerID);
+                Seller.Money -= product.SalePrice;
+                accountDAO.update(Seller);
+                //add to account cancelled list
+                if (product.Id != null)
+                {
+                    account.CancelledList.Add(product.Id);
+                }
+                //
+                product.OrderCondition = (int)ordercondition.Cancelled;
+                productDAO.Update(product);
+                productDAO.DeleteBuyerID(product);
+            } else
+            {
+                cartDAO.delete(account.Id, product.Id);
+            }
         }
 
         private void btnDetail_Click(object sender, EventArgs e)

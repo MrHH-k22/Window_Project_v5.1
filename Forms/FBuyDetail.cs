@@ -38,13 +38,19 @@ namespace Window_Project_v5._1.Forms
             pd.ViewCount++;
             productDAO.Update(pd);
             lblProductName.Text = pd.Name;
-            lblSellPrice.Text = pd.SalePrice.ToString() + " VND";
-            lblBuyPrice.Text = pd.OriginalPrice.ToString() + " VND";
+            lblSellPrice.Text = pd.SalePrice.ToString("N0") + " VND";
+            lblBuyPrice.Text = pd.OriginalPrice.ToString("N0") + " VND";
             lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
             lblBrand.Text = "Brand: " + pd.Brand.ToString();
             lblCategory.Text = "Category: " + pd.Category.ToString();
             txtStatus.Text = pd.Status.ToString();
             txtDescription.Text = pd.Description.ToString();
+            txtSupportPolicy.Text = pd.SupportPolicy.ToString();
+            lblArea.Text = "Area: " + pd.Area.ToString();
+            lblOrigin.Text = "Origin: " + pd.Origin.ToString();
+            lblMaterial.Text = "Material: " + pd.Material.ToString();
+            lblSize.Text = "Size: " + pd.Size.ToString();
+            txtFunctionalities.Text = pd.Functionality.ToString();
             DataTable ImageTable = imageDAO.GetImageProduct(pd.Id);
 
             int pictureBoxIndex = 0;
@@ -60,22 +66,22 @@ namespace Window_Project_v5._1.Forms
                 MemoryStream ms = new MemoryStream(imageData);
 
                 // Assign pictureBox variable based on index
-                Bunifu.UI.WinForms.BunifuImageButton pictureBox = null;
+                Guna2ImageButton pictureBox = null;
 
                 switch (pictureBoxIndex)
                 {
                     
                     case 0:
-                        pictureBox = pbImage1;
+                        pictureBox = btnImage1;
                         break;
                     case 1:
-                        pictureBox = pbImage2;
+                        pictureBox = btnImage2;
                         break;
                     case 2:
-                        pictureBox = pbImage3;
+                        pictureBox = btnImage3;
                         break;
                     case 3:
-                        pictureBox = pbImage4;
+                        pictureBox = btnImage4;
                         break;
                     
                 }
@@ -93,16 +99,16 @@ namespace Window_Project_v5._1.Forms
                 switch (i)
                 {
                     case 0:
-                        pbImage1.Visible = false;
+                        btnImage1.Visible = false;
                         break;
                     case 1:
-                        pbImage2.Visible = false;
+                        btnImage2.Visible = false;
                         break;
                     case 2:
-                        pbImage3.Visible = false;
+                        btnImage3.Visible = false;
                         break;
                     case 3:
-                        pbImage3.Visible = false;
+                        btnImage3.Visible = false;
                         break;
                 }
             }
@@ -128,8 +134,8 @@ namespace Window_Project_v5._1.Forms
             }
 
             Account seller = accountDAO.Retrieve(product.SellerID);
-            lblSeller.Text = seller.Name;
-            convertByte(pbAvatarSeller, seller.Avatar);
+            lblAvatarName.Text = seller.Name;
+            convertByte(pbAvatar, seller.Avatar);
 
         }
 
@@ -190,40 +196,59 @@ namespace Window_Project_v5._1.Forms
             // Check if the user clicked "Yes"
             if (result == DialogResult.Yes)
             {
-                // Proceed with the purchase
-                if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+  
+                if(account.Money < product.SalePrice)
                 {
-                    favoriteDAO.delete(account.Id, product.Id);
+                    MessageBox.Show("You dont have enough money to buy!");
                 }
-                product.BuyerID = account.Id;
-                product.OrderCondition = (int)ordercondition.WaitforConfirmation;
-                productDAO.Update(product);
+                else
+                {
+                    // Proceed with the purchase
+                    account.Money -= product.SalePrice;
+                    accountDAO.update(account);
+                    //get seller
+                    Account Seller = accountDAO.Retrieve(product.SellerID);
+                    Seller.Money += product.SalePrice;
+                    accountDAO.update(Seller);
+                    if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+                    {
+                        favoriteDAO.delete(account.Id, product.Id);
+                    }
+                    product.BuyerID = account.Id;
+                    product.OrderCondition = (int)ordercondition.WaitforConfirmation;
+                    productDAO.Update(product);
+                }
                 this.Close();
             }
         }
 
-        private void pbImage2_Click(object sender, EventArgs e)
+        private void btnImage1_Click(object sender, EventArgs e)
         {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = pbImage1.Image;
-            pbImage1.Image = pbImage2.Image;
-            pbImage2.Image = temp.Image;
+
         }
 
-        private void pbImage3_Click(object sender, EventArgs e)
+        private void btnImage2_Click(object sender, EventArgs e)
         {
             Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = pbImage1.Image;
-            pbImage1.Image = pbImage3.Image;
-            pbImage3.Image = temp.Image;
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage2.Image;
+            btnImage2.Image = temp.Image;
         }
 
-        private void pbImage4_Click(object sender, EventArgs e)
+        private void btnImage3_Click(object sender, EventArgs e)
         {
             Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = pbImage1.Image;
-            pbImage1.Image = pbImage4.Image;
-            pbImage4.Image = temp.Image;
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage3.Image;
+            btnImage3.Image = temp.Image;
+        }
+
+        private void btnImage4_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage4.Image;
+            btnImage4.Image = temp.Image;
         }
     }
 }
