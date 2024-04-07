@@ -595,5 +595,20 @@
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-refresh-text-monochrome-black-thumbnail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach_14953675_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_Cart_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

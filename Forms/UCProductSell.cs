@@ -109,22 +109,19 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                btnFunction.Text = "Next state";
-                btnFunction.Enabled = true;
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
-                btnFunction.Text = "Next state";
+                btnFunction.Text = "Confirm";
                 btnFunction.Enabled = true;
             }
             else if (product.OrderCondition == (int)ordercondition.Completed)
             {
                 btnFunction.Text = "Completed";
+                btnCancel.Enabled = false;
                 btnFunction.Enabled = false;
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {
                 btnFunction.Text = "Post again";
+                btnCancel.Enabled = false;
                 btnFunction.Enabled = true;
             }
             else if (product.OrderCondition == (int)ordercondition.hidden)
@@ -138,7 +135,12 @@ namespace Window_Project_v5._1.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("The product will be deleted in the system. Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
+            account.Money -= product.SalePrice;
+            accountDAO.update(account);
+            //get seller
+            Account Buyer = accountDAO.Retrieve(product.BuyerID);
+            Buyer.Money += product.SalePrice;
+            accountDAO.update(Buyer);
             if (result == DialogResult.Yes)
             {
                 productDAO.Delete(product);
@@ -162,18 +164,9 @@ namespace Window_Project_v5._1.Forms
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
-                product.OrderCondition = (int)ordercondition.Delivering;
-                productDAO.Update(product);
-                Account buyer = accountDAO.Retrieve(product.BuyerID);
-                buyer.Money -= product.SalePrice;
-                accountDAO.update(buyer);
-                account.Money += product.SalePrice;
-                accountDAO.update(account);
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
                 product.OrderCondition = (int)ordercondition.Completed;
                 productDAO.Update(product);
+
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {

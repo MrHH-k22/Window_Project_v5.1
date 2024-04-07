@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ProductDAO productDAO = new ProductDAO();
         private Account account = new Account();
+        private AccountDAO accountDAO = new AccountDAO();   
         public FProductManagement()
         {
             InitializeComponent();
@@ -23,13 +24,14 @@ namespace Window_Project_v5._1.Forms
         public FProductManagement(Account acc)
         {
             InitializeComponent();
-            account = acc;
+            account = accountDAO.Retrieve(acc.Id);
         }
 
         private void FProductManagement_Load(object sender, EventArgs e)
         {
             List<Product> products = productDAO.LoadList();
             lblSellerName.Text = account.Name;
+            account = accountDAO.Retrieve(account.Id);
             lblBalance.Text = account.Money.ToString("N0") + " VND";
             foreach (var pd in products)
             {
@@ -43,10 +45,6 @@ namespace Window_Project_v5._1.Forms
                     else if(pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
                     {
                         tpWaitConfirm.Controls.Add(uc); 
-                    }
-                    else if(pd.OrderCondition == (int)ordercondition.Delivering)
-                    {
-                        tpDelivering.Controls.Add(uc);
                     }
                     else if(pd.OrderCondition == (int)ordercondition.Completed)
                     {

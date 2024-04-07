@@ -29,6 +29,7 @@ namespace Window_Project_v5._1.Forms
         public UCProductBuy(Product pd, Account acc)
         {
             InitializeComponent();
+            this.Dock = DockStyle.Top;
             this.product = pd;
             account = acc;
             lblPrice.Text = pd.SalePrice.ToString();
@@ -59,21 +60,7 @@ namespace Window_Project_v5._1.Forms
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
             Account seller = accountDAO.Retrieve(product.SellerID);
-
             lblSellerName.Text = "Seller name: " + seller.Name;
-            btnFunction.Enabled = false;
-            if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
-            {
-                btnFunction.Text = "Wait for confirmation";
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
-                btnFunction.Text = "Delivering";
-            }
-            else if (product.OrderCondition == (int)ordercondition.Completed)
-            {
-                btnFunction.Text = "Completed";
-            }
         }
 
         private void btnFunction_Click(object sender, EventArgs e)
@@ -95,6 +82,18 @@ namespace Window_Project_v5._1.Forms
         {
             if (product.BuyerID != 0)
             {
+                account.Money += product.SalePrice;
+                accountDAO.update(account);
+                //get seller
+                Account Seller = accountDAO.Retrieve(product.SellerID);
+                Seller.Money -= product.SalePrice;
+                accountDAO.update(Seller);
+                //add to account cancelled list
+                if (product.Id != null)
+                {
+                    account.CancelledList.Add(product.Id);
+                }
+                //
                 product.OrderCondition = (int)ordercondition.Cancelled;
                 productDAO.Update(product);
                 productDAO.DeleteBuyerID(product);

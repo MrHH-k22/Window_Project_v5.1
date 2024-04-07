@@ -33,15 +33,10 @@ namespace Window_Project_v5._1.Forms
             double total = 0;
             foreach (var pd in products)
             {
-                if (pd.BuyerID != 0)
-                {
-                    UCProductBuy uc = new UCProductBuy(pd, account);
-                    total += pd.SalePrice;
-                    uc.btnFunction.Visible = false;
-                    flpSavedList.Controls.Add(uc);
-                }
+                UCProductBuy uc = new UCProductBuy(pd, account);
+                flpSavedList.Controls.Add(uc);
             }
-            lblTotalMoney.Text = total.ToString("N0") + " VND";
+
         }
     }
 }

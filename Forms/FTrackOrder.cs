@@ -32,8 +32,29 @@ namespace Window_Project_v5._1.Forms
             foreach (var pd in products)
             {
                 UCProductBuy uc = new UCProductBuy(pd, account);
-                flpProduct.Controls.Add(uc);
+                //flpProduct.Controls.Add(uc);
+                if (pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
+                {
+                    tpWaitForConfirm.Controls.Add(uc);
+                }
+                else if (pd.OrderCondition == (int)ordercondition.Completed)
+                {
+                    tpCompleted.Controls.Add(uc);
+                }
             }
+            //cancelled list
+            List<int> cancelledList = account.CancelledList;
+            if(cancelledList != null)
+            {
+                foreach (var productID in cancelledList)
+                {
+
+                    Product cancelledproduct = productDAO.Retrieve(productID);
+                    UCProductBuy uc = new UCProductBuy(cancelledproduct, account);
+                    tpCancelled.Controls.Add(uc);
+                }
+            }
+            //saved list
         }
     }
 }

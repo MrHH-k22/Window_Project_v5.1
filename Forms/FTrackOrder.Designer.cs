@@ -36,9 +36,14 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.tcBuyProducts = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tpWaitForConfirm = new System.Windows.Forms.TabPage();
+            this.tpCompleted = new System.Windows.Forms.TabPage();
+            this.tpCancelled = new System.Windows.Forms.TabPage();
+            this.tpSaved = new System.Windows.Forms.TabPage();
             this.panelTop.SuspendLayout();
+            this.tcBuyProducts.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuSeparator1
@@ -144,16 +149,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Product List";
             // 
-            // flpProduct
-            // 
-            this.flpProduct.AutoScroll = true;
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProduct.Location = new System.Drawing.Point(0, 96);
-            this.flpProduct.Margin = new System.Windows.Forms.Padding(4);
-            this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1241, 625);
-            this.flpProduct.TabIndex = 7;
-            // 
             // panelTop
             // 
             this.panelTop.Controls.Add(this.label1);
@@ -165,13 +160,85 @@
             this.panelTop.Size = new System.Drawing.Size(1241, 96);
             this.panelTop.TabIndex = 8;
             // 
+            // tcBuyProducts
+            // 
+            this.tcBuyProducts.Controls.Add(this.tpWaitForConfirm);
+            this.tcBuyProducts.Controls.Add(this.tpCompleted);
+            this.tcBuyProducts.Controls.Add(this.tpCancelled);
+            this.tcBuyProducts.Controls.Add(this.tpSaved);
+            this.tcBuyProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcBuyProducts.ItemSize = new System.Drawing.Size(220, 40);
+            this.tcBuyProducts.Location = new System.Drawing.Point(0, 96);
+            this.tcBuyProducts.Name = "tcBuyProducts";
+            this.tcBuyProducts.SelectedIndex = 0;
+            this.tcBuyProducts.Size = new System.Drawing.Size(1241, 625);
+            this.tcBuyProducts.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.tcBuyProducts.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcBuyProducts.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcBuyProducts.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.tcBuyProducts.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcBuyProducts.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.tcBuyProducts.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcBuyProducts.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcBuyProducts.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.tcBuyProducts.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcBuyProducts.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.tcBuyProducts.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.tcBuyProducts.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tcBuyProducts.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.tcBuyProducts.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.tcBuyProducts.TabButtonSize = new System.Drawing.Size(220, 40);
+            this.tcBuyProducts.TabIndex = 9;
+            this.tcBuyProducts.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcBuyProducts.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            // 
+            // tpWaitForConfirm
+            // 
+            this.tpWaitForConfirm.Location = new System.Drawing.Point(4, 44);
+            this.tpWaitForConfirm.Name = "tpWaitForConfirm";
+            this.tpWaitForConfirm.Padding = new System.Windows.Forms.Padding(3);
+            this.tpWaitForConfirm.Size = new System.Drawing.Size(1233, 577);
+            this.tpWaitForConfirm.TabIndex = 0;
+            this.tpWaitForConfirm.Text = "Wait for confirmation";
+            this.tpWaitForConfirm.UseVisualStyleBackColor = true;
+            // 
+            // tpCompleted
+            // 
+            this.tpCompleted.Location = new System.Drawing.Point(4, 44);
+            this.tpCompleted.Name = "tpCompleted";
+            this.tpCompleted.Padding = new System.Windows.Forms.Padding(3);
+            this.tpCompleted.Size = new System.Drawing.Size(1233, 577);
+            this.tpCompleted.TabIndex = 1;
+            this.tpCompleted.Text = "Completed";
+            this.tpCompleted.UseVisualStyleBackColor = true;
+            // 
+            // tpCancelled
+            // 
+            this.tpCancelled.Location = new System.Drawing.Point(4, 44);
+            this.tpCancelled.Name = "tpCancelled";
+            this.tpCancelled.Padding = new System.Windows.Forms.Padding(3);
+            this.tpCancelled.Size = new System.Drawing.Size(1233, 577);
+            this.tpCancelled.TabIndex = 2;
+            this.tpCancelled.Text = "Cancelled";
+            this.tpCancelled.UseVisualStyleBackColor = true;
+            // 
+            // tpSaved
+            // 
+            this.tpSaved.Location = new System.Drawing.Point(4, 44);
+            this.tpSaved.Name = "tpSaved";
+            this.tpSaved.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSaved.Size = new System.Drawing.Size(1233, 577);
+            this.tpSaved.TabIndex = 3;
+            this.tpSaved.Text = "Saved";
+            this.tpSaved.UseVisualStyleBackColor = true;
+            // 
             // FTrackOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1241, 721);
-            this.Controls.Add(this.flpProduct);
+            this.Controls.Add(this.tcBuyProducts);
             this.Controls.Add(this.panelTop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FTrackOrder";
@@ -179,6 +246,7 @@
             this.Load += new System.EventHandler(this.FTrackOrder_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            this.tcBuyProducts.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -188,7 +256,11 @@
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.UI.WinForms.BunifuTextBox btnSearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flpProduct;
         private System.Windows.Forms.Panel panelTop;
+        private Guna.UI2.WinForms.Guna2TabControl tcBuyProducts;
+        private System.Windows.Forms.TabPage tpWaitForConfirm;
+        private System.Windows.Forms.TabPage tpCompleted;
+        private System.Windows.Forms.TabPage tpCancelled;
+        private System.Windows.Forms.TabPage tpSaved;
     }
 }
