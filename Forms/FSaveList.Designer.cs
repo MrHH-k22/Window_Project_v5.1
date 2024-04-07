@@ -78,9 +78,9 @@
             this.lblSingin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblSingin.Location = new System.Drawing.Point(26, 9);
             this.lblSingin.Name = "lblSingin";
-            this.lblSingin.Size = new System.Drawing.Size(49, 25);
+            this.lblSingin.Size = new System.Drawing.Size(86, 25);
             this.lblSingin.TabIndex = 43;
-            this.lblSingin.Text = "Cart";
+            this.lblSingin.Text = "Save List";
             // 
             // flpSavedList
             // 

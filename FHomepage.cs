@@ -189,5 +189,10 @@ namespace Window_Project_v5._1.Forms
         {
             OpenChildForm(new Forms.FSellDetail(acc), sender);
         }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FCart(acc), sender);
+        }
     }
 }
