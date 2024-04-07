@@ -83,6 +83,16 @@ namespace Window_Project_v5._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _92 {
+            get {
+                object obj = ResourceManager.GetObject("92", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap beach_14953675_v2 {
             get {
                 object obj = ResourceManager.GetObject("beach_14953675_v2", resourceCulture);

@@ -77,7 +77,7 @@ namespace Window_Project_v5._1.Forms
             OpenImageDialog(btnImage4, 3);
         }
 
-        private void OpenImageDialog(Bunifu.UI.WinForms.BunifuImageButton button, int index)
+        private void OpenImageDialog(Guna.UI2.WinForms.Guna2ImageButton button, int index)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "png files(*.png)|*.png|jpg files(*.jpg)|*.jpg|All files(*.*)|*.*";
@@ -164,6 +164,86 @@ namespace Window_Project_v5._1.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtSize_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaterial_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBrand_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOrigin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelRight_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtStatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSellPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuyPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCondition_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSupportPolicy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProductTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ddCategory_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMiddle_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

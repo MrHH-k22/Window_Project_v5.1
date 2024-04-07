@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHomepage));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
@@ -52,6 +57,7 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.txtDescription = new Bunifu.UI.WinForms.BunifuTextBox();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.containerBody.SuspendLayout();
@@ -203,6 +209,7 @@
             // 
             // containerBody
             // 
+            this.containerBody.Controls.Add(this.txtDescription);
             this.containerBody.Controls.Add(this.containerMenu);
             this.containerBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.containerBody.FillColor = System.Drawing.Color.WhiteSmoke;
@@ -485,6 +492,105 @@
             this.guna2RatingStar1.Size = new System.Drawing.Size(112, 29);
             this.guna2RatingStar1.TabIndex = 2;
             // 
+            // txtDescription
+            // 
+            this.txtDescription.AcceptsReturn = false;
+            this.txtDescription.AcceptsTab = false;
+            this.txtDescription.AnimationSpeed = 200;
+            this.txtDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtDescription.AutoSizeHeight = true;
+            this.txtDescription.BackColor = System.Drawing.Color.Transparent;
+            this.txtDescription.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtDescription.BackgroundImage")));
+            this.txtDescription.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtDescription.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtDescription.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtDescription.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtDescription.BorderRadius = 10;
+            this.txtDescription.BorderThickness = 1;
+            this.txtDescription.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescription.DefaultFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtDescription.DefaultText = resources.GetString("txtDescription.DefaultText");
+            this.txtDescription.FillColor = System.Drawing.Color.White;
+            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtDescription.HideSelection = true;
+            this.txtDescription.IconLeft = null;
+            this.txtDescription.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescription.IconPadding = 10;
+            this.txtDescription.IconRight = null;
+            this.txtDescription.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescription.Lines = new string[] {
+        "💥💥Cấu Hình :",
+        "🔸 CPU: Core i5-1135G7",
+        "🔸 Ram 8 GB",
+        "🔸 SSD NVMe 512 GB",
+        "🔸 Màn Hình 14 inch FHD",
+        "🔸 Card Màn Hình:",
+        "✅ Intel Iris Xe Graphics",
+        "🔸 Bảo Mật Vân Tay",
+        "🔸 Pin 2-3H",
+        "🔸 Led Phím",
+        "",
+        "",
+        "===================================",
+        "👉🏻👉🏻Sạc Zin Theo Máy - Bảo Hành 1️⃣ Tháng Tặng kèm Chuột, Túi Chống Sốc.",
+        "🏦 🏦118/17A Huỳnh Thiện Lộc, P Hoà Thạnh, Q Tân Phú",
+        "📲📲Zalo 24/7)",
+        "—————————————————————————",
+        "💥💥 💥 Hỗ Trợ Thanh Toán Quẹt Thẻ Hoặc Trả Góp Qua Thẻ Tín Dụng.",
+        "♻️♻️♻️Ship COD Toàn Quốc.",
+        "#asus #laptopasus #AsusZenbook #Asuszenbookux434fac #asusxX1503za #asus15xoled #a" +
+            "susx509ja #asusx415ea #asusx515ea",
+        ""};
+            this.txtDescription.Location = new System.Drawing.Point(26, 470);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescription.MaxLength = 32767;
+            this.txtDescription.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtDescription.Modified = false;
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtDescription.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDescription.OnIdleState = stateProperties4;
+            this.txtDescription.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescription.PasswordChar = '\0';
+            this.txtDescription.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtDescription.PlaceholderText = "Enter text";
+            this.txtDescription.ReadOnly = true;
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescription.SelectedText = "";
+            this.txtDescription.SelectionLength = 0;
+            this.txtDescription.SelectionStart = 0;
+            this.txtDescription.ShortcutsEnabled = true;
+            this.txtDescription.Size = new System.Drawing.Size(976, 551);
+            this.txtDescription.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtDescription.TabIndex = 61;
+            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDescription.TextMarginBottom = 0;
+            this.txtDescription.TextMarginLeft = 3;
+            this.txtDescription.TextMarginTop = 1;
+            this.txtDescription.TextPlaceholder = "Enter text";
+            this.txtDescription.UseSystemPasswordChar = false;
+            this.txtDescription.WordWrap = true;
+            // 
             // FHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,5 +647,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
         private System.Windows.Forms.Label lblAccountName;
+        private Bunifu.UI.WinForms.BunifuTextBox txtDescription;
     }
 }
