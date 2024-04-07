@@ -25,6 +25,20 @@ namespace Window_Project_v5._1
         private int viewCount;
         private string category;
         private int orderCondition;
+        private string contactPhone;
+        private string deliveryAddress;
+        private string origin;
+        private string type;
+        private string material;
+        private string supportPolicy;
+        private string area;
+        private string size;
+        private DateTime postedTime;
+        private DateTime completeTime;
+        private string color;
+        private string functionality;
+
+
 
 
         public Product()
@@ -145,7 +159,18 @@ namespace Window_Project_v5._1
         public int BillStatus { get => billStatus; set => billStatus = value; }
         public int ViewCount { get => viewCount; set => viewCount = value; }
         public int OrderCondition { get => orderCondition; set => orderCondition = value; }
-
+        public string ContactPhone { get => contactPhone; set => contactPhone = value; }
+        public string DeliveryAddress { get => deliveryAddress; set => deliveryAddress = value; }
+        public string Origin { get => origin; set => origin = value; }
+        public string Type { get => type; set => type = value; }
+        public string Material { get => material; set => material = value; }
+        public string SupportPolicy { get => supportPolicy; set => supportPolicy = value; }
+        public string Area { get => area; set => area = value; }
+        public string Size { get => size; set => size = value; }
+        public DateTime PostedTime { get => postedTime; set => postedTime = value; }
+        public DateTime CompleteTime { get => completeTime; set => completeTime = value; }
+        public string Color { get => color; set => color = value; }
+        public string Functionality { get => functionality; set => functionality = value; }
 
         public string GetBillStatus()
         {

@@ -58,7 +58,7 @@ namespace Window_Project_v5._1.Forms
         private void btnSignup_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSignin f = new FSignin();
+            FSignup f = new FSignup();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
