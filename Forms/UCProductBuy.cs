@@ -15,11 +15,13 @@ namespace Window_Project_v5._1.Forms
     public partial class UCProductBuy : UserControl
     {
         private ImageDAO imageDAO = new ImageDAO();
-        private Account account = new Account();
         private AccountDAO accountDAO = new AccountDAO();
-        private Product product;
         private ProductDAO productDAO = new ProductDAO();
         private CartDAO cartDAO = new CartDAO();
+        private FavoriteDAO favoriteDAO = new FavoriteDAO();
+        private Account account = new Account();
+        private Product product;
+        private bool checkCart; // false for favorite, true for cart
 
         public UCProductBuy()
         {
@@ -27,6 +29,19 @@ namespace Window_Project_v5._1.Forms
         }
 
         public UCProductBuy(Product pd, Account acc)
+        {
+            InitializeComponent();
+            InitializeUCProductBuy(pd, acc);
+        }
+
+        public UCProductBuy(Product pd, Account acc, bool checkCart)
+        {
+            InitializeComponent();
+            InitializeUCProductBuy(pd, acc);
+            this.checkCart = checkCart;
+        }
+
+        private void InitializeUCProductBuy(Product pd, Account acc)
         {
             InitializeComponent();
             this.Dock = DockStyle.Top;
@@ -99,7 +114,13 @@ namespace Window_Project_v5._1.Forms
                 productDAO.DeleteBuyerID(product);
             } else
             {
-                cartDAO.delete(account.Id, product.Id);
+                if (checkCart)
+                {
+                    cartDAO.delete(account.Id, product.Id);
+                } else
+                {
+                    favoriteDAO.delete(account.Id, product.Id);
+                }
             }
         }
 
