@@ -467,7 +467,7 @@
             this.bunifuTransition1.SetDecoration(this.lblSeller, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblSeller.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblSeller.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSeller.Location = new System.Drawing.Point(87, 17);
+            this.lblSeller.Location = new System.Drawing.Point(87, 14);
             this.lblSeller.Name = "lblSeller";
             this.lblSeller.Size = new System.Drawing.Size(172, 31);
             this.lblSeller.TabIndex = 34;
