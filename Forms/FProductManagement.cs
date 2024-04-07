@@ -38,7 +38,7 @@ namespace Window_Project_v5._1.Forms
                 if(pd.SellerID == account.Id)
                 {
                     UCProductSell uc = new UCProductSell(pd, account);
-                    if (pd.OrderCondition == (int)ordercondition.Displaying)
+                    if (pd.OrderCondition <= (int)ordercondition.Displaying)
                     {
                         tpDisplay.Controls.Add(uc);
                     }

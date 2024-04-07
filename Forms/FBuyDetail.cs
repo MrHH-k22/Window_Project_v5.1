@@ -108,7 +108,7 @@ namespace Window_Project_v5._1.Forms
                         btnImage3.Visible = false;
                         break;
                     case 3:
-                        btnImage3.Visible = false;
+                        btnImage4.Visible = false;
                         break;
                 }
             }
