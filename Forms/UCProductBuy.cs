@@ -26,17 +26,22 @@ namespace Window_Project_v5._1.Forms
         public UCProductBuy()
         {
             InitializeComponent();
+            SetEventForAllControls(this);
+
         }
 
         public UCProductBuy(Product pd, Account acc)
         {
             InitializeComponent();
+            SetEventForAllControls(this);
             InitializeUCProductBuy(pd, acc);
+
         }
 
         public UCProductBuy(Product pd, Account acc, bool checkCart)
         {
             InitializeComponent();
+            SetEventForAllControls(this);
             InitializeUCProductBuy(pd, acc);
             this.checkCart = checkCart;
         }
@@ -72,8 +77,11 @@ namespace Window_Project_v5._1.Forms
         }
 
 
+
+
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
+            SetEventForAllControls(this);
             Account seller = accountDAO.Retrieve(product.SellerID);
             lblSellerName.Text = "Seller name: " + seller.Name;
         }
@@ -128,6 +136,30 @@ namespace Window_Project_v5._1.Forms
         {
             FBuyDetail trackDetail = new FBuyDetail(product, account);
             trackDetail.Show();
+        }
+
+
+        private void UCProductBuy_MouseEnter(object sender, EventArgs e)
+        {
+            panelBody.BorderColor = Color.Black;
+        }
+
+        private void UCProductBuy_MouseLeave(object sender, EventArgs e)
+        {
+            panelBody.BorderColor = Color.FromArgb(250, 250, 250);
+        }
+
+        private void SetEventForAllControls(Control parent)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                control.MouseEnter += UCProductBuy_MouseEnter;
+                control.MouseLeave += UCProductBuy_MouseLeave;
+                if (control.HasChildren)
+                {
+                    SetEventForAllControls(control);
+                }
+            }
         }
     }
 }

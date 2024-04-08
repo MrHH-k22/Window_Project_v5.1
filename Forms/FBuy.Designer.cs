@@ -68,7 +68,7 @@
             this.panelLeft.FillColor = System.Drawing.Color.Transparent;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(185, 734);
+            this.panelLeft.Size = new System.Drawing.Size(185, 733);
             this.panelLeft.TabIndex = 1;
             // 
             // btnLoad
@@ -365,7 +365,7 @@
             this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpProduct.Location = new System.Drawing.Point(185, 0);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1186, 734);
+            this.flpProduct.Size = new System.Drawing.Size(1297, 733);
             this.flpProduct.TabIndex = 2;
             // 
             // FBuy
@@ -373,7 +373,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1371, 734);
+            this.ClientSize = new System.Drawing.Size(1482, 733);
             this.Controls.Add(this.flpProduct);
             this.Controls.Add(this.panelLeft);
             this.Margin = new System.Windows.Forms.Padding(4);
