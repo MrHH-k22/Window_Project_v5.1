@@ -39,7 +39,7 @@ namespace Window_Project_v5._1.Forms
                 {
                     UCProductBuy uc = new UCProductBuy(pd, account);
                     total += pd.SalePrice;
-                    flpSavedList.Controls.Add(uc);
+                    flpCartList.Controls.Add(uc);
                 } else
                 {
                     cartDAO.delete(account.Id, pd.Id);
@@ -53,6 +53,11 @@ namespace Window_Project_v5._1.Forms
             FDelivery delivery = new FDelivery(account, products);
             delivery.Show();
             FCart_Load(sender, e);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

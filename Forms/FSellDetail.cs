@@ -79,13 +79,10 @@ namespace Window_Project_v5._1.Forms
 
         private double StringToDouble(string str)
         {
-            decimal decimalResult;
-            if (decimal.TryParse(str, out decimalResult))
+            double decimalResult;
+            if (double.TryParse(str, out decimalResult))
             {
-                if (decimalResult >= -9999999.99m && decimalResult <= 9999999.99m)
-                {
                     return (double)decimalResult;
-                }
             }
             MessageBox.Show("The value of price is invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return -1;
