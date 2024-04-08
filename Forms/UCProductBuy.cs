@@ -77,19 +77,7 @@ namespace Window_Project_v5._1.Forms
         {
             Account seller = accountDAO.Retrieve(product.SellerID);
             lblSellerName.Text = "Seller name: " + seller.Name;
-            btnFunction.Enabled = false;
-            if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
-            {
-                btnFunction.Text = "Wait for confirmation";
-            }
-            else if (product.OrderCondition == (int)ordercondition.Delivering)
-            {
-                btnFunction.Text = "Delivering";
-            }
-            else if (product.OrderCondition == (int)ordercondition.Completed)
-            {
-                btnFunction.Text = "Completed";
-            }
+            
             if(product.OrderCondition == (int)ordercondition.Completed)
             {
                 this.Controls.Remove(btnCancel);

@@ -133,23 +133,7 @@
             // 
             // btnFunction
             // 
-            this.btnFunction.BorderColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.BorderThickness = 1;
-            this.btnFunction.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFunction.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFunction.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFunction.FillColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnFunction.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFunction.HoverState.BorderColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFunction.HoverState.ForeColor = System.Drawing.Color.BlueViolet;
-            this.btnFunction.Location = new System.Drawing.Point(694, 57);
-            this.btnFunction.Name = "btnFunction";
-            this.btnFunction.Size = new System.Drawing.Size(230, 37);
-            this.btnFunction.TabIndex = 56;
-            this.btnFunction.Text = "Next state";
+            
             // 
             // btnCancel
             // 
