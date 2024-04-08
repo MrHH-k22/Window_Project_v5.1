@@ -41,7 +41,7 @@ namespace Window_Project_v5._1.Forms
             List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
             {
-                if((pd.BuyerID == null || pd.BuyerID <=0) && pd.OrderCondition == (int)ordercondition.Displaying)
+                if(pd.BuyerID <=0 && pd.OrderCondition <= (int)ordercondition.Displaying)
                 {
                     UCProduct uc = new UCProduct(pd, account);
                     flpProduct.Controls.Add(uc);

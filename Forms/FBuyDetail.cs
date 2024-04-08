@@ -19,6 +19,7 @@ namespace Window_Project_v5._1.Forms
         private ImageDAO imageDAO = new ImageDAO();
         private ProductDAO productDAO = new ProductDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
+        private CartDAO cartDAO = new CartDAO();
         private Account account = new Account();
         private AccountDAO accountDAO = new AccountDAO();
         private Product product = new Product();
@@ -108,7 +109,7 @@ namespace Window_Project_v5._1.Forms
                         btnImage3.Visible = false;
                         break;
                     case 3:
-                        btnImage3.Visible = false;
+                        btnImage4.Visible = false;
                         break;
                 }
             }
@@ -166,27 +167,6 @@ namespace Window_Project_v5._1.Forms
         {
             this.Close();
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-            {
-                favoriteDAO.delete(account.Id, product.Id);
-                btnSave.Text = "Save";
-
-                btnSave.FillColor = Color.Red;
-                btnSave.ForeColor = Color.WhiteSmoke;
-            }
-            else
-            {
-                favoriteDAO.add(account.Id, product.Id);
-                btnSave.Text = "Saved";
-
-                btnSave.FillColor = Color.WhiteSmoke;
-                btnSave.ForeColor = Color.Red;
-            }
-        }
-
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
@@ -249,6 +229,39 @@ namespace Window_Project_v5._1.Forms
             temp.Image = btnImage1.Image;
             btnImage1.Image = btnImage4.Image;
             btnImage4.Image = temp.Image;
+        }
+
+        private void btnAddtoCart_Click(object sender, EventArgs e)
+        {
+            if (cartDAO.checkProductinCart(account.Id, product.Id))
+            {
+                MessageBox.Show("The product is already in your cart", "Announcement", MessageBoxButtons.OK);
+            }
+            else
+            {
+                cartDAO.add(account.Id, product.Id);
+                MessageBox.Show("Adding the product successfully", "Announcement", MessageBoxButtons.OK);
+            }
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                favoriteDAO.delete(account.Id, product.Id);
+                btnSave.Text = "Save";
+
+                btnSave.FillColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                favoriteDAO.add(account.Id, product.Id);
+                btnSave.Text = "Saved";
+
+                btnSave.FillColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
         }
     }
 }
