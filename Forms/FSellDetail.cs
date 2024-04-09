@@ -264,7 +264,7 @@ namespace Window_Project_v5._1.Forms
         {
             if (ddArea.SelectedItem != null)
             {
-                selectedArea = ddCategory.SelectedItem.ToString();
+                selectedArea = ddArea.SelectedItem.ToString();
             }
         }
 
@@ -351,5 +351,7 @@ namespace Window_Project_v5._1.Forms
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        
     }
 }

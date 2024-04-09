@@ -27,7 +27,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             SetEventForAllControls(this);
-
+            btnRate.Visible = false;
         }
 
         public UCProductBuy(Product pd, Account acc)
@@ -48,8 +48,8 @@ namespace Window_Project_v5._1.Forms
 
         private void InitializeUCProductBuy(Product pd, Account acc)
         {
-            InitializeComponent();
             this.Dock = DockStyle.Top;
+            btnRate.Visible = false;
             this.product = pd;
             account = acc;
             lblPrice.Text = pd.SalePrice.ToString();
@@ -84,23 +84,13 @@ namespace Window_Project_v5._1.Forms
             SetEventForAllControls(this);
             Account seller = accountDAO.Retrieve(product.SellerID);
             lblSellerName.Text = "Seller name: " + seller.Name;
+            
+            if(product.OrderCondition == (int)ordercondition.Completed)
+            {
+                btnCancel.Visible = false;
+                btnRate.Visible = true;
+            }
         }
-
-        private void btnFunction_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSellerName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnFunction_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             if (product.BuyerID != 0)
@@ -160,6 +150,12 @@ namespace Window_Project_v5._1.Forms
                     SetEventForAllControls(control);
                 }
             }
+        }
+
+        private void btnRate_Click(object sender, EventArgs e)
+        {
+            FRating f = new FRating(product);
+            f.Show();
         }
     }
 }

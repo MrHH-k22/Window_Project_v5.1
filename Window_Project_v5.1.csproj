@@ -244,6 +244,12 @@
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FReview.Designer.cs">
+      <DependentUpon>FReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FSaveList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,6 +304,18 @@
     <Compile Include="Forms\UCProductSell.Designer.cs">
       <DependentUpon>UCProductSell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCReview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCReview.Designer.cs">
+      <DependentUpon>UCReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRating.Designer.cs">
+      <DependentUpon>FRating.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +363,8 @@
     <Compile Include="ProductDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rating.cs" />
+    <Compile Include="RatingDAO.cs" />
     <EmbeddedResource Include="FForgetPassword.resx">
       <DependentUpon>FForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,6 +398,9 @@
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FReview.resx">
+      <DependentUpon>FReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FSaveList.resx">
       <DependentUpon>FSaveList.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProduct.resx">
       <DependentUpon>UCProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRating.resx">
+      <DependentUpon>FRating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSignin.resx">
       <DependentUpon>FSignin.cs</DependentUpon>
