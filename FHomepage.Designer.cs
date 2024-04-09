@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.containerBody = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -48,11 +47,11 @@
             this.btnSalesOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnPurchasesOrder = new Guna.UI2.WinForms.Guna2Button();
             this.pbAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.containerTop.SuspendLayout();
+            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
+            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.containerBody.SuspendLayout();
             this.containerMenu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -60,6 +59,7 @@
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.containerTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -99,24 +99,7 @@
             this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
             this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.containerTop;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-            // 
-            // containerTop
-            // 
-            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.btnCart);
-            this.containerTop.Controls.Add(this.btnMenu);
-            this.containerTop.Controls.Add(this.btnPostProduct);
-            this.containerTop.Controls.Add(this.pbLogo);
-            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1500, 70);
-            this.containerTop.TabIndex = 1;
-            this.containerTop.Text = "guna2ContainerControl1";
             // 
             // containerBody
             // 
@@ -423,61 +406,19 @@
             this.pbAvatar.TabIndex = 0;
             this.pbAvatar.TabStop = false;
             // 
-            // btnCart
+            // pbLogo
             // 
-            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCart.ForeColor = System.Drawing.Color.White;
-            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
-            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCart.Location = new System.Drawing.Point(1000, 10);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Size = new System.Drawing.Size(163, 46);
-            this.btnCart.TabIndex = 3;
-            this.btnCart.Text = "CART";
-            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
-            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMenu.Location = new System.Drawing.Point(688, 11);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Size = new System.Drawing.Size(292, 45);
-            this.btnMenu.TabIndex = 2;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(188, 70);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
             // btnPostProduct
             // 
@@ -507,19 +448,77 @@
             this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
             this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
-            // pbLogo
+            // btnMenu
             // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
-            this.pbLogo.ImageRotate = 0F;
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(188, 70);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
+            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnMenu.Location = new System.Drawing.Point(688, 11);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Size = new System.Drawing.Size(292, 45);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnCart
+            // 
+            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCart.Location = new System.Drawing.Point(1000, 10);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Size = new System.Drawing.Size(163, 46);
+            this.btnCart.TabIndex = 3;
+            this.btnCart.Text = "CART";
+            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
+            // 
+            // containerTop
+            // 
+            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnCart);
+            this.containerTop.Controls.Add(this.btnMenu);
+            this.containerTop.Controls.Add(this.btnPostProduct);
+            this.containerTop.Controls.Add(this.pbLogo);
+            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Location = new System.Drawing.Point(0, 0);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerTop.Name = "containerTop";
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
+            this.containerTop.TabIndex = 1;
+            this.containerTop.Text = "guna2ContainerControl1";
             // 
             // FHomepage
             // 
@@ -537,7 +536,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHomepage";
             this.Load += new System.EventHandler(this.FHomepage_Load);
-            this.containerTop.ResumeLayout(false);
             this.containerBody.ResumeLayout(false);
             this.containerMenu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
@@ -548,17 +546,13 @@
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.containerTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
-        private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
-        private Guna.UI2.WinForms.Guna2Button btnCart;
-        private Guna.UI2.WinForms.Guna2Button btnMenu;
-        private Guna.UI2.WinForms.Guna2Button btnPostProduct;
-        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2ContainerControl containerBody;
         private Guna.UI2.WinForms.Guna2ContainerControl containerMenu;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
@@ -577,5 +571,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
         private System.Windows.Forms.Label lblAccountName;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
+        private Guna.UI2.WinForms.Guna2Button btnCart;
+        private Guna.UI2.WinForms.Guna2Button btnMenu;
+        private Guna.UI2.WinForms.Guna2Button btnPostProduct;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
     }
 }

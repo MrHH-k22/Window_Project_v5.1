@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoney));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.gbInfo = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.lblTotalMoney = new System.Windows.Forms.Label();
+            this.pbMoneyTotal = new System.Windows.Forms.PictureBox();
+            this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.gbFunction = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.panelBody = new System.Windows.Forms.Panel();
             this.btn500 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btn200 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btn100 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -59,16 +59,47 @@
             this.btnRecharge = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.txtMoney = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pbMoneyAmount = new System.Windows.Forms.PictureBox();
-            this.pbMoneyTotal = new System.Windows.Forms.PictureBox();
-            this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.panelBody = new System.Windows.Forms.Panel();
+            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOrderAnalysis = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSavedProducts = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnSalesOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPurchasesOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblAccountName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.gbInfo.SuspendLayout();
-            this.gbFunction.SuspendLayout();
-            this.panelTop.SuspendLayout();
-            this.panelBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMoneyAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMoneyTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
+            this.gbFunction.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMoneyAmount)).BeginInit();
+            this.panelTop.SuspendLayout();
+            this.panelBody.SuspendLayout();
+            this.containerTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panelMain.SuspendLayout();
+            this.containerMenu.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
+            this.guna2Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbInfo
@@ -88,7 +119,7 @@
             this.gbInfo.Margin = new System.Windows.Forms.Padding(3, 20, 3, 2);
             this.gbInfo.Name = "gbInfo";
             this.gbInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbInfo.Size = new System.Drawing.Size(1219, 116);
+            this.gbInfo.Size = new System.Drawing.Size(1463, 116);
             this.gbInfo.TabIndex = 2;
             this.gbInfo.TabStop = false;
             // 
@@ -104,6 +135,34 @@
             this.lblTotalMoney.Size = new System.Drawing.Size(144, 31);
             this.lblTotalMoney.TabIndex = 12;
             this.lblTotalMoney.Text = "100,000 VND";
+            // 
+            // pbMoneyTotal
+            // 
+            this.pbMoneyTotal.Image = global::Window_Project_v5._1.Properties.Resources.money;
+            this.pbMoneyTotal.Location = new System.Drawing.Point(733, 15);
+            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.pbMoneyTotal.Name = "pbMoneyTotal";
+            this.pbMoneyTotal.Size = new System.Drawing.Size(133, 79);
+            this.pbMoneyTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMoneyTotal.TabIndex = 0;
+            this.pbMoneyTotal.TabStop = false;
+            // 
+            // pbAvatar
+            // 
+            this.pbAvatar.AllowFocused = false;
+            this.pbAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbAvatar.AutoSizeHeight = true;
+            this.pbAvatar.BorderRadius = 42;
+            this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
+            this.pbAvatar.IsCircle = true;
+            this.pbAvatar.Location = new System.Drawing.Point(178, 15);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.Size = new System.Drawing.Size(85, 85);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAvatar.TabIndex = 11;
+            this.pbAvatar.TabStop = false;
+            this.pbAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // lblName
             // 
@@ -138,32 +197,12 @@
             this.gbFunction.LabelIndent = 10;
             this.gbFunction.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbFunction.Location = new System.Drawing.Point(7, 18);
-            this.gbFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFunction.Margin = new System.Windows.Forms.Padding(4);
             this.gbFunction.Name = "gbFunction";
-            this.gbFunction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbFunction.Size = new System.Drawing.Size(1219, 480);
+            this.gbFunction.Padding = new System.Windows.Forms.Padding(4);
+            this.gbFunction.Size = new System.Drawing.Size(1462, 480);
             this.gbFunction.TabIndex = 3;
             this.gbFunction.TabStop = false;
-            // 
-            // panelTop
-            // 
-            this.panelTop.Controls.Add(this.gbInfo);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1241, 137);
-            this.panelTop.TabIndex = 4;
-            // 
-            // panelBody
-            // 
-            this.panelBody.Controls.Add(this.gbFunction);
-            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 137);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1241, 565);
-            this.panelBody.TabIndex = 5;
             // 
             // btn500
             // 
@@ -184,11 +223,11 @@
             this.btn500.ColorContrastOnClick = 45;
             this.btn500.ColorContrastOnHover = 45;
             this.btn500.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn500.CustomizableEdges = borderEdges1;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.btn500.CustomizableEdges = borderEdges31;
             this.btn500.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn500.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn500.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -275,11 +314,11 @@
             this.btn200.ColorContrastOnClick = 45;
             this.btn200.ColorContrastOnHover = 45;
             this.btn200.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn200.CustomizableEdges = borderEdges2;
+            borderEdges32.BottomLeft = true;
+            borderEdges32.BottomRight = true;
+            borderEdges32.TopLeft = true;
+            borderEdges32.TopRight = true;
+            this.btn200.CustomizableEdges = borderEdges32;
             this.btn200.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn200.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn200.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -366,11 +405,11 @@
             this.btn100.ColorContrastOnClick = 45;
             this.btn100.ColorContrastOnHover = 45;
             this.btn100.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn100.CustomizableEdges = borderEdges3;
+            borderEdges33.BottomLeft = true;
+            borderEdges33.BottomRight = true;
+            borderEdges33.TopLeft = true;
+            borderEdges33.TopRight = true;
+            this.btn100.CustomizableEdges = borderEdges33;
             this.btn100.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn100.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn100.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -457,11 +496,11 @@
             this.btn50.ColorContrastOnClick = 45;
             this.btn50.ColorContrastOnHover = 45;
             this.btn50.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btn50.CustomizableEdges = borderEdges4;
+            borderEdges34.BottomLeft = true;
+            borderEdges34.BottomRight = true;
+            borderEdges34.TopLeft = true;
+            borderEdges34.TopRight = true;
+            this.btn50.CustomizableEdges = borderEdges34;
             this.btn50.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn50.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn50.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -575,26 +614,26 @@
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties4;
+            stateProperties41.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties41.FillColor = System.Drawing.Color.Empty;
+            stateProperties41.ForeColor = System.Drawing.Color.Empty;
+            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties41;
+            stateProperties42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties42.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties42;
+            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties43.FillColor = System.Drawing.Color.Empty;
+            stateProperties43.ForeColor = System.Drawing.Color.Empty;
+            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties43;
+            stateProperties44.BorderColor = System.Drawing.Color.Silver;
+            stateProperties44.FillColor = System.Drawing.Color.White;
+            stateProperties44.ForeColor = System.Drawing.Color.Empty;
+            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties44;
             this.txtPassword.Padding = new System.Windows.Forms.Padding(4);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -635,11 +674,11 @@
             this.btnWithdraw.ColorContrastOnClick = 45;
             this.btnWithdraw.ColorContrastOnHover = 45;
             this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnWithdraw.CustomizableEdges = borderEdges5;
+            borderEdges35.BottomLeft = true;
+            borderEdges35.BottomRight = true;
+            borderEdges35.TopLeft = true;
+            borderEdges35.TopRight = true;
+            this.btnWithdraw.CustomizableEdges = borderEdges35;
             this.btnWithdraw.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnWithdraw.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWithdraw.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -726,11 +765,11 @@
             this.btnRecharge.ColorContrastOnClick = 45;
             this.btnRecharge.ColorContrastOnHover = 45;
             this.btnRecharge.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnRecharge.CustomizableEdges = borderEdges6;
+            borderEdges36.BottomLeft = true;
+            borderEdges36.BottomRight = true;
+            borderEdges36.TopLeft = true;
+            borderEdges36.TopRight = true;
+            this.btnRecharge.CustomizableEdges = borderEdges36;
             this.btnRecharge.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRecharge.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecharge.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -833,26 +872,26 @@
             this.txtMoney.Modified = false;
             this.txtMoney.Multiline = false;
             this.txtMoney.Name = "txtMoney";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtMoney.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnIdleState = stateProperties8;
+            stateProperties45.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties45.FillColor = System.Drawing.Color.Empty;
+            stateProperties45.ForeColor = System.Drawing.Color.Empty;
+            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnActiveState = stateProperties45;
+            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties46.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtMoney.OnDisabledState = stateProperties46;
+            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties47.FillColor = System.Drawing.Color.Empty;
+            stateProperties47.ForeColor = System.Drawing.Color.Empty;
+            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnHoverState = stateProperties47;
+            stateProperties48.BorderColor = System.Drawing.Color.Silver;
+            stateProperties48.FillColor = System.Drawing.Color.White;
+            stateProperties48.ForeColor = System.Drawing.Color.Empty;
+            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnIdleState = stateProperties48;
             this.txtMoney.Padding = new System.Windows.Forms.Padding(4);
             this.txtMoney.PasswordChar = '\0';
             this.txtMoney.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -885,54 +924,465 @@
             this.pbMoneyAmount.TabIndex = 0;
             this.pbMoneyAmount.TabStop = false;
             // 
-            // pbMoneyTotal
+            // panelTop
             // 
-            this.pbMoneyTotal.Image = global::Window_Project_v5._1.Properties.Resources.money;
-            this.pbMoneyTotal.Location = new System.Drawing.Point(733, 15);
-            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.pbMoneyTotal.Name = "pbMoneyTotal";
-            this.pbMoneyTotal.Size = new System.Drawing.Size(133, 79);
-            this.pbMoneyTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMoneyTotal.TabIndex = 0;
-            this.pbMoneyTotal.TabStop = false;
+            this.panelTop.Controls.Add(this.gbInfo);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1482, 137);
+            this.panelTop.TabIndex = 4;
             // 
-            // pbAvatar
+            // panelBody
             // 
-            this.pbAvatar.AllowFocused = false;
-            this.pbAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbAvatar.AutoSizeHeight = true;
-            this.pbAvatar.BorderRadius = 42;
-            this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
-            this.pbAvatar.IsCircle = true;
-            this.pbAvatar.Location = new System.Drawing.Point(56, 15);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbAvatar.Name = "pbAvatar";
-            this.pbAvatar.Size = new System.Drawing.Size(85, 85);
-            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAvatar.TabIndex = 11;
-            this.pbAvatar.TabStop = false;
-            this.pbAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.panelBody.Controls.Add(this.gbFunction);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 137);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(4);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1482, 526);
+            this.panelBody.TabIndex = 5;
+            // 
+            // containerTop
+            // 
+            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnCart);
+            this.containerTop.Controls.Add(this.btnMenu);
+            this.containerTop.Controls.Add(this.btnPostProduct);
+            this.containerTop.Controls.Add(this.pbLogo);
+            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Location = new System.Drawing.Point(0, 0);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerTop.Name = "containerTop";
+            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.TabIndex = 6;
+            this.containerTop.Text = "guna2ContainerControl1";
+            // 
+            // btnCart
+            // 
+            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCart.Location = new System.Drawing.Point(770, 10);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Size = new System.Drawing.Size(163, 46);
+            this.btnCart.TabIndex = 3;
+            this.btnCart.Text = "CART";
+            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
+            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnMenu.Location = new System.Drawing.Point(1159, 11);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Size = new System.Drawing.Size(292, 45);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            // 
+            // btnPostProduct
+            // 
+            this.btnPostProduct.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnPostProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPostProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPostProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPostProduct.ForeColor = System.Drawing.Color.White;
+            this.btnPostProduct.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnPostProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Image = global::Window_Project_v5._1.Properties.Resources.edit;
+            this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPostProduct.Location = new System.Drawing.Point(939, 10);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPostProduct.Name = "btnPostProduct";
+            this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Size = new System.Drawing.Size(203, 46);
+            this.btnPostProduct.TabIndex = 1;
+            this.btnPostProduct.Text = "POST NEWS";
+            this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(188, 70);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.panelBody);
+            this.panelMain.Controls.Add(this.panelTop);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 70);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1482, 663);
+            this.panelMain.TabIndex = 7;
+            // 
+            // containerMenu
+            // 
+            this.containerMenu.BorderColor = System.Drawing.Color.Black;
+            this.containerMenu.Controls.Add(this.btnLogout);
+            this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnMoney);
+            this.containerMenu.Controls.Add(this.btnInformation);
+            this.containerMenu.Controls.Add(this.btnOrderAnalysis);
+            this.containerMenu.Controls.Add(this.btnSavedProducts);
+            this.containerMenu.Controls.Add(this.guna2Panel6);
+            this.containerMenu.Controls.Add(this.btnSalesOrder);
+            this.containerMenu.Controls.Add(this.btnPurchasesOrder);
+            this.containerMenu.Controls.Add(this.guna2Panel7);
+            this.containerMenu.Controls.Add(this.guna2Panel8);
+            this.containerMenu.CustomBorderColor = System.Drawing.Color.Black;
+            this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.containerMenu.Location = new System.Drawing.Point(1161, 75);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerMenu.Name = "containerMenu";
+            this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
+            this.containerMenu.Size = new System.Drawing.Size(292, 595);
+            this.containerMenu.TabIndex = 9;
+            this.containerMenu.Text = "guna2ContainerControl1";
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogout.FillColor = System.Drawing.Color.White;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.Image = global::Window_Project_v5._1.Properties.Resources.logout;
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(290, 55);
+            this.btnLogout.TabIndex = 23;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
+            this.guna2Panel5.TabIndex = 24;
+            // 
+            // btnMoney
+            // 
+            this.btnMoney.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoney.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoney.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMoney.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMoney.FillColor = System.Drawing.Color.White;
+            this.btnMoney.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMoney.ForeColor = System.Drawing.Color.Black;
+            this.btnMoney.Image = global::Window_Project_v5._1.Properties.Resources.credit_card1;
+            this.btnMoney.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMoney.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnMoney.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnMoney.Location = new System.Drawing.Point(1, 459);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMoney.Name = "btnMoney";
+            this.btnMoney.Size = new System.Drawing.Size(290, 55);
+            this.btnMoney.TabIndex = 22;
+            this.btnMoney.Text = "Recharge/Withdraw money";
+            this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // btnInformation
+            // 
+            this.btnInformation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInformation.FillColor = System.Drawing.Color.White;
+            this.btnInformation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnInformation.ForeColor = System.Drawing.Color.Black;
+            this.btnInformation.Image = global::Window_Project_v5._1.Properties.Resources.user_v2;
+            this.btnInformation.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInformation.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnInformation.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnInformation.Location = new System.Drawing.Point(1, 404);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInformation.Name = "btnInformation";
+            this.btnInformation.Size = new System.Drawing.Size(290, 55);
+            this.btnInformation.TabIndex = 21;
+            this.btnInformation.Text = "Profile";
+            this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // btnOrderAnalysis
+            // 
+            this.btnOrderAnalysis.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderAnalysis.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderAnalysis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrderAnalysis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrderAnalysis.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrderAnalysis.FillColor = System.Drawing.Color.White;
+            this.btnOrderAnalysis.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOrderAnalysis.ForeColor = System.Drawing.Color.Black;
+            this.btnOrderAnalysis.Image = global::Window_Project_v5._1.Properties.Resources.pie_chart;
+            this.btnOrderAnalysis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrderAnalysis.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnOrderAnalysis.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 349);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrderAnalysis.Name = "btnOrderAnalysis";
+            this.btnOrderAnalysis.Size = new System.Drawing.Size(290, 55);
+            this.btnOrderAnalysis.TabIndex = 20;
+            this.btnOrderAnalysis.Text = "Order Analysis";
+            this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // btnSavedProducts
+            // 
+            this.btnSavedProducts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSavedProducts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSavedProducts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSavedProducts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSavedProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSavedProducts.FillColor = System.Drawing.Color.White;
+            this.btnSavedProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSavedProducts.ForeColor = System.Drawing.Color.Black;
+            this.btnSavedProducts.Image = global::Window_Project_v5._1.Properties.Resources.heart_v3;
+            this.btnSavedProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnSavedProducts.Location = new System.Drawing.Point(1, 294);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSavedProducts.Name = "btnSavedProducts";
+            this.btnSavedProducts.Size = new System.Drawing.Size(290, 55);
+            this.btnSavedProducts.TabIndex = 19;
+            this.btnSavedProducts.Text = "Saved Products";
+            this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel6.Controls.Add(this.label4);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel6.Location = new System.Drawing.Point(1, 247);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(290, 47);
+            this.guna2Panel6.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label4.Location = new System.Drawing.Point(19, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 30);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Features";
+            // 
+            // btnSalesOrder
+            // 
+            this.btnSalesOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalesOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalesOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSalesOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSalesOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalesOrder.FillColor = System.Drawing.Color.White;
+            this.btnSalesOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSalesOrder.ForeColor = System.Drawing.Color.Black;
+            this.btnSalesOrder.Image = global::Window_Project_v5._1.Properties.Resources.file;
+            this.btnSalesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnSalesOrder.Location = new System.Drawing.Point(1, 192);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalesOrder.Name = "btnSalesOrder";
+            this.btnSalesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnSalesOrder.TabIndex = 17;
+            this.btnSalesOrder.Text = "Sales Order";
+            this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // btnPurchasesOrder
+            // 
+            this.btnPurchasesOrder.CustomBorderColor = System.Drawing.Color.White;
+            this.btnPurchasesOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchasesOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchasesOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPurchasesOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPurchasesOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPurchasesOrder.FillColor = System.Drawing.Color.White;
+            this.btnPurchasesOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPurchasesOrder.ForeColor = System.Drawing.Color.Black;
+            this.btnPurchasesOrder.Image = global::Window_Project_v5._1.Properties.Resources.Shopping_Bag_color;
+            this.btnPurchasesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
+            this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 137);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPurchasesOrder.Name = "btnPurchasesOrder";
+            this.btnPurchasesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnPurchasesOrder.TabIndex = 16;
+            this.btnPurchasesOrder.Text = "Purchase order";
+            this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel7.Controls.Add(this.label5);
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel7.Location = new System.Drawing.Point(1, 91);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(290, 46);
+            this.guna2Panel7.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label5.Location = new System.Drawing.Point(19, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 30);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Order Management";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Controls.Add(this.lblAccountName);
+            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
+            this.guna2Panel8.TabIndex = 14;
+            // 
+            // lblAccountName
+            // 
+            this.lblAccountName.AutoSize = true;
+            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblAccountName.Name = "lblAccountName";
+            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblAccountName.TabIndex = 3;
+            this.lblAccountName.Text = "Account name";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // ratingAccount
+            // 
+            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingAccount.Name = "ratingAccount";
+            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingAccount.TabIndex = 2;
             // 
             // FMoney
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 702);
-            this.Controls.Add(this.panelBody);
-            this.Controls.Add(this.panelTop);
+            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.Controls.Add(this.containerMenu);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.containerTop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMoney";
             this.Text = "FMoney";
             this.Load += new System.EventHandler(this.FMoney_Load);
             this.gbInfo.ResumeLayout(false);
             this.gbInfo.PerformLayout();
-            this.gbFunction.ResumeLayout(false);
-            this.panelTop.ResumeLayout(false);
-            this.panelBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMoneyAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMoneyTotal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
+            this.gbFunction.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMoneyAmount)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            this.panelBody.ResumeLayout(false);
+            this.containerTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.containerMenu.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel7.PerformLayout();
+            this.guna2Panel8.ResumeLayout(false);
+            this.guna2Panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -957,5 +1407,28 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btn500;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btn200;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btn100;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
+        private Guna.UI2.WinForms.Guna2Button btnCart;
+        private Guna.UI2.WinForms.Guna2Button btnMenu;
+        private Guna.UI2.WinForms.Guna2Button btnPostProduct;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerMenu;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2Button btnMoney;
+        private Guna.UI2.WinForms.Guna2Button btnInformation;
+        private Guna.UI2.WinForms.Guna2Button btnOrderAnalysis;
+        private Guna.UI2.WinForms.Guna2Button btnSavedProducts;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Button btnSalesOrder;
+        private Guna.UI2.WinForms.Guna2Button btnPurchasesOrder;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        private System.Windows.Forms.Label lblAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
     }
 }

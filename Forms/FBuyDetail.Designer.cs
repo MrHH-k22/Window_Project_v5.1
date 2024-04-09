@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation15 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
-            this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnImage4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImage3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImage2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImage1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.p = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMiddle = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,148 +60,208 @@
             this.lblBuyPrice = new System.Windows.Forms.Label();
             this.lblSellPrice = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
-            this.txtSupportPolicy = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblAvatarName = new System.Windows.Forms.Label();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddtoCart = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.p = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnImage4 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImage3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImage2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImage1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelRight = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.pbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnAddtoCart = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.lblAvatarName = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSupportPolicy = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.panelLeft.SuspendLayout();
+            this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOrderAnalysis = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSavedProducts = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSalesOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPurchasesOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblAccountName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.containerTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panelBody.SuspendLayout();
             this.panelMiddle.SuspendLayout();
+            this.panelLeft.SuspendLayout();
             this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
+            this.containerMenu.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
+            this.guna2Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuTransition1
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation15.AnimateOnlyDifferences = true;
+            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
+            animation15.LeafCoeff = 0F;
+            animation15.MaxTime = 1F;
+            animation15.MinTime = 0F;
+            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
+            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
+            animation15.MosaicSize = 0;
+            animation15.Padding = new System.Windows.Forms.Padding(0);
+            animation15.RotateCoeff = 0F;
+            animation15.RotateLimit = 0F;
+            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
+            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
+            animation15.TimeCoeff = 0F;
+            animation15.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation15;
             // 
-            // panelLeft
+            // containerTop
             // 
-            this.panelLeft.Controls.Add(this.btnImage4);
-            this.panelLeft.Controls.Add(this.btnImage3);
-            this.panelLeft.Controls.Add(this.btnImage2);
-            this.panelLeft.Controls.Add(this.btnImage1);
-            this.bunifuTransition1.SetDecoration(this.panelLeft, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(335, 780);
-            this.panelLeft.TabIndex = 0;
+            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnCart);
+            this.containerTop.Controls.Add(this.btnMenu);
+            this.containerTop.Controls.Add(this.btnPostProduct);
+            this.containerTop.Controls.Add(this.pbLogo);
+            this.bunifuTransition1.SetDecoration(this.containerTop, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Location = new System.Drawing.Point(0, 0);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerTop.Name = "containerTop";
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
+            this.containerTop.TabIndex = 5;
+            this.containerTop.Text = "guna2ContainerControl1";
             // 
-            // btnImage4
+            // btnCart
             // 
-            this.btnImage4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage4.Image = ((System.Drawing.Image)(resources.GetObject("btnImage4.Image")));
-            this.btnImage4.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage4.ImageRotate = 0F;
-            this.btnImage4.ImageSize = new System.Drawing.Size(80, 80);
-            this.btnImage4.Location = new System.Drawing.Point(228, 306);
-            this.btnImage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage4.Name = "btnImage4";
-            this.btnImage4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage4.Size = new System.Drawing.Size(80, 80);
-            this.btnImage4.TabIndex = 112;
-            this.btnImage4.Click += new System.EventHandler(this.btnImage4_Click);
+            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.bunifuTransition1.SetDecoration(this.btnCart, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCart.Location = new System.Drawing.Point(770, 10);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Size = new System.Drawing.Size(163, 46);
+            this.btnCart.TabIndex = 3;
+            this.btnCart.Text = "CART";
+            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
-            // btnImage3
+            // btnMenu
             // 
-            this.btnImage3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage3.Image = ((System.Drawing.Image)(resources.GetObject("btnImage3.Image")));
-            this.btnImage3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage3.ImageRotate = 0F;
-            this.btnImage3.ImageSize = new System.Drawing.Size(80, 80);
-            this.btnImage3.Location = new System.Drawing.Point(119, 306);
-            this.btnImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage3.Name = "btnImage3";
-            this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage3.Size = new System.Drawing.Size(80, 80);
-            this.btnImage3.TabIndex = 111;
-            this.btnImage3.Click += new System.EventHandler(this.btnImage3_Click);
+            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.bunifuTransition1.SetDecoration(this.btnMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
+            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnMenu.Location = new System.Drawing.Point(1159, 11);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Size = new System.Drawing.Size(292, 45);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // btnImage2
+            // btnPostProduct
             // 
-            this.btnImage2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage2.Image = ((System.Drawing.Image)(resources.GetObject("btnImage2.Image")));
-            this.btnImage2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage2.ImageRotate = 0F;
-            this.btnImage2.ImageSize = new System.Drawing.Size(80, 80);
-            this.btnImage2.Location = new System.Drawing.Point(12, 306);
-            this.btnImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage2.Name = "btnImage2";
-            this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage2.Size = new System.Drawing.Size(80, 80);
-            this.btnImage2.TabIndex = 110;
-            this.btnImage2.Click += new System.EventHandler(this.btnImage2_Click);
+            this.btnPostProduct.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.bunifuTransition1.SetDecoration(this.btnPostProduct, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnPostProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPostProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPostProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPostProduct.ForeColor = System.Drawing.Color.White;
+            this.btnPostProduct.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnPostProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Image = global::Window_Project_v5._1.Properties.Resources.edit;
+            this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPostProduct.Location = new System.Drawing.Point(939, 10);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPostProduct.Name = "btnPostProduct";
+            this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Size = new System.Drawing.Size(203, 46);
+            this.btnPostProduct.TabIndex = 1;
+            this.btnPostProduct.Text = "POST NEWS";
+            this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
-            // btnImage1
+            // pbLogo
             // 
-            this.btnImage1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnImage1.HoverState.ImageSize = new System.Drawing.Size(190, 190);
-            this.btnImage1.Image = ((System.Drawing.Image)(resources.GetObject("btnImage1.Image")));
-            this.btnImage1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage1.ImageRotate = 0F;
-            this.btnImage1.ImageSize = new System.Drawing.Size(300, 300);
-            this.btnImage1.Location = new System.Drawing.Point(0, 0);
-            this.btnImage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage1.Name = "btnImage1";
-            this.btnImage1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImage1.Size = new System.Drawing.Size(335, 270);
-            this.btnImage1.TabIndex = 109;
-            this.btnImage1.Click += new System.EventHandler(this.btnImage1_Click);
+            this.bunifuTransition1.SetDecoration(this.pbLogo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(188, 70);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
-            // p
+            // panelBody
             // 
-            this.p.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTransition1.SetDecoration(this.p, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.p.Dock = System.Windows.Forms.DockStyle.Left;
-            this.p.Location = new System.Drawing.Point(335, 0);
-            this.p.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(15, 780);
-            this.p.TabIndex = 1;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTransition1.SetDecoration(this.guna2Panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(1164, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(15, 780);
-            this.guna2Panel1.TabIndex = 3;
+            this.panelBody.Controls.Add(this.panelMiddle);
+            this.panelBody.Controls.Add(this.p);
+            this.panelBody.Controls.Add(this.panelLeft);
+            this.panelBody.Controls.Add(this.guna2Panel1);
+            this.panelBody.Controls.Add(this.panelRight);
+            this.bunifuTransition1.SetDecoration(this.panelBody, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 70);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
+            this.panelBody.TabIndex = 6;
             // 
             // panelMiddle
             // 
@@ -233,8 +292,8 @@
             this.panelMiddle.Location = new System.Drawing.Point(350, 0);
             this.panelMiddle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Size = new System.Drawing.Size(814, 780);
-            this.panelMiddle.TabIndex = 4;
+            this.panelMiddle.Size = new System.Drawing.Size(814, 710);
+            this.panelMiddle.TabIndex = 9;
             // 
             // guna2Separator3
             // 
@@ -539,105 +598,163 @@
             this.lblProductName.TabIndex = 71;
             this.lblProductName.Text = "MacBook Air 2020 13 inch Apple M1 8GB RAM 256GB SSD – Like New";
             // 
-            // txtSupportPolicy
+            // p
             // 
-            this.txtSupportPolicy.AutoScroll = true;
-            this.txtSupportPolicy.BackColor = System.Drawing.Color.Transparent;
-            this.txtSupportPolicy.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition1.SetDecoration(this.txtSupportPolicy, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.txtSupportPolicy.DefaultText = "";
-            this.txtSupportPolicy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupportPolicy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupportPolicy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupportPolicy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupportPolicy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtSupportPolicy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupportPolicy.ForeColor = System.Drawing.Color.Black;
-            this.txtSupportPolicy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtSupportPolicy.Location = new System.Drawing.Point(16, 194);
-            this.txtSupportPolicy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupportPolicy.Multiline = true;
-            this.txtSupportPolicy.Name = "txtSupportPolicy";
-            this.txtSupportPolicy.PasswordChar = '\0';
-            this.txtSupportPolicy.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtSupportPolicy.PlaceholderText = "Support Policies";
-            this.txtSupportPolicy.SelectedText = "";
-            this.txtSupportPolicy.Size = new System.Drawing.Size(283, 162);
-            this.txtSupportPolicy.TabIndex = 116;
+            this.p.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTransition1.SetDecoration(this.p, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.p.Dock = System.Windows.Forms.DockStyle.Left;
+            this.p.Location = new System.Drawing.Point(335, 0);
+            this.p.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.p.Name = "p";
+            this.p.Size = new System.Drawing.Size(15, 710);
+            this.p.TabIndex = 6;
             // 
-            // label3
+            // panelLeft
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.label3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(11, 161);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 30);
-            this.label3.TabIndex = 117;
-            this.label3.Text = "Support policies";
+            this.panelLeft.Controls.Add(this.btnImage4);
+            this.panelLeft.Controls.Add(this.btnImage3);
+            this.panelLeft.Controls.Add(this.btnImage2);
+            this.panelLeft.Controls.Add(this.btnImage1);
+            this.bunifuTransition1.SetDecoration(this.panelLeft, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(335, 710);
+            this.panelLeft.TabIndex = 5;
             // 
-            // lblAvatarName
+            // btnImage4
             // 
-            this.lblAvatarName.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.lblAvatarName, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblAvatarName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblAvatarName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAvatarName.Location = new System.Drawing.Point(109, 12);
-            this.lblAvatarName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAvatarName.Name = "lblAvatarName";
-            this.lblAvatarName.Size = new System.Drawing.Size(189, 78);
-            this.lblAvatarName.TabIndex = 119;
-            this.lblAvatarName.Text = "Avatar Name";
+            this.btnImage4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.bunifuTransition1.SetDecoration(this.btnImage4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage4.Image = ((System.Drawing.Image)(resources.GetObject("btnImage4.Image")));
+            this.btnImage4.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImage4.ImageRotate = 0F;
+            this.btnImage4.ImageSize = new System.Drawing.Size(80, 80);
+            this.btnImage4.Location = new System.Drawing.Point(228, 306);
+            this.btnImage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnImage4.Name = "btnImage4";
+            this.btnImage4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage4.Size = new System.Drawing.Size(80, 80);
+            this.btnImage4.TabIndex = 112;
+            this.btnImage4.Click += new System.EventHandler(this.btnImage4_Click);
             // 
-            // btnSave
+            // btnImage3
             // 
-            this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.BorderColor = System.Drawing.Color.Red;
-            this.btnSave.BorderRadius = 23;
-            this.btnSave.BorderThickness = 1;
-            this.bunifuTransition1.SetDecoration(this.btnSave, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Red;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.Location = new System.Drawing.Point(16, 382);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(284, 49);
-            this.btnSave.TabIndex = 128;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
+            this.btnImage3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.bunifuTransition1.SetDecoration(this.btnImage3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage3.Image = ((System.Drawing.Image)(resources.GetObject("btnImage3.Image")));
+            this.btnImage3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImage3.ImageRotate = 0F;
+            this.btnImage3.ImageSize = new System.Drawing.Size(80, 80);
+            this.btnImage3.Location = new System.Drawing.Point(119, 306);
+            this.btnImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnImage3.Name = "btnImage3";
+            this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage3.Size = new System.Drawing.Size(80, 80);
+            this.btnImage3.TabIndex = 111;
+            this.btnImage3.Click += new System.EventHandler(this.btnImage3_Click);
             // 
-            // btnBuy
+            // btnImage2
             // 
-            this.btnBuy.AutoRoundedCorners = true;
-            this.btnBuy.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.BorderRadius = 23;
-            this.btnBuy.BorderThickness = 1;
-            this.bunifuTransition1.SetDecoration(this.btnBuy, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnBuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBuy.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBuy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.Location = new System.Drawing.Point(16, 443);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(284, 49);
-            this.btnBuy.TabIndex = 129;
-            this.btnBuy.Text = "Buy";
+            this.btnImage2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.bunifuTransition1.SetDecoration(this.btnImage2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage2.Image = ((System.Drawing.Image)(resources.GetObject("btnImage2.Image")));
+            this.btnImage2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImage2.ImageRotate = 0F;
+            this.btnImage2.ImageSize = new System.Drawing.Size(80, 80);
+            this.btnImage2.Location = new System.Drawing.Point(12, 306);
+            this.btnImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnImage2.Name = "btnImage2";
+            this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage2.Size = new System.Drawing.Size(80, 80);
+            this.btnImage2.TabIndex = 110;
+            this.btnImage2.Click += new System.EventHandler(this.btnImage2_Click);
+            // 
+            // btnImage1
+            // 
+            this.btnImage1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.bunifuTransition1.SetDecoration(this.btnImage1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnImage1.HoverState.ImageSize = new System.Drawing.Size(190, 190);
+            this.btnImage1.Image = ((System.Drawing.Image)(resources.GetObject("btnImage1.Image")));
+            this.btnImage1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImage1.ImageRotate = 0F;
+            this.btnImage1.ImageSize = new System.Drawing.Size(300, 300);
+            this.btnImage1.Location = new System.Drawing.Point(0, 0);
+            this.btnImage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnImage1.Name = "btnImage1";
+            this.btnImage1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage1.Size = new System.Drawing.Size(335, 270);
+            this.btnImage1.TabIndex = 109;
+            this.btnImage1.Click += new System.EventHandler(this.btnImage1_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTransition1.SetDecoration(this.guna2Panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.Location = new System.Drawing.Point(1164, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(15, 710);
+            this.guna2Panel1.TabIndex = 8;
+            // 
+            // panelRight
+            // 
+            this.panelRight.Controls.Add(this.guna2Separator4);
+            this.panelRight.Controls.Add(this.guna2RatingStar1);
+            this.panelRight.Controls.Add(this.pbAvatar);
+            this.panelRight.Controls.Add(this.btnAddtoCart);
+            this.panelRight.Controls.Add(this.btnBuy);
+            this.panelRight.Controls.Add(this.btnSave);
+            this.panelRight.Controls.Add(this.lblAvatarName);
+            this.panelRight.Controls.Add(this.label3);
+            this.panelRight.Controls.Add(this.txtSupportPolicy);
+            this.bunifuTransition1.SetDecoration(this.panelRight, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(1179, 0);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(321, 710);
+            this.panelRight.TabIndex = 7;
+            // 
+            // guna2Separator4
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator4.Location = new System.Drawing.Point(27, 148);
+            this.guna2Separator4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Separator4.Name = "guna2Separator4";
+            this.guna2Separator4.Size = new System.Drawing.Size(263, 10);
+            this.guna2Separator4.TabIndex = 133;
+            // 
+            // guna2RatingStar1
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2RatingStar1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2RatingStar1.Location = new System.Drawing.Point(27, 95);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2RatingStar1.Name = "guna2RatingStar1";
+            this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
+            this.guna2RatingStar1.Size = new System.Drawing.Size(263, 31);
+            this.guna2RatingStar1.TabIndex = 132;
+            // 
+            // pbAvatar
+            // 
+            this.bunifuTransition1.SetDecoration(this.pbAvatar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.pbAvatar.Image = global::Window_Project_v5._1.Properties.Resources._92;
+            this.pbAvatar.ImageRotate = 0F;
+            this.pbAvatar.Location = new System.Drawing.Point(16, 15);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.ShadowDecoration.Enabled = true;
+            this.pbAvatar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
+            this.pbAvatar.Size = new System.Drawing.Size(77, 74);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatar.TabIndex = 131;
+            this.pbAvatar.TabStop = false;
             // 
             // btnAddtoCart
             // 
@@ -666,58 +783,106 @@
             this.btnAddtoCart.Text = "Add to cart";
             this.btnAddtoCart.Click += new System.EventHandler(this.btnAddtoCart_Click);
             // 
-            // guna2RatingStar1
+            // btnBuy
             // 
-            this.bunifuTransition1.SetDecoration(this.guna2RatingStar1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2RatingStar1.Location = new System.Drawing.Point(27, 95);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2RatingStar1.Name = "guna2RatingStar1";
-            this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
-            this.guna2RatingStar1.Size = new System.Drawing.Size(263, 31);
-            this.guna2RatingStar1.TabIndex = 132;
+            this.btnBuy.AutoRoundedCorners = true;
+            this.btnBuy.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnBuy.BorderRadius = 23;
+            this.btnBuy.BorderThickness = 1;
+            this.bunifuTransition1.SetDecoration(this.btnBuy, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnBuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnBuy.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuy.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnBuy.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnBuy.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnBuy.Location = new System.Drawing.Point(16, 443);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(284, 49);
+            this.btnBuy.TabIndex = 129;
+            this.btnBuy.Text = "Buy";
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
-            // panelRight
+            // btnSave
             // 
-            this.panelRight.Controls.Add(this.guna2Separator4);
-            this.panelRight.Controls.Add(this.guna2RatingStar1);
-            this.panelRight.Controls.Add(this.pbAvatar);
-            this.panelRight.Controls.Add(this.btnAddtoCart);
-            this.panelRight.Controls.Add(this.btnBuy);
-            this.panelRight.Controls.Add(this.btnSave);
-            this.panelRight.Controls.Add(this.lblAvatarName);
-            this.panelRight.Controls.Add(this.label3);
-            this.panelRight.Controls.Add(this.txtSupportPolicy);
-            this.bunifuTransition1.SetDecoration(this.panelRight, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(1179, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(321, 780);
-            this.panelRight.TabIndex = 2;
+            this.btnSave.AutoRoundedCorners = true;
+            this.btnSave.BorderColor = System.Drawing.Color.Red;
+            this.btnSave.BorderRadius = 23;
+            this.btnSave.BorderThickness = 1;
+            this.bunifuTransition1.SetDecoration(this.btnSave, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.Color.Red;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.Location = new System.Drawing.Point(16, 382);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(284, 49);
+            this.btnSave.TabIndex = 128;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // guna2Separator4
+            // lblAvatarName
             // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator4.Location = new System.Drawing.Point(27, 148);
-            this.guna2Separator4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(263, 10);
-            this.guna2Separator4.TabIndex = 133;
+            this.lblAvatarName.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.lblAvatarName, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblAvatarName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblAvatarName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAvatarName.Location = new System.Drawing.Point(109, 12);
+            this.lblAvatarName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAvatarName.Name = "lblAvatarName";
+            this.lblAvatarName.Size = new System.Drawing.Size(189, 78);
+            this.lblAvatarName.TabIndex = 119;
+            this.lblAvatarName.Text = "Avatar Name";
             // 
-            // pbAvatar
+            // label3
             // 
-            this.bunifuTransition1.SetDecoration(this.pbAvatar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.pbAvatar.Image = global::Window_Project_v5._1.Properties.Resources._92;
-            this.pbAvatar.ImageRotate = 0F;
-            this.pbAvatar.Location = new System.Drawing.Point(16, 15);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbAvatar.Name = "pbAvatar";
-            this.pbAvatar.ShadowDecoration.Enabled = true;
-            this.pbAvatar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.pbAvatar.Size = new System.Drawing.Size(77, 74);
-            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAvatar.TabIndex = 131;
-            this.pbAvatar.TabStop = false;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.label3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label3.Location = new System.Drawing.Point(11, 161);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 30);
+            this.label3.TabIndex = 117;
+            this.label3.Text = "Support policies";
+            // 
+            // txtSupportPolicy
+            // 
+            this.txtSupportPolicy.AutoScroll = true;
+            this.txtSupportPolicy.BackColor = System.Drawing.Color.Transparent;
+            this.txtSupportPolicy.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.txtSupportPolicy, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.txtSupportPolicy.DefaultText = "";
+            this.txtSupportPolicy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSupportPolicy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSupportPolicy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupportPolicy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupportPolicy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtSupportPolicy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSupportPolicy.ForeColor = System.Drawing.Color.Black;
+            this.txtSupportPolicy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtSupportPolicy.Location = new System.Drawing.Point(16, 194);
+            this.txtSupportPolicy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSupportPolicy.Multiline = true;
+            this.txtSupportPolicy.Name = "txtSupportPolicy";
+            this.txtSupportPolicy.PasswordChar = '\0';
+            this.txtSupportPolicy.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtSupportPolicy.PlaceholderText = "Support Policies";
+            this.txtSupportPolicy.SelectedText = "";
+            this.txtSupportPolicy.Size = new System.Drawing.Size(283, 162);
+            this.txtSupportPolicy.TabIndex = 116;
             // 
             // bunifuFormDock1
             // 
@@ -759,27 +924,346 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // containerMenu
+            // 
+            this.containerMenu.BorderColor = System.Drawing.Color.Black;
+            this.containerMenu.Controls.Add(this.btnLogout);
+            this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnMoney);
+            this.containerMenu.Controls.Add(this.btnInformation);
+            this.containerMenu.Controls.Add(this.btnOrderAnalysis);
+            this.containerMenu.Controls.Add(this.btnSavedProducts);
+            this.containerMenu.Controls.Add(this.guna2Panel6);
+            this.containerMenu.Controls.Add(this.btnSalesOrder);
+            this.containerMenu.Controls.Add(this.btnPurchasesOrder);
+            this.containerMenu.Controls.Add(this.guna2Panel7);
+            this.containerMenu.Controls.Add(this.guna2Panel8);
+            this.containerMenu.CustomBorderColor = System.Drawing.Color.Black;
+            this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.bunifuTransition1.SetDecoration(this.containerMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.containerMenu.Location = new System.Drawing.Point(1161, 75);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerMenu.Name = "containerMenu";
+            this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
+            this.containerMenu.Size = new System.Drawing.Size(292, 595);
+            this.containerMenu.TabIndex = 7;
+            this.containerMenu.Text = "guna2ContainerControl1";
+            // 
+            // btnLogout
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnLogout, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogout.FillColor = System.Drawing.Color.White;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.Image = global::Window_Project_v5._1.Properties.Resources.logout;
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(290, 55);
+            this.btnLogout.TabIndex = 23;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTransition1.SetDecoration(this.guna2Panel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
+            this.guna2Panel5.TabIndex = 24;
+            // 
+            // btnMoney
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnMoney, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnMoney.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoney.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoney.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMoney.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMoney.FillColor = System.Drawing.Color.White;
+            this.btnMoney.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMoney.ForeColor = System.Drawing.Color.Black;
+            this.btnMoney.Image = global::Window_Project_v5._1.Properties.Resources.credit_card1;
+            this.btnMoney.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMoney.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnMoney.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnMoney.Location = new System.Drawing.Point(1, 459);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMoney.Name = "btnMoney";
+            this.btnMoney.Size = new System.Drawing.Size(290, 55);
+            this.btnMoney.TabIndex = 22;
+            this.btnMoney.Text = "Recharge/Withdraw money";
+            this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
+            // 
+            // btnInformation
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnInformation, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnInformation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInformation.FillColor = System.Drawing.Color.White;
+            this.btnInformation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnInformation.ForeColor = System.Drawing.Color.Black;
+            this.btnInformation.Image = global::Window_Project_v5._1.Properties.Resources.user_v2;
+            this.btnInformation.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInformation.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnInformation.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnInformation.Location = new System.Drawing.Point(1, 404);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInformation.Name = "btnInformation";
+            this.btnInformation.Size = new System.Drawing.Size(290, 55);
+            this.btnInformation.TabIndex = 21;
+            this.btnInformation.Text = "Profile";
+            this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
+            // 
+            // btnOrderAnalysis
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnOrderAnalysis, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnOrderAnalysis.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderAnalysis.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderAnalysis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrderAnalysis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrderAnalysis.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrderAnalysis.FillColor = System.Drawing.Color.White;
+            this.btnOrderAnalysis.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOrderAnalysis.ForeColor = System.Drawing.Color.Black;
+            this.btnOrderAnalysis.Image = global::Window_Project_v5._1.Properties.Resources.pie_chart;
+            this.btnOrderAnalysis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrderAnalysis.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnOrderAnalysis.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 349);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrderAnalysis.Name = "btnOrderAnalysis";
+            this.btnOrderAnalysis.Size = new System.Drawing.Size(290, 55);
+            this.btnOrderAnalysis.TabIndex = 20;
+            this.btnOrderAnalysis.Text = "Order Analysis";
+            this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
+            // 
+            // btnSavedProducts
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnSavedProducts, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnSavedProducts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSavedProducts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSavedProducts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSavedProducts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSavedProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSavedProducts.FillColor = System.Drawing.Color.White;
+            this.btnSavedProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSavedProducts.ForeColor = System.Drawing.Color.Black;
+            this.btnSavedProducts.Image = global::Window_Project_v5._1.Properties.Resources.heart_v3;
+            this.btnSavedProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnSavedProducts.Location = new System.Drawing.Point(1, 294);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSavedProducts.Name = "btnSavedProducts";
+            this.btnSavedProducts.Size = new System.Drawing.Size(290, 55);
+            this.btnSavedProducts.TabIndex = 19;
+            this.btnSavedProducts.Text = "Saved Products";
+            this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel6.Controls.Add(this.label1);
+            this.bunifuTransition1.SetDecoration(this.guna2Panel6, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel6.Location = new System.Drawing.Point(1, 247);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(290, 47);
+            this.guna2Panel6.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label1.Location = new System.Drawing.Point(19, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Features";
+            // 
+            // btnSalesOrder
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnSalesOrder, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnSalesOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalesOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalesOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSalesOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSalesOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalesOrder.FillColor = System.Drawing.Color.White;
+            this.btnSalesOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSalesOrder.ForeColor = System.Drawing.Color.Black;
+            this.btnSalesOrder.Image = global::Window_Project_v5._1.Properties.Resources.file;
+            this.btnSalesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnSalesOrder.Location = new System.Drawing.Point(1, 192);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalesOrder.Name = "btnSalesOrder";
+            this.btnSalesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnSalesOrder.TabIndex = 17;
+            this.btnSalesOrder.Text = "Sales Order";
+            this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
+            // 
+            // btnPurchasesOrder
+            // 
+            this.btnPurchasesOrder.CustomBorderColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.btnPurchasesOrder, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnPurchasesOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchasesOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPurchasesOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPurchasesOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPurchasesOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPurchasesOrder.FillColor = System.Drawing.Color.White;
+            this.btnPurchasesOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPurchasesOrder.ForeColor = System.Drawing.Color.Black;
+            this.btnPurchasesOrder.Image = global::Window_Project_v5._1.Properties.Resources.Shopping_Bag_color;
+            this.btnPurchasesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
+            this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 137);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPurchasesOrder.Name = "btnPurchasesOrder";
+            this.btnPurchasesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnPurchasesOrder.TabIndex = 16;
+            this.btnPurchasesOrder.Text = "Purchase order";
+            this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel7.Controls.Add(this.label4);
+            this.bunifuTransition1.SetDecoration(this.guna2Panel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel7.Location = new System.Drawing.Point(1, 91);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(290, 46);
+            this.guna2Panel7.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label4.Location = new System.Drawing.Point(19, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(209, 30);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Order Management";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Controls.Add(this.lblAccountName);
+            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.bunifuTransition1.SetDecoration(this.guna2Panel8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
+            this.guna2Panel8.TabIndex = 14;
+            // 
+            // lblAccountName
+            // 
+            this.lblAccountName.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lblAccountName, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblAccountName.Name = "lblAccountName";
+            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblAccountName.TabIndex = 3;
+            this.lblAccountName.Text = "Account name";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2CirclePictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // ratingAccount
+            // 
+            this.bunifuTransition1.SetDecoration(this.ratingAccount, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingAccount.Name = "ratingAccount";
+            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingAccount.TabIndex = 2;
+            // 
             // FBuyDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1500, 780);
-            this.Controls.Add(this.panelMiddle);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.panelRight);
-            this.Controls.Add(this.p);
-            this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.containerMenu);
+            this.Controls.Add(this.panelBody);
+            this.Controls.Add(this.containerTop);
             this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(1535, 1300);
             this.Name = "FBuyDetail";
             this.Text = "FBuyDetail";
-            this.panelLeft.ResumeLayout(false);
+            this.containerTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panelBody.ResumeLayout(false);
             this.panelMiddle.ResumeLayout(false);
+            this.panelLeft.ResumeLayout(false);
             this.panelRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
+            this.containerMenu.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel7.PerformLayout();
+            this.guna2Panel8.ResumeLayout(false);
+            this.guna2Panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -787,35 +1271,41 @@
         #endregion
         private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
-        private Guna.UI2.WinForms.Guna2Panel panelLeft;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel p;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage4;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage3;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage2;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage1;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
+        private Guna.UI2.WinForms.Guna2Button btnCart;
+        private Guna.UI2.WinForms.Guna2Button btnMenu;
+        private Guna.UI2.WinForms.Guna2Button btnPostProduct;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
+        private Guna.UI2.WinForms.Guna2Panel panelBody;
         private Guna.UI2.WinForms.Guna2Panel panelMiddle;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2TextBox txtFunctionalities;
+        private Guna.UI2.WinForms.Guna2TextBox txtDescription;
+        public System.Windows.Forms.Label lblMaterial;
+        public System.Windows.Forms.Label lblSize;
+        public System.Windows.Forms.Label lblOrigin;
+        public System.Windows.Forms.Label lblBrand;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        public System.Windows.Forms.Label lblPhone;
+        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblArea;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         public System.Windows.Forms.Label lblType;
         public System.Windows.Forms.Label lblCategory;
         public System.Windows.Forms.Label lblCondition;
         public System.Windows.Forms.Label lblBuyPrice;
         public System.Windows.Forms.Label lblSellPrice;
         public System.Windows.Forms.Label lblProductName;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
-        public System.Windows.Forms.Label lblArea;
-        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label lblPhone;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        public System.Windows.Forms.Label lblMaterial;
-        public System.Windows.Forms.Label lblSize;
-        public System.Windows.Forms.Label lblOrigin;
-        public System.Windows.Forms.Label lblBrand;
-        private Guna.UI2.WinForms.Guna2TextBox txtFunctionalities;
-        private Guna.UI2.WinForms.Guna2TextBox txtDescription;
-        public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
+        private Guna.UI2.WinForms.Guna2Panel p;
+        private Guna.UI2.WinForms.Guna2Panel panelLeft;
+        private Guna.UI2.WinForms.Guna2ImageButton btnImage4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnImage3;
+        private Guna.UI2.WinForms.Guna2ImageButton btnImage2;
+        private Guna.UI2.WinForms.Guna2ImageButton btnImage1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel panelRight;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
@@ -826,5 +1316,22 @@
         public System.Windows.Forms.Label lblAvatarName;
         public System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtSupportPolicy;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerMenu;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2Button btnMoney;
+        private Guna.UI2.WinForms.Guna2Button btnInformation;
+        private Guna.UI2.WinForms.Guna2Button btnOrderAnalysis;
+        private Guna.UI2.WinForms.Guna2Button btnSavedProducts;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnSalesOrder;
+        private Guna.UI2.WinForms.Guna2Button btnPurchasesOrder;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        private System.Windows.Forms.Label lblAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
     }
 }

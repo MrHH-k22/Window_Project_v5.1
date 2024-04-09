@@ -168,6 +168,59 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
+
+        private void btnImage1_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage2.Image;
+            btnImage2.Image = temp.Image;
+        }
+
+        private void btnImage3_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage3.Image;
+            btnImage3.Image = temp.Image;
+        }
+
+        private void btnImage4_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage4.Image;
+            btnImage4.Image = temp.Image;
+        }
+
+        private void btnImage2_Click(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage2.Image;
+            btnImage2.Image = btnImage2.Image;
+            btnImage2.Image = temp.Image;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                favoriteDAO.delete(account.Id, product.Id);
+                btnSave.Text = "Save";
+
+                btnSave.FillColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                favoriteDAO.add(account.Id, product.Id);
+                btnSave.Text = "Saved";
+
+                btnSave.FillColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
+        }
+
         private void btnBuy_Click(object sender, EventArgs e)
         {
             // Prompt the user with a message box
@@ -176,8 +229,8 @@ namespace Window_Project_v5._1.Forms
             // Check if the user clicked "Yes"
             if (result == DialogResult.Yes)
             {
-  
-                if(account.Money < product.SalePrice)
+
+                if (account.Money < product.SalePrice)
                 {
                     MessageBox.Show("You dont have enough money to buy!");
                 }
@@ -202,35 +255,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnImage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnImage2_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage2.Image;
-            btnImage2.Image = temp.Image;
-        }
-
-        private void btnImage3_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage3.Image;
-            btnImage3.Image = temp.Image;
-        }
-
-        private void btnImage4_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage4.Image;
-            btnImage4.Image = temp.Image;
-        }
-
         private void btnAddtoCart_Click(object sender, EventArgs e)
         {
             if (cartDAO.checkProductinCart(account.Id, product.Id))
@@ -244,24 +268,88 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnSave_Click_1(object sender, EventArgs e)
+        private void btnCart_Click(object sender, EventArgs e)
         {
-            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-            {
-                favoriteDAO.delete(account.Id, product.Id);
-                btnSave.Text = "Save";
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
 
-                btnSave.FillColor = Color.Red;
-                btnSave.ForeColor = Color.WhiteSmoke;
+        private void btnPostProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSellDetail f = new FSellDetail();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (containerMenu.Visible == false)
+            {
+                containerMenu.Visible = true;
             }
             else
             {
-                favoriteDAO.add(account.Id, product.Id);
-                btnSave.Text = "Saved";
-
-                btnSave.FillColor = Color.WhiteSmoke;
-                btnSave.ForeColor = Color.Red;
+                containerMenu.Visible = false;
             }
+        }
+
+        private void btnPurchasesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FTrackOrder f = new FTrackOrder();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FProductManagement f = new FProductManagement();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSavedProducts_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSaveList f = new FSaveList();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnOrderAnalysis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FOrderAnalysis f = new FOrderAnalysis();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnInformation_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FInformation f = new FInformation();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMoney_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FMoney f = new FMoney();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }
