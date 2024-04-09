@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
@@ -22,18 +23,19 @@ namespace Window_Project_v5._1.Forms
         public UCProduct()
         {
             InitializeComponent();
-            SetClickEventForAllControls(this);
+            SetEventForAllControls(this);
         }
 
         public UCProduct(Product pd, Account acc)
         {
             InitializeComponent();
-            SetClickEventForAllControls(this);
+            SetEventForAllControls(this);
             account = acc;
             this.product = pd;
             lblBuyPrice.Text = pd.OriginalPrice.ToString("N0") + " VND";
             lblSellPrice.Text = pd.SalePrice.ToString("N0") + " VND";
             lblProductName.Text = pd.Name.ToString();
+            lblArea.Text = pd.Area.ToString();
 
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);
 
@@ -67,12 +69,12 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_MouseEnter(object sender, EventArgs e)
         {
-            
+            panelBody.BorderColor = Color.Black;
         }
 
         private void UCProduct_MouseLeave(object sender, EventArgs e)
         {
-            
+            panelBody.BorderColor = Color.FromArgb(250, 250, 250);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -97,23 +99,29 @@ namespace Window_Project_v5._1.Forms
             fBuyDetail.Show();
         }
 
-        private void SetClickEventForAllControls(Control parent)
+        private void SetEventForAllControls(Control parent)
         {
             foreach (Control control in parent.Controls)
             {
-                control.Click += UCProduct_DoubleClick; // Gán sự kiện Click cho control
-                // Nếu control là một container (như Panel, GroupBox, UserControl,...)
-                // gọi đệ quy để thiết lập sự kiện cho các controls con của nó
+                control.Click += UCProduct_DoubleClick;
+                control.MouseEnter += UCProduct_MouseEnter;
+                control.MouseLeave += UCProduct_MouseLeave;
                 if (control.HasChildren)
                 {
-                    SetClickEventForAllControls(control);
+                    SetEventForAllControls(control);
                 }
             }
         }
 
+
         private void UCProduct_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void UCProduct_MouseHover(object sender, EventArgs e)
+        {
+            
         }
     }
 }

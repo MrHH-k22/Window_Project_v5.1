@@ -286,6 +286,12 @@
     <Compile Include="Forms\UCProductBuy.Designer.cs">
       <DependentUpon>UCProductBuy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCProductCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductCart.Designer.cs">
+      <DependentUpon>UCProductCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UCProductCondition.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductBuy.resx">
       <DependentUpon>UCProductBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCProductCart.resx">
+      <DependentUpon>UCProductCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductCondition.resx">
       <DependentUpon>UCProductCondition.cs</DependentUpon>
@@ -638,6 +647,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\money_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\credit-card.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

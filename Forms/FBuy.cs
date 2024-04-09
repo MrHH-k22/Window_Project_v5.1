@@ -81,13 +81,6 @@ namespace Window_Project_v5._1.Forms
             getFilter();
             */
         }
-
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            flpProduct.Controls.Clear();
-            FBuy_Load(sender, e);
-        }
-
         private void btnFilter_Click(object sender, EventArgs e)
         {
             List<Product> products = productDAO.LoadList();
@@ -123,6 +116,12 @@ namespace Window_Project_v5._1.Forms
                 UCProduct uc = new UCProduct(pd, account);
                 flpProduct.Controls.Add(uc);
             }
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            flpProduct.Controls.Clear();
+            FBuy_Load(sender, e);
         }
     }
 }

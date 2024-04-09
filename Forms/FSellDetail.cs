@@ -82,7 +82,7 @@ namespace Window_Project_v5._1.Forms
             double decimalResult;
             if (double.TryParse(str, out decimalResult))
             {
-                return (double)decimalResult;
+                    return (double)decimalResult;
             }
             MessageBox.Show("The value of price is invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return -1;
