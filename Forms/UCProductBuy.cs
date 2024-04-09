@@ -52,7 +52,7 @@ namespace Window_Project_v5._1.Forms
             btnRate.Visible = false;
             this.product = pd;
             account = acc;
-            lblPrice.Text = pd.SalePrice.ToString();
+            lblPrice.Text = pd.SalePrice.ToString("N0") + " VND";
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
 

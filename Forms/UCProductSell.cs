@@ -31,7 +31,7 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             this.product = pd;
             account = acc;
-            lblPrice.Text = pd.SalePrice.ToString();
+            lblPrice.Text = pd.SalePrice.ToString("N0") + " VND";
             lblProductCondition.Text = pd.GetBillStatus();
             lblProductCondition.Visible = false;
             lblProductName.Text = pd.Name;
