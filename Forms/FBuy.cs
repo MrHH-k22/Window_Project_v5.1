@@ -142,7 +142,7 @@ namespace Window_Project_v5._1.Forms
         private void btnCart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSignin f = new FSignin();
+            FCart f = new FCart();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

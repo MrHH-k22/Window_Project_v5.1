@@ -35,6 +35,7 @@
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
+            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.btnFilter = new Guna.UI2.WinForms.Guna2Button();
@@ -66,7 +67,6 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.pbAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -90,7 +90,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 3;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -199,8 +199,16 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 4;
+            // 
+            // flpProduct
+            // 
+            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpProduct.Location = new System.Drawing.Point(185, 0);
+            this.flpProduct.Name = "flpProduct";
+            this.flpProduct.Size = new System.Drawing.Size(1315, 710);
+            this.flpProduct.TabIndex = 4;
             // 
             // panelLeft
             // 
@@ -223,7 +231,7 @@
             this.panelLeft.FillColor = System.Drawing.Color.Transparent;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(185, 663);
+            this.panelLeft.Size = new System.Drawing.Size(185, 710);
             this.panelLeft.TabIndex = 3;
             // 
             // btnLoad
@@ -807,26 +815,20 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // flpProduct
-            // 
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProduct.Location = new System.Drawing.Point(185, 0);
-            this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1297, 663);
-            this.flpProduct.TabIndex = 4;
-            // 
             // FBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1534, 819);
             this.Name = "FBuy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBuy";
             this.Load += new System.EventHandler(this.FBuy_Load);
             this.containerTop.ResumeLayout(false);

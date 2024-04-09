@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FTrackOrder));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -126,26 +126,26 @@
             this.btnSearch.Modified = false;
             this.btnSearch.Multiline = false;
             this.btnSearch.Name = "btnSearch";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btnSearch.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btnSearch.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btnSearch.OnIdleState = stateProperties20;
+            stateProperties45.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties45.FillColor = System.Drawing.Color.Empty;
+            stateProperties45.ForeColor = System.Drawing.Color.Empty;
+            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btnSearch.OnActiveState = stateProperties45;
+            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties46.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.OnDisabledState = stateProperties46;
+            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties47.FillColor = System.Drawing.Color.Empty;
+            stateProperties47.ForeColor = System.Drawing.Color.Empty;
+            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btnSearch.OnHoverState = stateProperties47;
+            stateProperties48.BorderColor = System.Drawing.Color.Silver;
+            stateProperties48.FillColor = System.Drawing.Color.White;
+            stateProperties48.ForeColor = System.Drawing.Color.Empty;
+            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btnSearch.OnIdleState = stateProperties48;
             this.btnSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.PasswordChar = '\0';
             this.btnSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -186,7 +186,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 70);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1482, 96);
+            this.panelTop.Size = new System.Drawing.Size(1500, 96);
             this.panelTop.TabIndex = 8;
             // 
             // tcBuyProducts
@@ -200,7 +200,7 @@
             this.tcBuyProducts.Location = new System.Drawing.Point(0, 166);
             this.tcBuyProducts.Name = "tcBuyProducts";
             this.tcBuyProducts.SelectedIndex = 0;
-            this.tcBuyProducts.Size = new System.Drawing.Size(1482, 625);
+            this.tcBuyProducts.Size = new System.Drawing.Size(1500, 625);
             this.tcBuyProducts.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tcBuyProducts.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tcBuyProducts.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -226,7 +226,7 @@
             this.tpWaitForConfirm.Location = new System.Drawing.Point(4, 44);
             this.tpWaitForConfirm.Name = "tpWaitForConfirm";
             this.tpWaitForConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitForConfirm.Size = new System.Drawing.Size(1474, 577);
+            this.tpWaitForConfirm.Size = new System.Drawing.Size(1492, 577);
             this.tpWaitForConfirm.TabIndex = 0;
             this.tpWaitForConfirm.Text = "Wait for confirmation";
             this.tpWaitForConfirm.UseVisualStyleBackColor = true;
@@ -236,7 +236,7 @@
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Name = "tpCompleted";
             this.tpCompleted.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCompleted.Size = new System.Drawing.Size(1233, 577);
+            this.tpCompleted.Size = new System.Drawing.Size(1474, 577);
             this.tpCompleted.TabIndex = 1;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -246,7 +246,7 @@
             this.tpCancelled.Location = new System.Drawing.Point(4, 44);
             this.tpCancelled.Name = "tpCancelled";
             this.tpCancelled.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCancelled.Size = new System.Drawing.Size(1233, 577);
+            this.tpCancelled.Size = new System.Drawing.Size(1474, 577);
             this.tpCancelled.TabIndex = 2;
             this.tpCancelled.Text = "Cancelled";
             this.tpCancelled.UseVisualStyleBackColor = true;
@@ -256,7 +256,7 @@
             this.tpSaved.Location = new System.Drawing.Point(4, 44);
             this.tpSaved.Name = "tpSaved";
             this.tpSaved.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSaved.Size = new System.Drawing.Size(1233, 577);
+            this.tpSaved.Size = new System.Drawing.Size(1474, 577);
             this.tpSaved.TabIndex = 3;
             this.tpSaved.Text = "Saved";
             this.tpSaved.UseVisualStyleBackColor = true;
@@ -273,7 +273,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 10;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -303,6 +303,7 @@
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnMenu
             // 
@@ -330,6 +331,7 @@
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnPostProduct
             // 
@@ -357,6 +359,7 @@
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
             // pbLogo
             // 
@@ -418,6 +421,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 
@@ -451,6 +455,7 @@
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // btnInformation
             // 
@@ -474,6 +479,7 @@
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -497,6 +503,7 @@
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
             // btnSavedProducts
             // 
@@ -520,6 +527,7 @@
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
             // guna2Panel6
             // 
@@ -565,6 +573,7 @@
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnPurchasesOrder
             // 
@@ -589,6 +598,7 @@
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
             // guna2Panel7
             // 
@@ -663,13 +673,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.tcBuyProducts);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FTrackOrder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FTrackOrder";
             this.Load += new System.EventHandler(this.FTrackOrder_Load);
             this.panelTop.ResumeLayout(false);

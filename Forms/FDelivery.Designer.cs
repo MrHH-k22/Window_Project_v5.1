@@ -49,6 +49,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.flpCartList = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucProductCart1 = new Window_Project_v5._1.Forms.UCProductCart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,12 +59,12 @@
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label = new System.Windows.Forms.Label();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnPost = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.ucProductCart1 = new Window_Project_v5._1.Forms.UCProductCart();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -81,7 +82,6 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -118,9 +118,9 @@
             this.panelRight.Controls.Add(this.btnSave);
             this.panelRight.Controls.Add(this.label1);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(1060, 0);
+            this.panelRight.Location = new System.Drawing.Point(1078, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(422, 663);
+            this.panelRight.Size = new System.Drawing.Size(422, 710);
             this.panelRight.TabIndex = 60;
             // 
             // guna2Panel3
@@ -348,9 +348,9 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(1040, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(1058, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(20, 663);
+            this.guna2Panel2.Size = new System.Drawing.Size(20, 710);
             this.guna2Panel2.TabIndex = 61;
             // 
             // panelBody
@@ -361,7 +361,7 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 0);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1040, 663);
+            this.panelBody.Size = new System.Drawing.Size(1058, 710);
             this.panelBody.TabIndex = 62;
             // 
             // flpCartList
@@ -370,8 +370,16 @@
             this.flpCartList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCartList.Location = new System.Drawing.Point(0, 222);
             this.flpCartList.Name = "flpCartList";
-            this.flpCartList.Size = new System.Drawing.Size(1040, 441);
+            this.flpCartList.Size = new System.Drawing.Size(1058, 488);
             this.flpCartList.TabIndex = 2;
+            // 
+            // ucProductCart1
+            // 
+            this.ucProductCart1.Location = new System.Drawing.Point(3, 3);
+            this.ucProductCart1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
+            this.ucProductCart1.Name = "ucProductCart1";
+            this.ucProductCart1.Size = new System.Drawing.Size(1115, 118);
+            this.ucProductCart1.TabIndex = 0;
             // 
             // guna2Panel1
             // 
@@ -379,7 +387,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 217);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1040, 5);
+            this.guna2Panel1.Size = new System.Drawing.Size(1058, 5);
             this.guna2Panel1.TabIndex = 1;
             // 
             // panelTop
@@ -393,7 +401,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1040, 217);
+            this.panelTop.Size = new System.Drawing.Size(1058, 217);
             this.panelTop.TabIndex = 0;
             // 
             // label2
@@ -491,7 +499,7 @@
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.guna2Button1);
+            this.containerTop.Controls.Add(this.btnPost);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
             this.containerTop.Controls.Add(this.btnPostProduct);
@@ -501,9 +509,37 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 63;
             this.containerTop.Text = "guna2ContainerControl1";
+            // 
+            // btnPost
+            // 
+            this.btnPost.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPost.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnPost.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPost.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPost.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPost.ForeColor = System.Drawing.Color.White;
+            this.btnPost.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnPost.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPost.Image = global::Window_Project_v5._1.Properties.Resources.edit;
+            this.btnPost.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPost.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnPost.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPost.Location = new System.Drawing.Point(939, 10);
+            this.btnPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPost.Size = new System.Drawing.Size(203, 46);
+            this.btnPost.TabIndex = 4;
+            this.btnPost.Text = "POST NEWS";
+            this.btnPost.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPost.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCart
             // 
@@ -531,6 +567,7 @@
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnMenu
             // 
@@ -558,6 +595,7 @@
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnPostProduct
             // 
@@ -608,16 +646,8 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 70);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1482, 663);
+            this.panelMain.Size = new System.Drawing.Size(1500, 710);
             this.panelMain.TabIndex = 64;
-            // 
-            // ucProductCart1
-            // 
-            this.ucProductCart1.Location = new System.Drawing.Point(3, 3);
-            this.ucProductCart1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
-            this.ucProductCart1.Name = "ucProductCart1";
-            this.ucProductCart1.Size = new System.Drawing.Size(1115, 118);
-            this.ucProductCart1.TabIndex = 0;
             // 
             // containerMenu
             // 
@@ -665,6 +695,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 
@@ -698,6 +729,7 @@
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // btnInformation
             // 
@@ -721,6 +753,7 @@
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -744,6 +777,7 @@
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
             // btnSavedProducts
             // 
@@ -767,6 +801,7 @@
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
             // guna2Panel6
             // 
@@ -812,6 +847,7 @@
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnPurchasesOrder
             // 
@@ -836,6 +872,7 @@
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
             // guna2Panel7
             // 
@@ -905,44 +942,19 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Image = global::Window_Project_v5._1.Properties.Resources.edit;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(4, 0);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(939, 10);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Size = new System.Drawing.Size(203, 46);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "POST NEWS";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.TextOffset = new System.Drawing.Point(7, 0);
-            // 
             // FDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FDelivery";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDelivery";
             this.Load += new System.EventHandler(this.FDelivery_Load);
             this.panelRight.ResumeLayout(false);
@@ -1028,6 +1040,6 @@
         private System.Windows.Forms.Label lblAccountName;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnPost;
     }
 }

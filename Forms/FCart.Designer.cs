@@ -123,9 +123,9 @@
             this.panelRight.Controls.Add(this.lblTotalMoney);
             this.panelRight.Controls.Add(this.btnPurchase);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(1060, 0);
+            this.panelRight.Location = new System.Drawing.Point(1078, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(422, 663);
+            this.panelRight.Size = new System.Drawing.Size(422, 710);
             this.panelRight.TabIndex = 38;
             // 
             // lblNoOfItems
@@ -165,9 +165,9 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(1040, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(1058, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(20, 663);
+            this.guna2Panel1.Size = new System.Drawing.Size(20, 710);
             this.guna2Panel1.TabIndex = 39;
             // 
             // flpCartList
@@ -175,7 +175,7 @@
             this.flpCartList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCartList.Location = new System.Drawing.Point(0, 0);
             this.flpCartList.Name = "flpCartList";
-            this.flpCartList.Size = new System.Drawing.Size(1060, 663);
+            this.flpCartList.Size = new System.Drawing.Size(1078, 710);
             this.flpCartList.TabIndex = 40;
             // 
             // containerTop
@@ -190,7 +190,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 41;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -220,6 +220,7 @@
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnMenu
             // 
@@ -247,6 +248,7 @@
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnPostProduct
             // 
@@ -274,6 +276,7 @@
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
             // pbLogo
             // 
@@ -297,7 +300,7 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 42;
             // 
             // containerMenu
@@ -346,6 +349,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 
@@ -379,6 +383,7 @@
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // btnInformation
             // 
@@ -402,6 +407,7 @@
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -425,6 +431,7 @@
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
             // btnSavedProducts
             // 
@@ -448,6 +455,7 @@
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
             // guna2Panel6
             // 
@@ -493,6 +501,7 @@
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnPurchasesOrder
             // 
@@ -517,6 +526,7 @@
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
             // guna2Panel7
             // 
@@ -591,12 +601,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FCart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCart";
             this.Load += new System.EventHandler(this.FCart_Load);
             this.panelRight.ResumeLayout(false);

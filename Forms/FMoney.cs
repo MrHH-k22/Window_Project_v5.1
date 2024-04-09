@@ -20,11 +20,13 @@ namespace Window_Project_v5._1.Forms
         public FMoney()
         {
             InitializeComponent();
+            containerMenu.Visible = false;
         }
 
         public FMoney(Account acc)
         {
             InitializeComponent();
+            containerMenu.Visible = false;
             this.acc = acc;
         }
 
@@ -85,7 +87,8 @@ namespace Window_Project_v5._1.Forms
 
         private void FMoney_Load(object sender, EventArgs e)
         {
-            lblTotalMoney.Text = acc.Money.ToString("N0") + " VND";
+
+            lblTotalMoney.Text = (acc.Money > 0) ? acc.Money.ToString("N0") + " VND" : "N/A";
             lblName.Text = acc.Name;
             if (acc.Avatar != null && acc.Avatar.Length > 0)
             {
@@ -123,6 +126,90 @@ namespace Window_Project_v5._1.Forms
         private void btn500_Click(object sender, EventArgs e)
         {
             txtMoney.Text = "500000";
+        }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FCart f = new FCart();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnPostProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSellDetail f = new FSellDetail();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (containerMenu.Visible == false)
+            {
+                containerMenu.Visible = true;
+            }
+            else
+            {
+                containerMenu.Visible = false;
+            }
+        }
+
+        private void btnPurchasesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FTrackOrder f = new FTrackOrder();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FProductManagement f = new FProductManagement();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSavedProducts_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSaveList f = new FSaveList();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnOrderAnalysis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FOrderAnalysis f = new FOrderAnalysis();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnInformation_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FInformation f = new FInformation();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMoney_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FMoney f = new FMoney();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

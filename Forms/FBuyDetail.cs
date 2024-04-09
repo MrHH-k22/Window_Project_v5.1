@@ -28,11 +28,13 @@ namespace Window_Project_v5._1.Forms
         public FBuyDetail()
         {
             InitializeComponent();
+            containerMenu.Visible = false;
         }
 
         public FBuyDetail(Product pd,Account acc)
         {
             InitializeComponent();
+            containerMenu.Visible = false;
             account = acc;
  
             product = pd;
@@ -271,7 +273,7 @@ namespace Window_Project_v5._1.Forms
         private void btnCart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSignin f = new FSignin();
+            FCart f = new FCart();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

@@ -35,12 +35,6 @@
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.gpManagement = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblMoney = new System.Windows.Forms.Label();
-            this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lblName = new System.Windows.Forms.Label();
             this.panelOrderAnalysis = new Guna.UI2.WinForms.Guna2Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -74,6 +68,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblOrdersNo = new System.Windows.Forms.Label();
             this.lblOrder = new System.Windows.Forms.Label();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.gpManagement = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblMoney = new System.Windows.Forms.Label();
+            this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -94,9 +94,6 @@
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
-            this.panelTop.SuspendLayout();
-            this.gpManagement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.panelOrderAnalysis.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -114,6 +111,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTop.SuspendLayout();
+            this.gpManagement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.containerMenu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
@@ -133,7 +133,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 24;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -163,6 +163,7 @@
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnMenu
             // 
@@ -190,6 +191,7 @@
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnPostProduct
             // 
@@ -217,6 +219,7 @@
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
             // pbLogo
             // 
@@ -239,95 +242,8 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 25;
-            // 
-            // panelTop
-            // 
-            this.panelTop.Controls.Add(this.gpManagement);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1482, 80);
-            this.panelTop.TabIndex = 25;
-            // 
-            // gpManagement
-            // 
-            this.gpManagement.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.gpManagement.BorderRadius = 20;
-            this.gpManagement.BorderThickness = 1;
-            this.gpManagement.Controls.Add(this.label1);
-            this.gpManagement.Controls.Add(this.lblMoney);
-            this.gpManagement.Controls.Add(this.pbAvatar);
-            this.gpManagement.Controls.Add(this.lblName);
-            this.gpManagement.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gpManagement.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gpManagement.LabelIndent = 10;
-            this.gpManagement.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.gpManagement.Location = new System.Drawing.Point(11, 7);
-            this.gpManagement.Margin = new System.Windows.Forms.Padding(3, 20, 3, 2);
-            this.gpManagement.Name = "gpManagement";
-            this.gpManagement.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpManagement.Size = new System.Drawing.Size(1219, 68);
-            this.gpManagement.TabIndex = 1;
-            this.gpManagement.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(776, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 31);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Total Money:";
-            // 
-            // lblMoney
-            // 
-            this.lblMoney.AutoSize = true;
-            this.lblMoney.BackColor = System.Drawing.Color.Transparent;
-            this.lblMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblMoney.Location = new System.Drawing.Point(1002, 22);
-            this.lblMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(144, 31);
-            this.lblMoney.TabIndex = 12;
-            this.lblMoney.Text = "100,000 VND";
-            // 
-            // pbAvatar
-            // 
-            this.pbAvatar.AllowFocused = false;
-            this.pbAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbAvatar.AutoSizeHeight = true;
-            this.pbAvatar.BorderRadius = 31;
-            this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
-            this.pbAvatar.IsCircle = true;
-            this.pbAvatar.Location = new System.Drawing.Point(35, 1);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbAvatar.Name = "pbAvatar";
-            this.pbAvatar.Size = new System.Drawing.Size(62, 62);
-            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAvatar.TabIndex = 11;
-            this.pbAvatar.TabStop = false;
-            this.pbAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblName.Location = new System.Drawing.Point(118, 22);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(143, 31);
-            this.lblName.TabIndex = 10;
-            this.lblName.Text = "Seller Name";
             // 
             // panelOrderAnalysis
             // 
@@ -342,7 +258,7 @@
             this.panelOrderAnalysis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelOrderAnalysis.Location = new System.Drawing.Point(0, 80);
             this.panelOrderAnalysis.Name = "panelOrderAnalysis";
-            this.panelOrderAnalysis.Size = new System.Drawing.Size(1482, 583);
+            this.panelOrderAnalysis.Size = new System.Drawing.Size(1500, 630);
             this.panelOrderAnalysis.TabIndex = 24;
             // 
             // panel8
@@ -721,6 +637,93 @@
             this.lblOrder.TabIndex = 0;
             this.lblOrder.Text = "Orders";
             // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.gpManagement);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1500, 80);
+            this.panelTop.TabIndex = 25;
+            // 
+            // gpManagement
+            // 
+            this.gpManagement.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.gpManagement.BorderRadius = 20;
+            this.gpManagement.BorderThickness = 1;
+            this.gpManagement.Controls.Add(this.label1);
+            this.gpManagement.Controls.Add(this.lblMoney);
+            this.gpManagement.Controls.Add(this.pbAvatar);
+            this.gpManagement.Controls.Add(this.lblName);
+            this.gpManagement.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gpManagement.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gpManagement.LabelIndent = 10;
+            this.gpManagement.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.gpManagement.Location = new System.Drawing.Point(11, 7);
+            this.gpManagement.Margin = new System.Windows.Forms.Padding(3, 20, 3, 2);
+            this.gpManagement.Name = "gpManagement";
+            this.gpManagement.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gpManagement.Size = new System.Drawing.Size(1219, 68);
+            this.gpManagement.TabIndex = 1;
+            this.gpManagement.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label1.Location = new System.Drawing.Point(776, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 31);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Total Money:";
+            // 
+            // lblMoney
+            // 
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.BackColor = System.Drawing.Color.Transparent;
+            this.lblMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMoney.Location = new System.Drawing.Point(1002, 22);
+            this.lblMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(144, 31);
+            this.lblMoney.TabIndex = 12;
+            this.lblMoney.Text = "100,000 VND";
+            // 
+            // pbAvatar
+            // 
+            this.pbAvatar.AllowFocused = false;
+            this.pbAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbAvatar.AutoSizeHeight = true;
+            this.pbAvatar.BorderRadius = 31;
+            this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
+            this.pbAvatar.IsCircle = true;
+            this.pbAvatar.Location = new System.Drawing.Point(35, 1);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.Size = new System.Drawing.Size(62, 62);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatar.TabIndex = 11;
+            this.pbAvatar.TabStop = false;
+            this.pbAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblName.Location = new System.Drawing.Point(118, 22);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(143, 31);
+            this.lblName.TabIndex = 10;
+            this.lblName.Text = "Seller Name";
+            // 
             // containerMenu
             // 
             this.containerMenu.BorderColor = System.Drawing.Color.Black;
@@ -767,6 +770,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 
@@ -800,6 +804,7 @@
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // btnInformation
             // 
@@ -823,6 +828,7 @@
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -846,6 +852,7 @@
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
             // btnSavedProducts
             // 
@@ -869,6 +876,7 @@
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
             // guna2Panel6
             // 
@@ -914,6 +922,7 @@
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnPurchasesOrder
             // 
@@ -938,6 +947,7 @@
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
             // guna2Panel7
             // 
@@ -1011,21 +1021,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FOrderAnalysis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FOrderAnalysis";
             this.Load += new System.EventHandler(this.FOrderAnalysis_Load);
             this.containerTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBody.ResumeLayout(false);
-            this.panelTop.ResumeLayout(false);
-            this.gpManagement.ResumeLayout(false);
-            this.gpManagement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.panelOrderAnalysis.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1051,6 +1059,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            this.gpManagement.ResumeLayout(false);
+            this.gpManagement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.containerMenu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();

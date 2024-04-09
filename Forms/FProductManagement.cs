@@ -19,11 +19,13 @@ namespace Window_Project_v5._1.Forms
         public FProductManagement()
         {
             InitializeComponent();
+            containerMenu.Visible = false;
         }
 
         public FProductManagement(Account acc)
         {
             InitializeComponent();
+            containerMenu.Visible = false;
             account = accountDAO.Retrieve(acc.Id);
         }
 
@@ -70,6 +72,90 @@ namespace Window_Project_v5._1.Forms
                 tabPage.Controls.Clear();
             }
             FProductManagement_Load(sender, e);
+        }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FCart f = new FCart();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnPostProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSellDetail f = new FSellDetail();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (containerMenu.Visible == false)
+            {
+                containerMenu.Visible = true;
+            }
+            else
+            {
+                containerMenu.Visible = false;
+            }
+        }
+
+        private void btnPurchasesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FTrackOrder f = new FTrackOrder();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FProductManagement f = new FProductManagement();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnSavedProducts_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSaveList f = new FSaveList();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnOrderAnalysis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FOrderAnalysis f = new FOrderAnalysis();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnInformation_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FInformation f = new FInformation();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnMoney_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FMoney f = new FMoney();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

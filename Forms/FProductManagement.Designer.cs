@@ -179,7 +179,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1482, 129);
+            this.panelTop.Size = new System.Drawing.Size(1500, 129);
             this.panelTop.TabIndex = 1;
             // 
             // tcManagement
@@ -194,7 +194,7 @@
             this.tcManagement.Location = new System.Drawing.Point(0, 129);
             this.tcManagement.Name = "tcManagement";
             this.tcManagement.SelectedIndex = 0;
-            this.tcManagement.Size = new System.Drawing.Size(1482, 534);
+            this.tcManagement.Size = new System.Drawing.Size(1500, 581);
             this.tcManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tcManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tcManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -220,7 +220,7 @@
             this.tpDisplay.Location = new System.Drawing.Point(4, 44);
             this.tpDisplay.Name = "tpDisplay";
             this.tpDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDisplay.Size = new System.Drawing.Size(1474, 486);
+            this.tpDisplay.Size = new System.Drawing.Size(1492, 533);
             this.tpDisplay.TabIndex = 0;
             this.tpDisplay.Text = "Displaying";
             this.tpDisplay.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@
             this.tpWaitConfirm.Location = new System.Drawing.Point(4, 44);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
             this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1233, 544);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1474, 486);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
@@ -239,7 +239,7 @@
             // 
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Size = new System.Drawing.Size(1233, 544);
+            this.tpCompleted.Size = new System.Drawing.Size(1474, 486);
             this.tpCompleted.TabIndex = 3;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -248,7 +248,7 @@
             // 
             this.tpCancelled.Location = new System.Drawing.Point(4, 44);
             this.tpCancelled.Name = "tpCancelled";
-            this.tpCancelled.Size = new System.Drawing.Size(1233, 544);
+            this.tpCancelled.Size = new System.Drawing.Size(1474, 486);
             this.tpCancelled.TabIndex = 4;
             this.tpCancelled.Text = "Cancelled";
             this.tpCancelled.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             // 
             this.tpHidden.Location = new System.Drawing.Point(4, 44);
             this.tpHidden.Name = "tpHidden";
-            this.tpHidden.Size = new System.Drawing.Size(1233, 544);
+            this.tpHidden.Size = new System.Drawing.Size(1474, 486);
             this.tpHidden.TabIndex = 5;
             this.tpHidden.Text = "Hidden";
             this.tpHidden.UseVisualStyleBackColor = true;
@@ -274,7 +274,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 3;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -304,6 +304,7 @@
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnMenu
             // 
@@ -331,6 +332,7 @@
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnPostProduct
             // 
@@ -358,6 +360,7 @@
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
             // 
             // pbLogo
             // 
@@ -380,7 +383,7 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 4;
             // 
             // containerMenu
@@ -429,6 +432,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 
@@ -462,6 +466,7 @@
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // btnInformation
             // 
@@ -485,6 +490,7 @@
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // btnOrderAnalysis
             // 
@@ -508,6 +514,7 @@
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnOrderAnalysis.Click += new System.EventHandler(this.btnOrderAnalysis_Click);
             // 
             // btnSavedProducts
             // 
@@ -531,6 +538,7 @@
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
             // guna2Panel6
             // 
@@ -576,6 +584,7 @@
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnPurchasesOrder
             // 
@@ -600,6 +609,7 @@
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
             // guna2Panel7
             // 
@@ -674,11 +684,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FProductManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FProductManagement";
             this.Load += new System.EventHandler(this.FProductManagement_Load);
             this.gpManagement.ResumeLayout(false);

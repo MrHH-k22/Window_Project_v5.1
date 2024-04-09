@@ -48,7 +48,7 @@ namespace Window_Project_v5._1.Forms
                 else
                 {
                     this.Hide();
-                    FHomepage f = new FHomepage(acc);
+                    FBuy f = new FBuy(acc);
                     f.Closed += (s, args) => this.Close();
                     f.Show();
                 }
