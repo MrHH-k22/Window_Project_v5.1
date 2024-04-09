@@ -151,7 +151,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            FTrackDetail trackDetail = new FTrackDetail(product);
+            FSellDetail trackDetail = new FSellDetail(product);
             trackDetail.Show();
         }
 

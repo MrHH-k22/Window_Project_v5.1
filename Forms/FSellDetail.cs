@@ -33,20 +33,27 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail(Product pd)
         {
             InitializeComponent();
+            edit = true;
             containerMenu.Visible = false;
             this.pd = pd;
-            txtCondition.Text = pd.Condition.ToString();
-            txtStatus.Text = pd.Status.ToString();
-            txtBuyPrice.Text = pd.OriginalPrice.ToString();
-            txtSellPrice.Text = pd.SalePrice.ToString();
-            txtProductTitle.Text = pd.Name.ToString();
-            txtDescription.Text = pd.Description.ToString();
-            txtBrand.Text = pd.Brand.ToString();
-            ddCategory.SelectedItem = pd.Category.ToString();
-            selectedCategory = pd.Category.ToString();
-            acc = accountDAO.Retrieve(pd.SellerID);
-            edit = true;
+            selectedCategory = pd.Category;
+            txtProductTitle.Text = pd.Name; 
+            txtType.Text = pd.Type; 
+            txtBuyPrice.Text = pd.OriginalPrice.ToString(); 
+            txtSellPrice.Text = pd.SalePrice.ToString(); 
+            selectedArea = pd.Area; 
+            txtCondition.Text = pd.Condition; 
+            txtStatus.Text = pd.Status; 
+            txtSupportPolicy.Text = pd.SupportPolicy; 
+            txtBrand.Text = pd.Brand; 
+            txtOrigin.Text = pd.Origin; 
+            txtMaterial.Text = pd.Material; 
+            txtSize.Text = pd.Size; 
+            txtFunctionalities.Text = pd.Functionality; 
+            txtDescription.Text = pd.Description;
             btnPost.Text = "Update product";
+            ddCategory.SelectedItem = pd.Category;
+            ddArea.SelectedItem = pd.Area;
         }
 
         public FSellDetail(Account acc)
@@ -226,21 +233,21 @@ namespace Window_Project_v5._1.Forms
             else
             {
                 //Update product
-                pd.Functionality = txtFunctionalities.Text;
-                pd.Size = txtSize.Text;
-                pd.Material = txtMaterial.Text;
-                pd.Origin = txtOrigin.Text;
-                pd.SupportPolicy = txtSupportPolicy.Text;
-                pd.Area = selectedArea;
-                pd.Type = txtType.Text;
-                pd.Condition = txtCondition.Text;
-                pd.Status = txtStatus.Text;
-                pd.Brand = txtBrand.Text;
-                pd.OriginalPrice = StringToDouble(txtBuyPrice.Text);
-                pd.SalePrice = StringToDouble(txtSellPrice.Text);
-                pd.Description = txtDescription.Text;
                 pd.Category = selectedCategory;
                 pd.Name = txtProductTitle.Text;
+                pd.Type = txtType.Text;
+                pd.OriginalPrice = StringToDouble(txtBuyPrice.Text);
+                pd.SalePrice = StringToDouble(txtSellPrice.Text);
+                pd.Area = selectedArea;
+                pd.Condition = txtCondition.Text;
+                pd.Status = txtStatus.Text;
+                pd.SupportPolicy = txtSupportPolicy.Text;
+                pd.Brand = txtBrand.Text;
+                pd.Origin = txtOrigin.Text;
+                pd.Material = txtMaterial.Text;
+                pd.Size = txtSize.Text;
+                pd.Functionality = txtFunctionalities.Text;
+                pd.Description = txtDescription.Text;
                 productDAO.Update(pd, true);
                 //Update Images
                 imageDAO.Delete(pd.Id);

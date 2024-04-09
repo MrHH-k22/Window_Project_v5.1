@@ -36,110 +36,7 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             containerMenu.Visible = false;
             account = acc;
- 
             product = pd;
-            pd.ViewCount++;
-            productDAO.Update(pd);
-            lblProductName.Text = pd.Name;
-            lblSellPrice.Text = pd.SalePrice.ToString("N0") + " VND";
-            lblBuyPrice.Text = pd.OriginalPrice.ToString("N0") + " VND";
-            lblCondition.Text = "Condition: " + pd.Condition.ToString() + "%";
-            lblBrand.Text = "Brand: " + pd.Brand.ToString();
-            lblCategory.Text = "Category: " + pd.Category.ToString();
-            txtStatus.Text = pd.Status.ToString();
-            txtDescription.Text = pd.Description.ToString();
-            txtSupportPolicy.Text = pd.SupportPolicy.ToString();
-            lblArea.Text = "Area: " + pd.Area.ToString();
-            lblOrigin.Text = "Origin: " + pd.Origin.ToString();
-            lblMaterial.Text = "Material: " + pd.Material.ToString();
-            lblSize.Text = "Size: " + pd.Size.ToString();
-            txtFunctionalities.Text = pd.Functionality.ToString();
-            DataTable ImageTable = imageDAO.GetImageProduct(pd.Id);
-
-            int pictureBoxIndex = 0;
-
-            foreach (DataRow row in ImageTable.Rows)
-            {
-                if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
-                    break;
-
-                byte[] imageData = (byte[])row["Image"]; // Access the "Image" column
-
-                // Load image into PictureBox
-                MemoryStream ms = new MemoryStream(imageData);
-
-                // Assign pictureBox variable based on index
-                Guna2ImageButton pictureBox = null;
-
-                switch (pictureBoxIndex)
-                {
-                    
-                    case 0:
-                        pictureBox = btnImage1;
-                        break;
-                    case 1:
-                        pictureBox = btnImage2;
-                        break;
-                    case 2:
-                        pictureBox = btnImage3;
-                        break;
-                    case 3:
-                        pictureBox = btnImage4;
-                        break;
-                    
-                }
-
-                // Assign image to PictureBox and make it visible
-                pictureBox.Image = Image.FromStream(ms);
-                pictureBox.Visible = true;
-
-                pictureBoxIndex++;
-            }
-
-            // Hide any remaining PictureBoxes
-            for (int i = pictureBoxIndex; i < 4; i++)
-            {
-                switch (i)
-                {
-                    case 0:
-                        btnImage1.Visible = false;
-                        break;
-                    case 1:
-                        btnImage2.Visible = false;
-                        break;
-                    case 2:
-                        btnImage3.Visible = false;
-                        break;
-                    case 3:
-                        btnImage4.Visible = false;
-                        break;
-                }
-            }
-
-            //check button save
-            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-            {
-                btnSave.Text = "Saved";
-                btnSave.FillColor = Color.WhiteSmoke;
-                btnSave.ForeColor = Color.Red;
-            }
-            else
-            {
-                btnSave.Text = "Save";
-                btnSave.FillColor = Color.Red;
-                btnSave.ForeColor = Color.WhiteSmoke;
-            }
-            //check seller
-            if(account.Id == product.SellerID)
-            {
-                btnSave.Visible = false;
-                btnBuy.Visible = false;
-            }
-
-            Account seller = accountDAO.Retrieve(product.SellerID);
-            lblAvatarName.Text = seller.Name;
-            convertByte(pbAvatar, seller.Avatar);
-
         }
 
         private void convertByte(PictureBox pic, byte[] imageData)
@@ -173,10 +70,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnImage1_Click(object sender, EventArgs e)
         {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage2.Image;
-            btnImage2.Image = temp.Image;
+
         }
 
         private void btnImage3_Click(object sender, EventArgs e)
@@ -352,6 +246,112 @@ namespace Window_Project_v5._1.Forms
             FSignin f = new FSignin();
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void FBuyDetail_Load(object sender, EventArgs e)
+        {
+            product.ViewCount++;
+            productDAO.Update(product);
+            lblProductName.Text = product.Name;
+            lblSellPrice.Text = product.SalePrice.ToString("N0") + " VND";
+            lblBuyPrice.Text = product.OriginalPrice.ToString("N0") + " VND";
+            txtStatus.Text = product.Status.ToString();
+            txtDescription.Text = product.Description.ToString();
+            txtSupportPolicy.Text = product.SupportPolicy.ToString();
+            txtFunctionalities.Text = product.Functionality.ToString();
+            lblArea.Text = "Area: " + product.Area;
+            lblOrigin.Text = "Origin: " + product.Origin;
+            lblMaterial.Text = "Material: " + product.Material;
+            lblSize.Text = "Size: " + product.Size;
+            lblCondition.Text = "Condition: " + product.Condition + "%";
+            lblBrand.Text = "Brand: " + product.Brand;
+            lblCategory.Text = "Category: " + product.Category;
+            lblType.Text = "Type: " + product.Type;
+            DataTable ImageTable = imageDAO.GetImageProduct(product.Id);
+
+            int pictureBoxIndex = 0;
+
+            foreach (DataRow row in ImageTable.Rows)
+            {
+                if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
+                    break;
+
+                byte[] imageData = (byte[])row["Image"]; // Access the "Image" column
+
+                // Load image into PictureBox
+                MemoryStream ms = new MemoryStream(imageData);
+
+                // Assign pictureBox variable based on index
+                Guna2ImageButton pictureBox = null;
+
+                switch (pictureBoxIndex)
+                {
+
+                    case 0:
+                        pictureBox = btnImage1;
+                        break;
+                    case 1:
+                        pictureBox = btnImage2;
+                        break;
+                    case 2:
+                        pictureBox = btnImage3;
+                        break;
+                    case 3:
+                        pictureBox = btnImage4;
+                        break;
+
+                }
+
+                // Assign image to PictureBox and make it visible
+                pictureBox.Image = Image.FromStream(ms);
+                pictureBox.Visible = true;
+
+                pictureBoxIndex++;
+            }
+
+            // Hide any remaining PictureBoxes
+            for (int i = pictureBoxIndex; i < 4; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        btnImage1.Visible = false;
+                        break;
+                    case 1:
+                        btnImage2.Visible = false;
+                        break;
+                    case 2:
+                        btnImage3.Visible = false;
+                        break;
+                    case 3:
+                        btnImage4.Visible = false;
+                        break;
+                }
+            }
+
+            //check button save
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                btnSave.Text = "Saved";
+                btnSave.FillColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
+            else
+            {
+                btnSave.Text = "Save";
+                btnSave.FillColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            //check seller
+            if (account.Id == product.SellerID)
+            {
+                btnSave.Visible = false;
+                btnBuy.Visible = false;
+            }
+
+            Account seller = accountDAO.Retrieve(product.SellerID);
+            lblAvatarName.Text = seller.Name;
+            convertByte(pbAvatar, seller.Avatar);
         }
     }
 }

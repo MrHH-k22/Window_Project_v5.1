@@ -17,7 +17,7 @@ namespace Window_Project_v5._1
         public void add(int buyerid,int productid)
         {
             string sqlStr = string.Format("INSERT INTO Favorite (BuyerID,ProductID) VALUES ('{0}', '{1}')",buyerid,productid);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public bool checkProductinFavorite(int buyerid,int productid)
@@ -30,7 +30,7 @@ namespace Window_Project_v5._1
         public void delete(int buyerId, int productId)
         {
             string sqlStr = string.Format("DELETE FROM Favorite WHERE BuyerID = '{0}' AND ProductID = '{1}'", buyerId, productId);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public List<Product> loadListWithAccountID(int accountID)

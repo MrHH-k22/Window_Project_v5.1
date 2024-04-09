@@ -39,7 +39,7 @@ namespace Window_Project_v5._1
             }
         }
 
-        public void Excute(string sqlStr)
+        public void Execute(string sqlStr)
         {
             try
             {
@@ -49,7 +49,6 @@ namespace Window_Project_v5._1
 
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Successful");
 
                 }
                 else

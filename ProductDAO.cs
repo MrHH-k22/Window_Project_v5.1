@@ -70,7 +70,7 @@ namespace Window_Project_v5._1
         {
             string sqlStr = string.Format("UPDATE Product SET Name = '{0}', Brand = '{1}' , OriginalPrice = '{2}', SalePrice = '{3}', Condition = '{4}', Status = '{5}', Description = '{6}', Category = '{7}', Origin = '{8}', Type = '{9}', Material = '{10}', SupportPolicy = '{11}', Area = '{12}', Size = '{13}', Functionality = '{14}' WHERE ID = '{15}'",
                                        pd.Name, pd.Brand, pd.OriginalPrice, pd.SalePrice, pd.Condition, pd.Status, pd.Description, pd.Category, pd.Origin, pd.Type, pd.Material, pd.SupportPolicy, pd.Area, pd.Size, pd.Functionality, pd.Id);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         // Buyer purchase the product
@@ -78,20 +78,20 @@ namespace Window_Project_v5._1
         {
             string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}'  WHERE ID = '{2}'",
                                              product.BuyerID,product.OrderCondition,product.Id);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public void Delete(Product product)
         {
             string sqlStr = string.Format("DELETE FROM Product WHERE id = '{0}'", product.Id);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public void DeleteBuyerID(Product product)
         {
             string sqlStr = string.Format("Update Product Set BuyerID = 0 where id = '{0}'", product.Id);
             //string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}', BuyerID = NULL, BillStatus = '{8}', ViewCount = '{9}' WHERE id = '{10}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category, product.BillStatus, product.ViewCount, product.Id);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public Product GetLastProduct()
@@ -210,7 +210,6 @@ namespace Window_Project_v5._1
             product.Size = dr["Size"].ToString();
             product.PostedTime = (dr["PostedTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["PostedTime"]);
             product.CompleteTime = (dr["CompleteTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["CompleteTime"]);
-            product.Color = (dr["Color"] == DBNull.Value) ? "" : dr["Color"].ToString();
             product.Functionality = dr["Functionality"].ToString();
             return product;
         }

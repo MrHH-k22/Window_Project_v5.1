@@ -13,7 +13,7 @@ namespace Window_Project_v5._1
         public void Add(Rating rt, Product pd)
         {
             string sqlStr = string.Format("INSERT INTO Rating (Comment, Star, SellerID, ProductID, BuyerID) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')", rt.Comment, rt.Star, pd.SellerID, pd.Id, pd.BuyerID);
-            dbconnection.Excute(sqlStr);
+            dbconnection.Execute(sqlStr);
         }
     }
 }

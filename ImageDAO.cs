@@ -31,7 +31,7 @@ namespace Window_Project_v5._1
         public void Delete(int productID)
         {
             string sqlStr = string.Format("DELETE FROM ProductImages WHERE productid = '{0}'", productID);
-            dbc.Excute(sqlStr);
+            dbc.Execute(sqlStr);
         }
 
         public byte[] GetImageProductData(int productID)

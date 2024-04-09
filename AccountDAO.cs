@@ -16,7 +16,7 @@ namespace Window_Project_v5._1
             string sqlStr = string.Format("UPDATE Account SET email = '{0}', password = '{1}', name = '{2}', Phone = '{3}', Birthday = '{4}', address = '{5}', money = '{6}' WHERE id = {7}", 
                 account.Email, account.Password,account.Name, account.Phone, account.Birthday,account.Address, account.Money, account.Id);
             AddImage(account, account.Avatar);
-            dbconnection.Excute(sqlStr);
+            dbconnection.Execute(sqlStr);
         }
 
         public void AddImage(Account account,byte[] imgData)
@@ -46,7 +46,7 @@ namespace Window_Project_v5._1
             else
             {
                 string sql = string.Format("INSERT INTO Account (Email, Password, Name) VALUES ('{0}', '{1}', '{2}')", account.Email, account.Password, account.Name);
-                dbconnection.Excute(sql);
+                dbconnection.Execute(sql);
                 return true;
             }
 
@@ -106,7 +106,7 @@ namespace Window_Project_v5._1
             if (CheckEmailExisted(emailsubmitted) == true)
             {
                 string sql = string.Format("UPDATE Account SET Password = '{0}' WHERE Email = '{1}'", pwsubmitted, emailsubmitted);
-                dbconnection.Excute(sql);
+                dbconnection.Execute(sql);
             }
             else
             {
