@@ -35,7 +35,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = acc;
+            account = accountDAO.Retrieve(acc.Id);
             product = pd;
         }
 
@@ -155,12 +155,13 @@ namespace Window_Project_v5._1.Forms
         {
             if (cartDAO.checkProductinCart(account.Id, product.Id))
             {
-                MessageBox.Show("The product is already in your cart", "Announcement", MessageBoxButtons.OK);
+                cartDAO.delete(account.Id, product.Id);
+                btnAddtoCart.Text = "Add to cart";
             }
             else
             {
                 cartDAO.add(account.Id, product.Id);
-                MessageBox.Show("Adding the product successfully", "Announcement", MessageBoxButtons.OK);
+                btnAddtoCart.Text = "Already in your cart";
             }
         }
 
@@ -341,6 +342,15 @@ namespace Window_Project_v5._1.Forms
                 btnSave.Text = "Save";
                 btnSave.FillColor = Color.Red;
                 btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            //check cart
+            if (cartDAO.checkProductinCart(account.Id, product.Id))
+            {
+                btnAddtoCart.Text = "Already in your cart";
+            }
+            else
+            {
+                btnAddtoCart.Text = "Add to cart";
             }
             //check seller
             if (account.Id == product.SellerID)

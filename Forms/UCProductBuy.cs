@@ -93,6 +93,7 @@ namespace Window_Project_v5._1.Forms
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            // Buyed
             if (product.BuyerID != 0)
             {
                 account.Money += product.SalePrice;
@@ -102,15 +103,14 @@ namespace Window_Project_v5._1.Forms
                 Seller.Money -= product.SalePrice;
                 accountDAO.update(Seller);
                 //add to account cancelled list
-                if (product.Id != null)
-                {
-                    account.CancelledList.Add(product.Id);
-                }
-                //
+                account.CancelledList.Add(product.Id);
+                //update status for product
                 product.OrderCondition = (int)ordercondition.Cancelled;
                 productDAO.Update(product);
                 productDAO.DeleteBuyerID(product);
-            } else
+            } 
+            // Not buyed yet
+            else
             {
                 if (checkCart)
                 {
@@ -120,12 +120,6 @@ namespace Window_Project_v5._1.Forms
                     favoriteDAO.delete(account.Id, product.Id);
                 }
             }
-        }
-
-        private void btnDetail_Click(object sender, EventArgs e)
-        {
-            FBuyDetail trackDetail = new FBuyDetail(product, account);
-            trackDetail.Show();
         }
 
 
@@ -156,6 +150,12 @@ namespace Window_Project_v5._1.Forms
         {
             FRating f = new FRating(product);
             f.Show();
+        }
+
+        private void btnDetail_Click_1(object sender, EventArgs e)
+        {
+            FBuyDetail trackDetail = new FBuyDetail(product, account);
+            trackDetail.Show();
         }
     }
 }

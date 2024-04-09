@@ -37,7 +37,7 @@ namespace Window_Project_v5._1.Forms
             double total = 0;
             foreach (var pd in products)
             {
-                if (pd.BuyerID != 0)
+                if (pd.BuyerID == 0)
                 {
                     UCProductBuy uc = new UCProductBuy(pd, account);
                     total += pd.SalePrice;
@@ -48,6 +48,7 @@ namespace Window_Project_v5._1.Forms
                 }
             }
             lblTotalMoney.Text = total.ToString("N0") + " VND";
+            lblNoOfItems.Text = products.Count.ToString();
         }
 
         private void btnPurchase_Click(object sender, EventArgs e)
