@@ -97,6 +97,11 @@ namespace Window_Project_v5._1
             this.sellerID = sellerID;
             orderCondition = 0;
             billStatus = 0;
+            buyerID = 0;
+            viewCount = 0;
+            contactPhone = "";
+            deliveryAddress = "";
+            completeTime = DateTime.MinValue;
         }
 
         public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string category)

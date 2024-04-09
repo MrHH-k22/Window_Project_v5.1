@@ -142,7 +142,7 @@ namespace Window_Project_v5._1.Forms
         private void btnCart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FCart f = new FCart();
+            FCart f = new FCart(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -150,7 +150,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPostProduct_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSellDetail f = new FSellDetail();
+            FSellDetail f = new FSellDetail(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -158,7 +158,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPurchasesOrder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FTrackOrder f = new FTrackOrder();
+            FTrackOrder f = new FTrackOrder(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -166,7 +166,7 @@ namespace Window_Project_v5._1.Forms
         private void btnSalesOrder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FProductManagement f = new FProductManagement();
+            FProductManagement f = new FProductManagement(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -174,7 +174,7 @@ namespace Window_Project_v5._1.Forms
         private void btnSavedProducts_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSaveList f = new FSaveList();
+            FSaveList f = new FSaveList(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -182,7 +182,7 @@ namespace Window_Project_v5._1.Forms
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FOrderAnalysis f = new FOrderAnalysis();
+            FOrderAnalysis f = new FOrderAnalysis(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -190,7 +190,7 @@ namespace Window_Project_v5._1.Forms
         private void btnInformation_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FInformation f = new FInformation();
+            FInformation f = new FInformation(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -198,7 +198,7 @@ namespace Window_Project_v5._1.Forms
         private void btnMoney_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FMoney f = new FMoney();
+            FMoney f = new FMoney(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

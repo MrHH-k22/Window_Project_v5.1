@@ -13,20 +13,67 @@ using System.Data;
 using System.Data.Common;
 using Guna.UI2.WinForms.Suite;
 using static Guna.UI2.Native.WinApi;
+using System.Data.SqlTypes;
 
 namespace Window_Project_v5._1
 {
     internal class ProductDAO
     {
         DBConnection dbc = new DBConnection();
-        public void Add(Product product)
+        // Add product into database
+        public void Add(Product pd)
         {
-            string sqlStr = string.Format("INSERT INTO Product (Category, Name, Type, OriginalPrice, SalePrice, Area, Condition, Status, SupportPolicy, Brand, Origin, Material, Size, Functionality, Description, SellerID, PostedTime) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
-                                            product.Category, product.Name, product.Type, product.OriginalPrice, product.SalePrice, product.Area, product.Condition, product.Status, product.SupportPolicy, product.Brand, product.Origin, product.Material, product.Size, product.Functionality, product.Description, product.SellerID, DateTime.Now.ToString("yyyy-MM-dd"));
-            dbc.Excute(sqlStr);
+            string sqlStr = "INSERT INTO Product (Name, Brand, OriginalPrice, SalePrice, Condition, Status, Description, SellerID, BuyerID, Category, BillStatus, ViewCount, OrderCondition, ContactPhone, DeliveryAddress, Origin, Type, Material, SupportPolicy, Area, Size, PostedTime, Functionality, CompleteTime) " +
+                            "VALUES (@Name, @Brand, @OriginalPrice, @SalePrice, @Condition, @Status, @Description, @SellerID, @BuyerID, @Category, @BillStatus, @ViewCount, @OrderCondition, @ContactPhone, @DeliveryAddress, @Origin, @Type, @Material, @SupportPolicy, @Area, @Size, @PostedTime, @Functionality, @CompleteTime)";
+
+            // Adjust PostedTime if it's outside the valid range
+            DateTime postedTime = pd.PostedTime < SqlDateTime.MinValue.Value ? SqlDateTime.MinValue.Value : (pd.PostedTime > SqlDateTime.MaxValue.Value ? SqlDateTime.MaxValue.Value : pd.PostedTime);
+
+            // Adjust CompleteTime if it's outside the valid range
+            DateTime completeTime = pd.CompleteTime < SqlDateTime.MinValue.Value ? SqlDateTime.MinValue.Value : (pd.CompleteTime > SqlDateTime.MaxValue.Value ? SqlDateTime.MaxValue.Value : pd.CompleteTime);
+
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Name", pd.Name),
+                new SqlParameter("@Brand", pd.Brand),
+                new SqlParameter("@OriginalPrice", pd.OriginalPrice),
+                new SqlParameter("@SalePrice", pd.SalePrice),
+                new SqlParameter("@Condition", pd.Condition),
+                new SqlParameter("@Status", pd.Status),
+                new SqlParameter("@Description", pd.Description),
+                new SqlParameter("@SellerID", pd.SellerID),
+                new SqlParameter("@BuyerID", pd.BuyerID),
+                new SqlParameter("@Category", pd.Category),
+                new SqlParameter("@BillStatus", pd.BillStatus),
+                new SqlParameter("@ViewCount", pd.ViewCount),
+                new SqlParameter("@OrderCondition", pd.OrderCondition),
+                new SqlParameter("@ContactPhone", pd.ContactPhone),
+                new SqlParameter("@DeliveryAddress", pd.DeliveryAddress),
+                new SqlParameter("@Origin", pd.Origin),
+                new SqlParameter("@Type", pd.Type),
+                new SqlParameter("@Material", pd.Material),
+                new SqlParameter("@SupportPolicy", pd.SupportPolicy),
+                new SqlParameter("@Area", pd.Area),
+                new SqlParameter("@Size", pd.Size),
+                new SqlParameter("@PostedTime", postedTime),
+                new SqlParameter("@Functionality", pd.Functionality),
+                new SqlParameter("@CompleteTime", completeTime)
+            };
+
+            dbc.Execute(sqlStr, parameters);
         }
 
 
+
+        // Seller edit product's information
+        public void Update(Product pd, bool check)
+        {
+            string sqlStr = string.Format("UPDATE Product SET Name = '{0}', Brand = '{1}' , OriginalPrice = '{2}', SalePrice = '{3}', Condition = '{4}', Status = '{5}', Description = '{6}', Category = '{7}', Origin = '{8}', Type = '{9}', Material = '{10}', SupportPolicy = '{11}', Area = '{12}', Size = '{13}', Functionality = '{14}' WHERE ID = '{15}'",
+                                       pd.Name, pd.Brand, pd.OriginalPrice, pd.SalePrice, pd.Condition, pd.Status, pd.Description, pd.Category, pd.Origin, pd.Type, pd.Material, pd.SupportPolicy, pd.Area, pd.Size, pd.Functionality, pd.Id);
+            dbc.Excute(sqlStr);
+        }
+
+        // Buyer purchase the product
         public void Update(Product product)
         {
             string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}'  WHERE ID = '{2}'",
