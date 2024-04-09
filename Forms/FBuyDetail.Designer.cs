@@ -638,6 +638,7 @@
             this.btnBuy.Size = new System.Drawing.Size(284, 49);
             this.btnBuy.TabIndex = 129;
             this.btnBuy.Text = "Buy";
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // btnAddtoCart
             // 

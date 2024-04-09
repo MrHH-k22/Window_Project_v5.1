@@ -29,8 +29,7 @@ namespace Window_Project_v5._1
 
         public void Update(Product product)
         {
-            string sqlStr = string.Format("UPDATE Product SET Category = '{0}', Name = '{1}', Type = '{2}', OriginalPrice = '{3}', SalePrice = '{4}', Area = '{5}', Condition = '{6}', Status = '{7}', SupportPolicy = '{8}', Brand = '{9}', Origin = '{10}', Material = '{11}', Size = '{12}', Functionality = '{13}', Description = '{14}' WHERE ID = '{15}'",
-                                            product.Category, product.Name, product.Type, product.OriginalPrice, product.SalePrice, product.Area, product.Condition, product.Status, product.SupportPolicy, product.Brand, product.Origin, product.Material, product.Size, product.Functionality, product.Description, product.Id);
+            string sqlStr = string.Format("UPDATE Product SET  BuyerID = '{0}', OrderCondition = '{1}' WHERE ID = '{2}'", product.BuyerID, product.OrderCondition, product.Id);
             dbc.Excute(sqlStr);
         }
 
