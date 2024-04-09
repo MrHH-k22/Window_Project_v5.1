@@ -27,7 +27,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             SetEventForAllControls(this);
-
+            btnRate.Visible = false;
         }
 
         public UCProductBuy(Product pd, Account acc)
@@ -48,9 +48,8 @@ namespace Window_Project_v5._1.Forms
 
         private void InitializeUCProductBuy(Product pd, Account acc)
         {
-            InitializeComponent();
             this.Dock = DockStyle.Top;
-            this.Controls.Remove(btnRate);
+            btnRate.Visible = false;
             this.product = pd;
             account = acc;
             lblPrice.Text = pd.SalePrice.ToString();
@@ -88,8 +87,8 @@ namespace Window_Project_v5._1.Forms
             
             if(product.OrderCondition == (int)ordercondition.Completed)
             {
-                this.Controls.Remove(btnCancel);
-                this.Controls.Add(btnRate);
+                btnCancel.Visible = false;
+                btnRate.Visible = true;
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
