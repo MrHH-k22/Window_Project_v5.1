@@ -643,5 +643,29 @@
   <ItemGroup>
     <None Include="Images\credit-card.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\crossv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Shopping Bag-color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\heart_v3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pie-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\minimize-sign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
