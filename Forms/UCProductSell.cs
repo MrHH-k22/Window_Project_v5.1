@@ -118,12 +118,6 @@ namespace Window_Project_v5._1.Forms
                 btnCancel.Enabled = false;
                 btnFunction.Enabled = false;
             }
-            else if (product.OrderCondition == (int)ordercondition.Cancelled)
-            {
-                btnFunction.Text = "Post again";
-                btnCancel.Enabled = false;
-                btnFunction.Enabled = true;
-            }
             else if (product.OrderCondition == (int)ordercondition.hidden)
             {
                 btnFunction.Text = "Display product";
@@ -167,11 +161,6 @@ namespace Window_Project_v5._1.Forms
                 product.OrderCondition = (int)ordercondition.Completed;
                 productDAO.Update(product);
 
-            }
-            else if (product.OrderCondition == (int)ordercondition.Cancelled)
-            {
-                product.OrderCondition = (int)ordercondition.Displaying;
-                productDAO.Update(product);
             }
             else if (product.OrderCondition == (int)ordercondition.hidden)
             {

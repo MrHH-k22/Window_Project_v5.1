@@ -228,6 +228,10 @@ namespace Window_Project_v5._1.Forms
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
             this.Hide();
             FSignin f = new FSignin();
             f.Closed += (s, args) => this.Close();
