@@ -71,7 +71,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(11, 4);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1219, 106);
+            this.guna2Panel1.Size = new System.Drawing.Size(1476, 106);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnRate
@@ -236,16 +236,16 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel panelBody;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        public Guna.UI2.WinForms.Guna2Panel panelBody;
+        public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         
         public Bunifu.UI.WinForms.BunifuPictureBox pbProduct;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
         public System.Windows.Forms.Label lblPrice;
         public System.Windows.Forms.Label lblSellerName;
         public System.Windows.Forms.Label lblProductName;
-        private Guna.UI2.WinForms.Guna2Button btnCancel;
-        private Guna.UI2.WinForms.Guna2Button btnDetail;
-        private Guna.UI2.WinForms.Guna2Button btnRate;
+        public Guna.UI2.WinForms.Guna2Button btnCancel;
+        public Guna.UI2.WinForms.Guna2Button btnDetail;
+        public Guna.UI2.WinForms.Guna2Button btnRate;
     }
 }

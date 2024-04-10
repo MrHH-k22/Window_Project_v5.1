@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Window_Project_v5._1
         private string address;
         private double money;
         private byte[] avatar;
+        //private DataTable rating = new DataTable(); 
         private List<int> cancelledList = new List<int>();
         private List<int> savedList = new List<int>();
         private List<int> cartList = new List<int>();
@@ -84,6 +86,8 @@ namespace Window_Project_v5._1
             this.password = password;
         }
 
+        
+
         public int Id { get => id; set => id = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
@@ -96,5 +100,7 @@ namespace Window_Project_v5._1
         public List<int> CancelledList { get => cancelledList; set => cancelledList = value; }
         public List<int> SavedList { get => savedList; set => savedList = value; }
         public List<int> CartList { get => cartList; set => cartList = value; }
+
+        
     }
 }

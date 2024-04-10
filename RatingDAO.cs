@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,13 @@ namespace Window_Project_v5._1
         {
             string sqlStr = string.Format("INSERT INTO Rating (Comment, Star, SellerID, ProductID, BuyerID) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')", rt.Comment, rt.Star, pd.SellerID, pd.Id, pd.BuyerID);
             dbconnection.Execute(sqlStr);
+        }
+
+        public DataTable load(Account acc)
+        {
+            string sqlStr = string.Format("Select * from Rating where SellerID = '{0}'", acc.Id);
+            DataTable table = dbconnection.Load(sqlStr);
+            return table;
         }
     }
 }

@@ -117,18 +117,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            List<Product> products = new List<Product>
-            {
-                product
-            };
-            FDelivery f = new FDelivery(account, products);
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-        }
-
         private void btnAddtoCart_Click(object sender, EventArgs e)
         {
             if (cartDAO.checkProductinCart(account.Id, product.Id))
@@ -260,6 +248,15 @@ namespace Window_Project_v5._1.Forms
             lblBrand.Text = "Brand: " + product.Brand;
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
+            lblAccountName.Text = account.Name;
+            if (product.PostedTime.Date == DateTime.Now.Date)
+            {
+                lblPostingTime.Text = (DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago";
+            }
+            else
+            {
+                lblPostingTime.Text = product.PostedTime.ToString("dd-MM-yyyy");
+            }
             GetImageProduct();
 
             //check button save
@@ -498,36 +495,14 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            // Prompt the user with a message box
-            DialogResult result = MessageBox.Show("Are you sure you want to buy this product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            // Check if the user clicked "Yes"
-            if (result == DialogResult.Yes)
-            {
-
-                if (account.Money < product.SalePrice)
+            this.Hide();
+            List<Product> products = new List<Product>
                 {
-                    MessageBox.Show("You dont have enough money to buy!");
-                }
-                else
-                {
-                    // Proceed with the purchase
-                    account.Money -= product.SalePrice;
-                    accountDAO.update(account);
-                    //get seller
-                    Account Seller = accountDAO.Retrieve(product.SellerID);
-                    Seller.Money += product.SalePrice;
-                    accountDAO.update(Seller);
-                    if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-                    {
-                        favoriteDAO.delete(account.Id, product.Id);
-                    }
-                    product.BuyerID = account.Id;
-                    product.OrderCondition = (int)ordercondition.WaitforConfirmation;
-                    productDAO.Update(product);
-                }
-                this.Close();
-            }
+                    product
+                };
+            FDelivery f = new FDelivery(account, products);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

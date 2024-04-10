@@ -38,7 +38,7 @@ namespace Window_Project_v5._1.Forms
             lblArea.Text = pd.Area.ToString();
             if(pd.PostedTime.Date == DateTime.Now.Date)
             {
-                lblPostingTime.Text = (DateTime.Now.Hour - pd.PostedTime.Hour) + "hours ago";
+                lblPostingTime.Text = (DateTime.Now.Hour - pd.PostedTime.Hour) + " hours ago";
             }
             else
             {

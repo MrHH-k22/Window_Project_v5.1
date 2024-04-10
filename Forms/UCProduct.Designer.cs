@@ -31,21 +31,21 @@
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBorder = new Guna.UI2.WinForms.Guna2Panel();
             this.panelContent = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblPostingTime = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblArea = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblBuyPrice = new System.Windows.Forms.Label();
             this.lblSellPrice = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.panelImage = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblPostingTime = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbProductImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody.SuspendLayout();
             this.panelBorder.SuspendLayout();
             this.panelContent.SuspendLayout();
-            this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,17 +93,53 @@
             this.panelContent.Size = new System.Drawing.Size(240, 424);
             this.panelContent.TabIndex = 1;
             // 
+            // lblPostingTime
+            // 
+            this.lblPostingTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblPostingTime.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblPostingTime.ForeColor = System.Drawing.Color.DimGray;
+            this.lblPostingTime.Location = new System.Drawing.Point(33, 363);
+            this.lblPostingTime.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPostingTime.Name = "lblPostingTime";
+            this.lblPostingTime.Size = new System.Drawing.Size(207, 26);
+            this.lblPostingTime.TabIndex = 52;
+            this.lblPostingTime.Text = "Posting time";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.guna2PictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.clock1;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(9, 366);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 51;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // lblArea
             // 
             this.lblArea.BackColor = System.Drawing.Color.Transparent;
             this.lblArea.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblArea.ForeColor = System.Drawing.Color.DimGray;
-            this.lblArea.Location = new System.Drawing.Point(32, 392);
+            this.lblArea.Location = new System.Drawing.Point(31, 392);
             this.lblArea.Margin = new System.Windows.Forms.Padding(0);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(210, 25);
             this.lblArea.TabIndex = 49;
             this.lblArea.Text = "location";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.pinv21;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(9, 394);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 48;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // lblBuyPrice
             // 
@@ -159,42 +195,6 @@
             this.panelImage.Size = new System.Drawing.Size(240, 240);
             this.panelImage.TabIndex = 50;
             // 
-            // lblPostingTime
-            // 
-            this.lblPostingTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblPostingTime.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblPostingTime.ForeColor = System.Drawing.Color.DimGray;
-            this.lblPostingTime.Location = new System.Drawing.Point(33, 363);
-            this.lblPostingTime.Margin = new System.Windows.Forms.Padding(0);
-            this.lblPostingTime.Name = "lblPostingTime";
-            this.lblPostingTime.Size = new System.Drawing.Size(207, 26);
-            this.lblPostingTime.TabIndex = 52;
-            this.lblPostingTime.Text = "Posting time";
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2PictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.clock1;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(8, 366);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 51;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.pinv21;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(5, 394);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 48;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // pbProductImage
             // 
             this.pbProductImage.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -223,9 +223,9 @@
             this.panelBody.ResumeLayout(false);
             this.panelBorder.ResumeLayout(false);
             this.panelContent.ResumeLayout(false);
-            this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
             this.ResumeLayout(false);
 

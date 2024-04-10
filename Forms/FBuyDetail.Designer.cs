@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -39,10 +39,13 @@
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMid = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.panelDescription = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panelFunctionality = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtFunctionalities = new System.Windows.Forms.RichTextBox();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.lblMaterial = new System.Windows.Forms.Label();
@@ -52,10 +55,11 @@
             this.lblType = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.panelStatus = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtStatus = new System.Windows.Forms.RichTextBox();
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblProductName = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblPostingTime = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblArea = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -97,10 +101,9 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.txtStatus = new System.Windows.Forms.RichTextBox();
-            this.txtFunctionalities = new System.Windows.Forms.RichTextBox();
-            this.txtDescription = new System.Windows.Forms.RichTextBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -128,22 +131,22 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -295,23 +298,43 @@
             this.panelMid.Size = new System.Drawing.Size(844, 710);
             this.panelMid.TabIndex = 8;
             // 
+            // guna2Separator1
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(763, 10);
+            this.guna2Separator1.TabIndex = 153;
+            // 
             // panelDescription
             // 
             this.panelDescription.Controls.Add(this.txtDescription);
             this.bunifuTransition1.SetDecoration(this.panelDescription, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDescription.Location = new System.Drawing.Point(0, 863);
+            this.panelDescription.Location = new System.Drawing.Point(0, 918);
             this.panelDescription.Name = "panelDescription";
-            this.panelDescription.Padding = new System.Windows.Forms.Padding(10);
+            this.panelDescription.Padding = new System.Windows.Forms.Padding(50, 10, 10, 10);
             this.panelDescription.Size = new System.Drawing.Size(823, 150);
             this.panelDescription.TabIndex = 5;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.txtDescription, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.txtDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.txtDescription.Location = new System.Drawing.Point(50, 10);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(763, 127);
+            this.txtDescription.TabIndex = 0;
+            this.txtDescription.Text = "";
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label9);
             this.bunifuTransition1.SetDecoration(this.panel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 812);
+            this.panel3.Location = new System.Drawing.Point(0, 867);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(823, 51);
             this.panel3.TabIndex = 4;
@@ -320,12 +343,12 @@
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.label9.Location = new System.Drawing.Point(36, 11);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(173, 30);
+            this.label9.Size = new System.Drawing.Size(293, 30);
             this.label9.TabIndex = 152;
             this.label9.Text = "Other description";
             // 
@@ -334,14 +357,28 @@
             this.panelFunctionality.Controls.Add(this.txtFunctionalities);
             this.bunifuTransition1.SetDecoration(this.panelFunctionality, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelFunctionality.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFunctionality.Location = new System.Drawing.Point(0, 662);
+            this.panelFunctionality.Location = new System.Drawing.Point(0, 717);
             this.panelFunctionality.Name = "panelFunctionality";
-            this.panelFunctionality.Padding = new System.Windows.Forms.Padding(10);
+            this.panelFunctionality.Padding = new System.Windows.Forms.Padding(50, 10, 10, 10);
             this.panelFunctionality.Size = new System.Drawing.Size(823, 150);
             this.panelFunctionality.TabIndex = 3;
             // 
+            // txtFunctionalities
+            // 
+            this.txtFunctionalities.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.txtFunctionalities, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.txtFunctionalities.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtFunctionalities.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.txtFunctionalities.Location = new System.Drawing.Point(50, 10);
+            this.txtFunctionalities.Name = "txtFunctionalities";
+            this.txtFunctionalities.Size = new System.Drawing.Size(763, 123);
+            this.txtFunctionalities.TabIndex = 0;
+            this.txtFunctionalities.Text = "";
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.guna2Separator5);
+            this.panel2.Controls.Add(this.guna2Separator3);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.lblMaterial);
             this.panel2.Controls.Add(this.lblSize);
@@ -353,19 +390,19 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 478);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(823, 184);
+            this.panel2.Size = new System.Drawing.Size(823, 239);
             this.panel2.TabIndex = 2;
             // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label8.Location = new System.Drawing.Point(36, 145);
+            this.label8.Location = new System.Drawing.Point(34, 190);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 30);
+            this.label8.Size = new System.Drawing.Size(252, 46);
             this.label8.TabIndex = 157;
             this.label8.Text = "Support policies";
             // 
@@ -375,7 +412,7 @@
             this.bunifuTransition1.SetDecoration(this.lblMaterial, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblMaterial.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblMaterial.ForeColor = System.Drawing.Color.DimGray;
-            this.lblMaterial.Location = new System.Drawing.Point(36, 109);
+            this.lblMaterial.Location = new System.Drawing.Point(36, 124);
             this.lblMaterial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaterial.Name = "lblMaterial";
             this.lblMaterial.Size = new System.Drawing.Size(323, 32);
@@ -388,7 +425,7 @@
             this.bunifuTransition1.SetDecoration(this.lblSize, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblSize.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblSize.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSize.Location = new System.Drawing.Point(516, 109);
+            this.lblSize.Location = new System.Drawing.Point(516, 124);
             this.lblSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(247, 32);
@@ -402,7 +439,7 @@
             this.bunifuTransition1.SetDecoration(this.lblOrigin, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblOrigin.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblOrigin.ForeColor = System.Drawing.Color.DimGray;
-            this.lblOrigin.Location = new System.Drawing.Point(516, 61);
+            this.lblOrigin.Location = new System.Drawing.Point(516, 76);
             this.lblOrigin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrigin.Name = "lblOrigin";
             this.lblOrigin.Size = new System.Drawing.Size(247, 32);
@@ -415,7 +452,7 @@
             this.bunifuTransition1.SetDecoration(this.lblBrand, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblBrand.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblBrand.ForeColor = System.Drawing.Color.DimGray;
-            this.lblBrand.Location = new System.Drawing.Point(36, 61);
+            this.lblBrand.Location = new System.Drawing.Point(36, 76);
             this.lblBrand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBrand.Name = "lblBrand";
             this.lblBrand.Size = new System.Drawing.Size(323, 25);
@@ -428,7 +465,7 @@
             this.bunifuTransition1.SetDecoration(this.lblType, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblType.ForeColor = System.Drawing.Color.DimGray;
-            this.lblType.Location = new System.Drawing.Point(36, 11);
+            this.lblType.Location = new System.Drawing.Point(36, 26);
             this.lblType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(323, 32);
@@ -441,7 +478,7 @@
             this.bunifuTransition1.SetDecoration(this.lblCategory, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblCategory.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblCategory.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCategory.Location = new System.Drawing.Point(516, 11);
+            this.lblCategory.Location = new System.Drawing.Point(516, 26);
             this.lblCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(247, 32);
@@ -456,15 +493,28 @@
             this.panelStatus.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelStatus.Location = new System.Drawing.Point(0, 328);
             this.panelStatus.Name = "panelStatus";
-            this.panelStatus.Padding = new System.Windows.Forms.Padding(10);
+            this.panelStatus.Padding = new System.Windows.Forms.Padding(50, 10, 10, 10);
             this.panelStatus.Size = new System.Drawing.Size(823, 150);
             this.panelStatus.TabIndex = 1;
             // 
+            // txtStatus
+            // 
+            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.txtStatus, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.txtStatus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.txtStatus.Location = new System.Drawing.Point(50, 10);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(763, 123);
+            this.txtStatus.TabIndex = 0;
+            this.txtStatus.Text = "";
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.guna2Separator2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.lblProductName);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.lblPostingTime);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblArea);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -504,26 +554,26 @@
             this.lblProductName.TabIndex = 143;
             this.lblProductName.Text = "MacBook Air 2020 13 inch Apple M1 8GB RAM 256GB SSD – Like New";
             // 
-            // label5
+            // lblPostingTime
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.label5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(86, 215);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(405, 30);
-            this.label5.TabIndex = 151;
-            this.label5.Text = "Posting time: ";
+            this.lblPostingTime.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.lblPostingTime, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblPostingTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostingTime.ForeColor = System.Drawing.Color.DimGray;
+            this.lblPostingTime.Location = new System.Drawing.Point(86, 215);
+            this.lblPostingTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPostingTime.Name = "lblPostingTime";
+            this.lblPostingTime.Size = new System.Drawing.Size(405, 30);
+            this.lblPostingTime.TabIndex = 151;
+            this.lblPostingTime.Text = "Posting time: ";
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(43, 288);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(43, 285);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 32);
@@ -1236,49 +1286,29 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // txtStatus
+            // guna2Separator2
             // 
-            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition1.SetDecoration(this.txtStatus, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.txtStatus.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.txtStatus.Location = new System.Drawing.Point(10, 10);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(803, 123);
-            this.txtStatus.TabIndex = 0;
-            this.txtStatus.Text = "";
+            this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator2.Location = new System.Drawing.Point(40, 259);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator2.TabIndex = 153;
             // 
-            // txtFunctionalities
+            // guna2Separator3
             // 
-            this.txtFunctionalities.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition1.SetDecoration(this.txtFunctionalities, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.txtFunctionalities.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtFunctionalities.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.txtFunctionalities.Location = new System.Drawing.Point(10, 10);
-            this.txtFunctionalities.Name = "txtFunctionalities";
-            this.txtFunctionalities.Size = new System.Drawing.Size(803, 123);
-            this.txtFunctionalities.TabIndex = 0;
-            this.txtFunctionalities.Text = "";
+            this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator3.Location = new System.Drawing.Point(40, 13);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator3.TabIndex = 154;
             // 
-            // txtDescription
+            // guna2Separator5
             // 
-            this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition1.SetDecoration(this.txtDescription, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.txtDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.txtDescription.Location = new System.Drawing.Point(10, 10);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(803, 127);
-            this.txtDescription.TabIndex = 0;
-            this.txtDescription.Text = "";
-            // 
-            // guna2Separator1
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(763, 10);
-            this.guna2Separator1.TabIndex = 153;
+            this.bunifuTransition1.SetDecoration(this.guna2Separator5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator5.Location = new System.Drawing.Point(40, 177);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator5.TabIndex = 158;
             // 
             // FBuyDetail
             // 
@@ -1370,7 +1400,7 @@
         private Guna.UI2.WinForms.Guna2Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Label lblProductName;
-        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label lblPostingTime;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1396,5 +1426,8 @@
         private System.Windows.Forms.RichTextBox txtFunctionalities;
         private System.Windows.Forms.RichTextBox txtDescription;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator5;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
     }
 }

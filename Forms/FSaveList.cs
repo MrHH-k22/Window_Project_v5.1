@@ -31,11 +31,13 @@ namespace Window_Project_v5._1.Forms
 
         private void FSaveList_Load(object sender, EventArgs e)
         {
+
             List<Product> products = favoriteDAO.loadListWithAccountID(account.Id);
             double total = 0;
             foreach (var pd in products)
             {
                 UCProductBuy uc = new UCProductBuy(pd, account);
+                uc.btnCancel.Text = "Delete";
                 flpSavedList.Controls.Add(uc);
             }
 
