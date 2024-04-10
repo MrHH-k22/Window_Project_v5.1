@@ -213,8 +213,14 @@ namespace Window_Project_v5._1.Forms
                         product.ContactPhone = txtPhone.Text;
                         product.DeliveryAddress = txtAddress.Text;
                         // Proceed with the purchase
-                        favoriteDAO.delete(acc.Id, product.Id);
-                        cartDAO.delete(acc.Id, product.Id);
+                        if (favoriteDAO.checkProductinFavorite(acc.Id, product.Id))
+                        {
+                            favoriteDAO.delete(acc.Id, product.Id);
+                        } 
+                        if (cartDAO.checkProductinCart(acc.Id, product.Id))
+                        {
+                            cartDAO.delete(acc.Id, product.Id);
+                        }
                         product.BuyerID = acc.Id;
                         product.OrderCondition = (int)ordercondition.WaitforConfirmation;
                         productDAO.Update(product);

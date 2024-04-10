@@ -174,26 +174,26 @@ namespace Window_Project_v5._1.Forms
 
         private void btnFunction_Click(object sender, EventArgs e)
         {
-            if (product.OrderCondition == (int)ordercondition.Displaying)
+            if (product.OrderCondition <= (int)ordercondition.Displaying)
             {
                 product.OrderCondition = (int)ordercondition.hidden;
-                productDAO.Update(product);
+                productDAO.UpdateOrderCondition(product);
             }
             else if (product.OrderCondition == (int)ordercondition.WaitforConfirmation)
             {
                 product.OrderCondition = (int)ordercondition.Completed;
-                productDAO.Update(product);
-
+                product.CompleteTime = DateTime.Now;
+                productDAO.UpdateOrderCondition(product);
             }
             else if (product.OrderCondition == (int)ordercondition.Cancelled)
             {
                 product.OrderCondition = (int)ordercondition.Displaying;
-                productDAO.Update(product);
+                productDAO.UpdateOrderCondition(product);
             }
             else if (product.OrderCondition == (int)ordercondition.hidden)
             {
                 product.OrderCondition = (int)ordercondition.Displaying;
-                productDAO.Update(product);
+                productDAO.UpdateOrderCondition(product);
             }
         }
     }

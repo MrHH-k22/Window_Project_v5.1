@@ -81,6 +81,24 @@ namespace Window_Project_v5._1
             dbc.Execute(sqlStr);
         }
 
+        // Seller update the product's order condition
+        public void UpdateOrderCondition(Product product)
+        {
+            string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}'  WHERE ID = '{2}'",
+                                             product.BuyerID, product.OrderCondition, product.Id);
+            dbc.Execute(sqlStr);
+            if (product.OrderCondition == (int)ordercondition.Completed)
+            {
+                sqlStr = "UPDATE Product SET CompleteTime = @CompleteTime WHERE ID = @ID";
+                SqlParameter[] parameters =
+                {
+                    new SqlParameter("@CompleteTime", DateTime.Now),
+                    new SqlParameter("@ID", product.Id)
+                };
+                dbc.Execute(sqlStr, parameters);
+            }
+        }
+
         public void Delete(Product product)
         {
             string sqlStr = string.Format("DELETE FROM Product WHERE id = '{0}'", product.Id);

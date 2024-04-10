@@ -29,25 +29,23 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail()
         {
             InitializeComponent();
-            containerMenu.Visible = false;
         }
 
         public FSellDetail(Product pd, Account acc)
         {
             InitializeComponent();
-            gbBillStatus.Visible = false;
             this.pd = pd;
             this.acc = acc;
             edit = true;
             Initialize();
+            HideCompleteDetail();
         }
 
         public FSellDetail(Product pd, Account acc, bool check)
         {
             InitializeComponent();
-            gbBillStatus.Visible = true;
             this.pd = pd;
-            this.acc = acc;
+            this.acc = acc; 
             Initialize();
             GetImageProduct();
         }
@@ -55,13 +53,32 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail(Account acc)
         {
             InitializeComponent();
-            containerMenu.Visible = false;
+            HideCompleteDetail();
             this.acc = acc;
+        }
+
+        public void HideCompleteDetail()
+        {
+            gbBillStatus.Visible = false;
+            containerMenu.Visible = false;
+            lblCompleteTime.Visible = false;
+            lblTime.Visible = false;
+            lblBuyerName.Visible = false;
+            lblPhone.Visible = false;
+            txtAddress.Visible = false;
         }
 
         public void Initialize()
         {
-            containerMenu.Visible = false;
+            containerMenu.Visible = false; 
+            if (pd.CompleteTime.Year < 2024)
+            {
+                lblCompleteTime.Visible = false;
+                lblTime.Visible = false;
+            } else
+            {
+                lblCompleteTime.Text = pd.CompleteTime.ToString("dd-MM-yyyy");
+            }
             selectedCategory = pd.Category;
             txtProductTitle.Text = pd.Name;
             txtType.Text = pd.Type;
@@ -80,7 +97,10 @@ namespace Window_Project_v5._1.Forms
             btnPost.Text = "Update product";
             ddCategory.SelectedItem = pd.Category;
             ddArea.SelectedItem = pd.Area;
-            lblBuyerName.Text = accountDAO.Retrieve(pd.BuyerID).Name;
+            if (pd.BuyerID != 0)
+            {
+                lblBuyerName.Text = accountDAO.Retrieve(pd.BuyerID).Name;
+            }
             lblPhone.Text = pd.ContactPhone;
             txtAddress.Text = pd.DeliveryAddress;
         }
