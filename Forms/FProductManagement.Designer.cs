@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductManagement));
             this.gpManagement = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.lblBalance = new System.Windows.Forms.Label();
             this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblBalance = new System.Windows.Forms.Label();
             this.pBSellerAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSellerName = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
@@ -40,7 +40,6 @@
             this.tpDisplay = new System.Windows.Forms.TabPage();
             this.tpWaitConfirm = new System.Windows.Forms.TabPage();
             this.tpCompleted = new System.Windows.Forms.TabPage();
-            this.tpCancelled = new System.Windows.Forms.TabPage();
             this.tpHidden = new System.Windows.Forms.TabPage();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
@@ -100,6 +99,19 @@
             this.gpManagement.TabIndex = 1;
             this.gpManagement.TabStop = false;
             // 
+            // lblBalance
+            // 
+            this.lblBalance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblBalance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblBalance.Location = new System.Drawing.Point(1151, 23);
+            this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(295, 31);
+            this.lblBalance.TabIndex = 12;
+            this.lblBalance.Text = "100,000 VND";
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // btnLoad
             // 
             this.btnLoad.AutoRoundedCorners = true;
@@ -130,19 +142,6 @@
             this.label2.Size = new System.Drawing.Size(103, 31);
             this.label2.TabIndex = 13;
             this.label2.Text = "Balance:";
-            // 
-            // lblBalance
-            // 
-            this.lblBalance.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblBalance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblBalance.Location = new System.Drawing.Point(1151, 23);
-            this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(295, 31);
-            this.lblBalance.TabIndex = 12;
-            this.lblBalance.Text = "100,000 VND";
-            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pBSellerAvatar
             // 
@@ -187,7 +186,6 @@
             this.tcManagement.Controls.Add(this.tpDisplay);
             this.tcManagement.Controls.Add(this.tpWaitConfirm);
             this.tcManagement.Controls.Add(this.tpCompleted);
-            this.tcManagement.Controls.Add(this.tpCancelled);
             this.tcManagement.Controls.Add(this.tpHidden);
             this.tcManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcManagement.ItemSize = new System.Drawing.Size(160, 40);
@@ -230,7 +228,7 @@
             this.tpWaitConfirm.Location = new System.Drawing.Point(4, 44);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
             this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1492, 533);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1492, 562);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
@@ -239,25 +237,16 @@
             // 
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Size = new System.Drawing.Size(1492, 533);
+            this.tpCompleted.Size = new System.Drawing.Size(1492, 562);
             this.tpCompleted.TabIndex = 3;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
-            // 
-            // tpCancelled
-            // 
-            this.tpCancelled.Location = new System.Drawing.Point(4, 44);
-            this.tpCancelled.Name = "tpCancelled";
-            this.tpCancelled.Size = new System.Drawing.Size(1492, 533);
-            this.tpCancelled.TabIndex = 4;
-            this.tpCancelled.Text = "Cancelled";
-            this.tpCancelled.UseVisualStyleBackColor = true;
             // 
             // tpHidden
             // 
             this.tpHidden.Location = new System.Drawing.Point(4, 44);
             this.tpHidden.Name = "tpHidden";
-            this.tpHidden.Size = new System.Drawing.Size(1492, 533);
+            this.tpHidden.Size = new System.Drawing.Size(1492, 562);
             this.tpHidden.TabIndex = 5;
             this.tpHidden.Text = "Hidden";
             this.tpHidden.UseVisualStyleBackColor = true;
@@ -725,7 +714,6 @@
         private System.Windows.Forms.TabPage tpDisplay;
         private System.Windows.Forms.TabPage tpWaitConfirm;
         private System.Windows.Forms.TabPage tpCompleted;
-        private System.Windows.Forms.TabPage tpCancelled;
         private System.Windows.Forms.TabPage tpHidden;
         private Guna.UI2.WinForms.Guna2Button btnLoad;
         private Guna.UI2.WinForms.Guna2ContainerControl containerTop;

@@ -138,10 +138,8 @@ namespace Window_Project_v5._1.Forms
                 Account Seller = accountDAO.Retrieve(product.SellerID);
                 Seller.Money -= product.SalePrice;
                 accountDAO.update(Seller);
-                //add to account cancelled list
-                account.CancelledList.Add(product.Id);
                 //update status for product
-                product.OrderCondition = (int)ordercondition.Cancelled;
+                product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
                 productDAO.DeleteBuyerID(product);
             }

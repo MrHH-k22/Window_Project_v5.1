@@ -40,7 +40,6 @@
             this.tcBuyProducts = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpWaitForConfirm = new System.Windows.Forms.TabPage();
             this.tpCompleted = new System.Windows.Forms.TabPage();
-            this.tpCancelled = new System.Windows.Forms.TabPage();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
@@ -193,7 +192,6 @@
             // 
             this.tcBuyProducts.Controls.Add(this.tpWaitForConfirm);
             this.tcBuyProducts.Controls.Add(this.tpCompleted);
-            this.tcBuyProducts.Controls.Add(this.tpCancelled);
             this.tcBuyProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.tcBuyProducts.ItemSize = new System.Drawing.Size(250, 50);
             this.tcBuyProducts.Location = new System.Drawing.Point(0, 146);
@@ -239,16 +237,6 @@
             this.tpCompleted.TabIndex = 1;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
-            // 
-            // tpCancelled
-            // 
-            this.tpCancelled.Location = new System.Drawing.Point(4, 54);
-            this.tpCancelled.Name = "tpCancelled";
-            this.tpCancelled.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCancelled.Size = new System.Drawing.Size(1492, 567);
-            this.tpCancelled.TabIndex = 2;
-            this.tpCancelled.Text = "Cancelled";
-            this.tpCancelled.UseVisualStyleBackColor = true;
             // 
             // containerTop
             // 
@@ -699,7 +687,6 @@
         private Guna.UI2.WinForms.Guna2TabControl tcBuyProducts;
         private System.Windows.Forms.TabPage tpWaitForConfirm;
         private System.Windows.Forms.TabPage tpCompleted;
-        private System.Windows.Forms.TabPage tpCancelled;
         private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
         private Guna.UI2.WinForms.Guna2Button btnCart;
         private Guna.UI2.WinForms.Guna2Button btnMenu;
