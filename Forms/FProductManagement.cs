@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,7 +62,28 @@ namespace Window_Project_v5._1.Forms
                         tpHidden.Controls.Add(uc);
                     }
                 }
+                convertByte(pBSellerAvatar, account.Avatar);
+            }
+        }
 
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
             }
         }
 
@@ -77,7 +99,7 @@ namespace Window_Project_v5._1.Forms
         private void btnCart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FCart f = new FCart();
+            FCart f = new FCart(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -85,7 +107,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPostProduct_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSellDetail f = new FSellDetail();
+            FSellDetail f = new FSellDetail(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -105,7 +127,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPurchasesOrder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FTrackOrder f = new FTrackOrder();
+            FTrackOrder f = new FTrackOrder(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -113,7 +135,7 @@ namespace Window_Project_v5._1.Forms
         private void btnSalesOrder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FProductManagement f = new FProductManagement();
+            FProductManagement f = new FProductManagement(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -121,7 +143,7 @@ namespace Window_Project_v5._1.Forms
         private void btnSavedProducts_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FSaveList f = new FSaveList();
+            FSaveList f = new FSaveList(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -129,7 +151,7 @@ namespace Window_Project_v5._1.Forms
         private void btnOrderAnalysis_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FOrderAnalysis f = new FOrderAnalysis();
+            FOrderAnalysis f = new FOrderAnalysis(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -137,7 +159,7 @@ namespace Window_Project_v5._1.Forms
         private void btnInformation_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FInformation f = new FInformation();
+            FInformation f = new FInformation(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -145,7 +167,7 @@ namespace Window_Project_v5._1.Forms
         private void btnMoney_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FMoney f = new FMoney();
+            FMoney f = new FMoney(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

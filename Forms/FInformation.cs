@@ -66,10 +66,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-
-
-
-
         private System.Drawing.Image ResizeImage(System.Drawing.Image image, int width, int height)
         {
             // Tạo một Bitmap mới với kích thước đã cho
@@ -129,7 +125,10 @@ namespace Window_Project_v5._1.Forms
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            FBuy f = new FBuy(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }
