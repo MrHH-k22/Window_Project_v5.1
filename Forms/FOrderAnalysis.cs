@@ -40,7 +40,6 @@ namespace Window_Project_v5._1.Forms
             int Displaying = 0;
             int waitForConfirmation = 0;
             int completed = 0;
-            int cancelled = 0;
             int hidden = 0;
 
             foreach (Product pd in allProducts)
@@ -57,10 +56,6 @@ namespace Window_Project_v5._1.Forms
                 {
                     completed++;
                 }
-                else if (pd.OrderCondition == (int)ordercondition.Cancelled)
-                {
-                    cancelled++;
-                }
                 else if (pd.OrderCondition == (int)ordercondition.hidden)
                 {
                     hidden++;
@@ -76,7 +71,6 @@ namespace Window_Project_v5._1.Forms
             lblDisplayingNo.Text = Displaying.ToString();
             lblWaitForConfirmationNo.Text = waitForConfirmation.ToString();
             lblCompletedNo.Text = completed.ToString();
-            lblCancelledNo.Text = cancelled.ToString();
             lblHiddenNo.Text = hidden.ToString();
 
             /*

@@ -44,18 +44,6 @@ namespace Window_Project_v5._1.Forms
                     tpCompleted.Controls.Add(uc);
                 }
             }
-            //cancelled list
-            List<int> cancelledList = account.CancelledList;
-            if(cancelledList != null)
-            {
-                foreach (var productID in cancelledList)
-                {
-
-                    Product cancelledproduct = productDAO.Retrieve(productID);
-                    UCProductBuy uc = new UCProductBuy(cancelledproduct, account);
-                    tpCancelled.Controls.Add(uc);
-                }
-            }
             //saved list
         }
 

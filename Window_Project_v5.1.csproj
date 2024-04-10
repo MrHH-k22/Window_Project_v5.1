@@ -684,5 +684,20 @@
   <ItemGroup>
     <None Include="Images\minimize-sign.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracking1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pinv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\phone-call_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\clock.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

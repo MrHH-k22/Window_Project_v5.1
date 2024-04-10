@@ -820,8 +820,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1040, 634);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);

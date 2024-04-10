@@ -153,8 +153,8 @@
             this.pbAvatar.BorderRadius = 32;
             this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
             this.pbAvatar.IsCircle = true;
-            this.pbAvatar.Location = new System.Drawing.Point(134, 12);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbAvatar.Location = new System.Drawing.Point(46, 15);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAvatar.Name = "pbAvatar";
             this.pbAvatar.Size = new System.Drawing.Size(64, 64);
             this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -165,7 +165,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblName.Location = new System.Drawing.Point(118, 33);
@@ -627,7 +627,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnIdleState = stateProperties4;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(4);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Confirm your password";
@@ -882,7 +882,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMoney.OnIdleState = stateProperties8;
-            this.txtMoney.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtMoney.Padding = new System.Windows.Forms.Padding(4);
             this.txtMoney.PasswordChar = '\0';
             this.txtMoney.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMoney.PlaceholderText = "The amount of money";

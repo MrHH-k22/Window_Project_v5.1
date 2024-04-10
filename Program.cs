@@ -13,7 +13,6 @@ namespace Window_Project_v5._1
         Displaying,
         WaitforConfirmation,
         Completed,
-        Cancelled,
         hidden
     }
     internal static class Program

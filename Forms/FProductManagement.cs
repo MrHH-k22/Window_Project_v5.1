@@ -55,10 +55,6 @@ namespace Window_Project_v5._1.Forms
                     {
                         tpCompleted.Controls.Add(uc);
                     }
-                    else if(pd.OrderCondition == (int)ordercondition.Cancelled)
-                    {
-                        tpCancelled.Controls.Add(uc);
-                    }
                     else if(pd.OrderCondition == (int)ordercondition.hidden)
                     {
                         tpHidden.Controls.Add(uc);
