@@ -92,8 +92,8 @@ namespace Window_Project_v5._1.Forms
         private void btnImage2_Click(object sender, EventArgs e)
         {
             Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage2.Image;
-            btnImage2.Image = btnImage2.Image;
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage2.Image;
             btnImage2.Image = temp.Image;
         }
 
@@ -344,12 +344,137 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void pbLogo_Click(object sender, EventArgs e)
+        private void pbLogo_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             FBuy f = new FBuy(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void panelMiddle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOrigin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProductName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSellPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCategory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Separator2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBuyPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCondition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFunctionalities_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblArea_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMaterial_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBrand_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Separator1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

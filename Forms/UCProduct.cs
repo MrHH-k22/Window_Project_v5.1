@@ -36,6 +36,15 @@ namespace Window_Project_v5._1.Forms
             lblSellPrice.Text = pd.SalePrice.ToString("N0") + " VND";
             lblProductName.Text = pd.Name.ToString();
             lblArea.Text = pd.Area.ToString();
+            if(pd.PostedTime.Date == DateTime.Now.Date)
+            {
+                lblPostingTime.Text = (DateTime.Now.Hour - pd.PostedTime.Hour) + "hours ago";
+            }
+            else
+            {
+                lblPostingTime.Text = pd.PostedTime.ToString("dd-MM-yyyy");
+            }
+
 
             byte[] imageData = imageDAO.GetImageProductData(pd.Id);
 
@@ -94,7 +103,12 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_DoubleClick(object sender, EventArgs e)
         {
-            
+            /*
+            this.Hide();
+            FBuyDetail f = new FBuyDetail(product, account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+            */
             FBuyDetail fBuyDetail = new FBuyDetail(product,account);
             fBuyDetail.Show();
         }
