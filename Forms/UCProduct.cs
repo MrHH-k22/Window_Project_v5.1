@@ -111,6 +111,7 @@ namespace Window_Project_v5._1.Forms
             */
             FBuyDetail fBuyDetail = new FBuyDetail(product,account);
             fBuyDetail.Show();
+            
         }
 
         private void SetEventForAllControls(Control parent)

@@ -90,7 +90,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1533, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 3;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -201,7 +201,7 @@
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1533, 748);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 4;
             // 
             // flpProduct
@@ -211,7 +211,7 @@
             this.flpProduct.Location = new System.Drawing.Point(185, 0);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1348, 748);
+            this.flpProduct.Size = new System.Drawing.Size(1315, 710);
             this.flpProduct.TabIndex = 4;
             // 
             // panelLeft
@@ -236,7 +236,7 @@
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(185, 748);
+            this.panelLeft.Size = new System.Drawing.Size(185, 710);
             this.panelLeft.TabIndex = 3;
             // 
             // btnLoad
@@ -297,7 +297,7 @@
             this.bunifuSeparator4.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator4.LineThickness = 1;
             this.bunifuSeparator4.Location = new System.Drawing.Point(29, 320);
-            this.bunifuSeparator4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator4.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator4.Name = "bunifuSeparator4";
             this.bunifuSeparator4.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator4.Size = new System.Drawing.Size(125, 17);
@@ -313,7 +313,7 @@
             this.bunifuSeparator3.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator3.LineThickness = 1;
             this.bunifuSeparator3.Location = new System.Drawing.Point(91, 281);
-            this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator3.Size = new System.Drawing.Size(5, 17);
@@ -365,7 +365,7 @@
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(27, 219);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator2.Size = new System.Drawing.Size(125, 17);
@@ -405,7 +405,7 @@
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(29, 145);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(125, 17);
@@ -826,12 +826,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1533, 818);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1533, 818);
             this.Name = "FBuy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
