@@ -71,7 +71,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(11, 4);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1476, 106);
+            this.guna2Panel1.Size = new System.Drawing.Size(1219, 106);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnRate
@@ -122,7 +122,7 @@
             this.lblSellerName.Location = new System.Drawing.Point(109, 55);
             this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSellerName.Name = "lblSellerName";
-            this.lblSellerName.Size = new System.Drawing.Size(535, 30);
+            this.lblSellerName.Size = new System.Drawing.Size(465, 30);
             this.lblSellerName.TabIndex = 119;
             this.lblSellerName.Text = "Seller Name";
             // 

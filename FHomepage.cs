@@ -177,7 +177,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnMoney_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FInformation(acc), sender);
+            OpenChildForm(new Forms.FMoney(acc), sender);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

@@ -495,5 +495,39 @@ namespace Window_Project_v5._1.Forms
         {
 
         }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            // Prompt the user with a message box
+            DialogResult result = MessageBox.Show("Are you sure you want to buy this product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Check if the user clicked "Yes"
+            if (result == DialogResult.Yes)
+            {
+
+                if (account.Money < product.SalePrice)
+                {
+                    MessageBox.Show("You dont have enough money to buy!");
+                }
+                else
+                {
+                    // Proceed with the purchase
+                    account.Money -= product.SalePrice;
+                    accountDAO.update(account);
+                    //get seller
+                    Account Seller = accountDAO.Retrieve(product.SellerID);
+                    Seller.Money += product.SalePrice;
+                    accountDAO.update(Seller);
+                    if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+                    {
+                        favoriteDAO.delete(account.Id, product.Id);
+                    }
+                    product.BuyerID = account.Id;
+                    product.OrderCondition = (int)ordercondition.WaitforConfirmation;
+                    productDAO.Update(product);
+                }
+                this.Close();
+            }
+        }
     }
 }

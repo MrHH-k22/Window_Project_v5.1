@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.lblRate = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pbProduct = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNameProduct = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -42,48 +40,25 @@
             this.rtStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.btnSend = new Guna.UI2.WinForms.Guna2Button();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
+            this.pbProduct = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.chbReliable = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chbGoodProduct = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chbPoliteFriendly = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chbSatisfied = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chbOntimeDelivery = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chbTrueDescription = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.panelCheckBox = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
+            this.panelCheckBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // btnClose
-            // 
-            this.btnClose.AllowAnimations = true;
-            this.btnClose.AllowBorderColorChanges = true;
-            this.btnClose.AllowMouseEffects = true;
-            this.btnClose.AnimationSpeed = 200;
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderRadius = 1;
-            this.btnClose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnClose.BorderThickness = 1;
-            this.btnClose.ColorContrastOnClick = 30;
-            this.btnClose.ColorContrastOnHover = 30;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges2;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.close;
-            this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Location = new System.Drawing.Point(589, 11);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.RoundBorders = false;
-            this.btnClose.ShowBorders = true;
-            this.btnClose.Size = new System.Drawing.Size(35, 34);
-            this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnClose.TabIndex = 14;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblRate
             // 
@@ -97,24 +72,13 @@
             this.lblRate.TabIndex = 15;
             this.lblRate.Text = "Rating for the product";
             // 
-            // pbProduct
-            // 
-            this.pbProduct.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbProduct.ImageRotate = 0F;
-            this.pbProduct.Location = new System.Drawing.Point(0, 0);
-            this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(98, 100);
-            this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbProduct.TabIndex = 16;
-            this.pbProduct.TabStop = false;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.lblNameProduct);
             this.guna2Panel1.Controls.Add(this.pbProduct);
             this.guna2Panel1.Location = new System.Drawing.Point(12, 71);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(612, 100);
+            this.guna2Panel1.Size = new System.Drawing.Size(612, 87);
             this.guna2Panel1.TabIndex = 17;
             // 
             // lblNameProduct
@@ -136,7 +100,7 @@
             this.guna2Panel2.Controls.Add(this.lblStatus);
             this.guna2Panel2.Controls.Add(this.lblQuality);
             this.guna2Panel2.Controls.Add(this.rtStar);
-            this.guna2Panel2.Location = new System.Drawing.Point(12, 200);
+            this.guna2Panel2.Location = new System.Drawing.Point(12, 176);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(612, 70);
             this.guna2Panel2.TabIndex = 18;
@@ -212,16 +176,176 @@
             this.txtComment.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtComment.ForeColor = System.Drawing.Color.Black;
             this.txtComment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtComment.Location = new System.Drawing.Point(12, 288);
+            this.txtComment.Location = new System.Drawing.Point(12, 329);
             this.txtComment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.PasswordChar = '\0';
             this.txtComment.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtComment.PlaceholderText = "Status";
+            this.txtComment.PlaceholderText = "Other Comment";
             this.txtComment.SelectedText = "";
-            this.txtComment.Size = new System.Drawing.Size(612, 175);
+            this.txtComment.Size = new System.Drawing.Size(612, 141);
             this.txtComment.TabIndex = 79;
+            // 
+            // pbProduct
+            // 
+            this.pbProduct.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbProduct.ImageRotate = 0F;
+            this.pbProduct.Location = new System.Drawing.Point(0, 0);
+            this.pbProduct.Name = "pbProduct";
+            this.pbProduct.Size = new System.Drawing.Size(98, 87);
+            this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProduct.TabIndex = 16;
+            this.pbProduct.TabStop = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.AllowAnimations = true;
+            this.btnClose.AllowBorderColorChanges = true;
+            this.btnClose.AllowMouseEffects = true;
+            this.btnClose.AnimationSpeed = 200;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderRadius = 1;
+            this.btnClose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnClose.BorderThickness = 1;
+            this.btnClose.ColorContrastOnClick = 30;
+            this.btnClose.ColorContrastOnHover = 30;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnClose.CustomizableEdges = borderEdges1;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.close;
+            this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnClose.Location = new System.Drawing.Point(589, 11);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.RoundBorders = false;
+            this.btnClose.ShowBorders = true;
+            this.btnClose.Size = new System.Drawing.Size(35, 34);
+            this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnClose.TabIndex = 14;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // chbReliable
+            // 
+            this.chbReliable.AutoSize = true;
+            this.chbReliable.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbReliable.CheckedState.BorderRadius = 0;
+            this.chbReliable.CheckedState.BorderThickness = 0;
+            this.chbReliable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbReliable.Location = new System.Drawing.Point(243, 12);
+            this.chbReliable.Name = "chbReliable";
+            this.chbReliable.Size = new System.Drawing.Size(80, 20);
+            this.chbReliable.TabIndex = 80;
+            this.chbReliable.Text = "Reliable";
+            this.chbReliable.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbReliable.UncheckedState.BorderRadius = 0;
+            this.chbReliable.UncheckedState.BorderThickness = 0;
+            this.chbReliable.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chbGoodProduct
+            // 
+            this.chbGoodProduct.AutoSize = true;
+            this.chbGoodProduct.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbGoodProduct.CheckedState.BorderRadius = 0;
+            this.chbGoodProduct.CheckedState.BorderThickness = 0;
+            this.chbGoodProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbGoodProduct.Location = new System.Drawing.Point(414, 12);
+            this.chbGoodProduct.Name = "chbGoodProduct";
+            this.chbGoodProduct.Size = new System.Drawing.Size(112, 20);
+            this.chbGoodProduct.TabIndex = 80;
+            this.chbGoodProduct.Text = "Good Product";
+            this.chbGoodProduct.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbGoodProduct.UncheckedState.BorderRadius = 0;
+            this.chbGoodProduct.UncheckedState.BorderThickness = 0;
+            this.chbGoodProduct.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chbPoliteFriendly
+            // 
+            this.chbPoliteFriendly.AutoSize = true;
+            this.chbPoliteFriendly.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbPoliteFriendly.CheckedState.BorderRadius = 0;
+            this.chbPoliteFriendly.CheckedState.BorderThickness = 0;
+            this.chbPoliteFriendly.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbPoliteFriendly.Location = new System.Drawing.Point(69, 38);
+            this.chbPoliteFriendly.Name = "chbPoliteFriendly";
+            this.chbPoliteFriendly.Size = new System.Drawing.Size(135, 20);
+            this.chbPoliteFriendly.TabIndex = 80;
+            this.chbPoliteFriendly.Text = "Polite and friendly";
+            this.chbPoliteFriendly.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbPoliteFriendly.UncheckedState.BorderRadius = 0;
+            this.chbPoliteFriendly.UncheckedState.BorderThickness = 0;
+            this.chbPoliteFriendly.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chbSatisfied
+            // 
+            this.chbSatisfied.AutoSize = true;
+            this.chbSatisfied.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbSatisfied.CheckedState.BorderRadius = 0;
+            this.chbSatisfied.CheckedState.BorderThickness = 0;
+            this.chbSatisfied.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbSatisfied.Location = new System.Drawing.Point(414, 38);
+            this.chbSatisfied.Name = "chbSatisfied";
+            this.chbSatisfied.Size = new System.Drawing.Size(81, 20);
+            this.chbSatisfied.TabIndex = 80;
+            this.chbSatisfied.Text = "Satisfied";
+            this.chbSatisfied.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbSatisfied.UncheckedState.BorderRadius = 0;
+            this.chbSatisfied.UncheckedState.BorderThickness = 0;
+            this.chbSatisfied.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chbOntimeDelivery
+            // 
+            this.chbOntimeDelivery.AutoSize = true;
+            this.chbOntimeDelivery.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbOntimeDelivery.CheckedState.BorderRadius = 0;
+            this.chbOntimeDelivery.CheckedState.BorderThickness = 0;
+            this.chbOntimeDelivery.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbOntimeDelivery.Location = new System.Drawing.Point(243, 38);
+            this.chbOntimeDelivery.Name = "chbOntimeDelivery";
+            this.chbOntimeDelivery.Size = new System.Drawing.Size(125, 20);
+            this.chbOntimeDelivery.TabIndex = 80;
+            this.chbOntimeDelivery.Text = "Delivery on time";
+            this.chbOntimeDelivery.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbOntimeDelivery.UncheckedState.BorderRadius = 0;
+            this.chbOntimeDelivery.UncheckedState.BorderThickness = 0;
+            this.chbOntimeDelivery.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chbTrueDescription
+            // 
+            this.chbTrueDescription.AutoSize = true;
+            this.chbTrueDescription.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbTrueDescription.CheckedState.BorderRadius = 0;
+            this.chbTrueDescription.CheckedState.BorderThickness = 0;
+            this.chbTrueDescription.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chbTrueDescription.Location = new System.Drawing.Point(69, 12);
+            this.chbTrueDescription.Name = "chbTrueDescription";
+            this.chbTrueDescription.Size = new System.Drawing.Size(140, 20);
+            this.chbTrueDescription.TabIndex = 80;
+            this.chbTrueDescription.Text = "True to description";
+            this.chbTrueDescription.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbTrueDescription.UncheckedState.BorderRadius = 0;
+            this.chbTrueDescription.UncheckedState.BorderThickness = 0;
+            this.chbTrueDescription.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            
+            // 
+            // panelCheckBox
+            // 
+            this.panelCheckBox.Controls.Add(this.chbReliable);
+            this.panelCheckBox.Controls.Add(this.chbSatisfied);
+            this.panelCheckBox.Controls.Add(this.chbTrueDescription);
+            this.panelCheckBox.Controls.Add(this.chbGoodProduct);
+            this.panelCheckBox.Controls.Add(this.chbOntimeDelivery);
+            this.panelCheckBox.Controls.Add(this.chbPoliteFriendly);
+            this.panelCheckBox.Location = new System.Drawing.Point(12, 253);
+            this.panelCheckBox.Name = "panelCheckBox";
+            this.panelCheckBox.Size = new System.Drawing.Size(612, 69);
+            this.panelCheckBox.TabIndex = 81;
             // 
             // FRating
             // 
@@ -229,6 +353,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(636, 540);
+            this.Controls.Add(this.panelCheckBox);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.guna2Panel2);
@@ -239,9 +364,11 @@
             this.Name = "FRating";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRating";
-            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
+            this.panelCheckBox.ResumeLayout(false);
+            this.panelCheckBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -260,5 +387,12 @@
         private System.Windows.Forms.Label lblStatus;
         private Guna.UI2.WinForms.Guna2Button btnSend;
         private Guna.UI2.WinForms.Guna2TextBox txtComment;
+        private Guna.UI2.WinForms.Guna2CheckBox chbSatisfied;
+        private Guna.UI2.WinForms.Guna2CheckBox chbGoodProduct;
+        private Guna.UI2.WinForms.Guna2CheckBox chbPoliteFriendly;
+        private Guna.UI2.WinForms.Guna2CheckBox chbOntimeDelivery;
+        private Guna.UI2.WinForms.Guna2CheckBox chbReliable;
+        private Guna.UI2.WinForms.Guna2CheckBox chbTrueDescription;
+        private Guna.UI2.WinForms.Guna2Panel panelCheckBox;
     }
 }
