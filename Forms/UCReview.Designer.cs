@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // UCReview
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "UCReview";
+            this.Size = new System.Drawing.Size(574, 415);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -428,6 +428,9 @@
     <EmbeddedResource Include="Forms\UCProduct.resx">
       <DependentUpon>UCProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCReview.resx">
+      <DependentUpon>UCReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
     </EmbeddedResource>

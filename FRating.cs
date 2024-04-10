@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 using Window_Project_v5._1.Forms;
 
 namespace Window_Project_v5._1
@@ -22,10 +23,12 @@ namespace Window_Project_v5._1
         public FRating()
         {
             InitializeComponent();
+            rt.Comment = "";
         }
         public FRating(Product pd)
         {
             InitializeComponent();
+            rt.Comment = "";
             this.product = pd;
             lblNameProduct.Text = product.Name;
 
@@ -84,7 +87,8 @@ namespace Window_Project_v5._1
         }
         private void btnSend_Click(object sender, EventArgs e)
         {
-            rt.Comment = txtComment.Text;
+            GetValueOfCheckBox();
+            rt.Comment += txtComment.Text;
             rt.Star = GetStarValue();
             ratingDAO.Add(rt, product);
         }
@@ -92,6 +96,23 @@ namespace Window_Project_v5._1
         private void rtStar_ValueChanged(object sender, EventArgs e)
         {
             SetLabelStatus();
+        }
+
+        
+        private void GetValueOfCheckBox()
+        {
+           foreach(Control control in panelCheckBox.Controls)
+            {
+                if(control is Guna2CheckBox checkBox)
+                {
+                    if(checkBox.Checked == true)
+                    {
+                        string tmp = checkBox.Text;
+                        rt.Comment += tmp;
+                        rt.Comment += "; ";
+                    }
+                }
+            }
         }
     }
 }
