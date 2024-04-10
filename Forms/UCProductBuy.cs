@@ -91,41 +91,10 @@ namespace Window_Project_v5._1.Forms
                 btnRate.Visible = true;
             }
         }
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            // Buyed
-            if (product.BuyerID != 0)
-            {
-                account.Money += product.SalePrice;
-                accountDAO.update(account);
-                //get seller
-                Account Seller = accountDAO.Retrieve(product.SellerID);
-                Seller.Money -= product.SalePrice;
-                accountDAO.update(Seller);
-                //add to account cancelled list
-                account.CancelledList.Add(product.Id);
-                //update status for product
-                product.OrderCondition = (int)ordercondition.Cancelled;
-                productDAO.Update(product);
-                productDAO.DeleteBuyerID(product);
-            } 
-            // Not buyed yet
-            else
-            {
-                if (checkCart)
-                {
-                    cartDAO.delete(account.Id, product.Id);
-                } else
-                {
-                    favoriteDAO.delete(account.Id, product.Id);
-                }
-            }
-        }
-
 
         private void UCProductBuy_MouseEnter(object sender, EventArgs e)
         {
-            panelBody.BorderColor = Color.Black;
+            panelBody.BorderColor = Color.FromArgb(110, 110, 110);
         }
 
         private void UCProductBuy_MouseLeave(object sender, EventArgs e)
@@ -152,10 +121,42 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
-        private void btnDetail_Click_1(object sender, EventArgs e)
+        private void btnDetail_Click(object sender, EventArgs e)
         {
             FBuyDetail trackDetail = new FBuyDetail(product, account);
             trackDetail.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            // Buyed
+            if (product.BuyerID != 0)
+            {
+                account.Money += product.SalePrice;
+                accountDAO.update(account);
+                //get seller
+                Account Seller = accountDAO.Retrieve(product.SellerID);
+                Seller.Money -= product.SalePrice;
+                accountDAO.update(Seller);
+                //add to account cancelled list
+                account.CancelledList.Add(product.Id);
+                //update status for product
+                product.OrderCondition = (int)ordercondition.Cancelled;
+                productDAO.Update(product);
+                productDAO.DeleteBuyerID(product);
+            }
+            // Not buyed yet
+            else
+            {
+                if (checkCart)
+                {
+                    cartDAO.delete(account.Id, product.Id);
+                }
+                else
+                {
+                    favoriteDAO.delete(account.Id, product.Id);
+                }
+            }
         }
     }
 }

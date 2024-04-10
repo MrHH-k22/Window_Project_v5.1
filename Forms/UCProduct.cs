@@ -69,12 +69,12 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_MouseEnter(object sender, EventArgs e)
         {
-            panelBody.BorderColor = Color.FromArgb(110, 110, 110);
+            panelBorder.BorderColor = Color.FromArgb(110, 110, 110);
         }
 
         private void UCProduct_MouseLeave(object sender, EventArgs e)
         {
-            panelBody.BorderColor = Color.FromArgb(250, 250, 250);
+            panelBorder.BorderColor = Color.Gainsboro;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

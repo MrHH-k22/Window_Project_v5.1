@@ -29,55 +29,74 @@
         private void InitializeComponent()
         {
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelBorder = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelContent = new Guna.UI2.WinForms.Guna2Panel();
             this.lblArea = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblBuyPrice = new System.Windows.Forms.Label();
             this.lblSellPrice = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
-            this.pbProductImage = new System.Windows.Forms.PictureBox();
+            this.panelImage = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbProductImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.panelBorder.SuspendLayout();
+            this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBody
             // 
             this.panelBody.BorderColor = System.Drawing.Color.Gainsboro;
-            this.panelBody.BorderThickness = 1;
-            this.panelBody.Controls.Add(this.guna2Panel1);
+            this.panelBody.BorderRadius = 6;
+            this.panelBody.Controls.Add(this.panelBorder);
             this.panelBody.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 0);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Padding = new System.Windows.Forms.Padding(5);
-            this.panelBody.Size = new System.Drawing.Size(220, 349);
+            this.panelBody.Padding = new System.Windows.Forms.Padding(9);
+            this.panelBody.Size = new System.Drawing.Size(264, 448);
             this.panelBody.TabIndex = 0;
             // 
-            // guna2Panel1
+            // panelBorder
             // 
-            this.guna2Panel1.Controls.Add(this.lblArea);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.lblBuyPrice);
-            this.guna2Panel1.Controls.Add(this.lblSellPrice);
-            this.guna2Panel1.Controls.Add(this.lblProductName);
-            this.guna2Panel1.Controls.Add(this.pbProductImage);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(5, 5);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(210, 339);
-            this.guna2Panel1.TabIndex = 0;
+            this.panelBorder.BorderColor = System.Drawing.Color.Gainsboro;
+            this.panelBorder.BorderRadius = 6;
+            this.panelBorder.BorderThickness = 1;
+            this.panelBorder.Controls.Add(this.panelContent);
+            this.panelBorder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBorder.Location = new System.Drawing.Point(9, 9);
+            this.panelBorder.Name = "panelBorder";
+            this.panelBorder.Padding = new System.Windows.Forms.Padding(3);
+            this.panelBorder.Size = new System.Drawing.Size(246, 430);
+            this.panelBorder.TabIndex = 0;
+            // 
+            // panelContent
+            // 
+            this.panelContent.BorderColor = System.Drawing.Color.Gainsboro;
+            this.panelContent.BorderRadius = 6;
+            this.panelContent.Controls.Add(this.lblArea);
+            this.panelContent.Controls.Add(this.guna2PictureBox1);
+            this.panelContent.Controls.Add(this.lblBuyPrice);
+            this.panelContent.Controls.Add(this.lblSellPrice);
+            this.panelContent.Controls.Add(this.lblProductName);
+            this.panelContent.Controls.Add(this.panelImage);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(3, 3);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(240, 424);
+            this.panelContent.TabIndex = 1;
             // 
             // lblArea
             // 
             this.lblArea.BackColor = System.Drawing.Color.Transparent;
             this.lblArea.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblArea.Location = new System.Drawing.Point(26, 304);
+            this.lblArea.Location = new System.Drawing.Point(34, 383);
             this.lblArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(185, 35);
+            this.lblArea.Size = new System.Drawing.Size(185, 32);
             this.lblArea.TabIndex = 49;
             this.lblArea.Text = "location";
             // 
@@ -86,7 +105,7 @@
             this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.pin;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 305);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 390);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(24, 31);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,11 +118,11 @@
             this.lblBuyPrice.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblBuyPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuyPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblBuyPrice.Location = new System.Drawing.Point(0, 266);
+            this.lblBuyPrice.Location = new System.Drawing.Point(0, 328);
             this.lblBuyPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuyPrice.Name = "lblBuyPrice";
             this.lblBuyPrice.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.lblBuyPrice.Size = new System.Drawing.Size(210, 34);
+            this.lblBuyPrice.Size = new System.Drawing.Size(240, 34);
             this.lblBuyPrice.TabIndex = 47;
             this.lblBuyPrice.Text = "100.000 VND";
             this.lblBuyPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -114,11 +133,11 @@
             this.lblSellPrice.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSellPrice.Font = new System.Drawing.Font("Segoe UI", 14.2F, System.Drawing.FontStyle.Bold);
             this.lblSellPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblSellPrice.Location = new System.Drawing.Point(0, 236);
+            this.lblSellPrice.Location = new System.Drawing.Point(0, 298);
             this.lblSellPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSellPrice.Name = "lblSellPrice";
             this.lblSellPrice.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lblSellPrice.Size = new System.Drawing.Size(210, 30);
+            this.lblSellPrice.Size = new System.Drawing.Size(240, 30);
             this.lblSellPrice.TabIndex = 45;
             this.lblSellPrice.Text = "100.000 VND";
             this.lblSellPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,44 +148,54 @@
             this.lblProductName.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblProductName.Location = new System.Drawing.Point(0, 164);
+            this.lblProductName.Location = new System.Drawing.Point(0, 240);
             this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lblProductName.Size = new System.Drawing.Size(210, 72);
+            this.lblProductName.Size = new System.Drawing.Size(240, 58);
             this.lblProductName.TabIndex = 44;
             this.lblProductName.Text = "Product name";
             // 
+            // panelImage
+            // 
+            this.panelImage.Controls.Add(this.pbProductImage);
+            this.panelImage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelImage.Location = new System.Drawing.Point(0, 0);
+            this.panelImage.Name = "panelImage";
+            this.panelImage.Padding = new System.Windows.Forms.Padding(6);
+            this.panelImage.Size = new System.Drawing.Size(240, 240);
+            this.panelImage.TabIndex = 50;
+            // 
             // pbProductImage
             // 
-            this.pbProductImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbProductImage.Image = global::Window_Project_v5._1.Properties.Resources.laptop;
-            this.pbProductImage.Location = new System.Drawing.Point(0, 0);
-            this.pbProductImage.Margin = new System.Windows.Forms.Padding(0);
+            this.pbProductImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbProductImage.ImageRotate = 0F;
+            this.pbProductImage.Location = new System.Drawing.Point(6, 6);
             this.pbProductImage.Name = "pbProductImage";
-            this.pbProductImage.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.pbProductImage.Size = new System.Drawing.Size(210, 164);
-            this.pbProductImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProductImage.TabIndex = 46;
+            this.pbProductImage.Size = new System.Drawing.Size(228, 228);
+            this.pbProductImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProductImage.TabIndex = 0;
             this.pbProductImage.TabStop = false;
             // 
             // UCProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelBody);
             this.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.Name = "UCProduct";
-            this.Size = new System.Drawing.Size(220, 349);
+            this.Size = new System.Drawing.Size(264, 448);
             this.Click += new System.EventHandler(this.UCProduct_Click);
             this.DoubleClick += new System.EventHandler(this.UCProduct_DoubleClick);
             this.MouseEnter += new System.EventHandler(this.UCProduct_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UCProduct_MouseLeave);
             this.MouseHover += new System.EventHandler(this.UCProduct_MouseHover);
             this.panelBody.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.panelBorder.ResumeLayout(false);
+            this.panelContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -175,12 +204,14 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel panelBody;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel panelBorder;
+        private Guna.UI2.WinForms.Guna2Panel panelContent;
         public System.Windows.Forms.Label lblArea;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         public System.Windows.Forms.Label lblBuyPrice;
         public System.Windows.Forms.Label lblSellPrice;
         public System.Windows.Forms.Label lblProductName;
-        public System.Windows.Forms.PictureBox pbProductImage;
+        private Guna.UI2.WinForms.Guna2Panel panelImage;
+        private Guna.UI2.WinForms.Guna2PictureBox pbProductImage;
     }
 }
