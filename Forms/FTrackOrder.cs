@@ -23,9 +23,9 @@ namespace Window_Project_v5._1.Forms
 
         public FTrackOrder(Account acc)
         {
+            InitializeComponent();
             account = acc;
             containerMenu.Visible = false;
-            InitializeComponent();
         }
 
         private void FTrackOrder_Load(object sender, EventArgs e)
