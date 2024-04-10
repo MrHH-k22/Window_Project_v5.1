@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation3 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -113,22 +113,22 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -141,7 +141,7 @@
             this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(2);
             this.containerTop.Name = "containerTop";
             this.containerTop.Size = new System.Drawing.Size(1040, 57);
             this.containerTop.TabIndex = 5;
@@ -166,7 +166,7 @@
             this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
             this.btnCart.Location = new System.Drawing.Point(578, 8);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnCart.Name = "btnCart";
             this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnCart.Size = new System.Drawing.Size(122, 37);
@@ -195,7 +195,7 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
             this.btnMenu.Location = new System.Drawing.Point(869, 9);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnMenu.Size = new System.Drawing.Size(219, 37);
@@ -224,7 +224,7 @@
             this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPostProduct.Location = new System.Drawing.Point(704, 8);
-            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnPostProduct.Name = "btnPostProduct";
             this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnPostProduct.Size = new System.Drawing.Size(152, 37);
@@ -242,12 +242,13 @@
             this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
             this.pbLogo.ImageRotate = 0F;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(141, 57);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // panelBody
             // 
@@ -259,7 +260,7 @@
             this.bunifuTransition1.SetDecoration(this.panelBody, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 57);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2);
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1040, 577);
             this.panelBody.TabIndex = 6;
@@ -291,7 +292,7 @@
             this.bunifuTransition1.SetDecoration(this.panelMiddle, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMiddle.Location = new System.Drawing.Point(262, 0);
-            this.panelMiddle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMiddle.Margin = new System.Windows.Forms.Padding(2);
             this.panelMiddle.Name = "panelMiddle";
             this.panelMiddle.Size = new System.Drawing.Size(526, 577);
             this.panelMiddle.TabIndex = 9;
@@ -300,7 +301,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Separator3.Location = new System.Drawing.Point(17, 857);
-            this.guna2Separator3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Separator3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Separator3.Name = "guna2Separator3";
             this.guna2Separator3.Size = new System.Drawing.Size(615, 8);
             this.guna2Separator3.TabIndex = 125;
@@ -434,7 +435,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.guna2Separator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Separator1.Location = new System.Drawing.Point(20, 403);
-            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(562, 8);
             this.guna2Separator1.TabIndex = 115;
@@ -505,7 +506,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Separator2.Location = new System.Drawing.Point(17, 223);
-            this.guna2Separator2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Separator2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(564, 8);
             this.guna2Separator2.TabIndex = 79;
@@ -590,7 +591,7 @@
             this.bunifuTransition1.SetDecoration(this.p, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.p.Dock = System.Windows.Forms.DockStyle.Left;
             this.p.Location = new System.Drawing.Point(251, 0);
-            this.p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.p.Margin = new System.Windows.Forms.Padding(2);
             this.p.Name = "p";
             this.p.Size = new System.Drawing.Size(11, 577);
             this.p.TabIndex = 6;
@@ -604,7 +605,7 @@
             this.bunifuTransition1.SetDecoration(this.panelLeft, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(251, 577);
             this.panelLeft.TabIndex = 5;
@@ -619,7 +620,7 @@
             this.btnImage4.ImageRotate = 0F;
             this.btnImage4.ImageSize = new System.Drawing.Size(80, 80);
             this.btnImage4.Location = new System.Drawing.Point(171, 249);
-            this.btnImage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImage4.Margin = new System.Windows.Forms.Padding(2);
             this.btnImage4.Name = "btnImage4";
             this.btnImage4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImage4.Size = new System.Drawing.Size(60, 65);
@@ -636,7 +637,7 @@
             this.btnImage3.ImageRotate = 0F;
             this.btnImage3.ImageSize = new System.Drawing.Size(80, 80);
             this.btnImage3.Location = new System.Drawing.Point(89, 249);
-            this.btnImage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImage3.Margin = new System.Windows.Forms.Padding(2);
             this.btnImage3.Name = "btnImage3";
             this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImage3.Size = new System.Drawing.Size(60, 65);
@@ -653,7 +654,7 @@
             this.btnImage2.ImageRotate = 0F;
             this.btnImage2.ImageSize = new System.Drawing.Size(80, 80);
             this.btnImage2.Location = new System.Drawing.Point(9, 249);
-            this.btnImage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImage2.Margin = new System.Windows.Forms.Padding(2);
             this.btnImage2.Name = "btnImage2";
             this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImage2.Size = new System.Drawing.Size(60, 65);
@@ -672,7 +673,7 @@
             this.btnImage1.ImageRotate = 0F;
             this.btnImage1.ImageSize = new System.Drawing.Size(300, 300);
             this.btnImage1.Location = new System.Drawing.Point(0, 0);
-            this.btnImage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImage1.Margin = new System.Windows.Forms.Padding(2);
             this.btnImage1.Name = "btnImage1";
             this.btnImage1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImage1.Size = new System.Drawing.Size(251, 219);
@@ -685,7 +686,7 @@
             this.bunifuTransition1.SetDecoration(this.guna2Panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel1.Location = new System.Drawing.Point(788, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(11, 577);
             this.guna2Panel1.TabIndex = 8;
@@ -704,7 +705,7 @@
             this.bunifuTransition1.SetDecoration(this.panelRight, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(799, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(2);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(241, 577);
             this.panelRight.TabIndex = 7;
@@ -713,7 +714,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.guna2Separator4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Separator4.Location = new System.Drawing.Point(20, 120);
-            this.guna2Separator4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Separator4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Separator4.Name = "guna2Separator4";
             this.guna2Separator4.Size = new System.Drawing.Size(197, 8);
             this.guna2Separator4.TabIndex = 133;
@@ -722,7 +723,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.guna2RatingStar1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2RatingStar1.Location = new System.Drawing.Point(20, 77);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar1.Size = new System.Drawing.Size(197, 25);
@@ -734,7 +735,7 @@
             this.pbAvatar.Image = global::Window_Project_v5._1.Properties.Resources._92;
             this.pbAvatar.ImageRotate = 0F;
             this.pbAvatar.Location = new System.Drawing.Point(12, 12);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(2);
             this.pbAvatar.Name = "pbAvatar";
             this.pbAvatar.ShadowDecoration.Enabled = true;
             this.pbAvatar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
@@ -763,7 +764,7 @@
             this.btnAddtoCart.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddtoCart.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnAddtoCart.Location = new System.Drawing.Point(13, 406);
-            this.btnAddtoCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddtoCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddtoCart.Name = "btnAddtoCart";
             this.btnAddtoCart.Size = new System.Drawing.Size(213, 40);
             this.btnAddtoCart.TabIndex = 130;
@@ -790,7 +791,7 @@
             this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnBuy.Location = new System.Drawing.Point(12, 360);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(213, 40);
             this.btnBuy.TabIndex = 129;
@@ -812,7 +813,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSave.Location = new System.Drawing.Point(12, 310);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(213, 40);
             this.btnSave.TabIndex = 128;
@@ -887,7 +888,7 @@
             this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.bunifuTransition1.SetDecoration(this.containerMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.containerMenu.Location = new System.Drawing.Point(871, 61);
-            this.containerMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
             this.containerMenu.Size = new System.Drawing.Size(219, 483);
@@ -910,7 +911,7 @@
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
             this.btnLogout.Location = new System.Drawing.Point(1, 432);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 45);
             this.btnLogout.TabIndex = 23;
@@ -925,7 +926,7 @@
             this.bunifuTransition1.SetDecoration(this.guna2Panel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel5.Location = new System.Drawing.Point(1, 419);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(217, 13);
             this.guna2Panel5.TabIndex = 24;
@@ -946,7 +947,7 @@
             this.btnMoney.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnMoney.ImageSize = new System.Drawing.Size(34, 34);
             this.btnMoney.Location = new System.Drawing.Point(1, 374);
-            this.btnMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(2);
             this.btnMoney.Name = "btnMoney";
             this.btnMoney.Size = new System.Drawing.Size(217, 45);
             this.btnMoney.TabIndex = 22;
@@ -971,7 +972,7 @@
             this.btnInformation.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnInformation.ImageSize = new System.Drawing.Size(34, 34);
             this.btnInformation.Location = new System.Drawing.Point(1, 329);
-            this.btnInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(2);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.Size = new System.Drawing.Size(217, 45);
             this.btnInformation.TabIndex = 21;
@@ -996,7 +997,7 @@
             this.btnOrderAnalysis.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnOrderAnalysis.ImageSize = new System.Drawing.Size(34, 34);
             this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 284);
-            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
             this.btnOrderAnalysis.Size = new System.Drawing.Size(217, 45);
             this.btnOrderAnalysis.TabIndex = 20;
@@ -1021,7 +1022,7 @@
             this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
             this.btnSavedProducts.Location = new System.Drawing.Point(1, 239);
-            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2);
             this.btnSavedProducts.Name = "btnSavedProducts";
             this.btnSavedProducts.Size = new System.Drawing.Size(217, 45);
             this.btnSavedProducts.TabIndex = 19;
@@ -1037,7 +1038,7 @@
             this.bunifuTransition1.SetDecoration(this.guna2Panel6, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel6.Location = new System.Drawing.Point(1, 201);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(217, 38);
             this.guna2Panel6.TabIndex = 18;
@@ -1071,7 +1072,7 @@
             this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
             this.btnSalesOrder.Location = new System.Drawing.Point(1, 156);
-            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalesOrder.Name = "btnSalesOrder";
             this.btnSalesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnSalesOrder.TabIndex = 17;
@@ -1097,7 +1098,7 @@
             this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
             this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 111);
-            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnPurchasesOrder.Name = "btnPurchasesOrder";
             this.btnPurchasesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnPurchasesOrder.TabIndex = 16;
@@ -1113,7 +1114,7 @@
             this.bunifuTransition1.SetDecoration(this.guna2Panel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel7.Location = new System.Drawing.Point(1, 74);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(217, 37);
             this.guna2Panel7.TabIndex = 15;
@@ -1139,7 +1140,7 @@
             this.bunifuTransition1.SetDecoration(this.guna2Panel8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(217, 73);
             this.guna2Panel8.TabIndex = 14;
@@ -1164,7 +1165,7 @@
             this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(68, 73);
@@ -1176,7 +1177,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.ratingAccount, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.ratingAccount.Location = new System.Drawing.Point(77, 36);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ratingAccount.Margin = new System.Windows.Forms.Padding(2);
             this.ratingAccount.Name = "ratingAccount";
             this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.ratingAccount.Size = new System.Drawing.Size(112, 29);
@@ -1233,7 +1234,7 @@
             this.Controls.Add(this.containerTop);
             this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1151, 1056);
             this.Name = "FBuyDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

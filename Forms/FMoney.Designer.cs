@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoney));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.gbInfo = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.lblTotalMoney = new System.Windows.Forms.Label();
             this.pbMoneyTotal = new System.Windows.Forms.PictureBox();
@@ -115,11 +115,11 @@
             this.gbInfo.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gbInfo.LabelIndent = 10;
             this.gbInfo.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.gbInfo.Location = new System.Drawing.Point(7, 7);
-            this.gbInfo.Margin = new System.Windows.Forms.Padding(3, 20, 3, 2);
+            this.gbInfo.Location = new System.Drawing.Point(5, 6);
+            this.gbInfo.Margin = new System.Windows.Forms.Padding(2, 16, 2, 2);
             this.gbInfo.Name = "gbInfo";
-            this.gbInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbInfo.Size = new System.Drawing.Size(1463, 116);
+            this.gbInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbInfo.Size = new System.Drawing.Size(1097, 94);
             this.gbInfo.TabIndex = 2;
             this.gbInfo.TabStop = false;
             // 
@@ -129,20 +129,18 @@
             this.lblTotalMoney.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblTotalMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblTotalMoney.Location = new System.Drawing.Point(875, 41);
-            this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalMoney.Location = new System.Drawing.Point(656, 33);
             this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(144, 31);
+            this.lblTotalMoney.Size = new System.Drawing.Size(120, 25);
             this.lblTotalMoney.TabIndex = 12;
             this.lblTotalMoney.Text = "100,000 VND";
             // 
             // pbMoneyTotal
             // 
             this.pbMoneyTotal.Image = global::Window_Project_v5._1.Properties.Resources.money;
-            this.pbMoneyTotal.Location = new System.Drawing.Point(733, 15);
-            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.pbMoneyTotal.Location = new System.Drawing.Point(550, 12);
             this.pbMoneyTotal.Name = "pbMoneyTotal";
-            this.pbMoneyTotal.Size = new System.Drawing.Size(133, 79);
+            this.pbMoneyTotal.Size = new System.Drawing.Size(100, 64);
             this.pbMoneyTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMoneyTotal.TabIndex = 0;
             this.pbMoneyTotal.TabStop = false;
@@ -152,13 +150,13 @@
             this.pbAvatar.AllowFocused = false;
             this.pbAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbAvatar.AutoSizeHeight = true;
-            this.pbAvatar.BorderRadius = 42;
+            this.pbAvatar.BorderRadius = 32;
             this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
             this.pbAvatar.IsCircle = true;
-            this.pbAvatar.Location = new System.Drawing.Point(178, 15);
-            this.pbAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbAvatar.Location = new System.Drawing.Point(134, 12);
+            this.pbAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbAvatar.Name = "pbAvatar";
-            this.pbAvatar.Size = new System.Drawing.Size(85, 85);
+            this.pbAvatar.Size = new System.Drawing.Size(64, 64);
             this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAvatar.TabIndex = 11;
             this.pbAvatar.TabStop = false;
@@ -170,10 +168,9 @@
             this.lblName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblName.Location = new System.Drawing.Point(157, 41);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(118, 33);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(165, 31);
+            this.lblName.Size = new System.Drawing.Size(140, 25);
             this.lblName.TabIndex = 10;
             this.lblName.Text = "Nguyen Van A";
             // 
@@ -196,11 +193,9 @@
             this.gbFunction.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gbFunction.LabelIndent = 10;
             this.gbFunction.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.gbFunction.Location = new System.Drawing.Point(7, 18);
-            this.gbFunction.Margin = new System.Windows.Forms.Padding(4);
+            this.gbFunction.Location = new System.Drawing.Point(5, 15);
             this.gbFunction.Name = "gbFunction";
-            this.gbFunction.Padding = new System.Windows.Forms.Padding(4);
-            this.gbFunction.Size = new System.Drawing.Size(1462, 480);
+            this.gbFunction.Size = new System.Drawing.Size(1096, 390);
             this.gbFunction.TabIndex = 3;
             this.gbFunction.TabStop = false;
             // 
@@ -223,11 +218,11 @@
             this.btn500.ColorContrastOnClick = 45;
             this.btn500.ColorContrastOnHover = 45;
             this.btn500.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btn500.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn500.CustomizableEdges = borderEdges1;
             this.btn500.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn500.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn500.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -251,8 +246,8 @@
             this.btn500.IdleIconLeftImage = null;
             this.btn500.IdleIconRightImage = null;
             this.btn500.IndicateFocus = false;
-            this.btn500.Location = new System.Drawing.Point(784, 292);
-            this.btn500.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn500.Location = new System.Drawing.Point(588, 237);
+            this.btn500.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn500.Name = "btn500";
             this.btn500.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn500.OnDisabledState.BorderRadius = 35;
@@ -286,7 +281,7 @@
             this.btn500.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btn500.OnPressedState.IconLeftImage = null;
             this.btn500.OnPressedState.IconRightImage = null;
-            this.btn500.Size = new System.Drawing.Size(208, 53);
+            this.btn500.Size = new System.Drawing.Size(156, 43);
             this.btn500.TabIndex = 9;
             this.btn500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn500.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -314,11 +309,11 @@
             this.btn200.ColorContrastOnClick = 45;
             this.btn200.ColorContrastOnHover = 45;
             this.btn200.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btn200.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn200.CustomizableEdges = borderEdges2;
             this.btn200.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn200.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn200.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -342,8 +337,8 @@
             this.btn200.IdleIconLeftImage = null;
             this.btn200.IdleIconRightImage = null;
             this.btn200.IndicateFocus = false;
-            this.btn200.Location = new System.Drawing.Point(784, 217);
-            this.btn200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn200.Location = new System.Drawing.Point(588, 176);
+            this.btn200.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn200.Name = "btn200";
             this.btn200.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn200.OnDisabledState.BorderRadius = 35;
@@ -377,7 +372,7 @@
             this.btn200.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(190)))), ((int)(((byte)(45)))));
             this.btn200.OnPressedState.IconLeftImage = null;
             this.btn200.OnPressedState.IconRightImage = null;
-            this.btn200.Size = new System.Drawing.Size(208, 53);
+            this.btn200.Size = new System.Drawing.Size(156, 43);
             this.btn200.TabIndex = 8;
             this.btn200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn200.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -405,11 +400,11 @@
             this.btn100.ColorContrastOnClick = 45;
             this.btn100.ColorContrastOnHover = 45;
             this.btn100.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btn100.CustomizableEdges = borderEdges9;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btn100.CustomizableEdges = borderEdges3;
             this.btn100.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn100.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn100.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -433,8 +428,8 @@
             this.btn100.IdleIconLeftImage = null;
             this.btn100.IdleIconRightImage = null;
             this.btn100.IndicateFocus = false;
-            this.btn100.Location = new System.Drawing.Point(784, 140);
-            this.btn100.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn100.Location = new System.Drawing.Point(588, 114);
+            this.btn100.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn100.Name = "btn100";
             this.btn100.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn100.OnDisabledState.BorderRadius = 35;
@@ -468,7 +463,7 @@
             this.btn100.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(201)))), ((int)(((byte)(62)))));
             this.btn100.OnPressedState.IconLeftImage = null;
             this.btn100.OnPressedState.IconRightImage = null;
-            this.btn100.Size = new System.Drawing.Size(208, 53);
+            this.btn100.Size = new System.Drawing.Size(156, 43);
             this.btn100.TabIndex = 7;
             this.btn100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn100.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -496,11 +491,11 @@
             this.btn50.ColorContrastOnClick = 45;
             this.btn50.ColorContrastOnHover = 45;
             this.btn50.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btn50.CustomizableEdges = borderEdges10;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btn50.CustomizableEdges = borderEdges4;
             this.btn50.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn50.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn50.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -524,8 +519,8 @@
             this.btn50.IdleIconLeftImage = null;
             this.btn50.IdleIconRightImage = null;
             this.btn50.IndicateFocus = false;
-            this.btn50.Location = new System.Drawing.Point(784, 70);
-            this.btn50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn50.Location = new System.Drawing.Point(588, 57);
+            this.btn50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn50.Name = "btn50";
             this.btn50.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn50.OnDisabledState.BorderRadius = 35;
@@ -559,7 +554,7 @@
             this.btn50.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(168)))), ((int)(((byte)(176)))));
             this.btn50.OnPressedState.IconLeftImage = null;
             this.btn50.OnPressedState.IconRightImage = null;
-            this.btn50.Size = new System.Drawing.Size(208, 53);
+            this.btn50.Size = new System.Drawing.Size(156, 43);
             this.btn50.TabIndex = 6;
             this.btn50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn50.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -571,10 +566,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.password;
-            this.pictureBox1.Location = new System.Drawing.Point(237, 171);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(178, 139);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -607,34 +601,33 @@
             this.txtPassword.IconRight = null;
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(393, 199);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(295, 162);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties12;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(4);
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties4;
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Confirm your password";
@@ -644,7 +637,7 @@
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(332, 46);
+            this.txtPassword.Size = new System.Drawing.Size(249, 34);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -674,11 +667,11 @@
             this.btnWithdraw.ColorContrastOnClick = 45;
             this.btnWithdraw.ColorContrastOnHover = 45;
             this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnWithdraw.CustomizableEdges = borderEdges11;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnWithdraw.CustomizableEdges = borderEdges5;
             this.btnWithdraw.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnWithdraw.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWithdraw.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -702,8 +695,7 @@
             this.btnWithdraw.IdleIconLeftImage = global::Window_Project_v5._1.Properties.Resources.withdraw;
             this.btnWithdraw.IdleIconRightImage = null;
             this.btnWithdraw.IndicateFocus = false;
-            this.btnWithdraw.Location = new System.Drawing.Point(525, 297);
-            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWithdraw.Location = new System.Drawing.Point(394, 241);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWithdraw.OnDisabledState.BorderRadius = 25;
@@ -737,7 +729,7 @@
             this.btnWithdraw.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnWithdraw.OnPressedState.IconLeftImage = null;
             this.btnWithdraw.OnPressedState.IconRightImage = null;
-            this.btnWithdraw.Size = new System.Drawing.Size(200, 48);
+            this.btnWithdraw.Size = new System.Drawing.Size(150, 39);
             this.btnWithdraw.TabIndex = 3;
             this.btnWithdraw.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnWithdraw.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -765,11 +757,11 @@
             this.btnRecharge.ColorContrastOnClick = 45;
             this.btnRecharge.ColorContrastOnHover = 45;
             this.btnRecharge.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnRecharge.CustomizableEdges = borderEdges12;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnRecharge.CustomizableEdges = borderEdges6;
             this.btnRecharge.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRecharge.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecharge.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -793,8 +785,7 @@
             this.btnRecharge.IdleIconLeftImage = global::Window_Project_v5._1.Properties.Resources.recharge;
             this.btnRecharge.IdleIconRightImage = null;
             this.btnRecharge.IndicateFocus = false;
-            this.btnRecharge.Location = new System.Drawing.Point(237, 297);
-            this.btnRecharge.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRecharge.Location = new System.Drawing.Point(178, 241);
             this.btnRecharge.Name = "btnRecharge";
             this.btnRecharge.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecharge.OnDisabledState.BorderRadius = 25;
@@ -828,7 +819,7 @@
             this.btnRecharge.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRecharge.OnPressedState.IconLeftImage = null;
             this.btnRecharge.OnPressedState.IconRightImage = null;
-            this.btnRecharge.Size = new System.Drawing.Size(200, 48);
+            this.btnRecharge.Size = new System.Drawing.Size(150, 39);
             this.btnRecharge.TabIndex = 2;
             this.btnRecharge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRecharge.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -865,34 +856,33 @@
             this.txtMoney.IconRight = null;
             this.txtMoney.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMoney.Lines = new string[0];
-            this.txtMoney.Location = new System.Drawing.Point(393, 75);
-            this.txtMoney.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMoney.Location = new System.Drawing.Point(295, 61);
             this.txtMoney.MaxLength = 32767;
             this.txtMoney.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMoney.Modified = false;
             this.txtMoney.Multiline = false;
             this.txtMoney.Name = "txtMoney";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtMoney.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMoney.OnIdleState = stateProperties16;
-            this.txtMoney.Padding = new System.Windows.Forms.Padding(4);
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtMoney.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMoney.OnIdleState = stateProperties8;
+            this.txtMoney.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtMoney.PasswordChar = '\0';
             this.txtMoney.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMoney.PlaceholderText = "The amount of money";
@@ -902,7 +892,7 @@
             this.txtMoney.SelectionLength = 0;
             this.txtMoney.SelectionStart = 0;
             this.txtMoney.ShortcutsEnabled = true;
-            this.txtMoney.Size = new System.Drawing.Size(332, 46);
+            this.txtMoney.Size = new System.Drawing.Size(249, 34);
             this.txtMoney.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMoney.TabIndex = 1;
             this.txtMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -916,10 +906,9 @@
             // pbMoneyAmount
             // 
             this.pbMoneyAmount.Image = global::Window_Project_v5._1.Properties.Resources.money2;
-            this.pbMoneyAmount.Location = new System.Drawing.Point(237, 52);
-            this.pbMoneyAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.pbMoneyAmount.Location = new System.Drawing.Point(178, 42);
             this.pbMoneyAmount.Name = "pbMoneyAmount";
-            this.pbMoneyAmount.Size = new System.Drawing.Size(107, 98);
+            this.pbMoneyAmount.Size = new System.Drawing.Size(80, 80);
             this.pbMoneyAmount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMoneyAmount.TabIndex = 0;
             this.pbMoneyAmount.TabStop = false;
@@ -929,19 +918,17 @@
             this.panelTop.Controls.Add(this.gbInfo);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1500, 137);
+            this.panelTop.Size = new System.Drawing.Size(1040, 111);
             this.panelTop.TabIndex = 4;
             // 
             // panelBody
             // 
             this.panelBody.Controls.Add(this.gbFunction);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 137);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4);
+            this.panelBody.Location = new System.Drawing.Point(0, 111);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1500, 573);
+            this.panelBody.Size = new System.Drawing.Size(1040, 466);
             this.panelBody.TabIndex = 5;
             // 
             // containerTop
@@ -954,9 +941,9 @@
             this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1500, 70);
+            this.containerTop.Size = new System.Drawing.Size(1040, 57);
             this.containerTop.TabIndex = 6;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -977,11 +964,11 @@
             this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCart.Location = new System.Drawing.Point(770, 10);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Location = new System.Drawing.Point(578, 8);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCart.Name = "btnCart";
             this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Size = new System.Drawing.Size(163, 46);
+            this.btnCart.Size = new System.Drawing.Size(122, 37);
             this.btnCart.TabIndex = 3;
             this.btnCart.Text = "CART";
             this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1005,11 +992,11 @@
             this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMenu.Location = new System.Drawing.Point(1159, 11);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Location = new System.Drawing.Point(869, 9);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Size = new System.Drawing.Size(292, 45);
+            this.btnMenu.Size = new System.Drawing.Size(219, 37);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1033,11 +1020,11 @@
             this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPostProduct.Location = new System.Drawing.Point(939, 10);
-            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPostProduct.Location = new System.Drawing.Point(704, 8);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPostProduct.Name = "btnPostProduct";
             this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnPostProduct.Size = new System.Drawing.Size(203, 46);
+            this.btnPostProduct.Size = new System.Drawing.Size(152, 37);
             this.btnPostProduct.TabIndex = 1;
             this.btnPostProduct.Text = "POST NEWS";
             this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1051,21 +1038,23 @@
             this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
             this.pbLogo.ImageRotate = 0F;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(188, 70);
+            this.pbLogo.Size = new System.Drawing.Size(141, 57);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // panelMain
             // 
             this.panelMain.Controls.Add(this.panelBody);
             this.panelMain.Controls.Add(this.panelTop);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 70);
+            this.panelMain.Location = new System.Drawing.Point(0, 57);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1500, 710);
+            this.panelMain.Size = new System.Drawing.Size(1040, 577);
             this.panelMain.TabIndex = 7;
             // 
             // containerMenu
@@ -1084,11 +1073,11 @@
             this.containerMenu.Controls.Add(this.guna2Panel8);
             this.containerMenu.CustomBorderColor = System.Drawing.Color.Black;
             this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.containerMenu.Location = new System.Drawing.Point(1161, 75);
-            this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerMenu.Location = new System.Drawing.Point(871, 61);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 595);
+            this.containerMenu.Size = new System.Drawing.Size(219, 483);
             this.containerMenu.TabIndex = 9;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
@@ -1106,10 +1095,10 @@
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnLogout.Location = new System.Drawing.Point(1, 530);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Location = new System.Drawing.Point(1, 432);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(290, 55);
+            this.btnLogout.Size = new System.Drawing.Size(217, 45);
             this.btnLogout.TabIndex = 23;
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1120,10 +1109,10 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 419);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
+            this.guna2Panel5.Size = new System.Drawing.Size(217, 13);
             this.guna2Panel5.TabIndex = 24;
             // 
             // btnMoney
@@ -1140,10 +1129,10 @@
             this.btnMoney.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMoney.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnMoney.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnMoney.Location = new System.Drawing.Point(1, 459);
-            this.btnMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMoney.Location = new System.Drawing.Point(1, 374);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMoney.Name = "btnMoney";
-            this.btnMoney.Size = new System.Drawing.Size(290, 55);
+            this.btnMoney.Size = new System.Drawing.Size(217, 45);
             this.btnMoney.TabIndex = 22;
             this.btnMoney.Text = "Recharge/Withdraw money";
             this.btnMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1164,10 +1153,10 @@
             this.btnInformation.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInformation.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnInformation.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnInformation.Location = new System.Drawing.Point(1, 404);
-            this.btnInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInformation.Location = new System.Drawing.Point(1, 329);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInformation.Name = "btnInformation";
-            this.btnInformation.Size = new System.Drawing.Size(290, 55);
+            this.btnInformation.Size = new System.Drawing.Size(217, 45);
             this.btnInformation.TabIndex = 21;
             this.btnInformation.Text = "Profile";
             this.btnInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1188,10 +1177,10 @@
             this.btnOrderAnalysis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOrderAnalysis.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnOrderAnalysis.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 349);
-            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 284);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
-            this.btnOrderAnalysis.Size = new System.Drawing.Size(290, 55);
+            this.btnOrderAnalysis.Size = new System.Drawing.Size(217, 45);
             this.btnOrderAnalysis.TabIndex = 20;
             this.btnOrderAnalysis.Text = "Order Analysis";
             this.btnOrderAnalysis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1212,10 +1201,10 @@
             this.btnSavedProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnSavedProducts.Location = new System.Drawing.Point(1, 294);
-            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSavedProducts.Location = new System.Drawing.Point(1, 239);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSavedProducts.Name = "btnSavedProducts";
-            this.btnSavedProducts.Size = new System.Drawing.Size(290, 55);
+            this.btnSavedProducts.Size = new System.Drawing.Size(217, 45);
             this.btnSavedProducts.TabIndex = 19;
             this.btnSavedProducts.Text = "Saved Products";
             this.btnSavedProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1227,10 +1216,10 @@
             this.guna2Panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel6.Controls.Add(this.label4);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel6.Location = new System.Drawing.Point(1, 247);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel6.Location = new System.Drawing.Point(1, 201);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(290, 47);
+            this.guna2Panel6.Size = new System.Drawing.Size(217, 38);
             this.guna2Panel6.TabIndex = 18;
             // 
             // label4
@@ -1238,9 +1227,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label4.Location = new System.Drawing.Point(19, 7);
+            this.label4.Location = new System.Drawing.Point(14, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 30);
+            this.label4.Size = new System.Drawing.Size(83, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Features";
             // 
@@ -1258,10 +1248,10 @@
             this.btnSalesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnSalesOrder.Location = new System.Drawing.Point(1, 192);
-            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalesOrder.Location = new System.Drawing.Point(1, 156);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalesOrder.Name = "btnSalesOrder";
-            this.btnSalesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnSalesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnSalesOrder.TabIndex = 17;
             this.btnSalesOrder.Text = "Sales Order";
             this.btnSalesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1283,10 +1273,10 @@
             this.btnPurchasesOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 137);
-            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 111);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPurchasesOrder.Name = "btnPurchasesOrder";
-            this.btnPurchasesOrder.Size = new System.Drawing.Size(290, 55);
+            this.btnPurchasesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnPurchasesOrder.TabIndex = 16;
             this.btnPurchasesOrder.Text = "Purchase order";
             this.btnPurchasesOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1298,10 +1288,10 @@
             this.guna2Panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel7.Controls.Add(this.label5);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel7.Location = new System.Drawing.Point(1, 91);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel7.Location = new System.Drawing.Point(1, 74);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(290, 46);
+            this.guna2Panel7.Size = new System.Drawing.Size(217, 37);
             this.guna2Panel7.TabIndex = 15;
             // 
             // label5
@@ -1309,9 +1299,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(19, 7);
+            this.label5.Location = new System.Drawing.Point(14, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 30);
+            this.label5.Size = new System.Drawing.Size(177, 25);
             this.label5.TabIndex = 1;
             this.label5.Text = "Order Management";
             // 
@@ -1322,9 +1313,9 @@
             this.guna2Panel8.Controls.Add(this.ratingAccount);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
+            this.guna2Panel8.Size = new System.Drawing.Size(217, 73);
             this.guna2Panel8.TabIndex = 14;
             // 
             // lblAccountName
@@ -1332,9 +1323,10 @@
             this.lblAccountName.AutoSize = true;
             this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblAccountName.Location = new System.Drawing.Point(74, 7);
+            this.lblAccountName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblAccountName.Size = new System.Drawing.Size(131, 25);
             this.lblAccountName.TabIndex = 3;
             this.lblAccountName.Text = "Account name";
             // 
@@ -1344,33 +1336,33 @@
             this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(68, 73);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
             // ratingAccount
             // 
-            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingAccount.Location = new System.Drawing.Point(77, 36);
+            this.ratingAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ratingAccount.Name = "ratingAccount";
             this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingAccount.Size = new System.Drawing.Size(112, 29);
             this.ratingAccount.TabIndex = 2;
             // 
             // FMoney
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1500, 780);
+            this.ClientSize = new System.Drawing.Size(1040, 634);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FMoney";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMoney";

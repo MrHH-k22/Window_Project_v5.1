@@ -363,5 +363,13 @@ namespace Window_Project_v5._1.Forms
             lblAvatarName.Text = seller.Name;
             convertByte(pbAvatar, seller.Avatar);
         }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FBuy f = new FBuy(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
     }
 }

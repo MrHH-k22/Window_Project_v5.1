@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -139,6 +140,14 @@ namespace Window_Project_v5._1.Forms
         {
             this.Hide();
             FSignin f = new FSignin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FBuy f = new FBuy(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

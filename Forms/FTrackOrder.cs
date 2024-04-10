@@ -142,5 +142,13 @@ namespace Window_Project_v5._1.Forms
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FBuy f = new FBuy(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
     }
 }
