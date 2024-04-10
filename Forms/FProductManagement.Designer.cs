@@ -84,9 +84,9 @@
             this.gpManagement.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.gpManagement.BorderRadius = 20;
             this.gpManagement.BorderThickness = 1;
+            this.gpManagement.Controls.Add(this.lblBalance);
             this.gpManagement.Controls.Add(this.btnLoad);
             this.gpManagement.Controls.Add(this.label2);
-            this.gpManagement.Controls.Add(this.lblBalance);
             this.gpManagement.Controls.Add(this.pBSellerAvatar);
             this.gpManagement.Controls.Add(this.lblSellerName);
             this.gpManagement.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -96,7 +96,7 @@
             this.gpManagement.Location = new System.Drawing.Point(11, 7);
             this.gpManagement.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.gpManagement.Name = "gpManagement";
-            this.gpManagement.Size = new System.Drawing.Size(1218, 116);
+            this.gpManagement.Size = new System.Drawing.Size(1477, 79);
             this.gpManagement.TabIndex = 1;
             this.gpManagement.TabStop = false;
             // 
@@ -111,7 +111,7 @@
             this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnLoad.ForeColor = System.Drawing.Color.White;
-            this.btnLoad.Location = new System.Drawing.Point(702, 26);
+            this.btnLoad.Location = new System.Drawing.Point(899, 15);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(122, 45);
             this.btnLoad.TabIndex = 14;
@@ -121,10 +121,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(831, 32);
+            this.label2.Location = new System.Drawing.Point(1028, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 31);
@@ -133,28 +133,28 @@
             // 
             // lblBalance
             // 
-            this.lblBalance.AutoSize = true;
             this.lblBalance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblBalance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblBalance.Location = new System.Drawing.Point(1042, 32);
+            this.lblBalance.Location = new System.Drawing.Point(1151, 23);
             this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(144, 31);
+            this.lblBalance.Size = new System.Drawing.Size(295, 31);
             this.lblBalance.TabIndex = 12;
             this.lblBalance.Text = "100,000 VND";
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pBSellerAvatar
             // 
             this.pBSellerAvatar.AllowFocused = false;
             this.pBSellerAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pBSellerAvatar.AutoSizeHeight = true;
-            this.pBSellerAvatar.BorderRadius = 43;
+            this.pBSellerAvatar.BorderRadius = 31;
             this.pBSellerAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pBSellerAvatar.Image")));
             this.pBSellerAvatar.IsCircle = true;
-            this.pBSellerAvatar.Location = new System.Drawing.Point(20, 15);
+            this.pBSellerAvatar.Location = new System.Drawing.Point(19, 6);
             this.pBSellerAvatar.Name = "pBSellerAvatar";
-            this.pBSellerAvatar.Size = new System.Drawing.Size(86, 86);
+            this.pBSellerAvatar.Size = new System.Drawing.Size(63, 63);
             this.pBSellerAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBSellerAvatar.TabIndex = 11;
             this.pBSellerAvatar.TabStop = false;
@@ -163,10 +163,10 @@
             // lblSellerName
             // 
             this.lblSellerName.AutoSize = true;
-            this.lblSellerName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSellerName.BackColor = System.Drawing.Color.Transparent;
             this.lblSellerName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSellerName.Location = new System.Drawing.Point(131, 41);
+            this.lblSellerName.Location = new System.Drawing.Point(108, 22);
             this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSellerName.Name = "lblSellerName";
             this.lblSellerName.Size = new System.Drawing.Size(143, 31);
@@ -179,7 +179,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1500, 129);
+            this.panelTop.Size = new System.Drawing.Size(1500, 100);
             this.panelTop.TabIndex = 1;
             // 
             // tcManagement
@@ -190,29 +190,29 @@
             this.tcManagement.Controls.Add(this.tpCancelled);
             this.tcManagement.Controls.Add(this.tpHidden);
             this.tcManagement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcManagement.ItemSize = new System.Drawing.Size(145, 40);
-            this.tcManagement.Location = new System.Drawing.Point(0, 129);
+            this.tcManagement.ItemSize = new System.Drawing.Size(160, 40);
+            this.tcManagement.Location = new System.Drawing.Point(0, 100);
             this.tcManagement.Name = "tcManagement";
             this.tcManagement.SelectedIndex = 0;
-            this.tcManagement.Size = new System.Drawing.Size(1500, 581);
+            this.tcManagement.Size = new System.Drawing.Size(1500, 610);
             this.tcManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.tcManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcManagement.TabButtonHoverState.FillColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcManagement.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.tcManagement.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tcManagement.TabButtonHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.tcManagement.TabButtonHoverState.InnerColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tcManagement.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabButtonIdleState.FillColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcManagement.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.tcManagement.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.tcManagement.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.tcManagement.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.tcManagement.TabButtonSelectedState.FillColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcManagement.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.tcManagement.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tcManagement.TabButtonSize = new System.Drawing.Size(145, 40);
+            this.tcManagement.TabButtonSelectedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.tcManagement.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.tcManagement.TabButtonSize = new System.Drawing.Size(160, 40);
             this.tcManagement.TabIndex = 2;
-            this.tcManagement.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tcManagement.TabMenuBackColor = System.Drawing.Color.White;
             this.tcManagement.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
             // tpDisplay
@@ -220,7 +220,7 @@
             this.tpDisplay.Location = new System.Drawing.Point(4, 44);
             this.tpDisplay.Name = "tpDisplay";
             this.tpDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDisplay.Size = new System.Drawing.Size(1492, 533);
+            this.tpDisplay.Size = new System.Drawing.Size(1492, 562);
             this.tpDisplay.TabIndex = 0;
             this.tpDisplay.Text = "Displaying";
             this.tpDisplay.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@
             this.tpWaitConfirm.Location = new System.Drawing.Point(4, 44);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
             this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1474, 486);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1492, 533);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
@@ -239,7 +239,7 @@
             // 
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Size = new System.Drawing.Size(1474, 486);
+            this.tpCompleted.Size = new System.Drawing.Size(1492, 533);
             this.tpCompleted.TabIndex = 3;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -248,7 +248,7 @@
             // 
             this.tpCancelled.Location = new System.Drawing.Point(4, 44);
             this.tpCancelled.Name = "tpCancelled";
-            this.tpCancelled.Size = new System.Drawing.Size(1474, 486);
+            this.tpCancelled.Size = new System.Drawing.Size(1492, 533);
             this.tpCancelled.TabIndex = 4;
             this.tpCancelled.Text = "Cancelled";
             this.tpCancelled.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             // 
             this.tpHidden.Location = new System.Drawing.Point(4, 44);
             this.tpHidden.Name = "tpHidden";
-            this.tpHidden.Size = new System.Drawing.Size(1474, 486);
+            this.tpHidden.Size = new System.Drawing.Size(1492, 533);
             this.tpHidden.TabIndex = 5;
             this.tpHidden.Text = "Hidden";
             this.tpHidden.UseVisualStyleBackColor = true;
@@ -378,6 +378,7 @@
             // 
             // panelBody
             // 
+            this.panelBody.BackColor = System.Drawing.Color.White;
             this.panelBody.Controls.Add(this.tcManagement);
             this.panelBody.Controls.Add(this.panelTop);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;

@@ -69,7 +69,7 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_MouseEnter(object sender, EventArgs e)
         {
-            panelBody.BorderColor = Color.Black;
+            panelBody.BorderColor = Color.FromArgb(110, 110, 110);
         }
 
         private void UCProduct_MouseLeave(object sender, EventArgs e)
