@@ -73,7 +73,7 @@ namespace Window_Project_v5._1
             dbc.Execute(sqlStr);
         }
 
-        // Buyer purchase the product
+        // Buyer purchases the product
         public void Update(Product product)
         {
             string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}', ContactPhone = '{2}', DeliveryAddress = '{3}'  WHERE ID = '{4}'",
