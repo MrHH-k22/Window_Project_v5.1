@@ -40,10 +40,12 @@ namespace Window_Project_v5._1.Forms
             {
                 if(pd.SellerID == account.Id)
                 {
-                    UCProductSell uc = new UCProductSell(pd, account);
+                    UCProductSell uc = new UCProductSell(pd, account, pd.OrderCondition > (int)ordercondition.Displaying);
+                    uc.btnCancel.Visible = false;
                     if (pd.OrderCondition <= (int)ordercondition.Displaying)
                     {
                         tpDisplay.Controls.Add(uc);
+                        uc.btnCancel.Visible = true;
                     }
                     else if(pd.OrderCondition == (int)ordercondition.WaitforConfirmation)
                     {

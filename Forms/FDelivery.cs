@@ -18,6 +18,7 @@ namespace Window_Project_v5._1.Forms
         private AccountDAO accountDAO = new AccountDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private ProductDAO productDAO = new ProductDAO();
+        private CartDAO cartDAO = new CartDAO();
         private Account acc = new Account();
         private double total = 0;
         private int payMethod = -1;
@@ -38,73 +39,28 @@ namespace Window_Project_v5._1.Forms
 
         private void FDelivery_Load(object sender, EventArgs e)
         {
-            txtAddress.Text = acc.Address;
-            txtPhone.Text = acc.Phone;
             foreach (Product p in products)
             {
+                UCProductCart uc = new UCProductCart(p, acc);
+                uc.cbSelected.Visible = false;
                 total += p.SalePrice;
+                flpCartList.Controls.Add(uc);
             }
-            lblPrice.Text = total.ToString("N0") + " VND";
-
             if (acc.Money < total)
             {
                 rbtnCash.Checked = true;
+                rbtnOnline.Checked = false;
                 rbtnOnline.Enabled = false;
             }
+            txtAddress.Text = acc.Address;
+            txtPhone.Text = acc.Phone;
+            lblPrice.Text = total.ToString("N0") + " VND";
+            lblNoOfItems.Text = products.Count.ToString();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtPhone.Text))
-            {
-                MessageBox.Show("Phone has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if(string.IsNullOrEmpty(txtAddress.Text))
-            {
-                MessageBox.Show("Address has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (payMethod == -1)
-            {
-                MessageBox.Show("Payment Method has not been chosen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                // Prompt the user with a message box
-                DialogResult result = MessageBox.Show("Are you sure you want to buy these product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                // Check if the user clicked "Yes"
-                if (result == DialogResult.Yes)
-                {
-                    foreach (Product product in products)
-                    {
-                        // Proceed with the purchase
-                        if (favoriteDAO.checkProductinFavorite(acc.Id, product.Id))
-                        {
-                            favoriteDAO.delete(acc.Id, product.Id);
-                        }
-                        product.BuyerID = acc.Id;
-                        product.OrderCondition = (int)ordercondition.WaitforConfirmation;
-                        productDAO.Update(product);
-                    }
-                }
-
-                this.Close();
-            }
-        }
-
-        private void rbtnCash_CheckedChanged(object sender, EventArgs e)
-        {
-            payMethod = 0;
-        }
-
-        private void rbtnOnline_CheckedChanged(object sender, EventArgs e)
-        {
-            payMethod = 1;
         }
 
         private void btnCart_Click(object sender, EventArgs e)
@@ -196,6 +152,77 @@ namespace Window_Project_v5._1.Forms
         {
             this.Hide();
             FBuy f = new FBuy(acc);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void rbtnOnline_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (rbtnOnline.Checked)
+            {
+                payMethod = 1;
+                rbtnCash.Checked = false;
+            }
+        }
+
+        private void rbtnCash_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (rbtnCash.Checked)
+            {
+                payMethod = 0;
+                rbtnOnline.Checked = false;
+            }
+        }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPhone.Text))
+            {
+                MessageBox.Show("Phone has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (string.IsNullOrEmpty(txtAddress.Text))
+            {
+                MessageBox.Show("Address has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (payMethod == -1)
+            {
+                MessageBox.Show("Payment Method has not been chosen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // Prompt the user with a message box
+                DialogResult result = MessageBox.Show("Are you sure you want to buy these product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                // Check if the user clicked "Yes"
+                if (result == DialogResult.Yes)
+                {
+                    foreach (Product product in products)
+                    {
+                        // Update Buyer money
+                        Account buyer = accountDAO.Retrieve(acc.Id);
+                        if (payMethod == 1)
+                        {
+                            buyer.Money -= total;
+                            accountDAO.update(buyer);
+                        }
+                        //  Update Seller money
+                        Account seller = accountDAO.Retrieve(product.SellerID);
+                        seller.Money += product.SalePrice;
+                        accountDAO.update(seller);
+                        // Update product
+                        product.ContactPhone = txtPhone.Text;
+                        product.DeliveryAddress = txtAddress.Text;
+                        // Proceed with the purchase
+                        favoriteDAO.delete(acc.Id, product.Id);
+                        cartDAO.delete(acc.Id, product.Id);
+                        product.BuyerID = acc.Id;
+                        product.OrderCondition = (int)ordercondition.WaitforConfirmation;
+                        productDAO.Update(product);
+                    }
+                }
+            }
+            this.Hide();
+            FCart f = new FCart(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

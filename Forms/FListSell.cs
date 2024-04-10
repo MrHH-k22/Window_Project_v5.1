@@ -147,7 +147,7 @@ namespace Window_Project_v5._1.Forms
         private void pbLogo_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FBuy f = new FBuy(account);
+            FBuy f = new FBuy(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

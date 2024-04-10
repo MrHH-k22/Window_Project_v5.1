@@ -44,12 +44,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.flpCartList = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucProductCart1 = new Window_Project_v5._1.Forms.UCProductCart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -89,7 +87,6 @@
             this.gbCash.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.panelBody.SuspendLayout();
-            this.flpCartList.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -115,11 +112,10 @@
             this.panelRight.Controls.Add(this.label5);
             this.panelRight.Controls.Add(this.lblPrice);
             this.panelRight.Controls.Add(this.btnBuy);
-            this.panelRight.Controls.Add(this.btnSave);
             this.panelRight.Controls.Add(this.label1);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(724, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(2);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(316, 577);
             this.panelRight.TabIndex = 60;
@@ -129,7 +125,7 @@
             this.guna2Panel3.Controls.Add(this.gbOnline);
             this.guna2Panel3.Controls.Add(this.gbCash);
             this.guna2Panel3.Location = new System.Drawing.Point(10, 93);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(298, 171);
             this.guna2Panel3.TabIndex = 144;
@@ -143,7 +139,7 @@
             this.gbOnline.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gbOnline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.gbOnline.Location = new System.Drawing.Point(11, 90);
-            this.gbOnline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOnline.Margin = new System.Windows.Forms.Padding(2);
             this.gbOnline.Name = "gbOnline";
             this.gbOnline.Size = new System.Drawing.Size(277, 68);
             this.gbOnline.TabIndex = 143;
@@ -153,7 +149,7 @@
             this.guna2PictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.credit_card;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(9, 17);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(32, 35);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,7 +175,7 @@
             this.rbtnOnline.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.rbtnOnline.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.rbtnOnline.Location = new System.Drawing.Point(244, 21);
-            this.rbtnOnline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnOnline.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnOnline.Name = "rbtnOnline";
             this.rbtnOnline.Size = new System.Drawing.Size(22, 24);
             this.rbtnOnline.TabIndex = 136;
@@ -188,6 +184,7 @@
             this.rbtnOnline.UncheckedState.BorderThickness = 2;
             this.rbtnOnline.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rbtnOnline.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbtnOnline.CheckedChanged += new System.EventHandler(this.rbtnOnline_CheckedChanged_1);
             // 
             // gbCash
             // 
@@ -198,7 +195,7 @@
             this.gbCash.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gbCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.gbCash.Location = new System.Drawing.Point(9, 9);
-            this.gbCash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbCash.Margin = new System.Windows.Forms.Padding(2);
             this.gbCash.Name = "gbCash";
             this.gbCash.Size = new System.Drawing.Size(277, 68);
             this.gbCash.TabIndex = 142;
@@ -208,7 +205,7 @@
             this.guna2PictureBox5.Image = global::Window_Project_v5._1.Properties.Resources.money_v2;
             this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(9, 17);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.Size = new System.Drawing.Size(32, 35);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -234,7 +231,7 @@
             this.rbtnCash.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.rbtnCash.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.rbtnCash.Location = new System.Drawing.Point(244, 22);
-            this.rbtnCash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnCash.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnCash.Name = "rbtnCash";
             this.rbtnCash.Size = new System.Drawing.Size(22, 24);
             this.rbtnCash.TabIndex = 136;
@@ -243,6 +240,7 @@
             this.rbtnCash.UncheckedState.BorderThickness = 2;
             this.rbtnCash.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rbtnCash.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbtnCash.CheckedChanged += new System.EventHandler(this.rbtnCash_CheckedChanged_1);
             // 
             // label7
             // 
@@ -323,31 +321,12 @@
             this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnBuy.Location = new System.Drawing.Point(20, 358);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(277, 40);
             this.btnBuy.TabIndex = 131;
             this.btnBuy.Text = "Buy";
-            // 
-            // btnSave
-            // 
-            this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.BorderColor = System.Drawing.Color.Red;
-            this.btnSave.BorderRadius = 19;
-            this.btnSave.BorderThickness = 1;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Red;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.Location = new System.Drawing.Point(20, 414);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(277, 40);
-            this.btnSave.TabIndex = 130;
-            this.btnSave.Text = "Save";
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // label1
             // 
@@ -365,7 +344,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel2.Location = new System.Drawing.Point(709, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(15, 577);
             this.guna2Panel2.TabIndex = 61;
@@ -377,35 +356,26 @@
             this.panelBody.Controls.Add(this.panelTop);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 0);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2);
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(709, 577);
             this.panelBody.TabIndex = 62;
             // 
             // flpCartList
             // 
-            this.flpCartList.Controls.Add(this.ucProductCart1);
             this.flpCartList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCartList.Location = new System.Drawing.Point(0, 180);
-            this.flpCartList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpCartList.Margin = new System.Windows.Forms.Padding(2);
             this.flpCartList.Name = "flpCartList";
             this.flpCartList.Size = new System.Drawing.Size(709, 397);
             this.flpCartList.TabIndex = 2;
-            // 
-            // ucProductCart1
-            // 
-            this.ucProductCart1.Location = new System.Drawing.Point(2, 2);
-            this.ucProductCart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 3);
-            this.ucProductCart1.Name = "ucProductCart1";
-            this.ucProductCart1.Size = new System.Drawing.Size(836, 96);
-            this.ucProductCart1.TabIndex = 0;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 176);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(709, 4);
             this.guna2Panel1.TabIndex = 1;
@@ -420,7 +390,7 @@
             this.panelTop.Controls.Add(this.label);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(709, 176);
             this.panelTop.TabIndex = 0;
@@ -441,7 +411,7 @@
             this.guna2PictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.home;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(17, 95);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(32, 35);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -453,7 +423,7 @@
             this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.phone_call;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(17, 44);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(32, 35);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -532,7 +502,7 @@
             this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(2);
             this.containerTop.Name = "containerTop";
             this.containerTop.Size = new System.Drawing.Size(1040, 57);
             this.containerTop.TabIndex = 63;
@@ -556,7 +526,7 @@
             this.btnPost.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnPost.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPost.Location = new System.Drawing.Point(704, 8);
-            this.btnPost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPost.Margin = new System.Windows.Forms.Padding(2);
             this.btnPost.Name = "btnPost";
             this.btnPost.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnPost.Size = new System.Drawing.Size(152, 37);
@@ -584,7 +554,7 @@
             this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
             this.btnCart.Location = new System.Drawing.Point(578, 8);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnCart.Name = "btnCart";
             this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnCart.Size = new System.Drawing.Size(122, 37);
@@ -612,7 +582,7 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
             this.btnMenu.Location = new System.Drawing.Point(869, 9);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnMenu.Size = new System.Drawing.Size(219, 37);
@@ -640,7 +610,7 @@
             this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPostProduct.Location = new System.Drawing.Point(877, 8);
-            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnPostProduct.Name = "btnPostProduct";
             this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnPostProduct.Size = new System.Drawing.Size(152, 37);
@@ -656,7 +626,7 @@
             this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
             this.pbLogo.ImageRotate = 0F;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(141, 57);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -671,7 +641,7 @@
             this.panelMain.Controls.Add(this.panelRight);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 57);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(2);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1040, 577);
             this.panelMain.TabIndex = 64;
@@ -693,7 +663,7 @@
             this.containerMenu.CustomBorderColor = System.Drawing.Color.Black;
             this.containerMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.containerMenu.Location = new System.Drawing.Point(871, 61);
-            this.containerMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.containerMenu.Margin = new System.Windows.Forms.Padding(2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
             this.containerMenu.Size = new System.Drawing.Size(219, 483);
@@ -715,7 +685,7 @@
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
             this.btnLogout.Location = new System.Drawing.Point(1, 432);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 45);
             this.btnLogout.TabIndex = 23;
@@ -729,7 +699,7 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel5.Location = new System.Drawing.Point(1, 419);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(217, 13);
             this.guna2Panel5.TabIndex = 24;
@@ -749,7 +719,7 @@
             this.btnMoney.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnMoney.ImageSize = new System.Drawing.Size(34, 34);
             this.btnMoney.Location = new System.Drawing.Point(1, 374);
-            this.btnMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMoney.Margin = new System.Windows.Forms.Padding(2);
             this.btnMoney.Name = "btnMoney";
             this.btnMoney.Size = new System.Drawing.Size(217, 45);
             this.btnMoney.TabIndex = 22;
@@ -773,7 +743,7 @@
             this.btnInformation.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnInformation.ImageSize = new System.Drawing.Size(34, 34);
             this.btnInformation.Location = new System.Drawing.Point(1, 329);
-            this.btnInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInformation.Margin = new System.Windows.Forms.Padding(2);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.Size = new System.Drawing.Size(217, 45);
             this.btnInformation.TabIndex = 21;
@@ -797,7 +767,7 @@
             this.btnOrderAnalysis.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnOrderAnalysis.ImageSize = new System.Drawing.Size(34, 34);
             this.btnOrderAnalysis.Location = new System.Drawing.Point(1, 284);
-            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderAnalysis.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderAnalysis.Name = "btnOrderAnalysis";
             this.btnOrderAnalysis.Size = new System.Drawing.Size(217, 45);
             this.btnOrderAnalysis.TabIndex = 20;
@@ -821,7 +791,7 @@
             this.btnSavedProducts.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSavedProducts.ImageSize = new System.Drawing.Size(34, 34);
             this.btnSavedProducts.Location = new System.Drawing.Point(1, 239);
-            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSavedProducts.Margin = new System.Windows.Forms.Padding(2);
             this.btnSavedProducts.Name = "btnSavedProducts";
             this.btnSavedProducts.Size = new System.Drawing.Size(217, 45);
             this.btnSavedProducts.TabIndex = 19;
@@ -836,7 +806,7 @@
             this.guna2Panel6.Controls.Add(this.label4);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel6.Location = new System.Drawing.Point(1, 201);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(217, 38);
             this.guna2Panel6.TabIndex = 18;
@@ -868,7 +838,7 @@
             this.btnSalesOrder.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnSalesOrder.ImageSize = new System.Drawing.Size(35, 35);
             this.btnSalesOrder.Location = new System.Drawing.Point(1, 156);
-            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalesOrder.Name = "btnSalesOrder";
             this.btnSalesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnSalesOrder.TabIndex = 17;
@@ -893,7 +863,7 @@
             this.btnPurchasesOrder.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnPurchasesOrder.ImageSize = new System.Drawing.Size(34, 34);
             this.btnPurchasesOrder.Location = new System.Drawing.Point(1, 111);
-            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPurchasesOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnPurchasesOrder.Name = "btnPurchasesOrder";
             this.btnPurchasesOrder.Size = new System.Drawing.Size(217, 45);
             this.btnPurchasesOrder.TabIndex = 16;
@@ -908,7 +878,7 @@
             this.guna2Panel7.Controls.Add(this.label9);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel7.Location = new System.Drawing.Point(1, 74);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(217, 37);
             this.guna2Panel7.TabIndex = 15;
@@ -932,7 +902,7 @@
             this.guna2Panel8.Controls.Add(this.ratingAccount);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(217, 73);
             this.guna2Panel8.TabIndex = 14;
@@ -955,7 +925,7 @@
             this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(68, 73);
@@ -966,7 +936,7 @@
             // ratingAccount
             // 
             this.ratingAccount.Location = new System.Drawing.Point(77, 36);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ratingAccount.Margin = new System.Windows.Forms.Padding(2);
             this.ratingAccount.Name = "ratingAccount";
             this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.ratingAccount.Size = new System.Drawing.Size(112, 29);
@@ -996,7 +966,6 @@
             this.gbCash.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.panelBody.ResumeLayout(false);
-            this.flpCartList.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -1029,9 +998,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private UCProductCart ucProductCart1;
         private Guna.UI2.WinForms.Guna2Button btnBuy;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblNoOfItems;

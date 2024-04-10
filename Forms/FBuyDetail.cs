@@ -119,36 +119,14 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            // Prompt the user with a message box
-            DialogResult result = MessageBox.Show("Are you sure you want to buy this product?", "BUY PRODUCT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            // Check if the user clicked "Yes"
-            if (result == DialogResult.Yes)
+            this.Hide();
+            List<Product> products = new List<Product>
             {
-
-                if (account.Money < product.SalePrice)
-                {
-                    MessageBox.Show("You dont have enough money to buy!");
-                }
-                else
-                {
-                    // Proceed with the purchase
-                    account.Money -= product.SalePrice;
-                    accountDAO.update(account);
-                    //get seller
-                    Account Seller = accountDAO.Retrieve(product.SellerID);
-                    Seller.Money += product.SalePrice;
-                    accountDAO.update(Seller);
-                    if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-                    {
-                        favoriteDAO.delete(account.Id, product.Id);
-                    }
-                    product.BuyerID = account.Id;
-                    product.OrderCondition = (int)ordercondition.WaitforConfirmation;
-                    productDAO.Update(product);
-                }
-                this.Close();
-            }
+                product
+            };
+            FDelivery f = new FDelivery(account, products);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void btnAddtoCart_Click(object sender, EventArgs e)
@@ -268,10 +246,46 @@ namespace Window_Project_v5._1.Forms
             lblBrand.Text = "Brand: " + product.Brand;
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
+            GetImageProduct();
+
+            //check button save
+            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
+            {
+                btnSave.Text = "Saved";
+                btnSave.FillColor = Color.WhiteSmoke;
+                btnSave.ForeColor = Color.Red;
+            }
+            else
+            {
+                btnSave.Text = "Save";
+                btnSave.FillColor = Color.Red;
+                btnSave.ForeColor = Color.WhiteSmoke;
+            }
+            //check cart
+            if (cartDAO.checkProductinCart(account.Id, product.Id))
+            {
+                btnAddtoCart.Text = "Already in your cart";
+            }
+            else
+            {
+                btnAddtoCart.Text = "Add to cart";
+            }
+            //check seller
+            if (account.Id == product.SellerID)
+            {
+                btnSave.Visible = false;
+                btnBuy.Visible = false;
+            }
+
+            Account seller = accountDAO.Retrieve(product.SellerID);
+            lblAvatarName.Text = seller.Name;
+            convertByte(pbAvatar, seller.Avatar);
+        }
+
+        private void GetImageProduct()
+        {
             DataTable ImageTable = imageDAO.GetImageProduct(product.Id);
-
             int pictureBoxIndex = 0;
-
             foreach (DataRow row in ImageTable.Rows)
             {
                 if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
@@ -309,7 +323,6 @@ namespace Window_Project_v5._1.Forms
 
                 pictureBoxIndex++;
             }
-
             // Hide any remaining PictureBoxes
             for (int i = pictureBoxIndex; i < 4; i++)
             {
@@ -329,39 +342,6 @@ namespace Window_Project_v5._1.Forms
                         break;
                 }
             }
-
-            //check button save
-            if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
-            {
-                btnSave.Text = "Saved";
-                btnSave.FillColor = Color.WhiteSmoke;
-                btnSave.ForeColor = Color.Red;
-            }
-            else
-            {
-                btnSave.Text = "Save";
-                btnSave.FillColor = Color.Red;
-                btnSave.ForeColor = Color.WhiteSmoke;
-            }
-            //check cart
-            if (cartDAO.checkProductinCart(account.Id, product.Id))
-            {
-                btnAddtoCart.Text = "Already in your cart";
-            }
-            else
-            {
-                btnAddtoCart.Text = "Add to cart";
-            }
-            //check seller
-            if (account.Id == product.SellerID)
-            {
-                btnSave.Visible = false;
-                btnBuy.Visible = false;
-            }
-
-            Account seller = accountDAO.Retrieve(product.SellerID);
-            lblAvatarName.Text = seller.Name;
-            convertByte(pbAvatar, seller.Avatar);
         }
 
         private void pbLogo_Click(object sender, EventArgs e)

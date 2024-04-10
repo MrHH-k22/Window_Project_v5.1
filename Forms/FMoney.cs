@@ -17,6 +17,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FMoney : Form
     {
         private Account acc;
+        private double money = 0;
         private AccountDAO accountDAO = new AccountDAO();
         public FMoney()
         {
@@ -111,22 +112,26 @@ namespace Window_Project_v5._1.Forms
 
         private void btn50_Click(object sender, EventArgs e)
         {
-            txtMoney.Text = "50000";
+            money += 50000;
+            txtMoney.Text = money.ToString();
         }
 
         private void btn100_Click(object sender, EventArgs e)
         {
-            txtMoney.Text = "100000";
+            money += 100000;
+            txtMoney.Text = money.ToString();
         }
 
         private void btn200_Click(object sender, EventArgs e)
         {
-            txtMoney.Text = "200000";
+            money += 200000;
+            txtMoney.Text = money.ToString();
         }
 
         private void btn500_Click(object sender, EventArgs e)
         {
-            txtMoney.Text = "500000";
+            money += 500000;
+            txtMoney.Text = money.ToString();
         }
 
         private void btnCart_Click(object sender, EventArgs e)

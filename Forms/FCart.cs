@@ -17,6 +17,7 @@ namespace Window_Project_v5._1.Forms
         private CartDAO cartDAO = new CartDAO();
         private Account account = new Account();
         private List<Product> products = new List<Product>();
+        private List<Product> productChosen = new List<Product>();
 
         public FCart()
         {
@@ -39,7 +40,7 @@ namespace Window_Project_v5._1.Forms
             {
                 if (pd.BuyerID == 0)
                 {
-                    UCProductBuy uc = new UCProductBuy(pd, account);
+                    UCProductCart uc = new UCProductCart(pd, account);
                     total += pd.SalePrice;
                     flpCartList.Controls.Add(uc);
                 } else
@@ -51,11 +52,30 @@ namespace Window_Project_v5._1.Forms
             lblNoOfItems.Text = products.Count.ToString();
         }
 
+        private void SelectProduct()
+        {
+            foreach (Control control in flpCartList.Controls)
+            {
+                if (control is UCProductCart uc)
+                {
+                    if (uc.cbSelected.Checked)
+                    {
+                        productChosen.Add(uc.Pd);
+                    }
+                }
+            }
+        }
+
         private void btnPurchase_Click(object sender, EventArgs e)
         {
-            FDelivery delivery = new FDelivery(account, products);
-            delivery.Show();
-            FCart_Load(sender, e);
+            SelectProduct();
+            if (productChosen.Count > 0)
+            {
+                this.Hide();
+                FDelivery f = new FDelivery(account, productChosen);
+                f.Closed += (s, args) => this.Close();
+                f.Show();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

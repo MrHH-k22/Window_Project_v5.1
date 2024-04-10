@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,30 +32,24 @@ namespace Window_Project_v5._1.Forms
             containerMenu.Visible = false;
         }
 
-        public FSellDetail(Product pd)
+        public FSellDetail(Product pd, Account acc)
         {
             InitializeComponent();
-            edit = true;
-            containerMenu.Visible = false;
+            gbBillStatus.Visible = false;
             this.pd = pd;
-            selectedCategory = pd.Category;
-            txtProductTitle.Text = pd.Name; 
-            txtType.Text = pd.Type; 
-            txtBuyPrice.Text = pd.OriginalPrice.ToString(); 
-            txtSellPrice.Text = pd.SalePrice.ToString(); 
-            selectedArea = pd.Area; 
-            txtCondition.Text = pd.Condition; 
-            txtStatus.Text = pd.Status; 
-            txtSupportPolicy.Text = pd.SupportPolicy; 
-            txtBrand.Text = pd.Brand; 
-            txtOrigin.Text = pd.Origin; 
-            txtMaterial.Text = pd.Material; 
-            txtSize.Text = pd.Size; 
-            txtFunctionalities.Text = pd.Functionality; 
-            txtDescription.Text = pd.Description;
-            btnPost.Text = "Update product";
-            ddCategory.SelectedItem = pd.Category;
-            ddArea.SelectedItem = pd.Area;
+            this.acc = acc;
+            edit = true;
+            Initialize();
+        }
+
+        public FSellDetail(Product pd, Account acc, bool check)
+        {
+            InitializeComponent();
+            gbBillStatus.Visible = true;
+            this.pd = pd;
+            this.acc = acc;
+            Initialize();
+            GetImageProduct();
         }
 
         public FSellDetail(Account acc)
@@ -62,6 +57,32 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             containerMenu.Visible = false;
             this.acc = acc;
+        }
+
+        public void Initialize()
+        {
+            containerMenu.Visible = false;
+            selectedCategory = pd.Category;
+            txtProductTitle.Text = pd.Name;
+            txtType.Text = pd.Type;
+            txtBuyPrice.Text = pd.OriginalPrice.ToString();
+            txtSellPrice.Text = pd.SalePrice.ToString();
+            selectedArea = pd.Area;
+            txtCondition.Text = pd.Condition;
+            txtStatus.Text = pd.Status;
+            txtSupportPolicy.Text = pd.SupportPolicy;
+            txtBrand.Text = pd.Brand;
+            txtOrigin.Text = pd.Origin;
+            txtMaterial.Text = pd.Material;
+            txtSize.Text = pd.Size;
+            txtFunctionalities.Text = pd.Functionality;
+            txtDescription.Text = pd.Description;
+            btnPost.Text = "Update product";
+            ddCategory.SelectedItem = pd.Category;
+            ddArea.SelectedItem = pd.Area;
+            lblBuyerName.Text = accountDAO.Retrieve(pd.BuyerID).Name;
+            lblPhone.Text = pd.ContactPhone;
+            txtAddress.Text = pd.DeliveryAddress;
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
@@ -86,8 +107,6 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-
-
         private double StringToDouble(string str)
         {
             double decimalResult;
@@ -97,16 +116,6 @@ namespace Window_Project_v5._1.Forms
             }
             MessageBox.Show("The value of price is invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return -1;
-        }
-
-        private void btnPost_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void txtSize_TextChanged(object sender, EventArgs e)
@@ -373,6 +382,68 @@ namespace Window_Project_v5._1.Forms
             FBuy f = new FBuy(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void GetImageProduct()
+        {
+            DataTable ImageTable = imageDAO.GetImageProduct(pd.Id);
+            int pictureBoxIndex = 0;
+            foreach (DataRow row in ImageTable.Rows)
+            {
+                if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
+                    break;
+
+                byte[] imageData = (byte[])row["Image"]; // Access the "Image" column
+
+                // Load image into PictureBox
+                MemoryStream ms = new MemoryStream(imageData);
+
+                // Assign pictureBox variable based on index
+                Guna2ImageButton pictureBox = null;
+
+                switch (pictureBoxIndex)
+                {
+
+                    case 0:
+                        pictureBox = btnImage1;
+                        break;
+                    case 1:
+                        pictureBox = btnImage2;
+                        break;
+                    case 2:
+                        pictureBox = btnImage3;
+                        break;
+                    case 3:
+                        pictureBox = btnImage4;
+                        break;
+
+                }
+
+                // Assign image to PictureBox and make it visible
+                pictureBox.Image = Image.FromStream(ms);
+                pictureBox.Visible = true;
+
+                pictureBoxIndex++;
+            }
+            // Hide any remaining PictureBoxes
+            for (int i = pictureBoxIndex; i < 4; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        btnImage1.Visible = false;
+                        break;
+                    case 1:
+                        btnImage2.Visible = false;
+                        break;
+                    case 2:
+                        btnImage3.Visible = false;
+                        break;
+                    case 3:
+                        btnImage4.Visible = false;
+                        break;
+                }
+            }
         }
     }
 }

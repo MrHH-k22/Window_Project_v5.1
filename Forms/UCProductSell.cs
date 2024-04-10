@@ -19,6 +19,7 @@ namespace Window_Project_v5._1.Forms
         private Account account = new Account();
         private AccountDAO accountDAO = new AccountDAO();
         private ProductDAO productDAO = new ProductDAO();
+        private bool completed = false;
         private Product product;
 
         public UCProductSell()
@@ -31,33 +32,15 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             this.product = pd;
             account = acc;
-            lblPrice.Text = pd.SalePrice.ToString("N0") + " VND";
-            lblProductCondition.Text = pd.GetBillStatus();
-            lblProductCondition.Visible = false;
-            lblProductName.Text = pd.Name;
-
-
-            byte[] imageData = imageDAO.GetImageProductData(pd.Id);
-
-            if (imageData != null && imageData.Length > 0)
-            {
-                using (MemoryStream ms = new MemoryStream(imageData))
-                {
-                    // Attempt to create Image object
-                    try
-                    {
-                        pbProduct.Image = Image.FromStream(ms);
-                    }
-                    catch (ArgumentException ex)
-                    {
-                        // Handle ArgumentException
-                        Console.WriteLine("Failed to create Image object: " + ex.Message);
-                    }
-                }
-            }
         }
 
-
+        public UCProductSell(Product pd, Account acc, bool check)
+        {
+            InitializeComponent();
+            this.product = pd;
+            account = acc;
+            completed = check;
+        }
 
         private void pbProduct_Click(object sender, EventArgs e)
         {
@@ -129,8 +112,34 @@ namespace Window_Project_v5._1.Forms
                 btnFunction.Text = "Display product";
                 btnFunction.Enabled = true;
             }
+
+            lblPrice.Text = product.SalePrice.ToString("N0") + " VND";
+            lblProductCondition.Text = product.GetBillStatus();
+            lblProductCondition.Visible = false;
+            lblProductName.Text = product.Name;
+            convertByte(pbProduct, imageDAO.GetImageProductData(product.Id));
         }
 
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
+        }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -151,8 +160,16 @@ namespace Window_Project_v5._1.Forms
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            FSellDetail trackDetail = new FSellDetail(product);
-            trackDetail.Show();
+            if (completed)
+            {
+                FSellDetail trackDetail = new FSellDetail(product, account, true);
+                trackDetail.Show();
+
+            } else
+            {
+                FSellDetail trackDetail = new FSellDetail(product, account);
+                trackDetail.Show();
+            }
         }
 
         private void btnFunction_Click(object sender, EventArgs e)

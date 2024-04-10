@@ -32,10 +32,8 @@ namespace Window_Project_v5._1
 
         public List<Product> loadListWithAccountID(int accountID)
         {
-
             List<Product> list = new List<Product>();
-            DataTable dt = new DataTable();
-            dt = dbc.Load(string.Format("SELECT * FROM Cart WHERE BuyerID = '{0}'", accountID));
+            DataTable dt = dbc.Load(string.Format("SELECT * FROM Cart WHERE BuyerID = '{0}'", accountID));
             foreach (DataRow dr in dt.Rows)
             {
                 int id = Convert.ToInt32(dr["productID"]);

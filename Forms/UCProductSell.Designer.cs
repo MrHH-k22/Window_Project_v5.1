@@ -231,7 +231,7 @@
         public Bunifu.UI.WinForms.BunifuLabel lblPrice;
         public Bunifu.UI.WinForms.BunifuLabel lblProductCondition;
         public Guna.UI2.WinForms.Guna2Button btnFunction;
-        private Guna.UI2.WinForms.Guna2Button btnCancel;
-        private Guna.UI2.WinForms.Guna2Button btnDetail;
+        public Guna.UI2.WinForms.Guna2Button btnCancel;
+        public Guna.UI2.WinForms.Guna2Button btnDetail;
     }
 }
