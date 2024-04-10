@@ -179,11 +179,6 @@ namespace Window_Project_v5._1.Forms
                 product.CompleteTime = DateTime.Now;
                 productDAO.UpdateOrderCondition(product);
             }
-            else if (product.OrderCondition == (int)ordercondition.Cancelled)
-            {
-                product.OrderCondition = (int)ordercondition.Displaying;
-                productDAO.Update(product);
-            }
             else if (product.OrderCondition == (int)ordercondition.hidden)
             {
                 product.OrderCondition = (int)ordercondition.Displaying;
