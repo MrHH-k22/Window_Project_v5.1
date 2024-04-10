@@ -80,5 +80,10 @@ namespace Window_Project_v5._1.Forms
         {
 
         }
+
+        private void lblProductName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

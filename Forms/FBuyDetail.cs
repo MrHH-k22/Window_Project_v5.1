@@ -227,6 +227,14 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
+        private void SetRichTextBoxHeight(RichTextBox richTextBox)
+        {
+            int lineCount = richTextBox.GetLineFromCharIndex(richTextBox.TextLength) + 1;
+            int lineHeight = richTextBox.Font.Height;
+            int newHeight = lineHeight * lineCount + 10;
+            richTextBox.Height = newHeight;
+        }
+
         private void FBuyDetail_Load(object sender, EventArgs e)
         {
             product.ViewCount++;
@@ -238,6 +246,12 @@ namespace Window_Project_v5._1.Forms
             txtDescription.Text = product.Description.ToString();
             txtSupportPolicy.Text = product.SupportPolicy.ToString();
             txtFunctionalities.Text = product.Functionality.ToString();
+            SetRichTextBoxHeight(txtStatus);
+            panelStatus.Height = txtStatus.Height;
+            SetRichTextBoxHeight(txtDescription);
+            panelDescription.Height = txtDescription.Height;
+            SetRichTextBoxHeight(txtFunctionalities);
+            panelFunctionality.Height = txtFunctionalities.Height + 30;
             lblArea.Text = "Area: " + product.Area;
             lblOrigin.Text = "Origin: " + product.Origin;
             lblMaterial.Text = "Material: " + product.Material;
@@ -473,6 +487,11 @@ namespace Window_Project_v5._1.Forms
         }
 
         private void guna2Separator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
