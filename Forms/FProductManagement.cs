@@ -27,7 +27,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = accountDAO.Retrieve(acc.Id);
+            account = acc;
         }
 
         private void FProductManagement_Load(object sender, EventArgs e)
@@ -62,6 +62,10 @@ namespace Window_Project_v5._1.Forms
                 }
                 convertByte(pBSellerAvatar, account.Avatar);
             }
+            //Menu
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
         }
 
         private void convertByte(PictureBox pic, byte[] imageData)

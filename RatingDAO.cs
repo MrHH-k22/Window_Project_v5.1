@@ -23,5 +23,27 @@ namespace Window_Project_v5._1
             DataTable table = dbconnection.Load(sqlStr);
             return table;
         }
+        public List<Rating> LoadList(Account acc)
+        {
+            List<Rating> list = new List<Rating>();
+            DataTable dt = load(acc);
+            foreach(DataRow dr in dt.Rows)
+            {
+                Rating rt = GetRatingFromDataRow(dr);
+                if(rt != null)
+                {
+                    list.Add(rt);
+                }
+            }
+            return list;
+        }
+        public Rating GetRatingFromDataRow(DataRow dr)
+        {
+            Rating rt = new Rating();
+            rt.Comment = dr["Comment"].ToString();
+            rt.Star = Convert.ToSingle(dr["Star"]);
+            return rt;
+
+        }
     }
 }

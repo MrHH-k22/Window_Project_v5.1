@@ -83,6 +83,10 @@ namespace Window_Project_v5._1.Forms
                 cpProgress.ValueByTransition = (int)((float)completed / allProducts.Count);
             }
             */
+            //Menu
+            lblMenuAccountName.Text = acc.Name;
+            ratingMenuAccount.Value = acc.AvgRating;
+            convertByte(pbMenuAvartar, acc.Avatar);
         }
 
 

@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FBuy : Form
     {
         private ProductDAO productDAO = new ProductDAO();
+        private AccountDAO accountDAO = new AccountDAO();
         private Account account = new Account();
         private bool save;
 
@@ -50,8 +51,10 @@ namespace Window_Project_v5._1.Forms
                     flpProduct.Controls.Add(uc);
                 }
             }
-            lblAccountName.Text = account.Name;
-            convertByte(pbAvatar, account.Avatar);
+            //Menu
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AverageStar();
+            convertByte(pbMenuAvatar, account.Avatar);
         }
 
         private void convertByte(PictureBox pic, byte[] imageData)

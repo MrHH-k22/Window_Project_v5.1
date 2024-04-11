@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -29,7 +30,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = accountDAO.Retrieve(acc.Id);
+            account = acc;
         }
 
         private void FCart_Load(object sender, EventArgs e)
@@ -50,6 +51,31 @@ namespace Window_Project_v5._1.Forms
             }
             lblTotalMoney.Text = total.ToString("N0") + " VND";
             lblNoOfItems.Text = products.Count.ToString();
+            //Menu
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
+        }
+
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void SelectProduct()

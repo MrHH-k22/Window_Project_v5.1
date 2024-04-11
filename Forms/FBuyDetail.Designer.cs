@@ -47,6 +47,8 @@
             this.panelFunctionality = new Guna.UI2.WinForms.Guna2Panel();
             this.txtFunctionalities = new System.Windows.Forms.RichTextBox();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.label8 = new System.Windows.Forms.Label();
             this.lblMaterial = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
@@ -57,6 +59,7 @@
             this.panelStatus = new Guna.UI2.WinForms.Guna2Panel();
             this.txtStatus = new System.Windows.Forms.RichTextBox();
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblPostingTime = new System.Windows.Forms.Label();
@@ -97,13 +100,10 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblAccountName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblMenuAccountName = new System.Windows.Forms.Label();
+            this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -124,7 +124,7 @@
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuTransition1
@@ -393,6 +393,22 @@
             this.panel2.Size = new System.Drawing.Size(823, 239);
             this.panel2.TabIndex = 2;
             // 
+            // guna2Separator5
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator5.Location = new System.Drawing.Point(40, 177);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator5.TabIndex = 158;
+            // 
+            // guna2Separator3
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator3.Location = new System.Drawing.Point(40, 13);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator3.TabIndex = 154;
+            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
@@ -529,6 +545,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(823, 328);
             this.panel1.TabIndex = 0;
+            // 
+            // guna2Separator2
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator2.Location = new System.Drawing.Point(40, 259);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator2.TabIndex = 153;
             // 
             // pictureBox3
             // 
@@ -1198,9 +1222,9 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.Controls.Add(this.lblAccountName);
-            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
+            this.guna2Panel8.Controls.Add(this.pbMenuAvatar);
+            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
             this.bunifuTransition1.SetDecoration(this.guna2Panel8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
@@ -1209,42 +1233,42 @@
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
             // 
-            // lblAccountName
+            // lblMenuAccountName
             // 
-            this.lblAccountName.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lblAccountName, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
-            this.lblAccountName.TabIndex = 3;
-            this.lblAccountName.Text = "Account name";
+            this.lblMenuAccountName.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lblMenuAccountName, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblMenuAccountName.Name = "lblMenuAccountName";
+            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblMenuAccountName.TabIndex = 3;
+            this.lblMenuAccountName.Text = "Account name";
             // 
-            // guna2CirclePictureBox1
+            // pbMenuAvatar
             // 
-            this.bunifuTransition1.SetDecoration(this.guna2CirclePictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.bunifuTransition1.SetDecoration(this.pbMenuAvatar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.pbMenuAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbMenuAvatar.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.pbMenuAvatar.ImageRotate = 0F;
+            this.pbMenuAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbMenuAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbMenuAvatar.Name = "pbMenuAvatar";
+            this.pbMenuAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbMenuAvatar.Size = new System.Drawing.Size(91, 90);
+            this.pbMenuAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenuAvatar.TabIndex = 0;
+            this.pbMenuAvatar.TabStop = false;
             // 
-            // ratingAccount
+            // ratingMenuAccount
             // 
-            this.bunifuTransition1.SetDecoration(this.ratingAccount, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingAccount.Name = "ratingAccount";
-            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingAccount.TabIndex = 2;
+            this.bunifuTransition1.SetDecoration(this.ratingMenuAccount, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 2;
             // 
             // bunifuFormDock1
             // 
@@ -1286,30 +1310,6 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // guna2Separator2
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator2.Location = new System.Drawing.Point(40, 259);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator2.TabIndex = 153;
-            // 
-            // guna2Separator3
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator3.Location = new System.Drawing.Point(40, 13);
-            this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator3.TabIndex = 154;
-            // 
-            // guna2Separator5
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator5.Location = new System.Drawing.Point(40, 177);
-            this.guna2Separator5.Name = "guna2Separator5";
-            this.guna2Separator5.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator5.TabIndex = 158;
-            // 
             // FBuyDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1350,7 +1350,7 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1393,9 +1393,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private System.Windows.Forms.Label lblAccountName;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
+        private System.Windows.Forms.Label lblMenuAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private Guna.UI2.WinForms.Guna2Panel panelMid;
         private Guna.UI2.WinForms.Guna2Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;

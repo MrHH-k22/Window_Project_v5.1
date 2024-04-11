@@ -84,9 +84,9 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblAccountName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblMenuAccountName = new System.Windows.Forms.Label();
+            this.pbMenuAvartar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -112,7 +112,7 @@
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvartar)).BeginInit();
             this.SuspendLayout();
             // 
             // containerTop
@@ -264,7 +264,7 @@
             this.panel8.Controls.Add(this.lblHiddenNo);
             this.panel8.Controls.Add(this.lblHidden);
             this.panel8.Location = new System.Drawing.Point(747, 304);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(545, 121);
             this.panel8.TabIndex = 14;
@@ -273,7 +273,7 @@
             // 
             this.pictureBox8.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox8.Location = new System.Drawing.Point(413, 32);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(89, 78);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -311,7 +311,7 @@
             this.panel7.Controls.Add(this.lblCancelledNo);
             this.panel7.Controls.Add(this.lblCancelled);
             this.panel7.Location = new System.Drawing.Point(137, 458);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(545, 121);
             this.panel7.TabIndex = 12;
@@ -320,7 +320,7 @@
             // 
             this.pictureBox7.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox7.Location = new System.Drawing.Point(423, 32);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(89, 78);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -358,7 +358,7 @@
             this.panel6.Controls.Add(this.lblCompletedNo);
             this.panel6.Controls.Add(this.lblCompleted);
             this.panel6.Location = new System.Drawing.Point(137, 304);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(545, 121);
             this.panel6.TabIndex = 13;
@@ -367,7 +367,7 @@
             // 
             this.pictureBox6.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox6.Location = new System.Drawing.Point(413, 31);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(89, 78);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -405,7 +405,7 @@
             this.panel4.Controls.Add(this.lblWaitForConfirmationNo);
             this.panel4.Controls.Add(this.lblConfirmination);
             this.panel4.Location = new System.Drawing.Point(747, 156);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(545, 121);
             this.panel4.TabIndex = 9;
@@ -414,7 +414,7 @@
             // 
             this.pictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.hand;
             this.pictureBox4.Location = new System.Drawing.Point(413, 21);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(89, 78);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -452,7 +452,7 @@
             this.panel3.Controls.Add(this.lblDisplayingNo);
             this.panel3.Controls.Add(this.lblDisplaying);
             this.panel3.Location = new System.Drawing.Point(137, 156);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(545, 121);
             this.panel3.TabIndex = 10;
@@ -461,7 +461,7 @@
             // 
             this.pictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.real_time;
             this.pictureBox3.Location = new System.Drawing.Point(423, 21);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(89, 78);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -499,7 +499,7 @@
             this.panel2.Controls.Add(this.lblCustomersNo);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(747, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(545, 121);
             this.panel2.TabIndex = 11;
@@ -508,7 +508,7 @@
             // 
             this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.cart1;
             this.pictureBox2.Location = new System.Drawing.Point(413, 21);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(89, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -546,7 +546,7 @@
             this.panel1.Controls.Add(this.lblOrdersNo);
             this.panel1.Controls.Add(this.lblOrder);
             this.panel1.Location = new System.Drawing.Point(137, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 121);
             this.panel1.TabIndex = 7;
@@ -555,7 +555,7 @@
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox1.Location = new System.Drawing.Point(423, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -923,9 +923,9 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.Controls.Add(this.lblAccountName);
-            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
+            this.guna2Panel8.Controls.Add(this.pbMenuAvartar);
+            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -933,39 +933,39 @@
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
             // 
-            // lblAccountName
+            // lblMenuAccountName
             // 
-            this.lblAccountName.AutoSize = true;
-            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
-            this.lblAccountName.TabIndex = 3;
-            this.lblAccountName.Text = "Account name";
+            this.lblMenuAccountName.AutoSize = true;
+            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblMenuAccountName.Name = "lblMenuAccountName";
+            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblMenuAccountName.TabIndex = 3;
+            this.lblMenuAccountName.Text = "Account name";
             // 
-            // guna2CirclePictureBox1
+            // pbMenuAvartar
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.pbMenuAvartar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbMenuAvartar.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.pbMenuAvartar.ImageRotate = 0F;
+            this.pbMenuAvartar.Location = new System.Drawing.Point(0, 0);
+            this.pbMenuAvartar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbMenuAvartar.Name = "pbMenuAvartar";
+            this.pbMenuAvartar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbMenuAvartar.Size = new System.Drawing.Size(91, 90);
+            this.pbMenuAvartar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenuAvartar.TabIndex = 0;
+            this.pbMenuAvartar.TabStop = false;
             // 
-            // ratingAccount
+            // ratingMenuAccount
             // 
-            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingAccount.Name = "ratingAccount";
-            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingAccount.TabIndex = 2;
+            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 2;
             // 
             // FOrderAnalysis
             // 
@@ -1018,7 +1018,7 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvartar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1080,8 +1080,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private System.Windows.Forms.Label lblAccountName;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
+        private System.Windows.Forms.Label lblMenuAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvartar;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
     }
 }

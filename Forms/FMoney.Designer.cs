@@ -81,9 +81,9 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblAccountName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblMenuAccountName = new System.Windows.Forms.Label();
+            this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.gbInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMoneyTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
@@ -99,7 +99,7 @@
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // gbInfo
@@ -140,7 +140,7 @@
             // 
             this.pbMoneyTotal.Image = global::Window_Project_v5._1.Properties.Resources.money;
             this.pbMoneyTotal.Location = new System.Drawing.Point(733, 15);
-            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4);
             this.pbMoneyTotal.Name = "pbMoneyTotal";
             this.pbMoneyTotal.Size = new System.Drawing.Size(133, 79);
             this.pbMoneyTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,9 +197,9 @@
             this.gbFunction.LabelIndent = 10;
             this.gbFunction.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbFunction.Location = new System.Drawing.Point(7, 18);
-            this.gbFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFunction.Margin = new System.Windows.Forms.Padding(4);
             this.gbFunction.Name = "gbFunction";
-            this.gbFunction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFunction.Padding = new System.Windows.Forms.Padding(4);
             this.gbFunction.Size = new System.Drawing.Size(1461, 480);
             this.gbFunction.TabIndex = 3;
             this.gbFunction.TabStop = false;
@@ -572,7 +572,7 @@
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.password;
             this.pictureBox1.Location = new System.Drawing.Point(237, 171);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -608,7 +608,7 @@
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
             this.txtPassword.Location = new System.Drawing.Point(393, 199);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
@@ -634,7 +634,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnIdleState = stateProperties4;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(5);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Confirm your password";
@@ -644,7 +644,7 @@
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(332, 57);
+            this.txtPassword.Size = new System.Drawing.Size(332, 49);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -703,7 +703,7 @@
             this.btnWithdraw.IdleIconRightImage = null;
             this.btnWithdraw.IndicateFocus = false;
             this.btnWithdraw.Location = new System.Drawing.Point(525, 297);
-            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(4);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWithdraw.OnDisabledState.BorderRadius = 25;
@@ -794,7 +794,7 @@
             this.btnRecharge.IdleIconRightImage = null;
             this.btnRecharge.IndicateFocus = false;
             this.btnRecharge.Location = new System.Drawing.Point(237, 297);
-            this.btnRecharge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecharge.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecharge.Name = "btnRecharge";
             this.btnRecharge.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecharge.OnDisabledState.BorderRadius = 25;
@@ -866,7 +866,7 @@
             this.txtMoney.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMoney.Lines = new string[0];
             this.txtMoney.Location = new System.Drawing.Point(393, 75);
-            this.txtMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoney.MaxLength = 32767;
             this.txtMoney.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMoney.Modified = false;
@@ -892,7 +892,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMoney.OnIdleState = stateProperties8;
-            this.txtMoney.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMoney.Padding = new System.Windows.Forms.Padding(5);
             this.txtMoney.PasswordChar = '\0';
             this.txtMoney.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMoney.PlaceholderText = "The amount of money";
@@ -902,7 +902,7 @@
             this.txtMoney.SelectionLength = 0;
             this.txtMoney.SelectionStart = 0;
             this.txtMoney.ShortcutsEnabled = true;
-            this.txtMoney.Size = new System.Drawing.Size(332, 57);
+            this.txtMoney.Size = new System.Drawing.Size(332, 49);
             this.txtMoney.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMoney.TabIndex = 1;
             this.txtMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -917,7 +917,7 @@
             // 
             this.pbMoneyAmount.Image = global::Window_Project_v5._1.Properties.Resources.money2;
             this.pbMoneyAmount.Location = new System.Drawing.Point(237, 52);
-            this.pbMoneyAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbMoneyAmount.Margin = new System.Windows.Forms.Padding(4);
             this.pbMoneyAmount.Name = "pbMoneyAmount";
             this.pbMoneyAmount.Size = new System.Drawing.Size(107, 98);
             this.pbMoneyAmount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -929,7 +929,7 @@
             this.panelTop.Controls.Add(this.gbInfo);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1500, 137);
             this.panelTop.TabIndex = 4;
@@ -939,7 +939,7 @@
             this.panelBody.Controls.Add(this.gbFunction);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 137);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(4);
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1500, 573);
             this.panelBody.TabIndex = 5;
@@ -1319,9 +1319,9 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.Controls.Add(this.lblAccountName);
-            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
+            this.guna2Panel8.Controls.Add(this.pbMenuAvatar);
+            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1329,39 +1329,39 @@
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
             // 
-            // lblAccountName
+            // lblMenuAccountName
             // 
-            this.lblAccountName.AutoSize = true;
-            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
-            this.lblAccountName.TabIndex = 3;
-            this.lblAccountName.Text = "Account name";
+            this.lblMenuAccountName.AutoSize = true;
+            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblMenuAccountName.Name = "lblMenuAccountName";
+            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblMenuAccountName.TabIndex = 3;
+            this.lblMenuAccountName.Text = "Account name";
             // 
-            // guna2CirclePictureBox1
+            // pbMenuAvatar
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.pbMenuAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbMenuAvatar.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.pbMenuAvatar.ImageRotate = 0F;
+            this.pbMenuAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbMenuAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbMenuAvatar.Name = "pbMenuAvatar";
+            this.pbMenuAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbMenuAvatar.Size = new System.Drawing.Size(91, 90);
+            this.pbMenuAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenuAvatar.TabIndex = 0;
+            this.pbMenuAvatar.TabStop = false;
             // 
-            // ratingAccount
+            // ratingMenuAccount
             // 
-            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingAccount.Name = "ratingAccount";
-            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingAccount.TabIndex = 2;
+            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 2;
             // 
             // FMoney
             // 
@@ -1396,7 +1396,7 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1441,8 +1441,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private System.Windows.Forms.Label lblAccountName;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
+        private System.Windows.Forms.Label lblMenuAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
     }
 }

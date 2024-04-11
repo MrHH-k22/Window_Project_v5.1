@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Window_Project_v5._1.Forms;
@@ -11,6 +12,7 @@ namespace Window_Project_v5._1
     public class Account
     {
         private AccountDAO accountDAO = new AccountDAO();
+        private RatingDAO ratingDAO = new RatingDAO();
         private int id;
         private string email;
         private string password;
@@ -20,10 +22,11 @@ namespace Window_Project_v5._1
         private string address;
         private double money;
         private byte[] avatar;
-        //private DataTable rating = new DataTable(); 
+        private List<Rating> ratingList = new List<Rating>(); 
         private List<int> cancelledList = new List<int>();
         private List<int> savedList = new List<int>();
         private List<int> cartList = new List<int>();
+        private float avgRating;
 
         public Account()
         {
@@ -32,18 +35,17 @@ namespace Window_Project_v5._1
         public Account(int id)
         {
             Account acc = accountDAO.Retrieve(id);
-            this.id = acc.id;
-            this.email = acc.email;
-            this.password = acc.password;
-            this.name = acc.name;
-            this.phone = acc.phone;
-            this.birthday = acc.birthday;
-            this.address = acc.address;
-            this.money = acc.money;
-            this.avatar = acc.avatar;
-            this.cancelledList = acc.cancelledList;
-            this.savedList = acc.savedList;
-            this.cartList = acc.cartList;
+            if (acc != null)
+            {
+                PropertyInfo[] properties = typeof(Account).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    PropertyInfo thisProperty = typeof(Account).GetProperty(property.Name);
+                    object value = property.GetValue(acc);
+                    thisProperty.SetValue(this, value);
+                }
+                ratingList = ratingDAO.LoadList(acc);
+            }
         }
 
         public Account(int id, string email, string password, string name, string phone, DateTime birthday, string address, double money, byte[] avatar, List<int> cancelledList)
@@ -86,7 +88,22 @@ namespace Window_Project_v5._1
             this.password = password;
         }
 
-        
+        public float AverageStar()
+        {
+            float avg = 0;
+            if(this.ratingList.Count  > 0)
+            {
+                foreach (Rating rt in this.ratingList)
+                {
+                    avg += rt.Star;
+                }
+                float rs = avg / (float)this.ratingList.Count;
+                rs = rs % 1 > 0.5f ? ((int)rs + 0.5f) : rs;
+                avgRating = rs;
+                return rs;
+            }
+            return 0;  
+        }
 
         public int Id { get => id; set => id = value; }
         public string Email { get => email; set => email = value; }
@@ -100,7 +117,7 @@ namespace Window_Project_v5._1
         public List<int> CancelledList { get => cancelledList; set => cancelledList = value; }
         public List<int> SavedList { get => savedList; set => savedList = value; }
         public List<int> CartList { get => cartList; set => cartList = value; }
-
-        
+        public List<Rating> RatingList { get => ratingList; set => ratingList = value; }
+        public float AvgRating { get => avgRating; set => avgRating = value; }
     }
 }
