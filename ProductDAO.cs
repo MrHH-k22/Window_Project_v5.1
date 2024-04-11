@@ -76,8 +76,8 @@ namespace Window_Project_v5._1
         // Buyer purchases the product
         public void Update(Product product)
         {
-            string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}', ContactPhone = '{2}', DeliveryAddress = '{3}'  WHERE ID = '{4}'",
-                                             product.BuyerID, product.OrderCondition, product.ContactPhone, product.DeliveryAddress, product.Id);
+            string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}', ContactPhone = '{2}', DeliveryAddress = '{3}', ViewCount = '{4}'  WHERE ID = '{5}'",
+                                             product.BuyerID, product.OrderCondition, product.ContactPhone, product.DeliveryAddress,product.ViewCount, product.Id);
             dbc.Execute(sqlStr);
         }
 

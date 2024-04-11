@@ -122,7 +122,7 @@
             this.lblSellerName.Location = new System.Drawing.Point(109, 55);
             this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSellerName.Name = "lblSellerName";
-            this.lblSellerName.Size = new System.Drawing.Size(465, 30);
+            this.lblSellerName.Size = new System.Drawing.Size(551, 30);
             this.lblSellerName.TabIndex = 119;
             this.lblSellerName.Text = "Seller Name";
             // 

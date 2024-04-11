@@ -39,7 +39,6 @@
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMid = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.panelDescription = new Guna.UI2.WinForms.Guna2Panel();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -47,6 +46,8 @@
             this.panelFunctionality = new Guna.UI2.WinForms.Guna2Panel();
             this.txtFunctionalities = new System.Windows.Forms.RichTextBox();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.label8 = new System.Windows.Forms.Label();
             this.lblMaterial = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             this.panelStatus = new Guna.UI2.WinForms.Guna2Panel();
             this.txtStatus = new System.Windows.Forms.RichTextBox();
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblPostingTime = new System.Windows.Forms.Label();
@@ -101,9 +103,6 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -284,7 +283,6 @@
             // panelMid
             // 
             this.panelMid.AutoScroll = true;
-            this.panelMid.Controls.Add(this.guna2Separator1);
             this.panelMid.Controls.Add(this.panelDescription);
             this.panelMid.Controls.Add(this.panel3);
             this.panelMid.Controls.Add(this.panelFunctionality);
@@ -297,14 +295,6 @@
             this.panelMid.Name = "panelMid";
             this.panelMid.Size = new System.Drawing.Size(844, 710);
             this.panelMid.TabIndex = 8;
-            // 
-            // guna2Separator1
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(763, 10);
-            this.guna2Separator1.TabIndex = 153;
             // 
             // panelDescription
             // 
@@ -392,6 +382,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(823, 239);
             this.panel2.TabIndex = 2;
+            // 
+            // guna2Separator5
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator5.Location = new System.Drawing.Point(40, 177);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator5.TabIndex = 158;
+            // 
+            // guna2Separator3
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator3.Location = new System.Drawing.Point(40, 13);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator3.TabIndex = 154;
             // 
             // label8
             // 
@@ -529,6 +535,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(823, 328);
             this.panel1.TabIndex = 0;
+            // 
+            // guna2Separator2
+            // 
+            this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.guna2Separator2.Location = new System.Drawing.Point(40, 259);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(767, 10);
+            this.guna2Separator2.TabIndex = 153;
             // 
             // pictureBox3
             // 
@@ -1286,30 +1300,6 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // guna2Separator2
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator2.Location = new System.Drawing.Point(40, 259);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator2.TabIndex = 153;
-            // 
-            // guna2Separator3
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator3.Location = new System.Drawing.Point(40, 13);
-            this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator3.TabIndex = 154;
-            // 
-            // guna2Separator5
-            // 
-            this.bunifuTransition1.SetDecoration(this.guna2Separator5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Separator5.Location = new System.Drawing.Point(40, 177);
-            this.guna2Separator5.Name = "guna2Separator5";
-            this.guna2Separator5.Size = new System.Drawing.Size(767, 10);
-            this.guna2Separator5.TabIndex = 158;
-            // 
             // FBuyDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1425,7 +1415,6 @@
         private System.Windows.Forms.RichTextBox txtStatus;
         private System.Windows.Forms.RichTextBox txtFunctionalities;
         private System.Windows.Forms.RichTextBox txtDescription;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator5;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;

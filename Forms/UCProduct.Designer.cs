@@ -175,7 +175,7 @@
             // 
             this.lblProductName.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblProductName.Location = new System.Drawing.Point(0, 216);
             this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -202,7 +202,7 @@
             this.pbProductImage.Location = new System.Drawing.Point(6, 6);
             this.pbProductImage.Name = "pbProductImage";
             this.pbProductImage.Size = new System.Drawing.Size(204, 204);
-            this.pbProductImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProductImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbProductImage.TabIndex = 0;
             this.pbProductImage.TabStop = false;
             // 

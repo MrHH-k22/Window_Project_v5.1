@@ -37,6 +37,8 @@ namespace Window_Project_v5._1.Forms
             containerMenu.Visible = false;
             account = accountDAO.Retrieve(acc.Id);
             product = pd;
+            product.ViewCount++;
+            productDAO.Update(product);
         }
 
         private void convertByte(PictureBox pic, byte[] imageData)
