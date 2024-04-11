@@ -359,6 +359,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
     <Compile Include="RatingDAO.cs" />
+    <Compile Include="Recommend.cs" />
+    <Compile Include="RecommendDAO.cs" />
     <EmbeddedResource Include="FForgetPassword.resx">
       <DependentUpon>FForgetPassword.cs</DependentUpon>
     </EmbeddedResource>

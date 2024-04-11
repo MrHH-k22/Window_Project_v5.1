@@ -20,7 +20,7 @@ namespace Window_Project_v5._1
         private string address;
         private double money;
         private byte[] avatar;
-        //private DataTable rating = new DataTable(); 
+        private List<Recommend> recommendList = new List<Recommend>();
         private List<int> cancelledList = new List<int>();
         private List<int> savedList = new List<int>();
         private List<int> cartList = new List<int>();

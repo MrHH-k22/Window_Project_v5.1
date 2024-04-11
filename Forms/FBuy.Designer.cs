@@ -67,15 +67,23 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.pbAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
+            this.flpProduct.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.containerMenu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // containerTop
@@ -207,6 +215,9 @@
             // flpProduct
             // 
             this.flpProduct.AutoScroll = true;
+            this.flpProduct.Controls.Add(this.guna2Panel1);
+            this.flpProduct.Controls.Add(this.flowLayoutPanel1);
+            this.flpProduct.Controls.Add(this.guna2Panel2);
             this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpProduct.Location = new System.Drawing.Point(188, 0);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -821,6 +832,58 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1312, 42);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(16, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(346, 30);
+            this.label2.TabIndex = 96;
+            this.label2.Text = "Recommend for you";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 42);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1312, 240);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.label5);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 282);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1312, 34);
+            this.guna2Panel2.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label5.Location = new System.Drawing.Point(16, 1);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(346, 30);
+            this.label5.TabIndex = 97;
+            this.label5.Text = "All Product";
+            // 
             // FBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -840,6 +903,7 @@
             this.containerTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBody.ResumeLayout(false);
+            this.flpProduct.ResumeLayout(false);
             this.panelLeft.ResumeLayout(false);
             this.containerMenu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
@@ -849,6 +913,8 @@
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -893,5 +959,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        public System.Windows.Forms.Label label5;
     }
 }
