@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellDetail));
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.gbBillStatus = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.lblBuyerName = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -56,7 +58,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMiddle = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblCompleteTime = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblTime = new System.Windows.Forms.Label();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
@@ -95,8 +96,7 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.lblBuyerName = new System.Windows.Forms.Label();
+            this.lblCompleteTime = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
             this.gbBillStatus.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -132,7 +132,9 @@
             this.gbBillStatus.BorderColor = System.Drawing.Color.LightGray;
             this.gbBillStatus.BorderRadius = 1;
             this.gbBillStatus.BorderThickness = 1;
+            this.gbBillStatus.Controls.Add(this.lblCompleteTime);
             this.gbBillStatus.Controls.Add(this.lblBuyerName);
+            this.gbBillStatus.Controls.Add(this.lblTime);
             this.gbBillStatus.Controls.Add(this.lblPhone);
             this.gbBillStatus.Controls.Add(this.txtAddress);
             this.gbBillStatus.Controls.Add(this.label11);
@@ -148,6 +150,30 @@
             this.gbBillStatus.TabIndex = 110;
             this.gbBillStatus.TabStop = false;
             // 
+            // lblBuyerName
+            // 
+            this.lblBuyerName.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuyerName.ForeColor = System.Drawing.Color.Black;
+            this.lblBuyerName.Location = new System.Drawing.Point(94, 30);
+            this.lblBuyerName.Name = "lblBuyerName";
+            this.lblBuyerName.Size = new System.Drawing.Size(213, 62);
+            this.lblBuyerName.TabIndex = 118;
+            this.lblBuyerName.Text = "Buyer Name";
+            this.lblBuyerName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.ForeColor = System.Drawing.Color.Black;
+            this.lblPhone.Location = new System.Drawing.Point(177, 92);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(130, 28);
+            this.lblPhone.TabIndex = 117;
+            this.lblPhone.Text = "0123456789";
+            this.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // txtAddress
             // 
             this.txtAddress.AutoScroll = true;
@@ -162,7 +188,7 @@
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtAddress.Location = new System.Drawing.Point(11, 235);
+            this.txtAddress.Location = new System.Drawing.Point(14, 242);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -180,7 +206,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label11.Location = new System.Drawing.Point(15, 204);
+            this.label11.Location = new System.Drawing.Point(18, 211);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(158, 28);
             this.label11.TabIndex = 114;
@@ -192,7 +218,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label10.Location = new System.Drawing.Point(15, 131);
+            this.label10.Location = new System.Drawing.Point(15, 92);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(140, 28);
             this.label10.TabIndex = 113;
@@ -204,7 +230,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label9.Location = new System.Drawing.Point(15, 69);
+            this.label9.Location = new System.Drawing.Point(15, 30);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 28);
             this.label9.TabIndex = 112;
@@ -585,8 +611,6 @@
             // 
             // panelMiddle
             // 
-            this.panelMiddle.Controls.Add(this.lblCompleteTime);
-            this.panelMiddle.Controls.Add(this.lblTime);
             this.panelMiddle.Controls.Add(this.guna2Separator4);
             this.panelMiddle.Controls.Add(this.label1);
             this.panelMiddle.Controls.Add(this.guna2Separator1);
@@ -609,32 +633,15 @@
             this.panelMiddle.TabIndex = 4;
             this.panelMiddle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMiddle_Paint);
             // 
-            // lblCompleteTime
-            // 
-            this.lblCompleteTime.AllowParentOverrides = false;
-            this.lblCompleteTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCompleteTime.AutoEllipsis = false;
-            this.lblCompleteTime.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblCompleteTime.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblCompleteTime.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblCompleteTime.Location = new System.Drawing.Point(22, 526);
-            this.lblCompleteTime.Name = "lblCompleteTime";
-            this.lblCompleteTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCompleteTime.Size = new System.Drawing.Size(114, 30);
-            this.lblCompleteTime.TabIndex = 118;
-            this.lblCompleteTime.Text = "01-01-2024";
-            this.lblCompleteTime.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblCompleteTime.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblTime.Location = new System.Drawing.Point(17, 498);
+            this.lblTime.Location = new System.Drawing.Point(11, 156);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(190, 31);
+            this.lblTime.Size = new System.Drawing.Size(156, 28);
             this.lblTime.TabIndex = 118;
             this.lblTime.Text = "Completed Time";
             // 
@@ -1456,29 +1463,17 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // lblPhone
+            // lblCompleteTime
             // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.ForeColor = System.Drawing.Color.Black;
-            this.lblPhone.Location = new System.Drawing.Point(173, 131);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(122, 28);
-            this.lblPhone.TabIndex = 117;
-            this.lblPhone.Text = "0123456789";
-            // 
-            // lblBuyerName
-            // 
-            this.lblBuyerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuyerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuyerName.ForeColor = System.Drawing.Color.Black;
-            this.lblBuyerName.Location = new System.Drawing.Point(82, 69);
-            this.lblBuyerName.Name = "lblBuyerName";
-            this.lblBuyerName.Size = new System.Drawing.Size(213, 62);
-            this.lblBuyerName.TabIndex = 118;
-            this.lblBuyerName.Text = "Buyer Name";
-            this.lblBuyerName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblCompleteTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompleteTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompleteTime.ForeColor = System.Drawing.Color.Black;
+            this.lblCompleteTime.Location = new System.Drawing.Point(173, 156);
+            this.lblCompleteTime.Name = "lblCompleteTime";
+            this.lblCompleteTime.Size = new System.Drawing.Size(125, 28);
+            this.lblCompleteTime.TabIndex = 119;
+            this.lblCompleteTime.Text = "1/1/2004";
+            this.lblCompleteTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FSellDetail
             // 
@@ -1583,9 +1578,9 @@
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
-        public Bunifu.UI.WinForms.BunifuLabel lblCompleteTime;
         public System.Windows.Forms.Label lblTime;
         public System.Windows.Forms.Label lblPhone;
         public System.Windows.Forms.Label lblBuyerName;
+        public System.Windows.Forms.Label lblCompleteTime;
     }
 }
