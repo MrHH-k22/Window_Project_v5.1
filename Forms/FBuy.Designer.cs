@@ -208,10 +208,10 @@
             // 
             this.flpProduct.AutoScroll = true;
             this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProduct.Location = new System.Drawing.Point(185, 0);
+            this.flpProduct.Location = new System.Drawing.Point(188, 0);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(1315, 710);
+            this.flpProduct.Size = new System.Drawing.Size(1312, 710);
             this.flpProduct.TabIndex = 4;
             // 
             // panelLeft
@@ -236,7 +236,7 @@
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(185, 710);
+            this.panelLeft.Size = new System.Drawing.Size(188, 710);
             this.panelLeft.TabIndex = 3;
             // 
             // btnLoad
@@ -258,7 +258,7 @@
             this.btnLoad.Location = new System.Drawing.Point(12, 400);
             this.btnLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(161, 43);
+            this.btnLoad.Size = new System.Drawing.Size(153, 43);
             this.btnLoad.TabIndex = 89;
             this.btnLoad.Text = "Load";
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
@@ -282,7 +282,7 @@
             this.btnFilter.Location = new System.Drawing.Point(12, 343);
             this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(161, 43);
+            this.btnFilter.Size = new System.Drawing.Size(153, 43);
             this.btnFilter.TabIndex = 90;
             this.btnFilter.Text = "Filter";
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
@@ -312,11 +312,11 @@
             this.bunifuSeparator3.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator3.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(91, 281);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(85, 282);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator3.Size = new System.Drawing.Size(5, 17);
+            this.bunifuSeparator3.Size = new System.Drawing.Size(10, 17);
             this.bunifuSeparator3.TabIndex = 98;
             // 
             // txtMinPrice
@@ -333,14 +333,14 @@
             this.txtMinPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMinPrice.ForeColor = System.Drawing.Color.Black;
             this.txtMinPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtMinPrice.Location = new System.Drawing.Point(99, 273);
+            this.txtMinPrice.Location = new System.Drawing.Point(103, 273);
             this.txtMinPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMinPrice.Name = "txtMinPrice";
             this.txtMinPrice.PasswordChar = '\0';
             this.txtMinPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtMinPrice.PlaceholderText = "Min";
             this.txtMinPrice.SelectedText = "";
-            this.txtMinPrice.Size = new System.Drawing.Size(75, 43);
+            this.txtMinPrice.Size = new System.Drawing.Size(62, 43);
             this.txtMinPrice.TabIndex = 94;
             // 
             // label1
@@ -364,7 +364,7 @@
             this.bunifuSeparator2.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(27, 219);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(40, 217);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -392,7 +392,7 @@
             this.txtMaxPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtMaxPrice.PlaceholderText = "Max";
             this.txtMaxPrice.SelectedText = "";
-            this.txtMaxPrice.Size = new System.Drawing.Size(75, 43);
+            this.txtMaxPrice.Size = new System.Drawing.Size(62, 43);
             this.txtMaxPrice.TabIndex = 93;
             // 
             // bunifuSeparator1
@@ -404,7 +404,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(29, 145);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(40, 146);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
