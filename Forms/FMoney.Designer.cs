@@ -125,22 +125,22 @@
             // 
             // lblTotalMoney
             // 
-            this.lblTotalMoney.AutoSize = true;
-            this.lblTotalMoney.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblTotalMoney.Location = new System.Drawing.Point(875, 41);
+            this.lblTotalMoney.Location = new System.Drawing.Point(1126, 43);
             this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(144, 31);
+            this.lblTotalMoney.Size = new System.Drawing.Size(218, 31);
             this.lblTotalMoney.TabIndex = 12;
             this.lblTotalMoney.Text = "100,000 VND";
+            this.lblTotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pbMoneyTotal
             // 
             this.pbMoneyTotal.Image = global::Window_Project_v5._1.Properties.Resources.money;
-            this.pbMoneyTotal.Location = new System.Drawing.Point(733, 15);
-            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbMoneyTotal.Location = new System.Drawing.Point(985, 18);
+            this.pbMoneyTotal.Margin = new System.Windows.Forms.Padding(4);
             this.pbMoneyTotal.Name = "pbMoneyTotal";
             this.pbMoneyTotal.Size = new System.Drawing.Size(133, 79);
             this.pbMoneyTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,9 +197,9 @@
             this.gbFunction.LabelIndent = 10;
             this.gbFunction.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbFunction.Location = new System.Drawing.Point(7, 18);
-            this.gbFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFunction.Margin = new System.Windows.Forms.Padding(4);
             this.gbFunction.Name = "gbFunction";
-            this.gbFunction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFunction.Padding = new System.Windows.Forms.Padding(4);
             this.gbFunction.Size = new System.Drawing.Size(1461, 480);
             this.gbFunction.TabIndex = 3;
             this.gbFunction.TabStop = false;
@@ -251,7 +251,7 @@
             this.btn500.IdleIconLeftImage = null;
             this.btn500.IdleIconRightImage = null;
             this.btn500.IndicateFocus = false;
-            this.btn500.Location = new System.Drawing.Point(784, 292);
+            this.btn500.Location = new System.Drawing.Point(910, 293);
             this.btn500.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn500.Name = "btn500";
             this.btn500.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -342,7 +342,7 @@
             this.btn200.IdleIconLeftImage = null;
             this.btn200.IdleIconRightImage = null;
             this.btn200.IndicateFocus = false;
-            this.btn200.Location = new System.Drawing.Point(784, 217);
+            this.btn200.Location = new System.Drawing.Point(910, 218);
             this.btn200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn200.Name = "btn200";
             this.btn200.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -433,7 +433,7 @@
             this.btn100.IdleIconLeftImage = null;
             this.btn100.IdleIconRightImage = null;
             this.btn100.IndicateFocus = false;
-            this.btn100.Location = new System.Drawing.Point(784, 140);
+            this.btn100.Location = new System.Drawing.Point(910, 141);
             this.btn100.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn100.Name = "btn100";
             this.btn100.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -524,7 +524,7 @@
             this.btn50.IdleIconLeftImage = null;
             this.btn50.IdleIconRightImage = null;
             this.btn50.IndicateFocus = false;
-            this.btn50.Location = new System.Drawing.Point(784, 70);
+            this.btn50.Location = new System.Drawing.Point(910, 71);
             this.btn50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn50.Name = "btn50";
             this.btn50.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -572,7 +572,7 @@
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.password;
             this.pictureBox1.Location = new System.Drawing.Point(237, 171);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -608,7 +608,7 @@
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
             this.txtPassword.Location = new System.Drawing.Point(393, 199);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
@@ -634,7 +634,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnIdleState = stateProperties4;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(5);
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Confirm your password";
@@ -644,7 +644,7 @@
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(332, 57);
+            this.txtPassword.Size = new System.Drawing.Size(437, 49);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -702,8 +702,8 @@
             this.btnWithdraw.IdleIconLeftImage = global::Window_Project_v5._1.Properties.Resources.withdraw;
             this.btnWithdraw.IdleIconRightImage = null;
             this.btnWithdraw.IndicateFocus = false;
-            this.btnWithdraw.Location = new System.Drawing.Point(525, 297);
-            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWithdraw.Location = new System.Drawing.Point(584, 298);
+            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(4);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWithdraw.OnDisabledState.BorderRadius = 25;
@@ -737,7 +737,7 @@
             this.btnWithdraw.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnWithdraw.OnPressedState.IconLeftImage = null;
             this.btnWithdraw.OnPressedState.IconRightImage = null;
-            this.btnWithdraw.Size = new System.Drawing.Size(200, 48);
+            this.btnWithdraw.Size = new System.Drawing.Size(246, 48);
             this.btnWithdraw.TabIndex = 3;
             this.btnWithdraw.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnWithdraw.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -794,7 +794,7 @@
             this.btnRecharge.IdleIconRightImage = null;
             this.btnRecharge.IndicateFocus = false;
             this.btnRecharge.Location = new System.Drawing.Point(237, 297);
-            this.btnRecharge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecharge.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecharge.Name = "btnRecharge";
             this.btnRecharge.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecharge.OnDisabledState.BorderRadius = 25;
@@ -828,7 +828,7 @@
             this.btnRecharge.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRecharge.OnPressedState.IconLeftImage = null;
             this.btnRecharge.OnPressedState.IconRightImage = null;
-            this.btnRecharge.Size = new System.Drawing.Size(200, 48);
+            this.btnRecharge.Size = new System.Drawing.Size(262, 48);
             this.btnRecharge.TabIndex = 2;
             this.btnRecharge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRecharge.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -866,7 +866,7 @@
             this.txtMoney.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMoney.Lines = new string[0];
             this.txtMoney.Location = new System.Drawing.Point(393, 75);
-            this.txtMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoney.MaxLength = 32767;
             this.txtMoney.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMoney.Modified = false;
@@ -892,7 +892,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMoney.OnIdleState = stateProperties8;
-            this.txtMoney.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMoney.Padding = new System.Windows.Forms.Padding(5);
             this.txtMoney.PasswordChar = '\0';
             this.txtMoney.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMoney.PlaceholderText = "The amount of money";
@@ -902,7 +902,7 @@
             this.txtMoney.SelectionLength = 0;
             this.txtMoney.SelectionStart = 0;
             this.txtMoney.ShortcutsEnabled = true;
-            this.txtMoney.Size = new System.Drawing.Size(332, 57);
+            this.txtMoney.Size = new System.Drawing.Size(437, 49);
             this.txtMoney.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMoney.TabIndex = 1;
             this.txtMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -917,7 +917,7 @@
             // 
             this.pbMoneyAmount.Image = global::Window_Project_v5._1.Properties.Resources.money2;
             this.pbMoneyAmount.Location = new System.Drawing.Point(237, 52);
-            this.pbMoneyAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbMoneyAmount.Margin = new System.Windows.Forms.Padding(4);
             this.pbMoneyAmount.Name = "pbMoneyAmount";
             this.pbMoneyAmount.Size = new System.Drawing.Size(107, 98);
             this.pbMoneyAmount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -929,7 +929,7 @@
             this.panelTop.Controls.Add(this.gbInfo);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1500, 137);
             this.panelTop.TabIndex = 4;
@@ -939,7 +939,7 @@
             this.panelBody.Controls.Add(this.gbFunction);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 137);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(4);
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1500, 573);
             this.panelBody.TabIndex = 5;

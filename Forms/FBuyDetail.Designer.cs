@@ -759,7 +759,7 @@
             this.btnImage1.Image = ((System.Drawing.Image)(resources.GetObject("btnImage1.Image")));
             this.btnImage1.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImage1.ImageRotate = 0F;
-            this.btnImage1.ImageSize = new System.Drawing.Size(200, 200);
+            this.btnImage1.ImageSize = new System.Drawing.Size(180, 180);
             this.btnImage1.Location = new System.Drawing.Point(0, 0);
             this.btnImage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImage1.Name = "btnImage1";

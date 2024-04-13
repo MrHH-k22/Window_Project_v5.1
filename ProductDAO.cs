@@ -68,9 +68,32 @@ namespace Window_Project_v5._1
         // Seller edit product's information
         public void Update(Product pd, bool check)
         {
-            string sqlStr = string.Format("UPDATE Product SET Name = '{0}', Brand = '{1}' , OriginalPrice = '{2}', SalePrice = '{3}', Condition = '{4}', Status = '{5}', Description = '{6}', Category = '{7}', Origin = '{8}', Type = '{9}', Material = '{10}', SupportPolicy = '{11}', Area = '{12}', Size = '{13}', Functionality = '{14}' WHERE ID = '{15}'",
-                                       pd.Name, pd.Brand, pd.OriginalPrice, pd.SalePrice, pd.Condition, pd.Status, pd.Description, pd.Category, pd.Origin, pd.Type, pd.Material, pd.SupportPolicy, pd.Area, pd.Size, pd.Functionality, pd.Id);
-            dbc.Execute(sqlStr);
+            string sqlStr = "UPDATE Product SET Name = @Name, Brand = @Brand, OriginalPrice = @OriginalPrice, SalePrice = @SalePrice, Condition = @Condition, Status = @Status, Description = @Description, Category = @Category, Origin = @Origin, Type = @Type, Material = @Material, SupportPolicy = @SupportPolicy, Area = @Area, Size = @Size, Functionality = @Functionality WHERE ID = @Id";
+
+            // Create an array of SqlParameters
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Name", pd.Name),
+                new SqlParameter("@Brand", pd.Brand),
+                new SqlParameter("@OriginalPrice", pd.OriginalPrice),
+                new SqlParameter("@SalePrice", pd.SalePrice),
+                new SqlParameter("@Condition", pd.Condition),
+                new SqlParameter("@Status", pd.Status),
+                new SqlParameter("@Description", pd.Description),
+                new SqlParameter("@Category", pd.Category),
+                new SqlParameter("@Origin", pd.Origin),
+                new SqlParameter("@Type", pd.Type),
+                new SqlParameter("@Material", pd.Material),
+                new SqlParameter("@SupportPolicy", pd.SupportPolicy),
+                new SqlParameter("@Area", pd.Area),
+                new SqlParameter("@Size", pd.Size),
+                new SqlParameter("@Functionality", pd.Functionality),
+                new SqlParameter("@Id", pd.Id)
+            };
+
+            // Call your Execute function with the SQL string and parameters array
+            dbc.Execute(sqlStr, parameters);
+
         }
 
         // Buyer purchases the product

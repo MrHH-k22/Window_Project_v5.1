@@ -40,10 +40,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblHiddenNo = new System.Windows.Forms.Label();
             this.lblHidden = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblCancelledNo = new System.Windows.Forms.Label();
-            this.lblCancelled = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblCompletedNo = new System.Windows.Forms.Label();
@@ -93,8 +89,6 @@
             this.panelOrderAnalysis.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
@@ -244,7 +238,6 @@
             // panelOrderAnalysis
             // 
             this.panelOrderAnalysis.Controls.Add(this.panel8);
-            this.panelOrderAnalysis.Controls.Add(this.panel7);
             this.panelOrderAnalysis.Controls.Add(this.panel6);
             this.panelOrderAnalysis.Controls.Add(this.panel4);
             this.panelOrderAnalysis.Controls.Add(this.panel3);
@@ -264,7 +257,7 @@
             this.panel8.Controls.Add(this.lblHiddenNo);
             this.panel8.Controls.Add(this.lblHidden);
             this.panel8.Location = new System.Drawing.Point(747, 304);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(545, 121);
             this.panel8.TabIndex = 14;
@@ -273,7 +266,7 @@
             // 
             this.pictureBox8.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox8.Location = new System.Drawing.Point(413, 32);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(89, 78);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,53 +297,6 @@
             this.lblHidden.TabIndex = 0;
             this.lblHidden.Text = "Hidden";
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Controls.Add(this.lblCancelledNo);
-            this.panel7.Controls.Add(this.lblCancelled);
-            this.panel7.Location = new System.Drawing.Point(137, 458);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(545, 121);
-            this.panel7.TabIndex = 12;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.pictureBox7.Location = new System.Drawing.Point(423, 32);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(89, 78);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // lblCancelledNo
-            // 
-            this.lblCancelledNo.AutoSize = true;
-            this.lblCancelledNo.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblCancelledNo.ForeColor = System.Drawing.Color.White;
-            this.lblCancelledNo.Location = new System.Drawing.Point(19, 62);
-            this.lblCancelledNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCancelledNo.Name = "lblCancelledNo";
-            this.lblCancelledNo.Size = new System.Drawing.Size(79, 37);
-            this.lblCancelledNo.TabIndex = 2;
-            this.lblCancelledNo.Text = "1,576";
-            // 
-            // lblCancelled
-            // 
-            this.lblCancelled.AutoSize = true;
-            this.lblCancelled.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.lblCancelled.ForeColor = System.Drawing.Color.White;
-            this.lblCancelled.Location = new System.Drawing.Point(20, 15);
-            this.lblCancelled.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCancelled.Name = "lblCancelled";
-            this.lblCancelled.Size = new System.Drawing.Size(114, 31);
-            this.lblCancelled.TabIndex = 0;
-            this.lblCancelled.Text = "Cancelled";
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -358,7 +304,7 @@
             this.panel6.Controls.Add(this.lblCompletedNo);
             this.panel6.Controls.Add(this.lblCompleted);
             this.panel6.Location = new System.Drawing.Point(137, 304);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(545, 121);
             this.panel6.TabIndex = 13;
@@ -367,7 +313,7 @@
             // 
             this.pictureBox6.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox6.Location = new System.Drawing.Point(413, 31);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(89, 78);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -405,7 +351,7 @@
             this.panel4.Controls.Add(this.lblWaitForConfirmationNo);
             this.panel4.Controls.Add(this.lblConfirmination);
             this.panel4.Location = new System.Drawing.Point(747, 156);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(545, 121);
             this.panel4.TabIndex = 9;
@@ -414,7 +360,7 @@
             // 
             this.pictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.hand;
             this.pictureBox4.Location = new System.Drawing.Point(413, 21);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(89, 78);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -452,7 +398,7 @@
             this.panel3.Controls.Add(this.lblDisplayingNo);
             this.panel3.Controls.Add(this.lblDisplaying);
             this.panel3.Location = new System.Drawing.Point(137, 156);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(545, 121);
             this.panel3.TabIndex = 10;
@@ -461,7 +407,7 @@
             // 
             this.pictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.real_time;
             this.pictureBox3.Location = new System.Drawing.Point(423, 21);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(89, 78);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -499,7 +445,7 @@
             this.panel2.Controls.Add(this.lblCustomersNo);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(747, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(545, 121);
             this.panel2.TabIndex = 11;
@@ -508,7 +454,7 @@
             // 
             this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.cart1;
             this.pictureBox2.Location = new System.Drawing.Point(413, 21);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(89, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -546,7 +492,7 @@
             this.panel1.Controls.Add(this.lblOrdersNo);
             this.panel1.Controls.Add(this.lblOrder);
             this.panel1.Location = new System.Drawing.Point(137, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 121);
             this.panel1.TabIndex = 7;
@@ -555,7 +501,7 @@
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
             this.pictureBox1.Location = new System.Drawing.Point(423, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -989,9 +935,6 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1036,10 +979,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblHiddenNo;
         private System.Windows.Forms.Label lblHidden;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label lblCancelledNo;
-        private System.Windows.Forms.Label lblCancelled;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblCompletedNo;
