@@ -35,7 +35,7 @@ namespace Window_Project_v5._1
         public List<string> GetTopThreeRecommendedTypesByBuyerID(int buyerID)
         {
             List<string> topThreeTypes = new List<string>();
-            string sqlStr = string.Format("SELECT TOP 3 * " +
+            string sqlStr = string.Format("SELECT TOP 3 Type, ViewCount " +
                                                "FROM Recommend WHERE BuyerID = '{0}' " +
                                                "ORDER BY ViewCount DESC;", buyerID);
             DataTable dt = dbc.Load(sqlStr);
