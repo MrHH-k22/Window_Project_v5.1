@@ -11,21 +11,44 @@ namespace Window_Project_v5._1
     {
         DBConnection dbc = new DBConnection();
 
-        public void add(string type, int viewCount, int buyerID)
+        public void update(string type, int buyerID)
         {
             string sqlStr;
-            //check if type already exists
-            DataTable dt = dbc.Load(string.Format("SELECT * FROM Recommend WHERE BuyerID = '{0}' and Type = '{1}'", buyerID,type));
-            //...
-            if(dt.Rows.Count>0)
+            // Check if type already exists
+            DataTable dt = dbc.Load(string.Format("SELECT * FROM Recommend WHERE BuyerID = '{0}' AND Type = '{1}'", buyerID, type));
+
+            if (dt.Rows.Count > 0)
             {
-                sqlStr = string.Format("UPDATE Recommend SET ViewCount '{0}' WHERE BuyerID = '{1}' AND Type = '{2}'",viewCount++,buyerID,type);
+                // If the type already exists, update the ViewCount
+                //int viewCount = Convert.ToInt32(dt.Rows[0]["ViewCount"]) + 1;
+                sqlStr = string.Format("UPDATE Recommend SET ViewCount = ViewCount + 1 WHERE BuyerID = '{0}' AND Type = '{1}'", buyerID, type);
             }
             else
             {
-                sqlStr = string.Format("INSERT INTO Recommend (BuyerID, Type, ViewCount) VALUES ('{0}', '{1}', {2})",buyerID,type,viewCount);
+                // If the type doesn't exist, insert with ViewCount = 0
+                sqlStr = string.Format("INSERT INTO Recommend (BuyerID, Type, ViewCount) VALUES ('{0}', '{1}', 0)", buyerID, type);
             }
+
             dbc.Execute(sqlStr);
         }
+
+        public List<string> GetTopThreeRecommendedTypesByBuyerID(int buyerID)
+        {
+            List<string> topThreeTypes = new List<string>();
+            string sqlStr = string.Format("SELECT TOP 3 Type, SUM(ViewCount) AS TotalViewCount " +
+                                               "FROM Recommend WHERE BuyerID = '{0}' " +
+                                               "GROUP BY Type ORDER BY TotalViewCount DESC;", buyerID);
+            DataTable dt = dbc.Load(sqlStr);
+            foreach (DataRow row in dt.Rows)
+            {
+                string type = row["Type"].ToString();
+                topThreeTypes.Add(type);
+            }
+            return topThreeTypes;
+        }
+
+
+
+
     }
 }

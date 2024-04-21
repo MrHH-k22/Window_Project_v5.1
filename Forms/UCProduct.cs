@@ -18,6 +18,7 @@ namespace Window_Project_v5._1.Forms
         public EventHandler onSelect = null;
         private ImageDAO imageDAO = new ImageDAO();
         Account account = new Account();
+        RecommendDAO recommendDAO = new RecommendDAO();
 
         private Product product;
         public UCProduct()
@@ -65,6 +66,9 @@ namespace Window_Project_v5._1.Forms
                 }
             }
 
+            //update recommend
+            
+
         }
 
 
@@ -109,6 +113,11 @@ namespace Window_Project_v5._1.Forms
             f.Closed += (s, args) => this.Close();
             f.Show();
             */
+            //if seller id is account id => not update recommned list
+            if(!(product.SellerID == account.Id))
+            {
+                recommendDAO.update(product.Type, account.Id);
+            }
             FBuyDetail fBuyDetail = new FBuyDetail(product,account);
             fBuyDetail.Show();
             
@@ -126,6 +135,7 @@ namespace Window_Project_v5._1.Forms
                     SetEventForAllControls(control);
                 }
             }
+
         }
 
 
