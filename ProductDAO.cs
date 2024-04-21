@@ -166,7 +166,7 @@ namespace Window_Project_v5._1
         public List<Product> LoadSimilarProducts(int productID, string type)
         {
             List<Product> list = new List<Product>();
-            DataTable dt = dbc.Load(string.Format("SELECT * FROM Product WHERE CONVERT(VARCHAR(MAX), Type) = '{0}' AND ID != '{1}';", type, productID));
+            DataTable dt = dbc.Load(string.Format("SELECT * FROM Product WHERE CONVERT(VARCHAR(MAX), TYPE) = '{0}' AND ID != '{1}';", type, productID));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);
@@ -183,7 +183,7 @@ namespace Window_Project_v5._1
             type = type.Replace("'", "''");
 
             // Assuming dbc.Load is a method to execute the query and return a DataTable
-            DataTable dt = dbc.Load(string.Format("SELECT TOP 3 * FROM Product WHERE TYPE = '{0}' ORDER BY ViewCount DESC;", type));
+            DataTable dt = dbc.Load(string.Format("SELECT TOP 3 * FROM Product WHERE CONVERT(VARCHAR(MAX), TYPE) = '{0}' ORDER BY ViewCount DESC;", type));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);

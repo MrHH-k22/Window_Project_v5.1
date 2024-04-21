@@ -55,10 +55,7 @@ namespace Window_Project_v5._1.Forms
             }
             lblAccountName.Text = account.Name;
             convertByte(pbAvatar, account.Avatar);
-
             //recommend list
-
-
             List<string> types = recommendDAO.GetTopThreeRecommendedTypesByBuyerID(account.Id);
             List<Product> recommendedProducts = new List<Product>();
             foreach (string type in types)
@@ -72,6 +69,7 @@ namespace Window_Project_v5._1.Forms
                 if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
                 {
                     UCProduct uc = new UCProduct(pd, account);
+                    uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
                     flpRecommendProducts.Controls.Add(uc);
                 }
             }
