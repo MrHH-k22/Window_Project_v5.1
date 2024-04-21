@@ -83,14 +83,9 @@ namespace Window_Project_v5._1.Forms
         {
             // Hide the current form (FBuy)
             this.Hide();
-
             // Open the FBuyDetail form
             FBuyDetail fBuyDetail = new FBuyDetail((sender as UCProduct).Product, account);
-            fBuyDetail.Closed += (s, args) =>
-            {
-                // Show the FBuy form when FBuyDetail form is closed
-                this.Show();
-            };
+            fBuyDetail.Closed += (s, args) => this.Close();
             fBuyDetail.Show();
         }
 

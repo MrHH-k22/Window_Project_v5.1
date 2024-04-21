@@ -271,9 +271,11 @@ namespace Window_Project_v5._1.Forms
                 if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
                 {
                     UCProduct uc = new UCProduct(pd, account);
+                    uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
                     flpRelatedProducts.Controls.Add(uc);
                 }
             }
+            adjustRecommendFlowLayoutPanel();
         }
 
         private void adjustRecommendFlowLayoutPanel()
@@ -597,6 +599,17 @@ namespace Window_Project_v5._1.Forms
             temp.Image = btnImage1.Image;
             btnImage1.Image = btnImage4.Image;
             btnImage4.Image = temp.Image;
+        }
+
+        // Event handler for UCProduct's ProductDoubleClick event
+        private void UCProduct_ProductDoubleClick(object sender, EventArgs e)
+        {
+            // Hide the current form (FBuy)
+            this.Hide();
+            // Open the FBuyDetail form
+            FBuyDetail fBuyDetail = new FBuyDetail((sender as UCProduct).Product, account);
+            fBuyDetail.Closed += (s, args) => this.Close();
+            fBuyDetail.Show();
         }
     }
 }
