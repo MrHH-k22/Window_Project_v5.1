@@ -47,11 +47,28 @@ namespace Window_Project_v5._1.Forms
                 if(pd.BuyerID <=0 && pd.OrderCondition <= (int)ordercondition.Displaying)
                 {
                     UCProduct uc = new UCProduct(pd, account);
+                    uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
                     flpProduct.Controls.Add(uc);
                 }
             }
             lblAccountName.Text = account.Name;
             convertByte(pbAvatar, account.Avatar);
+        }
+
+        // Event handler for UCProduct's ProductDoubleClick event
+        private void UCProduct_ProductDoubleClick(object sender, EventArgs e)
+        {
+            // Hide the current form (FBuy)
+            this.Hide();
+
+            // Open the FBuyDetail form
+            FBuyDetail fBuyDetail = new FBuyDetail((sender as UCProduct).Product, account);
+            fBuyDetail.Closed += (s, args) =>
+            {
+                // Show the FBuy form when FBuyDetail form is closed
+                this.Show();
+            };
+            fBuyDetail.Show();
         }
 
         private void convertByte(PictureBox pic, byte[] imageData)

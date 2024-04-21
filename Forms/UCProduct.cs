@@ -18,8 +18,13 @@ namespace Window_Project_v5._1.Forms
         public EventHandler onSelect = null;
         private ImageDAO imageDAO = new ImageDAO();
         Account account = new Account();
+        // Define an event to notify when the UserControl is double-clicked
+        public event EventHandler<EventArgs> ProductDoubleClick;
 
         private Product product;
+
+        public Product Product { get => product; set => product = value; }
+
         public UCProduct()
         {
             InitializeComponent();
@@ -103,15 +108,8 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_DoubleClick(object sender, EventArgs e)
         {
-            /*
-            this.Hide();
-            FBuyDetail f = new FBuyDetail(product, account);
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-            */
-            FBuyDetail fBuyDetail = new FBuyDetail(product,account);
-            fBuyDetail.Show();
-            
+            // Raise the ProductDoubleClick event
+            ProductDoubleClick?.Invoke(this, EventArgs.Empty);
         }
 
         private void SetEventForAllControls(Control parent)

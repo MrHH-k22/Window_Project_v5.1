@@ -20,6 +20,8 @@ namespace Window_Project_v5._1.Forms
         private Account acc;
         // Declare an event to be raised when the checkbox is checked or unchecked
         public event EventHandler<EventArgs> SelectedChanged;
+        // Declare an event to be raised when the delete button is clicked
+        public event EventHandler<EventArgs> DeleteClicked;
 
         public Product Pd { get => pd; set => pd = value; }
 
@@ -76,6 +78,8 @@ namespace Window_Project_v5._1.Forms
         private void btnDelete_Click(object sender, EventArgs e)
         {
             cartDAO.delete(acc.Id, pd.Id);
+            // Raise the DeleteClicked event
+            DeleteClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void cbSelected_Click(object sender, EventArgs e)

@@ -43,6 +43,7 @@ namespace Window_Project_v5._1.Forms
                 {
                     UCProductCart uc = new UCProductCart(pd, account);
                     uc.SelectedChanged += UC_SelectedChanged;
+                    uc.DeleteClicked += UC_DeleteClicked;
                     flpCartList.Controls.Add(uc);
                 } else
                 {
@@ -172,6 +173,15 @@ namespace Window_Project_v5._1.Forms
             FBuy f = new FBuy(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        // Event handler for DeleteClicked event in UCProductCart
+        private void UC_DeleteClicked(object sender, EventArgs e)
+        {
+            // Clear all controls from flpCartList
+            flpCartList.Controls.Clear();
+            // Reload the form
+            FCart_Load(sender, e);
         }
 
         // Event handler for SelectedChanged event in UCProductCart
