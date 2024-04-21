@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using Window_Project_v5._1.Properties;
 
@@ -16,6 +17,7 @@ namespace Window_Project_v5._1.Forms
     {
         private ProductDAO productDAO = new ProductDAO();
         private Account account = new Account();
+        private RecommendDAO recommendDAO = new RecommendDAO();
         private bool save;
 
 
@@ -53,6 +55,27 @@ namespace Window_Project_v5._1.Forms
             }
             lblAccountName.Text = account.Name;
             convertByte(pbAvatar, account.Avatar);
+
+            //recommend list
+
+
+            List<string> types = recommendDAO.GetTopThreeRecommendedTypesByBuyerID(account.Id);
+            List<Product> recommendedProducts = new List<Product>();
+            foreach (string type in types)
+            {
+                List<Product> productsByType = productDAO.LoadRecommendList(type);
+                // Add the top 3 products for this type to the recommended products list
+                recommendedProducts.AddRange(productsByType); 
+            }
+            foreach (var pd in recommendedProducts)
+            {
+                if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                {
+                    UCProduct uc = new UCProduct(pd, account);
+                    flpRecommendProducts.Controls.Add(uc);
+                }
+            }
+            adjustRecommendFlowLayoutPanel();
         }
 
         // Event handler for UCProduct's ProductDoubleClick event
@@ -71,6 +94,25 @@ namespace Window_Project_v5._1.Forms
             fBuyDetail.Show();
         }
 
+
+        private void adjustRecommendFlowLayoutPanel()
+        {
+            // Disable vertical scroll
+            flpRecommendProducts.AutoScroll = true;
+            flpRecommendProducts.WrapContents = false;
+            panelRecommendProducts.AutoScroll = true;
+            panelRecommendProducts.HorizontalScroll.Visible = true;
+            // Calculate and set the width of flpRecommendProducts based on the sum of widths of child controls
+            int totalWidth = 0;
+            foreach (Control control in flpRecommendProducts.Controls)
+            {
+                totalWidth += control.Width;
+            }
+            flpRecommendProducts.Width = totalWidth;
+        }
+
+
+
         private void convertByte(PictureBox pic, byte[] imageData)
         {
 
@@ -81,7 +123,7 @@ namespace Window_Project_v5._1.Forms
                     // Attempt to create Image object
                     try
                     {
-                        pic.Image = Image.FromStream(ms);
+                        pic.Image = System.Drawing.Image.FromStream(ms);
                     }
                     catch (ArgumentException ex)
                     {

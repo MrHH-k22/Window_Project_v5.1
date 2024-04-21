@@ -20,6 +20,7 @@ namespace Window_Project_v5._1.Forms
         Account account = new Account();
         // Define an event to notify when the UserControl is double-clicked
         public event EventHandler<EventArgs> ProductDoubleClick;
+        RecommendDAO recommendDAO = new RecommendDAO();
 
         private Product product;
 
@@ -69,7 +70,6 @@ namespace Window_Project_v5._1.Forms
                     }
                 }
             }
-
         }
 
 
@@ -96,7 +96,6 @@ namespace Window_Project_v5._1.Forms
             onSelect?.Invoke(this, e);
         }
 
-
         private void ratingProduct_ValueChanged(object sender, Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs e)
         {
         }
@@ -108,6 +107,11 @@ namespace Window_Project_v5._1.Forms
 
         private void UCProduct_DoubleClick(object sender, EventArgs e)
         {
+            //if seller id is account id => not update recommned list
+            if (!(product.SellerID == account.Id))
+            {
+                recommendDAO.update(product.Type, account.Id);
+            }
             // Raise the ProductDoubleClick event
             ProductDoubleClick?.Invoke(this, EventArgs.Empty);
         }
@@ -124,6 +128,7 @@ namespace Window_Project_v5._1.Forms
                     SetEventForAllControls(control);
                 }
             }
+
         }
 
 
