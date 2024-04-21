@@ -181,6 +181,7 @@ namespace Window_Project_v5._1.Forms
             // Clear all controls from flpCartList
             flpCartList.Controls.Clear();
             // Reload the form
+            UpdateTotal();
             FCart_Load(sender, e);
         }
 
