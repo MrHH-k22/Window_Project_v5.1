@@ -15,13 +15,13 @@ namespace Window_Project_v5._1
         {
             string sqlStr;
             // Check if type already exists
-            DataTable dt = dbc.Load(string.Format("SELECT * FROM Recommend WHERE BuyerID = '{0}' AND Type = '{1}'", buyerID, type));
+            DataTable dt = dbc.Load(string.Format("SELECT * FROM Recommend WHERE BuyerID = '{0}' AND CONVERT(VARCHAR(MAX), TYPE) = '{1}'", buyerID, type));
 
             if (dt.Rows.Count > 0)
             {
                 // If the type already exists, update the ViewCount
                 //int viewCount = Convert.ToInt32(dt.Rows[0]["ViewCount"]) + 1;
-                sqlStr = string.Format("UPDATE Recommend SET ViewCount = ViewCount + 1 WHERE BuyerID = '{0}' AND Type = '{1}'", buyerID, type);
+                sqlStr = string.Format("UPDATE Recommend SET ViewCount = ViewCount + 1 WHERE BuyerID = '{0}' AND CONVERT(VARCHAR(MAX), TYPE) = '{1}'", buyerID, type);
             }
             else
             {
