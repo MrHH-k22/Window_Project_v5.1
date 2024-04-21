@@ -170,7 +170,7 @@ namespace Window_Project_v5._1
             type = type.Replace("'", "''");
 
             // Assuming dbc.Load is a method to execute the query and return a DataTable
-            DataTable dt = dbc.Load(string.Format("SELECT TOP 3 * FROM Product WHERE CONVERT(VARCHAR(MAX), Type) = '{0}' ORDER BY ViewCount DESC;", type));
+            DataTable dt = dbc.Load(string.Format("SELECT TOP 3 * FROM Product WHERE TYPE = '{0}' ORDER BY ViewCount DESC;", type));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);
