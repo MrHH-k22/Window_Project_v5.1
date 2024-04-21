@@ -18,6 +18,8 @@ namespace Window_Project_v5._1.Forms
         private CartDAO cartDAO = new CartDAO();
         private Product pd;
         private Account acc;
+        // Declare an event to be raised when the checkbox is checked or unchecked
+        public event EventHandler<EventArgs> SelectedChanged;
 
         public Product Pd { get => pd; set => pd = value; }
 
@@ -84,6 +86,12 @@ namespace Window_Project_v5._1.Forms
         private void lblProductName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbSelected_CheckedChanged(object sender, EventArgs e)
+        {
+            // Raise the SelectedChanged event
+            SelectedChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

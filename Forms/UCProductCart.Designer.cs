@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProductCart));
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSellerName = new System.Windows.Forms.Label();
+            this.lblProductName = new System.Windows.Forms.Label();
             this.cbSelected = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.lblPrice = new Bunifu.UI.WinForms.BunifuLabel();
             this.pbProduct = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lblProductName = new System.Windows.Forms.Label();
-            this.lblSellerName = new System.Windows.Forms.Label();
             this.panelBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
@@ -56,10 +56,35 @@
             this.panelBody.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 0);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1040, 118);
+            this.panelBody.Size = new System.Drawing.Size(780, 96);
             this.panelBody.TabIndex = 0;
+            // 
+            // lblSellerName
+            // 
+            this.lblSellerName.BackColor = System.Drawing.Color.Transparent;
+            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblSellerName.Location = new System.Drawing.Point(118, 54);
+            this.lblSellerName.Name = "lblSellerName";
+            this.lblSellerName.Size = new System.Drawing.Size(443, 27);
+            this.lblSellerName.TabIndex = 133;
+            this.lblSellerName.Text = "Seller name";
+            this.lblSellerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProductName
+            // 
+            this.lblProductName.BackColor = System.Drawing.Color.Transparent;
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblProductName.Location = new System.Drawing.Point(117, 0);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(443, 54);
+            this.lblProductName.TabIndex = 132;
+            this.lblProductName.Text = "Product name";
+            this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
             // 
             // cbSelected
             // 
@@ -67,15 +92,16 @@
             this.cbSelected.CheckedState.BorderRadius = 6;
             this.cbSelected.CheckedState.BorderThickness = 1;
             this.cbSelected.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.cbSelected.Location = new System.Drawing.Point(7, 41);
-            this.cbSelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbSelected.Location = new System.Drawing.Point(5, 33);
+            this.cbSelected.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbSelected.Name = "cbSelected";
-            this.cbSelected.Size = new System.Drawing.Size(30, 30);
+            this.cbSelected.Size = new System.Drawing.Size(22, 24);
             this.cbSelected.TabIndex = 71;
             this.cbSelected.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cbSelected.UncheckedState.BorderRadius = 6;
             this.cbSelected.UncheckedState.BorderThickness = 1;
             this.cbSelected.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cbSelected.CheckedChanged += new System.EventHandler(this.cbSelected_CheckedChanged);
             this.cbSelected.Click += new System.EventHandler(this.cbSelected_Click);
             // 
             // btnDetail
@@ -92,10 +118,10 @@
             this.btnDetail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnDetail.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnDetail.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnDetail.Location = new System.Drawing.Point(912, 62);
-            this.btnDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDetail.Location = new System.Drawing.Point(684, 50);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(115, 37);
+            this.btnDetail.Size = new System.Drawing.Size(86, 30);
             this.btnDetail.TabIndex = 67;
             this.btnDetail.Text = "Detail";
             this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
@@ -114,10 +140,10 @@
             this.btnDelete.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
             this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
             this.btnDelete.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(772, 62);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Location = new System.Drawing.Point(579, 50);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(121, 37);
+            this.btnDelete.Size = new System.Drawing.Size(91, 30);
             this.btnDelete.TabIndex = 66;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -129,11 +155,10 @@
             this.lblPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPrice.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.lblPrice.Location = new System.Drawing.Point(853, 20);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPrice.Location = new System.Drawing.Point(640, 16);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPrice.Size = new System.Drawing.Size(169, 30);
+            this.lblPrice.Size = new System.Drawing.Size(130, 23);
             this.lblPrice.TabIndex = 65;
             this.lblPrice.Text = "100.000.000 VND";
             this.lblPrice.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -148,50 +173,23 @@
             this.pbProduct.BorderRadius = 0;
             this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
             this.pbProduct.IsCircle = true;
-            this.pbProduct.Location = new System.Drawing.Point(46, 5);
-            this.pbProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbProduct.Location = new System.Drawing.Point(34, 4);
+            this.pbProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(105, 105);
+            this.pbProduct.Size = new System.Drawing.Size(79, 79);
             this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProduct.TabIndex = 64;
             this.pbProduct.TabStop = false;
             this.pbProduct.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
-            // lblProductName
-            // 
-            this.lblProductName.BackColor = System.Drawing.Color.Transparent;
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblProductName.Location = new System.Drawing.Point(156, 0);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(591, 66);
-            this.lblProductName.TabIndex = 132;
-            this.lblProductName.Text = "Product name";
-            this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
-            // 
-            // lblSellerName
-            // 
-            this.lblSellerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblSellerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblSellerName.Location = new System.Drawing.Point(158, 66);
-            this.lblSellerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSellerName.Name = "lblSellerName";
-            this.lblSellerName.Size = new System.Drawing.Size(591, 33);
-            this.lblSellerName.TabIndex = 133;
-            this.lblSellerName.Text = "Seller name";
-            this.lblSellerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // UCProductCart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelBody);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 3);
             this.Name = "UCProductCart";
-            this.Size = new System.Drawing.Size(1040, 118);
+            this.Size = new System.Drawing.Size(780, 96);
             this.Load += new System.EventHandler(this.UCProductCart_Load);
             this.panelBody.ResumeLayout(false);
             this.panelBody.PerformLayout();

@@ -30,26 +30,25 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             containerMenu.Visible = false;
             account = accountDAO.Retrieve(acc.Id);
+            lblTotalMoney.Text = "0" + " VND";
+            lblNoOfItems.Text = "0";
         }
 
         private void FCart_Load(object sender, EventArgs e)
         {
             products = cartDAO.loadListWithAccountID(account.Id);
-            double total = 0;
             foreach (var pd in products)
             {
                 if (pd.BuyerID == 0)
                 {
                     UCProductCart uc = new UCProductCart(pd, account);
-                    total += pd.SalePrice;
+                    uc.SelectedChanged += UC_SelectedChanged;
                     flpCartList.Controls.Add(uc);
                 } else
                 {
                     cartDAO.delete(account.Id, pd.Id);
                 }
             }
-            lblTotalMoney.Text = total.ToString("N0") + " VND";
-            lblNoOfItems.Text = products.Count.ToString();
         }
 
         private void SelectProduct()
@@ -173,6 +172,37 @@ namespace Window_Project_v5._1.Forms
             FBuy f = new FBuy(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        // Event handler for SelectedChanged event in UCProductCart
+        private void UC_SelectedChanged(object sender, EventArgs e)
+        {
+            UpdateTotal();
+        }
+
+        // Method to update total number of items and total money
+        private void UpdateTotal()
+        {
+            double totalMoney = 0;
+            int itemCount = 0;
+
+            // Iterate through each UCProductCart
+            foreach (Control control in flpCartList.Controls)
+            {
+                if (control is UCProductCart uc)
+                {
+                    // Check if the product is selected
+                    if (uc.cbSelected.Checked)
+                    {
+                        itemCount++;
+                        totalMoney += uc.Pd.SalePrice; // Assuming Product has a property 'Price'
+                    }
+                }
+            }
+
+            // Update labels
+            lblNoOfItems.Text = itemCount.ToString();
+            lblTotalMoney.Text = totalMoney.ToString("N0") + " VND";
         }
     }
 }
