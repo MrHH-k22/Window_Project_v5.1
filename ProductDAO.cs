@@ -163,6 +163,19 @@ namespace Window_Project_v5._1
             return list;
         }
 
+        public List<Product> LoadSimilarProducts(int productID, string type)
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt = dbc.Load(string.Format("SELECT * FROM Product WHERE CONVERT(VARCHAR(MAX), Type) = '{0}' AND ID != '{1}';", type, productID));
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
+
+
         public List<Product> LoadRecommendList(string type)
         {
             List<Product> list = new List<Product>();

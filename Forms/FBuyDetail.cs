@@ -69,36 +69,6 @@ namespace Window_Project_v5._1.Forms
             this.Close();
         }
 
-
-        private void btnImage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnImage3_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage3.Image;
-            btnImage3.Image = temp.Image;
-        }
-
-        private void btnImage4_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage4.Image;
-            btnImage4.Image = temp.Image;
-        }
-
-        private void btnImage2_Click(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage2.Image;
-            btnImage2.Image = temp.Image;
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (favoriteDAO.checkProductinFavorite(account.Id, product.Id))
@@ -293,8 +263,36 @@ namespace Window_Project_v5._1.Forms
             Account seller = accountDAO.Retrieve(product.SellerID);
             lblAvatarName.Text = seller.Name;
             convertByte(pbAvatar, seller.Avatar);
+
+            //relate products
+            List<Product> relatedProducts = productDAO.LoadSimilarProducts(product.Id, product.Type);
+            foreach (var pd in relatedProducts)
+            {
+                if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                {
+                    UCProduct uc = new UCProduct(pd, account);
+                    flpRelatedProducts.Controls.Add(uc);
+                }
+            }
         }
 
+        private void adjustRecommendFlowLayoutPanel()
+        {
+            // Disable vertical scroll
+            flpRelatedProducts.AutoScroll = true;
+            flpRelatedProducts.WrapContents = false;
+            panelRelatedProducts.AutoScroll = true;
+            panelRelatedProducts.HorizontalScroll.Visible = true;
+            // Calculate and set the width of flpRecommendProducts based on the sum of widths of child controls
+            int totalWidth = 0;
+            foreach (Control control in flpRelatedProducts.Controls)
+            {
+                totalWidth += control.Width;
+            }
+            flpRelatedProducts.Width = totalWidth;
+        }
+
+        /*
         private void GetImageProduct()
         {
             DataTable ImageTable = imageDAO.GetImageProduct(product.Id);
@@ -356,6 +354,76 @@ namespace Window_Project_v5._1.Forms
                 }
             }
         }
+        */
+
+        private void GetImageProduct()
+        {
+            DataTable ImageTable = imageDAO.GetImageProduct(product.Id);
+            int pictureBoxIndex = 0;
+            foreach (DataRow row in ImageTable.Rows)
+            {
+                if (pictureBoxIndex >= 4) // If we have more images than PictureBoxes
+                    break;
+
+                byte[] imageData = (byte[])row["Image"]; // Access the "Image" column
+
+                // Load image into PictureBox
+                MemoryStream ms = new MemoryStream(imageData);
+
+                // Assign pictureBox variable based on index
+                if (pictureBoxIndex == 0)
+                {
+                    // For the first image, assign to btnImage1
+                    btnImage1.Image = Image.FromStream(ms);
+                    btnImage1.Visible = true;
+                }
+                else
+                {
+                    // For the rest of the images, assign to Guna2ImageButton controls
+                    Guna2ImageButton pictureBox = null;
+                    switch (pictureBoxIndex)
+                    {
+                        case 1:
+                            pictureBox = btnImage2;
+                            break;
+                        case 2:
+                            pictureBox = btnImage3;
+                            break;
+                        case 3:
+                            pictureBox = btnImage4;
+                            break;
+                    }
+                    if (pictureBox != null)
+                    {
+                        pictureBox.Image = Image.FromStream(ms);
+                        pictureBox.Visible = true;
+                    }
+                }
+
+                pictureBoxIndex++;
+            }
+            // Hide any remaining PictureBoxes
+            for (int i = pictureBoxIndex; i < 4; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        btnImage1.Visible = false;
+                        break;
+                    case 1:
+                        btnImage2.Visible = false;
+                        break;
+                    case 2:
+                        btnImage3.Visible = false;
+                        break;
+                    case 3:
+                        btnImage4.Visible = false;
+                        break;
+                }
+            }
+        }
+
+
 
         private void pbLogo_Click_1(object sender, EventArgs e)
         {
@@ -505,6 +573,30 @@ namespace Window_Project_v5._1.Forms
             FDelivery f = new FDelivery(account, products);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void btnImage2_Click_1(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage2.Image;
+            btnImage2.Image = temp.Image;
+        }
+
+        private void btnImage3_Click_1(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage3.Image;
+            btnImage3.Image = temp.Image;
+        }
+
+        private void btnImage4_Click_1(object sender, EventArgs e)
+        {
+            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage4.Image;
+            btnImage4.Image = temp.Image;
         }
     }
 }
