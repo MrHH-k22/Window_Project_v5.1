@@ -18,10 +18,13 @@ namespace Window_Project_v5._1.Forms
         private AccountDAO accountDAO = new AccountDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private ProductDAO productDAO = new ProductDAO();
+        ShippingDAO shippingDAO = new ShippingDAO();
         private CartDAO cartDAO = new CartDAO();
         private Account acc = new Account();
         private double total = 0;
         private int payMethod = -1;
+        private int ShippingInfoId;
+
 
         public FDelivery()
         {
@@ -235,8 +238,64 @@ namespace Window_Project_v5._1.Forms
 
         private void llblAddAddress_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FShipping fShipping = new FShipping();
+            FShipping fShipping = new FShipping(acc);
             fShipping.ShowDialog();
         }
+
+        private void lblEdit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(lblEdit.Text == "Edit")
+            {
+                flpCartList.AutoScroll = true;
+                lblEdit.Text = "Save";
+                lblPackage.Text = "List of your address";
+                flpCartList.Controls.Clear();
+                List<Shipping> shippings = shippingDAO.LoadList();
+                foreach (var ship in shippings)
+                {
+                    if (acc.Id == ship.AccountId)
+                    {
+                        UCShipping uc = new UCShipping(ship);
+                        uc.SelectedChanged += UC_SelectedChanged;
+                        flpCartList.Controls.Add(uc);
+                    }
+                }
+            }
+            else
+            {
+                flpCartList.AutoScroll = false;
+                lblEdit.Text = "Edit";
+                lblPackage.Text = "Package";
+                flpCartList.Controls.Clear();
+                foreach (Product p in products)
+                {
+                    UCProductCart uc = new UCProductCart(p, acc);
+                    uc.cbSelected.Visible = false;
+                    flpCartList.Controls.Add(uc);
+                }
+            }
+        }
+
+        private void UC_SelectedChanged(object sender, EventArgs e)
+        {
+            // Cast the sender object back to UCShipping to access its properties
+            UCShipping selectedUC = sender as UCShipping;
+
+            selectedUC.panelBorder.BorderColor = Color.Black;
+            
+
+
+            // Iterate through each UCShipping control in the flow layout panel
+            foreach (UCShipping uc in flpCartList.Controls)
+            {
+                // Check if the current UCShipping control is not the one that triggered the event
+                if (uc != selectedUC)
+                {
+                    // Disable the radio button in the current UCShipping control
+                    uc.panelBorder.BorderColor = Color.Silver;
+                }
+            }
+        }
+
     }
 }

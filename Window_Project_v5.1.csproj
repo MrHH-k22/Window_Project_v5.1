@@ -374,6 +374,7 @@
     <Compile Include="RatingDAO.cs" />
     <Compile Include="Recommend.cs" />
     <Compile Include="RecommendDAO.cs" />
+    <Compile Include="ShippingDAO.cs" />
     <EmbeddedResource Include="FForgetPassword.resx">
       <DependentUpon>FForgetPassword.cs</DependentUpon>
     </EmbeddedResource>

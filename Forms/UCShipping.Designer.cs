@@ -30,13 +30,12 @@
         {
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBorder = new Guna.UI2.WinForms.Guna2Panel();
-            this.label = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblPhoneNo = new System.Windows.Forms.Label();
+            this.lblRecipientName = new System.Windows.Forms.Label();
             this.panelBody.SuspendLayout();
             this.panelBorder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -50,8 +49,8 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(0, 0);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Padding = new System.Windows.Forms.Padding(6);
-            this.panelBody.Size = new System.Drawing.Size(680, 218);
+            this.panelBody.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.panelBody.Size = new System.Drawing.Size(1000, 218);
             this.panelBody.TabIndex = 0;
             // 
             // panelBorder
@@ -59,54 +58,23 @@
             this.panelBorder.BorderColor = System.Drawing.Color.Silver;
             this.panelBorder.BorderRadius = 10;
             this.panelBorder.BorderThickness = 1;
-            this.panelBorder.Controls.Add(this.guna2CustomRadioButton1);
             this.panelBorder.Controls.Add(this.guna2PictureBox3);
             this.panelBorder.Controls.Add(this.guna2PictureBox2);
             this.panelBorder.Controls.Add(this.guna2PictureBox1);
-            this.panelBorder.Controls.Add(this.label2);
-            this.panelBorder.Controls.Add(this.label1);
-            this.panelBorder.Controls.Add(this.label);
+            this.panelBorder.Controls.Add(this.lblAddress);
+            this.panelBorder.Controls.Add(this.lblPhoneNo);
+            this.panelBorder.Controls.Add(this.lblRecipientName);
             this.panelBorder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBorder.Location = new System.Drawing.Point(6, 6);
+            this.panelBorder.Location = new System.Drawing.Point(30, 10);
             this.panelBorder.Name = "panelBorder";
-            this.panelBorder.Size = new System.Drawing.Size(668, 206);
+            this.panelBorder.Size = new System.Drawing.Size(940, 198);
             this.panelBorder.TabIndex = 0;
-            // 
-            // label
-            // 
-            this.label.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.ForeColor = System.Drawing.Color.Black;
-            this.label.Location = new System.Drawing.Point(135, 15);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(520, 31);
-            this.label.TabIndex = 73;
-            this.label.Text = "Tran Trung Tin";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(135, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(514, 31);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "0338866561";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(135, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(522, 78);
-            this.label2.TabIndex = 75;
-            this.label2.Text = "no 1, Vo van Ngan, Thu Duc city";
             // 
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.user;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(68, 15);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(29, 17);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(30, 30);
@@ -118,7 +86,7 @@
             // 
             this.guna2PictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.home;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(68, 61);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(29, 63);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(30, 30);
@@ -130,7 +98,7 @@
             // 
             this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.phone_call;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(68, 105);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 107);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(30, 30);
@@ -138,22 +106,35 @@
             this.guna2PictureBox1.TabIndex = 109;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2CustomRadioButton1
+            // lblAddress
             // 
-            this.guna2CustomRadioButton1.BackColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(12, 15);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(28, 27);
-            this.guna2CustomRadioButton1.TabIndex = 112;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(96, 107);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(522, 78);
+            this.lblAddress.TabIndex = 75;
+            this.lblAddress.Text = "no 1, Vo van Ngan, Thu Duc city";
+            // 
+            // lblPhoneNo
+            // 
+            this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhoneNo.ForeColor = System.Drawing.Color.Black;
+            this.lblPhoneNo.Location = new System.Drawing.Point(96, 63);
+            this.lblPhoneNo.Name = "lblPhoneNo";
+            this.lblPhoneNo.Size = new System.Drawing.Size(514, 31);
+            this.lblPhoneNo.TabIndex = 74;
+            this.lblPhoneNo.Text = "0338866561";
+            // 
+            // lblRecipientName
+            // 
+            this.lblRecipientName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipientName.ForeColor = System.Drawing.Color.Black;
+            this.lblRecipientName.Location = new System.Drawing.Point(96, 17);
+            this.lblRecipientName.Name = "lblRecipientName";
+            this.lblRecipientName.Size = new System.Drawing.Size(520, 31);
+            this.lblRecipientName.TabIndex = 73;
+            this.lblRecipientName.Text = "Tran Trung Tin";
             // 
             // UCShipping
             // 
@@ -162,7 +143,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelBody);
             this.Name = "UCShipping";
-            this.Size = new System.Drawing.Size(680, 218);
+            this.Size = new System.Drawing.Size(1000, 218);
+            this.Click += new System.EventHandler(this.UCShipping_Click);
             this.panelBody.ResumeLayout(false);
             this.panelBorder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -174,14 +156,13 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel panelBody;
-        private Guna.UI2.WinForms.Guna2Panel panelBorder;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
+        public Guna.UI2.WinForms.Guna2Panel panelBody;
+        public Guna.UI2.WinForms.Guna2Panel panelBorder;
+        public System.Windows.Forms.Label lblAddress;
+        public System.Windows.Forms.Label lblPhoneNo;
+        public System.Windows.Forms.Label lblRecipientName;
+        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

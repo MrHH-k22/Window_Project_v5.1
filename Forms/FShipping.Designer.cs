@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tcShipping = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tpEdit = new System.Windows.Forms.TabPage();
-            this.panelBodyEdit = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelControl = new Guna.UI2.WinForms.Guna2Panel();
-            this.tpAddAddress = new System.Windows.Forms.TabPage();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
@@ -43,93 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtRecipientName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.flpAddresses = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucShipping1 = new Window_Project_v5._1.Forms.UCShipping();
-            this.ucShipping2 = new Window_Project_v5._1.Forms.UCShipping();
-            this.ucShipping3 = new Window_Project_v5._1.Forms.UCShipping();
-            this.tcShipping.SuspendLayout();
-            this.tpEdit.SuspendLayout();
-            this.panelBodyEdit.SuspendLayout();
-            this.panelControl.SuspendLayout();
-            this.tpAddAddress.SuspendLayout();
             this.panelBody.SuspendLayout();
-            this.flpAddresses.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tcShipping
-            // 
-            this.tcShipping.Controls.Add(this.tpEdit);
-            this.tcShipping.Controls.Add(this.tpAddAddress);
-            this.tcShipping.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcShipping.ItemSize = new System.Drawing.Size(180, 40);
-            this.tcShipping.Location = new System.Drawing.Point(0, 0);
-            this.tcShipping.Name = "tcShipping";
-            this.tcShipping.SelectedIndex = 0;
-            this.tcShipping.Size = new System.Drawing.Size(737, 714);
-            this.tcShipping.TabButtonHoverState.BorderColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonHoverState.FillColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcShipping.TabButtonHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.tcShipping.TabButtonHoverState.InnerColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tcShipping.TabButtonIdleState.FillColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcShipping.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.tcShipping.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.tcShipping.TabButtonSelectedState.FillColor = System.Drawing.Color.White;
-            this.tcShipping.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcShipping.TabButtonSelectedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.tcShipping.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.tcShipping.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.tcShipping.TabIndex = 0;
-            this.tcShipping.TabMenuBackColor = System.Drawing.Color.White;
-            this.tcShipping.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
-            // 
-            // tpEdit
-            // 
-            this.tpEdit.BackColor = System.Drawing.Color.White;
-            this.tpEdit.Controls.Add(this.panelBodyEdit);
-            this.tpEdit.Location = new System.Drawing.Point(4, 44);
-            this.tpEdit.Name = "tpEdit";
-            this.tpEdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEdit.Size = new System.Drawing.Size(729, 666);
-            this.tpEdit.TabIndex = 1;
-            this.tpEdit.Text = "Edit address";
-            // 
-            // panelBodyEdit
-            // 
-            this.panelBodyEdit.Controls.Add(this.flpAddresses);
-            this.panelBodyEdit.Controls.Add(this.panelControl);
-            this.panelBodyEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBodyEdit.Location = new System.Drawing.Point(3, 3);
-            this.panelBodyEdit.Name = "panelBodyEdit";
-            this.panelBodyEdit.Padding = new System.Windows.Forms.Padding(4);
-            this.panelBodyEdit.Size = new System.Drawing.Size(723, 660);
-            this.panelBodyEdit.TabIndex = 0;
-            // 
-            // panelControl
-            // 
-            this.panelControl.Controls.Add(this.guna2Button1);
-            this.panelControl.Controls.Add(this.guna2Button2);
-            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl.Location = new System.Drawing.Point(4, 577);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(715, 79);
-            this.panelControl.TabIndex = 0;
-            // 
-            // tpAddAddress
-            // 
-            this.tpAddAddress.BackColor = System.Drawing.Color.White;
-            this.tpAddAddress.Controls.Add(this.panelBody);
-            this.tpAddAddress.Location = new System.Drawing.Point(4, 44);
-            this.tpAddAddress.Name = "tpAddAddress";
-            this.tpAddAddress.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAddAddress.Size = new System.Drawing.Size(702, 666);
-            this.tpAddAddress.TabIndex = 0;
-            this.tpAddAddress.Text = "Add new address";
             // 
             // panelBody
             // 
@@ -143,10 +53,10 @@
             this.panelBody.Controls.Add(this.txtRecipientName);
             this.panelBody.Controls.Add(this.label);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(3, 3);
+            this.panelBody.Location = new System.Drawing.Point(0, 0);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(696, 660);
-            this.panelBody.TabIndex = 1;
+            this.panelBody.Size = new System.Drawing.Size(677, 714);
+            this.panelBody.TabIndex = 2;
             // 
             // btnCancel
             // 
@@ -314,115 +224,25 @@
             this.label.TabIndex = 11;
             this.label.Text = "Add new Shipping information";
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Red;
-            this.guna2Button1.BorderRadius = 23;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button1.Location = new System.Drawing.Point(35, 15);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(262, 49);
-            this.guna2Button1.TabIndex = 135;
-            this.guna2Button1.Text = "Cancel";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button2.BorderRadius = 23;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button2.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button2.Location = new System.Drawing.Point(347, 15);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(262, 49);
-            this.guna2Button2.TabIndex = 134;
-            this.guna2Button2.Text = "Save";
-            // 
-            // flpAddresses
-            // 
-            this.flpAddresses.AutoScroll = true;
-            this.flpAddresses.Controls.Add(this.ucShipping1);
-            this.flpAddresses.Controls.Add(this.ucShipping2);
-            this.flpAddresses.Controls.Add(this.ucShipping3);
-            this.flpAddresses.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpAddresses.Location = new System.Drawing.Point(4, 4);
-            this.flpAddresses.Name = "flpAddresses";
-            this.flpAddresses.Size = new System.Drawing.Size(715, 573);
-            this.flpAddresses.TabIndex = 1;
-            // 
-            // ucShipping1
-            // 
-            this.ucShipping1.BackColor = System.Drawing.Color.White;
-            this.ucShipping1.Location = new System.Drawing.Point(3, 3);
-            this.ucShipping1.Name = "ucShipping1";
-            this.ucShipping1.Size = new System.Drawing.Size(680, 218);
-            this.ucShipping1.TabIndex = 0;
-            // 
-            // ucShipping2
-            // 
-            this.ucShipping2.BackColor = System.Drawing.Color.White;
-            this.ucShipping2.Location = new System.Drawing.Point(3, 227);
-            this.ucShipping2.Name = "ucShipping2";
-            this.ucShipping2.Size = new System.Drawing.Size(680, 218);
-            this.ucShipping2.TabIndex = 1;
-            // 
-            // ucShipping3
-            // 
-            this.ucShipping3.BackColor = System.Drawing.Color.White;
-            this.ucShipping3.Location = new System.Drawing.Point(3, 451);
-            this.ucShipping3.Name = "ucShipping3";
-            this.ucShipping3.Size = new System.Drawing.Size(680, 218);
-            this.ucShipping3.TabIndex = 2;
-            // 
             // FShipping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(737, 714);
-            this.Controls.Add(this.tcShipping);
+            this.ClientSize = new System.Drawing.Size(677, 714);
+            this.Controls.Add(this.panelBody);
             this.Name = "FShipping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FShipping";
-            this.tcShipping.ResumeLayout(false);
-            this.tpEdit.ResumeLayout(false);
-            this.panelBodyEdit.ResumeLayout(false);
-            this.panelControl.ResumeLayout(false);
-            this.tpAddAddress.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FShipping_Load);
             this.panelBody.ResumeLayout(false);
             this.panelBody.PerformLayout();
-            this.flpAddresses.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TabControl tcShipping;
-        private System.Windows.Forms.TabPage tpEdit;
-        private Guna.UI2.WinForms.Guna2Panel panelBodyEdit;
-        private System.Windows.Forms.TabPage tpAddAddress;
         private Guna.UI2.WinForms.Guna2Panel panelBody;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
@@ -433,12 +253,5 @@
         public System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtRecipientName;
         private System.Windows.Forms.Label label;
-        private Guna.UI2.WinForms.Guna2Panel panelControl;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.FlowLayoutPanel flpAddresses;
-        private UCShipping ucShipping1;
-        private UCShipping ucShipping2;
-        private UCShipping ucShipping3;
     }
 }
