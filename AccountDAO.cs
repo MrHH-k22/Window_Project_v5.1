@@ -10,6 +10,7 @@ namespace Window_Project_v5._1
     {
         private SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         private DBConnection dbconnection = new DBConnection();
+        private RatingDAO ratingDAO = new RatingDAO();
        
         public void update(Account account)
         {
@@ -78,7 +79,7 @@ namespace Window_Project_v5._1
                 account.Phone = Convert.ToString(row["phone"]);
                 account.Password = Convert.ToString(row["password"]);
                 account.Money = row["money"] != DBNull.Value ? Convert.ToDouble(row["money"]) : 0;
-
+                
                 object birthdayValue = row["birthday"];
                 DateTime birthday;
                 if (birthdayValue != DBNull.Value && DateTime.TryParse(birthdayValue.ToString(), out birthday))

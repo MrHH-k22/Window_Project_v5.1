@@ -33,7 +33,7 @@ namespace Window_Project_v5._1.Forms
 
         private void FOrderAnalysis_Load(object sender, EventArgs e)
         {
-            acc = accountDAO.Retrieve(acc.Id);
+            //acc = accountDAO.Retrieve(acc.Id);
 
             List<Product> allProducts = productDAO.LoadListWithCondition("",acc.Id);
             List<int> allCustomers = productDAO.LoadCustomers(acc.Id);

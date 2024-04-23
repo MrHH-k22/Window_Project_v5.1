@@ -53,7 +53,7 @@ namespace Window_Project_v5._1.Forms
             }
             //Menu
             lblMenuAccountName.Text = account.Name;
-            ratingMenuAccount.Value = account.AverageStar();
+            ratingMenuAccount.Value = account.AvgRating;
             convertByte(pbMenuAvatar, account.Avatar);
         }
 

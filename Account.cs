@@ -45,6 +45,7 @@ namespace Window_Project_v5._1
                     thisProperty.SetValue(this, value);
                 }
                 ratingList = ratingDAO.LoadList(acc);
+                avgRating = AverageStar();
             }
         }
 

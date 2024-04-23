@@ -34,7 +34,7 @@ namespace Window_Project_v5._1.Forms
         {
             List<Product> products = productDAO.LoadList();
             lblSellerName.Text = account.Name;
-            account = accountDAO.Retrieve(account.Id);
+            //account = accountDAO.Retrieve(account.Id);
             lblBalance.Text = account.Money.ToString("N0") + " VND";
             foreach (var pd in products)
             {
