@@ -103,6 +103,8 @@ namespace Window_Project_v5._1.Forms
             }
             lblPhone.Text = pd.ContactPhone;
             txtAddress.Text = pd.DeliveryAddress;
+            txtCancelTime.Text = pd.CancelLimit.ToString();
+            cbCancel.Checked = pd.CancelRefund;
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
@@ -244,7 +246,7 @@ namespace Window_Project_v5._1.Forms
         private void btnPost_Click_1(object sender, EventArgs e)
         {
             //string category = ddCategories.SelectedValue.ToString();
-            Product product = new Product(selectedCategory, txtProductTitle.Text, txtType.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), selectedArea, txtCondition.Text, txtStatus.Text, txtSupportPolicy.Text, txtBrand.Text, txtOrigin.Text, txtMaterial.Text, txtSize.Text, txtFunctionalities.Text, txtDescription.Text, acc.Id);
+            Product product = new Product(selectedCategory, txtProductTitle.Text, txtType.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), selectedArea, txtCondition.Text, txtStatus.Text, txtSupportPolicy.Text, txtBrand.Text, txtOrigin.Text, txtMaterial.Text, txtSize.Text, txtFunctionalities.Text, txtDescription.Text, txtCancelTime.Text, cbCancel.Checked, acc.Id);
             if (!edit)
             {
                 product.PostedTime = DateTime.Now;
@@ -278,6 +280,8 @@ namespace Window_Project_v5._1.Forms
                 pd.Size = txtSize.Text;
                 pd.Functionality = txtFunctionalities.Text;
                 pd.Description = txtDescription.Text;
+                pd.CancelLimit = int.Parse(txtCancelTime.Text);
+                pd.CancelRefund = cbCancel.Checked;
                 productDAO.Update(pd, true);
                 //Update Images
                 imageDAO.Delete(pd.Id);
@@ -469,6 +473,16 @@ namespace Window_Project_v5._1.Forms
         private void guna2TextBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCancelTime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the entered key is a digit or the backspace key
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // If not a digit or backspace, ignore the input by marking the event as handled
+                e.Handled = true;
+            }
         }
     }
 }

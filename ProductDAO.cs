@@ -23,8 +23,8 @@ namespace Window_Project_v5._1
         // Add product into database
         public void Add(Product pd)
         {
-            string sqlStr = "INSERT INTO Product (Name, Brand, OriginalPrice, SalePrice, Condition, Status, Description, SellerID, BuyerID, Category, BillStatus, ViewCount, OrderCondition, ContactPhone, DeliveryAddress, Origin, Type, Material, SupportPolicy, Area, Size, PostedTime, Functionality, CompleteTime) " +
-                            "VALUES (@Name, @Brand, @OriginalPrice, @SalePrice, @Condition, @Status, @Description, @SellerID, @BuyerID, @Category, @BillStatus, @ViewCount, @OrderCondition, @ContactPhone, @DeliveryAddress, @Origin, @Type, @Material, @SupportPolicy, @Area, @Size, @PostedTime, @Functionality, @CompleteTime)";
+            string sqlStr = "INSERT INTO Product (Name, Brand, OriginalPrice, SalePrice, Condition, Status, Description, SellerID, BuyerID, Category, BillStatus, ViewCount, OrderCondition, ContactPhone, DeliveryAddress, Origin, Type, Material, SupportPolicy, Area, Size, PostedTime, Functionality, CompleteTime, CancelRefund, CancelLimit) " +
+                            "VALUES (@Name, @Brand, @OriginalPrice, @SalePrice, @Condition, @Status, @Description, @SellerID, @BuyerID, @Category, @BillStatus, @ViewCount, @OrderCondition, @ContactPhone, @DeliveryAddress, @Origin, @Type, @Material, @SupportPolicy, @Area, @Size, @PostedTime, @Functionality, @CompleteTime, @CancelRefund, @CancelLimit)";
 
             // Adjust PostedTime if it's outside the valid range
             DateTime postedTime = pd.PostedTime < SqlDateTime.MinValue.Value ? SqlDateTime.MinValue.Value : (pd.PostedTime > SqlDateTime.MaxValue.Value ? SqlDateTime.MaxValue.Value : pd.PostedTime);
@@ -57,18 +57,17 @@ namespace Window_Project_v5._1
                 new SqlParameter("@Size", pd.Size),
                 new SqlParameter("@PostedTime", postedTime),
                 new SqlParameter("@Functionality", pd.Functionality),
-                new SqlParameter("@CompleteTime", completeTime)
+                new SqlParameter("@CompleteTime", completeTime),
+                new SqlParameter("@CancelRefund", pd.CancelRefund),
+                new SqlParameter("@CancelLimit", pd.CancelLimit)
             };
-
             dbc.Execute(sqlStr, parameters);
         }
-
-
 
         // Seller edit product's information
         public void Update(Product pd, bool check)
         {
-            string sqlStr = "UPDATE Product SET Name = @Name, Brand = @Brand, OriginalPrice = @OriginalPrice, SalePrice = @SalePrice, Condition = @Condition, Status = @Status, Description = @Description, Category = @Category, Origin = @Origin, Type = @Type, Material = @Material, SupportPolicy = @SupportPolicy, Area = @Area, Size = @Size, Functionality = @Functionality WHERE ID = @Id";
+            string sqlStr = "UPDATE Product SET Name = @Name, Brand = @Brand, OriginalPrice = @OriginalPrice, SalePrice = @SalePrice, Condition = @Condition, Status = @Status, Description = @Description, Category = @Category, Origin = @Origin, Type = @Type, Material = @Material, SupportPolicy = @SupportPolicy, Area = @Area, Size = @Size, Functionality = @Functionality, CancelRefund = @CancelRefund, CancelLimit = @CancelLimit WHERE ID = @Id";
 
             // Create an array of SqlParameters
             SqlParameter[] parameters =
@@ -88,12 +87,13 @@ namespace Window_Project_v5._1
                 new SqlParameter("@Area", pd.Area),
                 new SqlParameter("@Size", pd.Size),
                 new SqlParameter("@Functionality", pd.Functionality),
-                new SqlParameter("@Id", pd.Id)
+                new SqlParameter("@Id", pd.Id),
+                new SqlParameter("@CancelRefund", pd.CancelRefund),
+                new SqlParameter("@CancelLimit", pd.CancelLimit)
             };
 
             // Call your Execute function with the SQL string and parameters array
             dbc.Execute(sqlStr, parameters);
-
         }
 
         // Buyer purchases the product
@@ -197,7 +197,7 @@ namespace Window_Project_v5._1
         public List<Product> LoadListWithCondition(string name, int id)
         {
             List<Product> list = new List<Product>();
-            DataTable dt = new DataTable();
+            DataTable dt;
             if (name.Length == 0)
             {
                 dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}'", id));
@@ -283,6 +283,8 @@ namespace Window_Project_v5._1
             product.PostedTime = (dr["PostedTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["PostedTime"]);
             product.CompleteTime = (dr["CompleteTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["CompleteTime"]);
             product.Functionality = dr["Functionality"].ToString();
+            product.CancelLimit = int.Parse(dr["CancelLimit"].ToString());
+            product.CancelRefund = bool.Parse(dr["CancelRefund"].ToString());
             return product;
         }
 

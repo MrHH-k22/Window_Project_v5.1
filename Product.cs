@@ -38,7 +38,9 @@ namespace Window_Project_v5._1
         private DateTime completeTime;
         private string color;
         private string functionality;
-
+        private DateTime BuyDate;
+        private int cancelLimit;
+        private bool cancelRefund;
 
 
 
@@ -77,7 +79,7 @@ namespace Window_Project_v5._1
         }
 
         //Post Product
-        public Product(string category, string name, string type, double originalPrice, double salePrice, string area, string condition, string status, string supportPolicy, string brand, string origin, string material, string size, string functionality, string description, int sellerID)
+        public Product(string category, string name, string type, double originalPrice, double salePrice, string area, string condition, string status, string supportPolicy, string brand, string origin, string material, string size, string functionality, string description, string hours, bool cancel, int sellerID)
         {
             this.category = category;
             this.name = name;
@@ -102,6 +104,8 @@ namespace Window_Project_v5._1
             contactPhone = "";
             deliveryAddress = "";
             completeTime = DateTime.MinValue;
+            cancelLimit = int.Parse(hours);
+            cancelRefund = cancel;
         }
 
         public Product(int id, string name, double originalPrice, double salePrice, string condition, string status, string brand, string category)
@@ -188,6 +192,8 @@ namespace Window_Project_v5._1
         public DateTime CompleteTime { get => completeTime; set => completeTime = value; }
         public string Color { get => color; set => color = value; }
         public string Functionality { get => functionality; set => functionality = value; }
+        public int CancelLimit { get => cancelLimit; set => cancelLimit = value; }
+        public bool CancelRefund { get => cancelRefund; set => cancelRefund = value; }
 
         public string GetBillStatus()
         {
@@ -209,9 +215,10 @@ namespace Window_Project_v5._1
                     return "";
             }
         }
+
+        public DateTime CancelDate()
+        {
+            return BuyDate.AddHours(cancelLimit);
+        }
     }
-
-
-
-
 }
