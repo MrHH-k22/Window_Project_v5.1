@@ -262,6 +262,12 @@
     <Compile Include="Forms\FSellDetail.Designer.cs">
       <DependentUpon>FSellDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FShipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FShipping.Designer.cs">
+      <DependentUpon>FShipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,12 +310,19 @@
     <Compile Include="Forms\UCReview.Designer.cs">
       <DependentUpon>UCReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCShipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCShipping.Designer.cs">
+      <DependentUpon>UCShipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shipping.cs" />
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,6 +416,9 @@
     <EmbeddedResource Include="Forms\FSellDetail.resx">
       <DependentUpon>FSellDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FShipping.resx">
+      <DependentUpon>FShipping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -423,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCReview.resx">
       <DependentUpon>UCReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCShipping.resx">
+      <DependentUpon>UCShipping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
@@ -703,6 +722,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

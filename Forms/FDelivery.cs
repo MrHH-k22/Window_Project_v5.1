@@ -232,5 +232,11 @@ namespace Window_Project_v5._1.Forms
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void llblAddAddress_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FShipping fShipping = new FShipping();
+            fShipping.ShowDialog();
+        }
     }
 }

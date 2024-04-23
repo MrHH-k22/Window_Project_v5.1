@@ -50,6 +50,7 @@
             this.flpCartList = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.llblAddAddress = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -374,6 +375,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.llblAddAddress);
             this.panelTop.Controls.Add(this.label2);
             this.panelTop.Controls.Add(this.guna2PictureBox2);
             this.panelTop.Controls.Add(this.guna2PictureBox1);
@@ -386,6 +388,21 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1059, 217);
             this.panelTop.TabIndex = 0;
+            // 
+            // llblAddAddress
+            // 
+            this.llblAddAddress.AutoSize = true;
+            this.llblAddAddress.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.llblAddAddress.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.Location = new System.Drawing.Point(831, 9);
+            this.llblAddAddress.Name = "llblAddAddress";
+            this.llblAddAddress.Size = new System.Drawing.Size(191, 31);
+            this.llblAddAddress.TabIndex = 110;
+            this.llblAddAddress.TabStop = true;
+            this.llblAddAddress.Text = "Add new address";
+            this.llblAddAddress.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblAddAddress_LinkClicked);
             // 
             // label2
             // 
@@ -443,7 +460,7 @@
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtAddress.PlaceholderText = "Please enter your address";
             this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(883, 43);
+            this.txtAddress.Size = new System.Drawing.Size(930, 43);
             this.txtAddress.TabIndex = 106;
             // 
             // txtPhone
@@ -468,7 +485,7 @@
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtPhone.PlaceholderText = "Please enter your phone number";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(883, 43);
+            this.txtPhone.Size = new System.Drawing.Size(930, 43);
             this.txtPhone.TabIndex = 105;
             // 
             // label
@@ -939,7 +956,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FDelivery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDelivery";
@@ -955,6 +972,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.panelBody.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.containerTop.ResumeLayout(false);
@@ -1025,5 +1043,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
         private Guna.UI2.WinForms.Guna2Button btnPost;
+        private System.Windows.Forms.LinkLabel llblAddAddress;
     }
 }
