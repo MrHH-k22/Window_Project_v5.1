@@ -26,18 +26,6 @@ namespace Window_Project_v5._1.Forms
 
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            Shipping shipping = new Shipping(account.Id,txtRecipientName.Text,txtPhoneNo.Text,txtAddress.Text);
-            shippingDAO.add(shipping);
-            MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
         private void FShipping_Load(object sender, EventArgs e)
         {
             /*
@@ -53,26 +41,38 @@ namespace Window_Project_v5._1.Forms
             }
             */
         }
-        /*
-        private void UC_SelectedChanged(object sender, EventArgs e)
-        {
-            // Cast the sender object back to UCShipping to access its properties
-            UCShipping selectedUC = sender as UCShipping;
-            selectedUC.panelBorder.BorderColor = Color.Black;
-            
 
-            // Iterate through each UCShipping control in the flow layout panel
-            foreach (UCShipping uc in flpAddresses.Controls)
-            {
-                // Check if the current UCShipping control is not the one that triggered the event
-                if (uc != selectedUC)
-                {
-                    // Disable the radio button in the current UCShipping control
-                    uc.panelBorder.BorderColor = Color.Silver;
-                }
-            }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Shipping shipping = new Shipping(account.Id, txtRecipientName.Text, txtPhoneNo.Text, txtAddress.Text);
+            shippingDAO.add(shipping);
+            MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        */
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        /*
+private void UC_SelectedChanged(object sender, EventArgs e)
+{
+// Cast the sender object back to UCShipping to access its properties
+UCShipping selectedUC = sender as UCShipping;
+selectedUC.panelBorder.BorderColor = Color.Black;
+
+
+// Iterate through each UCShipping control in the flow layout panel
+foreach (UCShipping uc in flpAddresses.Controls)
+{
+// Check if the current UCShipping control is not the one that triggered the event
+if (uc != selectedUC)
+{
+  // Disable the radio button in the current UCShipping control
+  uc.panelBorder.BorderColor = Color.Silver;
+}
+}
+}
+*/
 
     }
 }

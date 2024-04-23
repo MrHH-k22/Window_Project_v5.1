@@ -23,7 +23,6 @@ namespace Window_Project_v5._1.Forms
         private Account acc = new Account();
         private double total = 0;
         private int payMethod = -1;
-        private int ShippingInfoId;
 
 
         public FDelivery()
@@ -42,6 +41,7 @@ namespace Window_Project_v5._1.Forms
 
         private void FDelivery_Load(object sender, EventArgs e)
         {
+            total = 0;
             foreach (Product p in products)
             {
                 UCProductCart uc = new UCProductCart(p, acc);
@@ -55,10 +55,23 @@ namespace Window_Project_v5._1.Forms
                 rbtnOnline.Checked = false;
                 rbtnOnline.Enabled = false;
             }
-            txtAddress.Text = acc.Address;
-            txtPhone.Text = acc.Phone;
             lblPrice.Text = total.ToString("N0") + " VND";
             lblNoOfItems.Text = products.Count.ToString();
+            //
+            Shipping shipping = shippingDAO.GetShipping(acc.SelectedShipping);
+            if (shipping != null)
+            {
+                txtAddress.Text = shipping.Address;
+                txtRecipientName.Text = shipping.RecipientName;
+                txtPhone.Text = shipping.PhoneNo;
+            }
+            else
+            {
+                txtAddress.Text = "";
+                txtRecipientName.Text = "";
+                txtPhone.Text = "";
+            }
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -267,12 +280,15 @@ namespace Window_Project_v5._1.Forms
                 lblEdit.Text = "Edit";
                 lblPackage.Text = "Package";
                 flpCartList.Controls.Clear();
+                FDelivery_Load(sender,e);
+                /*
                 foreach (Product p in products)
                 {
                     UCProductCart uc = new UCProductCart(p, acc);
                     uc.cbSelected.Visible = false;
                     flpCartList.Controls.Add(uc);
                 }
+                */
             }
         }
 
@@ -280,11 +296,9 @@ namespace Window_Project_v5._1.Forms
         {
             // Cast the sender object back to UCShipping to access its properties
             UCShipping selectedUC = sender as UCShipping;
-
             selectedUC.panelBorder.BorderColor = Color.Black;
-            
-
-
+            acc.SelectedShipping = selectedUC.Shipping.Id;
+            accountDAO.update(acc);
             // Iterate through each UCShipping control in the flow layout panel
             foreach (UCShipping uc in flpCartList.Controls)
             {

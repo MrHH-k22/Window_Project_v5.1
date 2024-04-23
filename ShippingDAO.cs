@@ -40,8 +40,7 @@ namespace Window_Project_v5._1
                 Shipping shipping = GetShippingFromDataRow(dr);
                 return shipping;
             }
-            // If no shipping information was found for the given ID, return null or throw an exception
-            return null; // Or throw new Exception("Shipping information not found for ID: " + id);
+            return null;
         }
 
 
@@ -53,6 +52,7 @@ namespace Window_Project_v5._1
             shipping.RecipientName = dr["RecipientName"].ToString();
             shipping.Address = dr["Address"].ToString();
             shipping.PhoneNo = dr["PhoneNumber"].ToString();
+            shipping.Id = Convert.ToInt32(dr["ID"]);
             return shipping;
         }
 

@@ -13,8 +13,8 @@ namespace Window_Project_v5._1
        
         public void update(Account account)
         {
-            string sqlStr = string.Format("UPDATE Account SET email = '{0}', password = '{1}', name = '{2}', Phone = '{3}', Birthday = '{4}', address = '{5}', money = '{6}' WHERE id = {7}", 
-                account.Email, account.Password,account.Name, account.Phone, account.Birthday,account.Address, account.Money, account.Id);
+            string sqlStr = string.Format("UPDATE Account SET email = '{0}', password = '{1}', name = '{2}', Phone = '{3}', Birthday = '{4}', address = '{5}', money = '{6}',selectedShippingID = '{7}' WHERE id = {8}", 
+                account.Email, account.Password,account.Name, account.Phone, account.Birthday,account.Address, account.Money,account.SelectedShipping, account.Id);
             AddImage(account, account.Avatar);
             dbconnection.Execute(sqlStr);
         }
@@ -78,6 +78,7 @@ namespace Window_Project_v5._1
                 account.Phone = Convert.ToString(row["phone"]);
                 account.Password = Convert.ToString(row["password"]);
                 account.Money = row["money"] != DBNull.Value ? Convert.ToDouble(row["money"]) : 0;
+                account.SelectedShipping = row["selectedShippingID"] != DBNull.Value ? Convert.ToInt32(row["selectedShippingID"]) : 0;
 
                 object birthdayValue = row["birthday"];
                 DateTime birthday;

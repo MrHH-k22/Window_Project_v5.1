@@ -13,6 +13,9 @@ namespace Window_Project_v5._1.Forms
     public partial class UCShipping : UserControl
     {
         Shipping shipping = new Shipping();
+
+        public Shipping Shipping { get => shipping; set => shipping = value; }
+
         public event EventHandler<EventArgs> SelectedChanged;
 
         public UCShipping()

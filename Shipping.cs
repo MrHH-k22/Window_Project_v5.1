@@ -18,13 +18,12 @@ namespace Window_Project_v5._1
         {
 
         }
-        public Shipping(int accountId, string recipientName, string phoneNo, string address, int id)
+        public Shipping(int accountId, string recipientName, string phoneNo, string address)
         {
             this.accountId = accountId;
             this.recipientName = recipientName;
             this.phoneNo = phoneNo;
             this.address = address;
-            this.id = id;
         }
 
         public string RecipientName { get => recipientName; set => recipientName = value; }

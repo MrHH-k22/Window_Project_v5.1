@@ -50,6 +50,9 @@
             this.flpCartList = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblEdit = new System.Windows.Forms.LinkLabel();
+            this.txtRecipientName = new Guna.UI2.WinForms.Guna2TextBox();
             this.llblAddAddress = new System.Windows.Forms.LinkLabel();
             this.lblPackage = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -81,8 +84,6 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.txtRecipientName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblEdit = new System.Windows.Forms.LinkLabel();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -91,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.panelBody.SuspendLayout();
             this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.containerTop.SuspendLayout();
@@ -377,6 +379,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.guna2PictureBox4);
             this.panelTop.Controls.Add(this.lblEdit);
             this.panelTop.Controls.Add(this.txtRecipientName);
             this.panelTop.Controls.Add(this.llblAddAddress);
@@ -392,6 +395,59 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1059, 217);
             this.panelTop.TabIndex = 0;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.user1;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(23, 53);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(43, 43);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 113;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // lblEdit
+            // 
+            this.lblEdit.AutoSize = true;
+            this.lblEdit.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lblEdit.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.Location = new System.Drawing.Point(741, 9);
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(54, 31);
+            this.lblEdit.TabIndex = 112;
+            this.lblEdit.TabStop = true;
+            this.lblEdit.Text = "Edit";
+            this.lblEdit.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblEdit_LinkClicked);
+            // 
+            // txtRecipientName
+            // 
+            this.txtRecipientName.AutoScroll = true;
+            this.txtRecipientName.BackColor = System.Drawing.Color.Transparent;
+            this.txtRecipientName.BorderRadius = 10;
+            this.txtRecipientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRecipientName.DefaultText = "";
+            this.txtRecipientName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRecipientName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRecipientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecipientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecipientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtRecipientName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRecipientName.ForeColor = System.Drawing.Color.Black;
+            this.txtRecipientName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtRecipientName.Location = new System.Drawing.Point(92, 54);
+            this.txtRecipientName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtRecipientName.Name = "txtRecipientName";
+            this.txtRecipientName.PasswordChar = '\0';
+            this.txtRecipientName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtRecipientName.PlaceholderText = "Please enter your name";
+            this.txtRecipientName.ReadOnly = true;
+            this.txtRecipientName.SelectedText = "";
+            this.txtRecipientName.Size = new System.Drawing.Size(400, 43);
+            this.txtRecipientName.TabIndex = 111;
             // 
             // llblAddAddress
             // 
@@ -463,6 +519,7 @@
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtAddress.PlaceholderText = "Please enter your address";
+            this.txtAddress.ReadOnly = true;
             this.txtAddress.SelectedText = "";
             this.txtAddress.Size = new System.Drawing.Size(930, 43);
             this.txtAddress.TabIndex = 106;
@@ -488,6 +545,7 @@
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtPhone.PlaceholderText = "Please enter your phone number";
+            this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(400, 43);
             this.txtPhone.TabIndex = 105;
@@ -950,46 +1008,6 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // txtRecipientName
-            // 
-            this.txtRecipientName.AutoScroll = true;
-            this.txtRecipientName.BackColor = System.Drawing.Color.Transparent;
-            this.txtRecipientName.BorderRadius = 10;
-            this.txtRecipientName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRecipientName.DefaultText = "";
-            this.txtRecipientName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRecipientName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtRecipientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRecipientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRecipientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtRecipientName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtRecipientName.ForeColor = System.Drawing.Color.Black;
-            this.txtRecipientName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtRecipientName.Location = new System.Drawing.Point(92, 54);
-            this.txtRecipientName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtRecipientName.Name = "txtRecipientName";
-            this.txtRecipientName.PasswordChar = '\0';
-            this.txtRecipientName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtRecipientName.PlaceholderText = "Please enter your name";
-            this.txtRecipientName.SelectedText = "";
-            this.txtRecipientName.Size = new System.Drawing.Size(400, 43);
-            this.txtRecipientName.TabIndex = 111;
-            // 
-            // lblEdit
-            // 
-            this.lblEdit.AutoSize = true;
-            this.lblEdit.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblEdit.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.lblEdit.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblEdit.Location = new System.Drawing.Point(741, 9);
-            this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(54, 31);
-            this.lblEdit.TabIndex = 112;
-            this.lblEdit.TabStop = true;
-            this.lblEdit.Text = "Edit";
-            this.lblEdit.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblEdit_LinkClicked);
-            // 
             // FDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1017,6 +1035,7 @@
             this.panelBody.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.containerTop.ResumeLayout(false);
@@ -1090,5 +1109,6 @@
         private System.Windows.Forms.LinkLabel llblAddAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtRecipientName;
         private System.Windows.Forms.LinkLabel lblEdit;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
     }
 }
