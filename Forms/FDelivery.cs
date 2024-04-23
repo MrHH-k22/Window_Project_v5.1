@@ -200,10 +200,15 @@ namespace Window_Project_v5._1.Forms
                     {
                         // Update Buyer money
                         Account buyer = accountDAO.Retrieve(acc.Id);
+                        // Check pay method (is it online or not)
                         if (payMethod == 1)
                         {
                             buyer.Money -= total;
                             accountDAO.update(buyer);
+                            product.PayMethod = true;
+                        } else
+                        {
+                            product.PayMethod = false;
                         }
                         //  Update Seller money
                         Account seller = accountDAO.Retrieve(product.SellerID);

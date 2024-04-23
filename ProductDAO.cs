@@ -99,9 +99,19 @@ namespace Window_Project_v5._1
         // Buyer purchases the product
         public void Update(Product product)
         {
-            string sqlStr = string.Format("UPDATE Product SET BuyerID = '{0}', OrderCondition = '{1}', ContactPhone = '{2}', DeliveryAddress = '{3}', ViewCount = '{4}'  WHERE ID = '{5}'",
-                                             product.BuyerID, product.OrderCondition, product.ContactPhone, product.DeliveryAddress,product.ViewCount, product.Id);
-            dbc.Execute(sqlStr);
+            string sqlStr = "UPDATE Product SET BuyerID = @BuyerID, OrderCondition = @OrderCondition, ContactPhone = @ContactPhone, DeliveryAddress = @DeliveryAddress, ViewCount = @ViewCount, PayMethod = @PayMethod, BuyTime = @BuyTime WHERE ID = @ID";
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@BuyerID", product.BuyerID),
+                new SqlParameter("@OrderCondition", product.OrderCondition),
+                new SqlParameter("@ContactPhone", product.ContactPhone),
+                new SqlParameter("@DeliveryAddress", product.DeliveryAddress),
+                new SqlParameter("@ViewCount", product.ViewCount),
+                new SqlParameter("@PayMethod", product.PayMethod),
+                new SqlParameter("@BuyTime", DateTime.Now),
+                new SqlParameter("@ID", product.Id)
+            };
+            dbc.Execute(sqlStr, parameters);
         }
 
         // Seller update the product's order condition
@@ -285,6 +295,7 @@ namespace Window_Project_v5._1
             product.Functionality = dr["Functionality"].ToString();
             product.CancelLimit = int.Parse(dr["CancelLimit"].ToString());
             product.CancelRefund = bool.Parse(dr["CancelRefund"].ToString());
+            product.BuyDate = (dr["BuyTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["BuyTime"]);
             return product;
         }
 

@@ -35,7 +35,11 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             SetEventForAllControls(this);
             InitializeUCProductBuy(pd, acc);
-
+            //Check for Cancel function
+            if (DateTime.Now > pd.CancelDate())
+            {
+                btnCancel.Visible = false;
+            }
         }
 
         public UCProductBuy(Product pd, Account acc, bool checkCart)
@@ -132,8 +136,6 @@ namespace Window_Project_v5._1.Forms
             // Buyed
             if (product.BuyerID != 0)
             {
-                account.Money += product.SalePrice;
-                accountDAO.update(account);
                 //get seller
                 Account Seller = accountDAO.Retrieve(product.SellerID);
                 Seller.Money -= product.SalePrice;
@@ -142,6 +144,13 @@ namespace Window_Project_v5._1.Forms
                 product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
                 productDAO.DeleteBuyerID(product);
+                //refund if product is allowed to refund && Online payment
+                if (product.CancelRefund && product.PayMethod)
+                {
+                    Account Buyer = accountDAO.Retrieve(product.BuyerID);
+                    Buyer.Money += product.SalePrice;
+                    accountDAO.update(Buyer);
+                }
             }
             // Not buyed yet
             else

@@ -38,9 +38,10 @@ namespace Window_Project_v5._1
         private DateTime completeTime;
         private string color;
         private string functionality;
-        private DateTime BuyDate;
+        private DateTime buyDate;
         private int cancelLimit;
         private bool cancelRefund;
+        private bool payMethod;
 
 
 
@@ -194,6 +195,8 @@ namespace Window_Project_v5._1
         public string Functionality { get => functionality; set => functionality = value; }
         public int CancelLimit { get => cancelLimit; set => cancelLimit = value; }
         public bool CancelRefund { get => cancelRefund; set => cancelRefund = value; }
+        public bool PayMethod { get => payMethod; set => payMethod = value; }
+        public DateTime BuyDate { get => buyDate; set => buyDate = value; }
 
         public string GetBillStatus()
         {
