@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellDetail));
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.gbBillStatus = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.lblCompleteTime = new System.Windows.Forms.Label();
             this.lblBuyerName = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,7 +60,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMiddle = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTime = new System.Windows.Forms.Label();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -70,7 +71,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSellPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBuyPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.ddCategory = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label2 = new System.Windows.Forms.Label();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -96,7 +96,12 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lblCompleteTime = new System.Windows.Forms.Label();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCancelTime = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
+            this.cbCancel = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
             this.gbBillStatus.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -150,6 +155,18 @@
             this.gbBillStatus.TabIndex = 110;
             this.gbBillStatus.TabStop = false;
             // 
+            // lblCompleteTime
+            // 
+            this.lblCompleteTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompleteTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompleteTime.ForeColor = System.Drawing.Color.Black;
+            this.lblCompleteTime.Location = new System.Drawing.Point(173, 156);
+            this.lblCompleteTime.Name = "lblCompleteTime";
+            this.lblCompleteTime.Size = new System.Drawing.Size(125, 28);
+            this.lblCompleteTime.TabIndex = 119;
+            this.lblCompleteTime.Text = "1/1/2004";
+            this.lblCompleteTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // lblBuyerName
             // 
             this.lblBuyerName.BackColor = System.Drawing.Color.Transparent;
@@ -161,6 +178,18 @@
             this.lblBuyerName.TabIndex = 118;
             this.lblBuyerName.Text = "Buyer Name";
             this.lblBuyerName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblTime.Location = new System.Drawing.Point(11, 156);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(156, 28);
+            this.lblTime.TabIndex = 118;
+            this.lblTime.Text = "Completed Time";
             // 
             // lblPhone
             // 
@@ -591,6 +620,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.AutoScroll = true;
             this.guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(331, 0);
@@ -611,6 +641,13 @@
             // 
             // panelMiddle
             // 
+            this.panelMiddle.AutoScroll = true;
+            this.panelMiddle.Controls.Add(this.label12);
+            this.panelMiddle.Controls.Add(this.cbCancel);
+            this.panelMiddle.Controls.Add(this.guna2Separator6);
+            this.panelMiddle.Controls.Add(this.txtCancelTime);
+            this.panelMiddle.Controls.Add(this.guna2Separator5);
+            this.panelMiddle.Controls.Add(this.label8);
             this.panelMiddle.Controls.Add(this.guna2Separator4);
             this.panelMiddle.Controls.Add(this.label1);
             this.panelMiddle.Controls.Add(this.guna2Separator1);
@@ -622,7 +659,6 @@
             this.panelMiddle.Controls.Add(this.label3);
             this.panelMiddle.Controls.Add(this.txtSellPrice);
             this.panelMiddle.Controls.Add(this.txtBuyPrice);
-            this.panelMiddle.Controls.Add(this.btnClose);
             this.panelMiddle.Controls.Add(this.ddCategory);
             this.panelMiddle.Controls.Add(this.label2);
             this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Right;
@@ -632,18 +668,6 @@
             this.panelMiddle.Size = new System.Drawing.Size(566, 710);
             this.panelMiddle.TabIndex = 4;
             this.panelMiddle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMiddle_Paint);
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblTime.Location = new System.Drawing.Point(11, 156);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(156, 28);
-            this.lblTime.TabIndex = 118;
-            this.lblTime.Text = "Completed Time";
             // 
             // guna2Separator4
             // 
@@ -890,7 +914,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(24, 460);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -947,29 +971,6 @@
             this.txtBuyPrice.Size = new System.Drawing.Size(228, 43);
             this.txtBuyPrice.TabIndex = 98;
             this.txtBuyPrice.TextChanged += new System.EventHandler(this.txtBuyPrice_TextChanged);
-            // 
-            // btnClose
-            // 
-            this.btnClose.AutoRoundedCorners = true;
-            this.btnClose.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
-            this.btnClose.BorderRadius = 26;
-            this.btnClose.BorderThickness = 1;
-            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnClose.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
-            this.btnClose.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(47)))), ((int)(((byte)(35)))));
-            this.btnClose.Location = new System.Drawing.Point(699, 679);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(203, 55);
-            this.btnClose.TabIndex = 95;
-            this.btnClose.Text = "Go Back";
             // 
             // ddCategory
             // 
@@ -1463,17 +1464,87 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // lblCompleteTime
+            // guna2Separator5
             // 
-            this.lblCompleteTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblCompleteTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompleteTime.ForeColor = System.Drawing.Color.Black;
-            this.lblCompleteTime.Location = new System.Drawing.Point(173, 156);
-            this.lblCompleteTime.Name = "lblCompleteTime";
-            this.lblCompleteTime.Size = new System.Drawing.Size(125, 28);
-            this.lblCompleteTime.TabIndex = 119;
-            this.lblCompleteTime.Text = "1/1/2004";
-            this.lblCompleteTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.guna2Separator5.Location = new System.Drawing.Point(24, 660);
+            this.guna2Separator5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(509, 10);
+            this.guna2Separator5.TabIndex = 112;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label8.Location = new System.Drawing.Point(23, 621);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 31);
+            this.label8.TabIndex = 111;
+            this.label8.Text = "Policies";
+            // 
+            // txtCancelTime
+            // 
+            this.txtCancelTime.AutoScroll = true;
+            this.txtCancelTime.BackColor = System.Drawing.Color.Transparent;
+            this.txtCancelTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCancelTime.DefaultText = "";
+            this.txtCancelTime.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCancelTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCancelTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCancelTime.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCancelTime.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtCancelTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCancelTime.ForeColor = System.Drawing.Color.Black;
+            this.txtCancelTime.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtCancelTime.Location = new System.Drawing.Point(29, 688);
+            this.txtCancelTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCancelTime.Name = "txtCancelTime";
+            this.txtCancelTime.PasswordChar = '\0';
+            this.txtCancelTime.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtCancelTime.PlaceholderText = "Cancel time (Hour)";
+            this.txtCancelTime.SelectedText = "";
+            this.txtCancelTime.Size = new System.Drawing.Size(501, 43);
+            this.txtCancelTime.TabIndex = 113;
+            this.txtCancelTime.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged_1);
+            // 
+            // guna2Separator6
+            // 
+            this.guna2Separator6.Location = new System.Drawing.Point(18, 822);
+            this.guna2Separator6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Separator6.Name = "guna2Separator6";
+            this.guna2Separator6.Size = new System.Drawing.Size(509, 10);
+            this.guna2Separator6.TabIndex = 114;
+            // 
+            // cbCancel
+            // 
+            this.cbCancel.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cbCancel.CheckedState.BorderRadius = 6;
+            this.cbCancel.CheckedState.BorderThickness = 1;
+            this.cbCancel.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.cbCancel.Location = new System.Drawing.Point(38, 759);
+            this.cbCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbCancel.Name = "cbCancel";
+            this.cbCancel.Size = new System.Drawing.Size(29, 30);
+            this.cbCancel.TabIndex = 115;
+            this.cbCancel.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cbCancel.UncheckedState.BorderRadius = 6;
+            this.cbCancel.UncheckedState.BorderThickness = 1;
+            this.cbCancel.UncheckedState.FillColor = System.Drawing.Color.White;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.Location = new System.Drawing.Point(73, 759);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(330, 28);
+            this.label12.TabIndex = 120;
+            this.label12.Text = "Does cancellation incur any charges?";
             // 
             // FSellDetail
             // 
@@ -1526,7 +1597,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtBuyPrice;
         private Guna.UI2.WinForms.Guna2TextBox txtCondition;
         private Guna.UI2.WinForms.Guna2TextBox txtStatus;
-        private Guna.UI2.WinForms.Guna2Button btnClose;
         private Bunifu.UI.WinForms.BunifuDropdown ddCategory;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label2;
@@ -1582,5 +1652,11 @@
         public System.Windows.Forms.Label lblPhone;
         public System.Windows.Forms.Label lblBuyerName;
         public System.Windows.Forms.Label lblCompleteTime;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator6;
+        private Guna.UI2.WinForms.Guna2TextBox txtCancelTime;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator5;
+        public System.Windows.Forms.Label label8;
+        public Guna.UI2.WinForms.Guna2CustomCheckBox cbCancel;
+        public System.Windows.Forms.Label label12;
     }
 }

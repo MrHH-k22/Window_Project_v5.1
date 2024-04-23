@@ -465,5 +465,10 @@ namespace Window_Project_v5._1.Forms
                 }
             }
         }
+
+        private void guna2TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
