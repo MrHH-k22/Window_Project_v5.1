@@ -18,6 +18,7 @@ namespace Window_Project_v5._1.Forms
         private Account account = new Account();
         private List<Product> products = new List<Product>();
         private List<Product> productChosen = new List<Product>();
+        private VoucherDAO voucherDAO = new VoucherDAO();
 
         public FCart()
         {
@@ -214,6 +215,23 @@ namespace Window_Project_v5._1.Forms
             // Update labels
             lblNoOfItems.Text = itemCount.ToString();
             lblTotalMoney.Text = totalMoney.ToString("N0") + " VND";
+        }
+
+        private void llblApplyVoucher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(llblApplyVoucher.Text == "Apply Voucher")
+            {
+                flpCartList.Controls.Clear();
+                List<int> Voucherids = voucherDAO.GetVoucherIDsByBuyerID(account.Id);
+                foreach (var voucherID in Voucherids)
+                {
+                    Voucher voucher = voucherDAO.GetShipping(voucherID);
+                    UCVoucher uc = new UCVoucher(voucher, account);
+                    //uc.SelectedChanged += UC_SelectedChanged;
+                    flpCartList.Controls.Add(uc);
+
+                }
+            }
         }
     }
 }

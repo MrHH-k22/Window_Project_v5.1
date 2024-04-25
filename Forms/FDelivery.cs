@@ -232,5 +232,10 @@ namespace Window_Project_v5._1.Forms
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void llblApplyVoucher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
