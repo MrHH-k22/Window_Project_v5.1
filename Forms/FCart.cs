@@ -217,21 +217,5 @@ namespace Window_Project_v5._1.Forms
             lblTotalMoney.Text = totalMoney.ToString("N0") + " VND";
         }
 
-        private void llblApplyVoucher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if(llblApplyVoucher.Text == "Apply Voucher")
-            {
-                flpCartList.Controls.Clear();
-                List<int> Voucherids = voucherDAO.GetVoucherIDsByBuyerID(account.Id);
-                foreach (var voucherID in Voucherids)
-                {
-                    Voucher voucher = voucherDAO.GetShipping(voucherID);
-                    UCVoucher uc = new UCVoucher(voucher, account);
-                    //uc.SelectedChanged += UC_SelectedChanged;
-                    flpCartList.Controls.Add(uc);
-
-                }
-            }
-        }
     }
 }

@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
     public partial class FDelivery : Form
     {
         private List<Product> products = new List<Product>();
+        private VoucherDAO voucherDAO = new VoucherDAO();   
         private AccountDAO accountDAO = new AccountDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private ProductDAO productDAO = new ProductDAO();
@@ -233,9 +234,6 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
-        private void llblApplyVoucher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
 
-        }
     }
 }

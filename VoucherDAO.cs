@@ -62,7 +62,7 @@ namespace Window_Project_v5._1
             MessageBox.Show("Voucher successfully collected.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public Voucher GetShipping(int id)
+        public Voucher GetVoucher(int id)
         {
             DataTable dt = dbc.Load(string.Format("SELECT * FROM Voucher WHERE VoucherID = '{0}';", id));
             foreach (DataRow dr in dt.Rows)
@@ -73,20 +73,18 @@ namespace Window_Project_v5._1
             return null;
         }
 
+
+
         public List<int> GetVoucherIDsByBuyerID(int buyerID)
         {
             List<int> list = new List<int>();
             DataTable dt = dbc.Load(string.Format("SELECT VoucherID FROM Voucher_Account WHERE BuyerID = {0}", buyerID));
             foreach (DataRow dr in dt.Rows)
             {
-                Voucher voucher = GetFromDataRow(dr);
-                list.Add(voucher.VoucherId);
+                list.Add((int)dr["VoucherID"]);
             }
             return list;
         }
-
-
-
 
     }
 }
