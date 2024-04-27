@@ -61,6 +61,7 @@
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label = new System.Windows.Forms.Label();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnPost = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
@@ -84,6 +85,9 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblVoucherValue = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.llblApplyVoucher = new System.Windows.Forms.LinkLabel();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -110,6 +114,9 @@
             this.panelRight.BorderColor = System.Drawing.Color.Silver;
             this.panelRight.BorderRadius = 10;
             this.panelRight.BorderThickness = 1;
+            this.panelRight.Controls.Add(this.lblVoucherValue);
+            this.panelRight.Controls.Add(this.label10);
+            this.panelRight.Controls.Add(this.llblApplyVoucher);
             this.panelRight.Controls.Add(this.guna2Panel3);
             this.panelRight.Controls.Add(this.label7);
             this.panelRight.Controls.Add(this.lblNoOfItems);
@@ -260,7 +267,7 @@
             // 
             this.lblNoOfItems.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfItems.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfItems.Location = new System.Drawing.Point(271, 342);
+            this.lblNoOfItems.Location = new System.Drawing.Point(273, 484);
             this.lblNoOfItems.Name = "lblNoOfItems";
             this.lblNoOfItems.Size = new System.Drawing.Size(139, 31);
             this.lblNoOfItems.TabIndex = 139;
@@ -272,7 +279,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(20, 342);
+            this.label6.Location = new System.Drawing.Point(22, 484);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(191, 31);
             this.label6.TabIndex = 138;
@@ -283,7 +290,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(20, 382);
+            this.label5.Location = new System.Drawing.Point(22, 580);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 31);
             this.label5.TabIndex = 136;
@@ -293,7 +300,7 @@
             // 
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPrice.Location = new System.Drawing.Point(243, 382);
+            this.lblPrice.Location = new System.Drawing.Point(245, 580);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(167, 31);
             this.lblPrice.TabIndex = 137;
@@ -318,7 +325,7 @@
             this.btnBuy.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.Location = new System.Drawing.Point(27, 441);
+            this.btnBuy.Location = new System.Drawing.Point(29, 639);
             this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(369, 49);
@@ -563,6 +570,7 @@
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnVoucher);
             this.containerTop.Controls.Add(this.btnPost);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
@@ -576,6 +584,33 @@
             this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 63;
             this.containerTop.Text = "guna2ContainerControl1";
+            // 
+            // btnVoucher
+            // 
+            this.btnVoucher.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnVoucher.ForeColor = System.Drawing.Color.White;
+            this.btnVoucher.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnVoucher.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnVoucher.Location = new System.Drawing.Point(669, 12);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
+            this.btnVoucher.TabIndex = 5;
+            this.btnVoucher.Text = "CART";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(7, 0);
             // 
             // btnPost
             // 
@@ -1008,6 +1043,42 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
+            // lblVoucherValue
+            // 
+            this.lblVoucherValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoucherValue.ForeColor = System.Drawing.Color.Black;
+            this.lblVoucherValue.Location = new System.Drawing.Point(273, 533);
+            this.lblVoucherValue.Name = "lblVoucherValue";
+            this.lblVoucherValue.Size = new System.Drawing.Size(139, 31);
+            this.lblVoucherValue.TabIndex = 151;
+            this.lblVoucherValue.Text = "10";
+            this.lblVoucherValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label10.Location = new System.Drawing.Point(23, 533);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 31);
+            this.label10.TabIndex = 150;
+            this.label10.Text = "Voucher:";
+            // 
+            // llblApplyVoucher
+            // 
+            this.llblApplyVoucher.AutoSize = true;
+            this.llblApplyVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.llblApplyVoucher.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblApplyVoucher.Location = new System.Drawing.Point(16, 356);
+            this.llblApplyVoucher.Name = "llblApplyVoucher";
+            this.llblApplyVoucher.Size = new System.Drawing.Size(145, 28);
+            this.llblApplyVoucher.TabIndex = 149;
+            this.llblApplyVoucher.TabStop = true;
+            this.llblApplyVoucher.Text = "Apply Voucher";
+            this.llblApplyVoucher.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblApplyVoucher.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblApplyVoucher_LinkClicked_1);
+            // 
             // FDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1110,5 +1181,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtRecipientName;
         private System.Windows.Forms.LinkLabel lblEdit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private System.Windows.Forms.Label lblVoucherValue;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.LinkLabel llblApplyVoucher;
     }
 }
