@@ -63,6 +63,8 @@
             this.txtVoucherValue.SelectedText = "";
             this.txtVoucherValue.Size = new System.Drawing.Size(508, 43);
             this.txtVoucherValue.TabIndex = 106;
+            this.txtVoucherValue.TextChanged += new System.EventHandler(this.txtVoucherValue_TextChanged);
+            this.txtVoucherValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVoucherValue_KeyPress);
             // 
             // txtVoucherName
             // 

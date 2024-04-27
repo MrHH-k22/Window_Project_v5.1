@@ -8,6 +8,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utilities.BunifuCheckBox.Transitions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Window_Project_v5._1.Forms
@@ -23,6 +24,8 @@ namespace Window_Project_v5._1.Forms
         private CartDAO cartDAO = new CartDAO();
         private Account acc = new Account();
         private double total = 0;
+        private double voucherValue = 0;
+        private double subtotal = 0;
         private int payMethod = -1;
 
 
@@ -42,20 +45,26 @@ namespace Window_Project_v5._1.Forms
 
         private void FDelivery_Load(object sender, EventArgs e)
         {
+            subtotal = 0;
             total = 0;
             foreach (Product p in products)
             {
                 UCProductCart uc = new UCProductCart(p, acc);
                 uc.cbSelected.Visible = false;
-                total += p.SalePrice;
+                subtotal += p.SalePrice;
                 flpCartList.Controls.Add(uc);
             }
+            total = subtotal;
+
+
             if (acc.Money < total)
             {
                 rbtnCash.Checked = true;
                 rbtnOnline.Checked = false;
                 rbtnOnline.Enabled = false;
             }
+
+            lblSubtotal.Text = subtotal.ToString("N0") + " VND";
             lblPrice.Text = total.ToString("N0") + " VND";
             lblNoOfItems.Text = products.Count.ToString();
             //
@@ -260,7 +269,6 @@ namespace Window_Project_v5._1.Forms
         {
             if(lblEdit.Text == "Edit")
             {
-                flpCartList.AutoScroll = true;
                 lblEdit.Text = "Save";
                 lblPackage.Text = "List of your address";
                 flpCartList.Controls.Clear();
@@ -270,38 +278,85 @@ namespace Window_Project_v5._1.Forms
                     if (acc.Id == ship.AccountId)
                     {
                         UCShipping uc = new UCShipping(ship);
-                        uc.SelectedChanged += UC_SelectedChanged;
+                        uc.SelectedChanged += UC_ShippingSelectedChanged;
                         flpCartList.Controls.Add(uc);
                     }
                 }
             }
             else
             {
-                flpCartList.AutoScroll = false;
                 lblEdit.Text = "Edit";
                 lblPackage.Text = "Package";
                 flpCartList.Controls.Clear();
                 FDelivery_Load(sender,e);
-                /*
-                foreach (Product p in products)
-                {
-                    UCProductCart uc = new UCProductCart(p, acc);
-                    uc.cbSelected.Visible = false;
-                    flpCartList.Controls.Add(uc);
-                }
-                */
             }
         }
 
-        private void UC_SelectedChanged(object sender, EventArgs e)
+        private void UC_ShippingSelectedChanged(object sender, EventArgs e)
         {
             // Cast the sender object back to UCShipping to access its properties
             UCShipping selectedUC = sender as UCShipping;
             selectedUC.panelBorder.BorderColor = Color.Black;
             acc.SelectedShipping = selectedUC.Shipping.Id;
             accountDAO.update(acc);
+
             // Iterate through each UCShipping control in the flow layout panel
             foreach (UCShipping uc in flpCartList.Controls)
+            {
+                // Check if the current UCShipping control is not the one that triggered the event
+                if (uc != selectedUC)
+                {
+                    // Disable the radio button in the current UCShipping control
+                    uc.panelBorder.BorderColor = Color.Silver;
+                }
+            }
+        }
+
+        private void btnApplyVoucher_Click(object sender, EventArgs e)
+        {
+            if (btnApplyVoucher.Text == "Voucher")
+            {
+                btnApplyVoucher.Text = "CLOSE";
+                lblPackage.Text = "All available vouchers";
+                flpCartList.Controls.Clear();
+                List<int> Voucherids = voucherDAO.GetVoucherIDsByBuyerID(acc.Id);
+                foreach (var voucherID in Voucherids)
+                {
+                    Voucher voucher = voucherDAO.GetVoucher(voucherID);
+                    if(voucher.Beginday > DateTime.Now && voucher.Endday < DateTime.Now)
+                    {
+                        UCApplyVoucher uc = new UCApplyVoucher(voucher, acc);
+                        uc.SelectedChanged += UC_ApplyVoucherSelectedChanged;
+                        flpCartList.Controls.Add(uc);
+                    }
+                }
+            }
+            else
+            {
+                btnApplyVoucher.Text = "Voucher";
+                lblPackage.Text = "Package";
+                flpCartList.Controls.Clear();
+                foreach (Product p in products)
+                {
+                    UCProductCart uc = new UCProductCart(p, acc);
+                    uc.cbSelected.Visible = false;
+                    flpCartList.Controls.Add(uc);
+                }
+            }
+        }
+
+        private void UC_ApplyVoucherSelectedChanged(object sender, EventArgs e)
+        {
+            // Cast the sender object back to UCShipping to access its properties
+            UCApplyVoucher selectedUC = sender as UCApplyVoucher;
+            selectedUC.panelBorder.BorderColor = Color.Black;
+            voucherValue = selectedUC.Voucher.Value;
+            total = 0;
+            total = subtotal < voucherValue ? 0 : subtotal - voucherValue;
+            lblVoucherValue.Text = "-"+ voucherValue.ToString("N0") + " VND";
+            lblPrice.Text = total.ToString("N0") + " VND";
+
+            foreach (UCApplyVoucher uc in flpCartList.Controls)
             {
                 // Check if the current UCShipping control is not the one that triggered the event
                 if (uc != selectedUC)

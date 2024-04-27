@@ -76,6 +76,10 @@
             this.btnPurchase.AutoRoundedCorners = true;
             this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
             this.btnPurchase.BorderRadius = 23;
+            this.btnPurchase.CustomizableEdges.BottomLeft = false;
+            this.btnPurchase.CustomizableEdges.BottomRight = false;
+            this.btnPurchase.CustomizableEdges.TopLeft = false;
+            this.btnPurchase.CustomizableEdges.TopRight = false;
             this.btnPurchase.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPurchase.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPurchase.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

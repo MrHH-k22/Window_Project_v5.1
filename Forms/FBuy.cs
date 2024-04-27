@@ -203,17 +203,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            if(containerMenu.Visible == false)
-            {
-                containerMenu.Visible = true;
-            }
-            else
-            {
-                containerMenu.Visible = false;
-            }
-        }
 
         private void btnCart_Click(object sender, EventArgs e)
         {
@@ -298,6 +287,18 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (containerMenu.Visible == false)
+            {
+                containerMenu.Visible = true;
+            }
+            else
+            {
+                containerMenu.Visible = false;
+            }
         }
     }
 }

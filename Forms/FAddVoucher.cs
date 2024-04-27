@@ -28,9 +28,20 @@ namespace Window_Project_v5._1.Forms
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            Voucher voucher = new Voucher(account.Id,txtVoucherName.Text, StringToDouble(txtVoucherValue.Text),dtBeginday.Value,dtEndDay.Value);
-            voucherDAO.add(voucher);
-            MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (dtBeginday.Value < DateTime.Now || dtEndDay.Value < DateTime.Now)
+            {
+                MessageBox.Show("Dates must be in the future.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (dtEndDay.Value>=dtBeginday.Value)
+            {
+                MessageBox.Show("End date must be after start date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Voucher voucher = new Voucher(account.Id, txtVoucherName.Text, StringToDouble(txtVoucherValue.Text), dtBeginday.Value, dtEndDay.Value);
+                voucherDAO.add(voucher);
+                MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private double StringToDouble(string str)
@@ -41,6 +52,19 @@ namespace Window_Project_v5._1.Forms
                 return (double)decimalResult;
             }
             return -1;
+        }
+
+        private void txtVoucherValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVoucherValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

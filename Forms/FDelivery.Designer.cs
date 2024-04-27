@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnApplyVoucher = new Guna.UI2.WinForms.Guna2Button();
+            this.lblVoucherValue = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.gbOnline = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -85,9 +88,8 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lblVoucherValue = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.llblApplyVoucher = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -114,9 +116,11 @@
             this.panelRight.BorderColor = System.Drawing.Color.Silver;
             this.panelRight.BorderRadius = 10;
             this.panelRight.BorderThickness = 1;
+            this.panelRight.Controls.Add(this.label2);
+            this.panelRight.Controls.Add(this.lblSubtotal);
+            this.panelRight.Controls.Add(this.btnApplyVoucher);
             this.panelRight.Controls.Add(this.lblVoucherValue);
             this.panelRight.Controls.Add(this.label10);
-            this.panelRight.Controls.Add(this.llblApplyVoucher);
             this.panelRight.Controls.Add(this.guna2Panel3);
             this.panelRight.Controls.Add(this.label7);
             this.panelRight.Controls.Add(this.lblNoOfItems);
@@ -131,6 +135,52 @@
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(421, 710);
             this.panelRight.TabIndex = 60;
+            // 
+            // btnApplyVoucher
+            // 
+            this.btnApplyVoucher.AutoRoundedCorners = true;
+            this.btnApplyVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnApplyVoucher.BorderRadius = 23;
+            this.btnApplyVoucher.CustomizableEdges.BottomLeft = false;
+            this.btnApplyVoucher.CustomizableEdges.BottomRight = false;
+            this.btnApplyVoucher.CustomizableEdges.TopLeft = false;
+            this.btnApplyVoucher.CustomizableEdges.TopRight = false;
+            this.btnApplyVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplyVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplyVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnApplyVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnApplyVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnApplyVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnApplyVoucher.ForeColor = System.Drawing.Color.White;
+            this.btnApplyVoucher.Location = new System.Drawing.Point(25, 354);
+            this.btnApplyVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApplyVoucher.Name = "btnApplyVoucher";
+            this.btnApplyVoucher.Size = new System.Drawing.Size(383, 48);
+            this.btnApplyVoucher.TabIndex = 152;
+            this.btnApplyVoucher.Text = "Voucher";
+            this.btnApplyVoucher.Click += new System.EventHandler(this.btnApplyVoucher_Click);
+            // 
+            // lblVoucherValue
+            // 
+            this.lblVoucherValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoucherValue.ForeColor = System.Drawing.Color.Black;
+            this.lblVoucherValue.Location = new System.Drawing.Point(177, 533);
+            this.lblVoucherValue.Name = "lblVoucherValue";
+            this.lblVoucherValue.Size = new System.Drawing.Size(235, 31);
+            this.lblVoucherValue.TabIndex = 151;
+            this.lblVoucherValue.Text = "0 VND";
+            this.lblVoucherValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label10.Location = new System.Drawing.Point(23, 533);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 31);
+            this.label10.TabIndex = 150;
+            this.label10.Text = "Voucher:";
             // 
             // guna2Panel3
             // 
@@ -267,7 +317,7 @@
             // 
             this.lblNoOfItems.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfItems.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfItems.Location = new System.Drawing.Point(273, 484);
+            this.lblNoOfItems.Location = new System.Drawing.Point(273, 444);
             this.lblNoOfItems.Name = "lblNoOfItems";
             this.lblNoOfItems.Size = new System.Drawing.Size(139, 31);
             this.lblNoOfItems.TabIndex = 139;
@@ -279,7 +329,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(22, 484);
+            this.label6.Location = new System.Drawing.Point(22, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(191, 31);
             this.label6.TabIndex = 138;
@@ -300,9 +350,9 @@
             // 
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPrice.Location = new System.Drawing.Point(245, 580);
+            this.lblPrice.Location = new System.Drawing.Point(177, 580);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(167, 31);
+            this.lblPrice.Size = new System.Drawing.Size(235, 31);
             this.lblPrice.TabIndex = 137;
             this.lblPrice.Text = "999000 VND";
             this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -367,6 +417,7 @@
             // 
             // flpCartList
             // 
+            this.flpCartList.AutoScroll = true;
             this.flpCartList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCartList.Location = new System.Drawing.Point(0, 222);
             this.flpCartList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1043,41 +1094,27 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
-            // lblVoucherValue
+            // label2
             // 
-            this.lblVoucherValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoucherValue.ForeColor = System.Drawing.Color.Black;
-            this.lblVoucherValue.Location = new System.Drawing.Point(273, 533);
-            this.lblVoucherValue.Name = "lblVoucherValue";
-            this.lblVoucherValue.Size = new System.Drawing.Size(139, 31);
-            this.lblVoucherValue.TabIndex = 151;
-            this.lblVoucherValue.Text = "10";
-            this.lblVoucherValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(23, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 31);
+            this.label2.TabIndex = 153;
+            this.label2.Text = "Subtotal:";
             // 
-            // label10
+            // lblSubtotal
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label10.Location = new System.Drawing.Point(23, 533);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 31);
-            this.label10.TabIndex = 150;
-            this.label10.Text = "Voucher:";
-            // 
-            // llblApplyVoucher
-            // 
-            this.llblApplyVoucher.AutoSize = true;
-            this.llblApplyVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.llblApplyVoucher.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.llblApplyVoucher.Location = new System.Drawing.Point(16, 356);
-            this.llblApplyVoucher.Name = "llblApplyVoucher";
-            this.llblApplyVoucher.Size = new System.Drawing.Size(145, 28);
-            this.llblApplyVoucher.TabIndex = 149;
-            this.llblApplyVoucher.TabStop = true;
-            this.llblApplyVoucher.Text = "Apply Voucher";
-            this.llblApplyVoucher.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.llblApplyVoucher.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblApplyVoucher_LinkClicked_1);
+            this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.ForeColor = System.Drawing.Color.Black;
+            this.lblSubtotal.Location = new System.Drawing.Point(171, 487);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(242, 31);
+            this.lblSubtotal.TabIndex = 154;
+            this.lblSubtotal.Text = "999000 VND";
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FDelivery
             // 
@@ -1184,6 +1221,8 @@
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
         private System.Windows.Forms.Label lblVoucherValue;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.LinkLabel llblApplyVoucher;
+        private Guna.UI2.WinForms.Guna2Button btnApplyVoucher;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSubtotal;
     }
 }
