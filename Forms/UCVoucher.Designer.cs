@@ -30,12 +30,12 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBorder = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblVoucherName = new System.Windows.Forms.Label();
+            this.btnCollect = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblValue = new System.Windows.Forms.Label();
             this.lblEndDay = new System.Windows.Forms.Label();
             this.lblBeginDay = new System.Windows.Forms.Label();
-            this.btnCollect = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.lblVoucherName = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.panelBorder.SuspendLayout();
             this.SuspendLayout();
@@ -67,24 +67,29 @@
             this.panelBorder.Size = new System.Drawing.Size(460, 186);
             this.panelBorder.TabIndex = 0;
             // 
-            // lblVoucherName
+            // btnCollect
             // 
-            this.lblVoucherName.AutoSize = true;
-            this.lblVoucherName.BackColor = System.Drawing.Color.Transparent;
-            this.lblVoucherName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoucherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblVoucherName.Location = new System.Drawing.Point(22, 14);
-            this.lblVoucherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblVoucherName.Name = "lblVoucherName";
-            this.lblVoucherName.Size = new System.Drawing.Size(167, 31);
-            this.lblVoucherName.TabIndex = 115;
-            this.lblVoucherName.Text = "Voucher name";
+            this.btnCollect.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCollect.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCollect.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCollect.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCollect.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCollect.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCollect.ForeColor = System.Drawing.Color.White;
+            this.btnCollect.Image = global::Window_Project_v5._1.Properties.Resources.plus_white;
+            this.btnCollect.Location = new System.Drawing.Point(378, 121);
+            this.btnCollect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCollect.Name = "btnCollect";
+            this.btnCollect.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCollect.Size = new System.Drawing.Size(40, 39);
+            this.btnCollect.TabIndex = 121;
+            this.btnCollect.Click += new System.EventHandler(this.btnCollect_Click);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(148, 64);
+            this.label1.Location = new System.Drawing.Point(161, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 33);
             this.label1.TabIndex = 120;
@@ -104,9 +109,9 @@
             // 
             this.lblEndDay.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndDay.ForeColor = System.Drawing.Color.DimGray;
-            this.lblEndDay.Location = new System.Drawing.Point(166, 64);
+            this.lblEndDay.Location = new System.Drawing.Point(185, 64);
             this.lblEndDay.Name = "lblEndDay";
-            this.lblEndDay.Size = new System.Drawing.Size(124, 33);
+            this.lblEndDay.Size = new System.Drawing.Size(135, 33);
             this.lblEndDay.TabIndex = 117;
             this.lblEndDay.Text = "19/1/2004";
             this.lblEndDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -117,27 +122,22 @@
             this.lblBeginDay.ForeColor = System.Drawing.Color.DimGray;
             this.lblBeginDay.Location = new System.Drawing.Point(22, 64);
             this.lblBeginDay.Name = "lblBeginDay";
-            this.lblBeginDay.Size = new System.Drawing.Size(125, 33);
+            this.lblBeginDay.Size = new System.Drawing.Size(137, 33);
             this.lblBeginDay.TabIndex = 116;
             this.lblBeginDay.Text = "19/1/2004";
             // 
-            // btnCollect
+            // lblVoucherName
             // 
-            this.btnCollect.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCollect.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCollect.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCollect.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCollect.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCollect.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCollect.ForeColor = System.Drawing.Color.White;
-            this.btnCollect.Image = global::Window_Project_v5._1.Properties.Resources.plus_white;
-            this.btnCollect.Location = new System.Drawing.Point(378, 121);
-            this.btnCollect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCollect.Name = "btnCollect";
-            this.btnCollect.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnCollect.Size = new System.Drawing.Size(40, 39);
-            this.btnCollect.TabIndex = 121;
-            this.btnCollect.Click += new System.EventHandler(this.btnCollect_Click);
+            this.lblVoucherName.AutoSize = true;
+            this.lblVoucherName.BackColor = System.Drawing.Color.Transparent;
+            this.lblVoucherName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoucherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblVoucherName.Location = new System.Drawing.Point(22, 14);
+            this.lblVoucherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVoucherName.Name = "lblVoucherName";
+            this.lblVoucherName.Size = new System.Drawing.Size(167, 31);
+            this.lblVoucherName.TabIndex = 115;
+            this.lblVoucherName.Text = "Voucher name";
             // 
             // UCVoucher
             // 

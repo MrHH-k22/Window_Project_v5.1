@@ -31,18 +31,13 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
-            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.flpVoucher = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblAddVoucher = new System.Windows.Forms.LinkLabel();
-            this.lblVoucherName = new System.Windows.Forms.Label();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
             this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
@@ -50,20 +45,25 @@
             this.btnSavedProducts = new Guna.UI2.WinForms.Guna2Button();
             this.btnSalesOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnPurchasesOrder = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
+            this.flpVoucher = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblVoucherName = new System.Windows.Forms.Label();
+            this.lblAddVoucher = new System.Windows.Forms.LinkLabel();
+            this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.containerMenu.SuspendLayout();
             this.panelBody.SuspendLayout();
-            this.containerTop.SuspendLayout();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +98,20 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -176,81 +190,6 @@
             this.containerMenu.Size = new System.Drawing.Size(292, 591);
             this.containerMenu.TabIndex = 43;
             this.containerMenu.Text = "guna2ContainerControl1";
-            // 
-            // panelBody
-            // 
-            this.panelBody.Controls.Add(this.flpVoucher);
-            this.panelBody.Controls.Add(this.panelTop);
-            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 70);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelBody.Name = "panelBody";
-            this.panelBody.Padding = new System.Windows.Forms.Padding(10);
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
-            this.panelBody.TabIndex = 45;
-            // 
-            // containerTop
-            // 
-            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.btnVoucher);
-            this.containerTop.Controls.Add(this.btnCart);
-            this.containerTop.Controls.Add(this.btnMenu);
-            this.containerTop.Controls.Add(this.btnPostProduct);
-            this.containerTop.Controls.Add(this.pbLogo);
-            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Location = new System.Drawing.Point(0, 0);
-            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
-            this.containerTop.TabIndex = 44;
-            this.containerTop.Text = "guna2ContainerControl1";
-            // 
-            // panelTop
-            // 
-            this.panelTop.Controls.Add(this.lblVoucherName);
-            this.panelTop.Controls.Add(this.lblAddVoucher);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(10, 10);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1462, 59);
-            this.panelTop.TabIndex = 0;
-            // 
-            // flpVoucher
-            // 
-            this.flpVoucher.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpVoucher.Location = new System.Drawing.Point(10, 69);
-            this.flpVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flpVoucher.Name = "flpVoucher";
-            this.flpVoucher.Size = new System.Drawing.Size(1462, 584);
-            this.flpVoucher.TabIndex = 41;
-            // 
-            // lblAddVoucher
-            // 
-            this.lblAddVoucher.AutoSize = true;
-            this.lblAddVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblAddVoucher.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAddVoucher.Location = new System.Drawing.Point(187, 17);
-            this.lblAddVoucher.Name = "lblAddVoucher";
-            this.lblAddVoucher.Size = new System.Drawing.Size(175, 28);
-            this.lblAddVoucher.TabIndex = 0;
-            this.lblAddVoucher.TabStop = true;
-            this.lblAddVoucher.Text = "Add your voucher";
-            this.lblAddVoucher.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAddVoucher.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAddVoucher_LinkClicked);
-            // 
-            // lblVoucherName
-            // 
-            this.lblVoucherName.AutoSize = true;
-            this.lblVoucherName.BackColor = System.Drawing.Color.Transparent;
-            this.lblVoucherName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoucherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblVoucherName.Location = new System.Drawing.Point(23, 14);
-            this.lblVoucherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblVoucherName.Name = "lblVoucherName";
-            this.lblVoucherName.Size = new System.Drawing.Size(108, 31);
-            this.lblVoucherName.TabIndex = 116;
-            this.lblVoucherName.Text = "Voucher ";
             // 
             // btnLogout
             // 
@@ -421,19 +360,81 @@
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
             this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
-            // guna2CirclePictureBox1
+            // panelBody
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.panelBody.Controls.Add(this.flpVoucher);
+            this.panelBody.Controls.Add(this.panelTop);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 70);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Padding = new System.Windows.Forms.Padding(10);
+            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.TabIndex = 45;
+            // 
+            // flpVoucher
+            // 
+            this.flpVoucher.AutoScroll = true;
+            this.flpVoucher.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpVoucher.Location = new System.Drawing.Point(10, 69);
+            this.flpVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flpVoucher.Name = "flpVoucher";
+            this.flpVoucher.Size = new System.Drawing.Size(1462, 584);
+            this.flpVoucher.TabIndex = 41;
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.lblVoucherName);
+            this.panelTop.Controls.Add(this.lblAddVoucher);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(10, 10);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1462, 59);
+            this.panelTop.TabIndex = 0;
+            // 
+            // lblVoucherName
+            // 
+            this.lblVoucherName.AutoSize = true;
+            this.lblVoucherName.BackColor = System.Drawing.Color.Transparent;
+            this.lblVoucherName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoucherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblVoucherName.Location = new System.Drawing.Point(23, 14);
+            this.lblVoucherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVoucherName.Name = "lblVoucherName";
+            this.lblVoucherName.Size = new System.Drawing.Size(108, 31);
+            this.lblVoucherName.TabIndex = 116;
+            this.lblVoucherName.Text = "Voucher ";
+            // 
+            // lblAddVoucher
+            // 
+            this.lblAddVoucher.AutoSize = true;
+            this.lblAddVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblAddVoucher.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAddVoucher.Location = new System.Drawing.Point(187, 17);
+            this.lblAddVoucher.Name = "lblAddVoucher";
+            this.lblAddVoucher.Size = new System.Drawing.Size(175, 28);
+            this.lblAddVoucher.TabIndex = 0;
+            this.lblAddVoucher.TabStop = true;
+            this.lblAddVoucher.Text = "Add your voucher";
+            this.lblAddVoucher.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAddVoucher.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAddVoucher_LinkClicked);
+            // 
+            // containerTop
+            // 
+            this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnVoucher);
+            this.containerTop.Controls.Add(this.btnCart);
+            this.containerTop.Controls.Add(this.btnMenu);
+            this.containerTop.Controls.Add(this.btnPostProduct);
+            this.containerTop.Controls.Add(this.pbLogo);
+            this.containerTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.containerTop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Location = new System.Drawing.Point(0, 0);
+            this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.containerTop.Name = "containerTop";
+            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.TabIndex = 44;
+            this.containerTop.Text = "guna2ContainerControl1";
             // 
             // btnVoucher
             // 
@@ -576,16 +577,16 @@
             this.Load += new System.EventHandler(this.FVoucher_Load);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
             this.containerMenu.ResumeLayout(false);
             this.panelBody.ResumeLayout(false);
-            this.containerTop.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.containerTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 

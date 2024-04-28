@@ -202,6 +202,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
+            /*
             if (string.IsNullOrEmpty(txtPhone.Text))
             {
                 MessageBox.Show("Phone has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -210,9 +211,14 @@ namespace Window_Project_v5._1.Forms
             {
                 MessageBox.Show("Address has not been filled in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (payMethod == -1)
+            */
+            if (payMethod == -1)
             {
                 MessageBox.Show("Payment Method has not been chosen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if(acc.SelectedShipping == 0)
+            {
+                MessageBox.Show("Shipping Method has not been chosen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -236,8 +242,8 @@ namespace Window_Project_v5._1.Forms
                         seller.Money += product.SalePrice;
                         accountDAO.update(seller);
                         // Update product
-                        product.ContactPhone = txtPhone.Text;
-                        product.DeliveryAddress = txtAddress.Text;
+                        Shipping shipping = shippingDAO.GetShipping(acc.SelectedShipping);
+                        product.SelectedShipping = acc.SelectedShipping;
                         // Proceed with the purchase
                         if (favoriteDAO.checkProductinFavorite(acc.Id, product.Id))
                         {
@@ -323,7 +329,7 @@ namespace Window_Project_v5._1.Forms
                 foreach (var voucherID in Voucherids)
                 {
                     Voucher voucher = voucherDAO.GetVoucher(voucherID);
-                    if(voucher.Beginday > DateTime.Now && voucher.Endday < DateTime.Now)
+                    if(voucher.Beginday >= DateTime.Now)
                     {
                         UCApplyVoucher uc = new UCApplyVoucher(voucher, acc);
                         uc.SelectedChanged += UC_ApplyVoucherSelectedChanged;
