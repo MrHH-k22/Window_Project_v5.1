@@ -518,5 +518,11 @@ namespace Window_Project_v5._1.Forms
             FReliableUnreliable f = new FReliableUnreliable();
             f.Show();
         }
+
+        private void lblAvatarName_Click(object sender, EventArgs e)
+        {
+            FReview fReview = new FReview(account, product);
+            fReview.Show();
+        }
     }
 }
