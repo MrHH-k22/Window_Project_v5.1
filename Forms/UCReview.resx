@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFCSURBVHhe7dYxagRBEATB+/977n8SMlZQCJKWfREwRo+f
+        UC/g4P1+fz3P7f7k+/n79ecDPtw0IRBYAoGgCbhSCywTC4JAIGgCrtQCy8SCIBAImoArtcAysSAIBIIm
+        4EotsEwsCAKBoAm4UgssEwuCQCBoAq7UAsvEgiAQCJqAK7XAMrEgCASCJuBKLbBMLAgCgaAJuFILLBML
+        gkAgaAKu1ALLxIIgEAiagCu1wDKxIAgEgibgSi2wTCwIAoGgCbhSCywTC4JAIGgCrtQCy8SCIBAImoAr
+        tcAysSAIBIIm4EotsEwsCAKBoAm4UgssEwuCQCBoAq7UAsvEgiAQCJqAK7XAMrEgCASCJuBKLbBMLAgC
+        gaAJuFILLBMLgkAgaAKu1ALLxIIgEAiagCu1wDKxIAgEgkDgv35CeZ7b/ek3kF6vb8o5VrRAMBtHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="bunifuPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGPC/xhBQAAAjpQTFRFxtr8
@@ -185,18 +197,6 @@
         BMA5AuAcAXCOADhHAJwjAM4RAOcIgHMEwDkC4BwBcI4AOEcAnCMAzhEA5wiAcwTAOQLgHAFwjgA4RwCc
         IwDOEQDnCIBzBMA5AuAcAXCOADhHAJwjAM4RAOcIgHMEwDkC4BwBcI4AOEcAnCMAzgULQJ8+/wLcsCN4
         fyerrQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFCSURBVHhe7dYxagRBEATB+/977n8SMlZQCJKWfREwRo+f
-        UC/g4P1+fz3P7f7k+/n79ecDPtw0IRBYAoGgCbhSCywTC4JAIGgCrtQCy8SCIBAImoArtcAysSAIBIIm
-        4EotsEwsCAKBoAm4UgssEwuCQCBoAq7UAsvEgiAQCJqAK7XAMrEgCASCJuBKLbBMLAgCgaAJuFILLBML
-        gkAgaAKu1ALLxIIgEAiagCu1wDKxIAgEgibgSi2wTCwIAoGgCbhSCywTC4JAIGgCrtQCy8SCIBAImoAr
-        tcAysSAIBIIm4EotsEwsCAKBoAm4UgssEwuCQCBoAq7UAsvEgiAQCJqAK7XAMrEgCASCJuBKLbBMLAgC
-        gaAJuFILLBMLgkAgaAKu1ALLxIIgEAiagCu1wDKxIAgEgkDgv35CeZ7b/ek3kF6vb8o5VrRAMBtHAAAA
-        AElFTkSuQmCC
 </value>
   </data>
 </root>
