@@ -19,7 +19,8 @@ namespace Window_Project_v5._1.Forms
 
         private void FReview_Load(object sender, EventArgs e)
         {
-
+            UCReview uc = new UCReview();
+            flowLayoutPanel1.Controls.Add(uc);
         }
     }
 }

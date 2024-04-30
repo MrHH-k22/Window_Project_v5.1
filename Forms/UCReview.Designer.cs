@@ -29,45 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCReview));
-            this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.gbContent = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.panelRating = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblNameSeller = new System.Windows.Forms.Label();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.pbAvtSeller = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblAvgStar = new System.Windows.Forms.Label();
+            this.rsAvgStar = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.gbContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvtSeller)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuGroupBox1
+            // gbContent
             // 
-            this.bunifuGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.bunifuGroupBox1.BorderRadius = 20;
-            this.bunifuGroupBox1.BorderThickness = 5;
-            this.bunifuGroupBox1.Controls.Add(this.bunifuPanel1);
-            this.bunifuGroupBox1.Controls.Add(this.lblNameSeller);
-            this.bunifuGroupBox1.Controls.Add(this.bunifuPictureBox1);
-            this.bunifuGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuGroupBox1.LabelIndent = 10;
-            this.bunifuGroupBox1.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox1.Location = new System.Drawing.Point(0, 3);
-            this.bunifuGroupBox1.Name = "bunifuGroupBox1";
-            this.bunifuGroupBox1.Size = new System.Drawing.Size(941, 219);
-            this.bunifuGroupBox1.TabIndex = 3;
-            this.bunifuGroupBox1.TabStop = false;
+            this.gbContent.AutoSize = true;
+            this.gbContent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.gbContent.BorderRadius = 30;
+            this.gbContent.BorderThickness = 3;
+            this.gbContent.Controls.Add(this.rsAvgStar);
+            this.gbContent.Controls.Add(this.panelRating);
+            this.gbContent.Controls.Add(this.lblAvgStar);
+            this.gbContent.Controls.Add(this.lblNameSeller);
+            this.gbContent.Controls.Add(this.pbAvtSeller);
+            this.gbContent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbContent.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gbContent.LabelIndent = 10;
+            this.gbContent.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.gbContent.Location = new System.Drawing.Point(0, 3);
+            this.gbContent.Name = "gbContent";
+            this.gbContent.Size = new System.Drawing.Size(941, 231);
+            this.gbContent.TabIndex = 3;
+            this.gbContent.TabStop = false;
+            this.gbContent.Enter += new System.EventHandler(this.gbContent_Enter);
             // 
-            // bunifuPanel1
+            // panelRating
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Location = new System.Drawing.Point(187, 72);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(200, 100);
-            this.bunifuPanel1.TabIndex = 5;
+            this.panelRating.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelRating.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRating.BackgroundImage")));
+            this.panelRating.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelRating.BorderColor = System.Drawing.Color.Transparent;
+            this.panelRating.BorderRadius = 3;
+            this.panelRating.BorderThickness = 1;
+            this.panelRating.Location = new System.Drawing.Point(98, 46);
+            this.panelRating.Name = "panelRating";
+            this.panelRating.ShowBorders = true;
+            this.panelRating.Size = new System.Drawing.Size(803, 45);
+            this.panelRating.TabIndex = 5;
             // 
             // lblNameSeller
             // 
@@ -75,44 +81,65 @@
             this.lblNameSeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblNameSeller.Location = new System.Drawing.Point(98, 10);
             this.lblNameSeller.Name = "lblNameSeller";
-            this.lblNameSeller.Size = new System.Drawing.Size(200, 42);
+            this.lblNameSeller.Size = new System.Drawing.Size(200, 33);
             this.lblNameSeller.TabIndex = 4;
             this.lblNameSeller.Text = "Andrew NG";
             // 
-            // bunifuPictureBox1
+            // pbAvtSeller
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 35;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(22, 0);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 3;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pbAvtSeller.AllowFocused = false;
+            this.pbAvtSeller.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbAvtSeller.AutoSizeHeight = true;
+            this.pbAvtSeller.BorderRadius = 35;
+            this.pbAvtSeller.Image = ((System.Drawing.Image)(resources.GetObject("pbAvtSeller.Image")));
+            this.pbAvtSeller.IsCircle = true;
+            this.pbAvtSeller.Location = new System.Drawing.Point(22, 16);
+            this.pbAvtSeller.Name = "pbAvtSeller";
+            this.pbAvtSeller.Size = new System.Drawing.Size(70, 70);
+            this.pbAvtSeller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvtSeller.TabIndex = 3;
+            this.pbAvtSeller.TabStop = false;
+            this.pbAvtSeller.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // lblAvgStar
+            // 
+            this.lblAvgStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvgStar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblAvgStar.Location = new System.Drawing.Point(98, 108);
+            this.lblAvgStar.Name = "lblAvgStar";
+            this.lblAvgStar.Size = new System.Drawing.Size(77, 33);
+            this.lblAvgStar.TabIndex = 4;
+            this.lblAvgStar.Text = "5";
+            // 
+            // rsAvgStar
+            // 
+            this.rsAvgStar.Location = new System.Drawing.Point(164, 103);
+            this.rsAvgStar.Name = "rsAvgStar";
+            this.rsAvgStar.Size = new System.Drawing.Size(193, 38);
+            this.rsAvgStar.TabIndex = 6;
             // 
             // UCReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuGroupBox1);
+            this.Controls.Add(this.gbContent);
             this.Name = "UCReview";
-            this.Size = new System.Drawing.Size(941, 222);
-            this.bunifuGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(941, 235);
+            this.Load += new System.EventHandler(this.UCReview_Load);
+            this.gbContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvtSeller)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuGroupBox gbContent;
+        private Bunifu.UI.WinForms.BunifuPanel panelRating;
         private System.Windows.Forms.Label lblNameSeller;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox pbAvtSeller;
+        private Guna.UI2.WinForms.Guna2RatingStar rsAvgStar;
+        private System.Windows.Forms.Label lblAvgStar;
     }
 }
