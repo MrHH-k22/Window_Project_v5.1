@@ -244,6 +244,12 @@
     <Compile Include="Forms\FProductManagement.Designer.cs">
       <DependentUpon>FProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FReliableUnreliable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FReliableUnreliable.Designer.cs">
+      <DependentUpon>FReliableUnreliable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FProductManagement.resx">
       <DependentUpon>FProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FReliableUnreliable.resx">
+      <DependentUpon>FReliableUnreliable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FReview.resx">
       <DependentUpon>FReview.cs</DependentUpon>

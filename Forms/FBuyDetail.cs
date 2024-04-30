@@ -295,6 +295,10 @@ namespace Window_Project_v5._1.Forms
             lblMenuAccountName.Text = account.Name;
             ratingMenuAccount.Value = account.AvgRating;
             convertByte(pbMenuAvatar, account.Avatar);
+
+
+            seller = new Account(seller.Id);
+            rtStar.Value = seller.AvgRating;
         }
 
         private void GetImageProduct()
@@ -506,6 +510,12 @@ namespace Window_Project_v5._1.Forms
                 };
             FDelivery f = new FDelivery(account, products);
             f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void lblSearchReliable_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FReliableUnreliable f = new FReliableUnreliable();
             f.Show();
         }
     }
