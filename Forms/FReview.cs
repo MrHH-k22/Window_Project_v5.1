@@ -16,5 +16,10 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
+
+        private void FReview_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
