@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReview));
             this.flpRating = new System.Windows.Forms.FlowLayoutPanel();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnPost = new Guna.UI2.WinForms.Guna2Button();
@@ -36,8 +37,15 @@
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbAvatarSeller = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblNameSeller = new System.Windows.Forms.Label();
+            this.rsStar = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblStar = new System.Windows.Forms.Label();
+            this.lblNumberRatings = new System.Windows.Forms.Label();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatarSeller)).BeginInit();
             this.SuspendLayout();
             // 
             // flpRating
@@ -189,11 +197,72 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.rsStar);
+            this.panel1.Controls.Add(this.lblStar);
+            this.panel1.Controls.Add(this.lblNumberRatings);
+            this.panel1.Controls.Add(this.lblNameSeller);
+            this.panel1.Controls.Add(this.pbAvatarSeller);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1500, 134);
+            this.panel1.Size = new System.Drawing.Size(1500, 119);
             this.panel1.TabIndex = 65;
+            // 
+            // pbAvatarSeller
+            // 
+            this.pbAvatarSeller.AllowFocused = false;
+            this.pbAvatarSeller.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbAvatarSeller.AutoSizeHeight = true;
+            this.pbAvatarSeller.BorderRadius = 51;
+            this.pbAvatarSeller.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatarSeller.Image")));
+            this.pbAvatarSeller.IsCircle = true;
+            this.pbAvatarSeller.Location = new System.Drawing.Point(33, 7);
+            this.pbAvatarSeller.Name = "pbAvatarSeller";
+            this.pbAvatarSeller.Size = new System.Drawing.Size(103, 103);
+            this.pbAvatarSeller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatarSeller.TabIndex = 0;
+            this.pbAvatarSeller.TabStop = false;
+            this.pbAvatarSeller.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // lblNameSeller
+            // 
+            this.lblNameSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameSeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblNameSeller.Location = new System.Drawing.Point(159, 16);
+            this.lblNameSeller.Name = "lblNameSeller";
+            this.lblNameSeller.Size = new System.Drawing.Size(268, 34);
+            this.lblNameSeller.TabIndex = 1;
+            this.lblNameSeller.Text = "Andrew Dalton";
+            // 
+            // rsStar
+            // 
+            this.rsStar.FillColor = System.Drawing.Color.Transparent;
+            this.rsStar.Location = new System.Drawing.Point(202, 56);
+            this.rsStar.Name = "rsStar";
+            this.rsStar.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.rsStar.Size = new System.Drawing.Size(193, 38);
+            this.rsStar.TabIndex = 8;
+            // 
+            // lblStar
+            // 
+            this.lblStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblStar.Location = new System.Drawing.Point(160, 64);
+            this.lblStar.Name = "lblStar";
+            this.lblStar.Size = new System.Drawing.Size(77, 33);
+            this.lblStar.TabIndex = 7;
+            this.lblStar.Text = "5";
+            // 
+            // lblNumberRatings
+            // 
+            this.lblNumberRatings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberRatings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblNumberRatings.Location = new System.Drawing.Point(412, 65);
+            this.lblNumberRatings.Name = "lblNumberRatings";
+            this.lblNumberRatings.Size = new System.Drawing.Size(152, 34);
+            this.lblNumberRatings.TabIndex = 1;
+            this.lblNumberRatings.Text = "5 ratings";
             // 
             // FReview
             // 
@@ -210,6 +279,8 @@
             this.Load += new System.EventHandler(this.FReview_Load);
             this.containerTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatarSeller)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +295,10 @@
         private Guna.UI2.WinForms.Guna2Button btnPostProduct;
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblNameSeller;
+        private Bunifu.UI.WinForms.BunifuPictureBox pbAvatarSeller;
+        private Guna.UI2.WinForms.Guna2RatingStar rsStar;
+        private System.Windows.Forms.Label lblStar;
+        private System.Windows.Forms.Label lblNumberRatings;
     }
 }
