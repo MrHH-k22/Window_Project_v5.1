@@ -55,29 +55,29 @@ namespace Window_Project_v5._1.Forms
         }
         private void UCReview_Load(object sender, EventArgs e)
         {
-            //Account Buyer = new Account(rating.BuyerID);
-            //lblNameSeller.Text = Buyer.Name;
-            //convertByte(pbAvtSeller, Buyer.Avatar);
-            //string labeldata = rating.Comment;
-            //string[] ratings = labeldata.Split(';');
-            ////foreach(string label in ratings)
-            ////{
-            ////    GenerateLabel(panelRating, label, label.Length );
-            ////}
-            //for (int i = ratings.Length - 1; i >= 0; i--)
+            Account Buyer = new Account(rating.BuyerID);
+            lblNameSeller.Text = Buyer.Name;
+            convertByte(pbAvtSeller, Buyer.Avatar);
+            string labeldata = rating.Comment;
+            string[] ratings = labeldata.Split(';');
+            //foreach(string label in ratings)
             //{
-            //    GenerateLabel(panelRating, ratings[i], ratings[i].Length);
+            //    GenerateLabel(panelRating, label, label.Length );
             //}
-            //lblStar.Text = rating.Star.ToString();
-            //rsStar.Value = rating.Star;
-            //rsStar.ReadOnly = true;
-            //// edit UCProductCondition with minimalism
-            //ucProductConditionReduce.lblStatus.Visible = false;
-            //ucProductConditionReduce.lblPrice.Visible = false;
-            //ucProductConditionReduce.btnNextState.Visible = false;
-            //convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(rating.ProductID));
-            //ucProductConditionReduce.lblBuyerName.Text = product.SalePrice.ToString();
-            //ucProductConditionReduce.lblProductName.Text = product.Name;
+            for (int i = ratings.Length - 1; i >= 0; i--)
+            {
+                GenerateLabel(panelRating, ratings[i], ratings[i].Length);
+            }
+            lblStar.Text = rating.Star.ToString();
+            rsStar.Value = rating.Star;
+            rsStar.ReadOnly = true;
+            // edit UCProductCondition with minimalism
+            ucProductConditionReduce.lblStatus.Visible = false;
+            ucProductConditionReduce.lblPrice.Visible = false;
+            ucProductConditionReduce.btnNextState.Visible = false;
+            convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(rating.ProductID));
+            ucProductConditionReduce.lblBuyerName.Text = product.SalePrice.ToString();
+            ucProductConditionReduce.lblProductName.Text = product.Name;
         }
         private void GenerateLabel(Panel panel, string labelText, int labelCount)
         {

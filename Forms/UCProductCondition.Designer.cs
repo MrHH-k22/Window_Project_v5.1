@@ -144,11 +144,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProductName;
-        private System.Windows.Forms.Label lblBuyerName;
-        private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Button btnNextState;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lblProductName;
+        public System.Windows.Forms.Label lblBuyerName;
+        public System.Windows.Forms.Label lblPrice;
+        public System.Windows.Forms.Label lblStatus;
+        public System.Windows.Forms.Button btnNextState;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
