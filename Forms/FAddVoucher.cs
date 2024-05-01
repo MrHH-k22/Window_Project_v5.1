@@ -28,11 +28,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            if (dtBeginday.Value < DateTime.Now || dtEndDay.Value < DateTime.Now)
-            {
-                MessageBox.Show("Dates must be in the future.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (dtEndDay.Value<=dtBeginday.Value)
+            if (dtEndDay.Value<=dtBeginday.Value)
             {
                 MessageBox.Show("End date must be after start date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

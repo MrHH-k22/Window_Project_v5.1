@@ -334,7 +334,7 @@ namespace Window_Project_v5._1.Forms
                 foreach (var voucherID in Voucherids)
                 {
                     Voucher voucher = voucherDAO.GetVoucher(voucherID);
-                    if(voucher.Beginday >= DateTime.Now)
+                    if(voucher.Beginday <= DateTime.Now && DateTime.Now <= voucher.Endday)
                     {
                         UCApplyVoucher uc = new UCApplyVoucher(voucher, acc);
                         uc.SelectedChanged += UC_ApplyVoucherSelectedChanged;
