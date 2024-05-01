@@ -39,7 +39,7 @@ namespace Window_Project_v5._1.Forms
             foreach (Rating rating in ratingList)
             {
                 UCReview uc = new UCReview(product, account, rating);
-                flowLayoutPanel1.Controls.Add(uc);
+                flpRating.Controls.Add(uc);
             }
         }
     }
