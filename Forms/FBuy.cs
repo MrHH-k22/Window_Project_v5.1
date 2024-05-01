@@ -53,8 +53,8 @@ namespace Window_Project_v5._1.Forms
                     flpProduct.Controls.Add(uc);
                 }
             }
-            lblAccountName.Text = account.Name;
-            convertByte(pbAvatar, account.Avatar);
+            lblMenuAccountName.Text = account.Name;
+            convertByte(pbMenuAvatar, account.Avatar);
             //recommend list
             List<string> types = recommendDAO.GetTopThreeRecommendedTypesByBuyerID(account.Id);
             List<Product> recommendedProducts = new List<Product>();

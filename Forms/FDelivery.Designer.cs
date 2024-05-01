@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
             this.btnApplyVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.lblVoucherValue = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -85,11 +87,9 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblAccountName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblMenuAccountName = new System.Windows.Forms.Label();
+            this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -108,7 +108,7 @@
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRight
@@ -135,6 +135,28 @@
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(421, 710);
             this.panelRight.TabIndex = 60;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(23, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 31);
+            this.label2.TabIndex = 153;
+            this.label2.Text = "Subtotal:";
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.ForeColor = System.Drawing.Color.Black;
+            this.lblSubtotal.Location = new System.Drawing.Point(171, 487);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(242, 31);
+            this.lblSubtotal.TabIndex = 154;
+            this.lblSubtotal.Text = "999000 VND";
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnApplyVoucher
             // 
@@ -1050,9 +1072,9 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.Controls.Add(this.lblAccountName);
-            this.guna2Panel8.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel8.Controls.Add(this.ratingAccount);
+            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
+            this.guna2Panel8.Controls.Add(this.pbMenuAvatar);
+            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1060,61 +1082,39 @@
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
             // 
-            // lblAccountName
+            // lblMenuAccountName
             // 
-            this.lblAccountName.AutoSize = true;
-            this.lblAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblAccountName.Location = new System.Drawing.Point(99, 9);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(156, 30);
-            this.lblAccountName.TabIndex = 3;
-            this.lblAccountName.Text = "Account name";
+            this.lblMenuAccountName.AutoSize = true;
+            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblMenuAccountName.Name = "lblMenuAccountName";
+            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblMenuAccountName.TabIndex = 3;
+            this.lblMenuAccountName.Text = "Account name";
             // 
-            // guna2CirclePictureBox1
+            // pbMenuAvatar
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBox1.Image = global::Window_Project_v5._1.Properties.Resources._91;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(91, 90);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.pbMenuAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbMenuAvatar.Image = global::Window_Project_v5._1.Properties.Resources._91;
+            this.pbMenuAvatar.ImageRotate = 0F;
+            this.pbMenuAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbMenuAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbMenuAvatar.Name = "pbMenuAvatar";
+            this.pbMenuAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbMenuAvatar.Size = new System.Drawing.Size(91, 90);
+            this.pbMenuAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenuAvatar.TabIndex = 0;
+            this.pbMenuAvatar.TabStop = false;
             // 
-            // ratingAccount
+            // ratingMenuAccount
             // 
-            this.ratingAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingAccount.Name = "ratingAccount";
-            this.ratingAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingAccount.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(23, 487);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 31);
-            this.label2.TabIndex = 153;
-            this.label2.Text = "Subtotal:";
-            // 
-            // lblSubtotal
-            // 
-            this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotal.ForeColor = System.Drawing.Color.Black;
-            this.lblSubtotal.Location = new System.Drawing.Point(171, 487);
-            this.lblSubtotal.Name = "lblSubtotal";
-            this.lblSubtotal.Size = new System.Drawing.Size(242, 31);
-            this.lblSubtotal.TabIndex = 154;
-            this.lblSubtotal.Text = "999000 VND";
-            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 2;
             // 
             // FDelivery
             // 
@@ -1156,7 +1156,7 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1210,9 +1210,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private System.Windows.Forms.Label lblAccountName;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
+        private System.Windows.Forms.Label lblMenuAccountName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
+        private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private Guna.UI2.WinForms.Guna2Button btnPost;
         private System.Windows.Forms.LinkLabel llblAddAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtRecipientName;

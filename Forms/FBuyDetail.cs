@@ -220,7 +220,7 @@ namespace Window_Project_v5._1.Forms
             lblBrand.Text = "Brand: " + product.Brand;
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
-            lblAccountName.Text = account.Name;
+            lblMenuAccountName.Text = account.Name;
             if (product.PostedTime.Date == DateTime.Now.Date)
             {
                 lblPostingTime.Text = (DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago";
