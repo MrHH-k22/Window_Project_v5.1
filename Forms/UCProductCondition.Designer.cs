@@ -39,14 +39,13 @@
             // 
             // lblProductName
             // 
-            this.lblProductName.AutoSize = true;
             this.lblProductName.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.lblProductName.Location = new System.Drawing.Point(135, 20);
             this.lblProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(164, 31);
+            this.lblProductName.Size = new System.Drawing.Size(584, 31);
             this.lblProductName.TabIndex = 10;
             this.lblProductName.Text = "Product Name";
             // 
@@ -69,7 +68,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPrice.Location = new System.Drawing.Point(1104, 22);
+            this.lblPrice.Location = new System.Drawing.Point(1089, 20);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(141, 30);
@@ -144,11 +143,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProductName;
-        private System.Windows.Forms.Label lblBuyerName;
-        private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Button btnNextState;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lblProductName;
+        public System.Windows.Forms.Label lblBuyerName;
+        public System.Windows.Forms.Label lblPrice;
+        public System.Windows.Forms.Label lblStatus;
+        public System.Windows.Forms.Button btnNextState;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

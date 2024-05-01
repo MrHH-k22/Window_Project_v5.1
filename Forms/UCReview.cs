@@ -22,6 +22,7 @@ namespace Window_Project_v5._1.Forms
         private Product product;
         private Rating rating = new Rating();
         private RatingDAO ratingDAO = new RatingDAO();
+        
         public UCReview()
         {
             InitializeComponent();
@@ -62,46 +63,46 @@ namespace Window_Project_v5._1.Forms
 
         private void UCReview_Load(object sender, EventArgs e)
         {
-            Account Seller = new Account(rating.SellerID);
-            lblNameSeller.Text = Seller.Name;
-            convertByte(pbAvtSeller, Seller.Avatar);
+            Account Buyer = new Account(rating.BuyerID);
+            lblNameSeller.Text = Buyer.Name;
+            convertByte(pbAvtSeller, Buyer.Avatar);
             string labeldata = rating.Comment;
-            string[] labels = labeldata.Split(';');
-
-            foreach (string labelText in labels)
+            string[] ratings  = labeldata.Split(';');
+            //foreach(string label in ratings)
+            //{
+            //    GenerateLabel(panelRating, label, label.Length );
+            //}
+            for(int i = ratings.Length - 1; i >= 0; i--)
             {
-               GenerateLabel(panelRating, labelText, labels.Length);
+                GenerateLabel(panelRating, ratings[i], ratings[i].Length);
             }
-            lblAvgStar.Text = Seller.AvgRating.ToString();
-            rsAvgStar.Value = Seller.AvgRating;
-            rsAvgStar.Enabled = false;
+            lblStar.Text = rating.Star.ToString();
+            rsStar.Value = rating.Star;
+            rsStar.ReadOnly = true;
+            // edit UCProductCondition with minimalism
+            ucProductConditionReduce.lblStatus.Visible = false;
+            ucProductConditionReduce.lblPrice.Visible = false;
+            ucProductConditionReduce.btnNextState.Visible = false;
+            convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(product.Id));
+            ucProductConditionReduce.lblBuyerName.Text = product.SalePrice.ToString();
+            ucProductConditionReduce.lblProductName.Text = product.Name;
+
         }
         private void GenerateLabel(Panel panel, string labelText, int labelCount)
         {
             Label label = new Label();
             label.Text = labelText;
-            label.AutoSize = false; // Tắt tính năng tự động thay đổi kích thước
+            label.AutoSize = true; // Cho phép label tự điều chỉnh kích thước dựa trên nội dung
             label.Padding = new Padding(5);
             label.BorderStyle = BorderStyle.FixedSingle;
             label.BackColor = Color.White;
-            label.ForeColor = Color.Black;
+            label.ForeColor = Color.FromArgb(54, 50, 132);
             label.TextAlign = ContentAlignment.MiddleCenter;
-
+            label.Dock = DockStyle.Left;
             // Tính toán kích thước cho mỗi label
-            int labelWidth = panel.ClientSize.Width / labelCount - 10;
-            int labelHeight = panel.ClientSize.Height - 10;
-            label.Size = new Size(labelWidth, labelHeight);
-            label.Margin = new Padding(5);
-
-            // Để bo tròn label, sử dụng sự kiện Paint
-            label.Paint += (sender, e) =>
-            {
-                var rectangle = new Rectangle(0, 0, label.Width - 1, label.Height - 1);
-                using (var pen = new Pen(Color.Black, 1))
-                {
-                    e.Graphics.DrawEllipse(pen, rectangle);
-                }
-            };
+            int labelWidth = labelCount + 50;
+            int labelHeight = 23;
+            label.Size = new Size(labelWidth, labelHeight); // Đặt kích thước tối đa của label
 
             panel.Controls.Add(label);
         }
