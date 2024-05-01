@@ -37,15 +37,23 @@
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbAvatarSeller = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lblNameSeller = new System.Windows.Forms.Label();
             this.rsStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.lblStar = new System.Windows.Forms.Label();
             this.lblNumberRatings = new System.Windows.Forms.Label();
+            this.lblNameSeller = new System.Windows.Forms.Label();
+            this.pbAvatarSeller = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNumberofproducts = new System.Windows.Forms.Label();
+            this.lblSold = new System.Windows.Forms.Label();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarSeller)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flpRating
@@ -198,6 +206,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblSold);
+            this.panel1.Controls.Add(this.lblNumberofproducts);
+            this.panel1.Controls.Add(this.lblArea);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.lblPhone);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.rsStar);
             this.panel1.Controls.Add(this.lblStar);
             this.panel1.Controls.Add(this.lblNumberRatings);
@@ -208,32 +222,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1500, 119);
             this.panel1.TabIndex = 65;
-            // 
-            // pbAvatarSeller
-            // 
-            this.pbAvatarSeller.AllowFocused = false;
-            this.pbAvatarSeller.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbAvatarSeller.AutoSizeHeight = true;
-            this.pbAvatarSeller.BorderRadius = 51;
-            this.pbAvatarSeller.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatarSeller.Image")));
-            this.pbAvatarSeller.IsCircle = true;
-            this.pbAvatarSeller.Location = new System.Drawing.Point(33, 7);
-            this.pbAvatarSeller.Name = "pbAvatarSeller";
-            this.pbAvatarSeller.Size = new System.Drawing.Size(103, 103);
-            this.pbAvatarSeller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAvatarSeller.TabIndex = 0;
-            this.pbAvatarSeller.TabStop = false;
-            this.pbAvatarSeller.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // lblNameSeller
-            // 
-            this.lblNameSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameSeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblNameSeller.Location = new System.Drawing.Point(159, 16);
-            this.lblNameSeller.Name = "lblNameSeller";
-            this.lblNameSeller.Size = new System.Drawing.Size(268, 34);
-            this.lblNameSeller.TabIndex = 1;
-            this.lblNameSeller.Text = "Andrew Dalton";
             // 
             // rsStar
             // 
@@ -264,6 +252,103 @@
             this.lblNumberRatings.TabIndex = 1;
             this.lblNumberRatings.Text = "5 ratings";
             // 
+            // lblNameSeller
+            // 
+            this.lblNameSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameSeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblNameSeller.Location = new System.Drawing.Point(159, 16);
+            this.lblNameSeller.Name = "lblNameSeller";
+            this.lblNameSeller.Size = new System.Drawing.Size(268, 34);
+            this.lblNameSeller.TabIndex = 1;
+            this.lblNameSeller.Text = "Andrew Dalton";
+            // 
+            // pbAvatarSeller
+            // 
+            this.pbAvatarSeller.AllowFocused = false;
+            this.pbAvatarSeller.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbAvatarSeller.AutoSizeHeight = true;
+            this.pbAvatarSeller.BorderRadius = 51;
+            this.pbAvatarSeller.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatarSeller.Image")));
+            this.pbAvatarSeller.IsCircle = true;
+            this.pbAvatarSeller.Location = new System.Drawing.Point(33, 7);
+            this.pbAvatarSeller.Name = "pbAvatarSeller";
+            this.pbAvatarSeller.Size = new System.Drawing.Size(103, 103);
+            this.pbAvatarSeller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatarSeller.TabIndex = 0;
+            this.pbAvatarSeller.TabStop = false;
+            this.pbAvatarSeller.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // lblArea
+            // 
+            this.lblArea.BackColor = System.Drawing.Color.Transparent;
+            this.lblArea.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.lblArea.ForeColor = System.Drawing.Color.DimGray;
+            this.lblArea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblArea.Location = new System.Drawing.Point(597, 24);
+            this.lblArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(420, 32);
+            this.lblArea.TabIndex = 152;
+            this.lblArea.Text = "Area:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.telephone;
+            this.pictureBox2.Location = new System.Drawing.Point(559, 63);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 154;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.ForeColor = System.Drawing.Color.DimGray;
+            this.lblPhone.Location = new System.Drawing.Point(597, 63);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(405, 30);
+            this.lblPhone.TabIndex = 151;
+            this.lblPhone.Text = "Contact Phone: 0908758889";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.pinv2;
+            this.pictureBox1.Location = new System.Drawing.Point(558, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 153;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblNumberofproducts
+            // 
+            this.lblNumberofproducts.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumberofproducts.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.lblNumberofproducts.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNumberofproducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNumberofproducts.Location = new System.Drawing.Point(1034, 24);
+            this.lblNumberofproducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumberofproducts.Name = "lblNumberofproducts";
+            this.lblNumberofproducts.Size = new System.Drawing.Size(124, 32);
+            this.lblNumberofproducts.TabIndex = 152;
+            this.lblNumberofproducts.Text = "Products :";
+            // 
+            // lblSold
+            // 
+            this.lblSold.BackColor = System.Drawing.Color.Transparent;
+            this.lblSold.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.lblSold.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSold.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblSold.Location = new System.Drawing.Point(1034, 61);
+            this.lblSold.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSold.Name = "lblSold";
+            this.lblSold.Size = new System.Drawing.Size(86, 32);
+            this.lblSold.TabIndex = 152;
+            this.lblSold.Text = "Sold :";
+            // 
             // FReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -281,6 +366,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarSeller)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,5 +387,11 @@
         private Guna.UI2.WinForms.Guna2RatingStar rsStar;
         private System.Windows.Forms.Label lblStar;
         private System.Windows.Forms.Label lblNumberRatings;
+        public System.Windows.Forms.Label lblArea;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lblNumberofproducts;
+        public System.Windows.Forms.Label lblSold;
     }
 }
