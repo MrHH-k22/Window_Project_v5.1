@@ -62,6 +62,7 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.panelTop.SuspendLayout();
             this.tcBuyProducts.SuspendLayout();
             this.containerTop.SuspendLayout();
@@ -197,7 +198,7 @@
             this.tcBuyProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.tcBuyProducts.ItemSize = new System.Drawing.Size(250, 50);
             this.tcBuyProducts.Location = new System.Drawing.Point(0, 164);
-            this.tcBuyProducts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcBuyProducts.Margin = new System.Windows.Forms.Padding(4);
             this.tcBuyProducts.Name = "tcBuyProducts";
             this.tcBuyProducts.SelectedIndex = 0;
             this.tcBuyProducts.Size = new System.Drawing.Size(1500, 625);
@@ -225,9 +226,9 @@
             // 
             this.tpWaitForConfirm.BackColor = System.Drawing.Color.White;
             this.tpWaitForConfirm.Location = new System.Drawing.Point(4, 54);
-            this.tpWaitForConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpWaitForConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.tpWaitForConfirm.Name = "tpWaitForConfirm";
-            this.tpWaitForConfirm.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpWaitForConfirm.Padding = new System.Windows.Forms.Padding(4);
             this.tpWaitForConfirm.Size = new System.Drawing.Size(1492, 567);
             this.tpWaitForConfirm.TabIndex = 0;
             this.tpWaitForConfirm.Text = "Wait for confirmation";
@@ -235,10 +236,10 @@
             // tpCompleted
             // 
             this.tpCompleted.Location = new System.Drawing.Point(4, 54);
-            this.tpCompleted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpCompleted.Margin = new System.Windows.Forms.Padding(4);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tpCompleted.Size = new System.Drawing.Size(1379, 567);
+            this.tpCompleted.Padding = new System.Windows.Forms.Padding(4);
+            this.tpCompleted.Size = new System.Drawing.Size(1492, 567);
             this.tpCompleted.TabIndex = 1;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -246,6 +247,7 @@
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnVoucher);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
             this.containerTop.Controls.Add(this.btnPostProduct);
@@ -654,6 +656,33 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
+            // btnVoucher
+            // 
+            this.btnVoucher.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnVoucher.ForeColor = System.Drawing.Color.White;
+            this.btnVoucher.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnVoucher.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnVoucher.Location = new System.Drawing.Point(581, 11);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
+            this.btnVoucher.TabIndex = 5;
+            this.btnVoucher.Text = "CART";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(7, 0);
+            // 
             // FTrackOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -718,5 +747,6 @@
         private System.Windows.Forms.Label lblAccountName;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
     }
 }

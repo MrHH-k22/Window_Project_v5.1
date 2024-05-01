@@ -20,6 +20,7 @@ namespace Window_Project_v5._1.Forms
         private ImageDAO imageDAO = new ImageDAO();
         private Account acc = new Account();
         private AccountDAO accountDAO = new AccountDAO();
+        private ShippingDAO shippingDAO = new ShippingDAO();
         private string selectedCategory = null;
         private string selectedArea = null;
         private bool edit = false;
@@ -97,12 +98,14 @@ namespace Window_Project_v5._1.Forms
             btnPost.Text = "Update product";
             ddCategory.SelectedItem = pd.Category;
             ddArea.SelectedItem = pd.Area;
-            if (pd.BuyerID != 0)
+            //shipping info
+            Shipping shipping = shippingDAO.GetShipping(pd.SelectedShipping);
+            if(shipping!=null)
             {
-                lblBuyerName.Text = accountDAO.Retrieve(pd.BuyerID).Name;
+                lblBuyerName.Text = shipping.RecipientName;
+                lblPhone.Text = shipping.PhoneNo;
+                txtAddress.Text = shipping.Address;
             }
-            lblPhone.Text = pd.ContactPhone;
-            txtAddress.Text = pd.DeliveryAddress;
             txtCancelTime.Text = pd.CancelLimit.ToString();
             cbCancel.Checked = pd.CancelRefund;
         }

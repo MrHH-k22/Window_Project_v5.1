@@ -76,6 +76,10 @@
             this.btnPurchase.AutoRoundedCorners = true;
             this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
             this.btnPurchase.BorderRadius = 23;
+            this.btnPurchase.CustomizableEdges.BottomLeft = false;
+            this.btnPurchase.CustomizableEdges.BottomRight = false;
+            this.btnPurchase.CustomizableEdges.TopLeft = false;
+            this.btnPurchase.CustomizableEdges.TopRight = false;
             this.btnPurchase.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPurchase.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPurchase.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -83,7 +87,7 @@
             this.btnPurchase.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
             this.btnPurchase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Location = new System.Drawing.Point(19, 183);
+            this.btnPurchase.Location = new System.Drawing.Point(19, 612);
             this.btnPurchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPurchase.Name = "btnPurchase";
             this.btnPurchase.Size = new System.Drawing.Size(383, 48);
@@ -95,7 +99,7 @@
             // 
             this.lblTotalMoney.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalMoney.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalMoney.Location = new System.Drawing.Point(235, 130);
+            this.lblTotalMoney.Location = new System.Drawing.Point(241, 559);
             this.lblTotalMoney.Name = "lblTotalMoney";
             this.lblTotalMoney.Size = new System.Drawing.Size(167, 31);
             this.lblTotalMoney.TabIndex = 6;
@@ -107,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(13, 130);
+            this.label1.Location = new System.Drawing.Point(13, 559);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 31);
             this.label1.TabIndex = 5;
@@ -116,11 +120,11 @@
             // 
             // panelRight
             // 
+            this.panelRight.Controls.Add(this.lblTotalMoney);
             this.panelRight.Controls.Add(this.lblNoOfItems);
             this.panelRight.Controls.Add(this.label3);
             this.panelRight.Controls.Add(this.label2);
             this.panelRight.Controls.Add(this.label1);
-            this.panelRight.Controls.Add(this.lblTotalMoney);
             this.panelRight.Controls.Add(this.btnPurchase);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(1079, 0);
@@ -611,7 +615,7 @@
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCart";

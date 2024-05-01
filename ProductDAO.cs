@@ -23,8 +23,8 @@ namespace Window_Project_v5._1
         // Add product into database
         public void Add(Product pd)
         {
-            string sqlStr = "INSERT INTO Product (Name, Brand, OriginalPrice, SalePrice, Condition, Status, Description, SellerID, BuyerID, Category, BillStatus, ViewCount, OrderCondition, ContactPhone, DeliveryAddress, Origin, Type, Material, SupportPolicy, Area, Size, PostedTime, Functionality, CompleteTime, CancelRefund, CancelLimit) " +
-                            "VALUES (@Name, @Brand, @OriginalPrice, @SalePrice, @Condition, @Status, @Description, @SellerID, @BuyerID, @Category, @BillStatus, @ViewCount, @OrderCondition, @ContactPhone, @DeliveryAddress, @Origin, @Type, @Material, @SupportPolicy, @Area, @Size, @PostedTime, @Functionality, @CompleteTime, @CancelRefund, @CancelLimit)";
+            string sqlStr = "INSERT INTO Product (Name, Brand, OriginalPrice, SalePrice, Condition, Status, Description, SellerID, BuyerID, Category, BillStatus, ViewCount, OrderCondition, Origin, Type, Material, SupportPolicy, Area, Size, PostedTime, Functionality, CompleteTime, CancelRefund, CancelLimit) " +
+                            "VALUES (@Name, @Brand, @OriginalPrice, @SalePrice, @Condition, @Status, @Description, @SellerID, @BuyerID, @Category, @BillStatus, @ViewCount, @OrderCondition, @Origin, @Type, @Material, @SupportPolicy, @Area, @Size, @PostedTime, @Functionality, @CompleteTime, @CancelRefund, @CancelLimit)";
 
             // Adjust PostedTime if it's outside the valid range
             DateTime postedTime = pd.PostedTime < SqlDateTime.MinValue.Value ? SqlDateTime.MinValue.Value : (pd.PostedTime > SqlDateTime.MaxValue.Value ? SqlDateTime.MaxValue.Value : pd.PostedTime);
@@ -47,8 +47,6 @@ namespace Window_Project_v5._1
                 new SqlParameter("@BillStatus", pd.BillStatus),
                 new SqlParameter("@ViewCount", pd.ViewCount),
                 new SqlParameter("@OrderCondition", pd.OrderCondition),
-                new SqlParameter("@ContactPhone", pd.ContactPhone),
-                new SqlParameter("@DeliveryAddress", pd.DeliveryAddress),
                 new SqlParameter("@Origin", pd.Origin),
                 new SqlParameter("@Type", pd.Type),
                 new SqlParameter("@Material", pd.Material),
@@ -195,7 +193,7 @@ namespace Window_Project_v5._1
             // Assuming dbc.Load is a method to execute the query and return a DataTable
             DataTable dt = dbc.Load(string.Format("SELECT TOP 3 * FROM Product WHERE CONVERT(VARCHAR(MAX), TYPE) = '{0}' ORDER BY ViewCount DESC;", type));
             foreach (DataRow dr in dt.Rows)
-            {
+            { 
                 Product pd = new Product(dr);
                 list.Add(pd);
             }
@@ -282,8 +280,6 @@ namespace Window_Project_v5._1
             product.ViewCount = (dr["ViewCount"] == DBNull.Value) ? 0 : Convert.ToInt32(dr["ViewCount"]);
             product.Category = dr["Category"].ToString();
             product.OrderCondition = (dr["OrderCondition"] == DBNull.Value) ? -1 : Convert.ToInt32(dr["OrderCondition"]);
-            product.ContactPhone = dr["ContactPhone"].ToString();
-            product.DeliveryAddress = dr["DeliveryAddress"].ToString();
             product.Origin = dr["Origin"].ToString();
             product.Type = dr["Type"].ToString();
             product.Material = dr["Material"].ToString();

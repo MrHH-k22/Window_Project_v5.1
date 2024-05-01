@@ -26,8 +26,6 @@ namespace Window_Project_v5._1
         private int viewCount;
         private string category;
         private int orderCondition;
-        private string contactPhone;
-        private string deliveryAddress;
         private string origin;
         private string type;
         private string material;
@@ -42,6 +40,7 @@ namespace Window_Project_v5._1
         private int cancelLimit;
         private bool cancelRefund;
         private bool payMethod;
+        private int selectedShipping;
 
 
 
@@ -102,8 +101,6 @@ namespace Window_Project_v5._1
             billStatus = 0;
             buyerID = 0;
             viewCount = 0;
-            contactPhone = "";
-            deliveryAddress = "";
             completeTime = DateTime.MinValue;
             cancelLimit = int.Parse(hours);
             cancelRefund = cancel;
@@ -181,8 +178,6 @@ namespace Window_Project_v5._1
         public int BillStatus { get => billStatus; set => billStatus = value; }
         public int ViewCount { get => viewCount; set => viewCount = value; }
         public int OrderCondition { get => orderCondition; set => orderCondition = value; }
-        public string ContactPhone { get => contactPhone; set => contactPhone = value; }
-        public string DeliveryAddress { get => deliveryAddress; set => deliveryAddress = value; }
         public string Origin { get => origin; set => origin = value; }
         public string Type { get => type; set => type = value; }
         public string Material { get => material; set => material = value; }
@@ -197,6 +192,7 @@ namespace Window_Project_v5._1
         public bool CancelRefund { get => cancelRefund; set => cancelRefund = value; }
         public bool PayMethod { get => payMethod; set => payMethod = value; }
         public DateTime BuyDate { get => buyDate; set => buyDate = value; }
+        public int SelectedShipping { get => selectedShipping; set => selectedShipping = value; }
 
         public string GetBillStatus()
         {

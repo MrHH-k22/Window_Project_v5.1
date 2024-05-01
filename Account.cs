@@ -24,6 +24,7 @@ namespace Window_Project_v5._1
         private List<int> cancelledList = new List<int>();
         private List<int> savedList = new List<int>();
         private List<int> cartList = new List<int>();
+        private int selectedShipping;
 
         public Account()
         {
@@ -100,7 +101,6 @@ namespace Window_Project_v5._1
         public List<int> CancelledList { get => cancelledList; set => cancelledList = value; }
         public List<int> SavedList { get => savedList; set => savedList = value; }
         public List<int> CartList { get => cartList; set => cartList = value; }
-
-        
+        public int SelectedShipping { get => selectedShipping; set => selectedShipping = value; }
     }
 }

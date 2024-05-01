@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +28,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -150,10 +153,17 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.5.0-preview2-24180-01\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.5.0-preview2-24180-01\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
@@ -178,6 +188,12 @@
     <Compile Include="CartDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="FavoriteDAO.cs" />
+    <Compile Include="Forms\FAddVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FAddVoucher.Designer.cs">
+      <DependentUpon>FAddVoucher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FBuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,11 +278,29 @@
     <Compile Include="Forms\FSellDetail.Designer.cs">
       <DependentUpon>FSellDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FShipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FShipping.Designer.cs">
+      <DependentUpon>FShipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FTrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FTrackOrder.Designer.cs">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FVoucher.Designer.cs">
+      <DependentUpon>FVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCApplyVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCApplyVoucher.Designer.cs">
+      <DependentUpon>UCApplyVoucher.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCProduct.cs">
       <SubType>UserControl</SubType>
@@ -304,12 +338,25 @@
     <Compile Include="Forms\UCReview.Designer.cs">
       <DependentUpon>UCReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UCVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCVoucher.Designer.cs">
+      <DependentUpon>UCVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCShipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCShipping.Designer.cs">
+      <DependentUpon>UCShipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shipping.cs" />
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,11 +408,17 @@
     <Compile Include="RatingDAO.cs" />
     <Compile Include="Recommend.cs" />
     <Compile Include="RecommendDAO.cs" />
+    <Compile Include="Voucher.cs" />
+    <Compile Include="VoucherDAO.cs" />
+    <Compile Include="ShippingDAO.cs" />
     <EmbeddedResource Include="FForgetPassword.resx">
       <DependentUpon>FForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FHomepage.resx">
       <DependentUpon>FHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FAddVoucher.resx">
+      <DependentUpon>FAddVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FBuy.resx">
       <DependentUpon>FBuy.cs</DependentUpon>
@@ -403,8 +456,17 @@
     <EmbeddedResource Include="Forms\FSellDetail.resx">
       <DependentUpon>FSellDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FShipping.resx">
+      <DependentUpon>FShipping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FTrackOrder.resx">
       <DependentUpon>FTrackOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FVoucher.resx">
+      <DependentUpon>FVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCApplyVoucher.resx">
+      <DependentUpon>UCApplyVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductBuy.resx">
       <DependentUpon>UCProductBuy.cs</DependentUpon>
@@ -423,6 +485,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCReview.resx">
       <DependentUpon>UCReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCVoucher.resx">
+      <DependentUpon>UCVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCShipping.resx">
+      <DependentUpon>UCShipping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
@@ -704,5 +772,22 @@
   <ItemGroup>
     <None Include="Images\clock.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\plus_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\voucher.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.5.0-preview2-24180-01\build\EntityFramework.targets')" />
 </Project>

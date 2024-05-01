@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnApplyVoucher = new Guna.UI2.WinForms.Guna2Button();
+            this.lblVoucherValue = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.gbOnline = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -50,13 +53,18 @@
             this.flpCartList = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblEdit = new System.Windows.Forms.LinkLabel();
+            this.txtRecipientName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.llblAddAddress = new System.Windows.Forms.LinkLabel();
+            this.lblPackage = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label = new System.Windows.Forms.Label();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnPost = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
@@ -80,6 +88,8 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
             this.panelRight.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -88,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.panelBody.SuspendLayout();
             this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.containerTop.SuspendLayout();
@@ -105,6 +116,11 @@
             this.panelRight.BorderColor = System.Drawing.Color.Silver;
             this.panelRight.BorderRadius = 10;
             this.panelRight.BorderThickness = 1;
+            this.panelRight.Controls.Add(this.label2);
+            this.panelRight.Controls.Add(this.lblSubtotal);
+            this.panelRight.Controls.Add(this.btnApplyVoucher);
+            this.panelRight.Controls.Add(this.lblVoucherValue);
+            this.panelRight.Controls.Add(this.label10);
             this.panelRight.Controls.Add(this.guna2Panel3);
             this.panelRight.Controls.Add(this.label7);
             this.panelRight.Controls.Add(this.lblNoOfItems);
@@ -119,6 +135,52 @@
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(421, 710);
             this.panelRight.TabIndex = 60;
+            // 
+            // btnApplyVoucher
+            // 
+            this.btnApplyVoucher.AutoRoundedCorners = true;
+            this.btnApplyVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnApplyVoucher.BorderRadius = 23;
+            this.btnApplyVoucher.CustomizableEdges.BottomLeft = false;
+            this.btnApplyVoucher.CustomizableEdges.BottomRight = false;
+            this.btnApplyVoucher.CustomizableEdges.TopLeft = false;
+            this.btnApplyVoucher.CustomizableEdges.TopRight = false;
+            this.btnApplyVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplyVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplyVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnApplyVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnApplyVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(149)))), ((int)(((byte)(35)))));
+            this.btnApplyVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnApplyVoucher.ForeColor = System.Drawing.Color.White;
+            this.btnApplyVoucher.Location = new System.Drawing.Point(25, 354);
+            this.btnApplyVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApplyVoucher.Name = "btnApplyVoucher";
+            this.btnApplyVoucher.Size = new System.Drawing.Size(383, 48);
+            this.btnApplyVoucher.TabIndex = 152;
+            this.btnApplyVoucher.Text = "Voucher";
+            this.btnApplyVoucher.Click += new System.EventHandler(this.btnApplyVoucher_Click);
+            // 
+            // lblVoucherValue
+            // 
+            this.lblVoucherValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoucherValue.ForeColor = System.Drawing.Color.Black;
+            this.lblVoucherValue.Location = new System.Drawing.Point(177, 533);
+            this.lblVoucherValue.Name = "lblVoucherValue";
+            this.lblVoucherValue.Size = new System.Drawing.Size(235, 31);
+            this.lblVoucherValue.TabIndex = 151;
+            this.lblVoucherValue.Text = "0 VND";
+            this.lblVoucherValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label10.Location = new System.Drawing.Point(23, 533);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 31);
+            this.label10.TabIndex = 150;
+            this.label10.Text = "Voucher:";
             // 
             // guna2Panel3
             // 
@@ -255,7 +317,7 @@
             // 
             this.lblNoOfItems.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfItems.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfItems.Location = new System.Drawing.Point(271, 342);
+            this.lblNoOfItems.Location = new System.Drawing.Point(273, 444);
             this.lblNoOfItems.Name = "lblNoOfItems";
             this.lblNoOfItems.Size = new System.Drawing.Size(139, 31);
             this.lblNoOfItems.TabIndex = 139;
@@ -267,7 +329,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(20, 342);
+            this.label6.Location = new System.Drawing.Point(22, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(191, 31);
             this.label6.TabIndex = 138;
@@ -278,7 +340,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(20, 382);
+            this.label5.Location = new System.Drawing.Point(22, 580);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 31);
             this.label5.TabIndex = 136;
@@ -288,9 +350,9 @@
             // 
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPrice.Location = new System.Drawing.Point(243, 382);
+            this.lblPrice.Location = new System.Drawing.Point(177, 580);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(167, 31);
+            this.lblPrice.Size = new System.Drawing.Size(235, 31);
             this.lblPrice.TabIndex = 137;
             this.lblPrice.Text = "999000 VND";
             this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -313,7 +375,7 @@
             this.btnBuy.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnBuy.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuy.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnBuy.Location = new System.Drawing.Point(27, 441);
+            this.btnBuy.Location = new System.Drawing.Point(29, 639);
             this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(369, 49);
@@ -355,6 +417,7 @@
             // 
             // flpCartList
             // 
+            this.flpCartList.AutoScroll = true;
             this.flpCartList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCartList.Location = new System.Drawing.Point(0, 222);
             this.flpCartList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -374,7 +437,11 @@
             // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.label2);
+            this.panelTop.Controls.Add(this.guna2PictureBox4);
+            this.panelTop.Controls.Add(this.lblEdit);
+            this.panelTop.Controls.Add(this.txtRecipientName);
+            this.panelTop.Controls.Add(this.llblAddAddress);
+            this.panelTop.Controls.Add(this.lblPackage);
             this.panelTop.Controls.Add(this.guna2PictureBox2);
             this.panelTop.Controls.Add(this.guna2PictureBox1);
             this.panelTop.Controls.Add(this.txtAddress);
@@ -387,15 +454,83 @@
             this.panelTop.Size = new System.Drawing.Size(1059, 217);
             this.panelTop.TabIndex = 0;
             // 
-            // label2
+            // guna2PictureBox4
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(29, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 31);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "Package";
+            this.guna2PictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.user1;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(23, 53);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(43, 43);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 113;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // lblEdit
+            // 
+            this.lblEdit.AutoSize = true;
+            this.lblEdit.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lblEdit.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.Location = new System.Drawing.Point(741, 9);
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(54, 31);
+            this.lblEdit.TabIndex = 112;
+            this.lblEdit.TabStop = true;
+            this.lblEdit.Text = "Edit";
+            this.lblEdit.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblEdit_LinkClicked);
+            // 
+            // txtRecipientName
+            // 
+            this.txtRecipientName.AutoScroll = true;
+            this.txtRecipientName.BackColor = System.Drawing.Color.Transparent;
+            this.txtRecipientName.BorderRadius = 10;
+            this.txtRecipientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRecipientName.DefaultText = "";
+            this.txtRecipientName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRecipientName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRecipientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecipientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecipientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtRecipientName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRecipientName.ForeColor = System.Drawing.Color.Black;
+            this.txtRecipientName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.txtRecipientName.Location = new System.Drawing.Point(92, 54);
+            this.txtRecipientName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtRecipientName.Name = "txtRecipientName";
+            this.txtRecipientName.PasswordChar = '\0';
+            this.txtRecipientName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtRecipientName.PlaceholderText = "Please enter your name";
+            this.txtRecipientName.ReadOnly = true;
+            this.txtRecipientName.SelectedText = "";
+            this.txtRecipientName.Size = new System.Drawing.Size(400, 43);
+            this.txtRecipientName.TabIndex = 111;
+            // 
+            // llblAddAddress
+            // 
+            this.llblAddAddress.AutoSize = true;
+            this.llblAddAddress.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.llblAddAddress.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.Location = new System.Drawing.Point(831, 9);
+            this.llblAddAddress.Name = "llblAddAddress";
+            this.llblAddAddress.Size = new System.Drawing.Size(191, 31);
+            this.llblAddAddress.TabIndex = 110;
+            this.llblAddAddress.TabStop = true;
+            this.llblAddAddress.Text = "Add new address";
+            this.llblAddAddress.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llblAddAddress.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblAddAddress_LinkClicked);
+            // 
+            // lblPackage
+            // 
+            this.lblPackage.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblPackage.Location = new System.Drawing.Point(29, 176);
+            this.lblPackage.Name = "lblPackage";
+            this.lblPackage.Size = new System.Drawing.Size(264, 31);
+            this.lblPackage.TabIndex = 109;
+            this.lblPackage.Text = "Package";
             // 
             // guna2PictureBox2
             // 
@@ -413,7 +548,7 @@
             // 
             this.guna2PictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.phone_call;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(23, 54);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(553, 54);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(43, 43);
@@ -442,8 +577,9 @@
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtAddress.PlaceholderText = "Please enter your address";
+            this.txtAddress.ReadOnly = true;
             this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(883, 43);
+            this.txtAddress.Size = new System.Drawing.Size(930, 43);
             this.txtAddress.TabIndex = 106;
             // 
             // txtPhone
@@ -461,14 +597,15 @@
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPhone.ForeColor = System.Drawing.Color.Black;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtPhone.Location = new System.Drawing.Point(92, 54);
+            this.txtPhone.Location = new System.Drawing.Point(620, 54);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtPhone.PlaceholderText = "Please enter your phone number";
+            this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(883, 43);
+            this.txtPhone.Size = new System.Drawing.Size(400, 43);
             this.txtPhone.TabIndex = 105;
             // 
             // label
@@ -484,6 +621,7 @@
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.containerTop.Controls.Add(this.btnVoucher);
             this.containerTop.Controls.Add(this.btnPost);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
@@ -497,6 +635,33 @@
             this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 63;
             this.containerTop.Text = "guna2ContainerControl1";
+            // 
+            // btnVoucher
+            // 
+            this.btnVoucher.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnVoucher.ForeColor = System.Drawing.Color.White;
+            this.btnVoucher.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnVoucher.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnVoucher.Location = new System.Drawing.Point(669, 12);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
+            this.btnVoucher.TabIndex = 5;
+            this.btnVoucher.Text = "CART";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(7, 0);
             // 
             // btnPost
             // 
@@ -929,6 +1094,28 @@
             this.ratingAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingAccount.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(23, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 31);
+            this.label2.TabIndex = 153;
+            this.label2.Text = "Subtotal:";
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.ForeColor = System.Drawing.Color.Black;
+            this.lblSubtotal.Location = new System.Drawing.Point(171, 487);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(242, 31);
+            this.lblSubtotal.TabIndex = 154;
+            this.lblSubtotal.Text = "999000 VND";
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -939,7 +1126,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FDelivery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDelivery";
@@ -955,6 +1142,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.panelBody.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.containerTop.ResumeLayout(false);
@@ -985,7 +1174,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPackage;
         private Guna.UI2.WinForms.Guna2Button btnBuy;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblPrice;
@@ -1025,5 +1214,15 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2RatingStar ratingAccount;
         private Guna.UI2.WinForms.Guna2Button btnPost;
+        private System.Windows.Forms.LinkLabel llblAddAddress;
+        private Guna.UI2.WinForms.Guna2TextBox txtRecipientName;
+        private System.Windows.Forms.LinkLabel lblEdit;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private System.Windows.Forms.Label lblVoucherValue;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2Button btnApplyVoucher;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSubtotal;
     }
 }

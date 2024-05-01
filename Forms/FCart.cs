@@ -18,6 +18,7 @@ namespace Window_Project_v5._1.Forms
         private Account account = new Account();
         private List<Product> products = new List<Product>();
         private List<Product> productChosen = new List<Product>();
+        private VoucherDAO voucherDAO = new VoucherDAO();
 
         public FCart()
         {
@@ -215,5 +216,6 @@ namespace Window_Project_v5._1.Forms
             lblNoOfItems.Text = itemCount.ToString();
             lblTotalMoney.Text = totalMoney.ToString("N0") + " VND";
         }
+
     }
 }
