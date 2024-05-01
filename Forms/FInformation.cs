@@ -29,7 +29,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = acc;
+            this.account = acc;
             txtEmail.Text = account.Email;
             txtPassword.Text = "";
             txtName.Text = account.Name;
@@ -221,6 +221,14 @@ namespace Window_Project_v5._1.Forms
             FSignin f = new FSignin();
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void FInformation_Load(object sender, EventArgs e)
+        {
+            //menu 
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
         }
     }
 }

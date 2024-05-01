@@ -1184,6 +1184,7 @@
             this.Name = "FInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FInformation";
+            this.Load += new System.EventHandler(this.FInformation_Load);
             this.containerTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBody.ResumeLayout(false);

@@ -54,6 +54,7 @@ namespace Window_Project_v5._1.Forms
                 }
             }
             lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
             convertByte(pbMenuAvatar, account.Avatar);
             //recommend list
             List<string> types = recommendDAO.GetTopThreeRecommendedTypesByBuyerID(account.Id);

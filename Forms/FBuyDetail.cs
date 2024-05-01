@@ -35,7 +35,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = accountDAO.Retrieve(acc.Id);
+            account = acc;
             product = pd;
             product.ViewCount++;
             productDAO.Update(product);
@@ -220,7 +220,6 @@ namespace Window_Project_v5._1.Forms
             lblBrand.Text = "Brand: " + product.Brand;
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
-            lblMenuAccountName.Text = account.Name;
             if (product.PostedTime.Date == DateTime.Now.Date)
             {
                 lblPostingTime.Text = (DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago";
@@ -260,9 +259,13 @@ namespace Window_Project_v5._1.Forms
                 btnBuy.Visible = false;
             }
 
-            Account seller = accountDAO.Retrieve(product.SellerID);
+            Account seller = new Account(product.SellerID);
             lblAvatarName.Text = seller.Name;
             convertByte(pbAvatar, seller.Avatar);
+            // menu
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
 
             //relate products
             List<Product> relatedProducts = productDAO.LoadSimilarProducts(product.Id, product.Type);

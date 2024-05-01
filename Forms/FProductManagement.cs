@@ -27,14 +27,14 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            account = accountDAO.Retrieve(acc.Id);
+            account = acc;
         }
 
         private void FProductManagement_Load(object sender, EventArgs e)
         {
             List<Product> products = productDAO.LoadList();
             lblSellerName.Text = account.Name;
-            account = accountDAO.Retrieve(account.Id);
+            //account = accountDAO.Retrieve(account.Id);
             lblBalance.Text = account.Money.ToString("N0") + " VND";
             foreach (var pd in products)
             {
@@ -61,6 +61,10 @@ namespace Window_Project_v5._1.Forms
                     }
                 }
                 convertByte(pBSellerAvatar, account.Avatar);
+                //Menu
+                lblMenuAccountName.Text = account.Name;
+                ratingMenuAccount.Value = account.AvgRating;
+                convertByte(pbMenuAvatar, account.Avatar);
             }
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -39,7 +40,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            this.acc = accountDAO.Retrieve(acc.Id);
+            this.acc = acc;
             this.products = products;
         }
 
@@ -81,9 +82,32 @@ namespace Window_Project_v5._1.Forms
                 txtRecipientName.Text = "";
                 txtPhone.Text = "";
             }
+            // menu
+            lblMenuAccountName.Text = acc.Name;
+            ratingMenuAccount.Value = acc.AvgRating;
+            convertByte(pbMenuAvatar, acc.Avatar);
 
         }
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
 
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();   
@@ -231,7 +255,7 @@ namespace Window_Project_v5._1.Forms
                     foreach (Product product in products)
                     {
                         // Update Buyer money
-                        Account buyer = accountDAO.Retrieve(acc.Id);
+                        Account buyer = new Account(acc.Id);
                         // Check pay method (is it online or not)
                         if (payMethod == 1)
                         {
@@ -243,7 +267,7 @@ namespace Window_Project_v5._1.Forms
                             product.PayMethod = false;
                         }
                         //  Update Seller money
-                        Account seller = accountDAO.Retrieve(product.SellerID);
+                        Account seller = new Account(product.SellerID);
                         seller.Money += product.SalePrice;
                         accountDAO.update(seller);
                         // Update product

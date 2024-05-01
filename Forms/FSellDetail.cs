@@ -487,5 +487,33 @@ namespace Window_Project_v5._1.Forms
                 e.Handled = true;
             }
         }
+
+        private void FSellDetail_Load(object sender, EventArgs e)
+        {
+            //Menu
+            lblMenuAccountName.Text = acc.Name;
+            ratingMenuAccount.Value = acc.AvgRating;
+            convertByte(pbMenuAvatar, acc.Avatar);
+        }
+        private void convertByte(PictureBox pic, byte[] imageData)
+        {
+
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    // Attempt to create Image object
+                    try
+                    {
+                        pic.Image = Image.FromStream(ms);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        // Handle ArgumentException
+                        Console.WriteLine("Failed to create Image object: " + ex.Message);
+                    }
+                }
+            }
+        }
     }
 }

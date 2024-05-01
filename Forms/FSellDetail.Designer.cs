@@ -99,9 +99,9 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.panelLeft.SuspendLayout();
             this.gbBillStatus.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -1515,6 +1515,15 @@
             this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
             this.guna2Panel8.TabIndex = 14;
             // 
+            // ratingMenuAccount
+            // 
+            this.ratingMenuAccount.Location = new System.Drawing.Point(104, 41);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 4;
+            // 
             // lblMenuAccountName
             // 
             this.lblMenuAccountName.AutoSize = true;
@@ -1540,15 +1549,6 @@
             this.pbMenuAvatar.TabIndex = 0;
             this.pbMenuAvatar.TabStop = false;
             // 
-            // ratingMenuAccount
-            // 
-            this.ratingMenuAccount.Location = new System.Drawing.Point(104, 41);
-            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingMenuAccount.Name = "ratingMenuAccount";
-            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingMenuAccount.TabIndex = 4;
-            // 
             // FSellDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1563,6 +1563,7 @@
             this.Name = "FSellDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSellDetail";
+            this.Load += new System.EventHandler(this.FSellDetail_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             this.gbBillStatus.ResumeLayout(false);
