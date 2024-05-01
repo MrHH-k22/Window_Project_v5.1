@@ -25,7 +25,7 @@ namespace Window_Project_v5._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FReview());
+            Application.Run(new FSignin());
         }
     }
 }

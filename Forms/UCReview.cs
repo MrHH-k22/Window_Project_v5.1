@@ -83,7 +83,7 @@ namespace Window_Project_v5._1.Forms
             ucProductConditionReduce.lblStatus.Visible = false;
             ucProductConditionReduce.lblPrice.Visible = false;
             ucProductConditionReduce.btnNextState.Visible = false;
-            convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(product.Id));
+            convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(rating.ProductID));
             ucProductConditionReduce.lblBuyerName.Text = product.SalePrice.ToString();
             ucProductConditionReduce.lblProductName.Text = product.Name;
 
