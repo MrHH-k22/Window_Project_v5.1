@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UCReview";
-            this.Size = new System.Drawing.Size(574, 415);
+            this.Size = new System.Drawing.Size(941, 274);
             this.Load += new System.EventHandler(this.UCReview_Load);
             this.ResumeLayout(false);
 
