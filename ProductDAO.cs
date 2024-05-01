@@ -97,19 +97,17 @@ namespace Window_Project_v5._1
         // Buyer purchases the product
         public void Update(Product product)
         {
-            string sqlStr = "UPDATE Product SET BuyerID = @BuyerID, OrderCondition = @OrderCondition, ContactPhone = @ContactPhone, DeliveryAddress = @DeliveryAddress, ViewCount = @ViewCount, PayMethod = @PayMethod, BuyTime = @BuyTime WHERE ID = @ID";
-            SqlParameter[] parameters =
+            string sqlStr = $"UPDATE Product SET BuyerID = {product.BuyerID}, OrderCondition = {product.OrderCondition}, ViewCount = {product.ViewCount}, PayMethod = '{product.PayMethod}', selectedShippingID = '{product.SelectedShipping}', BuyTime = '{DateTime.Now}' WHERE ID = {product.Id}";
+
+            try
             {
-                new SqlParameter("@BuyerID", product.BuyerID),
-                new SqlParameter("@OrderCondition", product.OrderCondition),
-                new SqlParameter("@ContactPhone", product.ContactPhone),
-                new SqlParameter("@DeliveryAddress", product.DeliveryAddress),
-                new SqlParameter("@ViewCount", product.ViewCount),
-                new SqlParameter("@PayMethod", product.PayMethod),
-                new SqlParameter("@BuyTime", DateTime.Now),
-                new SqlParameter("@ID", product.Id)
-            };
-            dbc.Execute(sqlStr, parameters);
+                dbc.Execute(sqlStr);
+            }
+            catch (SqlException ex)
+            {
+                // Handle the exception (log, notify, etc.)
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
 
         // Seller update the product's order condition

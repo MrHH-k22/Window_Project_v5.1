@@ -80,9 +80,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-
-
-
         private void UCProductBuy_Load(object sender, EventArgs e)
         {
             SetEventForAllControls(this);
