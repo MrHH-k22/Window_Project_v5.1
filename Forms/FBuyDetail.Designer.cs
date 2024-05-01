@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation6 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -72,7 +72,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBuyPrice = new System.Windows.Forms.Label();
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblSearchReliable = new System.Windows.Forms.LinkLabel();
             this.btnImage4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnImage3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnImage2 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -132,22 +131,22 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation6;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -697,7 +696,6 @@
             // 
             // panelLeft
             // 
-            this.panelLeft.Controls.Add(this.lblSearchReliable);
             this.panelLeft.Controls.Add(this.btnImage4);
             this.panelLeft.Controls.Add(this.btnImage3);
             this.panelLeft.Controls.Add(this.btnImage2);
@@ -709,18 +707,6 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(335, 710);
             this.panelLeft.TabIndex = 5;
-            // 
-            // lblSearchReliable
-            // 
-            this.lblSearchReliable.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lblSearchReliable, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblSearchReliable.Location = new System.Drawing.Point(72, 443);
-            this.lblSearchReliable.Name = "lblSearchReliable";
-            this.lblSearchReliable.Size = new System.Drawing.Size(160, 16);
-            this.lblSearchReliable.TabIndex = 113;
-            this.lblSearchReliable.TabStop = true;
-            this.lblSearchReliable.Text = "Check the seller\'s reliable";
-            this.lblSearchReliable.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblSearchReliable_LinkClicked);
             // 
             // btnImage4
             // 
@@ -1356,7 +1342,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelLeft.ResumeLayout(false);
-            this.panelLeft.PerformLayout();
             this.panelRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.containerMenu.ResumeLayout(false);
@@ -1445,6 +1430,5 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator5;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
-        private System.Windows.Forms.LinkLabel lblSearchReliable;
     }
 }
