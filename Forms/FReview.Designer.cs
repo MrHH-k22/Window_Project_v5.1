@@ -48,6 +48,7 @@
             this.lblNumberRatings = new System.Windows.Forms.Label();
             this.lblNameSeller = new System.Windows.Forms.Label();
             this.pbAvatarSeller = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.flpRating = new System.Windows.Forms.FlowLayoutPanel();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -357,11 +358,20 @@
             this.pbAvatarSeller.TabStop = false;
             this.pbAvatarSeller.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
+            // flpRating
+            // 
+            this.flpRating.AutoScroll = true;
+            this.flpRating.Location = new System.Drawing.Point(-1, 195);
+            this.flpRating.Name = "flpRating";
+            this.flpRating.Size = new System.Drawing.Size(1488, 577);
+            this.flpRating.TabIndex = 67;
+            // 
             // FReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1500, 780);
+            this.Controls.Add(this.flpRating);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -399,5 +409,6 @@
         private System.Windows.Forms.Label lblNumberRatings;
         private System.Windows.Forms.Label lblNameSeller;
         private Bunifu.UI.WinForms.BunifuPictureBox pbAvatarSeller;
+        private System.Windows.Forms.FlowLayoutPanel flpRating;
     }
 }

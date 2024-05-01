@@ -1011,6 +1011,7 @@
             this.lblAvatarName.Size = new System.Drawing.Size(189, 78);
             this.lblAvatarName.TabIndex = 119;
             this.lblAvatarName.Text = "Avatar Name";
+            this.lblAvatarName.Click += new System.EventHandler(this.lblAvatarName_Click);
             // 
             // label3
             // 

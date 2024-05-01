@@ -37,8 +37,8 @@ namespace Window_Project_v5._1.Forms
         {
             foreach (Rating rating in ratingList)
             {
-                //UCReview uc = new UCReview(product, account, rating);
-                //flpRating.Controls.Add(uc);
+                UCReview uc = new UCReview(product, account, rating);
+                flpRating.Controls.Add(uc);
             }
         }
     }

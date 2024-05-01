@@ -614,5 +614,11 @@ namespace Window_Project_v5._1.Forms
             fBuyDetail.Closed += (s, args) => this.Close();
             fBuyDetail.Show();
         }
+
+        private void lblAvatarName_Click(object sender, EventArgs e)
+        {
+            FReview fReview = new FReview(account, product);
+            fReview.Show();
+        }
     }
 }
