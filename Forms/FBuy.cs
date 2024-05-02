@@ -80,11 +80,13 @@ namespace Window_Project_v5._1.Forms
             if (flpRecommendProducts.Controls.Count <= 0)
             {
                 flpRecommendProducts.Visible = false;
+                panelRecommendProducts.Visible = false;
                 panelRecommend.Visible = false;
             }
             else
             {
                 flpRecommendProducts.Visible = true;
+                panelRecommendProducts.Visible = true;
                 panelRecommend.Visible = true;
                 adjustRecommendFlowLayoutPanel();
             }
