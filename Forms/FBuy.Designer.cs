@@ -652,7 +652,7 @@
             this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 594);
+            this.containerMenu.Size = new System.Drawing.Size(292, 658);
             this.containerMenu.TabIndex = 5;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 

@@ -95,7 +95,7 @@
             this.gpManagement.Location = new System.Drawing.Point(11, 7);
             this.gpManagement.Margin = new System.Windows.Forms.Padding(3, 20, 3, 2);
             this.gpManagement.Name = "gpManagement";
-            this.gpManagement.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpManagement.Padding = new System.Windows.Forms.Padding(4);
             this.gpManagement.Size = new System.Drawing.Size(1969, 97);
             this.gpManagement.TabIndex = 1;
             this.gpManagement.TabStop = false;
@@ -125,7 +125,7 @@
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnLoad.ForeColor = System.Drawing.Color.White;
             this.btnLoad.Location = new System.Drawing.Point(908, 26);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(123, 46);
             this.btnLoad.TabIndex = 14;
@@ -154,7 +154,7 @@
             this.pBSellerAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pBSellerAvatar.Image")));
             this.pBSellerAvatar.IsCircle = true;
             this.pBSellerAvatar.Location = new System.Drawing.Point(25, 5);
-            this.pBSellerAvatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBSellerAvatar.Margin = new System.Windows.Forms.Padding(4);
             this.pBSellerAvatar.Name = "pBSellerAvatar";
             this.pBSellerAvatar.Size = new System.Drawing.Size(84, 84);
             this.pBSellerAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +182,7 @@
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1300, 123);
+            this.panelTop.Size = new System.Drawing.Size(1500, 123);
             this.panelTop.TabIndex = 1;
             // 
             // tcManagement
@@ -194,10 +194,10 @@
             this.tcManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcManagement.ItemSize = new System.Drawing.Size(160, 40);
             this.tcManagement.Location = new System.Drawing.Point(0, 123);
-            this.tcManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tcManagement.Name = "tcManagement";
             this.tcManagement.SelectedIndex = 0;
-            this.tcManagement.Size = new System.Drawing.Size(1300, 547);
+            this.tcManagement.Size = new System.Drawing.Size(1500, 587);
             this.tcManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tcManagement.TabButtonHoverState.FillColor = System.Drawing.Color.White;
             this.tcManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -224,8 +224,8 @@
             this.tpDisplay.Location = new System.Drawing.Point(4, 44);
             this.tpDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpDisplay.Name = "tpDisplay";
-            this.tpDisplay.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tpDisplay.Size = new System.Drawing.Size(1292, 499);
+            this.tpDisplay.Padding = new System.Windows.Forms.Padding(4);
+            this.tpDisplay.Size = new System.Drawing.Size(1492, 539);
             this.tpDisplay.TabIndex = 0;
             this.tpDisplay.Text = "Displaying";
             this.tpDisplay.UseVisualStyleBackColor = true;
@@ -236,8 +236,8 @@
             this.tpWaitConfirm.Location = new System.Drawing.Point(4, 44);
             this.tpWaitConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
-            this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1292, 498);
+            this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(4);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1292, 499);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
@@ -248,7 +248,7 @@
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Size = new System.Drawing.Size(1292, 498);
+            this.tpCompleted.Size = new System.Drawing.Size(1292, 499);
             this.tpCompleted.TabIndex = 3;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -259,7 +259,7 @@
             this.tpHidden.Location = new System.Drawing.Point(4, 44);
             this.tpHidden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpHidden.Name = "tpHidden";
-            this.tpHidden.Size = new System.Drawing.Size(1292, 498);
+            this.tpHidden.Size = new System.Drawing.Size(1292, 499);
             this.tpHidden.TabIndex = 5;
             this.tpHidden.Text = "Hidden";
             this.tpHidden.UseVisualStyleBackColor = true;
@@ -276,7 +276,7 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1300, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 3;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
@@ -388,7 +388,7 @@
             this.panelBody.Location = new System.Drawing.Point(0, 70);
             this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1300, 670);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 4;
             // 
             // containerMenu
@@ -689,7 +689,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1300, 740);
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
