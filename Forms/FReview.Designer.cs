@@ -241,7 +241,7 @@
             this.lblSold.Location = new System.Drawing.Point(1034, 61);
             this.lblSold.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSold.Name = "lblSold";
-            this.lblSold.Size = new System.Drawing.Size(86, 32);
+            this.lblSold.Size = new System.Drawing.Size(166, 32);
             this.lblSold.TabIndex = 152;
             this.lblSold.Text = "Sold :";
             // 
@@ -254,7 +254,7 @@
             this.lblNumberofproducts.Location = new System.Drawing.Point(1034, 24);
             this.lblNumberofproducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumberofproducts.Name = "lblNumberofproducts";
-            this.lblNumberofproducts.Size = new System.Drawing.Size(124, 32);
+            this.lblNumberofproducts.Size = new System.Drawing.Size(180, 32);
             this.lblNumberofproducts.TabIndex = 152;
             this.lblNumberofproducts.Text = "Products :";
             // 
@@ -306,7 +306,7 @@
             // rsStar
             // 
             this.rsStar.FillColor = System.Drawing.Color.Transparent;
-            this.rsStar.Location = new System.Drawing.Point(202, 56);
+            this.rsStar.Location = new System.Drawing.Point(214, 56);
             this.rsStar.Name = "rsStar";
             this.rsStar.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.rsStar.Size = new System.Drawing.Size(193, 38);
@@ -326,7 +326,7 @@
             // 
             this.lblNumberRatings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberRatings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblNumberRatings.Location = new System.Drawing.Point(412, 65);
+            this.lblNumberRatings.Location = new System.Drawing.Point(419, 65);
             this.lblNumberRatings.Name = "lblNumberRatings";
             this.lblNumberRatings.Size = new System.Drawing.Size(152, 34);
             this.lblNumberRatings.TabIndex = 1;
