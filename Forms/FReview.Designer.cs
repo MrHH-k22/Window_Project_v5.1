@@ -376,6 +376,7 @@
             this.Controls.Add(this.containerTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FReview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FReview";
             this.Load += new System.EventHandler(this.FReview_Load);
             this.containerTop.ResumeLayout(false);

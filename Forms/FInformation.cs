@@ -230,5 +230,13 @@ namespace Window_Project_v5._1.Forms
             ratingMenuAccount.Value = account.AvgRating;
             convertByte(pbMenuAvatar, account.Avatar);
         }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FVoucher f = new FVoucher(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
     }
 }

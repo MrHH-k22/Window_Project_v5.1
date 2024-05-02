@@ -290,6 +290,7 @@ namespace Window_Project_v5._1
             product.CancelLimit = int.Parse(dr["CancelLimit"].ToString());
             product.CancelRefund = bool.Parse(dr["CancelRefund"].ToString());
             product.BuyDate = (dr["BuyTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["BuyTime"]);
+            product.SelectedShipping = dr["selectedShippingID"] == DBNull.Value ? 0 : int.Parse(dr["selectedShippingID"].ToString());
             return product;
         }
 

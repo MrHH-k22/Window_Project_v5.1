@@ -51,11 +51,11 @@
             this.lblVoucherName = new System.Windows.Forms.Label();
             this.lblAddVoucher = new System.Windows.Forms.LinkLabel();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
             this.guna2Panel7.SuspendLayout();
@@ -84,6 +84,7 @@
             this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ratingMenuAccount.Name = "ratingMenuAccount";
             this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.ReadOnly = true;
             this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingMenuAccount.TabIndex = 2;
             // 
@@ -150,7 +151,7 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
@@ -172,6 +173,7 @@
             this.containerMenu.BorderColor = System.Drawing.Color.Black;
             this.containerMenu.Controls.Add(this.btnLogout);
             this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnVoucher);
             this.containerMenu.Controls.Add(this.btnMoney);
             this.containerMenu.Controls.Add(this.btnInformation);
             this.containerMenu.Controls.Add(this.btnOrderAnalysis);
@@ -187,7 +189,7 @@
             this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 591);
+            this.containerMenu.Size = new System.Drawing.Size(292, 648);
             this.containerMenu.TabIndex = 43;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
@@ -205,7 +207,7 @@
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Location = new System.Drawing.Point(1, 585);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(290, 55);
@@ -369,7 +371,7 @@
             this.panelBody.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBody.Name = "panelBody";
             this.panelBody.Padding = new System.Windows.Forms.Padding(10);
-            this.panelBody.Size = new System.Drawing.Size(1482, 663);
+            this.panelBody.Size = new System.Drawing.Size(1500, 710);
             this.panelBody.TabIndex = 45;
             // 
             // flpVoucher
@@ -379,7 +381,7 @@
             this.flpVoucher.Location = new System.Drawing.Point(10, 69);
             this.flpVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpVoucher.Name = "flpVoucher";
-            this.flpVoucher.Size = new System.Drawing.Size(1462, 584);
+            this.flpVoucher.Size = new System.Drawing.Size(1480, 631);
             this.flpVoucher.TabIndex = 41;
             // 
             // panelTop
@@ -389,7 +391,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(10, 10);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1462, 59);
+            this.panelTop.Size = new System.Drawing.Size(1480, 59);
             this.panelTop.TabIndex = 0;
             // 
             // lblVoucherName
@@ -422,7 +424,6 @@
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.btnVoucher);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
             this.containerTop.Controls.Add(this.btnPostProduct);
@@ -432,37 +433,9 @@
             this.containerTop.Location = new System.Drawing.Point(0, 0);
             this.containerTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerTop.Name = "containerTop";
-            this.containerTop.Size = new System.Drawing.Size(1482, 70);
+            this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 44;
             this.containerTop.Text = "guna2ContainerControl1";
-            // 
-            // btnVoucher
-            // 
-            this.btnVoucher.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnVoucher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnVoucher.ForeColor = System.Drawing.Color.White;
-            this.btnVoucher.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnVoucher.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
-            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnVoucher.Location = new System.Drawing.Point(581, 11);
-            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnVoucher.Name = "btnVoucher";
-            this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
-            this.btnVoucher.TabIndex = 4;
-            this.btnVoucher.Text = "VOUCHER";
-            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVoucher.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click);
             // 
             // btnCart
             // 
@@ -563,14 +536,40 @@
             this.pbLogo.TabStop = false;
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
+            // btnVoucher
+            // 
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVoucher.FillColor = System.Drawing.Color.White;
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
+            this.btnVoucher.TabIndex = 28;
+            this.btnVoucher.Text = "Voucher";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click_1);
+            // 
             // FVoucher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 733);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.containerTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FVoucher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FVoucher";
@@ -617,10 +616,10 @@
         private Guna.UI2.WinForms.Guna2Button btnPostProduct;
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2ContainerControl containerTop;
-        private Guna.UI2.WinForms.Guna2Button btnVoucher;
         private System.Windows.Forms.FlowLayoutPanel flpVoucher;
         private Guna.UI2.WinForms.Guna2Panel panelTop;
         private System.Windows.Forms.LinkLabel lblAddVoucher;
         public System.Windows.Forms.Label lblVoucherName;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
     }
 }

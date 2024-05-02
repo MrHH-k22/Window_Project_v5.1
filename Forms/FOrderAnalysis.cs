@@ -34,7 +34,6 @@ namespace Window_Project_v5._1.Forms
         private void FOrderAnalysis_Load(object sender, EventArgs e)
         {
             //acc = accountDAO.Retrieve(acc.Id);
-
             List<Product> allProducts = productDAO.LoadListWithCondition("",acc.Id);
             List<int> allCustomers = productDAO.LoadCustomers(acc.Id);
             int Displaying = 0;
@@ -87,6 +86,10 @@ namespace Window_Project_v5._1.Forms
             lblMenuAccountName.Text = acc.Name;
             ratingMenuAccount.Value = acc.AvgRating;
             convertByte(pbMenuAvatar, acc.Avatar);
+            //set center screen
+            this.StartPosition = FormStartPosition.Manual;
+            this.Top = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
+            this.Left = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
         }
 
         
@@ -214,6 +217,14 @@ namespace Window_Project_v5._1.Forms
         {
             this.Hide();
             FBuy f = new FBuy(acc);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FVoucher f = new FVoucher(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

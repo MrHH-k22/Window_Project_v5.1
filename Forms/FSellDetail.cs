@@ -106,6 +106,7 @@ namespace Window_Project_v5._1.Forms
                 lblPhone.Text = shipping.PhoneNo;
                 txtAddress.Text = shipping.Address;
             }
+            //
             txtCancelTime.Text = pd.CancelLimit.ToString();
             cbCancel.Checked = pd.CancelRefund;
         }
@@ -514,6 +515,14 @@ namespace Window_Project_v5._1.Forms
                     }
                 }
             }
+        }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FVoucher f = new FVoucher(acc);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }
