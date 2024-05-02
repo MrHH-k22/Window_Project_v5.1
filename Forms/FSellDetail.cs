@@ -247,8 +247,39 @@ namespace Window_Project_v5._1.Forms
             OpenImageDialog(btnImage4, 3);
         }
 
+
+        public bool IsTextBoxEmpty( Guna.UI2.WinForms.Guna2TextBox textBox)
+        {
+            return string.IsNullOrWhiteSpace(textBox.Text);
+        }
+
+        public bool checkNull()
+        {
+            if (IsTextBoxEmpty(txtProductTitle)) return false;
+            if (IsTextBoxEmpty(txtType)) return false;
+            if (IsTextBoxEmpty(txtBuyPrice)) return false;
+            if (IsTextBoxEmpty(txtSellPrice)) return false;
+            if (IsTextBoxEmpty(txtCondition)) return false;
+            if (IsTextBoxEmpty(txtStatus)) return false;
+            if (IsTextBoxEmpty(txtSupportPolicy)) return false;
+            if (IsTextBoxEmpty(txtBrand)) return false;
+            if (IsTextBoxEmpty(txtOrigin)) return false;
+            if (IsTextBoxEmpty(txtMaterial)) return false;
+            if (IsTextBoxEmpty(txtMaterial)) return false;
+            if (IsTextBoxEmpty(txtSize)) return false;
+            if (IsTextBoxEmpty(txtFunctionalities)) return false;
+            return true;
+        }
+
         private void btnPost_Click_1(object sender, EventArgs e)
         {
+            if(!checkNull())
+            {
+                MessageBox.Show("Please fill in all required information.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
             //string category = ddCategories.SelectedValue.ToString();
             Product product = new Product(selectedCategory, txtProductTitle.Text, txtType.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), selectedArea, txtCondition.Text, txtStatus.Text, txtSupportPolicy.Text, txtBrand.Text, txtOrigin.Text, txtMaterial.Text, txtSize.Text, txtFunctionalities.Text, txtDescription.Text, txtCancelTime.Text, cbCancel.Checked, acc.Id);
             if (!edit)
@@ -334,18 +365,6 @@ namespace Window_Project_v5._1.Forms
             FSellDetail f = new FSellDetail(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
-        }
-
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            if (containerMenu.Visible == false)
-            {
-                containerMenu.Visible = true;
-            }
-            else
-            {
-                containerMenu.Visible = false;
-            }
         }
 
         private void btnPurchasesOrder_Click(object sender, EventArgs e)
@@ -523,6 +542,64 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuyPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Không cho phép ký tự này điều khiển được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
+
+        private void txtBuyPrice_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSellPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Không cho phép ký tự này điều khiển được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
+
+        private void txtCondition_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Không cho phép ký tự này điều khiển được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
+
+        private void txtCancelTime_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Không cho phép ký tự này điều khiển được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (containerMenu.Visible == false)
+            {
+                containerMenu.Visible = true;
+            }
+            else
+            {
+                containerMenu.Visible = false;
+            }
         }
     }
 }

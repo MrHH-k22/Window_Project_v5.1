@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation8 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -144,22 +144,22 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation8;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -1246,7 +1246,7 @@
             this.btnImage4.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImage4.ImageRotate = 0F;
             this.btnImage4.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage4.Location = new System.Drawing.Point(908, 319);
+            this.btnImage4.Location = new System.Drawing.Point(943, 342);
             this.btnImage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImage4.Name = "btnImage4";
             this.btnImage4.PressedState.ImageSize = new System.Drawing.Size(130, 130);
@@ -1258,15 +1258,15 @@
             // 
             this.btnImage3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.bunifuTransition1.SetDecoration(this.btnImage3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage3.HoverState.ImageSize = new System.Drawing.Size(130, 130);
             this.btnImage3.Image = ((System.Drawing.Image)(resources.GetObject("btnImage3.Image")));
             this.btnImage3.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImage3.ImageRotate = 0F;
             this.btnImage3.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage3.Location = new System.Drawing.Point(908, 161);
+            this.btnImage3.Location = new System.Drawing.Point(943, 176);
             this.btnImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImage3.Name = "btnImage3";
-            this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(130, 130);
             this.btnImage3.Size = new System.Drawing.Size(140, 140);
             this.btnImage3.TabIndex = 112;
             this.btnImage3.Click += new System.EventHandler(this.btnImage3_Click_1);
@@ -1275,15 +1275,15 @@
             // 
             this.btnImage2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.bunifuTransition1.SetDecoration(this.btnImage2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage2.HoverState.ImageSize = new System.Drawing.Size(130, 130);
             this.btnImage2.Image = ((System.Drawing.Image)(resources.GetObject("btnImage2.Image")));
             this.btnImage2.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImage2.ImageRotate = 0F;
             this.btnImage2.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage2.Location = new System.Drawing.Point(908, 5);
+            this.btnImage2.Location = new System.Drawing.Point(943, 10);
             this.btnImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImage2.Name = "btnImage2";
-            this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(130, 130);
             this.btnImage2.Size = new System.Drawing.Size(140, 140);
             this.btnImage2.TabIndex = 111;
             this.btnImage2.Click += new System.EventHandler(this.btnImage2_Click_1);
