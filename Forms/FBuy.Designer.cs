@@ -123,11 +123,11 @@
             this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnVoucher.Location = new System.Drawing.Point(581, 11);
+            this.btnVoucher.Location = new System.Drawing.Point(557, 10);
             this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoucher.Name = "btnVoucher";
             this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
+            this.btnVoucher.Size = new System.Drawing.Size(179, 46);
             this.btnVoucher.TabIndex = 5;
             this.btnVoucher.Text = "VOUCHER";
             this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -652,7 +652,7 @@
             this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 658);
+            this.containerMenu.Size = new System.Drawing.Size(292, 591);
             this.containerMenu.TabIndex = 5;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
