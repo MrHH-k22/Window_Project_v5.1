@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -110,6 +109,7 @@
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -141,27 +141,26 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             // 
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.guna2Button1);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
             this.containerTop.Controls.Add(this.btnPostProduct);
@@ -175,34 +174,6 @@
             this.containerTop.Size = new System.Drawing.Size(1500, 70);
             this.containerTop.TabIndex = 5;
             this.containerTop.Text = "guna2ContainerControl1";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.bunifuTransition1.SetDecoration(this.guna2Button1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(4, 0);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(669, 12);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.guna2Button1.Size = new System.Drawing.Size(163, 46);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "CART";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.TextOffset = new System.Drawing.Point(7, 0);
             // 
             // btnCart
             // 
@@ -1057,6 +1028,7 @@
             this.containerMenu.BorderColor = System.Drawing.Color.Black;
             this.containerMenu.Controls.Add(this.btnLogout);
             this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnVoucher);
             this.containerMenu.Controls.Add(this.btnMoney);
             this.containerMenu.Controls.Add(this.btnInformation);
             this.containerMenu.Controls.Add(this.btnOrderAnalysis);
@@ -1073,7 +1045,7 @@
             this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 594);
+            this.containerMenu.Size = new System.Drawing.Size(292, 648);
             this.containerMenu.TabIndex = 7;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
@@ -1092,7 +1064,7 @@
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Location = new System.Drawing.Point(1, 585);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(290, 55);
@@ -1107,7 +1079,7 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuTransition1.SetDecoration(this.guna2Panel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
@@ -1402,6 +1374,30 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // btnVoucher
+            // 
+            this.bunifuTransition1.SetDecoration(this.btnVoucher, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVoucher.FillColor = System.Drawing.Color.White;
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
+            this.btnVoucher.TabIndex = 26;
+            this.btnVoucher.Text = "Voucher";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
+            // 
             // FBuyDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1530,6 +1526,6 @@
         public System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.FlowLayoutPanel flpRelatedProducts;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
     }
 }

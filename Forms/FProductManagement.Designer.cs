@@ -64,6 +64,7 @@
             this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.gpManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBSellerAvatar)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -237,7 +238,7 @@
             this.tpWaitConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpWaitConfirm.Name = "tpWaitConfirm";
             this.tpWaitConfirm.Padding = new System.Windows.Forms.Padding(4);
-            this.tpWaitConfirm.Size = new System.Drawing.Size(1292, 499);
+            this.tpWaitConfirm.Size = new System.Drawing.Size(1492, 539);
             this.tpWaitConfirm.TabIndex = 1;
             this.tpWaitConfirm.Text = "Wait for confirmation";
             this.tpWaitConfirm.UseVisualStyleBackColor = true;
@@ -248,7 +249,7 @@
             this.tpCompleted.Location = new System.Drawing.Point(4, 44);
             this.tpCompleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpCompleted.Name = "tpCompleted";
-            this.tpCompleted.Size = new System.Drawing.Size(1292, 499);
+            this.tpCompleted.Size = new System.Drawing.Size(1492, 539);
             this.tpCompleted.TabIndex = 3;
             this.tpCompleted.Text = "Completed";
             this.tpCompleted.UseVisualStyleBackColor = true;
@@ -259,7 +260,7 @@
             this.tpHidden.Location = new System.Drawing.Point(4, 44);
             this.tpHidden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpHidden.Name = "tpHidden";
-            this.tpHidden.Size = new System.Drawing.Size(1292, 499);
+            this.tpHidden.Size = new System.Drawing.Size(1492, 539);
             this.tpHidden.TabIndex = 5;
             this.tpHidden.Text = "Hidden";
             this.tpHidden.UseVisualStyleBackColor = true;
@@ -396,6 +397,7 @@
             this.containerMenu.BorderColor = System.Drawing.Color.Black;
             this.containerMenu.Controls.Add(this.btnLogout);
             this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnVoucher);
             this.containerMenu.Controls.Add(this.btnMoney);
             this.containerMenu.Controls.Add(this.btnInformation);
             this.containerMenu.Controls.Add(this.btnOrderAnalysis);
@@ -411,7 +413,7 @@
             this.containerMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.containerMenu.Name = "containerMenu";
             this.containerMenu.Padding = new System.Windows.Forms.Padding(1);
-            this.containerMenu.Size = new System.Drawing.Size(292, 594);
+            this.containerMenu.Size = new System.Drawing.Size(292, 646);
             this.containerMenu.TabIndex = 9;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
@@ -429,7 +431,7 @@
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Location = new System.Drawing.Point(1, 585);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(290, 55);
@@ -443,7 +445,7 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
@@ -684,6 +686,29 @@
             this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingMenuAccount.TabIndex = 2;
             // 
+            // btnVoucher
+            // 
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVoucher.FillColor = System.Drawing.Color.White;
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
+            this.btnVoucher.TabIndex = 27;
+            this.btnVoucher.Text = "Voucher";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
+            // 
             // FProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -755,5 +780,6 @@
         private System.Windows.Forms.Label lblMenuAccountName;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
+        private Guna.UI2.WinForms.Guna2Button btnVoucher;
     }
 }
