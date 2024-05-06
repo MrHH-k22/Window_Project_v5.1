@@ -316,6 +316,7 @@
             this.btnClose.Size = new System.Drawing.Size(225, 47);
             this.btnClose.TabIndex = 72;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dtpBirthday
             // 
@@ -324,7 +325,7 @@
             this.dtpBirthday.FillColor = System.Drawing.Color.White;
             this.dtpBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpBirthday.Location = new System.Drawing.Point(477, 368);
+            this.dtpBirthday.Location = new System.Drawing.Point(65, 366);
             this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBirthday.Name = "dtpBirthday";
@@ -451,6 +452,7 @@
             this.btnBrowse.Size = new System.Drawing.Size(203, 43);
             this.btnBrowse.TabIndex = 73;
             this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // pbAvatar
             // 
@@ -503,6 +505,7 @@
             this.btnSave.Size = new System.Drawing.Size(225, 47);
             this.btnSave.TabIndex = 71;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label1
             // 
@@ -723,7 +726,7 @@
             this.txtPhone.IconRight = null;
             this.txtPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(65, 368);
+            this.txtPhone.Location = new System.Drawing.Point(471, 261);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MinimumSize = new System.Drawing.Size(1, 1);
@@ -799,7 +802,7 @@
             this.txtAddress.IconRight = null;
             this.txtAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.Lines = new string[0];
-            this.txtAddress.Location = new System.Drawing.Point(477, 261);
+            this.txtAddress.Location = new System.Drawing.Point(471, 366);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.MinimumSize = new System.Drawing.Size(1, 1);
@@ -924,6 +927,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel5
             // 

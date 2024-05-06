@@ -83,61 +83,12 @@ namespace Window_Project_v5._1.Forms
             return result;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            account.Name = txtName.Text;
-            account.Email = txtEmail.Text;
-            if (txtPassword.Text.Length > 0)
-            {
-                account.Password = txtPassword.Text;
-            }
-            account.Phone = txtPhone.Text;
-            account.Birthday = dtpBirthday.Value;
-            account.Address = txtAddress.Text;
-            account.Avatar = avatarByteArray;
+        
 
-            accountDAO.update(account);
-        }
+        
 
-        private void btnBrowse_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.gif)|*.jpg; *.jpeg; *.png; *.gif";
-
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                imagePath = dialog.FileName.ToString();
-
-                // Đọc hình ảnh từ tệp
-                System.Drawing.Image originalImage = System.Drawing.Image.FromFile(imagePath);
-
-                // Thay đổi kích thước của hình ảnh
-                System.Drawing.Image resizedImage = ResizeImage(originalImage, pbAvatar.Width, pbAvatar.Height);
-
-                // Hiển thị hình ảnh trong PictureBox
-                pbAvatar.Image = resizedImage;
-
-                // Đọc dữ liệu hình ảnh thành mảng byte
-                using (FileStream fs = new FileStream(dialog.FileName, FileMode.Open, FileAccess.Read))
-                {
-                    BinaryReader br = new BinaryReader(fs);
-                    avatarByteArray = br.ReadBytes((int)fs.Length);
-                }
-            }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FBuy f = new FBuy(account);
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-        }
-
-        private void pbAvatar_Click(object sender, EventArgs e)
-        {
-
-        }
+        
+        
 
         private void btnCart_Click(object sender, EventArgs e)
         {
@@ -215,6 +166,16 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
+       
+
+        private void FInformation_Load(object sender, EventArgs e)
+        {
+            //menu 
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
+        }
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -223,12 +184,55 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
-        private void FInformation_Load(object sender, EventArgs e)
+        private void btnBrowse_Click(object sender, EventArgs e)
         {
-            //menu 
-            lblMenuAccountName.Text = account.Name;
-            ratingMenuAccount.Value = account.AvgRating;
-            convertByte(pbMenuAvatar, account.Avatar);
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.gif)|*.jpg; *.jpeg; *.png; *.gif";
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                imagePath = dialog.FileName.ToString();
+
+                // Đọc hình ảnh từ tệp
+                System.Drawing.Image originalImage = System.Drawing.Image.FromFile(imagePath);
+
+                // Thay đổi kích thước của hình ảnh
+                System.Drawing.Image resizedImage = ResizeImage(originalImage, pbAvatar.Width, pbAvatar.Height);
+
+                // Hiển thị hình ảnh trong PictureBox
+                pbAvatar.Image = resizedImage;
+
+                // Đọc dữ liệu hình ảnh thành mảng byte
+                using (FileStream fs = new FileStream(dialog.FileName, FileMode.Open, FileAccess.Read))
+                {
+                    BinaryReader br = new BinaryReader(fs);
+                    avatarByteArray = br.ReadBytes((int)fs.Length);
+                }
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            account.Name = txtName.Text;
+            account.Email = txtEmail.Text;
+            if (txtPassword.Text.Length > 0)
+            {
+                account.Password = txtPassword.Text;
+            }
+            account.Phone = txtPhone.Text;
+            account.Birthday = dtpBirthday.Value;
+            account.Address = txtAddress.Text;
+            account.Avatar = avatarByteArray;
+
+            accountDAO.update(account);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FBuy f = new FBuy(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }
