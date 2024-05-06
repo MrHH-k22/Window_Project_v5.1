@@ -38,6 +38,7 @@ namespace Window_Project_v5._1.Forms
             this.pd = pd;
             this.acc = acc;
             edit = true;
+            GetImageProduct();
             Initialize();
             HideCompleteDetail();
         }
@@ -60,6 +61,7 @@ namespace Window_Project_v5._1.Forms
 
         public void HideCompleteDetail()
         {
+            lblDeliveryInformation.Visible = false;
             gbBillStatus.Visible = false;
             containerMenu.Visible = false;
             lblCompleteTime.Visible = false;
@@ -96,8 +98,8 @@ namespace Window_Project_v5._1.Forms
             txtFunctionalities.Text = pd.Functionality;
             txtDescription.Text = pd.Description;
             btnPost.Text = "Update product";
-            ddCategory.SelectedItem = pd.Category;
-            ddArea.SelectedItem = pd.Area;
+            cbCategory.SelectedItem = pd.Category;
+            cbArea.SelectedItem = pd.Area;
             //shipping info
             Shipping shipping = shippingDAO.GetShipping(pd.SelectedShipping);
             if(shipping!=null)
@@ -214,14 +216,6 @@ namespace Window_Project_v5._1.Forms
 
         }
 
-        private void ddCategory_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            if (ddCategory.SelectedItem != null)
-            {
-                selectedCategory = ddCategory.SelectedItem.ToString();
-            }
-        }
-
         private void panelMiddle_Paint(object sender, PaintEventArgs e)
         {
 
@@ -268,6 +262,8 @@ namespace Window_Project_v5._1.Forms
             if (IsTextBoxEmpty(txtMaterial)) return false;
             if (IsTextBoxEmpty(txtSize)) return false;
             if (IsTextBoxEmpty(txtFunctionalities)) return false;
+            if(cbArea.SelectedIndex == 0) return false;
+            if (cbCategory.SelectedIndex == 0) return false;
             return true;
         }
 
@@ -318,7 +314,7 @@ namespace Window_Project_v5._1.Forms
                 pd.CancelLimit = int.Parse(txtCancelTime.Text);
                 pd.CancelRefund = cbCancel.Checked;
                 productDAO.Update(pd, true);
-                //Update Images
+                //Update Images (fix this code)
                 imageDAO.Delete(pd.Id);
                 foreach (string imgLocation in imgLocations)
                 {
@@ -341,14 +337,6 @@ namespace Window_Project_v5._1.Forms
             FBuy f = new FBuy(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
-        }
-
-        private void ddArea_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (ddArea.SelectedItem != null)
-            {
-                selectedArea = ddArea.SelectedItem.ToString();
-            }
         }
 
         private void btnCart_Click(object sender, EventArgs e)
@@ -473,22 +461,25 @@ namespace Window_Project_v5._1.Forms
                 pictureBoxIndex++;
             }
             // Hide any remaining PictureBoxes
-            for (int i = pictureBoxIndex; i < 4; i++)
+            if(!edit)
             {
-                switch (i)
+                for (int i = pictureBoxIndex; i < 4; i++)
                 {
-                    case 0:
-                        btnImage1.Visible = false;
-                        break;
-                    case 1:
-                        btnImage2.Visible = false;
-                        break;
-                    case 2:
-                        btnImage3.Visible = false;
-                        break;
-                    case 3:
-                        btnImage4.Visible = false;
-                        break;
+                    switch (i)
+                    {
+                        case 0:
+                            btnImage1.Visible = false;
+                            break;
+                        case 1:
+                            btnImage2.Visible = false;
+                            break;
+                        case 2:
+                            btnImage3.Visible = false;
+                            break;
+                        case 3:
+                            btnImage4.Visible = false;
+                            break;
+                    }
                 }
             }
         }
@@ -558,11 +549,6 @@ namespace Window_Project_v5._1.Forms
             }
         }
 
-        private void txtBuyPrice_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtSellPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -599,6 +585,22 @@ namespace Window_Project_v5._1.Forms
             else
             {
                 containerMenu.Visible = false;
+            }
+        }
+
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategory.SelectedItem != null)
+            {
+                selectedCategory = cbCategory.SelectedItem.ToString();
+            }
+        }
+
+        private void cbArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbArea.SelectedItem != null)
+            {
+                selectedArea = cbArea.SelectedItem.ToString();
             }
         }
     }

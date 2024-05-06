@@ -384,6 +384,7 @@
             this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtDescription.Location = new System.Drawing.Point(50, 10);
             this.txtDescription.Name = "txtDescription";
+            this.txtDescription.ReadOnly = true;
             this.txtDescription.Size = new System.Drawing.Size(1098, 127);
             this.txtDescription.TabIndex = 0;
             this.txtDescription.Text = "";
@@ -430,6 +431,7 @@
             this.txtFunctionalities.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtFunctionalities.Location = new System.Drawing.Point(50, 10);
             this.txtFunctionalities.Name = "txtFunctionalities";
+            this.txtFunctionalities.ReadOnly = true;
             this.txtFunctionalities.Size = new System.Drawing.Size(1098, 123);
             this.txtFunctionalities.TabIndex = 0;
             this.txtFunctionalities.Text = "";
@@ -1071,6 +1073,7 @@
             this.txtSupportPolicy.PasswordChar = '\0';
             this.txtSupportPolicy.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtSupportPolicy.PlaceholderText = "Support Policies";
+            this.txtSupportPolicy.ReadOnly = true;
             this.txtSupportPolicy.SelectedText = "";
             this.txtSupportPolicy.Size = new System.Drawing.Size(283, 162);
             this.txtSupportPolicy.TabIndex = 116;
