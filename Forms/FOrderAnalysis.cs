@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security.Principal;
@@ -227,6 +228,30 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void mtxtBeginday_Validating(object sender, CancelEventArgs e)
+        {
+            string inputDate = mtxtBeginday.Text;
+            DateTime date;
+
+            if (!DateTime.TryParseExact(inputDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+            {
+                MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập lại theo định dạng dd/MM/yyyy.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true; // Ngăn không cho người dùng chuyển qua control khác cho đến khi nhập đúng định dạng
+            }
+        }
+
+        private void mtxtEndday_Validating(object sender, CancelEventArgs e)
+        {
+            string inputDate = mtxtBeginday.Text;
+            DateTime date;
+
+            if (!DateTime.TryParseExact(inputDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+            {
+                MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập lại theo định dạng dd/MM/yyyy.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true; // Ngăn không cho người dùng chuyển qua control khác cho đến khi nhập đúng định dạng
+            }
         }
     }
 }

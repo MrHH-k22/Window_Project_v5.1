@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrderAnalysis));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
@@ -84,6 +87,14 @@
             this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtBeginday = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtEndday = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -108,6 +119,9 @@
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
+            this.panelLeft.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // containerTop
@@ -238,17 +252,14 @@
             // 
             // panelOrderAnalysis
             // 
-            this.panelOrderAnalysis.Controls.Add(this.panel8);
-            this.panelOrderAnalysis.Controls.Add(this.panel6);
-            this.panelOrderAnalysis.Controls.Add(this.panel4);
-            this.panelOrderAnalysis.Controls.Add(this.panel3);
-            this.panelOrderAnalysis.Controls.Add(this.panel2);
-            this.panelOrderAnalysis.Controls.Add(this.panel1);
+            this.panelOrderAnalysis.Controls.Add(this.guna2Panel2);
+            this.panelOrderAnalysis.Controls.Add(this.guna2Panel1);
+            this.panelOrderAnalysis.Controls.Add(this.panelLeft);
             this.panelOrderAnalysis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelOrderAnalysis.Location = new System.Drawing.Point(0, 80);
+            this.panelOrderAnalysis.Location = new System.Drawing.Point(0, 142);
             this.panelOrderAnalysis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelOrderAnalysis.Name = "panelOrderAnalysis";
-            this.panelOrderAnalysis.Size = new System.Drawing.Size(1500, 630);
+            this.panelOrderAnalysis.Size = new System.Drawing.Size(1500, 568);
             this.panelOrderAnalysis.TabIndex = 24;
             // 
             // panel8
@@ -257,16 +268,16 @@
             this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Controls.Add(this.lblHiddenNo);
             this.panel8.Controls.Add(this.lblHidden);
-            this.panel8.Location = new System.Drawing.Point(747, 304);
+            this.panel8.Location = new System.Drawing.Point(0, 128);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(545, 121);
+            this.panel8.Size = new System.Drawing.Size(271, 121);
             this.panel8.TabIndex = 14;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.pictureBox8.Location = new System.Drawing.Point(413, 32);
+            this.pictureBox8.Location = new System.Drawing.Point(167, 21);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(89, 78);
@@ -304,16 +315,16 @@
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.lblCompletedNo);
             this.panel6.Controls.Add(this.lblCompleted);
-            this.panel6.Location = new System.Drawing.Point(137, 304);
+            this.panel6.Location = new System.Drawing.Point(0, 515);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(545, 121);
+            this.panel6.Size = new System.Drawing.Size(271, 121);
             this.panel6.TabIndex = 13;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.pictureBox6.Location = new System.Drawing.Point(413, 31);
+            this.pictureBox6.Location = new System.Drawing.Point(167, 21);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(89, 78);
@@ -351,16 +362,16 @@
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.lblWaitForConfirmationNo);
             this.panel4.Controls.Add(this.lblConfirmination);
-            this.panel4.Location = new System.Drawing.Point(747, 156);
+            this.panel4.Location = new System.Drawing.Point(0, 1);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(545, 121);
+            this.panel4.Size = new System.Drawing.Size(271, 116);
             this.panel4.TabIndex = 9;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Window_Project_v5._1.Properties.Resources.hand;
-            this.pictureBox4.Location = new System.Drawing.Point(413, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(167, 22);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(89, 78);
@@ -373,7 +384,7 @@
             this.lblWaitForConfirmationNo.AutoSize = true;
             this.lblWaitForConfirmationNo.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblWaitForConfirmationNo.ForeColor = System.Drawing.Color.White;
-            this.lblWaitForConfirmationNo.Location = new System.Drawing.Point(19, 62);
+            this.lblWaitForConfirmationNo.Location = new System.Drawing.Point(9, 73);
             this.lblWaitForConfirmationNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWaitForConfirmationNo.Name = "lblWaitForConfirmationNo";
             this.lblWaitForConfirmationNo.Size = new System.Drawing.Size(79, 37);
@@ -382,13 +393,12 @@
             // 
             // lblConfirmination
             // 
-            this.lblConfirmination.AutoSize = true;
             this.lblConfirmination.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblConfirmination.ForeColor = System.Drawing.Color.White;
-            this.lblConfirmination.Location = new System.Drawing.Point(20, 15);
+            this.lblConfirmination.Location = new System.Drawing.Point(9, 5);
             this.lblConfirmination.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmination.Name = "lblConfirmination";
-            this.lblConfirmination.Size = new System.Drawing.Size(238, 31);
+            this.lblConfirmination.Size = new System.Drawing.Size(153, 68);
             this.lblConfirmination.TabIndex = 0;
             this.lblConfirmination.Text = "Wait for confirmation";
             // 
@@ -398,16 +408,16 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.lblDisplayingNo);
             this.panel3.Controls.Add(this.lblDisplaying);
-            this.panel3.Location = new System.Drawing.Point(137, 156);
+            this.panel3.Location = new System.Drawing.Point(0, 386);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(545, 121);
+            this.panel3.Size = new System.Drawing.Size(271, 121);
             this.panel3.TabIndex = 10;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Window_Project_v5._1.Properties.Resources.real_time;
-            this.pictureBox3.Location = new System.Drawing.Point(423, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(167, 21);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(89, 78);
@@ -445,16 +455,16 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lblCustomersNo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(747, 5);
+            this.panel2.Location = new System.Drawing.Point(0, 644);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(545, 121);
+            this.panel2.Size = new System.Drawing.Size(271, 121);
             this.panel2.TabIndex = 11;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Window_Project_v5._1.Properties.Resources.cart1;
-            this.pictureBox2.Location = new System.Drawing.Point(413, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(167, 21);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(89, 78);
@@ -492,16 +502,16 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblOrdersNo);
             this.panel1.Controls.Add(this.lblOrder);
-            this.panel1.Location = new System.Drawing.Point(137, 5);
+            this.panel1.Location = new System.Drawing.Point(0, 257);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(545, 121);
+            this.panel1.Size = new System.Drawing.Size(271, 121);
             this.panel1.TabIndex = 7;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Window_Project_v5._1.Properties.Resources.box;
-            this.pictureBox1.Location = new System.Drawing.Point(423, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(167, 21);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 78);
@@ -535,12 +545,16 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.dtEndday);
+            this.panelTop.Controls.Add(this.dtBeginday);
+            this.panelTop.Controls.Add(this.label6);
             this.panelTop.Controls.Add(this.gpManagement);
+            this.panelTop.Controls.Add(this.label3);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1500, 80);
+            this.panelTop.Size = new System.Drawing.Size(1500, 142);
             this.panelTop.TabIndex = 25;
             // 
             // gpManagement
@@ -940,6 +954,153 @@
             this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingMenuAccount.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label3.Location = new System.Drawing.Point(56, 90);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 31);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Begin date:";
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.AutoScroll = true;
+            this.panelLeft.Controls.Add(this.panel4);
+            this.panelLeft.Controls.Add(this.panel6);
+            this.panelLeft.Controls.Add(this.panel8);
+            this.panelLeft.Controls.Add(this.panel3);
+            this.panelLeft.Controls.Add(this.panel1);
+            this.panelLeft.Controls.Add(this.panel2);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(292, 568);
+            this.panelLeft.TabIndex = 15;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel1.Location = new System.Drawing.Point(292, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(75, 568);
+            this.guna2Panel1.TabIndex = 16;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2DataGridView1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel2.Location = new System.Drawing.Point(367, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Padding = new System.Windows.Forms.Padding(20);
+            this.guna2Panel2.Size = new System.Drawing.Size(1133, 568);
+            this.guna2Panel2.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label6.Location = new System.Drawing.Point(599, 90);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 31);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "End date:";
+            // 
+            // dtBeginday
+            // 
+            this.dtBeginday.BackColor = System.Drawing.Color.White;
+            this.dtBeginday.BorderColor = System.Drawing.Color.Transparent;
+            this.dtBeginday.BorderThickness = 1;
+            this.dtBeginday.Checked = true;
+            this.dtBeginday.FillColor = System.Drawing.Color.White;
+            this.dtBeginday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtBeginday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtBeginday.Location = new System.Drawing.Point(192, 84);
+            this.dtBeginday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtBeginday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtBeginday.Name = "dtBeginday";
+            this.dtBeginday.Size = new System.Drawing.Size(230, 43);
+            this.dtBeginday.TabIndex = 122;
+            this.dtBeginday.Value = new System.DateTime(2024, 4, 25, 13, 27, 16, 342);
+            // 
+            // dtEndday
+            // 
+            this.dtEndday.BackColor = System.Drawing.Color.White;
+            this.dtEndday.BorderColor = System.Drawing.Color.Transparent;
+            this.dtEndday.BorderThickness = 1;
+            this.dtEndday.Checked = true;
+            this.dtEndday.FillColor = System.Drawing.Color.White;
+            this.dtEndday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtEndday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtEndday.Location = new System.Drawing.Point(716, 84);
+            this.dtEndday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtEndday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtEndday.Name = "dtEndday";
+            this.dtEndday.Size = new System.Drawing.Size(233, 43);
+            this.dtEndday.TabIndex = 123;
+            this.dtEndday.Value = new System.DateTime(2024, 4, 25, 13, 27, 16, 342);
+            // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(20, 20);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 51;
+            this.guna2DataGridView1.RowTemplate.Height = 24;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1093, 528);
+            this.guna2DataGridView1.TabIndex = 0;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // FOrderAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -978,6 +1139,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             this.gpManagement.ResumeLayout(false);
             this.gpManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
@@ -989,6 +1151,9 @@
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
+            this.panelLeft.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1050,5 +1215,13 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel panelLeft;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtEndday;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtBeginday;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
     }
 }

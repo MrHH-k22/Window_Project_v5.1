@@ -175,6 +175,7 @@
             // 
             // dtBeginday
             // 
+            this.dtBeginday.BackColor = System.Drawing.Color.White;
             this.dtBeginday.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.dtBeginday.BorderThickness = 1;
             this.dtBeginday.Checked = true;
