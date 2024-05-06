@@ -264,6 +264,8 @@ namespace Window_Project_v5._1.Forms
 
             Account seller = new Account(product.SellerID);
             lblAvatarName.Text = seller.Name;
+            ratingSeller.Value = seller.AvgRating;
+
             convertByte(pbAvatar, seller.Avatar);
             // menu
             lblMenuAccountName.Text = account.Name;
