@@ -220,6 +220,9 @@ namespace Window_Project_v5._1.Forms
             lblBrand.Text = "Brand: " + product.Brand;
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
+            lblCancelHour.Text = product.CancelLimit + " h";
+            lblCancel.Visible = product.CancelRefund;
+
             if (product.PostedTime.Date == DateTime.Now.Date)
             {
                 lblPostingTime.Text = (DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago";
@@ -619,6 +622,14 @@ namespace Window_Project_v5._1.Forms
         {
             FReview fReview = new FReview(account, product);
             fReview.Show();
+        }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FVoucher f = new FVoucher(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

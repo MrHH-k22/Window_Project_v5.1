@@ -30,17 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuy));
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnCart = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panelRecommendProducts = new Guna.UI2.WinForms.Guna2Panel();
-            this.flpRecommendProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
@@ -60,6 +55,7 @@
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
             this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
             this.btnOrderAnalysis = new Guna.UI2.WinForms.Guna2Button();
@@ -74,12 +70,14 @@
             this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.panelRecommendProducts = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelRecommend = new Guna.UI2.WinForms.Guna2Panel();
+            this.flpRecommendProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
             this.flpProduct.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            this.panelRecommendProducts.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.containerMenu.SuspendLayout();
@@ -87,12 +85,13 @@
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
+            this.panelRecommendProducts.SuspendLayout();
+            this.panelRecommend.SuspendLayout();
             this.SuspendLayout();
             // 
             // containerTop
             // 
             this.containerTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.containerTop.Controls.Add(this.btnVoucher);
             this.containerTop.Controls.Add(this.btnCart);
             this.containerTop.Controls.Add(this.btnMenu);
             this.containerTop.Controls.Add(this.btnPostProduct);
@@ -123,11 +122,11 @@
             this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnVoucher.ImageOffset = new System.Drawing.Point(4, 0);
             this.btnVoucher.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnVoucher.Location = new System.Drawing.Point(557, 10);
+            this.btnVoucher.Location = new System.Drawing.Point(581, 11);
             this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoucher.Name = "btnVoucher";
             this.btnVoucher.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnVoucher.Size = new System.Drawing.Size(179, 46);
+            this.btnVoucher.Size = new System.Drawing.Size(163, 46);
             this.btnVoucher.TabIndex = 5;
             this.btnVoucher.Text = "VOUCHER";
             this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -247,63 +246,24 @@
             // flpProduct
             // 
             this.flpProduct.AutoScroll = true;
-            this.flpProduct.Controls.Add(this.guna2Panel1);
+            this.flpProduct.Controls.Add(this.panelRecommend);
             this.flpProduct.Controls.Add(this.panelRecommendProducts);
             this.flpProduct.Controls.Add(this.guna2Panel3);
-            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpProduct.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpProduct.Location = new System.Drawing.Point(188, 0);
             this.flpProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpProduct.Name = "flpProduct";
             this.flpProduct.Size = new System.Drawing.Size(1312, 710);
             this.flpProduct.TabIndex = 4;
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1312, 42);
-            this.guna2Panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(16, 6);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(347, 30);
-            this.label2.TabIndex = 96;
-            this.label2.Text = "Recommend for you";
-            // 
-            // panelRecommendProducts
-            // 
-            this.panelRecommendProducts.Controls.Add(this.flpRecommendProducts);
-            this.panelRecommendProducts.Location = new System.Drawing.Point(0, 42);
-            this.panelRecommendProducts.Margin = new System.Windows.Forms.Padding(0);
-            this.panelRecommendProducts.Name = "panelRecommendProducts";
-            this.panelRecommendProducts.Size = new System.Drawing.Size(1312, 441);
-            this.panelRecommendProducts.TabIndex = 2;
-            // 
-            // flpRecommendProducts
-            // 
-            this.flpRecommendProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpRecommendProducts.Location = new System.Drawing.Point(0, 0);
-            this.flpRecommendProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flpRecommendProducts.Name = "flpRecommendProducts";
-            this.flpRecommendProducts.Size = new System.Drawing.Size(1312, 441);
-            this.flpRecommendProducts.TabIndex = 0;
-            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.label6);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 483);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1312, 34);
+            this.guna2Panel3.Size = new System.Drawing.Size(1312, 45);
             this.guna2Panel3.TabIndex = 98;
             // 
             // label6
@@ -311,7 +271,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(16, 1);
+            this.label6.Location = new System.Drawing.Point(16, 6);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(347, 30);
@@ -637,6 +597,7 @@
             this.containerMenu.BorderColor = System.Drawing.Color.Black;
             this.containerMenu.Controls.Add(this.btnLogout);
             this.containerMenu.Controls.Add(this.guna2Panel5);
+            this.containerMenu.Controls.Add(this.btnVoucher);
             this.containerMenu.Controls.Add(this.btnMoney);
             this.containerMenu.Controls.Add(this.btnInformation);
             this.containerMenu.Controls.Add(this.btnOrderAnalysis);
@@ -670,7 +631,7 @@
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnLogout.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnLogout.Location = new System.Drawing.Point(1, 530);
+            this.btnLogout.Location = new System.Drawing.Point(1, 585);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(290, 55);
@@ -684,11 +645,35 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 514);
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
             this.guna2Panel5.TabIndex = 24;
+            // 
+            // btnVoucher
+            // 
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVoucher.FillColor = System.Drawing.Color.White;
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
+            this.btnVoucher.TabIndex = 25;
+            this.btnVoucher.Text = "Voucher";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click);
             // 
             // btnMoney
             // 
@@ -922,8 +907,49 @@
             this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ratingMenuAccount.Name = "ratingMenuAccount";
             this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.ReadOnly = true;
             this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
             this.ratingMenuAccount.TabIndex = 2;
+            // 
+            // panelRecommendProducts
+            // 
+            this.panelRecommendProducts.Controls.Add(this.flpRecommendProducts);
+            this.panelRecommendProducts.Location = new System.Drawing.Point(0, 42);
+            this.panelRecommendProducts.Margin = new System.Windows.Forms.Padding(0);
+            this.panelRecommendProducts.Name = "panelRecommendProducts";
+            this.panelRecommendProducts.Size = new System.Drawing.Size(1312, 441);
+            this.panelRecommendProducts.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label2.Location = new System.Drawing.Point(16, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(347, 30);
+            this.label2.TabIndex = 96;
+            this.label2.Text = "Recommend for you";
+            // 
+            // panelRecommend
+            // 
+            this.panelRecommend.Controls.Add(this.label2);
+            this.panelRecommend.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRecommend.Location = new System.Drawing.Point(0, 0);
+            this.panelRecommend.Margin = new System.Windows.Forms.Padding(0);
+            this.panelRecommend.Name = "panelRecommend";
+            this.panelRecommend.Size = new System.Drawing.Size(1312, 42);
+            this.panelRecommend.TabIndex = 0;
+            // 
+            // flpRecommendProducts
+            // 
+            this.flpRecommendProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpRecommendProducts.Location = new System.Drawing.Point(0, 0);
+            this.flpRecommendProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flpRecommendProducts.Name = "flpRecommendProducts";
+            this.flpRecommendProducts.Size = new System.Drawing.Size(1312, 441);
+            this.flpRecommendProducts.TabIndex = 0;
             // 
             // FBuy
             // 
@@ -945,8 +971,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBody.ResumeLayout(false);
             this.flpProduct.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.panelRecommendProducts.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.panelLeft.ResumeLayout(false);
             this.containerMenu.ResumeLayout(false);
@@ -957,6 +981,8 @@
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
+            this.panelRecommendProducts.ResumeLayout(false);
+            this.panelRecommend.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1001,12 +1027,12 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        public System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Panel panelRecommendProducts;
-        private System.Windows.Forms.FlowLayoutPanel flpRecommendProducts;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         public System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private Guna.UI2.WinForms.Guna2Panel panelRecommend;
+        public System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Panel panelRecommendProducts;
+        private System.Windows.Forms.FlowLayoutPanel flpRecommendProducts;
     }
 }

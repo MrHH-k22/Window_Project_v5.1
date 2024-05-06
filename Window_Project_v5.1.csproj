@@ -781,6 +781,12 @@
   <ItemGroup>
     <None Include="Images\voucher.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\voucher_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cancel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

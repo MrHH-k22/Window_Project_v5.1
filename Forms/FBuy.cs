@@ -65,6 +65,8 @@ namespace Window_Project_v5._1.Forms
                 // Add the top 3 products for this type to the recommended products list
                 recommendedProducts.AddRange(productsByType); 
             }
+
+
             foreach (var pd in recommendedProducts)
             {
                 if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
@@ -74,7 +76,22 @@ namespace Window_Project_v5._1.Forms
                     flpRecommendProducts.Controls.Add(uc);
                 }
             }
-            adjustRecommendFlowLayoutPanel();
+            //error (kiem tra lai)
+            if (flpRecommendProducts.Controls.Count <= 0)
+            {
+                flpRecommendProducts.Visible = false;
+                panelRecommendProducts.Visible = false;
+                panelRecommend.Visible = false;
+            }
+            else
+            {
+                flpRecommendProducts.Visible = true;
+                panelRecommendProducts.Visible = true;
+                panelRecommend.Visible = true;
+                adjustRecommendFlowLayoutPanel();
+            }
+
+
         }
 
         // Event handler for UCProduct's ProductDoubleClick event
@@ -282,14 +299,6 @@ namespace Window_Project_v5._1.Forms
 
         }
 
-        private void btnVoucher_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FVoucher f = new FVoucher(account);
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-        }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if (containerMenu.Visible == false)
@@ -300,6 +309,14 @@ namespace Window_Project_v5._1.Forms
             {
                 containerMenu.Visible = false;
             }
+        }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FVoucher f = new FVoucher(account);
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }
