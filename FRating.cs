@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Mapping;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using Guna.UI2.WinForms;
 using Window_Project_v5._1.Forms;
 
@@ -90,14 +92,39 @@ namespace Window_Project_v5._1
             GetValueOfCheckBox();
             rt.Comment += txtComment.Text;
             rt.Star = GetStarValue();
-            ratingDAO.Add(rt, product);
+            if (rt.Comment == null || rt.Star == 0)
+            {
+                MessageBox.Show("Data has not been filled!");
+            }
+            else
+            {
+                ratingDAO.Add(rt, product);
+            }
+            ClearData();
+            
         }
 
         private void rtStar_ValueChanged(object sender, EventArgs e)
         {
             SetLabelStatus();
         }
-
+        private void ClearData()
+        {
+            foreach (Control control in panelCheckBox.Controls)
+            {
+                if (control is Guna2CheckBox checkBox)
+                {
+                    if (checkBox.Checked == true)
+                    {
+                        checkBox.Checked = false;
+                    }
+                }
+            }
+            rt.Comment = "";
+            rtStar.Value = 0;
+            txtComment.Text = "";
+        }
+       
         
         private void GetValueOfCheckBox()
         {
@@ -113,6 +140,8 @@ namespace Window_Project_v5._1
                     }
                 }
             }
+           
+           
         }
     }
 }
