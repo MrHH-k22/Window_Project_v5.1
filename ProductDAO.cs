@@ -320,9 +320,9 @@ namespace Window_Project_v5._1
             return list;
         }
 
-        public DataTable LoadRegularCustomer(int id)
+        public DataTable LoadRegularCustomer(int id, DateTime start, DateTime end)
         {
-            List<Product> list = LoadListCompletedProduct(id);
+            List<Product> list = LoadListCompletedProduct(id, start, end);
             List<RegularCustomer> rs = new List<RegularCustomer>();
             foreach (Product pd in list)
             {
@@ -349,7 +349,6 @@ namespace Window_Project_v5._1
             }
             // Create DataTable
             DataTable dt = new DataTable();
-            dt.Columns.Add("Buyer ID", typeof(int));
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Number of product purchases", typeof(int));
             dt.Columns.Add("Total Purchases", typeof(string));
@@ -357,17 +356,30 @@ namespace Window_Project_v5._1
             // Add data from RegularCustomer list to DataTable
             foreach (RegularCustomer customer in rs)
             {
-                dt.Rows.Add(customer.Id, customer.Name, customer.Times, string.Format(customer.Totalpurchase.ToString("N0") + " VND"));
+                dt.Rows.Add(customer.Name, customer.Times, string.Format(customer.Totalpurchase.ToString("N0") + " VND"));
             }
 
             return dt;
         }
 
-        public List<Product> LoadListCompletedProduct(int id)
+        public List<Product> LoadListCompletedProduct(int id, DateTime start, DateTime end)
         {
             List<Product> list = new List<Product>();
             DataTable dt;
-            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}' AND OrderCondition = 2", id));
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}' AND OrderCondition = 2 AND CompleteTime BETWEEN '{1}' AND '{2}'", id, start.ToString("yyyy-MM-dd HH:mm:ss"), end.ToString("yyyy-MM-dd HH:mm:ss")));
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
+
+        public List<Product> LoadProductWithinPeriod(int id, DateTime start, DateTime end)
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt;
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}' AND CompleteTime BETWEEN '{1}' AND '{2}'", id, start.ToString("yyyy-MM-dd HH:mm:ss"), end.ToString("yyyy-MM-dd HH:mm:ss")));
             foreach (DataRow dr in dt.Rows)
             {
                 Product pd = new Product(dr);
