@@ -394,7 +394,7 @@ namespace Window_Project_v5._1.Forms
                 else
                 {
                     // For the rest of the images, assign to Guna2ImageButton controls
-                    Guna2ImageButton pictureBox = null;
+                    Guna2PictureBox pictureBox = null;
                     switch (pictureBoxIndex)
                     {
                         case 1:
@@ -589,29 +589,6 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
-        private void btnImage2_Click_1(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage2.Image;
-            btnImage2.Image = temp.Image;
-        }
-
-        private void btnImage3_Click_1(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage3.Image;
-            btnImage3.Image = temp.Image;
-        }
-
-        private void btnImage4_Click_1(object sender, EventArgs e)
-        {
-            Bunifu.UI.WinForms.BunifuImageButton temp = new Bunifu.UI.WinForms.BunifuImageButton();
-            temp.Image = btnImage1.Image;
-            btnImage1.Image = btnImage4.Image;
-            btnImage4.Image = temp.Image;
-        }
 
         // Event handler for UCProduct's ProductDoubleClick event
         private void UCProduct_ProductDoubleClick(object sender, EventArgs e)
@@ -636,6 +613,30 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void btnImage2_Click(object sender, EventArgs e)
+        {
+            Guna2PictureBox temp = new Guna2PictureBox();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage2.Image;
+            btnImage2.Image = temp.Image;
+        }
+
+        private void btnImage3_Click(object sender, EventArgs e)
+        {
+            Guna2PictureBox temp = new Guna2PictureBox();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage3.Image;
+            btnImage3.Image = temp.Image;
+        }
+
+        private void btnImage4_Click(object sender, EventArgs e)
+        {
+            Guna2PictureBox temp = new Guna2PictureBox();
+            temp.Image = btnImage1.Image;
+            btnImage1.Image = btnImage4.Image;
+            btnImage4.Image = temp.Image;
         }
     }
 }

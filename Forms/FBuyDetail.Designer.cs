@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -78,9 +78,6 @@
             this.panelImages = new Guna.UI2.WinForms.Guna2Panel();
             this.panelImage1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnImage1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnImage4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImage3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImage2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelRight = new Guna.UI2.WinForms.Guna2Panel();
             this.lblCancel = new System.Windows.Forms.Label();
             this.lblCancelHour = new System.Windows.Forms.Label();
@@ -113,6 +110,9 @@
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.btnImage3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnImage4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnImage2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
@@ -138,28 +138,31 @@
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuTransition1
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -758,10 +761,10 @@
             // 
             // panelImages
             // 
-            this.panelImages.Controls.Add(this.panelImage1);
+            this.panelImages.Controls.Add(this.btnImage2);
             this.panelImages.Controls.Add(this.btnImage4);
             this.panelImages.Controls.Add(this.btnImage3);
-            this.panelImages.Controls.Add(this.btnImage2);
+            this.panelImages.Controls.Add(this.panelImage1);
             this.bunifuTransition1.SetDecoration(this.panelImages, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelImages.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelImages.Location = new System.Drawing.Point(0, 0);
@@ -796,57 +799,6 @@
             this.btnImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnImage1.TabIndex = 0;
             this.btnImage1.TabStop = false;
-            // 
-            // btnImage4
-            // 
-            this.btnImage4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage4.HoverState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage4.Image = ((System.Drawing.Image)(resources.GetObject("btnImage4.Image")));
-            this.btnImage4.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage4.ImageRotate = 0F;
-            this.btnImage4.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage4.Location = new System.Drawing.Point(943, 342);
-            this.btnImage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage4.Name = "btnImage4";
-            this.btnImage4.PressedState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage4.Size = new System.Drawing.Size(140, 140);
-            this.btnImage4.TabIndex = 113;
-            this.btnImage4.Click += new System.EventHandler(this.btnImage4_Click_1);
-            // 
-            // btnImage3
-            // 
-            this.btnImage3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage3.HoverState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage3.Image = ((System.Drawing.Image)(resources.GetObject("btnImage3.Image")));
-            this.btnImage3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage3.ImageRotate = 0F;
-            this.btnImage3.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage3.Location = new System.Drawing.Point(943, 176);
-            this.btnImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage3.Name = "btnImage3";
-            this.btnImage3.PressedState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage3.Size = new System.Drawing.Size(140, 140);
-            this.btnImage3.TabIndex = 112;
-            this.btnImage3.Click += new System.EventHandler(this.btnImage3_Click_1);
-            // 
-            // btnImage2
-            // 
-            this.btnImage2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bunifuTransition1.SetDecoration(this.btnImage2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnImage2.HoverState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage2.Image = ((System.Drawing.Image)(resources.GetObject("btnImage2.Image")));
-            this.btnImage2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImage2.ImageRotate = 0F;
-            this.btnImage2.ImageSize = new System.Drawing.Size(120, 120);
-            this.btnImage2.Location = new System.Drawing.Point(943, 10);
-            this.btnImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImage2.Name = "btnImage2";
-            this.btnImage2.PressedState.ImageSize = new System.Drawing.Size(130, 130);
-            this.btnImage2.Size = new System.Drawing.Size(140, 140);
-            this.btnImage2.TabIndex = 111;
-            this.btnImage2.Click += new System.EventHandler(this.btnImage2_Click_1);
             // 
             // panelRight
             // 
@@ -1457,6 +1409,51 @@
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // btnImage3
+            // 
+            this.btnImage3.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.btnImage3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage3.ImageRotate = 0F;
+            this.btnImage3.Location = new System.Drawing.Point(939, 176);
+            this.btnImage3.Name = "btnImage3";
+            this.btnImage3.ShadowDecoration.Depth = 20;
+            this.btnImage3.ShadowDecoration.Enabled = true;
+            this.btnImage3.Size = new System.Drawing.Size(140, 140);
+            this.btnImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImage3.TabIndex = 116;
+            this.btnImage3.TabStop = false;
+            this.btnImage3.Click += new System.EventHandler(this.btnImage3_Click);
+            // 
+            // btnImage4
+            // 
+            this.btnImage4.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.btnImage4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage4.ImageRotate = 0F;
+            this.btnImage4.Location = new System.Drawing.Point(939, 342);
+            this.btnImage4.Name = "btnImage4";
+            this.btnImage4.ShadowDecoration.Depth = 20;
+            this.btnImage4.ShadowDecoration.Enabled = true;
+            this.btnImage4.Size = new System.Drawing.Size(140, 140);
+            this.btnImage4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImage4.TabIndex = 117;
+            this.btnImage4.TabStop = false;
+            this.btnImage4.Click += new System.EventHandler(this.btnImage4_Click);
+            // 
+            // btnImage2
+            // 
+            this.btnImage2.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.btnImage2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnImage2.ImageRotate = 0F;
+            this.btnImage2.Location = new System.Drawing.Point(939, 16);
+            this.btnImage2.Name = "btnImage2";
+            this.btnImage2.ShadowDecoration.Depth = 20;
+            this.btnImage2.ShadowDecoration.Enabled = true;
+            this.btnImage2.Size = new System.Drawing.Size(140, 140);
+            this.btnImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImage2.TabIndex = 118;
+            this.btnImage2.TabStop = false;
+            this.btnImage2.Click += new System.EventHandler(this.btnImage2_Click);
+            // 
             // FBuyDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1503,6 +1500,9 @@
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImage2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1575,9 +1575,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lblBuyPrice;
         private Guna.UI2.WinForms.Guna2Panel panelImages;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage2;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage4;
-        private Guna.UI2.WinForms.Guna2ImageButton btnImage3;
         private Guna.UI2.WinForms.Guna2Panel panelImage1;
         private Guna.UI2.WinForms.Guna2PictureBox btnImage1;
         private Guna.UI2.WinForms.Guna2Panel panelRelatedProducts;
@@ -1590,5 +1587,8 @@
         public System.Windows.Forms.Label lblCancelHour;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label lblCancel;
+        private Guna.UI2.WinForms.Guna2PictureBox btnImage2;
+        private Guna.UI2.WinForms.Guna2PictureBox btnImage4;
+        private Guna.UI2.WinForms.Guna2PictureBox btnImage3;
     }
 }
