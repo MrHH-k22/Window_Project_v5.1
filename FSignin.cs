@@ -39,6 +39,7 @@ namespace Window_Project_v5._1.Forms
             {
                 Account acc = new Account(email, password);
                 acc = accountDAO.CheckAccount(acc);
+                
                 if (acc == null)
                 {
                     MessageBox.Show("Wrong Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

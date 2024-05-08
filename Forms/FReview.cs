@@ -25,11 +25,13 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
+            btnWatchReview.Visible = false;
         }
         public FReview(Account acc, Product pd)
         {
             InitializeComponent();
             containerMenu.Visible = false;
+            btnWatchReview.Visible = false;
             this.account = acc;
             this.product = pd;
             Seller = new Account(pd.SellerID);
@@ -189,6 +191,51 @@ namespace Window_Project_v5._1.Forms
             FSignin f = new FSignin();
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void ratingMenuAccount_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWatchProducts_Click(object sender, EventArgs e)
+        {
+            btnWatchProducts.Visible = false;
+            btnWatchReview.Visible = true;
+            flpRating.Controls.Clear();
+            List<Product> products = productDAO.LoadListWithCondition("", Seller.Id);
+            foreach (var pd in products)
+            {
+                if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                {
+                    UCProduct uc = new UCProduct(pd, account);
+                    uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
+                    flpRating.Controls.Add(uc);
+                }
+            }
+
+        }
+        private void UCProduct_ProductDoubleClick(object sender, EventArgs e)
+        {
+            // Hide the current form (FBuy)
+            this.Hide();
+            // Open the FBuyDetail form
+            FBuyDetail fBuyDetail = new FBuyDetail((sender as UCProduct).Product, account);
+            fBuyDetail.Closed += (s, args) => this.Close();
+            fBuyDetail.Show();
+        }
+
+
+        private void btnWatchReview_Click(object sender, EventArgs e)
+        {
+            btnWatchReview.Visible = false;
+            btnWatchProducts.Visible = true;
+            flpRating.Controls.Clear();
+            foreach (Rating rating in ratingList)
+            {
+                UCReview uc = new UCReview(product, account, rating);
+                flpRating.Controls.Add(uc);
+            }
         }
     }
 }
