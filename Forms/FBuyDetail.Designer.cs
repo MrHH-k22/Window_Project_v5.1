@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuyDetail));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -144,22 +144,22 @@
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // containerTop
             // 
@@ -378,12 +378,14 @@
             // 
             // txtDescription
             // 
+            this.txtDescription.BackColor = System.Drawing.Color.White;
             this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuTransition1.SetDecoration(this.txtDescription, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.txtDescription.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtDescription.Location = new System.Drawing.Point(50, 10);
             this.txtDescription.Name = "txtDescription";
+            this.txtDescription.ReadOnly = true;
             this.txtDescription.Size = new System.Drawing.Size(1098, 127);
             this.txtDescription.TabIndex = 0;
             this.txtDescription.Text = "";
@@ -424,12 +426,14 @@
             // 
             // txtFunctionalities
             // 
+            this.txtFunctionalities.BackColor = System.Drawing.Color.White;
             this.txtFunctionalities.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuTransition1.SetDecoration(this.txtFunctionalities, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.txtFunctionalities.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtFunctionalities.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtFunctionalities.Location = new System.Drawing.Point(50, 10);
             this.txtFunctionalities.Name = "txtFunctionalities";
+            this.txtFunctionalities.ReadOnly = true;
             this.txtFunctionalities.Size = new System.Drawing.Size(1098, 123);
             this.txtFunctionalities.TabIndex = 0;
             this.txtFunctionalities.Text = "";
@@ -1071,6 +1075,7 @@
             this.txtSupportPolicy.PasswordChar = '\0';
             this.txtSupportPolicy.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtSupportPolicy.PlaceholderText = "Support Policies";
+            this.txtSupportPolicy.ReadOnly = true;
             this.txtSupportPolicy.SelectedText = "";
             this.txtSupportPolicy.Size = new System.Drawing.Size(283, 162);
             this.txtSupportPolicy.TabIndex = 116;
