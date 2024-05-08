@@ -90,7 +90,15 @@ namespace Window_Project_v5._1
             GetValueOfCheckBox();
             rt.Comment += txtComment.Text;
             rt.Star = GetStarValue();
-            ratingDAO.Add(rt, product);
+            if (rt.Comment == null || rt.Star == 0)
+            {
+                MessageBox.Show("Data has not been filled!");
+            }
+            else
+            {
+                ratingDAO.Add(rt, product);
+            }
+            ClearData();
         }
 
         private void rtStar_ValueChanged(object sender, EventArgs e)
@@ -113,6 +121,23 @@ namespace Window_Project_v5._1
                     }
                 }
             }
+        }
+
+        private void ClearData()
+        {
+            foreach (Control control in panelCheckBox.Controls)
+            {
+                if (control is Guna2CheckBox checkBox)
+                {
+                    if (checkBox.Checked == true)
+                    {
+                        checkBox.Checked = false;
+                    }
+                }
+            }
+            rt.Comment = "";
+            rtStar.Value = 0;
+            txtComment.Text = "";
         }
     }
 }

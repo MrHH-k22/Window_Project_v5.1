@@ -57,6 +57,10 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             HideCompleteDetail();
             this.acc = acc;
+            btnImage1.Image = null;
+            btnImage2.Image = null;
+            btnImage3.Image = null;
+            btnImage4.Image = null;
         }
 
         public void HideCompleteDetail()

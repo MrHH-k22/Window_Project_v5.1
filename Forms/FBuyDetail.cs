@@ -221,16 +221,8 @@ namespace Window_Project_v5._1.Forms
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
             lblCancelHour.Text = product.CancelLimit + " h";
-            lblCancel.Visible = !product.CancelRefund;
-
-            if (product.PostedTime.Date == DateTime.Now.Date)
-            {
-                lblPostingTime.Text = (DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago";
-            }
-            else
-            {
-                lblPostingTime.Text = product.PostedTime.ToString("dd-MM-yyyy");
-            }
+            lblCancel.Text = product.CancelRefund ? "Get refunded for cancellations." : "No refund for cancellations.";
+            lblPostingTime.Text = (product.PostedTime.Date == DateTime.Now.Date) ? ((DateTime.Now.Hour - product.PostedTime.Hour) + " hours ago"): product.PostedTime.ToString("dd-MM-yyyy");
             GetImageProduct();
 
             //check button save
@@ -260,6 +252,7 @@ namespace Window_Project_v5._1.Forms
             {
                 btnSave.Visible = false;
                 btnBuy.Visible = false;
+                btnAddtoCart.Visible = false;
             }
 
             Account seller = new Account(product.SellerID);
