@@ -264,6 +264,12 @@ namespace Window_Project_v5._1.Forms
             if (IsTextBoxEmpty(txtFunctionalities)) return false;
             if(cbArea.SelectedIndex == 0) return false;
             if (cbCategory.SelectedIndex == 0) return false;
+            int count = 0;
+            foreach (string location in imgLocations)
+            {
+                if (location != null) count++;
+            }
+            if (count == 0) return false;
             return true;
         }
 
