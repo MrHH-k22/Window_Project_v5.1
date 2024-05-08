@@ -289,6 +289,7 @@ namespace Window_Project_v5._1
             product.Functionality = dr["Functionality"].ToString();
             product.CancelLimit = int.Parse(dr["CancelLimit"].ToString());
             product.CancelRefund = bool.Parse(dr["CancelRefund"].ToString());
+            product.PayMethod = bool.Parse(dr["PayMethod"].ToString());
             product.BuyDate = (dr["BuyTime"] == DBNull.Value) ? DateTime.MinValue : Convert.ToDateTime(dr["BuyTime"]);
             product.SelectedShipping = dr["selectedShippingID"] == DBNull.Value ? 0 : int.Parse(dr["selectedShippingID"].ToString());
             return product;
