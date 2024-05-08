@@ -133,14 +133,17 @@ namespace Window_Project_v5._1.Forms
             // Buyed
             if (product.BuyerID != 0)
             {
-                //get seller
-                Account Seller = accountDAO.Retrieve(product.SellerID);
-                Seller.Money -= product.SalePrice;
-                accountDAO.update(Seller);
                 //update status for product
                 product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
                 productDAO.DeleteBuyerID(product);
+                //get seller
+                if (product.PayMethod)
+                {
+                    Account Seller = accountDAO.Retrieve(product.SellerID);
+                    Seller.Money -= product.SalePrice;
+                    accountDAO.update(Seller);
+                }
                 //refund if product is allowed to refund && Online payment
                 if (product.CancelRefund && product.PayMethod)
                 {

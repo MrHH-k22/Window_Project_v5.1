@@ -29,7 +29,7 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
-            this.acc = acc;
+            this.acc = accountDAO.Retrieve(acc.Id);
         }
 
         private void btnRecharge_Click(object sender, EventArgs e)

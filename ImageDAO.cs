@@ -27,7 +27,18 @@ namespace Window_Project_v5._1
 
             dbc.Execute(sqlStr, parameters);
         }
+        public void Add(int productID, byte[] imageBytes)
+        {
+            string sqlStr = "INSERT INTO ProductImages (ProductID, Image) VALUES (@ProductID, @Image)";
 
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
+            parameters[0].Value = productID;
+            parameters[1] = new SqlParameter("@Image", SqlDbType.VarBinary);
+            parameters[1].Value = imageBytes;
+
+            dbc.Execute(sqlStr, parameters);
+        }
         public void Delete(int productID)
         {
             string sqlStr = string.Format("DELETE FROM ProductImages WHERE productid = '{0}'", productID);

@@ -221,7 +221,7 @@ namespace Window_Project_v5._1.Forms
             lblCategory.Text = "Category: " + product.Category;
             lblType.Text = "Type: " + product.Type;
             lblCancelHour.Text = product.CancelLimit + " h";
-            lblCancel.Visible = product.CancelRefund;
+            lblCancel.Visible = !product.CancelRefund;
 
             if (product.PostedTime.Date == DateTime.Now.Date)
             {

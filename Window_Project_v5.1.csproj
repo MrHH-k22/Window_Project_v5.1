@@ -356,6 +356,7 @@
     <Compile Include="FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegularCustomer.cs" />
     <Compile Include="Shipping.cs" />
     <Compile Include="FSignin.cs">
       <SubType>Form</SubType>

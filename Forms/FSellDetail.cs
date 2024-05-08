@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Security.Principal;
@@ -25,7 +26,6 @@ namespace Window_Project_v5._1.Forms
         private string selectedArea = null;
         private bool edit = false;
         private Product pd;
-        private string[] imgLocations = new string[4];
 
         public FSellDetail()
         {
@@ -118,15 +118,19 @@ namespace Window_Project_v5._1.Forms
 
         }
 
-        private void OpenImageDialog(Guna.UI2.WinForms.Guna2ImageButton button, int index)
+        private void OpenImageDialog(Guna.UI2.WinForms.Guna2ImageButton button)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "All files(*.*)|*.*|png files(*.png)|*.png|jpg files(*.jpg)|*.jpg";
-
-            if (dialog.ShowDialog() == DialogResult.OK)
+            if (button.Image != null)
             {
-                imgLocations[index] = dialog.FileName;
-                button.Image = System.Drawing.Image.FromFile(imgLocations[index]);
+                button.Image = null;
+            } else
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "All files(*.*)|*.*|png files(*.png)|*.png|jpg files(*.jpg)|*.jpg";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    button.Image = System.Drawing.Image.FromFile(dialog.FileName);
+                }
             }
         }
 
@@ -223,22 +227,22 @@ namespace Window_Project_v5._1.Forms
 
         private void btnImage1_Click_1(object sender, EventArgs e)
         {
-            OpenImageDialog(btnImage1, 0);
+            OpenImageDialog(btnImage1);
         }
 
         private void btnImage2_Click_1(object sender, EventArgs e)
         {
-            OpenImageDialog(btnImage2, 1);
+            OpenImageDialog(btnImage2);
         }
 
         private void btnImage3_Click_1(object sender, EventArgs e)
         {
-            OpenImageDialog(btnImage3, 2);
+            OpenImageDialog(btnImage3);
         }
 
         private void btnImage4_Click_1(object sender, EventArgs e)
         {
-            OpenImageDialog(btnImage4, 3);
+            OpenImageDialog(btnImage4);
         }
 
 
@@ -264,13 +268,20 @@ namespace Window_Project_v5._1.Forms
             if (IsTextBoxEmpty(txtFunctionalities)) return false;
             if(cbArea.SelectedIndex == 0) return false;
             if (cbCategory.SelectedIndex == 0) return false;
-            int count = 0;
-            foreach (string location in imgLocations)
-            {
-                if (location != null) count++;
-            }
-            if (count == 0) return false;
+            if (btnImage1.Image == null && btnImage2.Image == null && btnImage3.Image == null && btnImage4.Image == null) return false;
             return true;
+        }
+
+        public static byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Save the image to the memory stream in PNG format
+                image.Save(ms, ImageFormat.Png);
+
+                // Return the byte array representation of the image
+                return ms.ToArray();
+            }
         }
 
         private void btnPost_Click_1(object sender, EventArgs e)
@@ -281,7 +292,6 @@ namespace Window_Project_v5._1.Forms
                 return;
             }
 
-
             //string category = ddCategories.SelectedValue.ToString();
             Product product = new Product(selectedCategory, txtProductTitle.Text, txtType.Text, StringToDouble(txtBuyPrice.Text), StringToDouble(txtSellPrice.Text), selectedArea, txtCondition.Text, txtStatus.Text, txtSupportPolicy.Text, txtBrand.Text, txtOrigin.Text, txtMaterial.Text, txtSize.Text, txtFunctionalities.Text, txtDescription.Text, txtCancelTime.Text, cbCancel.Checked, acc.Id);
             if (!edit)
@@ -290,14 +300,7 @@ namespace Window_Project_v5._1.Forms
                 productDAO.Add(product);
                 //Add images to Productimages
                 product = productDAO.GetLastProduct();
-                foreach (string imgLocation in imgLocations)
-                {
-                    if (string.IsNullOrEmpty(imgLocation))
-                    {
-                        break;
-                    }
-                    imageDAO.Add(product.Id, imgLocation);
-                }
+                addImage(product);
             }
             else
             {
@@ -322,19 +325,32 @@ namespace Window_Project_v5._1.Forms
                 productDAO.Update(pd, true);
                 //Update Images (fix this code)
                 imageDAO.Delete(pd.Id);
-                foreach (string imgLocation in imgLocations)
-                {
-                    if (string.IsNullOrEmpty(imgLocation))
-                    {
-                        break;
-                    }
-                    imageDAO.Add(pd.Id, imgLocation);
-                }
+                addImage(pd);
             }
             this.Hide();
             FBuy f = new FBuy(acc);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void addImage(Product product)
+        {
+            if (btnImage1.Image != null)
+            {
+                imageDAO.Add(product.Id, ImageToByteArray(btnImage1.Image));
+            }
+            if (btnImage2.Image != null)
+            {
+                imageDAO.Add(product.Id, ImageToByteArray(btnImage2.Image));
+            }
+            if (btnImage3.Image != null)
+            {
+                imageDAO.Add(product.Id, ImageToByteArray(btnImage3.Image));
+            }
+            if (btnImage4.Image != null)
+            {
+                imageDAO.Add(product.Id, ImageToByteArray(btnImage4.Image));
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

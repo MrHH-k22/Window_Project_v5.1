@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -30,13 +31,18 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
             containerMenu.Visible = false;
             this.acc = acc;
+            dtBeginday.Value = SqlDateTime.MinValue.Value;
+            dtEndday.Value = DateTimePicker.MaximumDateTime;
         }
 
         private void FOrderAnalysis_Load(object sender, EventArgs e)
         {
+            // Load customer
+            DataTable dtCustomer = productDAO.LoadRegularCustomer(acc.Id, dtBeginday.Value, dtEndday.Value);
+            gvCustomer.DataSource = dtCustomer;
+            gvCustomer.ColumnHeadersHeight = 40;
             //acc = accountDAO.Retrieve(acc.Id);
-            List<Product> allProducts = productDAO.LoadListWithCondition("",acc.Id);
-            List<int> allCustomers = productDAO.LoadCustomers(acc.Id);
+            List<Product> allProducts = productDAO.LoadProductWithinPeriod(acc.Id, dtBeginday.Value, dtEndday.Value);
             int Displaying = 0;
             int waitForConfirmation = 0;
             int completed = 0;
@@ -67,7 +73,7 @@ namespace Window_Project_v5._1.Forms
             lblName.Text = acc.Name;
             lblMoney.Text = acc.Money.ToString("N0") + " VND";
             lblOrdersNo.Text = allProducts.Count.ToString();
-            lblCustomersNo.Text = allCustomers.Count.ToString();
+            lblCustomersNo.Text = dtCustomer.Rows.Count.ToString();
             lblDisplayingNo.Text = Displaying.ToString();
             lblWaitForConfirmationNo.Text = waitForConfirmation.ToString();
             lblCompletedNo.Text = completed.ToString();
@@ -230,6 +236,27 @@ namespace Window_Project_v5._1.Forms
             f.Show();
         }
 
+        private void dtBeginday_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtBeginday.Value > dtEndday.Value)
+            {
+                MessageBox.Show("Begin day should be before end day.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                FOrderAnalysis_Load(sender, e);
+            }
+        }
 
+        private void dtEndday_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtBeginday.Value > dtEndday.Value)
+            {
+                MessageBox.Show("End day should be after begin day.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                FOrderAnalysis_Load(sender, e);
+            }
+        }
     }
 }
