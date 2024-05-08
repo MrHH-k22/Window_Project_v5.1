@@ -319,5 +319,61 @@ namespace Window_Project_v5._1
             }
             return list;
         }
+
+        public DataTable LoadRegularCustomer(int id)
+        {
+            List<Product> list = LoadListCompletedProduct(id);
+            List<RegularCustomer> rs = new List<RegularCustomer>();
+            foreach (Product pd in list)
+            {
+                bool find = false;
+                int index = -1;
+                foreach (RegularCustomer rc in rs)
+                {
+                    index++;
+                    if (rc.Id == pd.BuyerID)
+                    {
+                        find = true;
+                        break;
+                    }
+                }
+                if (find)
+                {
+                    rs[index].Times++;
+                    rs[index].Totalpurchase += pd.SalePrice;
+                }
+                else
+                {
+                    rs.Add(new RegularCustomer(pd.BuyerID, pd));
+                }
+            }
+            // Create DataTable
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Buyer ID", typeof(int));
+            dt.Columns.Add("Name", typeof(string));
+            dt.Columns.Add("Number of product purchases", typeof(int));
+            dt.Columns.Add("Total Purchases", typeof(string));
+
+            // Add data from RegularCustomer list to DataTable
+            foreach (RegularCustomer customer in rs)
+            {
+                dt.Rows.Add(customer.Id, customer.Name, customer.Times, string.Format(customer.Totalpurchase.ToString("N0") + " VND"));
+            }
+
+            return dt;
+        }
+
+        public List<Product> LoadListCompletedProduct(int id)
+        {
+            List<Product> list = new List<Product>();
+            DataTable dt;
+            dt = dbc.Load(string.Format("SELECT * FROM Product WHERE SellerID = '{0}' AND OrderCondition = 2", id));
+            foreach (DataRow dr in dt.Rows)
+            {
+                Product pd = new Product(dr);
+                list.Add(pd);
+            }
+            return list;
+        }
     }
 }
