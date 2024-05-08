@@ -99,7 +99,6 @@ namespace Window_Project_v5._1
                 ratingDAO.Add(rt, product);
             }
             ClearData();
-            this.Close();
         }
 
         private void rtStar_ValueChanged(object sender, EventArgs e)

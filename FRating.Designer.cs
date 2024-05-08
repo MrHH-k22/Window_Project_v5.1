@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lblRate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -49,6 +49,7 @@
             this.chbOntimeDelivery = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbTrueDescription = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panelCheckBox = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -64,12 +65,11 @@
             // 
             this.lblRate.AutoSize = false;
             this.lblRate.BackColor = System.Drawing.Color.Transparent;
-            this.lblRate.Font = new System.Drawing.Font("Segoe UI", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblRate.Location = new System.Drawing.Point(9, 11);
-            this.lblRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblRate.Location = new System.Drawing.Point(12, 14);
             this.lblRate.Name = "lblRate";
-            this.lblRate.Size = new System.Drawing.Size(255, 33);
+            this.lblRate.Size = new System.Drawing.Size(340, 41);
             this.lblRate.TabIndex = 15;
             this.lblRate.Text = "Rating for the product";
             // 
@@ -77,10 +77,9 @@
             // 
             this.guna2Panel1.Controls.Add(this.lblNameProduct);
             this.guna2Panel1.Controls.Add(this.pbProduct);
-            this.guna2Panel1.Location = new System.Drawing.Point(9, 58);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 71);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(459, 71);
+            this.guna2Panel1.Size = new System.Drawing.Size(612, 87);
             this.guna2Panel1.TabIndex = 17;
             // 
             // lblNameProduct
@@ -88,11 +87,10 @@
             this.lblNameProduct.AutoSize = false;
             this.lblNameProduct.BackColor = System.Drawing.Color.Transparent;
             this.lblNameProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblNameProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblNameProduct.Location = new System.Drawing.Point(74, 0);
-            this.lblNameProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblNameProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameProduct.Location = new System.Drawing.Point(98, 0);
             this.lblNameProduct.Name = "lblNameProduct";
-            this.lblNameProduct.Size = new System.Drawing.Size(385, 47);
+            this.lblNameProduct.Size = new System.Drawing.Size(514, 58);
             this.lblNameProduct.TabIndex = 17;
             this.lblNameProduct.Text = "yujyukyuyui";
             // 
@@ -101,9 +99,8 @@
             this.pbProduct.Dock = System.Windows.Forms.DockStyle.Left;
             this.pbProduct.ImageRotate = 0F;
             this.pbProduct.Location = new System.Drawing.Point(0, 0);
-            this.pbProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(74, 71);
+            this.pbProduct.Size = new System.Drawing.Size(98, 87);
             this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProduct.TabIndex = 16;
             this.pbProduct.TabStop = false;
@@ -115,43 +112,39 @@
             this.guna2Panel2.Controls.Add(this.lblStatus);
             this.guna2Panel2.Controls.Add(this.lblQuality);
             this.guna2Panel2.Controls.Add(this.rtStar);
-            this.guna2Panel2.Location = new System.Drawing.Point(9, 143);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(12, 176);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(459, 57);
+            this.guna2Panel2.Size = new System.Drawing.Size(612, 70);
             this.guna2Panel2.TabIndex = 18;
             // 
             // lblStatus
             // 
-            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblStatus.Location = new System.Drawing.Point(325, 20);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatus.Location = new System.Drawing.Point(433, 24);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(75, 19);
+            this.lblStatus.Size = new System.Drawing.Size(100, 23);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "Tuyệt vời";
             // 
             // lblQuality
             // 
             this.lblQuality.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuality.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblQuality.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuality.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblQuality.Location = new System.Drawing.Point(11, 11);
-            this.lblQuality.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQuality.Location = new System.Drawing.Point(15, 14);
             this.lblQuality.Name = "lblQuality";
-            this.lblQuality.Size = new System.Drawing.Size(118, 35);
+            this.lblQuality.Size = new System.Drawing.Size(158, 43);
             this.lblQuality.TabIndex = 3;
             this.lblQuality.Text = "Product Quality";
             // 
             // rtStar
             // 
             this.rtStar.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.rtStar.Location = new System.Drawing.Point(145, 10);
-            this.rtStar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtStar.Location = new System.Drawing.Point(193, 12);
             this.rtStar.Name = "rtStar";
             this.rtStar.RatingColor = System.Drawing.Color.Yellow;
-            this.rtStar.Size = new System.Drawing.Size(141, 37);
+            this.rtStar.Size = new System.Drawing.Size(188, 45);
             this.rtStar.TabIndex = 1;
             this.rtStar.ValueChanged += new System.EventHandler(this.rtStar_ValueChanged);
             // 
@@ -160,7 +153,7 @@
             this.btnSend.AutoRoundedCorners = true;
             this.btnSend.BackColor = System.Drawing.Color.Transparent;
             this.btnSend.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSend.BorderRadius = 19;
+            this.btnSend.BorderRadius = 23;
             this.btnSend.BorderThickness = 1;
             this.btnSend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -174,10 +167,9 @@
             this.btnSend.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnSend.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSend.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnSend.Location = new System.Drawing.Point(372, 389);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSend.Location = new System.Drawing.Point(496, 479);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(85, 40);
+            this.btnSend.Size = new System.Drawing.Size(113, 49);
             this.btnSend.TabIndex = 54;
             this.btnSend.Text = "Send";
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -196,15 +188,15 @@
             this.txtComment.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtComment.ForeColor = System.Drawing.Color.Black;
             this.txtComment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtComment.Location = new System.Drawing.Point(9, 267);
-            this.txtComment.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtComment.Location = new System.Drawing.Point(12, 329);
+            this.txtComment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.PasswordChar = '\0';
             this.txtComment.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtComment.PlaceholderText = "Other Comment";
             this.txtComment.SelectedText = "";
-            this.txtComment.Size = new System.Drawing.Size(459, 115);
+            this.txtComment.Size = new System.Drawing.Size(612, 141);
             this.txtComment.TabIndex = 79;
             // 
             // btnClose
@@ -222,20 +214,20 @@
             this.btnClose.ColorContrastOnClick = 30;
             this.btnClose.ColorContrastOnHover = 30;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnClose.CustomizableEdges = borderEdges1;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.close;
             this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Location = new System.Drawing.Point(442, 9);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Location = new System.Drawing.Point(589, 11);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.RoundBorders = false;
             this.btnClose.ShowBorders = true;
-            this.btnClose.Size = new System.Drawing.Size(26, 28);
+            this.btnClose.Size = new System.Drawing.Size(35, 34);
             this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
             this.btnClose.TabIndex = 14;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -247,11 +239,9 @@
             this.chbReliable.CheckedState.BorderRadius = 0;
             this.chbReliable.CheckedState.BorderThickness = 0;
             this.chbReliable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbReliable.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.chbReliable.Location = new System.Drawing.Point(182, 10);
-            this.chbReliable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbReliable.Location = new System.Drawing.Point(243, 12);
             this.chbReliable.Name = "chbReliable";
-            this.chbReliable.Size = new System.Drawing.Size(67, 17);
+            this.chbReliable.Size = new System.Drawing.Size(80, 20);
             this.chbReliable.TabIndex = 80;
             this.chbReliable.Text = "Reliable";
             this.chbReliable.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -266,11 +256,9 @@
             this.chbGoodProduct.CheckedState.BorderRadius = 0;
             this.chbGoodProduct.CheckedState.BorderThickness = 0;
             this.chbGoodProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbGoodProduct.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.chbGoodProduct.Location = new System.Drawing.Point(310, 10);
-            this.chbGoodProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbGoodProduct.Location = new System.Drawing.Point(414, 12);
             this.chbGoodProduct.Name = "chbGoodProduct";
-            this.chbGoodProduct.Size = new System.Drawing.Size(98, 17);
+            this.chbGoodProduct.Size = new System.Drawing.Size(112, 20);
             this.chbGoodProduct.TabIndex = 80;
             this.chbGoodProduct.Text = "Good Product";
             this.chbGoodProduct.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -285,11 +273,9 @@
             this.chbPoliteFriendly.CheckedState.BorderRadius = 0;
             this.chbPoliteFriendly.CheckedState.BorderThickness = 0;
             this.chbPoliteFriendly.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbPoliteFriendly.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chbPoliteFriendly.Location = new System.Drawing.Point(52, 31);
-            this.chbPoliteFriendly.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbPoliteFriendly.Location = new System.Drawing.Point(69, 38);
             this.chbPoliteFriendly.Name = "chbPoliteFriendly";
-            this.chbPoliteFriendly.Size = new System.Drawing.Size(120, 17);
+            this.chbPoliteFriendly.Size = new System.Drawing.Size(135, 20);
             this.chbPoliteFriendly.TabIndex = 80;
             this.chbPoliteFriendly.Text = "Polite and friendly";
             this.chbPoliteFriendly.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -304,11 +290,9 @@
             this.chbSatisfied.CheckedState.BorderRadius = 0;
             this.chbSatisfied.CheckedState.BorderThickness = 0;
             this.chbSatisfied.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbSatisfied.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.chbSatisfied.Location = new System.Drawing.Point(310, 31);
-            this.chbSatisfied.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbSatisfied.Location = new System.Drawing.Point(414, 38);
             this.chbSatisfied.Name = "chbSatisfied";
-            this.chbSatisfied.Size = new System.Drawing.Size(70, 17);
+            this.chbSatisfied.Size = new System.Drawing.Size(81, 20);
             this.chbSatisfied.TabIndex = 80;
             this.chbSatisfied.Text = "Satisfied";
             this.chbSatisfied.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -323,11 +307,9 @@
             this.chbOntimeDelivery.CheckedState.BorderRadius = 0;
             this.chbOntimeDelivery.CheckedState.BorderThickness = 0;
             this.chbOntimeDelivery.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbOntimeDelivery.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.chbOntimeDelivery.Location = new System.Drawing.Point(182, 31);
-            this.chbOntimeDelivery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbOntimeDelivery.Location = new System.Drawing.Point(243, 38);
             this.chbOntimeDelivery.Name = "chbOntimeDelivery";
-            this.chbOntimeDelivery.Size = new System.Drawing.Size(108, 17);
+            this.chbOntimeDelivery.Size = new System.Drawing.Size(125, 20);
             this.chbOntimeDelivery.TabIndex = 80;
             this.chbOntimeDelivery.Text = "Delivery on time";
             this.chbOntimeDelivery.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -342,11 +324,9 @@
             this.chbTrueDescription.CheckedState.BorderRadius = 0;
             this.chbTrueDescription.CheckedState.BorderThickness = 0;
             this.chbTrueDescription.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chbTrueDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chbTrueDescription.Location = new System.Drawing.Point(52, 10);
-            this.chbTrueDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbTrueDescription.Location = new System.Drawing.Point(69, 12);
             this.chbTrueDescription.Name = "chbTrueDescription";
-            this.chbTrueDescription.Size = new System.Drawing.Size(123, 17);
+            this.chbTrueDescription.Size = new System.Drawing.Size(140, 20);
             this.chbTrueDescription.TabIndex = 80;
             this.chbTrueDescription.Text = "True to description";
             this.chbTrueDescription.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -362,18 +342,17 @@
             this.panelCheckBox.Controls.Add(this.chbGoodProduct);
             this.panelCheckBox.Controls.Add(this.chbOntimeDelivery);
             this.panelCheckBox.Controls.Add(this.chbPoliteFriendly);
-            this.panelCheckBox.Location = new System.Drawing.Point(9, 206);
-            this.panelCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCheckBox.Location = new System.Drawing.Point(12, 253);
             this.panelCheckBox.Name = "panelCheckBox";
-            this.panelCheckBox.Size = new System.Drawing.Size(459, 56);
+            this.panelCheckBox.Size = new System.Drawing.Size(612, 69);
             this.panelCheckBox.TabIndex = 81;
             // 
             // FRating
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(477, 439);
+            this.ClientSize = new System.Drawing.Size(636, 540);
             this.Controls.Add(this.panelCheckBox);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.btnSend);
@@ -382,7 +361,6 @@
             this.Controls.Add(this.lblRate);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FRating";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRating";
@@ -416,5 +394,6 @@
         private Guna.UI2.WinForms.Guna2CheckBox chbReliable;
         private Guna.UI2.WinForms.Guna2CheckBox chbTrueDescription;
         private Guna.UI2.WinForms.Guna2Panel panelCheckBox;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
