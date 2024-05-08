@@ -97,5 +97,10 @@ namespace Window_Project_v5._1.Forms
 
             panel.Controls.Add(label);
         }
+
+        private void gbContent_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

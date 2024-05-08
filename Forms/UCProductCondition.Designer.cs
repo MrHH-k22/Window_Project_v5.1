@@ -69,7 +69,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPrice.Location = new System.Drawing.Point(1104, 22);
+            this.lblPrice.Location = new System.Drawing.Point(1085, 21);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(141, 30);

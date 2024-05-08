@@ -41,9 +41,9 @@
             this.panelMid = new Guna.UI2.WinForms.Guna2Panel();
             this.panelRelatedProducts = new Guna.UI2.WinForms.Guna2Panel();
             this.flpRelatedProducts = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panellblRealtedproducts = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblRelatedProducts = new System.Windows.Forms.Label();
             this.panelDescription = new Guna.UI2.WinForms.Guna2Panel();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -118,7 +118,7 @@
             this.panelBody.SuspendLayout();
             this.panelMid.SuspendLayout();
             this.panelRelatedProducts.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.panellblRealtedproducts.SuspendLayout();
             this.panelDescription.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelFunctionality.SuspendLayout();
@@ -297,7 +297,7 @@
             // 
             this.panelMid.AutoScroll = true;
             this.panelMid.Controls.Add(this.panelRelatedProducts);
-            this.panelMid.Controls.Add(this.guna2Panel1);
+            this.panelMid.Controls.Add(this.panellblRealtedproducts);
             this.panelMid.Controls.Add(this.panelDescription);
             this.panelMid.Controls.Add(this.panel3);
             this.panelMid.Controls.Add(this.panelFunctionality);
@@ -332,17 +332,17 @@
             this.flpRelatedProducts.Size = new System.Drawing.Size(1146, 438);
             this.flpRelatedProducts.TabIndex = 0;
             // 
-            // guna2Panel1
+            // panellblRealtedproducts
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Separator1);
-            this.guna2Panel1.Controls.Add(this.label5);
-            this.bunifuTransition1.SetDecoration(this.guna2Panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 1574);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(50, 10, 10, 10);
-            this.guna2Panel1.Size = new System.Drawing.Size(1158, 83);
-            this.guna2Panel1.TabIndex = 12;
+            this.panellblRealtedproducts.Controls.Add(this.guna2Separator1);
+            this.panellblRealtedproducts.Controls.Add(this.lblRelatedProducts);
+            this.bunifuTransition1.SetDecoration(this.panellblRealtedproducts, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.panellblRealtedproducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panellblRealtedproducts.Location = new System.Drawing.Point(0, 1574);
+            this.panellblRealtedproducts.Name = "panellblRealtedproducts";
+            this.panellblRealtedproducts.Padding = new System.Windows.Forms.Padding(50, 10, 10, 10);
+            this.panellblRealtedproducts.Size = new System.Drawing.Size(1158, 83);
+            this.panellblRealtedproducts.TabIndex = 12;
             // 
             // guna2Separator1
             // 
@@ -352,18 +352,18 @@
             this.guna2Separator1.Size = new System.Drawing.Size(1102, 10);
             this.guna2Separator1.TabIndex = 159;
             // 
-            // label5
+            // lblRelatedProducts
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.label5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(36, 35);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(293, 30);
-            this.label5.TabIndex = 153;
-            this.label5.Text = "Related products";
+            this.lblRelatedProducts.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.lblRelatedProducts, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblRelatedProducts.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lblRelatedProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblRelatedProducts.Location = new System.Drawing.Point(36, 35);
+            this.lblRelatedProducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRelatedProducts.Name = "lblRelatedProducts";
+            this.lblRelatedProducts.Size = new System.Drawing.Size(293, 30);
+            this.lblRelatedProducts.TabIndex = 153;
+            this.lblRelatedProducts.Text = "Related products";
             // 
             // panelDescription
             // 
@@ -1479,7 +1479,7 @@
             this.panelBody.ResumeLayout(false);
             this.panelMid.ResumeLayout(false);
             this.panelRelatedProducts.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.panellblRealtedproducts.ResumeLayout(false);
             this.panelDescription.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panelFunctionality.ResumeLayout(false);
@@ -1581,9 +1581,9 @@
         private Guna.UI2.WinForms.Guna2Panel panelImage1;
         private Guna.UI2.WinForms.Guna2PictureBox btnImage1;
         private Guna.UI2.WinForms.Guna2Panel panelRelatedProducts;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel panellblRealtedproducts;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label lblRelatedProducts;
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.FlowLayoutPanel flpRelatedProducts;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;

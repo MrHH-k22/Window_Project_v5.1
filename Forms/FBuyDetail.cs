@@ -274,16 +274,27 @@ namespace Window_Project_v5._1.Forms
 
             //relate products
             List<Product> relatedProducts = productDAO.LoadSimilarProducts(product.Id, product.Type);
-            foreach (var pd in relatedProducts)
+            if(relatedProducts.Count>0)
             {
-                if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                panelRelatedProducts.Visible = true;
+                lblRelatedProducts.Visible = true;
+                foreach (var pd in relatedProducts)
                 {
-                    UCProduct uc = new UCProduct(pd, account);
-                    uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
-                    flpRelatedProducts.Controls.Add(uc);
+                    if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                    {
+                        UCProduct uc = new UCProduct(pd, account);
+                        uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
+                        flpRelatedProducts.Controls.Add(uc);
+                    }
                 }
+                adjustRecommendFlowLayoutPanel();
             }
-            adjustRecommendFlowLayoutPanel();
+            else
+            {
+                panelRelatedProducts.Visible = false;
+                lblRelatedProducts.Visible = false;
+            }
+
         }
 
         private void adjustRecommendFlowLayoutPanel()

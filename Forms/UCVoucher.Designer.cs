@@ -98,10 +98,10 @@
             // lblValue
             // 
             this.lblValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValue.ForeColor = System.Drawing.Color.Black;
-            this.lblValue.Location = new System.Drawing.Point(22, 121);
+            this.lblValue.ForeColor = System.Drawing.Color.Red;
+            this.lblValue.Location = new System.Drawing.Point(23, 125);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(350, 33);
+            this.lblValue.Size = new System.Drawing.Size(327, 33);
             this.lblValue.TabIndex = 118;
             this.lblValue.Text = "- 100,000 VND";
             // 
