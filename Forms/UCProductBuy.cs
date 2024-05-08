@@ -119,7 +119,7 @@ namespace Window_Project_v5._1.Forms
         private void btnRate_Click(object sender, EventArgs e)
         {
             FRating f = new FRating(product);
-            f.Show();
+            f.ShowDialog();
         }
 
         private void btnDetail_Click(object sender, EventArgs e)

@@ -30,11 +30,13 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail()
         {
             InitializeComponent();
+            SetNullButtonImage();
         }
 
         public FSellDetail(Product pd, Account acc)
         {
             InitializeComponent();
+            SetNullButtonImage();
             this.pd = pd;
             this.acc = acc;
             edit = true;
@@ -46,6 +48,7 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail(Product pd, Account acc, bool check)
         {
             InitializeComponent();
+            SetNullButtonImage();
             this.pd = pd;
             this.acc = acc; 
             Initialize();
@@ -55,8 +58,13 @@ namespace Window_Project_v5._1.Forms
         public FSellDetail(Account acc)
         {
             InitializeComponent();
+            SetNullButtonImage();
             HideCompleteDetail();
-            this.acc = acc;
+            this.acc = acc;     
+        }
+
+        public void SetNullButtonImage()
+        {
             btnImage1.Image = null;
             btnImage2.Image = null;
             btnImage3.Image = null;
