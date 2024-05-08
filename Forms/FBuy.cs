@@ -43,10 +43,30 @@ namespace Window_Project_v5._1.Forms
 
         private void FBuy_Load(object sender, EventArgs e)
         {
+            //delete all user controls
+            for (int i = flpProduct.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = flpProduct.Controls[i];
+                if (control is UCProduct)  
+                {
+                    flpRecommendProducts.Controls.Remove(control);
+                    control.Dispose();  
+                }
+            }
+            for (int i = flpRecommendProducts.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = flpRecommendProducts.Controls[i];
+                if (control is UCProduct)  
+                {
+                    flpRecommendProducts.Controls.Remove(control);
+                    control.Dispose(); 
+                }
+            }
+            //add product list
             List<Product> products = productDAO.LoadList();
             foreach (var pd in products)
             {
-                if(pd.BuyerID <=0 && pd.OrderCondition <= (int)ordercondition.Displaying)
+                if (pd.BuyerID <= 0 && pd.OrderCondition <= (int)ordercondition.Displaying)
                 {
                     UCProduct uc = new UCProduct(pd, account);
                     uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
@@ -55,8 +75,9 @@ namespace Window_Project_v5._1.Forms
             }
             lblMenuAccountName.Text = account.Name;
             ratingMenuAccount.Value = account.AvgRating;
+            lblProducts.Text = "All products";
             convertByte(pbMenuAvatar, account.Avatar);
-            //recommend list
+            //add recommend list
             List<string> types = recommendDAO.GetTopThreeRecommendedTypesByBuyerID(account.Id);
             List<Product> recommendedProducts = new List<Product>();
             foreach (string type in types)
@@ -76,7 +97,6 @@ namespace Window_Project_v5._1.Forms
                     flpRecommendProducts.Controls.Add(uc);
                 }
             }
-            //error (kiem tra lai)
             if (flpRecommendProducts.Controls.Count <= 0)
             {
                 flpRecommendProducts.Visible = false;
@@ -90,8 +110,6 @@ namespace Window_Project_v5._1.Forms
                 panelRecommend.Visible = true;
                 adjustRecommendFlowLayoutPanel();
             }
-
-
         }
 
         // Event handler for UCProduct's ProductDoubleClick event
@@ -180,7 +198,6 @@ namespace Window_Project_v5._1.Forms
    
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            flpProduct.Controls.Clear();
             FBuy_Load(sender, e);
         }
 
@@ -211,14 +228,28 @@ namespace Window_Project_v5._1.Forms
             ).ToList();
 
             // Clear existing products in the flow layout panel
-            flpProduct.Controls.Clear();
+            for (int i = flpProduct.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = flpProduct.Controls[i];
+                if (control is UCProduct)
+                {
+                    flpRecommendProducts.Controls.Remove(control);
+                    control.Dispose();
+                }
+            }
 
             // Add filtered products to the flow layout panel
             foreach (var pd in filteredProducts)
             {
                 UCProduct uc = new UCProduct(pd, account);
+                uc.ProductDoubleClick += UCProduct_ProductDoubleClick;
                 flpProduct.Controls.Add(uc);
             }
+            //
+            flpRecommendProducts.Visible = false;
+            panelRecommendProducts.Visible = false;
+            panelRecommend.Visible = false;
+            lblProducts.Text = "Filtered products";
         }
 
 
@@ -296,7 +327,7 @@ namespace Window_Project_v5._1.Forms
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
-
+            FBuy_Load(sender, e);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

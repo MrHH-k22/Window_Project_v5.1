@@ -41,7 +41,7 @@
             this.panelRecommendProducts = new Guna.UI2.WinForms.Guna2Panel();
             this.flpRecommendProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblProducts = new System.Windows.Forms.Label();
             this.panelLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.btnFilter = new Guna.UI2.WinForms.Guna2Button();
@@ -270,7 +270,7 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.label6);
+            this.guna2Panel3.Controls.Add(this.lblProducts);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 483);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -278,17 +278,17 @@
             this.guna2Panel3.Size = new System.Drawing.Size(1312, 45);
             this.guna2Panel3.TabIndex = 98;
             // 
-            // label6
+            // lblProducts
             // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(16, 6);
-            this.label6.Margin = new System.Windows.Forms.Padding(0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(347, 30);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "All Product";
+            this.lblProducts.BackColor = System.Drawing.Color.Transparent;
+            this.lblProducts.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblProducts.Location = new System.Drawing.Point(16, 6);
+            this.lblProducts.Margin = new System.Windows.Forms.Padding(0);
+            this.lblProducts.Name = "lblProducts";
+            this.lblProducts.Size = new System.Drawing.Size(347, 30);
+            this.lblProducts.TabIndex = 97;
+            this.lblProducts.Text = "All Product";
             // 
             // panelLeft
             // 
@@ -409,7 +409,7 @@
             this.txtMinPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMinPrice.ForeColor = System.Drawing.Color.Black;
             this.txtMinPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtMinPrice.Location = new System.Drawing.Point(103, 273);
+            this.txtMinPrice.Location = new System.Drawing.Point(16, 273);
             this.txtMinPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMinPrice.Name = "txtMinPrice";
             this.txtMinPrice.PasswordChar = '\0';
@@ -461,7 +461,7 @@
             this.txtMaxPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaxPrice.ForeColor = System.Drawing.Color.Black;
             this.txtMaxPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.txtMaxPrice.Location = new System.Drawing.Point(12, 273);
+            this.txtMaxPrice.Location = new System.Drawing.Point(104, 273);
             this.txtMaxPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaxPrice.Name = "txtMaxPrice";
             this.txtMaxPrice.PasswordChar = '\0';
@@ -1006,7 +1006,7 @@
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label lblProducts;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
         private Guna.UI2.WinForms.Guna2Panel panelRecommend;
         public System.Windows.Forms.Label label2;
