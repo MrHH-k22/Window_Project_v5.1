@@ -58,17 +58,17 @@
             this.gbContent.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbContent.Location = new System.Drawing.Point(0, 2);
             this.gbContent.Name = "gbContent";
-            this.gbContent.Size = new System.Drawing.Size(941, 270);
+            this.gbContent.Size = new System.Drawing.Size(1333, 280);
             this.gbContent.TabIndex = 4;
             this.gbContent.TabStop = false;
             // 
             // ucProductConditionReduce
             // 
             this.ucProductConditionReduce.BackColor = System.Drawing.Color.Gainsboro;
-            this.ucProductConditionReduce.Location = new System.Drawing.Point(5, 146);
+            this.ucProductConditionReduce.Location = new System.Drawing.Point(5, 156);
             this.ucProductConditionReduce.Margin = new System.Windows.Forms.Padding(2);
             this.ucProductConditionReduce.Name = "ucProductConditionReduce";
-            this.ucProductConditionReduce.Size = new System.Drawing.Size(929, 96);
+            this.ucProductConditionReduce.Size = new System.Drawing.Size(1320, 96);
             this.ucProductConditionReduce.TabIndex = 7;
             // 
             // rsStar
@@ -91,7 +91,7 @@
             this.panelRating.Location = new System.Drawing.Point(98, 49);
             this.panelRating.Name = "panelRating";
             this.panelRating.ShowBorders = true;
-            this.panelRating.Size = new System.Drawing.Size(836, 45);
+            this.panelRating.Size = new System.Drawing.Size(1227, 45);
             this.panelRating.TabIndex = 5;
             // 
             // lblStar
@@ -122,7 +122,7 @@
             this.pbAvtSeller.BorderRadius = 35;
             this.pbAvtSeller.Image = ((System.Drawing.Image)(resources.GetObject("pbAvtSeller.Image")));
             this.pbAvtSeller.IsCircle = true;
-            this.pbAvtSeller.Location = new System.Drawing.Point(22, 10);
+            this.pbAvtSeller.Location = new System.Drawing.Point(22, 17);
             this.pbAvtSeller.Name = "pbAvtSeller";
             this.pbAvtSeller.Size = new System.Drawing.Size(70, 70);
             this.pbAvtSeller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbContent);
             this.Name = "UCReview";
-            this.Size = new System.Drawing.Size(941, 274);
+            this.Size = new System.Drawing.Size(1336, 283);
             this.Load += new System.EventHandler(this.UCReview_Load);
             this.gbContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvtSeller)).EndInit();
