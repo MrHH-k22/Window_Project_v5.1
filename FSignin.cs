@@ -39,7 +39,7 @@ namespace Window_Project_v5._1.Forms
             {
                 Account acc = new Account(email, password);
                 acc = accountDAO.CheckAccount(acc);
-                acc = new Account(acc.Id);
+                
                 if (acc == null)
                 {
                     MessageBox.Show("Wrong Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -48,7 +48,7 @@ namespace Window_Project_v5._1.Forms
                 }
                 else
                 {
-
+                    acc = new Account(acc.Id);
                     this.Hide();
                     FBuy f = new FBuy(acc);
                     f.Closed += (s, args) => this.Close();
