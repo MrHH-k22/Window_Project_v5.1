@@ -24,15 +24,18 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
             containerMenu.Visible = false;
+            gunaChart1.Visible = false;
         }
 
         public FOrderAnalysis(Account acc)
         {
             InitializeComponent();
             containerMenu.Visible = false;
+            gunaChart1.Visible = false;
             this.acc = acc;
             dtBeginday.Value = SqlDateTime.MinValue.Value;
             dtEndday.Value = DateTimePicker.MaximumDateTime;
+
         }
 
         private void FOrderAnalysis_Load(object sender, EventArgs e)
@@ -257,6 +260,14 @@ namespace Window_Project_v5._1.Forms
             {
                 FOrderAnalysis_Load(sender, e);
             }
+        }
+
+        private void btnChart_Click(object sender, EventArgs e)
+        {
+            gvCustomer.Visible = false;
+            gunaChart1.Visible = true;
+            Bar.Example(gunaChart1);
+            
         }
     }
 }
