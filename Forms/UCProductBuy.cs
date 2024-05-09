@@ -36,7 +36,7 @@ namespace Window_Project_v5._1.Forms
             SetEventForAllControls(this);
             InitializeUCProductBuy(pd, acc);
             //Check for Cancel function
-            if (DateTime.Now > pd.CancelDate())
+            if (DateTime.Now > pd.CancelDate() || pd.OrderCondition == (int)ordercondition.Completed)
             {
                 btnCancel.Visible = false;
             }
@@ -165,8 +165,25 @@ namespace Window_Project_v5._1.Forms
                 }
             }
             */
-            FCancelInfo fCancelInfo = new FCancelInfo(account, product, checkCart);
-            fCancelInfo.ShowDialog();
+            // Buyed
+            if (product.BuyerID != 0)
+            {
+
+                FCancelInfo fCancelInfo = new FCancelInfo(account, product);
+                fCancelInfo.ShowDialog();
+            }
+            // Not buyed yet
+            else
+            {
+                if (checkCart)
+                {
+                    cartDAO.delete(account.Id, product.Id);
+                }
+                else
+                {
+                    favoriteDAO.delete(account.Id, product.Id);
+                }
+            }
         }
     }
 }

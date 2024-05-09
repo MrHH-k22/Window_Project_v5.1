@@ -16,21 +16,24 @@ namespace Window_Project_v5._1
             string sqlStr = string.Format("INSERT INTO Cancel_Info (ProductID, CancelledTime, Reason, ExtraInfo, BuyerID) VALUES ({0}, '{1}', '{2}', '{3}', '{4}')",cancelInfo.ProductID,DateTime.Now , cancelInfo.Reason, cancelInfo.ExtraInfo, cancelInfo.BuyerID);
             dbc.Execute(sqlStr);
         }
-        /*
-        public List<CancelInfo> loadList(int SellerID)
+
+        public void delete(int id)
         {
-            
+            string sqlStr = string.Format("DELETE FROM Cancel_Info WHERE ID = {0}", id);
+            dbc.Execute(sqlStr);
+        }
+
+        public List<CancelInfo> loadList(int SellerID)
+        {   
             List<CancelInfo> list = new List<CancelInfo>();
-            DataTable dt = dbc.Load("SELECT * FROM CancelInfo Where SellerID = ;");
+            DataTable dt = dbc.Load(string.Format("SELECT Cancel_Info.* FROM Cancel_Info JOIN Product ON Cancel_Info.ProductID = Product.ID WHERE Product.SellerID = {0};", SellerID));
             foreach (DataRow dr in dt.Rows)
             {
-                Shipping shipping = GetShippingFromDataRow(dr);
+                CancelInfo shipping = new CancelInfo();
+                shipping.GetCancelInfoFromDataRow(dr);
                 list.Add(shipping);
             }
             return list;
-            
         }
-        */
-
     }
 }

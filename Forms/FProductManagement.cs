@@ -17,6 +17,7 @@ namespace Window_Project_v5._1.Forms
         private ProductDAO productDAO = new ProductDAO();
         private Account account = new Account();
         private AccountDAO accountDAO = new AccountDAO();   
+        private CancelInfoDAO cancelInfoDAO = new CancelInfoDAO();
         public FProductManagement()
         {
             InitializeComponent();
@@ -59,13 +60,19 @@ namespace Window_Project_v5._1.Forms
                     {
                         tpHidden.Controls.Add(uc);
                     }
-                    
                 }
-                convertByte(pBSellerAvatar, account.Avatar);
-                //Menu
-                lblMenuAccountName.Text = account.Name;
-                ratingMenuAccount.Value = account.AvgRating;
-                convertByte(pbMenuAvatar, account.Avatar);
+            }
+            //Menu
+            convertByte(pBSellerAvatar, account.Avatar);
+            lblMenuAccountName.Text = account.Name;
+            ratingMenuAccount.Value = account.AvgRating;
+            convertByte(pbMenuAvatar, account.Avatar);
+            // Cancel Notification
+            List<CancelInfo> list = cancelInfoDAO.loadList(account.Id);
+            foreach (CancelInfo ci in list)
+            {
+                UCProductCancel uc = new UCProductCancel(ci);
+                flpCancelledProducts.Controls.Add(uc);
             }
         }
 

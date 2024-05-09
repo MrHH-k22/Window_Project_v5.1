@@ -19,7 +19,6 @@ namespace Window_Project_v5._1.Forms
         Product product = new Product();
         AccountDAO accountDAO = new AccountDAO();
         ProductDAO productDAO = new ProductDAO();
-        private bool checkCart; // false for favorite, true for cart
         private CartDAO cartDAO = new CartDAO();
         private FavoriteDAO favoriteDAO = new FavoriteDAO();
         private ImageDAO imageDAO = new ImageDAO();
@@ -29,21 +28,23 @@ namespace Window_Project_v5._1.Forms
             InitializeComponent();
         }
 
-        public FCancelInfo(Account account,Product product, bool checkCart)
+        public FCancelInfo(Account account,Product product)
         {
             InitializeComponent();
             this.account = account;
             this.product = product;
-            this.checkCart = checkCart;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            CancelInfo cancelInfo = new CancelInfo(product.Id,account.Id,cbReason.SelectedItem.ToString(),txtExtraInfo.Text);
-            cancelInfoDAO.add(cancelInfo);
-            //
-            if (product.BuyerID != 0)
+            if (cbReason.SelectedItem.ToString() == "Select a Reason")
             {
+                MessageBox.Show("You have to choose a reason!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CancelInfo cancelInfo = new CancelInfo(product.Id, account.Id, cbReason.SelectedItem.ToString(), txtExtraInfo.Text);
+                cancelInfoDAO.add(cancelInfo);
                 //update status for product
                 product.OrderCondition = (int)ordercondition.Displaying;
                 productDAO.Update(product);
@@ -62,22 +63,9 @@ namespace Window_Project_v5._1.Forms
                     Buyer.Money += product.SalePrice;
                     accountDAO.update(Buyer);
                 }
-            }
-            // Not buyed yet
-            else
-            {
-                if (checkCart)
-                {
-                    cartDAO.delete(account.Id, product.Id);
-                }
-                else
-                {
-                    favoriteDAO.delete(account.Id, product.Id);
-                }
-            }
-            //
-            MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
+                MessageBox.Show("Operation was successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }     
         }
 
         private void FCancelInfo_Load(object sender, EventArgs e)
@@ -101,7 +89,6 @@ namespace Window_Project_v5._1.Forms
                     }
                 }
             }
-
         }
     }
 }
