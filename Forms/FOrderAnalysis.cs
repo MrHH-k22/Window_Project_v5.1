@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.Charts.WinForms.Design;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -264,9 +265,12 @@ namespace Window_Project_v5._1.Forms
 
         private void btnChart_Click(object sender, EventArgs e)
         {
+
+            string YearToFilter = dtBeginday.Value.Year.ToString();
             gvCustomer.Visible = false;
             gunaChart1.Visible = true;
-            Bar.Example(gunaChart1);
+            gunaChart1.Datasets.Clear();
+            Chart.Bar(gunaChart1, acc.Id, YearToFilter);
             
         }
     }
