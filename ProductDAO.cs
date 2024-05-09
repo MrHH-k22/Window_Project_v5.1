@@ -388,5 +388,11 @@ namespace Window_Project_v5._1
             }
             return list;
         }
+        public DataTable ProfitEveryMonths(int id, string YearToFilter)
+        {
+            DataTable dt = new DataTable();
+            dt = dbc.Load(string.Format("SELECT m.MonthNumber, ISNULL(SUM(SalePrice), 0) AS TotalEarnings FROM( VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12)) AS m (MonthNumber) LEFT JOIN Product p ON MONTH(p.CompleteTime) = m.MonthNumber AND YEAR(p.CompleteTime) = '{0}' AND p.SellerID = '{1}' GROUP BY m.MonthNumber, YEAR(CompleteTime) ORDER BY YEAR(CompleteTime), m.MonthNumber ", YearToFilter, id));
+            return dt;
+        }
     }
 }
