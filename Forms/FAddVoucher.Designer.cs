@@ -135,7 +135,7 @@
             this.dtEndDay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.dtEndDay.BorderThickness = 1;
             this.dtEndDay.Checked = true;
-            this.dtEndDay.FillColor = System.Drawing.Color.Transparent;
+            this.dtEndDay.FillColor = System.Drawing.Color.White;
             this.dtEndDay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtEndDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtEndDay.Location = new System.Drawing.Point(12, 463);

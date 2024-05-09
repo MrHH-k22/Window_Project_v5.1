@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lblRate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -41,7 +40,6 @@
             this.rtStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.btnSend = new Guna.UI2.WinForms.Guna2Button();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.chbReliable = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbGoodProduct = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbPoliteFriendly = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -199,39 +197,6 @@
             this.txtComment.Size = new System.Drawing.Size(612, 141);
             this.txtComment.TabIndex = 79;
             // 
-            // btnClose
-            // 
-            this.btnClose.AllowAnimations = true;
-            this.btnClose.AllowBorderColorChanges = true;
-            this.btnClose.AllowMouseEffects = true;
-            this.btnClose.AnimationSpeed = 200;
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderColor = System.Drawing.Color.Transparent;
-            this.btnClose.BorderRadius = 1;
-            this.btnClose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnClose.BorderThickness = 1;
-            this.btnClose.ColorContrastOnClick = 30;
-            this.btnClose.ColorContrastOnHover = 30;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnClose.CustomizableEdges = borderEdges5;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.Image = global::Window_Project_v5._1.Properties.Resources.close;
-            this.btnClose.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Location = new System.Drawing.Point(589, 11);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.RoundBorders = false;
-            this.btnClose.ShowBorders = true;
-            this.btnClose.Size = new System.Drawing.Size(35, 34);
-            this.btnClose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnClose.TabIndex = 14;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // chbReliable
             // 
             this.chbReliable.AutoSize = true;
@@ -364,8 +329,6 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblRate);
-            this.Controls.Add(this.btnClose);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRating";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRating";
@@ -381,7 +344,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnClose;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblRate;
         private Guna.UI2.WinForms.Guna2PictureBox pbProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

@@ -130,7 +130,7 @@ namespace Window_Project_v5._1.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            // Buyed
+            /*// Buyed
             if (product.BuyerID != 0)
             {
                 //update status for product
@@ -164,6 +164,9 @@ namespace Window_Project_v5._1.Forms
                     favoriteDAO.delete(account.Id, product.Id);
                 }
             }
+            */
+            FCancelInfo fCancelInfo = new FCancelInfo(account, product, checkCart);
+            fCancelInfo.ShowDialog();
         }
     }
 }

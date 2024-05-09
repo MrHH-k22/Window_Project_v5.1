@@ -59,6 +59,7 @@ namespace Window_Project_v5._1.Forms
                     {
                         tpHidden.Controls.Add(uc);
                     }
+                    
                 }
                 convertByte(pBSellerAvatar, account.Avatar);
                 //Menu
@@ -196,6 +197,11 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void flpCancelledProducts_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

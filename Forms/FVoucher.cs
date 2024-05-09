@@ -36,6 +36,15 @@ namespace Window_Project_v5._1.Forms
 
         private void FVoucher_Load(object sender, EventArgs e)
         {
+            for (int i = flpVoucher.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = flpVoucher.Controls[i];
+                if (control is UserControl)
+                {
+                    flpVoucher.Controls.Remove(control);
+                    control.Dispose();
+                }
+            }
             containerMenu.Visible = false;
             List<Voucher> vouchers = voucherDAO.LoadList();
             foreach (var voucher in vouchers)
@@ -169,6 +178,11 @@ namespace Window_Project_v5._1.Forms
             FVoucher f = new FVoucher(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void llbnLoad_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FVoucher_Load(sender, e);
         }
     }
 }

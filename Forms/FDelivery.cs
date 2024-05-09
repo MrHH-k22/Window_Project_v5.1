@@ -288,10 +288,6 @@ namespace Window_Project_v5._1.Forms
                     }
                 }
             }
-            this.Hide();
-            FCart f = new FCart(acc);
-            f.Closed += (s, args) => this.Close();
-            f.Show();
         }
 
         private void llblAddAddress_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

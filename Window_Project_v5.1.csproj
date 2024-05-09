@@ -185,6 +185,8 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AccountDAO.cs" />
+    <Compile Include="CancelInfo.cs" />
+    <Compile Include="CancelInfoDAO.cs" />
     <Compile Include="CartDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="FavoriteDAO.cs" />
@@ -217,6 +219,12 @@
     </Compile>
     <Compile Include="Forms\FBuyDetail.Designer.cs">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FCancelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FCancelInfo.Designer.cs">
+      <DependentUpon>FCancelInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FCart.cs">
       <SubType>Form</SubType>
@@ -313,6 +321,12 @@
     </Compile>
     <Compile Include="Forms\UCProductBuy.Designer.cs">
       <DependentUpon>UCProductBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCProductCancel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCProductCancel.Designer.cs">
+      <DependentUpon>UCProductCancel.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCProductCart.cs">
       <SubType>UserControl</SubType>
@@ -427,6 +441,9 @@
     <EmbeddedResource Include="Forms\FBuyDetail.resx">
       <DependentUpon>FBuyDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FCancelInfo.resx">
+      <DependentUpon>FCancelInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FCart.resx">
       <DependentUpon>FCart.cs</DependentUpon>
     </EmbeddedResource>
@@ -471,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductBuy.resx">
       <DependentUpon>UCProductBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCProductCancel.resx">
+      <DependentUpon>UCProductCancel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCProductCart.resx">
       <DependentUpon>UCProductCart.cs</DependentUpon>

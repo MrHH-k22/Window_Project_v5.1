@@ -33,7 +33,6 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pBSellerAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSellerName = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.tcManagement = new Guna.UI2.WinForms.Guna2TabControl();
@@ -42,41 +41,50 @@
             this.tpCompleted = new System.Windows.Forms.TabPage();
             this.tpHidden = new System.Windows.Forms.TabPage();
             this.containerTop = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMenuAccountName = new System.Windows.Forms.Label();
+            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.tpCancelled = new System.Windows.Forms.TabPage();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
             this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
             this.btnOrderAnalysis = new Guna.UI2.WinForms.Guna2Button();
             this.btnSavedProducts = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnSalesOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnPurchasesOrder = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.pBSellerAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.btnCart = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.flpCancelledProducts = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucProductCancel1 = new Window_Project_v5._1.Forms.UCProductCancel();
+            this.ucProductCancel2 = new Window_Project_v5._1.Forms.UCProductCancel();
+            this.ucProductCancel3 = new Window_Project_v5._1.Forms.UCProductCancel();
+            this.ucProductCancel4 = new Window_Project_v5._1.Forms.UCProductCancel();
             this.gpManagement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBSellerAvatar)).BeginInit();
             this.panelTop.SuspendLayout();
             this.tcManagement.SuspendLayout();
             this.containerTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBody.SuspendLayout();
             this.containerMenu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
+            this.tpCancelled.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBSellerAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.flpCancelledProducts.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpManagement
@@ -146,23 +154,6 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Balance:";
             // 
-            // pBSellerAvatar
-            // 
-            this.pBSellerAvatar.AllowFocused = false;
-            this.pBSellerAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pBSellerAvatar.AutoSizeHeight = true;
-            this.pBSellerAvatar.BorderRadius = 42;
-            this.pBSellerAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pBSellerAvatar.Image")));
-            this.pBSellerAvatar.IsCircle = true;
-            this.pBSellerAvatar.Location = new System.Drawing.Point(-219, 5);
-            this.pBSellerAvatar.Margin = new System.Windows.Forms.Padding(4);
-            this.pBSellerAvatar.Name = "pBSellerAvatar";
-            this.pBSellerAvatar.Size = new System.Drawing.Size(84, 84);
-            this.pBSellerAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBSellerAvatar.TabIndex = 11;
-            this.pBSellerAvatar.TabStop = false;
-            this.pBSellerAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
             // lblSellerName
             // 
             this.lblSellerName.AutoSize = true;
@@ -192,6 +183,7 @@
             this.tcManagement.Controls.Add(this.tpWaitConfirm);
             this.tcManagement.Controls.Add(this.tpCompleted);
             this.tcManagement.Controls.Add(this.tpHidden);
+            this.tcManagement.Controls.Add(this.tpCancelled);
             this.tcManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcManagement.ItemSize = new System.Drawing.Size(160, 40);
             this.tcManagement.Location = new System.Drawing.Point(0, 123);
@@ -281,105 +273,6 @@
             this.containerTop.TabIndex = 3;
             this.containerTop.Text = "guna2ContainerControl1";
             // 
-            // btnCart
-            // 
-            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCart.ForeColor = System.Drawing.Color.White;
-            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
-            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCart.Location = new System.Drawing.Point(771, 10);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnCart.Size = new System.Drawing.Size(163, 46);
-            this.btnCart.TabIndex = 3;
-            this.btnCart.Text = "CART";
-            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
-            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMenu.Location = new System.Drawing.Point(1159, 11);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnMenu.Size = new System.Drawing.Size(292, 46);
-            this.btnMenu.TabIndex = 2;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // btnPostProduct
-            // 
-            this.btnPostProduct.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnPostProduct.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnPostProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPostProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPostProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnPostProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnPostProduct.ForeColor = System.Drawing.Color.White;
-            this.btnPostProduct.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnPostProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnPostProduct.Image = global::Window_Project_v5._1.Properties.Resources.edit;
-            this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
-            this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPostProduct.Location = new System.Drawing.Point(939, 10);
-            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPostProduct.Name = "btnPostProduct";
-            this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.btnPostProduct.Size = new System.Drawing.Size(203, 46);
-            this.btnPostProduct.TabIndex = 1;
-            this.btnPostProduct.Text = "POST NEWS";
-            this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
-            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
-            this.pbLogo.ImageRotate = 0F;
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(188, 70);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
-            // 
             // panelBody
             // 
             this.panelBody.BackColor = System.Drawing.Color.White;
@@ -417,6 +310,104 @@
             this.containerMenu.TabIndex = 9;
             this.containerMenu.Text = "guna2ContainerControl1";
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
+            this.guna2Panel5.TabIndex = 24;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel6.Controls.Add(this.label4);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel6.Location = new System.Drawing.Point(1, 247);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(290, 47);
+            this.guna2Panel6.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label4.Location = new System.Drawing.Point(19, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 30);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Features";
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel7.Controls.Add(this.label5);
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel7.Location = new System.Drawing.Point(1, 91);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(290, 46);
+            this.guna2Panel7.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.label5.Location = new System.Drawing.Point(19, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 30);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Order Management";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
+            this.guna2Panel8.Controls.Add(this.pbMenuAvatar);
+            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
+            this.guna2Panel8.TabIndex = 14;
+            // 
+            // lblMenuAccountName
+            // 
+            this.lblMenuAccountName.AutoSize = true;
+            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
+            this.lblMenuAccountName.Name = "lblMenuAccountName";
+            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
+            this.lblMenuAccountName.TabIndex = 3;
+            this.lblMenuAccountName.Text = "Account name";
+            // 
+            // ratingMenuAccount
+            // 
+            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
+            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingMenuAccount.Name = "ratingMenuAccount";
+            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.ratingMenuAccount.ReadOnly = true;
+            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
+            this.ratingMenuAccount.TabIndex = 2;
+            // 
+            // tpCancelled
+            // 
+            this.tpCancelled.BackColor = System.Drawing.Color.White;
+            this.tpCancelled.Controls.Add(this.flpCancelledProducts);
+            this.tpCancelled.Location = new System.Drawing.Point(4, 44);
+            this.tpCancelled.Name = "tpCancelled";
+            this.tpCancelled.Padding = new System.Windows.Forms.Padding(10);
+            this.tpCancelled.Size = new System.Drawing.Size(1492, 539);
+            this.tpCancelled.TabIndex = 6;
+            this.tpCancelled.Text = "Cancelled";
+            // 
             // btnLogout
             // 
             this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -440,16 +431,6 @@
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(1, 569);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(290, 16);
-            this.guna2Panel5.TabIndex = 24;
             // 
             // btnVoucher
             // 
@@ -571,28 +552,6 @@
             this.btnSavedProducts.TextOffset = new System.Drawing.Point(10, 0);
             this.btnSavedProducts.Click += new System.EventHandler(this.btnSavedProducts_Click);
             // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Panel6.Controls.Add(this.label4);
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel6.Location = new System.Drawing.Point(1, 247);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(290, 47);
-            this.guna2Panel6.TabIndex = 18;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label4.Location = new System.Drawing.Point(19, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 30);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Features";
-            // 
             // btnSalesOrder
             // 
             this.btnSalesOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -642,51 +601,6 @@
             this.btnPurchasesOrder.TextOffset = new System.Drawing.Point(10, 0);
             this.btnPurchasesOrder.Click += new System.EventHandler(this.btnPurchasesOrder_Click);
             // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Panel7.Controls.Add(this.label5);
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel7.Location = new System.Drawing.Point(1, 91);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(290, 46);
-            this.guna2Panel7.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(19, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 30);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Order Management";
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.Controls.Add(this.lblMenuAccountName);
-            this.guna2Panel8.Controls.Add(this.pbMenuAvatar);
-            this.guna2Panel8.Controls.Add(this.ratingMenuAccount);
-            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(290, 90);
-            this.guna2Panel8.TabIndex = 14;
-            // 
-            // lblMenuAccountName
-            // 
-            this.lblMenuAccountName.AutoSize = true;
-            this.lblMenuAccountName.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.lblMenuAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblMenuAccountName.Location = new System.Drawing.Point(99, 9);
-            this.lblMenuAccountName.Name = "lblMenuAccountName";
-            this.lblMenuAccountName.Size = new System.Drawing.Size(156, 30);
-            this.lblMenuAccountName.TabIndex = 3;
-            this.lblMenuAccountName.Text = "Account name";
-            // 
             // pbMenuAvatar
             // 
             this.pbMenuAvatar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -701,15 +615,167 @@
             this.pbMenuAvatar.TabIndex = 0;
             this.pbMenuAvatar.TabStop = false;
             // 
-            // ratingMenuAccount
+            // pBSellerAvatar
             // 
-            this.ratingMenuAccount.Location = new System.Drawing.Point(103, 44);
-            this.ratingMenuAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ratingMenuAccount.Name = "ratingMenuAccount";
-            this.ratingMenuAccount.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.ratingMenuAccount.ReadOnly = true;
-            this.ratingMenuAccount.Size = new System.Drawing.Size(149, 36);
-            this.ratingMenuAccount.TabIndex = 2;
+            this.pBSellerAvatar.AllowFocused = false;
+            this.pBSellerAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pBSellerAvatar.AutoSizeHeight = true;
+            this.pBSellerAvatar.BorderRadius = 42;
+            this.pBSellerAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pBSellerAvatar.Image")));
+            this.pBSellerAvatar.IsCircle = true;
+            this.pBSellerAvatar.Location = new System.Drawing.Point(-219, 5);
+            this.pBSellerAvatar.Margin = new System.Windows.Forms.Padding(4);
+            this.pBSellerAvatar.Name = "pBSellerAvatar";
+            this.pBSellerAvatar.Size = new System.Drawing.Size(84, 84);
+            this.pBSellerAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBSellerAvatar.TabIndex = 11;
+            this.pBSellerAvatar.TabStop = false;
+            this.pBSellerAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // btnCart
+            // 
+            this.btnCart.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Image = global::Window_Project_v5._1.Properties.Resources.shopping_Cart_White;
+            this.btnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnCart.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCart.Location = new System.Drawing.Point(771, 10);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnCart.Size = new System.Drawing.Size(163, 46);
+            this.btnCart.TabIndex = 3;
+            this.btnCart.Text = "CART";
+            this.btnCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCart.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Image = global::Window_Project_v5._1.Properties.Resources.down_arrow;
+            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnMenu.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnMenu.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnMenu.Location = new System.Drawing.Point(1159, 11);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnMenu.Size = new System.Drawing.Size(292, 46);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMenu.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnPostProduct
+            // 
+            this.btnPostProduct.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnPostProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPostProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPostProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPostProduct.ForeColor = System.Drawing.Color.White;
+            this.btnPostProduct.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnPostProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Image = global::Window_Project_v5._1.Properties.Resources.edit;
+            this.btnPostProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.ImageOffset = new System.Drawing.Point(4, 0);
+            this.btnPostProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPostProduct.Location = new System.Drawing.Point(939, 10);
+            this.btnPostProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPostProduct.Name = "btnPostProduct";
+            this.btnPostProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnPostProduct.Size = new System.Drawing.Size(203, 46);
+            this.btnPostProduct.TabIndex = 1;
+            this.btnPostProduct.Text = "POST NEWS";
+            this.btnPostProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostProduct.TextOffset = new System.Drawing.Point(7, 0);
+            this.btnPostProduct.Click += new System.EventHandler(this.btnPostProduct_Click);
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.pbLogo.Image = global::Window_Project_v5._1.Properties.Resources.beach_14953675_v22;
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(188, 70);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            // 
+            // flpCancelledProducts
+            // 
+            this.flpCancelledProducts.AutoScroll = true;
+            this.flpCancelledProducts.Controls.Add(this.ucProductCancel1);
+            this.flpCancelledProducts.Controls.Add(this.ucProductCancel2);
+            this.flpCancelledProducts.Controls.Add(this.ucProductCancel3);
+            this.flpCancelledProducts.Controls.Add(this.ucProductCancel4);
+            this.flpCancelledProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpCancelledProducts.Location = new System.Drawing.Point(10, 10);
+            this.flpCancelledProducts.Name = "flpCancelledProducts";
+            this.flpCancelledProducts.Size = new System.Drawing.Size(1472, 519);
+            this.flpCancelledProducts.TabIndex = 1;
+            this.flpCancelledProducts.Paint += new System.Windows.Forms.PaintEventHandler(this.flpCancelledProducts_Paint);
+            // 
+            // ucProductCancel1
+            // 
+            this.ucProductCancel1.BackColor = System.Drawing.Color.White;
+            this.ucProductCancel1.Location = new System.Drawing.Point(3, 3);
+            this.ucProductCancel1.Name = "ucProductCancel1";
+            this.ucProductCancel1.Size = new System.Drawing.Size(700, 351);
+            this.ucProductCancel1.TabIndex = 0;
+            // 
+            // ucProductCancel2
+            // 
+            this.ucProductCancel2.BackColor = System.Drawing.Color.White;
+            this.ucProductCancel2.Location = new System.Drawing.Point(709, 3);
+            this.ucProductCancel2.Name = "ucProductCancel2";
+            this.ucProductCancel2.Size = new System.Drawing.Size(700, 351);
+            this.ucProductCancel2.TabIndex = 1;
+            // 
+            // ucProductCancel3
+            // 
+            this.ucProductCancel3.BackColor = System.Drawing.Color.White;
+            this.ucProductCancel3.Location = new System.Drawing.Point(3, 360);
+            this.ucProductCancel3.Name = "ucProductCancel3";
+            this.ucProductCancel3.Size = new System.Drawing.Size(700, 351);
+            this.ucProductCancel3.TabIndex = 2;
+            // 
+            // ucProductCancel4
+            // 
+            this.ucProductCancel4.BackColor = System.Drawing.Color.White;
+            this.ucProductCancel4.Location = new System.Drawing.Point(709, 360);
+            this.ucProductCancel4.Name = "ucProductCancel4";
+            this.ucProductCancel4.Size = new System.Drawing.Size(700, 351);
+            this.ucProductCancel4.TabIndex = 3;
             // 
             // FProductManagement
             // 
@@ -728,11 +794,9 @@
             this.Load += new System.EventHandler(this.FProductManagement_Load);
             this.gpManagement.ResumeLayout(false);
             this.gpManagement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBSellerAvatar)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.tcManagement.ResumeLayout(false);
             this.containerTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBody.ResumeLayout(false);
             this.containerMenu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
@@ -741,7 +805,11 @@
             this.guna2Panel7.PerformLayout();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
+            this.tpCancelled.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBSellerAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.flpCancelledProducts.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -783,5 +851,11 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private System.Windows.Forms.TabPage tpCancelled;
+        private System.Windows.Forms.FlowLayoutPanel flpCancelledProducts;
+        private UCProductCancel ucProductCancel1;
+        private UCProductCancel ucProductCancel2;
+        private UCProductCancel ucProductCancel3;
+        private UCProductCancel ucProductCancel4;
     }
 }

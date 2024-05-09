@@ -39,6 +39,7 @@
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.containerMenu = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
             this.btnMoney = new Guna.UI2.WinForms.Guna2Button();
             this.btnInformation = new Guna.UI2.WinForms.Guna2Button();
             this.btnOrderAnalysis = new Guna.UI2.WinForms.Guna2Button();
@@ -55,7 +56,7 @@
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnVoucher = new Guna.UI2.WinForms.Guna2Button();
+            this.llbnLoad = new System.Windows.Forms.LinkLabel();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuAvatar)).BeginInit();
             this.guna2Panel7.SuspendLayout();
@@ -216,6 +217,30 @@
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnVoucher
+            // 
+            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVoucher.FillColor = System.Drawing.Color.White;
+            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
+            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
+            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
+            this.btnVoucher.TabIndex = 28;
+            this.btnVoucher.Text = "Voucher";
+            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click_1);
             // 
             // btnMoney
             // 
@@ -386,6 +411,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.llbnLoad);
             this.panelTop.Controls.Add(this.lblVoucherName);
             this.panelTop.Controls.Add(this.lblAddVoucher);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -536,29 +562,19 @@
             this.pbLogo.TabStop = false;
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
-            // btnVoucher
+            // llbnLoad
             // 
-            this.btnVoucher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoucher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoucher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVoucher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnVoucher.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVoucher.FillColor = System.Drawing.Color.White;
-            this.btnVoucher.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnVoucher.ForeColor = System.Drawing.Color.Black;
-            this.btnVoucher.Image = global::Window_Project_v5._1.Properties.Resources.voucher1;
-            this.btnVoucher.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVoucher.ImageOffset = new System.Drawing.Point(5, 0);
-            this.btnVoucher.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnVoucher.Location = new System.Drawing.Point(1, 514);
-            this.btnVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnVoucher.Name = "btnVoucher";
-            this.btnVoucher.Size = new System.Drawing.Size(290, 55);
-            this.btnVoucher.TabIndex = 28;
-            this.btnVoucher.Text = "Voucher";
-            this.btnVoucher.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVoucher.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click_1);
+            this.llbnLoad.AutoSize = true;
+            this.llbnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.llbnLoad.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llbnLoad.Location = new System.Drawing.Point(411, 17);
+            this.llbnLoad.Name = "llbnLoad";
+            this.llbnLoad.Size = new System.Drawing.Size(56, 28);
+            this.llbnLoad.TabIndex = 117;
+            this.llbnLoad.TabStop = true;
+            this.llbnLoad.Text = "Load";
+            this.llbnLoad.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.llbnLoad.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbnLoad_LinkClicked);
             // 
             // FVoucher
             // 
@@ -621,5 +637,6 @@
         private System.Windows.Forms.LinkLabel lblAddVoucher;
         public System.Windows.Forms.Label lblVoucherName;
         private Guna.UI2.WinForms.Guna2Button btnVoucher;
+        private System.Windows.Forms.LinkLabel llbnLoad;
     }
 }

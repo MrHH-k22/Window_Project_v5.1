@@ -36,6 +36,8 @@
             this.lblEndDay = new System.Windows.Forms.Label();
             this.lblBeginDay = new System.Windows.Forms.Label();
             this.lblVoucherName = new System.Windows.Forms.Label();
+            this.lblSellerName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.panelBorder.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +57,8 @@
             this.panelBorder.BorderColor = System.Drawing.Color.Gray;
             this.panelBorder.BorderRadius = 8;
             this.panelBorder.BorderThickness = 1;
+            this.panelBorder.Controls.Add(this.label2);
+            this.panelBorder.Controls.Add(this.lblSellerName);
             this.panelBorder.Controls.Add(this.btnCollect);
             this.panelBorder.Controls.Add(this.label1);
             this.panelBorder.Controls.Add(this.lblValue);
@@ -77,7 +81,7 @@
             this.btnCollect.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCollect.ForeColor = System.Drawing.Color.White;
             this.btnCollect.Image = global::Window_Project_v5._1.Properties.Resources.plus_white;
-            this.btnCollect.Location = new System.Drawing.Point(378, 121);
+            this.btnCollect.Location = new System.Drawing.Point(403, 136);
             this.btnCollect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCollect.Name = "btnCollect";
             this.btnCollect.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -89,7 +93,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(161, 64);
+            this.label1.Location = new System.Drawing.Point(161, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 33);
             this.label1.TabIndex = 120;
@@ -97,9 +101,9 @@
             // 
             // lblValue
             // 
-            this.lblValue.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValue.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue.ForeColor = System.Drawing.Color.Red;
-            this.lblValue.Location = new System.Drawing.Point(23, 125);
+            this.lblValue.Location = new System.Drawing.Point(18, 136);
             this.lblValue.Name = "lblValue";
             this.lblValue.Size = new System.Drawing.Size(327, 33);
             this.lblValue.TabIndex = 118;
@@ -109,7 +113,7 @@
             // 
             this.lblEndDay.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndDay.ForeColor = System.Drawing.Color.DimGray;
-            this.lblEndDay.Location = new System.Drawing.Point(185, 64);
+            this.lblEndDay.Location = new System.Drawing.Point(185, 51);
             this.lblEndDay.Name = "lblEndDay";
             this.lblEndDay.Size = new System.Drawing.Size(135, 33);
             this.lblEndDay.TabIndex = 117;
@@ -120,7 +124,7 @@
             // 
             this.lblBeginDay.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBeginDay.ForeColor = System.Drawing.Color.DimGray;
-            this.lblBeginDay.Location = new System.Drawing.Point(22, 64);
+            this.lblBeginDay.Location = new System.Drawing.Point(18, 51);
             this.lblBeginDay.Name = "lblBeginDay";
             this.lblBeginDay.Size = new System.Drawing.Size(137, 33);
             this.lblBeginDay.TabIndex = 116;
@@ -132,12 +136,33 @@
             this.lblVoucherName.BackColor = System.Drawing.Color.Transparent;
             this.lblVoucherName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVoucherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
-            this.lblVoucherName.Location = new System.Drawing.Point(22, 14);
+            this.lblVoucherName.Location = new System.Drawing.Point(20, 14);
             this.lblVoucherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVoucherName.Name = "lblVoucherName";
             this.lblVoucherName.Size = new System.Drawing.Size(167, 31);
             this.lblVoucherName.TabIndex = 115;
             this.lblVoucherName.Text = "Voucher name";
+            // 
+            // lblSellerName
+            // 
+            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellerName.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSellerName.Location = new System.Drawing.Point(167, 91);
+            this.lblSellerName.Name = "lblSellerName";
+            this.lblSellerName.Size = new System.Drawing.Size(276, 33);
+            this.lblSellerName.TabIndex = 122;
+            this.lblSellerName.Text = "Seller name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(20, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 31);
+            this.label2.TabIndex = 123;
+            this.label2.Text = "Seller name:";
             // 
             // UCVoucher
             // 
@@ -163,5 +188,7 @@
         private System.Windows.Forms.Label lblEndDay;
         private System.Windows.Forms.Label lblBeginDay;
         private Guna.UI2.WinForms.Guna2CircleButton btnCollect;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSellerName;
     }
 }

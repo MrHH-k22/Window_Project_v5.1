@@ -15,6 +15,7 @@ namespace Window_Project_v5._1.Forms
         Voucher voucher = new Voucher();
         Account account = new Account();
         VoucherDAO voucherDAO = new VoucherDAO();
+        AccountDAO accountDAO = new AccountDAO();
         public UCVoucher()
         {
             InitializeComponent();
@@ -28,6 +29,8 @@ namespace Window_Project_v5._1.Forms
             lblValue.Text = "- " + voucher.Value.ToString() + " VND";
             lblBeginDay.Text = voucher.Beginday.ToString();
             lblEndDay.Text = voucher.Endday.ToString();
+            Account seller = accountDAO.Retrieve(voucher.SellerId);
+            lblSellerName.Text = seller.Name.ToString();    
             this.account = account;
         }
 
