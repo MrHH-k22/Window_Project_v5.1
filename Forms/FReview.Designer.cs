@@ -35,6 +35,8 @@
             this.btnPostProduct = new Guna.UI2.WinForms.Guna2Button();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnWatchProducts = new Guna.UI2.WinForms.Guna2Button();
+            this.btnWatchReview = new Guna.UI2.WinForms.Guna2Button();
             this.lblSold = new System.Windows.Forms.Label();
             this.lblNumberofproducts = new System.Windows.Forms.Label();
             this.lblArea = new System.Windows.Forms.Label();
@@ -65,7 +67,6 @@
             this.pbMenuAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblMenuAccountName = new System.Windows.Forms.Label();
             this.ratingMenuAccount = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.btnWatchReview = new Guna.UI2.WinForms.Guna2Button();
             this.containerTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -197,8 +198,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnWatchReview);
             this.panel1.Controls.Add(this.btnWatchProducts);
+            this.panel1.Controls.Add(this.btnWatchReview);
             this.panel1.Controls.Add(this.lblSold);
             this.panel1.Controls.Add(this.lblNumberofproducts);
             this.panel1.Controls.Add(this.lblArea);
@@ -218,19 +219,47 @@
             // 
             // btnWatchProducts
             // 
+            this.btnWatchProducts.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnWatchProducts.BorderRadius = 20;
+            this.btnWatchProducts.BorderThickness = 1;
             this.btnWatchProducts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnWatchProducts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnWatchProducts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnWatchProducts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnWatchProducts.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
             this.btnWatchProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnWatchProducts.ForeColor = System.Drawing.Color.White;
-            this.btnWatchProducts.Location = new System.Drawing.Point(1315, 36);
+            this.btnWatchProducts.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchProducts.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnWatchProducts.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchProducts.Location = new System.Drawing.Point(1332, 37);
             this.btnWatchProducts.Name = "btnWatchProducts";
             this.btnWatchProducts.Size = new System.Drawing.Size(135, 48);
-            this.btnWatchProducts.TabIndex = 66;
+            this.btnWatchProducts.TabIndex = 156;
             this.btnWatchProducts.Text = "Watch their products";
-            this.btnWatchProducts.Click += new System.EventHandler(this.btnWatchProducts_Click);
+            this.btnWatchProducts.Click += new System.EventHandler(this.btnWatchProducts_Click_1);
+            // 
+            // btnWatchReview
+            // 
+            this.btnWatchReview.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchReview.BorderRadius = 20;
+            this.btnWatchReview.BorderThickness = 1;
+            this.btnWatchReview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnWatchReview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnWatchReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnWatchReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnWatchReview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchReview.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnWatchReview.ForeColor = System.Drawing.Color.White;
+            this.btnWatchReview.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchReview.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnWatchReview.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(132)))));
+            this.btnWatchReview.Location = new System.Drawing.Point(1332, 37);
+            this.btnWatchReview.Name = "btnWatchReview";
+            this.btnWatchReview.Size = new System.Drawing.Size(135, 48);
+            this.btnWatchReview.TabIndex = 155;
+            this.btnWatchReview.Text = "Watch their review";
+            this.btnWatchReview.Click += new System.EventHandler(this.btnWatchReview_Click);
             // 
             // lblSold
             // 
@@ -687,26 +716,11 @@
             this.ratingMenuAccount.TabIndex = 2;
             this.ratingMenuAccount.ValueChanged += new System.EventHandler(this.ratingMenuAccount_ValueChanged);
             // 
-            // btnWatchReview
-            // 
-            this.btnWatchReview.BorderRadius = 20;
-            this.btnWatchReview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnWatchReview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnWatchReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnWatchReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnWatchReview.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnWatchReview.ForeColor = System.Drawing.Color.White;
-            this.btnWatchReview.Location = new System.Drawing.Point(1315, 36);
-            this.btnWatchReview.Name = "btnWatchReview";
-            this.btnWatchReview.Size = new System.Drawing.Size(135, 48);
-            this.btnWatchReview.TabIndex = 155;
-            this.btnWatchReview.Text = "Watch their review";
-            this.btnWatchReview.Click += new System.EventHandler(this.btnWatchReview_Click);
-            // 
             // FReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1500, 780);
             this.Controls.Add(this.containerMenu);
             this.Controls.Add(this.panel1);
@@ -774,5 +788,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbMenuAvatar;
         private Guna.UI2.WinForms.Guna2RatingStar ratingMenuAccount;
         private Guna.UI2.WinForms.Guna2Button btnWatchReview;
+        private Guna.UI2.WinForms.Guna2Button btnWatchProducts;
     }
 }
