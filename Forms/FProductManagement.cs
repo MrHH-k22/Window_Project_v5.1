@@ -99,10 +99,11 @@ namespace Window_Project_v5._1.Forms
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            foreach (TabPage tabPage in tcManagement.TabPages)
-            {
-                tabPage.Controls.Clear();
-            }
+            tpCompleted.Controls.Clear();
+            tpDisplay.Controls.Clear();
+            tpHidden.Controls.Clear();
+            tpWaitConfirm.Controls.Clear();
+            flpCancelledProducts.Controls.Clear();
             FProductManagement_Load(sender, e);
         }
 

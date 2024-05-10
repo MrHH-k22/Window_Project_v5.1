@@ -72,7 +72,7 @@ namespace Window_Project_v5._1.Forms
             // Check if the user clicked "Yes"
             if (result == DialogResult.Yes)
             {
-                
+                cancelInfoDAO.delete(ci.Id);
             }
         }
     }

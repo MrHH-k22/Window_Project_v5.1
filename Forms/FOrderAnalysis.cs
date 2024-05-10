@@ -35,7 +35,9 @@ namespace Window_Project_v5._1.Forms
             containerMenu.Visible = false;
             gunaChart1.Visible = false;
             this.acc = acc;
-            txtSpecificYear.Visible = true;
+            txtSpecificYear.Visible = false;
+            txtSpecificMonth.Visible = false;
+            btnChart.Visible = false;
             dtBeginday.Value = SqlDateTime.MinValue.Value;
             dtEndday.Value = DateTimePicker.MaximumDateTime;
 
@@ -268,26 +270,37 @@ namespace Window_Project_v5._1.Forms
 
         private void btnChart_Click(object sender, EventArgs e)
         {
-            int days = 0;
-            // Get the month and year values from the text boxes
-            if (int.TryParse(txtSpecificMonth.Text, out int month) && int.TryParse(txtSpecificYear.Text, out int year))
+            gunaChart1.Datasets.Clear();
+            if (cbDate.SelectedIndex == 4)
             {
-                // Check the validity of month (1 to 12) and year (greater than 0)
-                if (month >= 1 && month <= 12 && year > 0)
+                int days = 0;
+                // Get the month and year values from the text boxes
+                if (int.TryParse(txtSpecificMonth.Text, out int month) && int.TryParse(txtSpecificYear.Text, out int year))
                 {
-                    // Call DaysInMonth function to calculate the number of days in the specified month
-                    days = DaysInMonth(month, year);
+                    // Check the validity of month (1 to 12) and year (greater than 0)
+                    if (month >= 1 && month <= 12 && year > 0)
+                    {
+                        // Call DaysInMonth function to calculate the number of days in the specified month
+                        days = DaysInMonth(month, year);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter valid month (1 to 12) and year (greater than 0).", "Error");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Please enter valid month (1 to 12) and year (greater than 0).", "Error");
+                    MessageBox.Show("Please enter valid integer values for month and year.", "Error");
                 }
+                Chart.SplineMonth(gunaChart1, acc.Id, txtSpecificYear.Text, txtSpecificMonth.Text, days);
             }
-            else
+            else if(cbDate.SelectedIndex == 5)
             {
-                MessageBox.Show("Please enter valid integer values for month and year.", "Error");
+                string YearToFilter = txtSpecificYear.Text.ToString();
+                gunaChart1.Datasets.Clear();
+                Chart.SplineYear(gunaChart1, acc.Id, YearToFilter);
             }
-            Chart.SplineMonth(gunaChart1, acc.Id, txtSpecificYear.Text, txtSpecificMonth.Text, days);
+
 
         }
 
@@ -353,9 +366,7 @@ namespace Window_Project_v5._1.Forms
             else
             {
                 txtSpecificYear.Visible = true;
-                string YearToFilter = txtSpecificYear.Text.ToString();
-                gunaChart1.Datasets.Clear();
-                Chart.SplineYear(gunaChart1, acc.Id, YearToFilter);
+                btnChart.Visible = true;
             }
         }
 
@@ -363,5 +374,6 @@ namespace Window_Project_v5._1.Forms
         {
 
         }
+
     }
 }
