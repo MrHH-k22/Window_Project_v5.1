@@ -394,5 +394,77 @@ namespace Window_Project_v5._1
             dt = dbc.Load(string.Format("SELECT m.MonthNumber, ISNULL(SUM(SalePrice), 0) AS TotalEarnings FROM( VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12)) AS m (MonthNumber) LEFT JOIN Product p ON MONTH(p.CompleteTime) = m.MonthNumber AND YEAR(p.CompleteTime) = '{0}' AND p.SellerID = '{1}' GROUP BY m.MonthNumber, YEAR(CompleteTime) ORDER BY YEAR(CompleteTime), m.MonthNumber ", YearToFilter, id));
             return dt;
         }
+
+
+        public DataTable ProfitEveryDay(int id, int year, int month, int noDaysInMonth)
+        {
+            DataTable dt = new DataTable();
+
+            // Validate input parameters
+            if (year < 1 || year > 9999)
+            {
+                throw new ArgumentException("Invalid year. Year must be between 1 and 9999.");
+            }
+
+            if (month < 1 || month > 12)
+            {
+                throw new ArgumentException("Invalid month. Month must be between 1 and 12.");
+            }
+
+            // Calculate the start and end dates for the specified month and year
+            DateTime startDate;
+            try
+            {
+                startDate = new DateTime(year, month, 1);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                throw new ArgumentException("Invalid year or month. Please provide valid values.", ex);
+            }
+
+            DateTime endDate = startDate.AddMonths(1).AddDays(-1); // Last day of the month
+
+            string query = string.Format(@"SELECT CONVERT(date, p.CompleteTime) AS SaleDate, 
+                                          ISNULL(SUM(p.SalePrice), 0) AS TotalEarnings 
+                                   FROM Product p 
+                                   WHERE p.SellerID = '{0}' 
+                                         AND CONVERT(date, p.CompleteTime) BETWEEN '{1}' AND '{2}' 
+                                   GROUP BY CONVERT(date, p.CompleteTime);",
+                                           id, startDate.ToString("yyyy-MM-dd"), endDate.ToString("yyyy-MM-dd"));
+
+            dt = dbc.Load(query);
+            return dt;
+        }
+
+
+
+
+
+
+
+
+        public DataTable ProfitEveryHour(int id, DateTime targetDate)
+        {
+            DataTable dt = new DataTable();
+            string query = string.Format(@"SELECT m.HourNumber, ISNULL(SUM(p.SalePrice), 0) AS TotalEarnings 
+                                   FROM (VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12), (13), (14), (15), (16), (17), (18), (19), (20), (21), (22), (23), (24)) AS m (HourNumber) 
+                                   LEFT JOIN Product p ON DATEPART(hour, p.CompleteTime) = m.HourNumber 
+                                                       AND CONVERT(date, p.CompleteTime) = '{0}' 
+                                                       AND p.SellerID = '{1}' 
+                                   GROUP BY m.HourNumber;", targetDate.ToString("yyyy-MM-dd"), id);
+            dt = dbc.Load(query);
+            return dt;
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

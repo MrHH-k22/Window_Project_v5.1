@@ -12,6 +12,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Window_Project_v5._1.Forms
 {
@@ -34,6 +35,7 @@ namespace Window_Project_v5._1.Forms
             containerMenu.Visible = false;
             gunaChart1.Visible = false;
             this.acc = acc;
+            txtSpecificYear.Visible = true;
             dtBeginday.Value = SqlDateTime.MinValue.Value;
             dtEndday.Value = DateTimePicker.MaximumDateTime;
 
@@ -42,6 +44,7 @@ namespace Window_Project_v5._1.Forms
         private void FOrderAnalysis_Load(object sender, EventArgs e)
         {
             // Load customer
+            
             DataTable dtCustomer = productDAO.LoadRegularCustomer(acc.Id, dtBeginday.Value, dtEndday.Value);
             gvCustomer.DataSource = dtCustomer;
             gvCustomer.ColumnHeadersHeight = 40;
@@ -265,13 +268,100 @@ namespace Window_Project_v5._1.Forms
 
         private void btnChart_Click(object sender, EventArgs e)
         {
+            int days = 0;
+            // Get the month and year values from the text boxes
+            if (int.TryParse(txtSpecificMonth.Text, out int month) && int.TryParse(txtSpecificYear.Text, out int year))
+            {
+                // Check the validity of month (1 to 12) and year (greater than 0)
+                if (month >= 1 && month <= 12 && year > 0)
+                {
+                    // Call DaysInMonth function to calculate the number of days in the specified month
+                    days = DaysInMonth(month, year);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter valid month (1 to 12) and year (greater than 0).", "Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter valid integer values for month and year.", "Error");
+            }
+            Chart.SplineMonth(gunaChart1, acc.Id, txtSpecificYear.Text, txtSpecificMonth.Text, days);
 
-            string YearToFilter = dtBeginday.Value.Year.ToString();
+        }
+
+        private int DaysInMonth(int month, int year)
+        {
+            switch (month)
+            {
+                case 1: // January
+                case 3: // March
+                case 5: // May
+                case 7: // July
+                case 8: // August
+                case 10: // October
+                case 12: // December
+                    return 31;
+                case 4: // April
+                case 6: // June
+                case 9: // September
+                case 11: // November
+                    return 30;
+                case 2: // February
+                    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+                    {
+                        return 29; // Leap year, February has 29 days
+                    }
+                    else
+                    {
+                        return 28; // Non-leap year, February has 28 days
+                    }
+                default:
+                    return 0; // Invalid case
+            }
+        }
+
+
+        private void cbDate_SelectedIndexChanged(object sender, EventArgs e)
+        {
             gvCustomer.Visible = false;
             gunaChart1.Visible = true;
+            txtSpecificYear.Visible = false;
+            txtSpecificMonth.Visible = false;
+            btnChart.Visible = false;
             gunaChart1.Datasets.Clear();
-            Chart.Bar(gunaChart1, acc.Id, YearToFilter);
-            
+            if (cbDate.SelectedIndex == 1)
+            {
+                DateTime yesterday = DateTime.Today.AddDays(-1);
+                Chart.BarHour(gunaChart1, acc.Id, yesterday);
+            }
+            else if(cbDate.SelectedIndex == 2)
+            {
+                Chart.LineDay(gunaChart1, acc.Id, DateTime.Today, 7);
+            }
+            else if(cbDate.SelectedIndex == 3)
+            {
+                Chart.LineDay(gunaChart1, acc.Id, DateTime.Today,30);
+            }
+            else if(cbDate.SelectedIndex == 4)
+            {
+                txtSpecificYear.Visible = true;
+                txtSpecificMonth.Visible = true;
+                btnChart.Visible = true;
+            }
+            else
+            {
+                txtSpecificYear.Visible = true;
+                string YearToFilter = txtSpecificYear.Text.ToString();
+                gunaChart1.Datasets.Clear();
+                Chart.SplineYear(gunaChart1, acc.Id, YearToFilter);
+            }
+        }
+
+        private void txtSpecificYear_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
