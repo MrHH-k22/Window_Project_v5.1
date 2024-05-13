@@ -137,7 +137,6 @@ namespace Window_Project_v5._1
         public void DeleteBuyerID(Product product)
         {
             string sqlStr = string.Format("Update Product Set BuyerID = 0 where id = '{0}'", product.Id);
-            //string sqlStr = string.Format("UPDATE Product SET Condition = '{0}', Status = '{1}', OriginalPrice = '{2}', SalePrice = '{3}', Name = '{4}', Description = '{5}', Brand = '{6}', Category = '{7}', BuyerID = NULL, BillStatus = '{8}', ViewCount = '{9}' WHERE id = '{10}'", product.Condition, product.Status, product.OriginalPrice, product.SalePrice, product.Name, product.Description, product.Brand, product.Category, product.BillStatus, product.ViewCount, product.Id);
             dbc.Execute(sqlStr);
         }
 

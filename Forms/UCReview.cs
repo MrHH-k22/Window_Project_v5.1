@@ -26,10 +26,9 @@ namespace Window_Project_v5._1.Forms
         {
             InitializeComponent();
         }
-        public UCReview(Product pd, Account acc, Rating rt)
+        public UCReview(Account acc, Rating rt)
         {
             InitializeComponent();
-            this.product = pd;
             this.account = acc;
             this.rating = rt;
         }
@@ -76,8 +75,8 @@ namespace Window_Project_v5._1.Forms
             ucProductConditionReduce.lblPrice.Visible = false;
             ucProductConditionReduce.btnNextState.Visible = false;
             convertByte(ucProductConditionReduce.pictureBox1, imageDAO.GetImageProductData(rating.ProductID));
-            ucProductConditionReduce.lblBuyerName.Text = product.SalePrice.ToString();
-            ucProductConditionReduce.lblProductName.Text = product.Name;
+            ucProductConditionReduce.lblBuyerName.Text = productDAO.Retrieve(rating.ProductID).SalePrice.ToString();
+            ucProductConditionReduce.lblProductName.Text = productDAO.Retrieve(rating.ProductID).Name;
         }
         private void GenerateLabel(Panel panel, string labelText, int labelCount)
         {

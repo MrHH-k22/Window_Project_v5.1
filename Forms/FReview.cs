@@ -42,7 +42,7 @@ namespace Window_Project_v5._1.Forms
         {
             foreach (Rating rating in ratingList)
             {
-                UCReview uc = new UCReview(product, account, rating);
+                UCReview uc = new UCReview(account, rating);
                 flpRating.Controls.Add(uc);
             }
             lblNameSeller.Text = Seller.Name;
@@ -216,7 +216,7 @@ namespace Window_Project_v5._1.Forms
             flpRating.Controls.Clear();
             foreach (Rating rating in ratingList)
             {
-                UCReview uc = new UCReview(product, account, rating);
+                UCReview uc = new UCReview(account, rating);
                 flpRating.Controls.Add(uc);
             }
         }
